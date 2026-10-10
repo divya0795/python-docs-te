@@ -22,3 +22,31 @@ Agree on new terms in an issue or PR before using them widely.
 - **Numbers and punctuation:** use Western digits (0–9) and the usual
   English punctuation; end sentences with a full stop (.), not ।.
 - **Proper names** (Python, GitHub, Discourse, Mozilla) stay in Latin script.
+
+## Project and contribution terms
+
+| English | Telugu | Notes |
+|---------|--------|-------|
+| account | ఖాతా | |
+| bug | బగ్ | plural బగ్‌లు |
+| bug report | బగ్ రిపోర్ట్ | |
+| contribute | సహకరించు | |
+| contributor | సహకారి | |
+| core developer | కోర్ డెవలపర్ | |
+| developer | డెవలపర్ | plural డెవలపర్లు |
+| discussion | చర్చ | |
+| documentation | డాక్యుమెంటేషన్ | |
+| feature | ఫీచర్ | |
+| forum | ఫోరమ్ | |
+| guide | గైడ్ | |
+| improvement | మెరుగుదల | |
+| issue | ఇష్యూ | a tracker item; for "problem" use సమస్య |
+| issue tracker | ఇష్యూ ట్రాకర్ | |
+| log in | లాగిన్ అవ్వు | |
+| mailing list | మెయిలింగ్ లిస్ట్ | |
+| patch | ప్యాచ్ | |
+| problem | సమస్య | |
+| release | విడుదల | |
+| repository | రిపోజిటరీ | |
+| translation | అనువాదం | |
+| version | వెర్షన్ | |
