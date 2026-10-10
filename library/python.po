@@ -23,9 +23,14 @@ msgid "Python Runtime Services"
 msgstr ""
 
 #: library/python.rst:7
-msgid "The modules described in this chapter provide a wide range of services related to the Python interpreter and its interaction with its environment.  Here's an overview:"
+msgid ""
+"The modules described in this chapter provide a wide range of services "
+"related to the Python interpreter and its interaction with its environment.  "
+"Here's an overview:"
 msgstr ""
 
 #: library/python.rst:33
-msgid "See the :mod:`concurrent.interpreters` module, which similarly exposes core runtime functionality."
+msgid ""
+"See the :mod:`concurrent.interpreters` module, which similarly exposes core "
+"runtime functionality."
 msgstr ""

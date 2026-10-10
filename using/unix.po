@@ -31,11 +31,18 @@ msgid "On Linux"
 msgstr ""
 
 #: using/unix.rst:15
-msgid "Python comes preinstalled on most Linux distributions, and is available as a package on all others.  However there are certain features you might want to use that are not available on your distro's package.  You can compile the latest version of Python from source."
+msgid ""
+"Python comes preinstalled on most Linux distributions, and is available as a "
+"package on all others.  However there are certain features you might want to "
+"use that are not available on your distro's package.  You can compile the "
+"latest version of Python from source."
 msgstr ""
 
 #: using/unix.rst:20
-msgid "In the event that the latest version of Python doesn't come preinstalled and isn't in the repositories as well, you can make packages for your own distro.  Have a look at the following links:"
+msgid ""
+"In the event that the latest version of Python doesn't come preinstalled and "
+"isn't in the repositories as well, you can make packages for your own distro."
+"  Have a look at the following links:"
 msgstr ""
 
 #: using/unix.rst:26
@@ -55,7 +62,9 @@ msgid "for OpenSuse users"
 msgstr ""
 
 #: using/unix.rst:30
-msgid "https://docs.fedoraproject.org/en-US/package-maintainers/Packaging_Tutorial_GNU_Hello/"
+msgid ""
+"https://docs.fedoraproject.org/en-US/package-"
+"maintainers/Packaging_Tutorial_GNU_Hello/"
 msgstr ""
 
 #: using/unix.rst:31
@@ -83,7 +92,8 @@ msgid "For Debian and Ubuntu users::"
 msgstr ""
 
 #: using/unix.rst:44
-msgid "sudo apt update\n"
+msgid ""
+"sudo apt update\n"
 "sudo apt install idle"
 msgstr ""
 
@@ -128,7 +138,8 @@ msgid "OpenBSD users, to add the package use::"
 msgstr ""
 
 #: using/unix.rst:70
-msgid "pkg_add -r python\n"
+msgid ""
+"pkg_add -r python\n"
 "\n"
 "pkg_add ftp://ftp.openbsd.org/pub/OpenBSD/4.2/packages/<insert your architecture here>/python-<version>.tgz"
 msgstr ""
@@ -138,7 +149,9 @@ msgid "For example i386 users get the 2.5.1 version of Python using::"
 msgstr ""
 
 #: using/unix.rst:76
-msgid "pkg_add ftp://ftp.openbsd.org/pub/OpenBSD/4.2/packages/i386/python-2.5.1p2.tgz"
+msgid ""
+"pkg_add "
+"ftp://ftp.openbsd.org/pub/OpenBSD/4.2/packages/i386/python-2.5.1p2.tgz"
 msgstr ""
 
 #: using/unix.rst:82
@@ -146,11 +159,19 @@ msgid "Building Python"
 msgstr ""
 
 #: using/unix.rst:86
-msgid "If you want to contribute to CPython, refer to the `devguide <https://devguide.python.org/getting-started/setup-building/>`_, which includes build instructions and other tips on setting up environment."
+msgid ""
+"If you want to contribute to CPython, refer to the `devguide "
+"<https://devguide.python.org/getting-started/setup-building/>`_, which "
+"includes build instructions and other tips on setting up environment."
 msgstr ""
 
 #: using/unix.rst:90
-msgid "If you want to compile CPython yourself, first thing you should do is get the `source <https://www.python.org/downloads/source/>`_. You can download either the latest release's source or grab a fresh `clone <https://devguide.python.org/setup/#get-the-source-code>`_. You will also need to install the :ref:`build requirements <build-requirements>`."
+msgid ""
+"If you want to compile CPython yourself, first thing you should do is get the"
+" `source <https://www.python.org/downloads/source/>`_. You can download "
+"either the latest release's source or grab a fresh `clone "
+"<https://devguide.python.org/setup/#get-the-source-code>`_. You will also "
+"need to install the :ref:`build requirements <build-requirements>`."
 msgstr ""
 
 #: using/unix.rst:96
@@ -158,17 +179,24 @@ msgid "The build process consists of the usual commands::"
 msgstr ""
 
 #: using/unix.rst:98
-msgid "./configure\n"
+msgid ""
+"./configure\n"
 "make\n"
 "make install"
 msgstr ""
 
 #: using/unix.rst:102
-msgid ":ref:`Configuration options <configure-options>` and caveats for specific Unix platforms are extensively documented in the :source:`README.rst` file in the root of the Python source tree."
+msgid ""
+":ref:`Configuration options <configure-options>` and caveats for specific "
+"Unix platforms are extensively documented in the :source:`README.rst` file in"
+" the root of the Python source tree."
 msgstr ""
 
 #: using/unix.rst:108
-msgid "``make install`` can overwrite or masquerade the :file:`python3` binary. ``make altinstall`` is therefore recommended instead of ``make install`` since it only installs :file:`{exec_prefix}/bin/python{version}`."
+msgid ""
+"``make install`` can overwrite or masquerade the :file:`python3` binary. "
+"``make altinstall`` is therefore recommended instead of ``make install`` "
+"since it only installs :file:`{exec_prefix}/bin/python{version}`."
 msgstr ""
 
 #: using/unix.rst:114
@@ -176,11 +204,16 @@ msgid "Python-related paths and files"
 msgstr ""
 
 #: using/unix.rst:116
-msgid "These are subject to difference depending on local installation conventions; :option:`prefix <--prefix>` and :option:`exec_prefix <--exec-prefix>` are installation-dependent and should be interpreted as for GNU software; they may be the same."
+msgid ""
+"These are subject to difference depending on local installation conventions; "
+":option:`prefix <--prefix>` and :option:`exec_prefix <--exec-prefix>` are "
+"installation-dependent and should be interpreted as for GNU software; they "
+"may be the same."
 msgstr ""
 
 #: using/unix.rst:121
-msgid "For example, on most Linux systems, the default for both is :file:`/usr`."
+msgid ""
+"For example, on most Linux systems, the default for both is :file:`/usr`."
 msgstr ""
 
 #: using/unix.rst:124
@@ -200,19 +233,26 @@ msgid "Recommended location of the interpreter."
 msgstr ""
 
 #: using/unix.rst:128
-msgid ":file:`{prefix}/lib/python{version}`, :file:`{exec_prefix}/lib/python{version}`"
+msgid ""
+":file:`{prefix}/lib/python{version}`, "
+":file:`{exec_prefix}/lib/python{version}`"
 msgstr ""
 
 #: using/unix.rst:128
-msgid "Recommended locations of the directories containing the standard modules."
+msgid ""
+"Recommended locations of the directories containing the standard modules."
 msgstr ""
 
 #: using/unix.rst:131
-msgid ":file:`{prefix}/include/python{version}`, :file:`{exec_prefix}/include/python{version}`"
+msgid ""
+":file:`{prefix}/include/python{version}`, "
+":file:`{exec_prefix}/include/python{version}`"
 msgstr ""
 
 #: using/unix.rst:131
-msgid "Recommended locations of the directories containing the include files needed for developing Python extensions and embedding the interpreter."
+msgid ""
+"Recommended locations of the directories containing the include files needed "
+"for developing Python extensions and embedding the interpreter."
 msgstr ""
 
 #: using/unix.rst:139
@@ -220,7 +260,9 @@ msgid "Miscellaneous"
 msgstr ""
 
 #: using/unix.rst:141
-msgid "To easily use Python scripts on Unix, you need to make them executable, e.g. with"
+msgid ""
+"To easily use Python scripts on Unix, you need to make them executable, e.g. "
+"with"
 msgstr ""
 
 #: using/unix.rst:144
@@ -228,7 +270,9 @@ msgid "$ chmod +x script"
 msgstr ""
 
 #: using/unix.rst:148
-msgid "and put an appropriate Shebang line at the top of the script.  A good choice is usually ::"
+msgid ""
+"and put an appropriate Shebang line at the top of the script.  A good choice "
+"is usually ::"
 msgstr ""
 
 #: using/unix.rst:151
@@ -236,11 +280,16 @@ msgid "#!/usr/bin/env python3"
 msgstr ""
 
 #: using/unix.rst:153
-msgid "which searches for the Python interpreter in the whole :envvar:`PATH`.  However, some Unices may not have the :program:`env` command, so you may need to hardcode ``/usr/bin/python3`` as the interpreter path."
+msgid ""
+"which searches for the Python interpreter in the whole :envvar:`PATH`.  "
+"However, some Unices may not have the :program:`env` command, so you may need"
+" to hardcode ``/usr/bin/python3`` as the interpreter path."
 msgstr ""
 
 #: using/unix.rst:157
-msgid "To use shell commands in your Python scripts, look at the :mod:`subprocess` module."
+msgid ""
+"To use shell commands in your Python scripts, look at the :mod:`subprocess` "
+"module."
 msgstr ""
 
 #: using/unix.rst:162
@@ -248,20 +297,29 @@ msgid "Custom OpenSSL"
 msgstr ""
 
 #: using/unix.rst:164
-msgid "To use your vendor's OpenSSL configuration and system trust store, locate the directory with ``openssl.cnf`` file or symlink in ``/etc``. On most distribution the file is either in ``/etc/ssl`` or ``/etc/pki/tls``. The directory should also contain a ``cert.pem`` file and/or a ``certs`` directory."
+msgid ""
+"To use your vendor's OpenSSL configuration and system trust store, locate the"
+" directory with ``openssl.cnf`` file or symlink in ``/etc``. On most "
+"distribution the file is either in ``/etc/ssl`` or ``/etc/pki/tls``. The "
+"directory should also contain a ``cert.pem`` file and/or a ``certs`` "
+"directory."
 msgstr ""
 
 #: using/unix.rst:170
-msgid "$ find /etc/ -name openssl.cnf -printf \"%h\\n\"\n"
+msgid ""
+"$ find /etc/ -name openssl.cnf -printf \"%h\\n\"\n"
 "/etc/ssl"
 msgstr ""
 
 #: using/unix.rst:175
-msgid "Download, build, and install OpenSSL. Make sure you use ``install_sw`` and not ``install``. The ``install_sw`` target does not override ``openssl.cnf``."
+msgid ""
+"Download, build, and install OpenSSL. Make sure you use ``install_sw`` and "
+"not ``install``. The ``install_sw`` target does not override ``openssl.cnf``."
 msgstr ""
 
 #: using/unix.rst:179
-msgid "$ curl -O https://www.openssl.org/source/openssl-VERSION.tar.gz\n"
+msgid ""
+"$ curl -O https://www.openssl.org/source/openssl-VERSION.tar.gz\n"
 "$ tar xzf openssl-VERSION.tar.gz\n"
 "$ pushd openssl-VERSION\n"
 "$ ./config \\\n"
@@ -275,11 +333,14 @@ msgid "$ curl -O https://www.openssl.org/source/openssl-VERSION.tar.gz\n"
 msgstr ""
 
 #: using/unix.rst:193
-msgid "Build Python with custom OpenSSL (see the configure ``--with-openssl`` and ``--with-openssl-rpath`` options)"
+msgid ""
+"Build Python with custom OpenSSL (see the configure ``--with-openssl`` and "
+"``--with-openssl-rpath`` options)"
 msgstr ""
 
 #: using/unix.rst:196
-msgid "$ pushd python-3.x.x\n"
+msgid ""
+"$ pushd python-3.x.x\n"
 "$ ./configure -C \\\n"
 "    --with-openssl=/usr/local/custom-openssl \\\n"
 "    --with-openssl-rpath=auto \\\n"
@@ -289,5 +350,8 @@ msgid "$ pushd python-3.x.x\n"
 msgstr ""
 
 #: using/unix.rst:208
-msgid "Patch releases of OpenSSL have a backwards compatible ABI. You don't need to recompile Python to update OpenSSL. It's sufficient to replace the custom OpenSSL installation with a newer version."
+msgid ""
+"Patch releases of OpenSSL have a backwards compatible ABI. You don't need to "
+"recompile Python to update OpenSSL. It's sufficient to replace the custom "
+"OpenSSL installation with a newer version."
 msgstr ""

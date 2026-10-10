@@ -46,8 +46,7 @@ msgstr ""
 msgid "Show translation source"
 msgstr ""
 
-#: tools/templates/download.html:2
-#: tools/templates/indexsidebar.html:1
+#: tools/templates/download.html:2 tools/templates/indexsidebar.html:1
 msgid "Download"
 msgstr ""
 
@@ -60,7 +59,9 @@ msgid "Last updated on: %(last_updated)s."
 msgstr ""
 
 #: tools/templates/download.html:34
-msgid "Download an archive containing all the documentation for this version of Python:"
+msgid ""
+"Download an archive containing all the documentation for this version of "
+"Python:"
 msgstr ""
 
 #: tools/templates/download.html:38
@@ -84,7 +85,8 @@ msgid "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-html.zip\">Download</a>"
 msgstr ""
 
 #: tools/templates/download.html:45
-msgid "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-html.tar.bz2\">Download</a>"
+msgid ""
+"<a href=\"%(dl_base)s/python-%(dl_version)s-docs-html.tar.bz2\">Download</a>"
 msgstr ""
 
 #: tools/templates/download.html:48
@@ -96,7 +98,8 @@ msgid "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-text.zip\">Download</a>"
 msgstr ""
 
 #: tools/templates/download.html:50
-msgid "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-text.tar.bz2\">Download</a>"
+msgid ""
+"<a href=\"%(dl_base)s/python-%(dl_version)s-docs-text.tar.bz2\">Download</a>"
 msgstr ""
 
 #: tools/templates/download.html:53
@@ -108,7 +111,9 @@ msgid "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-texinfo.zip\">Download</
 msgstr ""
 
 #: tools/templates/download.html:55
-msgid "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-texinfo.tar.bz2\">Download</a>"
+msgid ""
+"<a href=\"%(dl_base)s/python-%(dl_version)s-docs-"
+"texinfo.tar.bz2\">Download</a>"
 msgstr ""
 
 #: tools/templates/download.html:58
@@ -120,16 +125,17 @@ msgid "<a href=\"%(dl_base)s/python-%(dl_version)s-docs.epub\">Download</a>"
 msgstr ""
 
 #: tools/templates/download.html:64
-msgid "\n"
+msgid ""
+"\n"
 "We no longer provide pre-built PDFs of the documentation.\n"
 "To build a PDF archive, follow the instructions in the\n"
 "<a href=\"https://devguide.python.org/documentation/start-documenting/#building-the-documentation\">Developer's Guide</a>\n"
 "and run <code>make dist-pdf</code> in the <code>Doc/</code> directory of a copy of the CPython repository.\n"
-""
 msgstr ""
 
 #: tools/templates/download.html:71
-msgid "\n"
+msgid ""
+"\n"
 "See the <a href=\"https://docs.python.org/%(version)s/archives/\">directory listing</a>\n"
 "for file sizes."
 msgstr ""
@@ -139,7 +145,8 @@ msgid "Problems"
 msgstr ""
 
 #: tools/templates/download.html:77
-msgid "<a href=\"%(bugs)s\">Open an issue</a>\n"
+msgid ""
+"<a href=\"%(bugs)s\">Open an issue</a>\n"
 "if you have comments or suggestions for the Python documentation."
 msgstr ""
 
@@ -248,7 +255,9 @@ msgid "What's new in Python %(version)s?"
 msgstr ""
 
 #: tools/templates/indexcontent.html:56
-msgid "Or <a href=\"%(whatsnew_index)s\">all \"What's new\" documents since Python 2.0</a>"
+msgid ""
+"Or <a href=\"%(whatsnew_index)s\">all \"What's new\" documents since Python "
+"2.0</a>"
 msgstr ""
 
 #: tools/templates/indexcontent.html:57
@@ -439,8 +448,7 @@ msgstr ""
 msgid "Contributing to docs"
 msgstr ""
 
-#: tools/templates/indexcontent.html:125
-#: tools/templates/indexsidebar.html:2
+#: tools/templates/indexcontent.html:125 tools/templates/indexsidebar.html:2
 msgid "Download the documentation"
 msgstr ""
 
@@ -465,7 +473,8 @@ msgid "All versions"
 msgstr ""
 
 #: tools/templates/layout.html:6
-msgid "This document is for an old version of Python that is no longer supported.\n"
+msgid ""
+"This document is for an old version of Python that is no longer supported.\n"
 "    You should upgrade, and read the"
 msgstr ""
 
@@ -474,7 +483,8 @@ msgid "Python documentation for the current stable release"
 msgstr ""
 
 #: tools/templates/layout.html:14
-msgid "This is a deploy preview created from a <a href=\"%(repository_url)s/pull/%(pr_id)s\">pull request</a>.\n"
+msgid ""
+"This is a deploy preview created from a <a href=\"%(repository_url)s/pull/%(pr_id)s\">pull request</a>.\n"
 "  For authoritative documentation, see"
 msgstr ""
 

@@ -31,11 +31,15 @@ msgid "There are no public members in this structure."
 msgstr ""
 
 #: c-api/frame.rst:12
-msgid "The members of this structure were removed from the public C API. Refer to the :ref:`What's New entry <pyframeobject-3.11-hiding>` for details."
+msgid ""
+"The members of this structure were removed from the public C API. Refer to "
+"the :ref:`What's New entry <pyframeobject-3.11-hiding>` for details."
 msgstr ""
 
 #: c-api/frame.rst:17
-msgid "The :c:func:`PyEval_GetFrame` and :c:func:`PyThreadState_GetFrame` functions can be used to get a frame object."
+msgid ""
+"The :c:func:`PyEval_GetFrame` and :c:func:`PyThreadState_GetFrame` functions "
+"can be used to get a frame object."
 msgstr ""
 
 #: c-api/frame.rst:20
@@ -43,15 +47,21 @@ msgid "See also :ref:`Reflection <reflection>`."
 msgstr ""
 
 #: c-api/frame.rst:24
-msgid "The type of frame objects. It is the same object as :py:class:`types.FrameType` in the Python layer."
+msgid ""
+"The type of frame objects. It is the same object as "
+":py:class:`types.FrameType` in the Python layer."
 msgstr ""
 
 #: c-api/frame.rst:29
-msgid "Previously, this type was only available after including ``<frameobject.h>``."
+msgid ""
+"Previously, this type was only available after including ``<frameobject.h>``."
 msgstr ""
 
 #: c-api/frame.rst:34
-msgid "Create a new frame object. This function returns a :term:`strong reference` to the new frame object on success, and returns ``NULL`` with an exception set on failure."
+msgid ""
+"Create a new frame object. This function returns a :term:`strong reference` "
+"to the new frame object on success, and returns ``NULL`` with an exception "
+"set on failure."
 msgstr ""
 
 #: c-api/frame.rst:40
@@ -59,7 +69,9 @@ msgid "Return non-zero if *obj* is a frame object."
 msgstr ""
 
 #: c-api/frame.rst:44
-msgid "Previously, this function was only available after including ``<frameobject.h>``."
+msgid ""
+"Previously, this function was only available after including "
+"``<frameobject.h>``."
 msgstr ""
 
 #: c-api/frame.rst:49
@@ -67,15 +79,16 @@ msgid "Get the *frame* next outer frame."
 msgstr ""
 
 #: c-api/frame.rst:51
-msgid "Return a :term:`strong reference`, or ``NULL`` if *frame* has no outer frame. This raises no exceptions."
+msgid ""
+"Return a :term:`strong reference`, or ``NULL`` if *frame* has no outer frame."
+" This raises no exceptions."
 msgstr ""
 
 #: c-api/frame.rst:60
 msgid "Get the *frame*'s :attr:`~frame.f_builtins` attribute."
 msgstr ""
 
-#: c-api/frame.rst:62
-#: c-api/frame.rst:93
+#: c-api/frame.rst:62 c-api/frame.rst:93
 msgid "Return a :term:`strong reference`. The result cannot be ``NULL``."
 msgstr ""
 
@@ -83,8 +96,7 @@ msgstr ""
 msgid "Get the *frame* code."
 msgstr ""
 
-#: c-api/frame.rst:71
-#: c-api/frame.rst:135
+#: c-api/frame.rst:71 c-api/frame.rst:135
 msgid "Return a :term:`strong reference`."
 msgstr ""
 
@@ -93,7 +105,10 @@ msgid "The result (frame code) cannot be ``NULL``."
 msgstr ""
 
 #: c-api/frame.rst:80
-msgid "Get the generator, coroutine, or async generator that owns this frame, or ``NULL`` if this frame is not owned by a generator. Does not raise an exception, even if the return value is ``NULL``."
+msgid ""
+"Get the generator, coroutine, or async generator that owns this frame, or "
+"``NULL`` if this frame is not owned by a generator. Does not raise an "
+"exception, even if the return value is ``NULL``."
 msgstr ""
 
 #: c-api/frame.rst:84
@@ -117,7 +132,8 @@ msgid "Return a :term:`strong reference` to the variable value on success."
 msgstr ""
 
 #: c-api/frame.rst:110
-msgid "Raise :exc:`NameError` and return ``NULL`` if the variable does not exist."
+msgid ""
+"Raise :exc:`NameError` and return ``NULL`` if the variable does not exist."
 msgstr ""
 
 #: c-api/frame.rst:111
@@ -129,15 +145,24 @@ msgid "*name* type must be a :class:`str`."
 msgstr ""
 
 #: c-api/frame.rst:120
-msgid "Similar to :c:func:`PyFrame_GetVar`, but the variable name is a C string encoded in UTF-8."
+msgid ""
+"Similar to :c:func:`PyFrame_GetVar`, but the variable name is a C string "
+"encoded in UTF-8."
 msgstr ""
 
 #: c-api/frame.rst:128
-msgid "Get the *frame*'s :attr:`~frame.f_locals` attribute. If the frame refers to an :term:`optimized scope`, this returns a write-through proxy object that allows modifying the locals. In all other cases (classes, modules, :func:`exec`, :func:`eval`) it returns the mapping representing the frame locals directly (as described for :func:`locals`)."
+msgid ""
+"Get the *frame*'s :attr:`~frame.f_locals` attribute. If the frame refers to "
+"an :term:`optimized scope`, this returns a write-through proxy object that "
+"allows modifying the locals. In all other cases (classes, modules, "
+":func:`exec`, :func:`eval`) it returns the mapping representing the frame "
+"locals directly (as described for :func:`locals`)."
 msgstr ""
 
 #: c-api/frame.rst:139
-msgid "As part of :pep:`667`, return an instance of :c:var:`PyFrameLocalsProxy_Type`."
+msgid ""
+"As part of :pep:`667`, return an instance of "
+":c:var:`PyFrameLocalsProxy_Type`."
 msgstr ""
 
 #: c-api/frame.rst:145
@@ -149,7 +174,12 @@ msgid "Frame locals proxies"
 msgstr ""
 
 #: c-api/frame.rst:153
-msgid "The :attr:`~frame.f_locals` attribute on a :ref:`frame object <frame-objects>` is an instance of a \"frame-locals proxy\". The proxy object exposes a write-through view of the underlying locals dictionary for the frame. This ensures that the variables exposed by ``f_locals`` are always up to date with the live local variables in the frame itself."
+msgid ""
+"The :attr:`~frame.f_locals` attribute on a :ref:`frame object <frame-"
+"objects>` is an instance of a \"frame-locals proxy\". The proxy object "
+"exposes a write-through view of the underlying locals dictionary for the "
+"frame. This ensures that the variables exposed by ``f_locals`` are always up "
+"to date with the live local variables in the frame itself."
 msgstr ""
 
 #: c-api/frame.rst:159
@@ -169,25 +199,37 @@ msgid "Legacy local variable APIs"
 msgstr ""
 
 #: c-api/frame.rst:173
-msgid "These APIs are :term:`soft deprecated`. As of Python 3.13, they do nothing. They exist solely for backwards compatibility."
+msgid ""
+"These APIs are :term:`soft deprecated`. As of Python 3.13, they do nothing. "
+"They exist solely for backwards compatibility."
 msgstr ""
 
 #: c-api/frame.rst:179
-msgid "Prior to Python 3.13, this function would copy the :attr:`~frame.f_locals` attribute of *f* to the internal \"fast\" array of local variables, allowing changes in frame objects to be visible to the interpreter. If *clear* was true, this function would process variables that were unset in the locals dictionary."
+msgid ""
+"Prior to Python 3.13, this function would copy the :attr:`~frame.f_locals` "
+"attribute of *f* to the internal \"fast\" array of local variables, allowing "
+"changes in frame objects to be visible to the interpreter. If *clear* was "
+"true, this function would process variables that were unset in the locals "
+"dictionary."
 msgstr ""
 
-#: c-api/frame.rst:185
-#: c-api/frame.rst:196
-#: c-api/frame.rst:206
+#: c-api/frame.rst:185 c-api/frame.rst:196 c-api/frame.rst:206
 msgid "This function now does nothing."
 msgstr ""
 
 #: c-api/frame.rst:191
-msgid "Prior to Python 3.13, this function would copy the internal \"fast\" array of local variables (which is used by the interpreter) to the :attr:`~frame.f_locals` attribute of *f*, allowing changes in local variables to be visible to frame objects."
+msgid ""
+"Prior to Python 3.13, this function would copy the internal \"fast\" array of"
+" local variables (which is used by the interpreter) to the "
+":attr:`~frame.f_locals` attribute of *f*, allowing changes in local variables"
+" to be visible to frame objects."
 msgstr ""
 
 #: c-api/frame.rst:202
-msgid "Prior to Python 3.13, this function was similar to :c:func:`PyFrame_FastToLocals`, but would return ``0`` on success, and ``-1`` with an exception set on failure."
+msgid ""
+"Prior to Python 3.13, this function was similar to "
+":c:func:`PyFrame_FastToLocals`, but would return ``0`` on success, and ``-1``"
+" with an exception set on failure."
 msgstr ""
 
 #: c-api/frame.rst:211
@@ -215,15 +257,21 @@ msgid "Return the byte offset into the last executed instruction."
 msgstr ""
 
 #: c-api/frame.rst:241
-msgid "Return the currently executing line number, or -1 if there is no line number."
+msgid ""
+"Return the currently executing line number, or -1 if there is no line number."
 msgstr ""
 
 #: c-api/frame.rst:248
-msgid "An array of executable kinds (executor types) for frames, used for internal debugging and tracing."
+msgid ""
+"An array of executable kinds (executor types) for frames, used for internal "
+"debugging and tracing."
 msgstr ""
 
 #: c-api/frame.rst:251
-msgid "Tools like debuggers and profilers can use this to identify the type of execution context associated with a frame (such as to filter out internal frames). The entries are indexed by the following constants:"
+msgid ""
+"Tools like debuggers and profilers can use this to identify the type of "
+"execution context associated with a frame (such as to filter out internal "
+"frames). The entries are indexed by the following constants:"
 msgstr ""
 
 #: c-api/frame.rst:259
@@ -235,7 +283,8 @@ msgid "Description"
 msgstr ""
 
 #: c-api/frame.rst:262
-msgid "The frame is internal (For example: inlined) and should be skipped by tools."
+msgid ""
+"The frame is internal (For example: inlined) and should be skipped by tools."
 msgstr ""
 
 #: c-api/frame.rst:264
@@ -251,7 +300,9 @@ msgid "The frame corresponds to a method on a class instance."
 msgstr ""
 
 #: c-api/frame.rst:270
-msgid "Note that reading the executable kind from a frame is currently only possible with undocumented internal APIs."
+msgid ""
+"Note that reading the executable kind from a frame is currently only possible"
+" with undocumented internal APIs."
 msgstr ""
 
 #: c-api/frame.rst:278

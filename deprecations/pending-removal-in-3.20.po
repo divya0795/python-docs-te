@@ -23,15 +23,23 @@ msgid "Pending removal in Python 3.20"
 msgstr ""
 
 #: deprecations/pending-removal-in-3.20.rst:4
-msgid "Calling the ``__new__()`` method of :class:`struct.Struct` without the *format* argument is deprecated and will be removed in Python 3.20.  Calling :meth:`~object.__init__` method on initialized :class:`~struct.Struct` objects is deprecated and will be removed in Python 3.20."
+msgid ""
+"Calling the ``__new__()`` method of :class:`struct.Struct` without the "
+"*format* argument is deprecated and will be removed in Python 3.20.  Calling "
+":meth:`~object.__init__` method on initialized :class:`~struct.Struct` "
+"objects is deprecated and will be removed in Python 3.20."
 msgstr ""
 
 #: deprecations/pending-removal-in-3.20.rst:9
-msgid "(Contributed by Sergey B Kirpichev and Serhiy Storchaka in :gh:`143715`.)"
+msgid ""
+"(Contributed by Sergey B Kirpichev and Serhiy Storchaka in :gh:`143715`.)"
 msgstr ""
 
 #: deprecations/pending-removal-in-3.20.rst:11
-msgid "The ``__version__``, ``version`` and ``VERSION`` attributes have been deprecated in these standard library modules and will be removed in Python 3.20. Use :py:data:`sys.version_info` instead."
+msgid ""
+"The ``__version__``, ``version`` and ``VERSION`` attributes have been "
+"deprecated in these standard library modules and will be removed in Python "
+"3.20. Use :py:data:`sys.version_info` instead."
 msgstr ""
 
 #: deprecations/pending-removal-in-3.20.rst:15
@@ -139,11 +147,14 @@ msgid "Deprecations defined by :pep:`829`:"
 msgstr ""
 
 #: deprecations/pending-removal-in-3.20.rst:44
-msgid "Warnings are produced for ``import`` lines found in :file:`{name}.pth` files."
+msgid ""
+"Warnings are produced for ``import`` lines found in :file:`{name}.pth` files."
 msgstr ""
 
 #: deprecations/pending-removal-in-3.20.rst:47
-msgid ":file:`{name}.pth` files are no longer decoded in the locale encoding by default.  They **MUST** be encoded in ``utf-8-sig``."
+msgid ""
+":file:`{name}.pth` files are no longer decoded in the locale encoding by "
+"default.  They **MUST** be encoded in ``utf-8-sig``."
 msgstr ""
 
 #: deprecations/pending-removal-in-3.20.rst:50
@@ -155,7 +166,9 @@ msgid ":mod:`ast`:"
 msgstr ""
 
 #: deprecations/pending-removal-in-3.20.rst:54
-msgid "Creating instances of abstract AST nodes (such as :class:`ast.AST` or :class:`!ast.expr`) is deprecated and will raise an error in Python 3.20."
+msgid ""
+"Creating instances of abstract AST nodes (such as :class:`ast.AST` or "
+":class:`!ast.expr`) is deprecated and will raise an error in Python 3.20."
 msgstr ""
 
 #: deprecations/pending-removal-in-3.20.rst:57
@@ -163,7 +176,11 @@ msgid ":mod:`typing`:"
 msgstr ""
 
 #: deprecations/pending-removal-in-3.20.rst:59
-msgid "It is deprecated to call :func:`isinstance` and :func:`issubclass` checks on protocol classes that were not explicitly decorated with :func:`!runtime_checkable` but that inherit from a runtime-checkable protocol class. This will raise a :exc:`TypeError` in Python 3.20."
+msgid ""
+"It is deprecated to call :func:`isinstance` and :func:`issubclass` checks on "
+"protocol classes that were not explicitly decorated with "
+":func:`!runtime_checkable` but that inherit from a runtime-checkable protocol"
+" class. This will raise a :exc:`TypeError` in Python 3.20."
 msgstr ""
 
 #: deprecations/pending-removal-in-3.20.rst:64

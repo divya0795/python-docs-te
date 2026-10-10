@@ -23,7 +23,9 @@ msgid "Program frameworks"
 msgstr ""
 
 #: library/frameworks.rst:9
-msgid "This chapter is no longer maintained, and the modules it contained have been moved to their respective topical documentation."
+msgid ""
+"This chapter is no longer maintained, and the modules it contained have been "
+"moved to their respective topical documentation."
 msgstr ""
 
 #: library/frameworks.rst:11

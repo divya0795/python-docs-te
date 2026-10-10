@@ -31,7 +31,8 @@ msgid "1.13"
 msgstr ""
 
 #: howto/timerfd.rst:9
-msgid "This HOWTO discusses Python's support for the linux timer file descriptor."
+msgid ""
+"This HOWTO discusses Python's support for the linux timer file descriptor."
 msgstr ""
 
 #: howto/timerfd.rst:13
@@ -39,11 +40,14 @@ msgid "Examples"
 msgstr ""
 
 #: howto/timerfd.rst:15
-msgid "The following example shows how to use a timer file descriptor to execute a function twice a second:"
+msgid ""
+"The following example shows how to use a timer file descriptor to execute a "
+"function twice a second:"
 msgstr ""
 
 #: howto/timerfd.rst:18
-msgid "# Practical scripts should use really use a non-blocking timer,\n"
+msgid ""
+"# Practical scripts should use really use a non-blocking timer,\n"
 "# we use a blocking timer here for simplicity.\n"
 "import os, time\n"
 "\n"
@@ -65,15 +69,21 @@ msgid "# Practical scripts should use really use a non-blocking timer,\n"
 msgstr ""
 
 #: howto/timerfd.rst:40
-msgid "To avoid the precision loss caused by the :class:`float` type, timer file descriptors allow specifying initial expiration and interval in integer nanoseconds with ``_ns`` variants of the functions."
+msgid ""
+"To avoid the precision loss caused by the :class:`float` type, timer file "
+"descriptors allow specifying initial expiration and interval in integer "
+"nanoseconds with ``_ns`` variants of the functions."
 msgstr ""
 
 #: howto/timerfd.rst:44
-msgid "This example shows how :func:`~select.epoll` can be used with timer file descriptors to wait until the file descriptor is ready for reading:"
+msgid ""
+"This example shows how :func:`~select.epoll` can be used with timer file "
+"descriptors to wait until the file descriptor is ready for reading:"
 msgstr ""
 
 #: howto/timerfd.rst:47
-msgid "import os, time, select, socket, sys\n"
+msgid ""
+"import os, time, select, socket, sys\n"
 "\n"
 "# Create an epoll object\n"
 "ep = select.epoll()\n"
@@ -179,11 +189,14 @@ msgid "import os, time, select, socket, sys\n"
 msgstr ""
 
 #: howto/timerfd.rst:153
-msgid "This example shows how :func:`~select.select` can be used with timer file descriptors to wait until the file descriptor is ready for reading:"
+msgid ""
+"This example shows how :func:`~select.select` can be used with timer file "
+"descriptors to wait until the file descriptor is ready for reading:"
 msgstr ""
 
 #: howto/timerfd.rst:156
-msgid "import os, time, select, socket, sys\n"
+msgid ""
+"import os, time, select, socket, sys\n"
 "\n"
 "# In this example, use loopback address to send \"stop\" command to the server.\n"
 "#\n"
