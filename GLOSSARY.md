@@ -50,3 +50,40 @@ Agree on new terms in an issue or PR before using them widely.
 | repository | రిపోజిటరీ | |
 | translation | అనువాదం | |
 | version | వెర్షన్ | |
+
+## Core programming terms
+
+| English | Telugu | Notes |
+|---------|--------|-------|
+| argument | ఆర్గ్యుమెంట్ | |
+| attribute | అట్రిబ్యూట్ | |
+| built-in | బిల్ట్-ఇన్ | e.g. బిల్ట్-ఇన్ ఫంక్షన్ |
+| class | క్లాస్ | |
+| code | కోడ్ | |
+| command | కమాండ్ | |
+| command line | కమాండ్ లైన్ | |
+| exception | ఎక్సెప్షన్ | |
+| error | లోపం | names like `SyntaxError` stay in English |
+| expression | ఎక్స్‌ప్రెషన్ | |
+| extension module | ఎక్స్‌టెన్షన్ మాడ్యూల్ | |
+| function | ఫంక్షన్ | |
+| interpreter | ఇంటర్‌ప్రెటర్ | |
+| keyword | కీవర్డ్ | |
+| loop | లూప్ | |
+| method | మెథడ్ | |
+| module | మాడ్యూల్ | |
+| object | ఆబ్జెక్ట్ | |
+| operator | ఆపరేటర్ | |
+| package | ప్యాకేజీ | |
+| parameter | పారామీటర్ | |
+| program | ప్రోగ్రామ్ | |
+| programming language | ప్రోగ్రామింగ్ భాష | |
+| prompt | ప్రాంప్ట్ | |
+| script | స్క్రిప్ట్ | |
+| source code | సోర్స్ కోడ్ | |
+| standard library | స్టాండర్డ్ లైబ్రరీ | |
+| statement | స్టేట్‌మెంట్ | |
+| syntax | సింటాక్స్ | |
+| tutorial | ట్యుటోరియల్ | |
+| value | విలువ | |
+| variable | వేరియబుల్ | |
