@@ -130,3 +130,40 @@ Agree on new terms in an issue or PR before using them widely.
 | string | స్ట్రింగ్ | |
 | tuple | టపుల్ | |
 | virtual environment | వర్చువల్ ఎన్విరాన్‌మెంట్ | |
+
+## Tutorial terms
+
+| English | Telugu | Notes |
+|---------|--------|-------|
+| activate / deactivate | యాక్టివేట్ / డీయాక్టివేట్ చేయు | |
+| application | అప్లికేషన్ | |
+| call (a function) | కాల్ చేయు | |
+| character | అక్షరం | |
+| comment (in code) | కామెంట్ | |
+| compile | కంపైల్ చేయు | |
+| completion | కంప్లీషన్ | as in tab completion |
+| data structure | డేటా స్ట్రక్చర్ | |
+| data type | డేటా టైప్ | |
+| default | డిఫాల్ట్ | డిఫాల్ట్‌గా = by default |
+| encoding | ఎన్‌కోడింగ్ | |
+| environment | ఎన్విరాన్‌మెంట్ | |
+| error message | లోప సందేశం | |
+| executable | ఎగ్జిక్యూటబుల్ | |
+| execute | అమలు చేయు | |
+| exit status | ఎగ్జిట్ స్టేటస్ | |
+| high-level | ఉన్నత-స్థాయి | |
+| history (command history) | హిస్టరీ | |
+| import | ఇంపోర్ట్ చేయు | |
+| indentation | ఇండెంటేషన్ | |
+| interactive mode | ఇంటరాక్టివ్ మోడ్ | |
+| library | లైబ్రరీ | |
+| option (command-line) | ఆప్షన్ | |
+| path | పాత్ | |
+| primary / secondary prompt | ప్రైమరీ / సెకండరీ ప్రాంప్ట్ | |
+| run | రన్ చేయు | |
+| shell | షెల్ | |
+| stack trace | స్టాక్ ట్రేస్ | |
+| standard input / output / error | స్టాండర్డ్ ఇన్‌పుట్ / అవుట్‌పుట్ / ఎర్రర్ | names of streams |
+| third-party | థర్డ్-పార్టీ | |
+| upgrade | అప్‌గ్రేడ్ చేయు | |
+| user | వినియోగదారు | "user directory" → యూజర్ డైరెక్టరీ |
