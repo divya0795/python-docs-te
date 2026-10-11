@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-10-11 10:38-0700\n"
+"Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: bugs.rst:5
 msgid "Dealing with Bugs"
-msgstr ""
+msgstr "బగ్‌లతో వ్యవహరించడం"
 
 #: bugs.rst:7
 msgid ""
@@ -28,6 +28,9 @@ msgid ""
 "for stability.  In order to maintain this reputation, the developers would "
 "like to know of any deficiencies you find in Python."
 msgstr ""
+"Python స్థిరత్వానికి పేరుపొందిన, పరిణతి చెందిన ప్రోగ్రామింగ్ భాష. ఈ పేరును "
+"నిలబెట్టుకోవడానికి, Pythonలో మీరు గమనించే ఏ లోపాల గురించైనా తెలుసుకోవాలని "
+"డెవలపర్లు కోరుకుంటారు."
 
 #: bugs.rst:11
 msgid ""
@@ -35,10 +38,13 @@ msgid ""
 "Python as it streamlines the process and involves fewer people. Learn how to "
 ":ref:`contribute <contributing-to-python>`."
 msgstr ""
+"కొన్నిసార్లు బగ్‌లను మీరే సరిచేసి Pythonకు ప్యాచ్‌లను అందించడం వేగంగా "
+"ఉంటుంది, ఎందుకంటే అది ప్రక్రియను సులభతరం చేస్తుంది మరియు తక్కువ మంది ఇందులో "
+"పాల్గొంటారు. :ref:`ఎలా సహకరించాలో <contributing-to-python>` తెలుసుకోండి."
 
 #: bugs.rst:19
 msgid "Documentation bugs"
-msgstr ""
+msgstr "డాక్యుమెంటేషన్ బగ్‌లు"
 
 #: bugs.rst:21
 msgid ""
@@ -47,6 +53,10 @@ msgid ""
 "the-tracker>`.  If you have a suggestion on how to fix it, include that as "
 "well."
 msgstr ""
+"ఈ డాక్యుమెంటేషన్‌లో మీకు బగ్ కనిపించినా లేదా ఏదైనా మెరుగుదలను "
+"ప్రతిపాదించాలనుకున్నా, దయచేసి :ref:`ఇష్యూ ట్రాకర్‌లో <using-the-tracker>` బగ్"
+" రిపోర్ట్ సమర్పించండి. దాన్ని ఎలా సరిచేయాలో మీకు ఏదైనా సూచన ఉంటే, దాన్ని కూడా"
+" చేర్చండి."
 
 #: bugs.rst:27
 msgid ""
@@ -54,12 +64,18 @@ msgid ""
 "documentation, submit the report to the `translation’s repository "
 "<TRANSLATION_REPO_>`_ instead."
 msgstr ""
+"బగ్ లేదా మీరు సూచించే మెరుగుదల ఈ డాక్యుమెంటేషన్ అనువాదానికి సంబంధించినదైతే, "
+"రిపోర్ట్‌ను బదులుగా `అనువాద రిపోజిటరీ ఇష్యూ ట్రాకర్‌కు "
+"<https://github.com/python/python-docs-te/issues>`__ సమర్పించండి. #noqa"
 
 #: bugs.rst:31
 msgid ""
 "You can also open a discussion item on our `Documentation Discourse forum "
 "<https://discuss.python.org/c/documentation/26>`_."
 msgstr ""
+"మీరు మా `డాక్యుమెంటేషన్ Discourse ఫోరమ్‌లో "
+"<https://discuss.python.org/c/documentation/26>`_ ఒక చర్చను కూడా "
+"ప్రారంభించవచ్చు."
 
 #: bugs.rst:34
 msgid ""
@@ -67,37 +83,42 @@ msgid ""
 "documentation, please submit a bug report on the `python-doc-theme issue "
 "tracker <https://github.com/python/python-docs-theme>`_."
 msgstr ""
+"డాక్యుమెంటేషన్ థీమ్‌లో (HTML / CSS / JavaScript) మీకు బగ్ కనిపిస్తే, దయచేసి "
+"`python-doc-theme ఇష్యూ ట్రాకర్‌లో <https://github.com/python/python-docs-"
+"theme>`_ బగ్ రిపోర్ట్ సమర్పించండి."
 
 #: bugs.rst:40
 msgid "`Documentation bugs`_"
-msgstr ""
+msgstr "`డాక్యుమెంటేషన్ బగ్‌లు <Documentation bugs_>`__ #noqa"
 
 #: bugs.rst:41
 msgid ""
 "A list of documentation bugs that have been submitted to the Python issue "
 "tracker."
-msgstr ""
+msgstr "Python ఇష్యూ ట్రాకర్‌కు సమర్పించిన డాక్యుమెంటేషన్ బగ్‌ల జాబితా."
 
 #: bugs.rst:43
 msgid "`Issue Tracking <https://devguide.python.org/tracker/>`_"
-msgstr ""
+msgstr "`ఇష్యూ ట్రాకింగ్ <https://devguide.python.org/tracker/>`_"
 
 #: bugs.rst:44
 msgid ""
 "Overview of the process involved in reporting an improvement on the tracker."
-msgstr ""
+msgstr "ట్రాకర్‌లో ఒక మెరుగుదలను రిపోర్ట్ చేసే ప్రక్రియ యొక్క అవలోకనం."
 
 #: bugs.rst:46
 msgid ""
 "`Helping with Documentation <https://devguide.python.org/docquality/#helping-"
 "with-documentation>`_"
 msgstr ""
+"`డాక్యుమెంటేషన్‌లో సహాయం చేయడం "
+"<https://devguide.python.org/docquality/#helping-with-documentation>`_"
 
 #: bugs.rst:47
 msgid ""
 "Comprehensive guide for individuals that are interested in contributing to "
 "Python documentation."
-msgstr ""
+msgstr "Python డాక్యుమెంటేషన్‌కు సహకరించాలనే ఆసక్తి ఉన్నవారి కోసం సమగ్ర గైడ్."
 
 #: bugs.rst:49
 msgid ""
@@ -105,12 +126,15 @@ msgid ""
 "<https://devguide.python.org/documentation/translations/translating/#translation-"
 "coordinators>`_"
 msgstr ""
+"`డాక్యుమెంటేషన్ అనువాదాలు "
+"<https://devguide.python.org/documentation/translations/translating/#translation-"
+"coordinators>`_"
 
 #: bugs.rst:50
 msgid ""
 "A list of GitHub pages for documentation translation and their coordination "
 "teams."
-msgstr ""
+msgstr "డాక్యుమెంటేషన్ అనువాదాల GitHub పేజీలు మరియు వాటి సమన్వయ బృందాల జాబితా."
 
 #: bugs.rst:56
 msgid "Using the Python issue tracker"
