@@ -87,3 +87,26 @@ Agree on new terms in an issue or PR before using them widely.
 | tutorial | ట్యుటోరియల్ | |
 | value | విలువ | |
 | variable | వేరియబుల్ | |
+
+## Data types, files and environment
+
+| English | Telugu | Notes |
+|---------|--------|-------|
+| dictionary | డిక్షనరీ | |
+| directory | డైరెక్టరీ | |
+| environment variable | ఎన్విరాన్‌మెంట్ వేరియబుల్ | |
+| file | ఫైల్ | |
+| floating-point number | ఫ్లోటింగ్-పాయింట్ సంఖ్య | |
+| hardware | హార్డ్‌వేర్ | |
+| input / output | ఇన్‌పుట్ / అవుట్‌పుట్ | |
+| install | ఇన్‌స్టాల్ చేయు | |
+| integer | పూర్ణాంకం | |
+| list | లిస్ట్ | the Python type; for a general list use జాబితా |
+| number | సంఖ్య | |
+| operating system | ఆపరేటింగ్ సిస్టమ్ | |
+| platform | ప్లాట్‌ఫామ్ | |
+| set | సెట్ | |
+| software | సాఫ్ట్‌వేర్ | |
+| string | స్ట్రింగ్ | |
+| tuple | టపుల్ | |
+| virtual environment | వర్చువల్ ఎన్విరాన్‌మెంట్ | |
