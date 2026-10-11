@@ -22,6 +22,13 @@ Agree on new terms in an issue or PR before using them widely.
 - **Numbers and punctuation:** use Western digits (0–9) and the usual
   English punctuation; end sentences with a full stop (.), not ।.
 - **Proper names** (Python, GitHub, Discourse, Mozilla) stay in Latin script.
+- **Suffixes next to markup:** reST ignores a link, role or literal whose
+  closing mark is directly followed by a letter, so a Telugu suffix must
+  never be glued to it.
+  - For links and roles, put the suffix inside the link text:
+    ``:ref:`ఇష్యూ ట్రాకర్‌లో <using-the-tracker>` `` (not `` `ఇష్యూ ట్రాకర్ <…>`లో ``).
+  - For ``` ``code`` ``` add an escaped space, which renders as nothing:
+    ``` ``print()``\ ను ```.
 
 ## Project and contribution terms
 
