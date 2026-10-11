@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-10-11 10:38-0700\n"
+"PO-Revision-Date: 2026-10-11 10:49-0700\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -138,7 +138,7 @@ msgstr "డాక్యుమెంటేషన్ అనువాదాల GitH
 
 #: bugs.rst:56
 msgid "Using the Python issue tracker"
-msgstr ""
+msgstr "Python ఇష్యూ ట్రాకర్‌ను ఉపయోగించడం"
 
 #: bugs.rst:58
 msgid ""
@@ -147,6 +147,10 @@ msgid ""
 " offers a web form which allows pertinent information to be entered and "
 "submitted to the developers."
 msgstr ""
+"Pythonకు సంబంధించిన ఇష్యూ రిపోర్ట్‌లను GitHub ఇష్యూస్ ట్రాకర్ "
+"(https://github.com/python/cpython/issues) ద్వారా సమర్పించాలి. GitHub ఇష్యూస్"
+" ట్రాకర్ ఒక వెబ్ ఫారమ్‌ను అందిస్తుంది, దాని ద్వారా సంబంధిత సమాచారాన్ని నమోదు "
+"చేసి డెవలపర్లకు సమర్పించవచ్చు."
 
 #: bugs.rst:63
 msgid ""
@@ -158,6 +162,12 @@ msgid ""
 "can!). To do this, search the tracker using the search box at the top of the "
 "page."
 msgstr ""
+"రిపోర్ట్ దాఖలు చేయడంలో మొదటి అడుగు, ఆ సమస్య ఇప్పటికే రిపోర్ట్ అయిందో లేదో "
+"నిర్ధారించుకోవడం. ఇలా చేయడం వల్ల డెవలపర్ల సమయం ఆదా అవ్వడమే కాకుండా, దాన్ని "
+"సరిచేయడానికి ఇప్పటివరకు ఏమి చేశారో మీకు తెలుస్తుంది; ఆ సమస్య తదుపరి విడుదల "
+"కోసం ఇప్పటికే సరిచేయబడి ఉండవచ్చు, లేదా మరింత సమాచారం అవసరం కావచ్చు "
+"(అలాంటప్పుడు మీకు వీలైతే ఆ సమాచారం అందించడానికి మీకు స్వాగతం!). ఇందుకోసం, "
+"పేజీ పైభాగంలో ఉన్న సెర్చ్ బాక్స్‌ను ఉపయోగించి ట్రాకర్‌లో వెతకండి."
 
 #: bugs.rst:70
 msgid ""
@@ -165,22 +175,30 @@ msgid ""
 " If you don't already have a GitHub account, create a new account using the "
 "\"Sign up\" link. It is not possible to submit a bug report anonymously."
 msgstr ""
+"మీరు రిపోర్ట్ చేస్తున్న సమస్య ఇప్పటికే జాబితాలో లేకపోతే, GitHubకు లాగిన్ "
+"అవ్వండి. మీకు ఇంకా GitHub ఖాతా లేకపోతే, \"Sign up\" లింక్‌ను ఉపయోగించి కొత్త "
+"ఖాతాను సృష్టించండి. అజ్ఞాతంగా (anonymous) బగ్ రిపోర్ట్ సమర్పించడం సాధ్యం "
+"కాదు."
 
 #: bugs.rst:75
 msgid ""
 "Being now logged in, you can submit an issue. Click on the \"New issue\" "
 "button in the top bar to report a new issue."
 msgstr ""
+"లాగిన్ అయిన తర్వాత, మీరు ఇష్యూను సమర్పించవచ్చు. కొత్త ఇష్యూను రిపోర్ట్ "
+"చేయడానికి పై బార్‌లో ఉన్న \"New issue\" బటన్‌పై క్లిక్ చేయండి."
 
 #: bugs.rst:78
 msgid "The submission form has two fields, \"Title\" and \"Comment\"."
-msgstr ""
+msgstr "సమర్పణ ఫారమ్‌లో \"Title\" మరియు \"Comment\" అనే రెండు ఫీల్డ్‌లు ఉంటాయి."
 
 #: bugs.rst:80
 msgid ""
 "For the \"Title\" field, enter a *very* short description of the problem; "
 "fewer than ten words is good."
 msgstr ""
+"\"Title\" ఫీల్డ్‌లో సమస్య గురించి *చాలా* చిన్న వివరణను నమోదు చేయండి; పది పదాల"
+" కంటే తక్కువ ఉంటే మంచిది."
 
 #: bugs.rst:83
 msgid ""
@@ -189,6 +207,10 @@ msgid ""
 "extension modules were involved, and what hardware and software platform you "
 "were using (including version information as appropriate)."
 msgstr ""
+"\"Comment\" ఫీల్డ్‌లో, ఏమి జరుగుతుందని మీరు ఆశించారో, వాస్తవంగా ఏమి జరిగిందో "
+"సహా సమస్యను వివరంగా వర్ణించండి. ఏవైనా ఎక్స్‌టెన్షన్ మాడ్యూల్‌ల ప్రమేయం ఉందో "
+"లేదో, మరియు మీరు ఏ హార్డ్‌వేర్, సాఫ్ట్‌వేర్ ప్లాట్‌ఫామ్‌ను ఉపయోగిస్తున్నారో "
+"(తగిన చోట వెర్షన్ సమాచారంతో సహా) తప్పకుండా చేర్చండి."
 
 #: bugs.rst:88
 msgid ""
@@ -196,30 +218,42 @@ msgid ""
 "needs to be done to correct the problem. You will receive an update each time"
 " an action is taken on the issue."
 msgstr ""
+"ప్రతి ఇష్యూ రిపోర్ట్‌ను ఒక డెవలపర్ సమీక్షించి, సమస్యను సరిచేయడానికి ఏమి "
+"చేయాలో నిర్ణయిస్తారు. ఇష్యూపై ఏదైనా చర్య తీసుకున్న ప్రతిసారీ మీకు అప్‌డేట్ "
+"అందుతుంది."
 
 #: bugs.rst:95
 msgid ""
 "`How to Report Bugs Effectively "
 "<https://www.chiark.greenend.org.uk/~sgtatham/bugs.html>`_"
 msgstr ""
+"`బగ్‌లను సమర్థవంతంగా ఎలా రిపోర్ట్ చేయాలి "
+"<https://www.chiark.greenend.org.uk/~sgtatham/bugs.html>`_"
 
 #: bugs.rst:96
 msgid ""
 "Article which goes into some detail about how to create a useful bug report. "
 "This describes what kind of information is useful and why it is useful."
 msgstr ""
+"ఉపయోగకరమైన బగ్ రిపోర్ట్‌ను ఎలా తయారు చేయాలో కొంత వివరంగా చర్చించే వ్యాసం. ఏ "
+"రకమైన సమాచారం ఉపయోగపడుతుందో, అది ఎందుకు ఉపయోగపడుతుందో ఇది వివరిస్తుంది."
 
 #: bugs.rst:99
 msgid ""
 "`Bug Writing Guidelines <https://bugzilla.mozilla.org/page.cgi?id=bug-"
 "writing.html>`_"
 msgstr ""
+"`బగ్ రిపోర్ట్‌లు రాయడానికి మార్గదర్శకాలు "
+"<https://bugzilla.mozilla.org/page.cgi?id=bug-writing.html>`_"
 
 #: bugs.rst:100
 msgid ""
 "Information about writing a good bug report.  Some of this is specific to the"
 " Mozilla project, but describes general good practices."
 msgstr ""
+"మంచి బగ్ రిపోర్ట్ రాయడం గురించిన సమాచారం. ఇందులో కొంత భాగం Mozilla "
+"ప్రాజెక్ట్‌కు మాత్రమే సంబంధించినది, అయినా ఇది సాధారణంగా పాటించదగిన మంచి "
+"పద్ధతులను వివరిస్తుంది."
 
 #: bugs.rst:106
 msgid "Getting started contributing to Python yourself"
