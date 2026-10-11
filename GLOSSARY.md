@@ -22,6 +22,11 @@ Agree on new terms in an issue or PR before using them widely.
 - **Numbers and punctuation:** use Western digits (0–9) and the usual
   English punctuation; end sentences with a full stop (.), not ।.
 - **Proper names** (Python, GitHub, Discourse, Mozilla) stay in Latin script.
+- **Code samples and terminal output** (entries that are only code, a
+  shell session or program output) are copied into `msgstr` unchanged, so
+  the file counts as translated and readers see exactly what Python prints.
+- **Sentences split around a code block** may be re-split at a natural
+  point for Telugu word order (the verb usually ends up after the code).
 - **Suffixes next to markup:** reST ignores a link, role or literal whose
   closing mark is directly followed by a letter, so a Telugu suffix must
   never be glued to it.
