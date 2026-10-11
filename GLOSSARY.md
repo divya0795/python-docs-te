@@ -29,6 +29,14 @@ Agree on new terms in an issue or PR before using them widely.
     ``:ref:`ఇష్యూ ట్రాకర్‌లో <using-the-tracker>` `` (not `` `ఇష్యూ ట్రాకర్ <…>`లో ``).
   - For ``` ``code`` ``` add an escaped space, which renders as nothing:
     ``` ``print()``\ ను ```.
+- **Links to named targets** (`` `Documentation bugs`_ ``,
+  `` `text <TRANSLATION_REPO_>`_ ``): Sphinx warns
+  (`i18n.inconsistent_references`) whenever such a reference is changed, even
+  only its label. To translate the label, keep the target name with an
+  alias and end the whole message with `#noqa`, which Sphinx strips before
+  rendering and which tells it to skip that check:
+  `` `డాక్యుమెంటేషన్ బగ్‌లు <Documentation bugs_>`__ #noqa ``.
+  The link then keeps following the URL defined in the English source.
 
 ## Project and contribution terms
 
