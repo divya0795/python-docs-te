@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-10-12 18:36-0700\n"
+"Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: tutorial/whatnow.rst:5
 msgid "What Now?"
-msgstr ""
+msgstr "ఇప్పుడు ఏమిటి?"
 
 #: tutorial/whatnow.rst:7
 msgid ""
@@ -28,18 +28,25 @@ msgid ""
 "--- you should be eager to apply Python to solving your real-world problems. "
 "Where should you go to learn more?"
 msgstr ""
+"ఈ ట్యుటోరియల్ చదవడం వల్ల Python ఉపయోగించడంపై మీ ఆసక్తి బహుశా మరింత పెరిగి "
+"ఉంటుంది --- మీ నిజ జీవిత సమస్యలను పరిష్కరించడానికి Pythonను ఉపయోగించాలని మీరు"
+" ఉత్సాహంగా ఉండాలి. మరింత నేర్చుకోవడానికి మీరు ఎక్కడికి వెళ్లాలి?"
 
 #: tutorial/whatnow.rst:11
 msgid ""
 "This tutorial is part of Python's documentation set.   Some other documents "
 "in the set are:"
 msgstr ""
+"ఈ ట్యుటోరియల్ Python డాక్యుమెంటేషన్ సెట్‌లో భాగం. ఈ సెట్‌లోని మరికొన్ని "
+"డాక్యుమెంట్‌లు:"
 
 #: tutorial/whatnow.rst:14
 msgid ""
 ":ref:`builtins-index`: gives details about Python's built-in types and "
 "functions."
 msgstr ""
+":ref:`builtins-index`: Python యొక్క బిల్ట్-ఇన్ టైప్‌లు మరియు ఫంక్షన్‌ల "
+"గురించి వివరాలు ఇస్తుంది."
 
 #: tutorial/whatnow.rst:17
 msgid ""
@@ -50,12 +57,22 @@ msgid ""
 "parse command-line options, compress data, and many other tasks. Skimming "
 "through the Library Reference will give you an idea of what's available."
 msgstr ""
+":ref:`library-index`: టైప్‌లు, ఫంక్షన్‌లు, మరియు స్టాండర్డ్ లైబ్రరీలోని "
+"మాడ్యూల్‌ల గురించి పూర్తి (క్లుప్తమైనదే అయినా) రిఫరెన్స్ సమాచారాన్ని "
+"ఇస్తుంది. స్టాండర్డ్ Python డిస్ట్రిబ్యూషన్‌లో *చాలా* అదనపు కోడ్ ఉంటుంది. "
+"Unix మెయిల్‌బాక్స్‌లను చదవడానికి, HTTP ద్వారా డాక్యుమెంట్‌లను పొందడానికి, "
+"రాండమ్ సంఖ్యలను జనరేట్ చేయడానికి, కమాండ్-లైన్ ఆప్షన్‌లను పార్స్ చేయడానికి, "
+"డేటాను కంప్రెస్ చేయడానికి, మరియు అనేక ఇతర పనుల కోసం మాడ్యూల్‌లు ఉన్నాయి. "
+"లైబ్రరీ రిఫరెన్స్‌ను ఒకసారి చూస్తే ఏమేమి అందుబాటులో ఉన్నాయో మీకు అవగాహన "
+"వస్తుంది."
 
 #: tutorial/whatnow.rst:25
 msgid ""
 ":ref:`installing-index` explains how to install additional modules written by"
 " other Python users."
 msgstr ""
+":ref:`installing-index` ఇతర Python వినియోగదారులు రాసిన అదనపు మాడ్యూల్‌లను ఎలా"
+" ఇన్‌స్టాల్ చేయాలో వివరిస్తుంది."
 
 #: tutorial/whatnow.rst:28
 msgid ""
@@ -63,20 +80,24 @@ msgid ""
 "semantics.  It's heavy reading, but is useful as a complete guide to the "
 "language itself."
 msgstr ""
+":ref:`reference-index`: Python సింటాక్స్ మరియు సెమాంటిక్స్ యొక్క వివరణాత్మక "
+"వివరణ. ఇది కష్టమైన పఠనమే, కానీ భాషకు పూర్తి గైడ్‌గా ఉపయోగపడుతుంది."
 
 #: tutorial/whatnow.rst:32
 msgid "More Python resources:"
-msgstr ""
+msgstr "మరిన్ని Python వనరులు:"
 
 #: tutorial/whatnow.rst:34
 msgid ""
 "https://www.python.org:  The major Python website.  It contains code, "
 "documentation, and pointers to Python-related pages around the web."
 msgstr ""
+"https://www.python.org:  ప్రధాన Python వెబ్‌సైట్. ఇందులో కోడ్, "
+"డాక్యుమెంటేషన్, మరియు వెబ్‌లోని Python సంబంధిత పేజీలకు లింక్‌లు ఉన్నాయి."
 
 #: tutorial/whatnow.rst:37
 msgid "https://docs.python.org:  Fast access to Python's  documentation."
-msgstr ""
+msgstr "https://docs.python.org:  Python డాక్యుమెంటేషన్‌కు వేగవంతమైన యాక్సెస్."
 
 #: tutorial/whatnow.rst:39
 msgid ""
@@ -85,6 +106,10 @@ msgid ""
 "available for download.  Once you begin releasing code, you can register it "
 "here so that others can find it."
 msgstr ""
+"https://pypi.org: Python Package Index (గతంలో Cheese Shop [#]_ అనే "
+"ముద్దుపేరుతో కూడా పిలిచేవారు) అనేది వినియోగదారులు సృష్టించిన, డౌన్‌లోడ్ "
+"చేసుకోగల Python మాడ్యూల్‌ల ఇండెక్స్. మీరు కోడ్‌ను విడుదల చేయడం ప్రారంభించిన "
+"తర్వాత, ఇతరులు దాన్ని కనుగొనేలా ఇక్కడ రిజిస్టర్ చేయవచ్చు."
 
 #: tutorial/whatnow.rst:44
 msgid ""
@@ -93,12 +118,18 @@ msgid ""
 "Particularly notable contributions are collected in a book also titled Python"
 " Cookbook (O'Reilly & Associates, ISBN 0-596-00797-3.)"
 msgstr ""
+"https://code.activestate.com/recipes/langs/python/: Python Cookbook అనేది "
+"కోడ్ ఉదాహరణలు, పెద్ద మాడ్యూల్‌లు, ఉపయోగకరమైన స్క్రిప్ట్‌ల యొక్క పెద్ద సేకరణ. "
+"ప్రత్యేకంగా గమనించదగిన సహకారాలను Python Cookbook (O'Reilly & Associates, ISBN"
+" 0-596-00797-3.) అనే పేరుతోనే ఉన్న పుస్తకంలో సేకరించారు."
 
 #: tutorial/whatnow.rst:49
 msgid ""
 "https://pyvideo.org collects links to Python-related videos from conferences "
 "and user-group meetings."
 msgstr ""
+"https://pyvideo.org కాన్ఫరెన్స్‌లు మరియు యూజర్-గ్రూప్ సమావేశాల నుండి Python "
+"సంబంధిత వీడియోల లింక్‌లను సేకరిస్తుంది."
 
 #: tutorial/whatnow.rst:52
 msgid ""
@@ -107,6 +138,10 @@ msgid ""
 "as linear algebra, Fourier transforms, non-linear solvers, random number "
 "distributions, statistical analysis and the like."
 msgstr ""
+"https://scipy.org: Scientific Python ప్రాజెక్ట్‌లో వేగవంతమైన అరే గణనలు, "
+"మార్పుల కోసం మాడ్యూల్‌లతో పాటు లీనియర్ ఆల్జీబ్రా, ఫోరియర్ ట్రాన్స్‌ఫార్మ్‌లు,"
+" నాన్-లీనియర్ సాల్వర్‌లు, రాండమ్ సంఖ్యల డిస్ట్రిబ్యూషన్‌లు, స్టాటిస్టికల్ "
+"విశ్లేషణ వంటి వాటి కోసం అనేక ప్యాకేజీలు ఉన్నాయి."
 
 #: tutorial/whatnow.rst:57
 msgid ""
@@ -118,6 +153,14 @@ msgid ""
 "new features, and announcing new modules. Mailing list archives are available"
 " at https://mail.python.org/pipermail/."
 msgstr ""
+"Python సంబంధిత ప్రశ్నలు మరియు సమస్యల రిపోర్ట్‌ల కోసం, మీరు "
+":newsgroup:`comp.lang.python` న్యూస్‌గ్రూప్‌లో పోస్ట్ చేయవచ్చు, లేదా python-"
+"list@python.org మెయిలింగ్ లిస్ట్‌కు పంపవచ్చు. న్యూస్‌గ్రూప్ మరియు మెయిలింగ్ "
+"లిస్ట్ అనుసంధానించబడి ఉన్నాయి, కాబట్టి ఒకదానిలో పోస్ట్ చేసిన సందేశాలు "
+"ఆటోమేటిక్‌గా మరొకదానికి ఫార్వర్డ్ అవుతాయి. రోజుకు వందలాది పోస్ట్‌లు వస్తాయి: "
+"ప్రశ్నలు అడగడం (మరియు సమాధానాలు ఇవ్వడం), కొత్త ఫీచర్లను సూచించడం, కొత్త "
+"మాడ్యూల్‌లను ప్రకటించడం. మెయిలింగ్ లిస్ట్ ఆర్కైవ్‌లు "
+"https://mail.python.org/pipermail/ లో అందుబాటులో ఉన్నాయి."
 
 #: tutorial/whatnow.rst:65
 msgid ""
@@ -126,13 +169,18 @@ msgid ""
 "that come up again and again, and may already contain the solution for your "
 "problem."
 msgstr ""
+"పోస్ట్ చేసే ముందు, :ref:`తరచుగా అడిగే ప్రశ్నల <faq-index>` జాబితాను (FAQ అని "
+"కూడా అంటారు) తప్పకుండా చూడండి. మళ్లీ మళ్లీ వచ్చే అనేక ప్రశ్నలకు FAQ సమాధానాలు"
+" ఇస్తుంది, మీ సమస్యకు పరిష్కారం ఇప్పటికే అందులో ఉండవచ్చు."
 
 #: tutorial/whatnow.rst:71
 msgid "Footnotes"
-msgstr ""
+msgstr "ఫుట్‌నోట్స్"
 
 #: tutorial/whatnow.rst:72
 msgid ""
 "\"Cheese Shop\" is a Monty Python sketch: a customer enters a cheese shop, "
 "but whatever cheese he asks for, the clerk says it's missing."
 msgstr ""
+"\"Cheese Shop\" అనేది ఒక Monty Python స్కెచ్: ఒక కస్టమర్ చీజ్ షాప్‌లోకి "
+"వస్తారు, కానీ ఏ చీజ్ అడిగినా అది లేదని షాప్ ఉద్యోగి చెబుతారు."
