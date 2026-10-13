@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-10-11 12:31-0700\n"
+"PO-Revision-Date: 2026-10-12 18:14-0700\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -188,7 +188,7 @@ msgstr ""
 
 #: tutorial/interpreter.rst:89
 msgid "Interactive Mode"
-msgstr ""
+msgstr "ఇంటరాక్టివ్ మోడ్"
 
 #: tutorial/interpreter.rst:91
 msgid ""
@@ -199,6 +199,12 @@ msgid ""
 "dots (``...``). The interpreter prints a welcome message stating its version "
 "number and a copyright notice before printing the first prompt:"
 msgstr ""
+"కమాండ్‌లను tty నుండి చదువుతున్నప్పుడు, ఇంటర్‌ప్రెటర్ *ఇంటరాక్టివ్ మోడ్‌లో* "
+"ఉందని అంటారు. ఈ మోడ్‌లో, అది తదుపరి కమాండ్ కోసం *ప్రైమరీ ప్రాంప్ట్‌తో* "
+"అడుగుతుంది, ఇది సాధారణంగా మూడు గ్రేటర్-దేన్ గుర్తులు (``>>>``); కంటిన్యుయేషన్"
+" లైన్‌ల కోసం *సెకండరీ ప్రాంప్ట్‌తో* అడుగుతుంది, ఇది డిఫాల్ట్‌గా మూడు చుక్కలు "
+"(``...``). మొదటి ప్రాంప్ట్‌ను ప్రింట్ చేసే ముందు, ఇంటర్‌ప్రెటర్ దాని వెర్షన్ "
+"నంబర్‌ను తెలిపే స్వాగత సందేశాన్ని మరియు కాపీరైట్ నోటీసును ప్రింట్ చేస్తుంది:"
 
 #: tutorial/interpreter.rst:98
 msgid ""
@@ -208,12 +214,19 @@ msgid ""
 "Type \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n"
 ">>>"
 msgstr ""
+"$ python3.15\n"
+"Python 3.15 (default, May 7 2025, 15:46:04)\n"
+"[GCC 10.2.0] on linux\n"
+"Type \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n"
+">>>"
 
 #: tutorial/interpreter.rst:108
 msgid ""
 "Continuation lines are needed when entering a multi-line construct. As an "
 "example, take a look at this :keyword:`if` statement::"
 msgstr ""
+"బహుళ-లైన్ నిర్మాణాన్ని నమోదు చేస్తున్నప్పుడు కంటిన్యుయేషన్ లైన్‌లు అవసరం. "
+"ఉదాహరణకు, ఈ :keyword:`if` స్టేట్‌మెంట్‌ను చూడండి::"
 
 #: tutorial/interpreter.rst:111
 msgid ""
@@ -223,18 +236,23 @@ msgid ""
 "...\n"
 "Be careful not to fall off!"
 msgstr ""
+">>> the_world_is_flat = True\n"
+">>> if the_world_is_flat:\n"
+"...     print(\"Be careful not to fall off!\")\n"
+"...\n"
+"Be careful not to fall off!"
 
 #: tutorial/interpreter.rst:118
 msgid "For more on interactive mode, see :ref:`tut-interac`."
-msgstr ""
+msgstr "ఇంటరాక్టివ్ మోడ్ గురించి మరింత సమాచారం కోసం :ref:`tut-interac` చూడండి."
 
 #: tutorial/interpreter.rst:124
 msgid "The Interpreter and Its Environment"
-msgstr ""
+msgstr "ఇంటర్‌ప్రెటర్ మరియు దాని ఎన్విరాన్‌మెంట్"
 
 #: tutorial/interpreter.rst:130
 msgid "Source Code Encoding"
-msgstr ""
+msgstr "సోర్స్ కోడ్ ఎన్‌కోడింగ్"
 
 #: tutorial/interpreter.rst:132
 msgid ""
@@ -246,30 +264,43 @@ msgid ""
 "properly, your editor must recognize that the file is UTF-8, and it must use "
 "a font that supports all the characters in the file."
 msgstr ""
+"డిఫాల్ట్‌గా, Python సోర్స్ ఫైల్‌లు UTF-8లో ఎన్‌కోడ్ చేయబడినట్లుగా "
+"పరిగణించబడతాయి. ఆ ఎన్‌కోడింగ్‌లో, ప్రపంచంలోని చాలా భాషల అక్షరాలను స్ట్రింగ్ "
+"లిటరల్స్, ఐడెంటిఫైయర్‌లు మరియు కామెంట్‌లలో ఏకకాలంలో ఉపయోగించవచ్చు --- అయితే "
+"స్టాండర్డ్ లైబ్రరీ ఐడెంటిఫైయర్‌ల కోసం ASCII అక్షరాలను మాత్రమే ఉపయోగిస్తుంది, "
+"పోర్టబుల్ కోడ్ ఏదైనా పాటించాల్సిన సంప్రదాయం ఇది. ఈ అక్షరాలన్నింటినీ సరిగ్గా "
+"ప్రదర్శించడానికి, ఫైల్ UTF-8 అని మీ ఎడిటర్ గుర్తించాలి, మరియు ఫైల్‌లోని అన్ని"
+" అక్షరాలను సపోర్ట్ చేసే ఫాంట్‌ను ఉపయోగించాలి."
 
 #: tutorial/interpreter.rst:140
 msgid ""
 "To declare an encoding other than the default one, a special comment line "
 "should be added as the *first* line of the file.  The syntax is as follows::"
 msgstr ""
+"డిఫాల్ట్ కాకుండా వేరే ఎన్‌కోడింగ్‌ను ప్రకటించడానికి, ఫైల్ యొక్క *మొదటి* "
+"లైన్‌గా ఒక ప్రత్యేక కామెంట్ లైన్‌ను జోడించాలి. సింటాక్స్ ఈ విధంగా ఉంటుంది::"
 
 #: tutorial/interpreter.rst:143
 msgid "# -*- coding: encoding -*-"
-msgstr ""
+msgstr "# -*- coding: encoding -*-"
 
 #: tutorial/interpreter.rst:145
 msgid "where *encoding* is one of the valid :mod:`codecs` supported by Python."
 msgstr ""
+"ఇక్కడ *encoding* అనేది Python సపోర్ట్ చేసే చెల్లుబాటు అయ్యే :mod:`codecs` లో "
+"ఒకటి."
 
 #: tutorial/interpreter.rst:147
 msgid ""
 "For example, to declare that Windows-1252 encoding is to be used, the first "
 "line of your source code file should be::"
 msgstr ""
+"ఉదాహరణకు, Windows-1252 ఎన్‌కోడింగ్‌ను ఉపయోగించాలని ప్రకటించడానికి, మీ సోర్స్ "
+"కోడ్ ఫైల్ యొక్క మొదటి లైన్ ఇలా ఉండాలి::"
 
 #: tutorial/interpreter.rst:150
 msgid "# -*- coding: cp1252 -*-"
-msgstr ""
+msgstr "# -*- coding: cp1252 -*-"
 
 #: tutorial/interpreter.rst:152
 msgid ""
@@ -277,16 +308,21 @@ msgid ""
 ":ref:`UNIX \"shebang\" line <tut-scripts>`.  In this case, the encoding "
 "declaration should be added as the second line of the file.  For example::"
 msgstr ""
+"*మొదటి లైన్* నియమానికి ఒక మినహాయింపు: సోర్స్ కోడ్ :ref:`UNIX \"shebang\" "
+"లైన్‌తో <tut-scripts>` మొదలైనప్పుడు. ఈ సందర్భంలో, ఎన్‌కోడింగ్ డిక్లరేషన్‌ను "
+"ఫైల్ యొక్క రెండవ లైన్‌గా జోడించాలి. ఉదాహరణకు::"
 
 #: tutorial/interpreter.rst:156
 msgid ""
 "#!/usr/bin/env python3\n"
 "# -*- coding: cp1252 -*-"
 msgstr ""
+"#!/usr/bin/env python3\n"
+"# -*- coding: cp1252 -*-"
 
 #: tutorial/interpreter.rst:160
 msgid "Footnotes"
-msgstr ""
+msgstr "ఫుట్‌నోట్స్"
 
 #: tutorial/interpreter.rst:161
 msgid ""
@@ -294,3 +330,6 @@ msgid ""
 "executable named ``python``, so that it does not conflict with a "
 "simultaneously installed Python 2.x executable."
 msgstr ""
+"Unixలో, ఏకకాలంలో ఇన్‌స్టాల్ చేసిన Python 2.x ఎగ్జిక్యూటబుల్‌తో వైరుధ్యం "
+"రాకుండా ఉండటానికి, Python 3.x ఇంటర్‌ప్రెటర్ డిఫాల్ట్‌గా ``python`` అనే పేరు "
+"గల ఎగ్జిక్యూటబుల్‌తో ఇన్‌స్టాల్ చేయబడదు."
