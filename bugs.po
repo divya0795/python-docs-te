@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-10-11 11:16-0700\n"
+"PO-Revision-Date: 2026-10-15 19:38-0700\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -147,9 +147,9 @@ msgid ""
 " offers a web form which allows pertinent information to be entered and "
 "submitted to the developers."
 msgstr ""
-"Pythonకు సంబంధించిన ఇష్యూ రిపోర్ట్‌లను GitHub ఇష్యూస్ ట్రాకర్ "
-"(https://github.com/python/cpython/issues) ద్వారా సమర్పించాలి. GitHub ఇష్యూస్"
-" ట్రాకర్ ఒక వెబ్ ఫారమ్‌ను అందిస్తుంది, దాని ద్వారా సంబంధిత సమాచారాన్ని నమోదు "
+"Pythonకే సంబంధించిన ఇష్యూ రిపోర్ట్‌లను GitHub ఇష్యూ ట్రాకర్ "
+"(https://github.com/python/cpython/issues) ద్వారా సమర్పించాలి. GitHub ఇష్యూ "
+"ట్రాకర్ ఒక వెబ్ ఫారమ్‌ను అందిస్తుంది, దాని ద్వారా సంబంధిత సమాచారాన్ని నమోదు "
 "చేసి డెవలపర్లకు సమర్పించవచ్చు."
 
 #: bugs.rst:63
@@ -257,7 +257,7 @@ msgstr ""
 
 #: bugs.rst:106
 msgid "Getting started contributing to Python yourself"
-msgstr "Pythonకు మీరే స్వయంగా సహకరించడం ప్రారంభించడం"
+msgstr "Pythonకు మీరే సహకరించడం ప్రారంభించడం"
 
 #: bugs.rst:108
 msgid ""
