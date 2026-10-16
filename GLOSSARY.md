@@ -22,6 +22,8 @@ Agree on new terms in an issue or PR before using them widely.
 - **Numbers and punctuation:** use Western digits (0–9) and the usual
   English punctuation; end sentences with a full stop (.), not ।.
 - **Proper names** (Python, GitHub, Discourse, Mozilla) stay in Latin script.
+- **Plurals** of transliterated words take the Telugu ‌లు ending
+  (వేరియబుల్‌లు, టూల్‌లు, ఫుట్‌నోట్‌లు), not the English -s (వేరియబుల్స్).
 - **Code samples and terminal output** (entries that are only code, a
   shell session or program output) are copied into `msgstr` unchanged, so
   the file counts as translated and readers see exactly what Python prints.
@@ -166,4 +168,6 @@ Agree on new terms in an issue or PR before using them widely.
 | standard input / output / error | స్టాండర్డ్ ఇన్‌పుట్ / అవుట్‌పుట్ / ఎర్రర్ | names of streams |
 | third-party | థర్డ్-పార్టీ | |
 | upgrade | అప్‌గ్రేడ్ చేయు | |
-| user | వినియోగదారు | "user directory" → యూజర్ డైరెక్టరీ |
+| implement | రూపొందించు | not అమలు చేయు, which means "execute" |
+| user | వినియోగదారు | in fixed names (user interface, user guide, user directory, user site-packages) use యూజర్ |
+| user-defined | వినియోగదారు నిర్వచించిన | |
