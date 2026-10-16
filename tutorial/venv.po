@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-10-15 18:42-0700\n"
+"Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
 "MIME-Version: 1.0\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: tutorial/venv.rst:6
 msgid "Virtual Environments and Packages"
-msgstr ""
+msgstr "వర్చువల్ ఎన్విరాన్‌మెంట్‌లు మరియు ప్యాకేజీలు"
 
 #: tutorial/venv.rst:9
 msgid "Introduction"
-msgstr ""
+msgstr "పరిచయం"
 
 #: tutorial/venv.rst:11
 msgid ""
@@ -34,6 +34,11 @@ msgid ""
 "bug has been fixed or the application may be written using an obsolete "
 "version of the library's interface."
 msgstr ""
+"Python అప్లికేషన్‌లు తరచుగా స్టాండర్డ్ లైబ్రరీలో భాగంగా రాని ప్యాకేజీలను, "
+"మాడ్యూల్‌లను ఉపయోగిస్తాయి. అప్లికేషన్‌లకు కొన్నిసార్లు ఒక లైబ్రరీ యొక్క "
+"నిర్దిష్ట వెర్షన్ అవసరం అవుతుంది, ఎందుకంటే ఒక నిర్దిష్ట బగ్ సరిచేయబడి ఉండాలని"
+" అప్లికేషన్ కోరవచ్చు, లేదా లైబ్రరీ ఇంటర్‌ఫేస్ యొక్క పాత వెర్షన్‌ను ఉపయోగించి "
+"అప్లికేషన్ రాయబడి ఉండవచ్చు."
 
 #: tutorial/venv.rst:17
 msgid ""
@@ -43,6 +48,10 @@ msgid ""
 "are in conflict and installing either version 1.0 or 2.0 will leave one "
 "application unable to run."
 msgstr ""
+"అంటే, ఒకే Python ఇన్‌స్టాలేషన్ ప్రతి అప్లికేషన్ అవసరాలను తీర్చడం సాధ్యం "
+"కాకపోవచ్చు. అప్లికేషన్ A కు ఒక నిర్దిష్ట మాడ్యూల్ యొక్క వెర్షన్ 1.0 అవసరమై, "
+"అప్లికేషన్ B కు వెర్షన్ 2.0 అవసరమైతే, ఆ అవసరాలు పరస్పరం విరుద్ధంగా ఉంటాయి; "
+"వెర్షన్ 1.0 లేదా 2.0 లలో ఏది ఇన్‌స్టాల్ చేసినా ఒక అప్లికేషన్ రన్ కాలేదు."
 
 #: tutorial/venv.rst:23
 msgid ""
@@ -50,6 +59,10 @@ msgid ""
 "self-contained directory tree that contains a Python installation for a "
 "particular version of Python, plus a number of additional packages."
 msgstr ""
+"ఈ సమస్యకు పరిష్కారం ఒక :term:`వర్చువల్ ఎన్విరాన్‌మెంట్‌ను <virtual "
+"environment>` సృష్టించడం. ఇది ఒక నిర్దిష్ట Python వెర్షన్ కోసం Python "
+"ఇన్‌స్టాలేషన్‌తో పాటు కొన్ని అదనపు ప్యాకేజీలను కలిగి ఉండే స్వయం-సంపూర్ణ "
+"డైరెక్టరీ ట్రీ."
 
 #: tutorial/venv.rst:27
 msgid ""
@@ -60,10 +73,17 @@ msgid ""
 "requires a library be upgraded to version 3.0, this will not affect "
 "application A's environment."
 msgstr ""
+"అప్పుడు వేర్వేరు అప్లికేషన్‌లు వేర్వేరు వర్చువల్ ఎన్విరాన్‌మెంట్‌లను "
+"ఉపయోగించవచ్చు. పై ఉదాహరణలోని విరుద్ధ అవసరాల సమస్యను పరిష్కరించడానికి, "
+"అప్లికేషన్ A కు వెర్షన్ 1.0 ఇన్‌స్టాల్ చేసిన దాని స్వంత వర్చువల్ "
+"ఎన్విరాన్‌మెంట్ ఉండవచ్చు, అదే సమయంలో అప్లికేషన్ B కు వెర్షన్ 2.0 ఉన్న మరో "
+"వర్చువల్ ఎన్విరాన్‌మెంట్ ఉండవచ్చు. అప్లికేషన్ B కు ఒక లైబ్రరీని వెర్షన్ 3.0 "
+"కు అప్‌గ్రేడ్ చేయాల్సి వస్తే, అది అప్లికేషన్ A యొక్క ఎన్విరాన్‌మెంట్‌ను "
+"ప్రభావితం చేయదు."
 
 #: tutorial/venv.rst:36
 msgid "Creating Virtual Environments"
-msgstr ""
+msgstr "వర్చువల్ ఎన్విరాన్‌మెంట్‌లను సృష్టించడం"
 
 #: tutorial/venv.rst:38
 msgid ""
@@ -73,6 +93,11 @@ msgid ""
 "instance, executing the command with ``python3.12`` will install version "
 "3.12."
 msgstr ""
+"వర్చువల్ ఎన్విరాన్‌మెంట్‌లను సృష్టించడానికి, నిర్వహించడానికి ఉపయోగించే "
+"మాడ్యూల్ పేరు :mod:`venv`. కమాండ్‌ను ఏ Python వెర్షన్‌తో రన్ చేశారో "
+"(:option:`--version` ఆప్షన్ చూపించే విధంగా) ఆ వెర్షన్‌ను :mod:`venv` "
+"ఇన్‌స్టాల్ చేస్తుంది. ఉదాహరణకు, ``python3.12`` తో కమాండ్‌ను అమలు చేస్తే "
+"వెర్షన్ 3.12 ఇన్‌స్టాల్ అవుతుంది."
 
 #: tutorial/venv.rst:44
 msgid ""
@@ -80,10 +105,13 @@ msgid ""
 "place it, and run the :mod:`venv` module as a script with the directory "
 "path::"
 msgstr ""
+"వర్చువల్ ఎన్విరాన్‌మెంట్‌ను సృష్టించడానికి, దాన్ని ఉంచాలనుకుంటున్న "
+"డైరెక్టరీని నిర్ణయించుకుని, ఆ డైరెక్టరీ పాత్‌తో :mod:`venv` మాడ్యూల్‌ను "
+"స్క్రిప్ట్‌గా రన్ చేయండి::"
 
 #: tutorial/venv.rst:47
 msgid "python -m venv tutorial-env"
-msgstr ""
+msgstr "python -m venv tutorial-env"
 
 #: tutorial/venv.rst:49
 msgid ""
@@ -91,6 +119,9 @@ msgid ""
 " create directories inside it containing a copy of the Python interpreter and"
 " various supporting files."
 msgstr ""
+"``tutorial-env`` డైరెక్టరీ లేకపోతే ఇది దాన్ని సృష్టిస్తుంది, మరియు దాని లోపల "
+"Python ఇంటర్‌ప్రెటర్ కాపీ, వివిధ సహాయక ఫైల్‌లు ఉండే డైరెక్టరీలను కూడా "
+"సృష్టిస్తుంది."
 
 #: tutorial/venv.rst:53
 msgid ""
@@ -100,26 +131,33 @@ msgid ""
 "prevents clashing with ``.env`` environment variable definition files that "
 "some tooling supports."
 msgstr ""
+"వర్చువల్ ఎన్విరాన్‌మెంట్ కోసం సాధారణంగా ఉపయోగించే డైరెక్టరీ స్థానం ``.venv``."
+" ఈ పేరు డైరెక్టరీని సాధారణంగా మీ షెల్‌లో దాచి ఉంచుతుంది, కాబట్టి అది అడ్డు "
+"రాదు, అదే సమయంలో ఆ డైరెక్టరీ ఎందుకు ఉందో వివరించే పేరును కూడా ఇస్తుంది. "
+"కొన్ని టూల్స్ సపోర్ట్ చేసే ``.env`` ఎన్విరాన్‌మెంట్ వేరియబుల్ డెఫినిషన్ "
+"ఫైల్‌లతో ఘర్షణ రాకుండా కూడా ఇది నివారిస్తుంది."
 
 #: tutorial/venv.rst:59
 msgid "Once you've created a virtual environment, you may activate it."
 msgstr ""
+"వర్చువల్ ఎన్విరాన్‌మెంట్‌ను సృష్టించిన తర్వాత, మీరు దాన్ని యాక్టివేట్ "
+"చేయవచ్చు."
 
 #: tutorial/venv.rst:61
 msgid "On Windows, run::"
-msgstr ""
+msgstr "Windowsలో, ఇలా రన్ చేయండి::"
 
 #: tutorial/venv.rst:63
 msgid "tutorial-env\\Scripts\\activate"
-msgstr ""
+msgstr "tutorial-env\\Scripts\\activate"
 
 #: tutorial/venv.rst:65
 msgid "On Unix or MacOS, run::"
-msgstr ""
+msgstr "Unix లేదా MacOSలో, ఇలా రన్ చేయండి::"
 
 #: tutorial/venv.rst:67
 msgid "source tutorial-env/bin/activate"
-msgstr ""
+msgstr "source tutorial-env/bin/activate"
 
 #: tutorial/venv.rst:69
 msgid ""
@@ -127,6 +165,9 @@ msgid ""
 " :program:`fish` shells, there are alternate ``activate.csh`` and "
 "``activate.fish`` scripts you should use instead.)"
 msgstr ""
+"(ఈ స్క్రిప్ట్ bash షెల్ కోసం రాయబడింది. మీరు :program:`csh` లేదా "
+":program:`fish` షెల్‌లను ఉపయోగిస్తే, బదులుగా ఉపయోగించాల్సిన ప్రత్యామ్నాయ "
+"``activate.csh`` మరియు ``activate.fish`` స్క్రిప్ట్‌లు ఉన్నాయి.)"
 
 #: tutorial/venv.rst:74
 msgid ""
@@ -135,6 +176,10 @@ msgid ""
 "running ``python`` will get you that particular version and installation of "
 "Python. For example:"
 msgstr ""
+"వర్చువల్ ఎన్విరాన్‌మెంట్‌ను యాక్టివేట్ చేస్తే, మీరు ఏ వర్చువల్ "
+"ఎన్విరాన్‌మెంట్‌ను ఉపయోగిస్తున్నారో చూపించేలా మీ షెల్ ప్రాంప్ట్ మారుతుంది, "
+"మరియు ``python`` ను రన్ చేస్తే ఆ నిర్దిష్ట Python వెర్షన్, ఇన్‌స్టాలేషన్ "
+"వచ్చేలా ఎన్విరాన్‌మెంట్ మార్చబడుతుంది. ఉదాహరణకు:"
 
 #: tutorial/venv.rst:79
 msgid ""
@@ -148,6 +193,15 @@ msgid ""
 "'~/envs/tutorial-env/lib/python3.5/site-packages']\n"
 ">>>"
 msgstr ""
+"$ source ~/envs/tutorial-env/bin/activate\n"
+"(tutorial-env) $ python\n"
+"Python 3.5.1 (default, May  6 2016, 10:59:36)\n"
+"  ...\n"
+">>> import sys\n"
+">>> sys.path\n"
+"['', '/usr/local/lib/python35.zip', ...,\n"
+"'~/envs/tutorial-env/lib/python3.5/site-packages']\n"
+">>>"
 
 #: tutorial/venv.rst:91
 msgid ""
@@ -157,18 +211,23 @@ msgid ""
 " virtual environment is using. The best practice is to ``unset PYTHONPATH`` "
 "in bash or the equivalent for the shell you are using."
 msgstr ""
+"యాక్టివేట్ చేసిన వర్చువల్ ఎన్విరాన్‌మెంట్ ``PYTHONPATH`` వేరియబుల్‌ను ఏ "
+"విధంగానూ మార్చదని గమనించండి. వర్చువల్ ఎన్విరాన్‌మెంట్ ఉపయోగిస్తున్న Python "
+"వెర్షన్‌కు అనుకూలం కాని కోడ్‌కు సంబంధించిన రిఫరెన్స్‌లు పాత్‌లో ఉంటే, ఇది "
+"ఊహించని ఫలితాలకు దారితీయవచ్చు. bashలో ``unset PYTHONPATH`` చేయడం, లేదా మీరు "
+"ఉపయోగిస్తున్న షెల్‌లో దానికి సమానమైనది చేయడం ఉత్తమ పద్ధతి."
 
 #: tutorial/venv.rst:96
 msgid "To deactivate a virtual environment, type::"
-msgstr ""
+msgstr "వర్చువల్ ఎన్విరాన్‌మెంట్‌ను డీయాక్టివేట్ చేయడానికి, ఈ కమాండ్‌ను::"
 
 #: tutorial/venv.rst:98
 msgid "deactivate"
-msgstr ""
+msgstr "deactivate"
 
 #: tutorial/venv.rst:100
 msgid "into the terminal."
-msgstr ""
+msgstr "టెర్మినల్‌లో టైప్ చేయండి."
 
 #: tutorial/venv.rst:103
 msgid "Managing Packages with pip"
