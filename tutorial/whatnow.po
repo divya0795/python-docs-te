@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-10-12 18:36-0700\n"
+"PO-Revision-Date: 2026-10-19 18:07-0700\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -30,7 +30,7 @@ msgid ""
 msgstr ""
 "ఈ ట్యుటోరియల్ చదవడం వల్ల Python ఉపయోగించడంపై మీ ఆసక్తి బహుశా మరింత పెరిగి "
 "ఉంటుంది --- మీ నిజ జీవిత సమస్యలను పరిష్కరించడానికి Pythonను ఉపయోగించాలని మీరు"
-" ఉత్సాహంగా ఉండాలి. మరింత నేర్చుకోవడానికి మీరు ఎక్కడికి వెళ్లాలి?"
+" ఇప్పుడు ఉత్సాహంగా ఉండి ఉంటారు. మరింత నేర్చుకోవడానికి మీరు ఎక్కడికి వెళ్లాలి?"
 
 #: tutorial/whatnow.rst:11
 msgid ""
@@ -80,7 +80,7 @@ msgid ""
 "semantics.  It's heavy reading, but is useful as a complete guide to the "
 "language itself."
 msgstr ""
-":ref:`reference-index`: Python సింటాక్స్ మరియు సెమాంటిక్స్ యొక్క వివరణాత్మక "
+":ref:`reference-index`: Python సింటాక్స్ మరియు సెమాంటిక్స్ యొక్క సవివరమైన "
 "వివరణ. ఇది కష్టమైన పఠనమే, కానీ భాషకు పూర్తి గైడ్‌గా ఉపయోగపడుతుంది."
 
 #: tutorial/whatnow.rst:32
@@ -175,7 +175,7 @@ msgstr ""
 
 #: tutorial/whatnow.rst:71
 msgid "Footnotes"
-msgstr "ఫుట్‌నోట్స్"
+msgstr "ఫుట్‌నోట్‌లు"
 
 #: tutorial/whatnow.rst:72
 msgid ""
