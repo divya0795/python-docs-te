@@ -171,3 +171,48 @@ Agree on new terms in an issue or PR before using them widely.
 | implement | రూపొందించు | not అమలు చేయు, which means "execute" |
 | user | వినియోగదారు | in fixed names (user interface, user guide, user directory, user site-packages) use యూజర్ |
 | user-defined | వినియోగదారు నిర్వచించిన | |
+
+## Core tutorial terms (stage 3)
+
+| English | Telugu | Notes |
+|---------|--------|-------|
+| annotation | అనొటేషన్ | function annotations |
+| assignment | అసైన్‌మెంట్ | assign a value → విలువను కేటాయించు |
+| block (of code) | బ్లాక్ | |
+| body (of a loop/function) | బాడీ | |
+| Boolean | బూలియన్ | `True`/`False` stay in English |
+| clause | క్లాజ్ | `else` clause → `else` క్లాజ్ |
+| comparison | పోలిక | compare → పోల్చు |
+| concatenate | కలుపు | concatenation → కలపడం |
+| condition | షరతు | |
+| default value | డిఫాల్ట్ విలువ | default argument value → డిఫాల్ట్ ఆర్గ్యుమెంట్ విలువ |
+| definition | నిర్వచనం | function definition → ఫంక్షన్ నిర్వచనం |
+| docstring | డాక్‌స్ట్రింగ్ | |
+| division | భాగహారం | floor division → ఫ్లోర్ డివిజన్ |
+| element / item | ఎలిమెంట్ / ఐటెమ్ | |
+| immutable / mutable | ఇమ్యూటబుల్ / మ్యూటబుల్ | add (మార్చలేని / మార్చగలిగే) at first use in a file |
+| index (noun) | ఇండెక్స్ | plural ఇండెక్స్‌లు |
+| iterable / iterator | ఇటరబుల్ / ఇటరేటర్ | |
+| iterate / iteration | ఇటరేట్ చేయు / ఇటరేషన్ | |
+| key (in a dict) | కీ | key-value pair → కీ-విలువ జత |
+| keyword argument | కీవర్డ్ ఆర్గ్యుమెంట్ | |
+| lambda expression | లాంబ్డా ఎక్స్‌ప్రెషన్ | |
+| list comprehension | లిస్ట్ కాంప్రహెన్షన్ | |
+| namespace | నేమ్‌స్పేస్ | |
+| nested | నెస్టెడ్ | |
+| operand | ఆపరాండ్ | |
+| pattern (matching) | ప్యాటర్న్ | pattern matching → ప్యాటర్న్ మ్యాచింగ్ |
+| positional argument | పొజిషనల్ ఆర్గ్యుమెంట్ | positional-only → పొజిషనల్-మాత్రమే |
+| queue / stack | క్యూ / స్టాక్ | |
+| recursion | రికర్షన్ | |
+| remainder | శేషం | |
+| result | ఫలితం | |
+| return (a value) | రిటర్న్ చేయు | return value → రిటర్న్ విలువ |
+| scope | స్కోప్ | |
+| search path | సెర్చ్ పాత్ | module search path → మాడ్యూల్ సెర్చ్ పాత్ |
+| sequence | సీక్వెన్స్ | |
+| slice / slicing | స్లైస్ / స్లైసింగ్ | |
+| submodule | సబ్‌మాడ్యూల్ | |
+| symbol table | సింబల్ టేబుల్ | |
+| type | టైప్ | data type → డేటా టైప్ |
+| unpacking | అన్‌ప్యాకింగ్ | |
