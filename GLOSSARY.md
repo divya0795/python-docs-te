@@ -216,3 +216,63 @@ Agree on new terms in an issue or PR before using them widely.
 | symbol table | సింబల్ టేబుల్ | |
 | type | టైప్ | data type → డేటా టైప్ |
 | unpacking | అన్‌ప్యాకింగ్ | |
+
+## Terms added while translating stage 3
+
+| English | Telugu | Notes |
+|---------|--------|-------|
+| true / false (truth values) | సత్యం / అసత్యం | the objects `True`/`False` stay in English; "truthy" also → సత్యం |
+| parentheses `()` | కుండలీకరణాలు | |
+| brackets `[]` | బ్రాకెట్‌లు | also for the generic "bracketing" |
+| curly braces `{}` | కర్లీ బ్రేస్‌లు | |
+| absolute / relative import | అబ్సొల్యూట్ / రిలేటివ్ ఇంపోర్ట్ | |
+| arithmetic progression | అంకశ్రేణి | |
+| bind | బైండ్ చేయు / బైండ్ అవు | |
+| cache | క్యాష్ (చేయు) | |
+| calling convention | కాలింగ్ కన్వెన్షన్ | |
+| capture (in patterns) | క్యాప్చర్ చేయు | |
+| collection | కలెక్షన్ | |
+| complex number | సంకీర్ణ సంఖ్య | imaginary part → ఊహాజనిత భాగం (to be reviewed) |
+| compound (statement, type) | సంయుక్త | |
+| constant | స్థిరాంకం | |
+| constructor | కన్‌స్ట్రక్టర్ | |
+| container | కంటెయినర్ | |
+| control flow | కంట్రోల్ ఫ్లో | |
+| duplicate | పునరావృత | |
+| escape (a character) | ఎస్కేప్ చేయు | |
+| evaluate | ఎవాల్యుయేట్ చేయు | |
+| export | ఎక్స్‌పోర్ట్ చేయు | |
+| floating point | ఫ్లోటింగ్ పాయింట్ | |
+| formal parameter | ఫార్మల్ పారామీటర్ | |
+| global / local | గ్లోబల్ / లోకల్ | |
+| guard (in `match`) | గార్డ్ | |
+| in place | అక్కడికక్కడే | |
+| initialize | ఇనిషియలైజ్ చేయు | |
+| instance | ఇన్‌స్టాన్స్ | |
+| lexicographical ordering | నిఘంటు క్రమం | |
+| literal | లిటరల్ | plural లిటరల్‌లు |
+| mapping | మ్యాపింగ్ | |
+| membership test | సభ్యత్వ పరీక్ష | |
+| multiple assignment | బహుళ అసైన్‌మెంట్ | |
+| negative / non-negative | రుణ / రుణం కాని | |
+| newline | న్యూలైన్ | |
+| optional | ఐచ్ఛిక | |
+| placeholder | ప్లేస్‌హోల్డర్ | |
+| power (exponent) | ఘాతం | |
+| precedence / priority | ప్రాధాన్యత | |
+| raise (an exception) | రైజ్ చేయు | |
+| raw string | రా స్ట్రింగ్ | |
+| read-only | రీడ్-ఓన్లీ | |
+| shadow (a name) | కప్పివేయు | |
+| shallow copy | షాలో కాపీ | |
+| short-circuit | షార్ట్-సర్క్యూట్ | |
+| side effect | సైడ్ ఎఫెక్ట్ | no hyphen |
+| sort | సార్ట్ చేయు | |
+| subject (of `match`) | సబ్జెక్ట్ | |
+| subpackage / subpattern | సబ్‌ప్యాకేజీ / సబ్‌ప్యాటర్న్ | |
+| subsequence / substring | ఉప-సీక్వెన్స్ / సబ్‌స్ట్రింగ్ | |
+| suffix / prefix | సఫిక్స్ / ప్రిఫిక్స్ | |
+| symbolic link | సింబాలిక్ లింక్ | |
+| top level | టాప్ లెవెల్ | |
+| variant | రూపాంతరం | |
+| whitespace | ఖాళీ స్థలం | |
