@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-10-21 19:24-0700\n"
+"PO-Revision-Date: 2026-10-22 18:58-0700\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -579,6 +579,9 @@ msgid ""
 " 0. There is no separate character type; a character is simply a string of "
 "size one::"
 msgstr ""
+"స్ట్రింగ్‌లను *ఇండెక్స్* చేయవచ్చు (సబ్‌స్క్రిప్ట్ చేయవచ్చు); మొదటి అక్షరానికి"
+" ఇండెక్స్ 0 ఉంటుంది. ప్రత్యేకంగా అక్షర టైప్ అంటూ ఏదీ లేదు; అక్షరం అంటే కేవలం "
+"పొడవు ఒకటి ఉన్న స్ట్రింగ్::"
 
 #: tutorial/introduction.rst:258
 msgid ""
@@ -588,11 +591,18 @@ msgid ""
 ">>> word[5]  # character in position 5\n"
 "'n'"
 msgstr ""
+">>> word = 'Python'\n"
+">>> word[0]  # character in position 0\n"
+"'P'\n"
+">>> word[5]  # character in position 5\n"
+"'n'"
 
 #: tutorial/introduction.rst:264
 msgid ""
 "Indices may also be negative numbers, to start counting from the right::"
 msgstr ""
+"కుడి వైపు నుండి లెక్కించడం ప్రారంభించడానికి, ఇండెక్స్‌లు రుణ సంఖ్యలు "
+"(negative numbers) కూడా కావచ్చు::"
 
 #: tutorial/introduction.rst:266
 msgid ""
@@ -603,10 +613,17 @@ msgid ""
 ">>> word[-6]\n"
 "'P'"
 msgstr ""
+">>> word[-1]  # last character\n"
+"'n'\n"
+">>> word[-2]  # second-last character\n"
+"'o'\n"
+">>> word[-6]\n"
+"'P'"
 
 #: tutorial/introduction.rst:273
 msgid "Note that since -0 is the same as 0, negative indices start from -1."
 msgstr ""
+"-0 అనేది 0 తో సమానం కాబట్టి, రుణ ఇండెక్స్‌లు -1 నుండి మొదలవుతాయని గమనించండి."
 
 #: tutorial/introduction.rst:275
 msgid ""
@@ -614,6 +631,9 @@ msgid ""
 " to obtain individual characters, *slicing* allows you to obtain a "
 "substring::"
 msgstr ""
+"ఇండెక్సింగ్‌తో పాటు, *స్లైసింగ్* కూడా సపోర్ట్ చేయబడుతుంది. ఒక్కొక్క "
+"అక్షరాన్ని పొందడానికి ఇండెక్సింగ్ ఉపయోగించబడుతుంది, అయితే *స్లైసింగ్* ఒక "
+"సబ్‌స్ట్రింగ్‌ను పొందడానికి వీలు కల్పిస్తుంది::"
 
 #: tutorial/introduction.rst:278
 msgid ""
@@ -622,12 +642,19 @@ msgid ""
 ">>> word[2:5]  # characters from position 2 (included) to 5 (excluded)\n"
 "'tho'"
 msgstr ""
+">>> word[0:2]  # characters from position 0 (included) to 2 (excluded)\n"
+"'Py'\n"
+">>> word[2:5]  # characters from position 2 (included) to 5 (excluded)\n"
+"'tho'"
 
 #: tutorial/introduction.rst:283
 msgid ""
 "Slice indices have useful defaults; an omitted first index defaults to zero, "
 "an omitted second index defaults to the size of the string being sliced. ::"
 msgstr ""
+"స్లైస్ ఇండెక్స్‌లకు ఉపయోగకరమైన డిఫాల్ట్ విలువలు ఉన్నాయి; మొదటి ఇండెక్స్‌ను "
+"వదిలివేస్తే అది డిఫాల్ట్‌గా సున్నా అవుతుంది, రెండవ ఇండెక్స్‌ను వదిలివేస్తే "
+"అది డిఫాల్ట్‌గా స్లైస్ చేస్తున్న స్ట్రింగ్ పొడవు అవుతుంది. ::"
 
 #: tutorial/introduction.rst:286
 msgid ""
@@ -638,12 +665,20 @@ msgid ""
 ">>> word[-2:]  # characters from the second-last (included) to the end\n"
 "'on'"
 msgstr ""
+">>> word[:2]   # character from the beginning to position 2 (excluded)\n"
+"'Py'\n"
+">>> word[4:]   # characters from position 4 (included) to the end\n"
+"'on'\n"
+">>> word[-2:]  # characters from the second-last (included) to the end\n"
+"'on'"
 
 #: tutorial/introduction.rst:293
 msgid ""
 "Note how the start is always included, and the end always excluded.  This "
 "makes sure that ``s[:i] + s[i:]`` is always equal to ``s``::"
 msgstr ""
+"ప్రారంభం ఎల్లప్పుడూ చేర్చబడుతుందని, ముగింపు ఎల్లప్పుడూ మినహాయించబడుతుందని "
+"గమనించండి. దీనివల్ల ``s[:i] + s[i:]`` ఎల్లప్పుడూ ``s`` తో సమానంగా ఉంటుంది::"
 
 #: tutorial/introduction.rst:296
 msgid ""
@@ -652,6 +687,10 @@ msgid ""
 ">>> word[:4] + word[4:]\n"
 "'Python'"
 msgstr ""
+">>> word[:2] + word[2:]\n"
+"'Python'\n"
+">>> word[:4] + word[4:]\n"
+"'Python'"
 
 #: tutorial/introduction.rst:301
 msgid ""
@@ -660,6 +699,10 @@ msgid ""
 "Then the right edge of the last character of a string of *n* characters has "
 "index *n*, for example::"
 msgstr ""
+"స్లైస్‌లు ఎలా పనిచేస్తాయో గుర్తుంచుకోవడానికి ఒక మార్గం: ఇండెక్స్‌లు అక్షరాల "
+"*మధ్య* స్థానాలను సూచిస్తున్నట్లుగా ఊహించుకోవడం, మొదటి అక్షరం యొక్క ఎడమ అంచుకు"
+" సంఖ్య 0. అప్పుడు *n* అక్షరాలు ఉన్న స్ట్రింగ్‌లో చివరి అక్షరం యొక్క కుడి "
+"అంచుకు ఇండెక్స్ *n* ఉంటుంది, ఉదాహరణకు::"
 
 #: tutorial/introduction.rst:306
 msgid ""
@@ -669,6 +712,11 @@ msgid ""
 " 0   1   2   3   4   5   6\n"
 "-6  -5  -4  -3  -2  -1"
 msgstr ""
+" +---+---+---+---+---+---+\n"
+" | P | y | t | h | o | n |\n"
+" +---+---+---+---+---+---+\n"
+" 0   1   2   3   4   5   6\n"
+"-6  -5  -4  -3  -2  -1"
 
 #: tutorial/introduction.rst:312
 msgid ""
@@ -677,6 +725,9 @@ msgid ""
 "from *i* to *j* consists of all characters between the edges labeled *i* and "
 "*j*, respectively."
 msgstr ""
+"సంఖ్యల మొదటి వరుస స్ట్రింగ్‌లో 0...6 ఇండెక్స్‌ల స్థానాన్ని ఇస్తుంది; రెండవ "
+"వరుస సంబంధిత రుణ ఇండెక్స్‌లను ఇస్తుంది. *i* నుండి *j* వరకు ఉన్న స్లైస్‌లో, "
+"వరుసగా *i* మరియు *j* అని గుర్తించిన అంచుల మధ్య ఉన్న అన్ని అక్షరాలు ఉంటాయి."
 
 #: tutorial/introduction.rst:317
 msgid ""
@@ -684,10 +735,12 @@ msgid ""
 "indices, if both are within bounds.  For example, the length of ``word[1:3]``"
 " is 2."
 msgstr ""
+"రుణం కాని ఇండెక్స్‌లకు, రెండు ఇండెక్స్‌లు పరిధిలో ఉంటే, స్లైస్ పొడవు ఆ "
+"ఇండెక్స్‌ల తేడాకు సమానం. ఉదాహరణకు, ``word[1:3]`` పొడవు 2."
 
 #: tutorial/introduction.rst:321
 msgid "Attempting to use an index that is too large will result in an error::"
-msgstr ""
+msgstr "చాలా పెద్ద ఇండెక్స్‌ను ఉపయోగించడానికి ప్రయత్నిస్తే లోపం వస్తుంది::"
 
 #: tutorial/introduction.rst:323
 msgid ""
@@ -696,12 +749,18 @@ msgid ""
 "  File \"<stdin>\", line 1, in <module>\n"
 "IndexError: string index out of range"
 msgstr ""
+">>> word[42]  # the word only has 6 characters\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"IndexError: string index out of range"
 
 #: tutorial/introduction.rst:328
 msgid ""
 "However, out of range slice indexes are handled gracefully when used for "
 "slicing::"
 msgstr ""
+"అయితే, స్లైసింగ్ కోసం ఉపయోగించినప్పుడు, పరిధి దాటిన స్లైస్ ఇండెక్స్‌లు లోపం "
+"లేకుండా సజావుగా నిర్వహించబడతాయి::"
 
 #: tutorial/introduction.rst:331
 msgid ""
@@ -710,12 +769,19 @@ msgid ""
 ">>> word[42:]\n"
 "''"
 msgstr ""
+">>> word[4:42]\n"
+"'on'\n"
+">>> word[42:]\n"
+"''"
 
 #: tutorial/introduction.rst:336
 msgid ""
 "Python strings cannot be changed --- they are :term:`immutable`. Therefore, "
 "assigning to an indexed position in the string results in an error::"
 msgstr ""
+"Python స్ట్రింగ్‌లను మార్చలేము --- అవి :term:`ఇమ్యూటబుల్ <immutable>` "
+"(మార్చలేనివి). కాబట్టి, స్ట్రింగ్‌లోని ఇండెక్స్ చేసిన స్థానానికి విలువను "
+"కేటాయిస్తే లోపం వస్తుంది::"
 
 #: tutorial/introduction.rst:339
 msgid ""
@@ -728,10 +794,18 @@ msgid ""
 "  File \"<stdin>\", line 1, in <module>\n"
 "TypeError: 'str' object does not support item assignment"
 msgstr ""
+">>> word[0] = 'J'\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: 'str' object does not support item assignment\n"
+">>> word[2:] = 'py'\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: 'str' object does not support item assignment"
 
 #: tutorial/introduction.rst:348
 msgid "If you need a different string, you should create a new one::"
-msgstr ""
+msgstr "మీకు వేరే స్ట్రింగ్ అవసరమైతే, కొత్తదాన్ని సృష్టించాలి::"
 
 #: tutorial/introduction.rst:350
 msgid ""
@@ -740,10 +814,14 @@ msgid ""
 ">>> word[:2] + 'py'\n"
 "'Pypy'"
 msgstr ""
+">>> 'J' + word[1:]\n"
+"'Jython'\n"
+">>> word[:2] + 'py'\n"
+"'Pypy'"
 
 #: tutorial/introduction.rst:355
 msgid "The built-in function :func:`len` returns the length of a string::"
-msgstr ""
+msgstr "బిల్ట్-ఇన్ ఫంక్షన్ :func:`len` స్ట్రింగ్ పొడవును రిటర్న్ చేస్తుంది::"
 
 #: tutorial/introduction.rst:357
 msgid ""
@@ -751,52 +829,61 @@ msgid ""
 ">>> len(s)\n"
 "34"
 msgstr ""
+">>> s = 'supercalifragilisticexpialidocious'\n"
+">>> len(s)\n"
+"34"
 
 #: tutorial/introduction.rst:364
 msgid ":ref:`textseq`"
-msgstr ""
+msgstr ":ref:`textseq`"
 
 #: tutorial/introduction.rst:365
 msgid ""
 "Strings are examples of *sequence types*, and support the common operations "
 "supported by such types."
 msgstr ""
+"స్ట్రింగ్‌లు *సీక్వెన్స్ టైప్‌లకు* ఉదాహరణలు, అలాంటి టైప్‌లు సపోర్ట్ చేసే "
+"సాధారణ ఆపరేషన్‌లను అవి సపోర్ట్ చేస్తాయి."
 
 #: tutorial/introduction.rst:368
 msgid ":ref:`string-methods`"
-msgstr ""
+msgstr ":ref:`string-methods`"
 
 #: tutorial/introduction.rst:369
 msgid ""
 "Strings support a large number of methods for basic transformations and "
 "searching."
 msgstr ""
+"ప్రాథమిక మార్పిడుల కోసం మరియు వెతకడం కోసం స్ట్రింగ్‌లు పెద్ద సంఖ్యలో "
+"మెథడ్‌లను సపోర్ట్ చేస్తాయి."
 
 #: tutorial/introduction.rst:372
 msgid ":ref:`f-strings`"
-msgstr ""
+msgstr ":ref:`f-strings`"
 
 #: tutorial/introduction.rst:373
 msgid "String literals that have embedded expressions."
-msgstr ""
+msgstr "లోపల ఎక్స్‌ప్రెషన్‌లు పొందుపరచబడిన స్ట్రింగ్ లిటరల్‌లు."
 
 #: tutorial/introduction.rst:375
 msgid ":ref:`formatstrings`"
-msgstr ""
+msgstr ":ref:`formatstrings`"
 
 #: tutorial/introduction.rst:376
 msgid "Information about string formatting with :meth:`str.format`."
-msgstr ""
+msgstr ":meth:`str.format` తో స్ట్రింగ్ ఫార్మాటింగ్ గురించిన సమాచారం."
 
 #: tutorial/introduction.rst:378
 msgid ":ref:`old-string-formatting`"
-msgstr ""
+msgstr ":ref:`old-string-formatting`"
 
 #: tutorial/introduction.rst:379
 msgid ""
 "The old formatting operations invoked when strings are the left operand of "
 "the ``%`` operator are described in more detail here."
 msgstr ""
+"స్ట్రింగ్‌లు ``%`` ఆపరేటర్ యొక్క ఎడమ ఆపరాండ్‌గా ఉన్నప్పుడు జరిగే పాత "
+"ఫార్మాటింగ్ ఆపరేషన్‌లు ఇక్కడ మరింత వివరంగా వివరించబడ్డాయి."
 
 #: tutorial/introduction.rst:386
 msgid "Lists"
