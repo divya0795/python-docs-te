@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-10-23 19:14-0700\n"
+"PO-Revision-Date: 2026-10-23 19:41-0700\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -2351,7 +2351,7 @@ msgstr ""
 
 #: tutorial/controlflow.rst:1102
 msgid "Intermezzo: Coding Style"
-msgstr ""
+msgstr "విరామం: కోడింగ్ శైలి"
 
 #: tutorial/controlflow.rst:1106
 msgid ""
@@ -2361,6 +2361,12 @@ msgid ""
 " others. Making it easy for others to read your code is always a good idea, "
 "and adopting a nice coding style helps tremendously for that."
 msgstr ""
+"ఇప్పుడు మీరు Pythonలో పొడవైన, మరింత సంక్లిష్టమైన కోడ్ భాగాలను రాయబోతున్నారు "
+"కాబట్టి, *కోడింగ్ శైలి* గురించి మాట్లాడటానికి ఇది మంచి సమయం. చాలా భాషలను "
+"వేర్వేరు శైలులలో రాయవచ్చు (లేదా, మరింత క్లుప్తంగా చెప్పాలంటే, *ఫార్మాట్* "
+"చేయవచ్చు); కొన్ని శైలులు ఇతరులకంటే చదవడానికి సులభంగా ఉంటాయి. మీ కోడ్‌ను "
+"ఇతరులు సులభంగా చదవగలిగేలా చేయడం ఎల్లప్పుడూ మంచి ఆలోచన, మరియు మంచి కోడింగ్ "
+"శైలిని అవలంబించడం దానికి ఎంతో సహాయపడుతుంది."
 
 #: tutorial/controlflow.rst:1112
 msgid ""
@@ -2369,10 +2375,14 @@ msgid ""
 " developer should read it at some point; here are the most important points "
 "extracted for you:"
 msgstr ""
+"Python కోసం, చాలా ప్రాజెక్ట్‌లు పాటించే స్టైల్ గైడ్‌గా :pep:`8` నిలిచింది; "
+"ఇది చదవడానికి సులభమైన, కంటికి ఆహ్లాదకరమైన కోడింగ్ శైలిని ప్రోత్సహిస్తుంది. "
+"ప్రతి Python డెవలపర్ ఏదో ఒక సమయంలో దీన్ని చదవాలి; మీ కోసం సంగ్రహించిన అత్యంత "
+"ముఖ్యమైన అంశాలు ఇవిగో:"
 
 #: tutorial/controlflow.rst:1117
 msgid "Use 4-space indentation, and no tabs."
-msgstr ""
+msgstr "4-స్పేస్ ఇండెంటేషన్‌ను ఉపయోగించండి, ట్యాబ్‌లను ఉపయోగించవద్దు."
 
 #: tutorial/controlflow.rst:1119
 msgid ""
@@ -2380,36 +2390,45 @@ msgid ""
 "nesting depth) and large indentation (easier to read).  Tabs introduce "
 "confusion, and are best left out."
 msgstr ""
+"4 స్పేస్‌లు చిన్న ఇండెంటేషన్ (ఎక్కువ నెస్టింగ్ లోతును అనుమతిస్తుంది) మరియు "
+"పెద్ద ఇండెంటేషన్ (చదవడానికి సులభం) మధ్య మంచి రాజీ. ట్యాబ్‌లు గందరగోళాన్ని "
+"కలిగిస్తాయి, వాటిని ఉపయోగించకపోవడమే మంచిది."
 
 #: tutorial/controlflow.rst:1123
 msgid "Wrap lines so that they don't exceed 79 characters."
-msgstr ""
+msgstr "లైన్‌లు 79 అక్షరాలను మించకుండా వాటిని విభజించండి."
 
 #: tutorial/controlflow.rst:1125
 msgid ""
 "This helps users with small displays and makes it possible to have several "
 "code files side-by-side on larger displays."
 msgstr ""
+"ఇది చిన్న డిస్‌ప్లేలు ఉన్న వినియోగదారులకు సహాయపడుతుంది, మరియు పెద్ద "
+"డిస్‌ప్లేలపై అనేక కోడ్ ఫైల్‌లను పక్కపక్కనే ఉంచడం సాధ్యం చేస్తుంది."
 
 #: tutorial/controlflow.rst:1128
 msgid ""
 "Use blank lines to separate functions and classes, and larger blocks of code "
 "inside functions."
 msgstr ""
+"ఫంక్షన్‌లను, క్లాస్‌లను, మరియు ఫంక్షన్‌ల లోపలి పెద్ద కోడ్ బ్లాక్‌లను వేరు "
+"చేయడానికి ఖాళీ లైన్‌లను ఉపయోగించండి."
 
 #: tutorial/controlflow.rst:1131
 msgid "When possible, put comments on a line of their own."
-msgstr ""
+msgstr "వీలైనప్పుడు, కామెంట్‌లను వాటి స్వంత లైన్‌లో ఉంచండి."
 
 #: tutorial/controlflow.rst:1133
 msgid "Use docstrings."
-msgstr ""
+msgstr "డాక్‌స్ట్రింగ్‌లను ఉపయోగించండి."
 
 #: tutorial/controlflow.rst:1135
 msgid ""
 "Use spaces around operators and after commas, but not directly inside "
 "bracketing constructs: ``a = f(1, 2) + g(3, 4)``."
 msgstr ""
+"ఆపరేటర్‌ల చుట్టూ మరియు కామాల తర్వాత స్పేస్‌లను ఉపయోగించండి, కానీ బ్రాకెట్‌ల "
+"లోపల నేరుగా వద్దు: ``a = f(1, 2) + g(3, 4)``."
 
 #: tutorial/controlflow.rst:1138
 msgid ""
@@ -2418,6 +2437,11 @@ msgid ""
 "functions and methods.  Always use ``self`` as the name for the first method "
 "argument (see :ref:`tut-firstclasses` for more on classes and methods)."
 msgstr ""
+"మీ క్లాస్‌లకు మరియు ఫంక్షన్‌లకు స్థిరంగా పేర్లు పెట్టండి; క్లాస్‌లకు "
+"``UpperCamelCase``, ఫంక్షన్‌లకు మరియు మెథడ్‌లకు "
+"``lowercase_with_underscores`` ఉపయోగించడం సంప్రదాయం. మొదటి మెథడ్ ఆర్గ్యుమెంట్"
+" పేరుగా ఎల్లప్పుడూ ``self`` ను ఉపయోగించండి (క్లాస్‌లు మరియు మెథడ్‌ల గురించి "
+"మరింత సమాచారం కోసం :ref:`tut-firstclasses` చూడండి)."
 
 #: tutorial/controlflow.rst:1143
 msgid ""
@@ -2425,6 +2449,9 @@ msgid ""
 "environments.  Python's default, UTF-8, or even plain ASCII work best in any "
 "case."
 msgstr ""
+"మీ కోడ్ అంతర్జాతీయ వాతావరణాల్లో ఉపయోగించబడాలనుకుంటే, అసాధారణమైన (fancy) "
+"ఎన్‌కోడింగ్‌లను ఉపయోగించవద్దు. Python డిఫాల్ట్ అయిన UTF-8, లేదా సాధారణ ASCII "
+"కూడా, ఏ సందర్భంలోనైనా ఉత్తమంగా పనిచేస్తాయి."
 
 #: tutorial/controlflow.rst:1147
 msgid ""
@@ -2432,10 +2459,12 @@ msgid ""
 "slightest chance people speaking a different language will read or maintain "
 "the code."
 msgstr ""
+"అదే విధంగా, వేరే భాష మాట్లాడే వ్యక్తులు కోడ్‌ను చదివే లేదా నిర్వహించే అవకాశం "
+"కొంచెమైనా ఉంటే, ఐడెంటిఫైయర్‌లలో ASCII కాని అక్షరాలను ఉపయోగించవద్దు."
 
 #: tutorial/controlflow.rst:1153
 msgid "Footnotes"
-msgstr ""
+msgstr "ఫుట్‌నోట్‌లు"
 
 #: tutorial/controlflow.rst:1154
 msgid ""
@@ -2443,71 +2472,74 @@ msgid ""
 "a mutable object is passed, the caller will see any changes the callee makes "
 "to it (items inserted into a list)."
 msgstr ""
+"నిజానికి, *call by object reference* అనేది మెరుగైన వివరణ అవుతుంది, ఎందుకంటే "
+"ఒక మ్యూటబుల్ ఆబ్జెక్ట్‌ను పంపితే, కాల్ చేయబడిన ఫంక్షన్ దానికి చేసే ఏ "
+"మార్పులనైనా (లిస్ట్‌లోకి చొప్పించిన ఐటెమ్‌లు) కాల్ చేసిన వారు చూస్తారు."
 
 #: tutorial/controlflow.rst:48
 msgid "statement"
-msgstr ""
+msgstr "స్టేట్‌మెంట్"
 
 #: tutorial/controlflow.rst:48
 msgid "for"
-msgstr ""
+msgstr "for"
 
 #: tutorial/controlflow.rst:254
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: tutorial/controlflow.rst:254
 msgid "ellipsis literal"
-msgstr ""
+msgstr "ఎలిప్సిస్ లిటరల్"
 
 #: tutorial/controlflow.rst:485 tutorial/controlflow.rst:1023
 msgid "documentation strings"
-msgstr ""
+msgstr "డాక్యుమెంటేషన్ స్ట్రింగ్‌లు"
 
 #: tutorial/controlflow.rst:485 tutorial/controlflow.rst:1023
 msgid "docstrings"
-msgstr ""
+msgstr "డాక్‌స్ట్రింగ్‌లు"
 
 #: tutorial/controlflow.rst:485 tutorial/controlflow.rst:1023
 msgid "strings, documentation"
-msgstr ""
+msgstr "స్ట్రింగ్‌లు, డాక్యుమెంటేషన్"
 
 #: tutorial/controlflow.rst:926
 msgid "* (asterisk)"
-msgstr ""
+msgstr "* (ఆస్టరిస్క్)"
 
 #: tutorial/controlflow.rst:926 tutorial/controlflow.rst:970
 msgid "in function calls"
-msgstr ""
+msgstr "ఫంక్షన్ కాల్‌లలో"
 
 #: tutorial/controlflow.rst:970
 msgid "**"
-msgstr ""
+msgstr "**"
 
 #: tutorial/controlflow.rst:1071
 msgid "function"
-msgstr ""
+msgstr "ఫంక్షన్"
 
 #: tutorial/controlflow.rst:1071
 msgid "annotations"
-msgstr ""
+msgstr "అనొటేషన్‌లు"
 
 #: tutorial/controlflow.rst:1071
 msgid "->"
-msgstr ""
+msgstr "->"
 
 #: tutorial/controlflow.rst:1071
 msgid "function annotations"
-msgstr ""
+msgstr "ఫంక్షన్ అనొటేషన్‌లు"
 
 #: tutorial/controlflow.rst:1071
 msgid ": (colon)"
-msgstr ""
+msgstr ": (కోలన్)"
 
 #: tutorial/controlflow.rst:1104
 msgid "coding"
-msgstr ""
+msgstr "కోడింగ్"
 
 #: tutorial/controlflow.rst:1104
 msgid "style"
-msgstr ""
+msgstr "శైలి"
