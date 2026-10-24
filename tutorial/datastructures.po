@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-10-23 20:00-0700\n"
+"PO-Revision-Date: 2026-10-23 20:13-0700\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -317,7 +317,7 @@ msgstr ""
 
 #: tutorial/datastructures.rst:191
 msgid "List Comprehensions"
-msgstr ""
+msgstr "లిస్ట్ కాంప్రహెన్షన్‌లు"
 
 #: tutorial/datastructures.rst:193
 msgid ""
@@ -326,10 +326,17 @@ msgid ""
 "operations applied to each member of another sequence or iterable, or to "
 "create a subsequence of those elements that satisfy a certain condition."
 msgstr ""
+"లిస్ట్‌లను సృష్టించడానికి లిస్ట్ కాంప్రహెన్షన్‌లు ఒక సంక్షిప్త మార్గాన్ని "
+"అందిస్తాయి. మరో సీక్వెన్స్ లేదా ఇటరబుల్‌లోని ప్రతి సభ్యునిపై కొన్ని "
+"ఆపరేషన్‌లను వర్తింపజేసిన ఫలితమే ప్రతి ఎలిమెంట్‌గా ఉండే కొత్త లిస్ట్‌లను తయారు"
+" చేయడం, లేదా ఒక నిర్దిష్ట షరతును సంతృప్తిపరిచే ఎలిమెంట్‌లతో ఉప-సీక్వెన్స్‌ను "
+"సృష్టించడం వీటి సాధారణ ఉపయోగాలు."
 
 #: tutorial/datastructures.rst:198
 msgid "For example, assume we want to create a list of squares, like::"
 msgstr ""
+"ఉదాహరణకు, మనం వర్గాల (squares) లిస్ట్‌ను సృష్టించాలనుకుంటున్నామని అనుకుందాం, "
+"ఇలా::"
 
 #: tutorial/datastructures.rst:200
 msgid ""
@@ -340,6 +347,12 @@ msgid ""
 ">>> squares\n"
 "[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]"
 msgstr ""
+">>> squares = []\n"
+">>> for x in range(10):\n"
+"...     squares.append(x**2)\n"
+"...\n"
+">>> squares\n"
+"[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]"
 
 #: tutorial/datastructures.rst:207
 msgid ""
@@ -347,22 +360,25 @@ msgid ""
 "exists after the loop completes.  We can calculate the list of squares "
 "without any side effects using::"
 msgstr ""
+"ఇది ``x`` అనే వేరియబుల్‌ను సృష్టిస్తుందని (లేదా ఓవర్‌రైట్ చేస్తుందని), లూప్ "
+"పూర్తయిన తర్వాత కూడా అది ఉనికిలో ఉంటుందని గమనించండి. ఏ సైడ్ ఎఫెక్ట్‌లూ "
+"లేకుండా వర్గాల లిస్ట్‌ను మనం ఇలా లెక్కించవచ్చు::"
 
 #: tutorial/datastructures.rst:211
 msgid "squares = list(map(lambda x: x**2, range(10)))"
-msgstr ""
+msgstr "squares = list(map(lambda x: x**2, range(10)))"
 
 #: tutorial/datastructures.rst:213
 msgid "or, equivalently::"
-msgstr ""
+msgstr "లేదా, దీనికి సమానంగా::"
 
 #: tutorial/datastructures.rst:215
 msgid "squares = [x**2 for x in range(10)]"
-msgstr ""
+msgstr "squares = [x**2 for x in range(10)]"
 
 #: tutorial/datastructures.rst:217
 msgid "which is more concise and readable."
-msgstr ""
+msgstr "ఇది మరింత సంక్షిప్తంగా, చదవడానికి సులభంగా ఉంటుంది."
 
 #: tutorial/datastructures.rst:219
 msgid ""
@@ -373,16 +389,24 @@ msgid ""
 ":keyword:`!if` clauses which follow it. For example, this listcomp combines "
 "the elements of two lists if they are not equal::"
 msgstr ""
+"లిస్ట్ కాంప్రహెన్షన్‌లో బ్రాకెట్‌లు ఉంటాయి, వాటిలో ఒక ఎక్స్‌ప్రెషన్, దాని "
+"తర్వాత ఒక :keyword:`!for` క్లాజ్, ఆ తర్వాత సున్నా లేదా అంతకంటే ఎక్కువ "
+":keyword:`!for` లేదా :keyword:`!if` క్లాజ్‌లు ఉంటాయి. ఎక్స్‌ప్రెషన్‌ను దాని "
+"తర్వాత వచ్చే :keyword:`!for` మరియు :keyword:`!if` క్లాజ్‌ల సందర్భంలో "
+"ఎవాల్యుయేట్ చేయగా వచ్చే కొత్త లిస్ట్ ఫలితంగా ఉంటుంది. ఉదాహరణకు, ఈ listcomp "
+"రెండు లిస్ట్‌లలోని ఎలిమెంట్‌లు సమానం కాకపోతే వాటిని జతచేస్తుంది::"
 
 #: tutorial/datastructures.rst:226
 msgid ""
 ">>> [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]\n"
 "[(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]"
 msgstr ""
+">>> [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]\n"
+"[(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]"
 
 #: tutorial/datastructures.rst:229
 msgid "and it's equivalent to::"
-msgstr ""
+msgstr "ఇది దీనికి సమానం::"
 
 #: tutorial/datastructures.rst:231
 msgid ""
@@ -395,18 +419,30 @@ msgid ""
 ">>> combs\n"
 "[(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]"
 msgstr ""
+">>> combs = []\n"
+">>> for x in [1,2,3]:\n"
+"...     for y in [3,1,4]:\n"
+"...         if x != y:\n"
+"...             combs.append((x, y))\n"
+"...\n"
+">>> combs\n"
+"[(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]"
 
 #: tutorial/datastructures.rst:240
 msgid ""
 "Note how the order of the :keyword:`for` and :keyword:`if` statements is the "
 "same in both these snippets."
 msgstr ""
+"ఈ రెండు కోడ్ ముక్కలలోనూ :keyword:`for` మరియు :keyword:`if` స్టేట్‌మెంట్‌ల "
+"క్రమం ఒకేలా ఉండటాన్ని గమనించండి."
 
 #: tutorial/datastructures.rst:243
 msgid ""
 "If the expression is a tuple (e.g. the ``(x, y)`` in the previous example), "
 "it must be parenthesized. ::"
 msgstr ""
+"ఎక్స్‌ప్రెషన్ ఒక టపుల్ అయితే (ఉదా. మునుపటి ఉదాహరణలోని ``(x, y)``), దాన్ని "
+"తప్పనిసరిగా కుండలీకరణాలలో (parentheses) ఉంచాలి. ::"
 
 #: tutorial/datastructures.rst:246
 msgid ""
@@ -438,11 +474,40 @@ msgid ""
 ">>> [num for elem in vec for num in elem]\n"
 "[1, 2, 3, 4, 5, 6, 7, 8, 9]"
 msgstr ""
+">>> vec = [-4, -2, 0, 2, 4]\n"
+">>> # create a new list with the values doubled\n"
+">>> [x*2 for x in vec]\n"
+"[-8, -4, 0, 4, 8]\n"
+">>> # filter the list to exclude negative numbers\n"
+">>> [x for x in vec if x >= 0]\n"
+"[0, 2, 4]\n"
+">>> # apply a function to all the elements\n"
+">>> [abs(x) for x in vec]\n"
+"[4, 2, 0, 2, 4]\n"
+">>> # call a method on each element\n"
+">>> freshfruit = ['  banana', '  loganberry ', 'passion fruit  ']\n"
+">>> [weapon.strip() for weapon in freshfruit]\n"
+"['banana', 'loganberry', 'passion fruit']\n"
+">>> # create a list of 2-tuples like (number, square)\n"
+">>> [(x, x**2) for x in range(6)]\n"
+"[(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]\n"
+">>> # the tuple must be parenthesized, otherwise an error is raised\n"
+">>> [x, x**2 for x in range(6)]\n"
+"  File \"<stdin>\", line 1\n"
+"    [x, x**2 for x in range(6)]\n"
+"     ^^^^^^^\n"
+"SyntaxError: did you forget parentheses around the comprehension target?\n"
+">>> # flatten a list using a listcomp with two 'for'\n"
+">>> vec = [[1,2,3], [4,5,6], [7,8,9]]\n"
+">>> [num for elem in vec for num in elem]\n"
+"[1, 2, 3, 4, 5, 6, 7, 8, 9]"
 
 #: tutorial/datastructures.rst:274
 msgid ""
 "List comprehensions can contain complex expressions and nested functions::"
 msgstr ""
+"లిస్ట్ కాంప్రహెన్షన్‌లలో సంక్లిష్టమైన ఎక్స్‌ప్రెషన్‌లు, నెస్టెడ్ ఫంక్షన్‌లు "
+"ఉండవచ్చు::"
 
 #: tutorial/datastructures.rst:276
 msgid ""
@@ -450,22 +515,29 @@ msgid ""
 ">>> [str(round(pi, i)) for i in range(1, 6)]\n"
 "['3.1', '3.14', '3.142', '3.1416', '3.14159']"
 msgstr ""
+">>> from math import pi\n"
+">>> [str(round(pi, i)) for i in range(1, 6)]\n"
+"['3.1', '3.14', '3.142', '3.1416', '3.14159']"
 
 #: tutorial/datastructures.rst:281
 msgid "Nested List Comprehensions"
-msgstr ""
+msgstr "నెస్టెడ్ లిస్ట్ కాంప్రహెన్షన్‌లు"
 
 #: tutorial/datastructures.rst:283
 msgid ""
 "The initial expression in a list comprehension can be any arbitrary "
 "expression, including another list comprehension."
 msgstr ""
+"లిస్ట్ కాంప్రహెన్షన్‌లోని ప్రారంభ ఎక్స్‌ప్రెషన్ ఏ ఎక్స్‌ప్రెషన్ అయినా "
+"కావచ్చు, మరో లిస్ట్ కాంప్రహెన్షన్ కూడా."
 
 #: tutorial/datastructures.rst:286
 msgid ""
 "Consider the following example of a 3x4 matrix implemented as a list of 3 "
 "lists of length 4::"
 msgstr ""
+"పొడవు 4 ఉన్న 3 లిస్ట్‌ల లిస్ట్‌గా రూపొందించిన 3x4 మ్యాట్రిక్స్ యొక్క ఈ కింది "
+"ఉదాహరణను పరిశీలించండి::"
 
 #: tutorial/datastructures.rst:289
 msgid ""
@@ -475,16 +547,25 @@ msgid ""
 "...     [9, 10, 11, 12],\n"
 "... ]"
 msgstr ""
+">>> matrix = [\n"
+"...     [1, 2, 3, 4],\n"
+"...     [5, 6, 7, 8],\n"
+"...     [9, 10, 11, 12],\n"
+"... ]"
 
 #: tutorial/datastructures.rst:295
 msgid "The following list comprehension will transpose rows and columns::"
 msgstr ""
+"కింది లిస్ట్ కాంప్రహెన్షన్ వరుసలను, నిలువు వరుసలను (rows and columns) "
+"తారుమారు (transpose) చేస్తుంది::"
 
 #: tutorial/datastructures.rst:297
 msgid ""
 ">>> [[row[i] for row in matrix] for i in range(4)]\n"
 "[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]"
 msgstr ""
+">>> [[row[i] for row in matrix] for i in range(4)]\n"
+"[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]"
 
 #: tutorial/datastructures.rst:300
 msgid ""
@@ -492,6 +573,9 @@ msgid ""
 "in the context of the :keyword:`for` that follows it, so this example is "
 "equivalent to::"
 msgstr ""
+"మునుపటి విభాగంలో చూసినట్లుగా, లోపలి లిస్ట్ కాంప్రహెన్షన్ దాని తర్వాత వచ్చే "
+":keyword:`for` సందర్భంలో ఎవాల్యుయేట్ అవుతుంది, కాబట్టి ఈ ఉదాహరణ దీనికి "
+"సమానం::"
 
 #: tutorial/datastructures.rst:304
 msgid ""
@@ -502,10 +586,16 @@ msgid ""
 ">>> transposed\n"
 "[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]"
 msgstr ""
+">>> transposed = []\n"
+">>> for i in range(4):\n"
+"...     transposed.append([row[i] for row in matrix])\n"
+"...\n"
+">>> transposed\n"
+"[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]"
 
 #: tutorial/datastructures.rst:311
 msgid "which, in turn, is the same as::"
-msgstr ""
+msgstr "అది మళ్లీ దీనికి సమానం::"
 
 #: tutorial/datastructures.rst:313
 msgid ""
@@ -520,27 +610,44 @@ msgid ""
 ">>> transposed\n"
 "[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]"
 msgstr ""
+">>> transposed = []\n"
+">>> for i in range(4):\n"
+"...     # the following 3 lines implement the nested listcomp\n"
+"...     transposed_row = []\n"
+"...     for row in matrix:\n"
+"...         transposed_row.append(row[i])\n"
+"...     transposed.append(transposed_row)\n"
+"...\n"
+">>> transposed\n"
+"[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]"
 
 #: tutorial/datastructures.rst:324
 msgid ""
 "In the real world, you should prefer built-in functions to complex flow "
 "statements. The :func:`zip` function would do a great job for this use case::"
 msgstr ""
+"వాస్తవ ప్రపంచంలో, సంక్లిష్టమైన ఫ్లో స్టేట్‌మెంట్‌ల కంటే బిల్ట్-ఇన్ "
+"ఫంక్షన్‌లకే మీరు ప్రాధాన్యత ఇవ్వాలి. ఈ సందర్భానికి :func:`zip` ఫంక్షన్ చాలా "
+"బాగా పనిచేస్తుంది::"
 
 #: tutorial/datastructures.rst:327
 msgid ""
 ">>> list(zip(*matrix))\n"
 "[(1, 5, 9), (2, 6, 10), (3, 7, 11), (4, 8, 12)]"
 msgstr ""
+">>> list(zip(*matrix))\n"
+"[(1, 5, 9), (2, 6, 10), (3, 7, 11), (4, 8, 12)]"
 
 #: tutorial/datastructures.rst:330
 msgid ""
 "See :ref:`tut-unpacking-arguments` for details on the asterisk in this line."
 msgstr ""
+"ఈ లైన్‌లోని ఆస్టరిస్క్ (*) గురించిన వివరాల కోసం :ref:`tut-unpacking-"
+"arguments` చూడండి."
 
 #: tutorial/datastructures.rst:333
 msgid "Unpacking in Lists and List Comprehensions"
-msgstr ""
+msgstr "లిస్ట్‌లలో మరియు లిస్ట్ కాంప్రహెన్షన్‌లలో అన్‌ప్యాకింగ్"
 
 #: tutorial/datastructures.rst:335
 msgid ""
@@ -551,6 +658,13 @@ msgid ""
 "prefixing an expression by a ``*`` will unpack the result of that expression,"
 " adding each of its elements to the list we're creating::"
 msgstr ""
+":ref:`tut-unpacking-arguments` విభాగం, ఇటరబుల్ ఆబ్జెక్ట్‌లోని ఎలిమెంట్‌లను "
+"\"అన్‌ప్యాక్\" చేసి, ప్రతి దాన్నీ విడివిడిగా ఫంక్షన్‌కు ఆర్గ్యుమెంట్‌గా "
+"అందించడానికి ``*`` ను ఉపయోగించడాన్ని వివరిస్తుంది. అన్‌ప్యాకింగ్‌ను ఇతర "
+"సందర్భాలలో కూడా ఉపయోగించవచ్చు, ఉదాహరణకు, లిస్ట్‌లను సృష్టించేటప్పుడు. లిస్ట్ "
+"ఎలిమెంట్‌లను పేర్కొనేటప్పుడు, ఒక ఎక్స్‌ప్రెషన్‌కు ముందు ``*`` ఉంచితే, ఆ "
+"ఎక్స్‌ప్రెషన్ ఫలితం అన్‌ప్యాక్ అవుతుంది, దానిలోని ప్రతి ఎలిమెంట్ మనం "
+"సృష్టిస్తున్న లిస్ట్‌కు జోడించబడుతుంది::"
 
 #: tutorial/datastructures.rst:342
 msgid ""
@@ -558,6 +672,9 @@ msgid ""
 ">>> [0, *x, 4, 5, 6]\n"
 "[0, 1, 2, 3, 4, 5, 6]"
 msgstr ""
+">>> x = [1, 2, 3]\n"
+">>> [0, *x, 4, 5, 6]\n"
+"[0, 1, 2, 3, 4, 5, 6]"
 
 #: tutorial/datastructures.rst:346
 msgid ""
@@ -565,6 +682,9 @@ msgid ""
 "iterable object; trying to unpack a non-iterable object will raise an "
 "exception::"
 msgstr ""
+"``*`` తర్వాత వచ్చే ఎక్స్‌ప్రెషన్ ఇటరబుల్ ఆబ్జెక్ట్‌గా ఎవాల్యుయేట్ అయినప్పుడు "
+"మాత్రమే ఇది పనిచేస్తుంది; ఇటరబుల్ కాని ఆబ్జెక్ట్‌ను అన్‌ప్యాక్ చేయడానికి "
+"ప్రయత్నిస్తే ఎక్సెప్షన్ రైజ్ అవుతుంది::"
 
 #: tutorial/datastructures.rst:349
 msgid ""
@@ -575,12 +695,20 @@ msgid ""
 "    [0, *x, 2, 3, 4]\n"
 "TypeError: Value after * must be an iterable, not int"
 msgstr ""
+">>> x = 1\n"
+">>> [0, *x, 2, 3, 4]\n"
+"Traceback (most recent call last):\n"
+"  File \"<python-input-1>\", line 1, in <module>\n"
+"    [0, *x, 2, 3, 4]\n"
+"TypeError: Value after * must be an iterable, not int"
 
 #: tutorial/datastructures.rst:356
 msgid ""
 "Unpacking can also be used in list comprehensions, as a way to build a new "
 "list representing the concatenation of an arbitrary number of iterables::"
 msgstr ""
+"ఏదైనా సంఖ్యలో ఉన్న ఇటరబుల్‌లను కలిపి ఒక కొత్త లిస్ట్‌ను తయారు చేసే మార్గంగా, "
+"లిస్ట్ కాంప్రహెన్షన్‌లలో కూడా అన్‌ప్యాకింగ్‌ను ఉపయోగించవచ్చు::"
 
 #: tutorial/datastructures.rst:359
 msgid ""
@@ -588,12 +716,18 @@ msgid ""
 ">>> [*element for element in x]\n"
 "[1, 2, 3, 4, 5, 6, 7, 8, 9]"
 msgstr ""
+">>> x = [[1, 2, 3], [4, 5, 6], [], [7], [8, 9]]\n"
+">>> [*element for element in x]\n"
+"[1, 2, 3, 4, 5, 6, 7, 8, 9]"
 
 #: tutorial/datastructures.rst:363
 msgid ""
 "Note that the effect is that each element from ``x`` is unpacked.  This works"
 " for arbitrary iterable objects, not just lists::"
 msgstr ""
+"దీని ప్రభావం ఏమిటంటే ``x`` లోని ప్రతి ఎలిమెంట్ అన్‌ప్యాక్ అవుతుందని "
+"గమనించండి. ఇది లిస్ట్‌లకు మాత్రమే కాకుండా, ఏ ఇటరబుల్ ఆబ్జెక్ట్‌లకైనా "
+"పనిచేస్తుంది::"
 
 #: tutorial/datastructures.rst:366
 msgid ""
@@ -601,12 +735,17 @@ msgid ""
 ">>> [*element for element in x]\n"
 "[1, 2, 3, 'c', 'a', 't', 'spam']"
 msgstr ""
+">>> x = [[1, 2, 3], 'cat', {'spam': 'eggs'}]\n"
+">>> [*element for element in x]\n"
+"[1, 2, 3, 'c', 'a', 't', 'spam']"
 
 #: tutorial/datastructures.rst:370
 msgid ""
 "But if the objects in ``x`` are not iterable, this expression would again "
 "raise an exception."
 msgstr ""
+"కానీ ``x`` లోని ఆబ్జెక్ట్‌లు ఇటరబుల్ కాకపోతే, ఈ ఎక్స్‌ప్రెషన్ మళ్లీ "
+"ఎక్సెప్షన్‌ను రైజ్ చేస్తుంది."
 
 #: tutorial/datastructures.rst:376
 msgid "The :keyword:`!del` statement"
