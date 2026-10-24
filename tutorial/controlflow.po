@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-10-23 18:33-0700\n"
+"PO-Revision-Date: 2026-10-23 18:46-0700\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -1635,7 +1635,7 @@ msgstr ""
 
 #: tutorial/controlflow.rst:750
 msgid "Special parameters"
-msgstr ""
+msgstr "ప్రత్యేక పారామీటర్‌లు"
 
 #: tutorial/controlflow.rst:752
 msgid ""
@@ -1645,10 +1645,16 @@ msgid ""
 "at the function definition to determine if items are passed by position, by "
 "position or keyword, or by keyword."
 msgstr ""
+"డిఫాల్ట్‌గా, Python ఫంక్షన్‌కు ఆర్గ్యుమెంట్‌లను స్థానం (position) ద్వారా "
+"గానీ, స్పష్టంగా కీవర్డ్ ద్వారా గానీ పంపవచ్చు. చదవడానికి సులభంగా ఉండటానికి "
+"మరియు పనితీరు కోసం, ఆర్గ్యుమెంట్‌లను పంపే విధానాన్ని పరిమితం చేయడం అర్థవంతం; "
+"అప్పుడు ఐటెమ్‌లు స్థానం ద్వారా, స్థానం లేదా కీవర్డ్ ద్వారా, లేదా కీవర్డ్ "
+"ద్వారా పంపబడతాయో తెలుసుకోవడానికి డెవలపర్ ఫంక్షన్ నిర్వచనాన్ని మాత్రమే చూస్తే "
+"సరిపోతుంది."
 
 #: tutorial/controlflow.rst:758
 msgid "A function definition may look like:"
-msgstr ""
+msgstr "ఒక ఫంక్షన్ నిర్వచనం ఇలా ఉండవచ్చు:"
 
 #: tutorial/controlflow.rst:760
 msgid ""
@@ -1659,6 +1665,12 @@ msgid ""
 "        |                                - Keyword only\n"
 "         -- Positional only"
 msgstr ""
+"def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):\n"
+"      -----------    ----------     ----------\n"
+"        |             |                  |\n"
+"        |        Positional or keyword   |\n"
+"        |                                - Keyword only\n"
+"         -- Positional only"
 
 #: tutorial/controlflow.rst:769
 msgid ""
@@ -1667,20 +1679,26 @@ msgid ""
 "only, positional-or-keyword, and keyword-only. Keyword parameters are also "
 "referred to as named parameters."
 msgstr ""
+"ఇక్కడ ``/`` మరియు ``*`` ఐచ్ఛికం. ఉపయోగిస్తే, ఈ గుర్తులు ఆర్గ్యుమెంట్‌లను "
+"ఫంక్షన్‌కు ఎలా పంపవచ్చు అనే దాని ద్వారా పారామీటర్ రకాన్ని సూచిస్తాయి: "
+"పొజిషనల్-మాత్రమే, పొజిషనల్-లేదా-కీవర్డ్, మరియు కీవర్డ్-మాత్రమే. కీవర్డ్ "
+"పారామీటర్‌లను పేరున్న పారామీటర్‌లు (named parameters) అని కూడా అంటారు."
 
 #: tutorial/controlflow.rst:776
 msgid "Positional-or-Keyword Arguments"
-msgstr ""
+msgstr "పొజిషనల్-లేదా-కీవర్డ్ ఆర్గ్యుమెంట్‌లు"
 
 #: tutorial/controlflow.rst:778
 msgid ""
 "If ``/`` and ``*`` are not present in the function definition, arguments may "
 "be passed to a function by position or by keyword."
 msgstr ""
+"ఫంక్షన్ నిర్వచనంలో ``/`` మరియు ``*`` లేకపోతే, ఆర్గ్యుమెంట్‌లను ఫంక్షన్‌కు "
+"స్థానం ద్వారా లేదా కీవర్డ్ ద్వారా పంపవచ్చు."
 
 #: tutorial/controlflow.rst:783
 msgid "Positional-Only Parameters"
-msgstr ""
+msgstr "పొజిషనల్-మాత్రమే పారామీటర్‌లు"
 
 #: tutorial/controlflow.rst:785
 msgid ""
@@ -1692,16 +1710,24 @@ msgid ""
 "parameters. If there is no ``/`` in the function definition, there are no "
 "positional-only parameters."
 msgstr ""
+"దీన్ని మరికొంత వివరంగా చూస్తే, కొన్ని పారామీటర్‌లను *పొజిషనల్-మాత్రమే* అని "
+"గుర్తించడం సాధ్యమే. *పొజిషనల్-మాత్రమే* అయితే, పారామీటర్‌ల క్రమం ముఖ్యం, మరియు"
+" ఆ పారామీటర్‌లను కీవర్డ్ ద్వారా పంపలేము. పొజిషనల్-మాత్రమే పారామీటర్‌లు ``/`` "
+"(ఫార్వర్డ్-స్లాష్) కంటే ముందు ఉంచబడతాయి. పొజిషనల్-మాత్రమే పారామీటర్‌లను "
+"మిగిలిన పారామీటర్‌ల నుండి తార్కికంగా వేరు చేయడానికి ``/`` ఉపయోగించబడుతుంది. "
+"ఫంక్షన్ నిర్వచనంలో ``/`` లేకపోతే, పొజిషనల్-మాత్రమే పారామీటర్‌లు ఉండవు."
 
 #: tutorial/controlflow.rst:793
 msgid ""
 "Parameters following the ``/`` may be *positional-or-keyword* or *keyword-"
 "only*."
 msgstr ""
+"``/`` తర్వాత వచ్చే పారామీటర్‌లు *పొజిషనల్-లేదా-కీవర్డ్* లేదా "
+"*కీవర్డ్-మాత్రమే* కావచ్చు."
 
 #: tutorial/controlflow.rst:797
 msgid "Keyword-Only Arguments"
-msgstr ""
+msgstr "కీవర్డ్-మాత్రమే ఆర్గ్యుమెంట్‌లు"
 
 #: tutorial/controlflow.rst:799
 msgid ""
@@ -1709,16 +1735,21 @@ msgid ""
 "passed by keyword argument, place an ``*`` in the arguments list just before "
 "the first *keyword-only* parameter."
 msgstr ""
+"పారామీటర్‌లను కీవర్డ్ ఆర్గ్యుమెంట్ ద్వారానే పంపాలని సూచిస్తూ వాటిని "
+"*కీవర్డ్-మాత్రమే* అని గుర్తించడానికి, మొదటి *కీవర్డ్-మాత్రమే* పారామీటర్‌కు "
+"సరిగ్గా ముందు ఆర్గ్యుమెంట్ లిస్ట్‌లో ఒక ``*`` ను ఉంచండి."
 
 #: tutorial/controlflow.rst:805
 msgid "Function Examples"
-msgstr ""
+msgstr "ఫంక్షన్ ఉదాహరణలు"
 
 #: tutorial/controlflow.rst:807
 msgid ""
 "Consider the following example function definitions paying close attention to"
 " the markers ``/`` and ``*``::"
 msgstr ""
+"``/`` మరియు ``*`` గుర్తులపై ప్రత్యేక శ్రద్ధ పెడుతూ, ఈ కింది ఉదాహరణ ఫంక్షన్ "
+"నిర్వచనాలను పరిశీలించండి::"
 
 #: tutorial/controlflow.rst:810
 msgid ""
@@ -1734,6 +1765,17 @@ msgid ""
 ">>> def combined_example(pos_only, /, standard, *, kwd_only):\n"
 "...     print(pos_only, standard, kwd_only)"
 msgstr ""
+">>> def standard_arg(arg):\n"
+"...     print(arg)\n"
+"...\n"
+">>> def pos_only_arg(arg, /):\n"
+"...     print(arg)\n"
+"...\n"
+">>> def kwd_only_arg(*, arg):\n"
+"...     print(arg)\n"
+"...\n"
+">>> def combined_example(pos_only, /, standard, *, kwd_only):\n"
+"...     print(pos_only, standard, kwd_only)"
 
 #: tutorial/controlflow.rst:823
 msgid ""
@@ -1741,6 +1783,9 @@ msgid ""
 "places no restrictions on the calling convention and arguments may be passed "
 "by position or keyword::"
 msgstr ""
+"మొదటి ఫంక్షన్ నిర్వచనం, ``standard_arg``, అత్యంత పరిచితమైన రూపం; ఇది కాలింగ్ "
+"కన్వెన్షన్‌పై ఎలాంటి పరిమితులు విధించదు, ఆర్గ్యుమెంట్‌లను స్థానం లేదా కీవర్డ్"
+" ద్వారా పంపవచ్చు::"
 
 #: tutorial/controlflow.rst:827
 msgid ""
@@ -1750,12 +1795,19 @@ msgid ""
 ">>> standard_arg(arg=2)\n"
 "2"
 msgstr ""
+">>> standard_arg(2)\n"
+"2\n"
+"\n"
+">>> standard_arg(arg=2)\n"
+"2"
 
 #: tutorial/controlflow.rst:833
 msgid ""
 "The second function ``pos_only_arg`` is restricted to only use positional "
 "parameters as there is a ``/`` in the function definition::"
 msgstr ""
+"రెండవ ఫంక్షన్ ``pos_only_arg`` నిర్వచనంలో ``/`` ఉన్నందున, అది పొజిషనల్ "
+"పారామీటర్‌లను మాత్రమే ఉపయోగించేలా పరిమితం చేయబడింది::"
 
 #: tutorial/controlflow.rst:836
 msgid ""
@@ -1767,12 +1819,21 @@ msgid ""
 "  File \"<stdin>\", line 1, in <module>\n"
 "TypeError: pos_only_arg() got some positional-only arguments passed as keyword arguments: 'arg'"
 msgstr ""
+">>> pos_only_arg(1)\n"
+"1\n"
+"\n"
+">>> pos_only_arg(arg=1)\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: pos_only_arg() got some positional-only arguments passed as keyword arguments: 'arg'"
 
 #: tutorial/controlflow.rst:844
 msgid ""
 "The third function ``kwd_only_arg`` only allows keyword arguments as "
 "indicated by a ``*`` in the function definition::"
 msgstr ""
+"మూడవ ఫంక్షన్ ``kwd_only_arg`` నిర్వచనంలోని ``*`` సూచించినట్లుగా, అది కీవర్డ్ "
+"ఆర్గ్యుమెంట్‌లను మాత్రమే అనుమతిస్తుంది::"
 
 #: tutorial/controlflow.rst:847
 msgid ""
@@ -1784,12 +1845,21 @@ msgid ""
 ">>> kwd_only_arg(arg=3)\n"
 "3"
 msgstr ""
+">>> kwd_only_arg(3)\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: kwd_only_arg() takes 0 positional arguments but 1 was given\n"
+"\n"
+">>> kwd_only_arg(arg=3)\n"
+"3"
 
 #: tutorial/controlflow.rst:855
 msgid ""
 "And the last uses all three calling conventions in the same function "
 "definition::"
 msgstr ""
+"మరియు చివరిది ఒకే ఫంక్షన్ నిర్వచనంలో మూడు కాలింగ్ కన్వెన్షన్‌లనూ "
+"ఉపయోగిస్తుంది::"
 
 #: tutorial/controlflow.rst:858
 msgid ""
@@ -1809,6 +1879,21 @@ msgid ""
 "  File \"<stdin>\", line 1, in <module>\n"
 "TypeError: combined_example() got some positional-only arguments passed as keyword arguments: 'pos_only'"
 msgstr ""
+">>> combined_example(1, 2, 3)\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: combined_example() takes 2 positional arguments but 3 were given\n"
+"\n"
+">>> combined_example(1, 2, kwd_only=3)\n"
+"1 2 3\n"
+"\n"
+">>> combined_example(1, standard=2, kwd_only=3)\n"
+"1 2 3\n"
+"\n"
+">>> combined_example(pos_only=1, standard=2, kwd_only=3)\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: combined_example() got some positional-only arguments passed as keyword arguments: 'pos_only'"
 
 #: tutorial/controlflow.rst:875
 msgid ""
@@ -1816,18 +1901,25 @@ msgid ""
 "between the positional argument ``name``  and ``**kwds`` which has ``name`` "
 "as a key::"
 msgstr ""
+"చివరగా, పొజిషనల్ ఆర్గ్యుమెంట్ ``name`` కు మరియు ``name`` ను కీగా కలిగి ఉన్న "
+"``**kwds`` కు మధ్య ఘర్షణ జరిగే అవకాశం ఉన్న ఈ ఫంక్షన్ నిర్వచనాన్ని "
+"పరిశీలించండి::"
 
 #: tutorial/controlflow.rst:877
 msgid ""
 "def foo(name, **kwds):\n"
 "    return 'name' in kwds"
 msgstr ""
+"def foo(name, **kwds):\n"
+"    return 'name' in kwds"
 
 #: tutorial/controlflow.rst:880
 msgid ""
 "There is no possible call that will make it return ``True`` as the keyword "
 "``'name'`` will always bind to the first parameter. For example::"
 msgstr ""
+"``'name'`` అనే కీవర్డ్ ఎల్లప్పుడూ మొదటి పారామీటర్‌కు బైండ్ అవుతుంది కాబట్టి, "
+"దీన్ని ``True`` రిటర్న్ చేసేలా చేసే కాల్ ఏదీ సాధ్యం కాదు. ఉదాహరణకు::"
 
 #: tutorial/controlflow.rst:883
 msgid ""
@@ -1837,6 +1929,11 @@ msgid ""
 "TypeError: foo() got multiple values for argument 'name'\n"
 ">>>"
 msgstr ""
+">>> foo(1, **{'name': 2})\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: foo() got multiple values for argument 'name'\n"
+">>>"
 
 #: tutorial/controlflow.rst:889
 msgid ""
@@ -1844,6 +1941,9 @@ msgid ""
 "``name`` as a positional argument and ``'name'`` as a key in the keyword "
 "arguments::"
 msgstr ""
+"కానీ ``/`` (పొజిషనల్-మాత్రమే ఆర్గ్యుమెంట్‌లు) ఉపయోగిస్తే, ఇది సాధ్యమవుతుంది, "
+"ఎందుకంటే అది ``name`` ను పొజిషనల్ ఆర్గ్యుమెంట్‌గా మరియు ``'name'`` ను కీవర్డ్"
+" ఆర్గ్యుమెంట్‌లలో ఒక కీగా అనుమతిస్తుంది::"
 
 #: tutorial/controlflow.rst:891
 msgid ""
@@ -1853,30 +1953,39 @@ msgid ""
 ">>> foo(1, **{'name': 2})\n"
 "True"
 msgstr ""
+">>> def foo(name, /, **kwds):\n"
+"...     return 'name' in kwds\n"
+"...\n"
+">>> foo(1, **{'name': 2})\n"
+"True"
 
 #: tutorial/controlflow.rst:897
 msgid ""
 "In other words, the names of positional-only parameters can be used in "
 "``**kwds`` without ambiguity."
 msgstr ""
+"మరో మాటలో చెప్పాలంటే, పొజిషనల్-మాత్రమే పారామీటర్‌ల పేర్లను గందరగోళం లేకుండా "
+"``**kwds`` లో ఉపయోగించవచ్చు."
 
 #: tutorial/controlflow.rst:902
 msgid "Recap"
-msgstr ""
+msgstr "సారాంశం"
 
 #: tutorial/controlflow.rst:904
 msgid ""
 "The use case will determine which parameters to use in the function "
 "definition::"
 msgstr ""
+"ఫంక్షన్ నిర్వచనంలో ఏ పారామీటర్‌లను ఉపయోగించాలో ఉపయోగ సందర్భమే "
+"నిర్ణయిస్తుంది::"
 
 #: tutorial/controlflow.rst:906
 msgid "def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):"
-msgstr ""
+msgstr "def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):"
 
 #: tutorial/controlflow.rst:908
 msgid "As guidance:"
-msgstr ""
+msgstr "మార్గదర్శకంగా:"
 
 #: tutorial/controlflow.rst:910
 msgid ""
@@ -1886,6 +1995,11 @@ msgid ""
 "is called or if you need to take some positional parameters and arbitrary "
 "keywords."
 msgstr ""
+"పారామీటర్‌ల పేర్లు వినియోగదారుకు అందుబాటులో ఉండకూడదనుకుంటే పొజిషనల్-మాత్రమే "
+"ఉపయోగించండి. పారామీటర్ పేర్లకు నిజమైన అర్థం లేనప్పుడు, ఫంక్షన్‌ను కాల్ "
+"చేసేటప్పుడు ఆర్గ్యుమెంట్‌ల క్రమాన్ని తప్పనిసరి చేయాలనుకున్నప్పుడు, లేదా "
+"కొన్ని పొజిషనల్ పారామీటర్‌లను మరియు ఏవైనా కీవర్డ్‌లను తీసుకోవాల్సి "
+"వచ్చినప్పుడు ఇది ఉపయోగకరం."
 
 #: tutorial/controlflow.rst:915
 msgid ""
@@ -1893,12 +2007,17 @@ msgid ""
 "understandable by being explicit with names or you want to prevent users "
 "relying on the position of the argument being passed."
 msgstr ""
+"పేర్లకు అర్థం ఉన్నప్పుడు మరియు పేర్లను స్పష్టంగా ఇవ్వడం వల్ల ఫంక్షన్ నిర్వచనం"
+" మరింత అర్థమయ్యేటప్పుడు, లేదా పంపిన ఆర్గ్యుమెంట్ యొక్క స్థానంపై వినియోగదారులు"
+" ఆధారపడకుండా నిరోధించాలనుకున్నప్పుడు కీవర్డ్-మాత్రమే ఉపయోగించండి."
 
 #: tutorial/controlflow.rst:918
 msgid ""
 "For an API, use positional-only to prevent breaking API changes if the "
 "parameter's name is modified in the future."
 msgstr ""
+"API కోసం, భవిష్యత్తులో పారామీటర్ పేరు మారినప్పుడు API మార్పులు దాన్ని వాడే "
+"కోడ్‌ను విచ్ఛిన్నం చేయకుండా నిరోధించడానికి పొజిషనల్-మాత్రమే ఉపయోగించండి."
 
 #: tutorial/controlflow.rst:924
 msgid "Arbitrary Argument Lists"
