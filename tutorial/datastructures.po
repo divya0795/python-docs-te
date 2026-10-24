@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-10-23 20:00-0700\n"
+"Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
 "MIME-Version: 1.0\n"
@@ -20,33 +20,40 @@ msgstr ""
 
 #: tutorial/datastructures.rst:5
 msgid "Data Structures"
-msgstr ""
+msgstr "డేటా స్ట్రక్చర్‌లు"
 
 #: tutorial/datastructures.rst:7
 msgid ""
 "This chapter describes some things you've learned about already in more "
 "detail, and adds some new things as well."
 msgstr ""
+"మీరు ఇప్పటికే నేర్చుకున్న కొన్ని విషయాలను ఈ అధ్యాయం మరింత వివరంగా "
+"వర్ణిస్తుంది, కొన్ని కొత్త విషయాలను కూడా జోడిస్తుంది."
 
 #: tutorial/datastructures.rst:13
 msgid "More on Lists"
-msgstr ""
+msgstr "లిస్ట్‌ల గురించి మరింత"
 
 #: tutorial/datastructures.rst:15
 msgid ""
 "The :ref:`list <typesseq-list>` data type has some more methods. Here are all"
 " of the methods of list objects:"
 msgstr ""
+":ref:`లిస్ట్ <typesseq-list>` డేటా టైప్‌కు మరికొన్ని మెథడ్‌లు ఉన్నాయి. లిస్ట్"
+" ఆబ్జెక్ట్‌ల అన్ని మెథడ్‌లు ఇవే:"
 
 #: tutorial/datastructures.rst:21
 msgid "Add an item to the end of the list.  Similar to ``a[len(a):] = [x]``."
 msgstr ""
+"లిస్ట్ చివరన ఒక ఐటెమ్‌ను జోడిస్తుంది. ``a[len(a):] = [x]`` ను పోలి ఉంటుంది."
 
 #: tutorial/datastructures.rst:27
 msgid ""
 "Extend the list by appending all the items from the iterable.  Similar to "
 "``a[len(a):] = iterable``."
 msgstr ""
+"ఇటరబుల్‌లోని అన్ని ఐటెమ్‌లను జోడించడం ద్వారా లిస్ట్‌ను విస్తరిస్తుంది. "
+"``a[len(a):] = iterable`` ను పోలి ఉంటుంది."
 
 #: tutorial/datastructures.rst:34
 msgid ""
@@ -54,12 +61,18 @@ msgid ""
 "element before which to insert, so ``a.insert(0, x)`` inserts at the front of"
 " the list, and ``a.insert(len(a), x)`` is equivalent to ``a.append(x)``."
 msgstr ""
+"ఇచ్చిన స్థానంలో ఒక ఐటెమ్‌ను చొప్పిస్తుంది. మొదటి ఆర్గ్యుమెంట్, ఏ ఎలిమెంట్‌కు "
+"ముందు చొప్పించాలో ఆ ఎలిమెంట్ యొక్క ఇండెక్స్, కాబట్టి ``a.insert(0, x)`` "
+"లిస్ట్ ముందు భాగంలో చొప్పిస్తుంది, మరియు ``a.insert(len(a), x)`` అనేది "
+"``a.append(x)`` కు సమానం."
 
 #: tutorial/datastructures.rst:42
 msgid ""
 "Remove the first item from the list whose value is equal to *value*.  It "
 "raises a :exc:`ValueError` if there is no such item."
 msgstr ""
+"లిస్ట్‌లో విలువ *value* కు సమానంగా ఉన్న మొదటి ఐటెమ్‌ను తొలగిస్తుంది. అలాంటి "
+"ఐటెమ్ లేకపోతే ఇది :exc:`ValueError` ను రైజ్ చేస్తుంది."
 
 #: tutorial/datastructures.rst:49
 msgid ""
@@ -68,16 +81,24 @@ msgid ""
 "list. It raises an :exc:`IndexError` if the list is empty or the index is "
 "outside the list range."
 msgstr ""
+"లిస్ట్‌లో ఇచ్చిన స్థానంలో ఉన్న ఐటెమ్‌ను తొలగించి, దాన్ని రిటర్న్ చేస్తుంది. "
+"ఇండెక్స్ ఏదీ పేర్కొనకపోతే, ``a.pop()`` లిస్ట్‌లోని చివరి ఐటెమ్‌ను తొలగించి "
+"రిటర్న్ చేస్తుంది. లిస్ట్ ఖాళీగా ఉంటే లేదా ఇండెక్స్ లిస్ట్ పరిధికి బయట ఉంటే "
+"ఇది :exc:`IndexError` ను రైజ్ చేస్తుంది."
 
 #: tutorial/datastructures.rst:58
 msgid "Remove all items from the list.  Similar to ``del a[:]``."
 msgstr ""
+"లిస్ట్ నుండి అన్ని ఐటెమ్‌లను తొలగిస్తుంది. ``del a[:]`` ను పోలి ఉంటుంది."
 
 #: tutorial/datastructures.rst:64
 msgid ""
 "Return zero-based index of the first occurrence of *value* in the list. "
 "Raises a :exc:`ValueError` if there is no such item."
 msgstr ""
+"లిస్ట్‌లో *value* మొదటిసారి కనిపించే స్థానం యొక్క సున్నా నుండి మొదలయ్యే "
+"ఇండెక్స్‌ను రిటర్న్ చేస్తుంది. అలాంటి ఐటెమ్ లేకపోతే :exc:`ValueError` ను రైజ్"
+" చేస్తుంది."
 
 #: tutorial/datastructures.rst:67
 msgid ""
@@ -86,28 +107,39 @@ msgid ""
 "list.  The returned index is computed relative to the beginning of the full "
 "sequence rather than the *start* argument."
 msgstr ""
+"ఐచ్ఛిక ఆర్గ్యుమెంట్‌లు *start* మరియు *end* స్లైస్ నొటేషన్‌లో లాగానే అర్థం "
+"చేసుకోబడతాయి, లిస్ట్‌లోని ఒక నిర్దిష్ట ఉప-సీక్వెన్స్‌కు వెతుకులాటను పరిమితం "
+"చేయడానికి ఉపయోగించబడతాయి. రిటర్న్ అయ్యే ఇండెక్స్ *start* ఆర్గ్యుమెంట్‌కు "
+"సాపేక్షంగా కాకుండా, పూర్తి సీక్వెన్స్ ప్రారంభానికి సాపేక్షంగా "
+"లెక్కించబడుతుంది."
 
 #: tutorial/datastructures.rst:76
 msgid "Return the number of times *value* appears in the list."
 msgstr ""
+"లిస్ట్‌లో *value* ఎన్నిసార్లు కనిపిస్తుందో ఆ సంఖ్యను రిటర్న్ చేస్తుంది."
 
 #: tutorial/datastructures.rst:82
 msgid ""
 "Sort the items of the list in place (the arguments can be used for sort "
 "customization, see :func:`sorted` for their explanation)."
 msgstr ""
+"లిస్ట్‌లోని ఐటెమ్‌లను అక్కడికక్కడే (in place) సార్ట్ చేస్తుంది (సార్టింగ్‌ను "
+"కస్టమైజ్ చేయడానికి ఆర్గ్యుమెంట్‌లను ఉపయోగించవచ్చు, వాటి వివరణ కోసం "
+":func:`sorted` చూడండి)."
 
 #: tutorial/datastructures.rst:89
 msgid "Reverse the elements of the list in place."
-msgstr ""
+msgstr "లిస్ట్‌లోని ఎలిమెంట్‌ల క్రమాన్ని అక్కడికక్కడే తిరగబెడుతుంది."
 
 #: tutorial/datastructures.rst:95
 msgid "Return a shallow copy of the list.  Similar to ``a[:]``."
 msgstr ""
+"లిస్ట్ యొక్క షాలో కాపీని (shallow copy) రిటర్న్ చేస్తుంది. ``a[:]`` ను పోలి "
+"ఉంటుంది."
 
 #: tutorial/datastructures.rst:98
 msgid "An example that uses most of the list methods::"
-msgstr ""
+msgstr "చాలా లిస్ట్ మెథడ్‌లను ఉపయోగించే ఒక ఉదాహరణ::"
 
 #: tutorial/datastructures.rst:100
 msgid ""
@@ -132,6 +164,26 @@ msgid ""
 ">>> fruits.pop()\n"
 "'pear'"
 msgstr ""
+">>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']\n"
+">>> fruits.count('apple')\n"
+"2\n"
+">>> fruits.count('tangerine')\n"
+"0\n"
+">>> fruits.index('banana')\n"
+"3\n"
+">>> fruits.index('banana', 4)  # Find next banana starting at position 4\n"
+"6\n"
+">>> fruits.reverse()\n"
+">>> fruits\n"
+"['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange']\n"
+">>> fruits.append('grape')\n"
+">>> fruits\n"
+"['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange', 'grape']\n"
+">>> fruits.sort()\n"
+">>> fruits\n"
+"['apple', 'apple', 'banana', 'banana', 'grape', 'kiwi', 'orange', 'pear']\n"
+">>> fruits.pop()\n"
+"'pear'"
 
 #: tutorial/datastructures.rst:121
 msgid ""
@@ -140,6 +192,10 @@ msgid ""
 "default ``None``. [#]_  This is a design principle for all mutable data "
 "structures in Python."
 msgstr ""
+"``insert``, ``remove`` లేదా ``sort`` వంటి లిస్ట్‌ను మార్చడం మాత్రమే చేసే "
+"మెథడ్‌లకు రిటర్న్ విలువ ఏదీ ప్రింట్ కాకపోవడాన్ని మీరు గమనించి ఉండవచ్చు -- అవి"
+" డిఫాల్ట్ ``None`` ను రిటర్న్ చేస్తాయి. [#]_ Pythonలోని అన్ని మ్యూటబుల్ "
+"(మార్చగలిగే) డేటా స్ట్రక్చర్‌లకు ఇది ఒక డిజైన్ సూత్రం."
 
 #: tutorial/datastructures.rst:126
 msgid ""
@@ -149,10 +205,15 @@ msgid ""
 " types.  Also, there are some types that don't have a defined ordering "
 "relation.  For example, ``3+4j < 5+7j`` isn't a valid comparison."
 msgstr ""
+"మీరు గమనించగల మరో విషయం ఏమిటంటే, అన్ని డేటాను సార్ట్ చేయలేము లేదా పోల్చలేము. "
+"ఉదాహరణకు, ``[None, 'hello', 10]`` సార్ట్ అవ్వదు, ఎందుకంటే పూర్ణాంకాలను "
+"స్ట్రింగ్‌లతో పోల్చలేము, ``None`` ను ఇతర టైప్‌లతో పోల్చలేము. అలాగే, కొన్ని "
+"టైప్‌లకు నిర్వచించిన క్రమ సంబంధం (ordering relation) ఉండదు. ఉదాహరణకు, ``3+4j "
+"< 5+7j`` చెల్లుబాటు అయ్యే పోలిక కాదు."
 
 #: tutorial/datastructures.rst:137
 msgid "Using Lists as Stacks"
-msgstr ""
+msgstr "లిస్ట్‌లను స్టాక్‌లుగా ఉపయోగించడం"
 
 #: tutorial/datastructures.rst:139
 msgid ""
@@ -162,6 +223,11 @@ msgid ""
 "an item from the top of the stack, use :meth:`~list.pop` without an explicit "
 "index.  For example::"
 msgstr ""
+"లిస్ట్ మెథడ్‌ల వల్ల లిస్ట్‌ను స్టాక్‌గా ఉపయోగించడం చాలా సులభం, ఇందులో చివరగా "
+"జోడించిన ఎలిమెంట్ మొదటగా బయటకు తీయబడుతుంది (\"last-in, first-out\"). స్టాక్ "
+"పైభాగానికి ఒక ఐటెమ్‌ను జోడించడానికి :meth:`~list.append` ఉపయోగించండి. స్టాక్ "
+"పైభాగం నుండి ఒక ఐటెమ్‌ను బయటకు తీయడానికి, స్పష్టమైన ఇండెక్స్ లేకుండా "
+":meth:`~list.pop` ఉపయోగించండి. ఉదాహరణకు::"
 
 #: tutorial/datastructures.rst:144
 msgid ""
@@ -181,10 +247,25 @@ msgid ""
 ">>> stack\n"
 "[3, 4]"
 msgstr ""
+">>> stack = [3, 4, 5]\n"
+">>> stack.append(6)\n"
+">>> stack.append(7)\n"
+">>> stack\n"
+"[3, 4, 5, 6, 7]\n"
+">>> stack.pop()\n"
+"7\n"
+">>> stack\n"
+"[3, 4, 5, 6]\n"
+">>> stack.pop()\n"
+"6\n"
+">>> stack.pop()\n"
+"5\n"
+">>> stack\n"
+"[3, 4]"
 
 #: tutorial/datastructures.rst:164
 msgid "Using Lists as Queues"
-msgstr ""
+msgstr "లిస్ట్‌లను క్యూలుగా ఉపయోగించడం"
 
 #: tutorial/datastructures.rst:166
 msgid ""
@@ -195,12 +276,20 @@ msgid ""
 " all of the other elements have to be shifted by one).  See :ref:`time-"
 "complexity` for more information."
 msgstr ""
+"లిస్ట్‌ను క్యూగా కూడా ఉపయోగించవచ్చు, ఇందులో మొదటగా జోడించిన ఎలిమెంట్ మొదటగా "
+"బయటకు తీయబడుతుంది (\"first-in, first-out\"); అయితే, ఈ ప్రయోజనానికి లిస్ట్‌లు "
+"సమర్థవంతమైనవి కావు. లిస్ట్ చివర నుండి జోడించడం, తీసివేయడం వేగంగా "
+"జరిగినప్పటికీ, లిస్ట్ ప్రారంభంలో చొప్పించడం లేదా తీసివేయడం నెమ్మదిగా ఉంటుంది "
+"(ఎందుకంటే మిగతా అన్ని ఎలిమెంట్‌లను ఒక స్థానం జరపాల్సి ఉంటుంది). మరింత సమాచారం"
+" కోసం :ref:`time-complexity` చూడండి."
 
 #: tutorial/datastructures.rst:173
 msgid ""
 "To implement a queue, use :class:`collections.deque` which was designed to "
 "have fast appends and pops from both ends.  For example::"
 msgstr ""
+"క్యూను రూపొందించడానికి, రెండు చివరల నుండీ వేగంగా జోడించేలా, తీసివేసేలా డిజైన్"
+" చేయబడిన :class:`collections.deque` ను ఉపయోగించండి. ఉదాహరణకు::"
 
 #: tutorial/datastructures.rst:176
 msgid ""
@@ -215,6 +304,16 @@ msgid ""
 ">>> queue                           # Remaining queue in order of arrival\n"
 "deque(['Michael', 'Terry', 'Graham'])"
 msgstr ""
+">>> from collections import deque\n"
+">>> queue = deque([\"Eric\", \"John\", \"Michael\"])\n"
+">>> queue.append(\"Terry\")           # Terry arrives\n"
+">>> queue.append(\"Graham\")          # Graham arrives\n"
+">>> queue.popleft()                 # The first to arrive now leaves\n"
+"'Eric'\n"
+">>> queue.popleft()                 # The second to arrive now leaves\n"
+"'John'\n"
+">>> queue                           # Remaining queue in order of arrival\n"
+"deque(['Michael', 'Terry', 'Graham'])"
 
 #: tutorial/datastructures.rst:191
 msgid "List Comprehensions"
