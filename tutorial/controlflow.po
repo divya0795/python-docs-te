@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-10-22 21:07-0700\n"
+"PO-Revision-Date: 2026-10-23 18:33-0700\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -1257,17 +1257,19 @@ msgstr ""
 
 #: tutorial/controlflow.rst:579
 msgid "More on Defining Functions"
-msgstr ""
+msgstr "ఫంక్షన్‌లను నిర్వచించడం గురించి మరింత"
 
 #: tutorial/controlflow.rst:581
 msgid ""
 "It is also possible to define functions with a variable number of arguments. "
 "There are three forms, which can be combined."
 msgstr ""
+"వేర్వేరు సంఖ్యలో ఆర్గ్యుమెంట్‌లను తీసుకోగల ఫంక్షన్‌లను నిర్వచించడం కూడా "
+"సాధ్యమే. దీనికి మూడు రూపాలు ఉన్నాయి, వాటిని కలిపి కూడా ఉపయోగించవచ్చు."
 
 #: tutorial/controlflow.rst:588
 msgid "Default Argument Values"
-msgstr ""
+msgstr "డిఫాల్ట్ ఆర్గ్యుమెంట్ విలువలు"
 
 #: tutorial/controlflow.rst:590
 msgid ""
@@ -1275,6 +1277,9 @@ msgid ""
 " This creates a function that can be called with fewer arguments than it is "
 "defined to allow.  For example::"
 msgstr ""
+"అత్యంత ఉపయోగకరమైన రూపం ఒకటి లేదా అంతకంటే ఎక్కువ ఆర్గ్యుమెంట్‌లకు డిఫాల్ట్ "
+"విలువను పేర్కొనడం. దీనివల్ల, నిర్వచనం అనుమతించే దానికంటే తక్కువ "
+"ఆర్గ్యుమెంట్‌లతో కాల్ చేయగల ఫంక్షన్ తయారవుతుంది. ఉదాహరణకు::"
 
 #: tutorial/controlflow.rst:594
 msgid ""
@@ -1290,39 +1295,60 @@ msgid ""
 "            raise ValueError('invalid user response')\n"
 "        print(reminder)"
 msgstr ""
+"def ask_ok(prompt, retries=4, reminder='Please try again!'):\n"
+"    while True:\n"
+"        reply = input(prompt)\n"
+"        if reply in {'y', 'ye', 'yes'}:\n"
+"            return True\n"
+"        if reply in {'n', 'no', 'nop', 'nope'}:\n"
+"            return False\n"
+"        retries = retries - 1\n"
+"        if retries < 0:\n"
+"            raise ValueError('invalid user response')\n"
+"        print(reminder)"
 
 #: tutorial/controlflow.rst:606
 msgid "This function can be called in several ways:"
-msgstr ""
+msgstr "ఈ ఫంక్షన్‌ను అనేక విధాలుగా కాల్ చేయవచ్చు:"
 
 #: tutorial/controlflow.rst:608
 msgid ""
 "giving only the mandatory argument: ``ask_ok('Do you really want to quit?')``"
 msgstr ""
+"తప్పనిసరి ఆర్గ్యుమెంట్‌ను మాత్రమే ఇవ్వడం: ``ask_ok('Do you really want to "
+"quit?')``"
 
 #: tutorial/controlflow.rst:610
 msgid ""
 "giving one of the optional arguments: ``ask_ok('OK to overwrite the file?', "
 "2)``"
 msgstr ""
+"ఐచ్ఛిక ఆర్గ్యుమెంట్‌లలో ఒకదాన్ని ఇవ్వడం: ``ask_ok('OK to overwrite the "
+"file?', 2)``"
 
 #: tutorial/controlflow.rst:612
 msgid ""
 "or even giving all arguments: ``ask_ok('OK to overwrite the file?', 2, 'Come "
 "on, only yes or no!')``"
 msgstr ""
+"లేదా అన్ని ఆర్గ్యుమెంట్‌లను కూడా ఇవ్వడం: ``ask_ok('OK to overwrite the "
+"file?', 2, 'Come on, only yes or no!')``"
 
 #: tutorial/controlflow.rst:615
 msgid ""
 "This example also introduces the :keyword:`in` keyword. This tests whether or"
 " not a sequence contains a certain value."
 msgstr ""
+"ఈ ఉదాహరణ :keyword:`in` కీవర్డ్‌ను కూడా పరిచయం చేస్తుంది. ఒక సీక్వెన్స్‌లో "
+"నిర్దిష్ట విలువ ఉందో లేదో ఇది పరీక్షిస్తుంది."
 
 #: tutorial/controlflow.rst:618
 msgid ""
 "The default values are evaluated at the point of function definition in the "
 "*defining* scope, so that ::"
 msgstr ""
+"డిఫాల్ట్ విలువలు ఫంక్షన్ నిర్వచనం జరిగే చోట, *నిర్వచించే* స్కోప్‌లో "
+"ఎవాల్యుయేట్ చేయబడతాయి, కాబట్టి ::"
 
 #: tutorial/controlflow.rst:621
 msgid ""
@@ -1334,10 +1360,17 @@ msgid ""
 "i = 6\n"
 "f()"
 msgstr ""
+"i = 5\n"
+"\n"
+"def f(arg=i):\n"
+"    print(arg)\n"
+"\n"
+"i = 6\n"
+"f()"
 
 #: tutorial/controlflow.rst:629
 msgid "will print ``5``."
-msgstr ""
+msgstr "``5`` ను ప్రింట్ చేస్తుంది."
 
 #: tutorial/controlflow.rst:631
 msgid ""
@@ -1346,6 +1379,11 @@ msgid ""
 " or instances of most classes.  For example, the following function "
 "accumulates the arguments passed to it on subsequent calls::"
 msgstr ""
+"**ముఖ్యమైన హెచ్చరిక:** డిఫాల్ట్ విలువ ఒక్కసారి మాత్రమే ఎవాల్యుయేట్ "
+"చేయబడుతుంది. డిఫాల్ట్ విలువ లిస్ట్, డిక్షనరీ, లేదా చాలా క్లాస్‌ల "
+"ఇన్‌స్టాన్స్‌ల వంటి మ్యూటబుల్ (మార్చగలిగే) ఆబ్జెక్ట్ అయినప్పుడు ఇది తేడా "
+"చూపుతుంది. ఉదాహరణకు, ఈ కింది ఫంక్షన్ తర్వాతి కాల్‌లలో దానికి పంపిన "
+"ఆర్గ్యుమెంట్‌లను పోగుచేస్తుంది::"
 
 #: tutorial/controlflow.rst:636
 msgid ""
@@ -1357,10 +1395,17 @@ msgid ""
 "print(f(2))\n"
 "print(f(3))"
 msgstr ""
+"def f(a, L=[]):\n"
+"    L.append(a)\n"
+"    return L\n"
+"\n"
+"print(f(1))\n"
+"print(f(2))\n"
+"print(f(3))"
 
 #: tutorial/controlflow.rst:644
 msgid "This will print ::"
-msgstr ""
+msgstr "ఇది ఇలా ప్రింట్ చేస్తుంది ::"
 
 #: tutorial/controlflow.rst:646
 msgid ""
@@ -1368,12 +1413,17 @@ msgid ""
 "[1, 2]\n"
 "[1, 2, 3]"
 msgstr ""
+"[1]\n"
+"[1, 2]\n"
+"[1, 2, 3]"
 
 #: tutorial/controlflow.rst:650
 msgid ""
 "If you don't want the default to be shared between subsequent calls, you can "
 "write the function like this instead::"
 msgstr ""
+"తర్వాతి కాల్‌ల మధ్య డిఫాల్ట్ విలువ పంచుకోబడకూడదనుకుంటే, మీరు ఫంక్షన్‌ను "
+"బదులుగా ఇలా రాయవచ్చు::"
 
 #: tutorial/controlflow.rst:653
 msgid ""
@@ -1383,10 +1433,15 @@ msgid ""
 "    L.append(a)\n"
 "    return L"
 msgstr ""
+"def f(a, L=None):\n"
+"    if L is None:\n"
+"        L = []\n"
+"    L.append(a)\n"
+"    return L"
 
 #: tutorial/controlflow.rst:663
 msgid "Keyword Arguments"
-msgstr ""
+msgstr "కీవర్డ్ ఆర్గ్యుమెంట్‌లు"
 
 #: tutorial/controlflow.rst:665
 msgid ""
@@ -1394,6 +1449,8 @@ msgid ""
 "argument>` of the form ``kwarg=value``.  For instance, the following "
 "function::"
 msgstr ""
+"``kwarg=value`` రూపంలోని :term:`కీవర్డ్ ఆర్గ్యుమెంట్‌లను <keyword argument>` "
+"ఉపయోగించి కూడా ఫంక్షన్‌లను కాల్ చేయవచ్చు. ఉదాహరణకు, ఈ కింది ఫంక్షన్::"
 
 #: tutorial/controlflow.rst:668
 msgid ""
@@ -1403,6 +1460,11 @@ msgid ""
 "    print(\"-- Lovely plumage, the\", type)\n"
 "    print(\"-- It's\", state, \"!\")"
 msgstr ""
+"def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):\n"
+"    print(\"-- This parrot wouldn't\", action, end=' ')\n"
+"    print(\"if you put\", voltage, \"volts through it.\")\n"
+"    print(\"-- Lovely plumage, the\", type)\n"
+"    print(\"-- It's\", state, \"!\")"
 
 #: tutorial/controlflow.rst:674
 msgid ""
@@ -1410,6 +1472,9 @@ msgid ""
 "(``state``, ``action``, and ``type``).  This function can be called in any of"
 " the following ways::"
 msgstr ""
+"ఒక తప్పనిసరి ఆర్గ్యుమెంట్‌ను (``voltage``) మరియు మూడు ఐచ్ఛిక ఆర్గ్యుమెంట్‌లను"
+" (``state``, ``action``, మరియు ``type``) స్వీకరిస్తుంది. ఈ ఫంక్షన్‌ను ఈ కింది"
+" ఏ విధంగానైనా కాల్ చేయవచ్చు::"
 
 #: tutorial/controlflow.rst:678
 msgid ""
@@ -1420,10 +1485,16 @@ msgid ""
 "parrot('a million', 'bereft of life', 'jump')         # 3 positional arguments\n"
 "parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword"
 msgstr ""
+"parrot(1000)                                          # 1 positional argument\n"
+"parrot(voltage=1000)                                  # 1 keyword argument\n"
+"parrot(voltage=1000000, action='VOOOOOM')             # 2 keyword arguments\n"
+"parrot(action='VOOOOOM', voltage=1000000)             # 2 keyword arguments\n"
+"parrot('a million', 'bereft of life', 'jump')         # 3 positional arguments\n"
+"parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword"
 
 #: tutorial/controlflow.rst:685
 msgid "but all the following calls would be invalid::"
-msgstr ""
+msgstr "కానీ ఈ కింది కాల్‌లన్నీ చెల్లవు::"
 
 #: tutorial/controlflow.rst:687
 msgid ""
@@ -1432,6 +1503,10 @@ msgid ""
 "parrot(110, voltage=220)     # duplicate value for the same argument\n"
 "parrot(actor='John Cleese')  # unknown keyword argument"
 msgstr ""
+"parrot()                     # required argument missing\n"
+"parrot(voltage=5.0, 'dead')  # non-keyword argument after a keyword argument\n"
+"parrot(110, voltage=220)     # duplicate value for the same argument\n"
+"parrot(actor='John Cleese')  # unknown keyword argument"
 
 #: tutorial/controlflow.rst:692
 msgid ""
@@ -1443,6 +1518,14 @@ msgid ""
 "receive a value more than once. Here's an example that fails due to this "
 "restriction::"
 msgstr ""
+"ఫంక్షన్ కాల్‌లో, కీవర్డ్ ఆర్గ్యుమెంట్‌లు పొజిషనల్ ఆర్గ్యుమెంట్‌ల తర్వాత "
+"రావాలి. పంపిన అన్ని కీవర్డ్ ఆర్గ్యుమెంట్‌లు ఫంక్షన్ స్వీకరించే "
+"ఆర్గ్యుమెంట్‌లలో ఒకదానితో సరిపోలాలి (ఉదా. ``actor`` అనేది ``parrot`` "
+"ఫంక్షన్‌కు చెల్లుబాటు అయ్యే ఆర్గ్యుమెంట్ కాదు), మరియు వాటి క్రమం ముఖ్యం కాదు."
+" ఇది ఐచ్ఛికం కాని ఆర్గ్యుమెంట్‌లకు కూడా వర్తిస్తుంది (ఉదా. "
+"``parrot(voltage=1000)`` కూడా చెల్లుబాటు అవుతుంది). ఏ ఆర్గ్యుమెంట్ కూడా ఒకటి "
+"కంటే ఎక్కువసార్లు విలువను పొందకూడదు. ఈ పరిమితి కారణంగా విఫలమయ్యే ఉదాహరణ "
+"ఇదిగో::"
 
 #: tutorial/controlflow.rst:700
 msgid ""
@@ -1454,6 +1537,13 @@ msgid ""
 "  File \"<stdin>\", line 1, in <module>\n"
 "TypeError: function() got multiple values for argument 'a'"
 msgstr ""
+">>> def function(a):\n"
+"...     pass\n"
+"...\n"
+">>> function(0, a=0)\n"
+"Traceback (most recent call last):\n"
+"  File \"<stdin>\", line 1, in <module>\n"
+"TypeError: function() got multiple values for argument 'a'"
 
 #: tutorial/controlflow.rst:708
 msgid ""
@@ -1465,6 +1555,13 @@ msgid ""
 "positional arguments beyond the formal parameter list.  (``*name`` must occur"
 " before ``**name``.) For example, if we define a function like this::"
 msgstr ""
+"చివరి ఫార్మల్ పారామీటర్ ``**name`` రూపంలో ఉన్నప్పుడు, అది ఫార్మల్ "
+"పారామీటర్‌కు సంబంధించినవి తప్ప మిగిలిన అన్ని కీవర్డ్ ఆర్గ్యుమెంట్‌లను కలిగి "
+"ఉన్న డిక్షనరీని (:ref:`typesmapping` చూడండి) స్వీకరిస్తుంది. దీన్ని ``*name``"
+" రూపంలోని ఫార్మల్ పారామీటర్‌తో (తదుపరి ఉపవిభాగంలో వివరించబడింది) కలపవచ్చు, "
+"ఇది ఫార్మల్ పారామీటర్ జాబితాను మించిన పొజిషనల్ ఆర్గ్యుమెంట్‌లను కలిగి ఉన్న "
+":ref:`టపుల్‌ను <tut-tuples>` స్వీకరిస్తుంది. (``*name`` తప్పనిసరిగా "
+"``**name`` కంటే ముందు రావాలి.) ఉదాహరణకు, మనం ఇలా ఒక ఫంక్షన్‌ను నిర్వచిస్తే::"
 
 #: tutorial/controlflow.rst:716
 msgid ""
@@ -1477,10 +1574,18 @@ msgid ""
 "    for kw in keywords:\n"
 "        print(kw, \":\", keywords[kw])"
 msgstr ""
+"def cheeseshop(kind, *arguments, **keywords):\n"
+"    print(\"-- Do you have any\", kind, \"?\")\n"
+"    print(\"-- I'm sorry, we're all out of\", kind)\n"
+"    for arg in arguments:\n"
+"        print(arg)\n"
+"    print(\"-\" * 40)\n"
+"    for kw in keywords:\n"
+"        print(kw, \":\", keywords[kw])"
 
 #: tutorial/controlflow.rst:725
 msgid "It could be called like this::"
-msgstr ""
+msgstr "దాన్ని ఇలా కాల్ చేయవచ్చు::"
 
 #: tutorial/controlflow.rst:727
 msgid ""
@@ -1490,10 +1595,15 @@ msgid ""
 "           client=\"John Cleese\",\n"
 "           sketch=\"Cheese Shop Sketch\")"
 msgstr ""
+"cheeseshop(\"Limburger\", \"It's very runny, sir.\",\n"
+"           \"It's really very, VERY runny, sir.\",\n"
+"           shopkeeper=\"Michael Palin\",\n"
+"           client=\"John Cleese\",\n"
+"           sketch=\"Cheese Shop Sketch\")"
 
 #: tutorial/controlflow.rst:733
 msgid "and of course it would print:"
-msgstr ""
+msgstr "మరియు అది సహజంగానే ఇలా ప్రింట్ చేస్తుంది:"
 
 #: tutorial/controlflow.rst:735
 msgid ""
@@ -1506,12 +1616,22 @@ msgid ""
 "client : John Cleese\n"
 "sketch : Cheese Shop Sketch"
 msgstr ""
+"-- Do you have any Limburger ?\n"
+"-- I'm sorry, we're all out of Limburger\n"
+"It's very runny, sir.\n"
+"It's really very, VERY runny, sir.\n"
+"----------------------------------------\n"
+"shopkeeper : Michael Palin\n"
+"client : John Cleese\n"
+"sketch : Cheese Shop Sketch"
 
 #: tutorial/controlflow.rst:746
 msgid ""
 "Note that the order in which the keyword arguments are printed is guaranteed "
 "to match the order in which they were provided in the function call."
 msgstr ""
+"కీవర్డ్ ఆర్గ్యుమెంట్‌లు ప్రింట్ అయ్యే క్రమం, అవి ఫంక్షన్ కాల్‌లో ఇవ్వబడిన "
+"క్రమంతో సరిపోలుతుందని హామీ ఉందని గమనించండి."
 
 #: tutorial/controlflow.rst:750
 msgid "Special parameters"
