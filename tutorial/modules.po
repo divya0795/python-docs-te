@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-10-25 12:42-0700\n"
+"PO-Revision-Date: 2026-10-25 13:06-0700\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -843,7 +843,7 @@ msgstr ""
 
 #: tutorial/modules.rst:391
 msgid "Packages"
-msgstr ""
+msgstr "ప్యాకేజీలు"
 
 #: tutorial/modules.rst:393
 msgid ""
@@ -855,6 +855,14 @@ msgid ""
 "authors of multi-module packages like NumPy or Pillow from having to worry "
 "about each other's module names."
 msgstr ""
+"ప్యాకేజీలు \"డాట్ ఉన్న మాడ్యూల్ పేర్లను\" ఉపయోగించి Python యొక్క మాడ్యూల్ "
+"నేమ్‌స్పేస్‌ను క్రమబద్ధంగా అమర్చే ఒక మార్గం. ఉదాహరణకు, :mod:`!A.B` అనే "
+"మాడ్యూల్ పేరు ``A`` అనే ప్యాకేజీలోని ``B`` అనే సబ్‌మాడ్యూల్‌ను సూచిస్తుంది. "
+"మాడ్యూల్‌లను ఉపయోగించడం వల్ల వేర్వేరు మాడ్యూల్‌ల రచయితలు ఒకరి గ్లోబల్ "
+"వేరియబుల్ పేర్ల గురించి మరొకరు చింతించాల్సిన అవసరం లేనట్లే, డాట్ ఉన్న "
+"మాడ్యూల్ పేర్లను ఉపయోగించడం వల్ల NumPy లేదా Pillow వంటి బహుళ-మాడ్యూల్ "
+"ప్యాకేజీల రచయితలు ఒకరి మాడ్యూల్ పేర్ల గురించి మరొకరు చింతించాల్సిన అవసరం "
+"ఉండదు."
 
 #: tutorial/modules.rst:401
 msgid ""
@@ -870,6 +878,17 @@ msgid ""
 " a possible structure for your package (expressed in terms of a hierarchical "
 "filesystem):"
 msgstr ""
+"సౌండ్ ఫైల్‌లు మరియు సౌండ్ డేటాను ఏకరీతిగా నిర్వహించడం కోసం మీరు మాడ్యూల్‌ల "
+"సమాహారాన్ని (ఒక \"ప్యాకేజీ\") డిజైన్ చేయాలనుకుంటున్నారని అనుకుందాం. అనేక రకాల"
+" సౌండ్ ఫైల్ ఫార్మాట్‌లు ఉన్నాయి (సాధారణంగా వాటి ఎక్స్‌టెన్షన్ ద్వారా "
+"గుర్తిస్తారు, ఉదాహరణకు: :file:`.wav`, :file:`.aiff`, :file:`.au`), కాబట్టి "
+"వివిధ ఫైల్ ఫార్మాట్‌ల మధ్య మార్పిడి కోసం పెరుగుతూ ఉండే మాడ్యూల్‌ల సమాహారాన్ని"
+" మీరు సృష్టించి నిర్వహించాల్సి రావచ్చు. సౌండ్ డేటాపై మీరు చేయాలనుకునే అనేక "
+"రకాల ఆపరేషన్‌లు కూడా ఉన్నాయి (మిక్సింగ్, ఎకో జోడించడం, ఈక్వలైజర్ ఫంక్షన్‌ను "
+"వర్తింపజేయడం, కృత్రిమ స్టీరియో ఎఫెక్ట్‌ను సృష్టించడం వంటివి), కాబట్టి అదనంగా "
+"ఈ ఆపరేషన్‌లను చేయడానికి మీరు అంతులేని మాడ్యూల్‌ల ప్రవాహాన్ని రాస్తూనే ఉంటారు."
+" మీ ప్యాకేజీకి సాధ్యమయ్యే ఒక నిర్మాణం ఇక్కడ ఉంది (హైరార్కికల్ ఫైల్‌సిస్టమ్ "
+"రూపంలో వ్యక్తపరిచినది):"
 
 #: tutorial/modules.rst:412
 msgid ""
@@ -897,12 +916,37 @@ msgid ""
 "              karaoke.py\n"
 "              ..."
 msgstr ""
+"sound/                          Top-level package\n"
+"      __init__.py               Initialize the sound package\n"
+"      formats/                  Subpackage for file format conversions\n"
+"              __init__.py\n"
+"              wavread.py\n"
+"              wavwrite.py\n"
+"              aiffread.py\n"
+"              aiffwrite.py\n"
+"              auread.py\n"
+"              auwrite.py\n"
+"              ...\n"
+"      effects/                  Subpackage for sound effects\n"
+"              __init__.py\n"
+"              echo.py\n"
+"              surround.py\n"
+"              reverse.py\n"
+"              ...\n"
+"      filters/                  Subpackage for filters\n"
+"              __init__.py\n"
+"              equalizer.py\n"
+"              vocoder.py\n"
+"              karaoke.py\n"
+"              ..."
 
 #: tutorial/modules.rst:438
 msgid ""
 "When importing the package, Python searches through the directories on "
 "``sys.path`` looking for the package subdirectory."
 msgstr ""
+"ప్యాకేజీని ఇంపోర్ట్ చేసేటప్పుడు, Python ప్యాకేజీ సబ్‌డైరెక్టరీ కోసం "
+"``sys.path`` లోని డైరెక్టరీలలో వెతుకుతుంది."
 
 #: tutorial/modules.rst:441
 msgid ""
@@ -914,64 +958,82 @@ msgid ""
 "can just be an empty file, but it can also execute initialization code for "
 "the package or set the ``__all__`` variable, described later."
 msgstr ""
+"ఫైల్ ఉన్న డైరెక్టరీలను Python ప్యాకేజీలుగా పరిగణించడానికి :file:`__init__.py`"
+" ఫైల్‌లు అవసరం (:term:`నేమ్‌స్పేస్ ప్యాకేజీని <namespace package>` ఉపయోగిస్తే"
+" తప్ప; అది కొంచెం అధునాతన ఫీచర్). ``string`` వంటి సాధారణ పేరు గల డైరెక్టరీలు,"
+" మాడ్యూల్ సెర్చ్ పాత్‌లో తర్వాత వచ్చే చెల్లుబాటు అయ్యే మాడ్యూల్‌లను "
+"అనుకోకుండా కప్పివేయకుండా ఇది నిరోధిస్తుంది. సరళమైన సందర్భంలో, "
+":file:`__init__.py` కేవలం ఖాళీ ఫైల్ కావచ్చు, కానీ ఇది ప్యాకేజీ కోసం "
+"ఇనిషియలైజేషన్ కోడ్‌ను అమలు చేయవచ్చు లేదా తర్వాత వివరించే ``__all__`` "
+"వేరియబుల్‌ను సెట్ చేయవచ్చు."
 
 #: tutorial/modules.rst:449
 msgid ""
 "Users of the package can import individual modules from the package, for "
 "example::"
 msgstr ""
+"ప్యాకేజీ వినియోగదారులు ప్యాకేజీ నుండి విడివిడి మాడ్యూల్‌లను ఇంపోర్ట్ "
+"చేయవచ్చు, ఉదాహరణకు::"
 
 #: tutorial/modules.rst:452
 msgid "import sound.effects.echo"
-msgstr ""
+msgstr "import sound.effects.echo"
 
 #: tutorial/modules.rst:454
 msgid ""
 "This loads the submodule :mod:`!sound.effects.echo`.  It must be referenced "
 "with its full name. ::"
 msgstr ""
+"ఇది :mod:`!sound.effects.echo` సబ్‌మాడ్యూల్‌ను లోడ్ చేస్తుంది. దాన్ని దాని "
+"పూర్తి పేరుతోనే సూచించాలి. ::"
 
 #: tutorial/modules.rst:457
 msgid "sound.effects.echo.echofilter(input, output, delay=0.7, atten=4)"
-msgstr ""
+msgstr "sound.effects.echo.echofilter(input, output, delay=0.7, atten=4)"
 
 #: tutorial/modules.rst:459
 msgid "An alternative way of importing the submodule is::"
-msgstr ""
+msgstr "సబ్‌మాడ్యూల్‌ను ఇంపోర్ట్ చేయడానికి మరో ప్రత్యామ్నాయ మార్గం::"
 
 #: tutorial/modules.rst:461
 msgid "from sound.effects import echo"
-msgstr ""
+msgstr "from sound.effects import echo"
 
 #: tutorial/modules.rst:463
 msgid ""
 "This also loads the submodule :mod:`!echo`, and makes it available without "
 "its package prefix, so it can be used as follows::"
 msgstr ""
+"ఇది కూడా :mod:`!echo` సబ్‌మాడ్యూల్‌ను లోడ్ చేస్తుంది, మరియు దాని ప్యాకేజీ "
+"ప్రిఫిక్స్ లేకుండానే దాన్ని అందుబాటులో ఉంచుతుంది, కాబట్టి దాన్ని ఇలా "
+"ఉపయోగించవచ్చు::"
 
 #: tutorial/modules.rst:466
 msgid "echo.echofilter(input, output, delay=0.7, atten=4)"
-msgstr ""
+msgstr "echo.echofilter(input, output, delay=0.7, atten=4)"
 
 #: tutorial/modules.rst:468
 msgid ""
 "Yet another variation is to import the desired function or variable "
 "directly::"
 msgstr ""
+"మరో రూపాంతరం, కావలసిన ఫంక్షన్ లేదా వేరియబుల్‌ను నేరుగా ఇంపోర్ట్ చేయడం::"
 
 #: tutorial/modules.rst:470
 msgid "from sound.effects.echo import echofilter"
-msgstr ""
+msgstr "from sound.effects.echo import echofilter"
 
 #: tutorial/modules.rst:472
 msgid ""
 "Again, this loads the submodule :mod:`!echo`, but this makes its function "
 ":func:`!echofilter` directly available::"
 msgstr ""
+"ఇది కూడా :mod:`!echo` సబ్‌మాడ్యూల్‌ను లోడ్ చేస్తుంది, కానీ దాని ఫంక్షన్ "
+":func:`!echofilter` ను నేరుగా అందుబాటులో ఉంచుతుంది::"
 
 #: tutorial/modules.rst:475
 msgid "echofilter(input, output, delay=0.7, atten=4)"
-msgstr ""
+msgstr "echofilter(input, output, delay=0.7, atten=4)"
 
 #: tutorial/modules.rst:477
 msgid ""
@@ -982,6 +1044,13 @@ msgid ""
 "module and attempts to load it.  If it fails to find it, an "
 ":exc:`ImportError` exception is raised."
 msgstr ""
+"``from package import item`` ను ఉపయోగించేటప్పుడు, item అనేది ప్యాకేజీ యొక్క "
+"సబ్‌మాడ్యూల్ (లేదా సబ్‌ప్యాకేజీ) కావచ్చు, లేదా ప్యాకేజీలో నిర్వచించిన "
+"ఫంక్షన్, క్లాస్ లేదా వేరియబుల్ వంటి వేరే పేరు కావచ్చు అని గమనించండి. "
+"``import`` స్టేట్‌మెంట్ మొదట item ప్యాకేజీలో నిర్వచించబడిందో లేదో "
+"పరీక్షిస్తుంది; లేకపోతే, అది ఒక మాడ్యూల్ అని భావించి దాన్ని లోడ్ చేయడానికి "
+"ప్రయత్నిస్తుంది. దాన్ని కనుగొనలేకపోతే, :exc:`ImportError` ఎక్సెప్షన్ రైజ్ "
+"అవుతుంది."
 
 #: tutorial/modules.rst:484
 msgid ""
@@ -990,6 +1059,10 @@ msgid ""
 "a package but can't be a class or function or variable defined in the "
 "previous item."
 msgstr ""
+"దీనికి విరుద్ధంగా, ``import item.subitem.subsubitem`` వంటి సింటాక్స్‌ను "
+"ఉపయోగించేటప్పుడు, చివరిది తప్ప ప్రతి item ఒక ప్యాకేజీ అయి ఉండాలి; చివరి item "
+"మాడ్యూల్ లేదా ప్యాకేజీ కావచ్చు, కానీ మునుపటి item లో నిర్వచించిన క్లాస్, "
+"ఫంక్షన్ లేదా వేరియబుల్ కాకూడదు."
 
 #: tutorial/modules.rst:493
 msgid "Importing \\* From a Package"
