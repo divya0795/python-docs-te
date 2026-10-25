@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-10-25 11:56-0700\n"
+"PO-Revision-Date: 2026-10-25 12:22-0700\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -343,15 +343,15 @@ msgstr ""
 
 #: tutorial/modules.rst:149
 msgid "Executing modules as scripts"
-msgstr ""
+msgstr "మాడ్యూల్‌లను స్క్రిప్ట్‌లుగా అమలు చేయడం"
 
 #: tutorial/modules.rst:151
 msgid "When you run a Python module with ::"
-msgstr ""
+msgstr "మీరు ఒక Python మాడ్యూల్‌ను ఇలా ::"
 
 #: tutorial/modules.rst:153
 msgid "python fibo.py <arguments>"
-msgstr ""
+msgstr "python fibo.py <arguments>"
 
 #: tutorial/modules.rst:155
 msgid ""
@@ -359,6 +359,9 @@ msgid ""
 " the ``__name__`` set to ``\"__main__\"``.  That means that by adding this "
 "code at the end of your module::"
 msgstr ""
+"రన్ చేసినప్పుడు, మాడ్యూల్‌లోని కోడ్ మీరు దాన్ని ఇంపోర్ట్ చేసినట్లుగానే "
+"అమలవుతుంది, కానీ ``__name__`` విలువ ``\"__main__\"`` గా సెట్ అవుతుంది. అంటే, "
+"మీ మాడ్యూల్ చివరలో ఈ కోడ్‌ను జోడించడం ద్వారా::"
 
 #: tutorial/modules.rst:159
 msgid ""
@@ -366,6 +369,9 @@ msgid ""
 "    import sys\n"
 "    fib(int(sys.argv[1]))"
 msgstr ""
+"if __name__ == \"__main__\":\n"
+"    import sys\n"
+"    fib(int(sys.argv[1]))"
 
 #: tutorial/modules.rst:163
 msgid ""
@@ -373,22 +379,29 @@ msgid ""
 "because the code that parses the command line only runs if the module is "
 "executed as the \"main\" file:"
 msgstr ""
+"మీరు ఫైల్‌ను ఇంపోర్ట్ చేయగల మాడ్యూల్‌గానే కాకుండా స్క్రిప్ట్‌గా కూడా "
+"ఉపయోగించగలిగేలా చేయవచ్చు, ఎందుకంటే కమాండ్ లైన్‌ను పార్స్ చేసే కోడ్, "
+"మాడ్యూల్‌ను \"main\" ఫైల్‌గా అమలు చేసినప్పుడు మాత్రమే రన్ అవుతుంది:"
 
 #: tutorial/modules.rst:167
 msgid ""
 "$ python fibo.py 50\n"
 "0 1 1 2 3 5 8 13 21 34"
 msgstr ""
+"$ python fibo.py 50\n"
+"0 1 1 2 3 5 8 13 21 34"
 
 #: tutorial/modules.rst:172
 msgid "If the module is imported, the code is not run::"
-msgstr ""
+msgstr "మాడ్యూల్‌ను ఇంపోర్ట్ చేస్తే, ఆ కోడ్ రన్ కాదు::"
 
 #: tutorial/modules.rst:174
 msgid ""
 ">>> import fibo\n"
 ">>>"
 msgstr ""
+">>> import fibo\n"
+">>>"
 
 #: tutorial/modules.rst:177
 msgid ""
@@ -396,10 +409,13 @@ msgid ""
 " or for testing purposes (running the module as a script executes a test "
 "suite)."
 msgstr ""
+"మాడ్యూల్‌కు సౌకర్యవంతమైన యూజర్ ఇంటర్‌ఫేస్‌ను అందించడానికి, లేదా టెస్టింగ్ "
+"కోసం (మాడ్యూల్‌ను స్క్రిప్ట్‌గా రన్ చేస్తే ఒక టెస్ట్ సూట్ అమలవుతుంది) దీన్ని "
+"తరచుగా ఉపయోగిస్తారు."
 
 #: tutorial/modules.rst:184
 msgid "The Module Search Path"
-msgstr ""
+msgstr "మాడ్యూల్ సెర్చ్ పాత్"
 
 #: tutorial/modules.rst:188
 msgid ""
@@ -409,28 +425,39 @@ msgid ""
 "named :file:`spam.py` in a list of directories given by the variable "
 ":data:`sys.path`.  :data:`sys.path` is initialized from these locations:"
 msgstr ""
+":mod:`!spam` అనే మాడ్యూల్‌ను ఇంపోర్ట్ చేసినప్పుడు, ఇంటర్‌ప్రెటర్ మొదట ఆ "
+"పేరుతో ఉన్న బిల్ట్-ఇన్ మాడ్యూల్ కోసం వెతుకుతుంది. ఈ మాడ్యూల్ పేర్లు "
+":data:`sys.builtin_module_names` లో జాబితా చేయబడ్డాయి. అది దొరకకపోతే, "
+":data:`sys.path` వేరియబుల్ ఇచ్చే డైరెక్టరీల జాబితాలో :file:`spam.py` అనే ఫైల్"
+" కోసం వెతుకుతుంది. :data:`sys.path` ఈ ప్రదేశాల నుండి ఇనిషియలైజ్ అవుతుంది:"
 
 #: tutorial/modules.rst:194
 msgid ""
 "The directory containing the input script (or the current directory when no "
 "file is specified)."
 msgstr ""
+"ఇన్‌పుట్ స్క్రిప్ట్ ఉన్న డైరెక్టరీ (లేదా ఏ ఫైల్‌ను పేర్కొనకపోతే ప్రస్తుత "
+"డైరెక్టరీ)."
 
 #: tutorial/modules.rst:196
 msgid ""
 ":envvar:`PYTHONPATH` (a list of directory names, with the same syntax as the "
 "shell variable :envvar:`PATH`)."
 msgstr ""
+":envvar:`PYTHONPATH` (డైరెక్టరీ పేర్ల జాబితా, షెల్ వేరియబుల్ :envvar:`PATH` "
+"కు ఉన్న అదే సింటాక్స్‌తో)."
 
 #: tutorial/modules.rst:198
 msgid ""
 "The installation-dependent default (by convention including a ``site-"
 "packages`` directory, handled by the :mod:`site` module)."
 msgstr ""
+"ఇన్‌స్టాలేషన్‌పై ఆధారపడిన డిఫాల్ట్ (సంప్రదాయం ప్రకారం ఇందులో :mod:`site` "
+"మాడ్యూల్ నిర్వహించే ``site-packages`` డైరెక్టరీ ఉంటుంది)."
 
 #: tutorial/modules.rst:201
 msgid "More details are at :ref:`sys-path-init`."
-msgstr ""
+msgstr "మరిన్ని వివరాలు :ref:`sys-path-init` లో ఉన్నాయి."
 
 #: tutorial/modules.rst:204
 msgid ""
@@ -438,6 +465,10 @@ msgid ""
 "script is calculated after the symlink is followed. In other words the "
 "directory containing the symlink is **not** added to the module search path."
 msgstr ""
+"సింబాలిక్ లింక్‌లను (symlinks) సపోర్ట్ చేసే ఫైల్ సిస్టమ్‌లలో, ఇన్‌పుట్ "
+"స్క్రిప్ట్ ఉన్న డైరెక్టరీని సింబాలిక్ లింక్‌ను అనుసరించిన తర్వాత "
+"లెక్కిస్తారు. మరో మాటలో చెప్పాలంటే, సింబాలిక్ లింక్ ఉన్న డైరెక్టరీ మాడ్యూల్ "
+"సెర్చ్ పాత్‌కు **జోడించబడదు**."
 
 #: tutorial/modules.rst:208
 msgid ""
@@ -448,10 +479,16 @@ msgid ""
 "library directory. This is an error unless the replacement is intended.  See "
 "section :ref:`tut-standardmodules` for more information."
 msgstr ""
+"ఇనిషియలైజేషన్ తర్వాత, Python ప్రోగ్రామ్‌లు :data:`sys.path` ను మార్చవచ్చు. "
+"రన్ అవుతున్న స్క్రిప్ట్ ఉన్న డైరెక్టరీ, స్టాండర్డ్ లైబ్రరీ పాత్ కంటే ముందు, "
+"సెర్చ్ పాత్ ప్రారంభంలో ఉంచబడుతుంది. అంటే, లైబ్రరీ డైరెక్టరీలోని అదే పేరుగల "
+"మాడ్యూల్‌లకు బదులుగా ఆ డైరెక్టరీలోని స్క్రిప్ట్‌లు లోడ్ అవుతాయి. ఈ మార్పిడి "
+"ఉద్దేశపూర్వకం కాకపోతే ఇది ఒక లోపం. మరింత సమాచారం కోసం :ref:`tut-"
+"standardmodules` విభాగాన్ని చూడండి."
 
 #: tutorial/modules.rst:221
 msgid "\"Compiled\" Python files"
-msgstr ""
+msgstr "\"కంపైల్ చేసిన\" Python ఫైల్‌లు"
 
 #: tutorial/modules.rst:223
 msgid ""
@@ -463,6 +500,14 @@ msgid ""
 "``__pycache__/spam.cpython-33.pyc``.  This naming convention allows compiled "
 "modules from different releases and different versions of Python to coexist."
 msgstr ""
+"మాడ్యూల్‌లను లోడ్ చేయడాన్ని వేగవంతం చేయడానికి, Python ప్రతి మాడ్యూల్ యొక్క "
+"కంపైల్ చేసిన వెర్షన్‌ను ``__pycache__`` డైరెక్టరీలో "
+":file:`module.{version}.pyc` అనే పేరుతో క్యాష్ చేస్తుంది; ఇక్కడ version "
+"కంపైల్ చేసిన ఫైల్ ఫార్మాట్‌ను సూచిస్తుంది, సాధారణంగా ఇందులో Python వెర్షన్ "
+"నంబర్ ఉంటుంది. ఉదాహరణకు, CPython విడుదల 3.3 లో spam.py యొక్క కంపైల్ చేసిన "
+"వెర్షన్ ``__pycache__/spam.cpython-33.pyc`` గా క్యాష్ చేయబడుతుంది. ఈ పేరు "
+"పెట్టే సంప్రదాయం వల్ల వేర్వేరు విడుదలల నుండి, వేర్వేరు Python వెర్షన్‌ల నుండి"
+" కంపైల్ చేసిన మాడ్యూల్‌లు ఒకేసారి ఉండగలుగుతాయి."
 
 #: tutorial/modules.rst:231
 msgid ""
@@ -472,6 +517,10 @@ msgid ""
 "independent, so the same library can be shared among systems with different "
 "architectures."
 msgstr ""
+"కంపైల్ చేసిన వెర్షన్ పాతబడిందో, మళ్లీ కంపైల్ చేయాల్సి ఉందో చూడటానికి, Python "
+"సోర్స్ యొక్క మార్పు తేదీని దానితో పోలుస్తుంది. ఇది పూర్తిగా ఆటోమేటిక్ "
+"ప్రక్రియ. అలాగే, కంపైల్ చేసిన మాడ్యూల్‌లు ప్లాట్‌ఫామ్‌పై ఆధారపడవు, కాబట్టి "
+"వేర్వేరు ఆర్కిటెక్చర్‌లు ఉన్న సిస్టమ్‌ల మధ్య అదే లైబ్రరీని పంచుకోవచ్చు."
 
 #: tutorial/modules.rst:236
 msgid ""
@@ -482,10 +531,16 @@ msgid ""
 "the compiled module must be in the source directory, and there must not be a "
 "source module."
 msgstr ""
+"Python రెండు సందర్భాల్లో క్యాష్‌ను తనిఖీ చేయదు. మొదటిది, కమాండ్ లైన్ నుండి "
+"నేరుగా లోడ్ చేసిన మాడ్యూల్‌ను అది ఎల్లప్పుడూ మళ్లీ కంపైల్ చేస్తుంది, "
+"ఫలితాన్ని నిల్వ చేయదు. రెండవది, సోర్స్ మాడ్యూల్ లేకపోతే అది క్యాష్‌ను తనిఖీ "
+"చేయదు. సోర్స్ లేని (కంపైల్ చేసినవి మాత్రమే ఉన్న) డిస్ట్రిబ్యూషన్‌ను సపోర్ట్ "
+"చేయడానికి, కంపైల్ చేసిన మాడ్యూల్ సోర్స్ డైరెక్టరీలో ఉండాలి, మరియు సోర్స్ "
+"మాడ్యూల్ ఉండకూడదు."
 
 #: tutorial/modules.rst:243
 msgid "Some tips for experts:"
-msgstr ""
+msgstr "నిపుణుల కోసం కొన్ని చిట్కాలు:"
 
 #: tutorial/modules.rst:245
 msgid ""
@@ -497,6 +552,14 @@ msgid ""
 "have an ``opt-`` tag and are usually smaller.  Future releases may change the"
 " effects of optimization."
 msgstr ""
+"కంపైల్ చేసిన మాడ్యూల్ పరిమాణాన్ని తగ్గించడానికి మీరు Python కమాండ్‌పై "
+":option:`-O` లేదా :option:`-OO` స్విచ్‌లను ఉపయోగించవచ్చు. ``-O`` స్విచ్ "
+"assert స్టేట్‌మెంట్‌లను తొలగిస్తుంది, ``-OO`` స్విచ్ assert స్టేట్‌మెంట్‌లు "
+"మరియు __doc__ స్ట్రింగ్‌లు రెండింటినీ తొలగిస్తుంది. కొన్ని ప్రోగ్రామ్‌లు ఇవి "
+"అందుబాటులో ఉండటంపై ఆధారపడవచ్చు కాబట్టి, మీరు ఏమి చేస్తున్నారో మీకు తెలిస్తేనే"
+" ఈ ఆప్షన్‌ను ఉపయోగించాలి. \"ఆప్టిమైజ్ చేసిన\" మాడ్యూల్‌లకు ``opt-`` ట్యాగ్ "
+"ఉంటుంది, అవి సాధారణంగా చిన్నవిగా ఉంటాయి. భవిష్యత్ విడుదలలు ఆప్టిమైజేషన్ "
+"ప్రభావాలను మార్చవచ్చు."
 
 #: tutorial/modules.rst:253
 msgid ""
@@ -504,18 +567,25 @@ msgid ""
 "when it is read from a ``.py`` file; the only thing that's faster about "
 "``.pyc`` files is the speed with which they are loaded."
 msgstr ""
+"``.pyc`` ఫైల్ నుండి చదివినప్పుడు ప్రోగ్రామ్, ``.py`` ఫైల్ నుండి చదివినప్పటి "
+"కంటే ఏమాత్రం వేగంగా రన్ అవ్వదు; ``.pyc`` ఫైల్‌లలో వేగంగా ఉండే ఏకైక విషయం అవి "
+"లోడ్ అయ్యే వేగం."
 
 #: tutorial/modules.rst:257
 msgid ""
 "The module :mod:`compileall` can create .pyc files for all modules in a "
 "directory."
 msgstr ""
+":mod:`compileall` మాడ్యూల్ ఒక డైరెక్టరీలోని అన్ని మాడ్యూల్‌లకు .pyc ఫైల్‌లను "
+"సృష్టించగలదు."
 
 #: tutorial/modules.rst:260
 msgid ""
 "There is more detail on this process, including a flow chart of the "
 "decisions, in :pep:`3147`."
 msgstr ""
+"నిర్ణయాల ఫ్లో చార్ట్‌తో సహా, ఈ ప్రక్రియ గురించి మరిన్ని వివరాలు :pep:`3147` "
+"లో ఉన్నాయి."
 
 #: tutorial/modules.rst:267
 msgid "Standard Modules"
