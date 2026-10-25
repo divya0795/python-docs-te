@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-10-25 13:06-0700\n"
+"PO-Revision-Date: 2026-10-25 13:28-0700\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -1066,7 +1066,7 @@ msgstr ""
 
 #: tutorial/modules.rst:493
 msgid "Importing \\* From a Package"
-msgstr ""
+msgstr "ఒక ప్యాకేజీ నుండి \\* ను ఇంపోర్ట్ చేయడం"
 
 #: tutorial/modules.rst:497
 msgid ""
@@ -1076,6 +1076,12 @@ msgid ""
 "could take a long time and importing sub-modules might have unwanted side-"
 "effects that should only happen when the sub-module is explicitly imported."
 msgstr ""
+"ఇప్పుడు వినియోగదారు ``from sound.effects import *`` అని రాసినప్పుడు ఏమి "
+"జరుగుతుంది? ఆదర్శంగా అయితే, ఇది ఏదో విధంగా ఫైల్‌సిస్టమ్‌లోకి వెళ్లి, "
+"ప్యాకేజీలో ఏ సబ్‌మాడ్యూల్‌లు ఉన్నాయో కనుగొని, వాటన్నింటినీ ఇంపోర్ట్ "
+"చేస్తుందని ఆశించవచ్చు. దీనికి చాలా సమయం పట్టవచ్చు, మరియు సబ్‌మాడ్యూల్‌లను "
+"ఇంపోర్ట్ చేయడం వల్ల, సబ్‌మాడ్యూల్‌ను స్పష్టంగా ఇంపోర్ట్ చేసినప్పుడు మాత్రమే "
+"జరగాల్సిన అవాంఛిత సైడ్ ఎఫెక్ట్‌లు రావచ్చు."
 
 #: tutorial/modules.rst:503
 msgid ""
@@ -1089,16 +1095,27 @@ msgid ""
 "importing \\* from their package.  For example, the file "
 ":file:`sound/effects/__init__.py` could contain the following code::"
 msgstr ""
+"ప్యాకేజీ రచయిత ప్యాకేజీ యొక్క స్పష్టమైన ఇండెక్స్‌ను అందించడమే ఏకైక పరిష్కారం."
+" :keyword:`import` స్టేట్‌మెంట్ కింది సంప్రదాయాన్ని ఉపయోగిస్తుంది: ఒక "
+"ప్యాకేజీ యొక్క :file:`__init__.py` కోడ్ ``__all__`` అనే లిస్ట్‌ను "
+"నిర్వచిస్తే, ``from package import *`` ఎదురైనప్పుడు ఇంపోర్ట్ చేయాల్సిన "
+"మాడ్యూల్ పేర్ల లిస్ట్‌గా దాన్ని తీసుకుంటారు. ప్యాకేజీ యొక్క కొత్త వెర్షన్ "
+"విడుదలైనప్పుడు ఈ లిస్ట్‌ను తాజాగా ఉంచడం ప్యాకేజీ రచయిత బాధ్యత. తమ ప్యాకేజీ "
+"నుండి \\* ను ఇంపోర్ట్ చేయడంలో ఉపయోగం కనిపించకపోతే, ప్యాకేజీ రచయితలు దాన్ని "
+"సపోర్ట్ చేయకూడదని కూడా నిర్ణయించుకోవచ్చు. ఉదాహరణకు, "
+":file:`sound/effects/__init__.py` ఫైల్‌లో కింది కోడ్ ఉండవచ్చు::"
 
 #: tutorial/modules.rst:513
 msgid "__all__ = [\"echo\", \"surround\", \"reverse\"]"
-msgstr ""
+msgstr "__all__ = [\"echo\", \"surround\", \"reverse\"]"
 
 #: tutorial/modules.rst:515
 msgid ""
 "This would mean that ``from sound.effects import *`` would import the three "
 "named submodules of the :mod:`!sound.effects` package."
 msgstr ""
+"అంటే ``from sound.effects import *`` అనేది :mod:`!sound.effects` ప్యాకేజీలోని"
+" పేర్కొన్న మూడు సబ్‌మాడ్యూల్‌లను ఇంపోర్ట్ చేస్తుంది."
 
 #: tutorial/modules.rst:518
 msgid ""
@@ -1109,6 +1126,12 @@ msgid ""
 " ``reverse`` submodule, because it is shadowed by the locally defined "
 "``reverse`` function::"
 msgstr ""
+"లోకల్‌గా నిర్వచించిన పేర్లు సబ్‌మాడ్యూల్‌లను కప్పివేయవచ్చని గుర్తుంచుకోండి. "
+"ఉదాహరణకు, మీరు :file:`sound/effects/__init__.py` ఫైల్‌కు ``reverse`` అనే "
+"ఫంక్షన్‌ను జోడిస్తే, ``from sound.effects import *`` కేవలం ``echo`` మరియు "
+"``surround`` అనే రెండు సబ్‌మాడ్యూల్‌లను మాత్రమే ఇంపోర్ట్ చేస్తుంది, "
+"``reverse`` సబ్‌మాడ్యూల్‌ను *కాదు*, ఎందుకంటే లోకల్‌గా నిర్వచించిన ``reverse``"
+" ఫంక్షన్ దాన్ని కప్పివేస్తుంది::"
 
 #: tutorial/modules.rst:525
 msgid ""
@@ -1121,6 +1144,14 @@ msgid ""
 "def reverse(msg: str):  # <-- this name shadows the 'reverse.py' submodule\n"
 "    return msg[::-1]    #     in the case of a 'from sound.effects import *'"
 msgstr ""
+"__all__ = [\n"
+"    \"echo\",      # refers to the 'echo.py' file\n"
+"    \"surround\",  # refers to the 'surround.py' file\n"
+"    \"reverse\",   # !!! refers to the 'reverse' function now !!!\n"
+"]\n"
+"\n"
+"def reverse(msg: str):  # <-- this name shadows the 'reverse.py' submodule\n"
+"    return msg[::-1]    #     in the case of a 'from sound.effects import *'"
 
 #: tutorial/modules.rst:534
 msgid ""
@@ -1134,6 +1165,15 @@ msgid ""
 "were explicitly loaded by previous :keyword:`import` statements.  Consider "
 "this code::"
 msgstr ""
+"``__all__`` నిర్వచించకపోతే, ``from sound.effects import *`` స్టేట్‌మెంట్ "
+":mod:`!sound.effects` ప్యాకేజీ నుండి అన్ని సబ్‌మాడ్యూల్‌లను ప్రస్తుత "
+"నేమ్‌స్పేస్‌లోకి ఇంపోర్ట్ *చేయదు*; ఇది :mod:`!sound.effects` ప్యాకేజీ "
+"ఇంపోర్ట్ అయిందని మాత్రమే నిర్ధారిస్తుంది (బహుశా :file:`__init__.py` లోని "
+"ఏదైనా ఇనిషియలైజేషన్ కోడ్‌ను రన్ చేస్తూ), ఆ తర్వాత ప్యాకేజీలో నిర్వచించిన "
+"పేర్లను ఇంపోర్ట్ చేస్తుంది. ఇందులో :file:`__init__.py` నిర్వచించిన ఏవైనా "
+"పేర్లు (మరియు అది స్పష్టంగా లోడ్ చేసిన సబ్‌మాడ్యూల్‌లు) ఉంటాయి. మునుపటి "
+":keyword:`import` స్టేట్‌మెంట్‌లు స్పష్టంగా లోడ్ చేసిన ప్యాకేజీ "
+"సబ్‌మాడ్యూల్‌లు కూడా ఇందులో ఉంటాయి. ఈ కోడ్‌ను పరిశీలించండి::"
 
 #: tutorial/modules.rst:543
 msgid ""
@@ -1141,6 +1181,9 @@ msgid ""
 "import sound.effects.surround\n"
 "from sound.effects import *"
 msgstr ""
+"import sound.effects.echo\n"
+"import sound.effects.surround\n"
+"from sound.effects import *"
 
 #: tutorial/modules.rst:547
 msgid ""
@@ -1149,6 +1192,10 @@ msgid ""
 ":mod:`!sound.effects` package when the ``from...import`` statement is "
 "executed.  (This also works when ``__all__`` is defined.)"
 msgstr ""
+"ఈ ఉదాహరణలో, ``from...import`` స్టేట్‌మెంట్ అమలైనప్పుడు :mod:`!echo` మరియు "
+":mod:`!surround` మాడ్యూల్‌లు :mod:`!sound.effects` ప్యాకేజీలో నిర్వచించబడి "
+"ఉంటాయి కాబట్టి, అవి ప్రస్తుత నేమ్‌స్పేస్‌లోకి ఇంపోర్ట్ అవుతాయి. (``__all__`` "
+"నిర్వచించినప్పుడు కూడా ఇది పనిచేస్తుంది.)"
 
 #: tutorial/modules.rst:552
 msgid ""
@@ -1156,6 +1203,9 @@ msgid ""
 "certain patterns when you use ``import *``, it is still considered bad "
 "practice in production code."
 msgstr ""
+"మీరు ``import *`` ను ఉపయోగించినప్పుడు నిర్దిష్ట ప్యాటర్న్‌లను అనుసరించే "
+"పేర్లను మాత్రమే ఎక్స్‌పోర్ట్ చేసేలా కొన్ని మాడ్యూల్‌లు రూపొందించబడినప్పటికీ, "
+"ప్రొడక్షన్ కోడ్‌లో దీన్ని ఇప్పటికీ చెడ్డ పద్ధతిగానే పరిగణిస్తారు."
 
 #: tutorial/modules.rst:556
 msgid ""
@@ -1164,10 +1214,14 @@ msgid ""
 "importing module needs to use submodules with the same name from different "
 "packages."
 msgstr ""
+"గుర్తుంచుకోండి, ``from package import specific_submodule`` ను ఉపయోగించడంలో "
+"తప్పేమీ లేదు! నిజానికి, ఇంపోర్ట్ చేస్తున్న మాడ్యూల్ వేర్వేరు ప్యాకేజీల నుండి "
+"ఒకే పేరుగల సబ్‌మాడ్యూల్‌లను ఉపయోగించాల్సిన అవసరం లేకపోతే, ఇదే సిఫార్సు "
+"చేయబడిన పద్ధతి."
 
 #: tutorial/modules.rst:565
 msgid "Intra-package References"
-msgstr ""
+msgstr "ప్యాకేజీ లోపలి రిఫరెన్స్‌లు"
 
 #: tutorial/modules.rst:567
 msgid ""
@@ -1177,6 +1231,12 @@ msgid ""
 ":mod:`!sound.filters.vocoder` needs to use the :mod:`!echo` module in the "
 ":mod:`!sound.effects` package, it can use ``from sound.effects import echo``."
 msgstr ""
+"ప్యాకేజీలు సబ్‌ప్యాకేజీలుగా నిర్మించబడినప్పుడు (ఉదాహరణలోని :mod:`!sound` "
+"ప్యాకేజీ లాగా), పక్కనే ఉన్న (సోదర) ప్యాకేజీల సబ్‌మాడ్యూల్‌లను సూచించడానికి "
+"మీరు అబ్సొల్యూట్ ఇంపోర్ట్‌లను ఉపయోగించవచ్చు. ఉదాహరణకు, "
+":mod:`!sound.filters.vocoder` మాడ్యూల్‌కు :mod:`!sound.effects` ప్యాకేజీలోని "
+":mod:`!echo` మాడ్యూల్ అవసరమైతే, అది ``from sound.effects import echo`` ను "
+"ఉపయోగించవచ్చు."
 
 #: tutorial/modules.rst:573
 msgid ""
@@ -1185,6 +1245,10 @@ msgid ""
 "current and parent packages involved in the relative import.  From the "
 ":mod:`!surround` module for example, you might use::"
 msgstr ""
+"మీరు ``from module import name`` రూపంలోని ఇంపోర్ట్ స్టేట్‌మెంట్‌తో రిలేటివ్ "
+"ఇంపోర్ట్‌లను కూడా రాయవచ్చు. రిలేటివ్ ఇంపోర్ట్‌లో పాల్గొనే ప్రస్తుత మరియు "
+"పేరెంట్ ప్యాకేజీలను సూచించడానికి ఈ ఇంపోర్ట్‌లు ముందు చుక్కలను ఉపయోగిస్తాయి. "
+"ఉదాహరణకు, :mod:`!surround` మాడ్యూల్ నుండి, మీరు ఇలా ఉపయోగించవచ్చు::"
 
 #: tutorial/modules.rst:578
 msgid ""
@@ -1192,6 +1256,9 @@ msgid ""
 "from .. import formats\n"
 "from ..filters import equalizer"
 msgstr ""
+"from . import echo\n"
+"from .. import formats\n"
+"from ..filters import equalizer"
 
 #: tutorial/modules.rst:582
 msgid ""
@@ -1200,10 +1267,14 @@ msgid ""
 "use as the main module of a Python application must always use absolute "
 "imports."
 msgstr ""
+"రిలేటివ్ ఇంపోర్ట్‌లు ప్రస్తుత మాడ్యూల్ యొక్క ప్యాకేజీ పేరుపై ఆధారపడి ఉంటాయని "
+"గమనించండి. main మాడ్యూల్‌కు ప్యాకేజీ ఉండదు కాబట్టి, Python అప్లికేషన్ యొక్క "
+"main మాడ్యూల్‌గా ఉపయోగించడానికి ఉద్దేశించిన మాడ్యూల్‌లు ఎల్లప్పుడూ "
+"అబ్సొల్యూట్ ఇంపోర్ట్‌లను ఉపయోగించాలి."
 
 #: tutorial/modules.rst:588
 msgid "Footnotes"
-msgstr ""
+msgstr "ఫుట్‌నోట్‌లు"
 
 #: tutorial/modules.rst:589
 msgid ""
@@ -1211,27 +1282,30 @@ msgid ""
 "execution of a module-level function definition adds the function name to the"
 " module's global namespace."
 msgstr ""
+"నిజానికి ఫంక్షన్ నిర్వచనాలు కూడా 'అమలు' అయ్యే 'స్టేట్‌మెంట్‌లే'; "
+"మాడ్యూల్-లెవెల్ ఫంక్షన్ నిర్వచనాన్ని అమలు చేస్తే, ఫంక్షన్ పేరు మాడ్యూల్ యొక్క"
+" గ్లోబల్ నేమ్‌స్పేస్‌కు జోడించబడుతుంది."
 
 #: tutorial/modules.rst:186 tutorial/modules.rst:269 tutorial/modules.rst:350
 msgid "module"
-msgstr ""
+msgstr "మాడ్యూల్"
 
 #: tutorial/modules.rst:186
 msgid "search"
-msgstr ""
+msgstr "సెర్చ్"
 
 #: tutorial/modules.rst:186
 msgid "path"
-msgstr ""
+msgstr "పాత్"
 
 #: tutorial/modules.rst:269
 msgid "sys"
-msgstr ""
+msgstr "sys"
 
 #: tutorial/modules.rst:350
 msgid "builtins"
-msgstr ""
+msgstr "builtins"
 
 #: tutorial/modules.rst:495
 msgid "__all__"
-msgstr ""
+msgstr "__all__"
