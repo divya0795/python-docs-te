@@ -231,7 +231,7 @@ Agree on new terms in an issue or PR before using them widely.
 | cache | క్యాష్ (చేయు) | |
 | calling convention | కాలింగ్ కన్వెన్షన్ | |
 | capture (in patterns) | క్యాప్చర్ చేయు | |
-| collection | కలెక్షన్ | |
+| collection | కలెక్షన్ | for Python's collection types; a plain "collection of …" → సమాహారం |
 | complex number | సంకీర్ణ సంఖ్య | imaginary part → ఊహాజనిత భాగం (to be reviewed) |
 | compound (statement, type) | సంయుక్త | |
 | constant | స్థిరాంకం | |
