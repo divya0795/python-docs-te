@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-10-29 18:45-0700\n"
+"PO-Revision-Date: 2026-10-29 19:29-0700\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -1219,7 +1219,7 @@ msgstr ""
 
 #: tutorial/controlflow.rst:558
 msgid "This example, as usual, demonstrates some new Python features:"
-msgstr "ఈ ఉదాహరణ, ఎప్పటిలాగే, Python యొక్క కొన్ని కొత్త ఫీచర్లను చూపిస్తుంది:"
+msgstr "ఈ ఉదాహరణ, ఎప్పటిలాగే, Python యొక్క కొన్ని కొత్త ఫీచర్‌లను చూపిస్తుంది:"
 
 #: tutorial/controlflow.rst:560
 msgid ""

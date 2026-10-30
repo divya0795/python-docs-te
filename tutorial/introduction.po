@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-10-28 19:23-0700\n"
+"PO-Revision-Date: 2026-10-29 19:29-0700\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -1186,7 +1186,7 @@ msgstr ""
 
 #: tutorial/introduction.rst:517
 msgid "This example introduces several new features."
-msgstr "ఈ ఉదాహరణ అనేక కొత్త ఫీచర్లను పరిచయం చేస్తుంది."
+msgstr "ఈ ఉదాహరణ అనేక కొత్త ఫీచర్‌లను పరిచయం చేస్తుంది."
 
 #: tutorial/introduction.rst:519
 msgid ""

@@ -55,7 +55,7 @@ Agree on new terms in an issue or PR before using them widely.
 | contribute | సహకరించు | |
 | contributor | సహకారి | |
 | core developer | కోర్ డెవలపర్ | |
-| developer | డెవలపర్ | plural డెవలపర్లు |
+| developer | డెవలపర్ | plural డెవలపర్‌లు |
 | discussion | చర్చ | |
 | documentation | డాక్యుమెంటేషన్ | |
 | feature | ఫీచర్ | |
