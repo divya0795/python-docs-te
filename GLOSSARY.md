@@ -276,3 +276,50 @@ Agree on new terms in an issue or PR before using them widely.
 | top level | టాప్ లెవెల్ | |
 | variant | రూపాంతరం | |
 | whitespace | ఖాళీ స్థలం | |
+
+## Terms for the rest of the tutorial (stage 4)
+
+| English | Telugu | Notes |
+|---------|--------|-------|
+| alias | అలియాస్ | |
+| approximation | ఉజ్జాయింపు | approximate value → సుమారు విలువ |
+| base class / derived class | బేస్ క్లాస్ / డిరైవ్డ్ క్లాస్ | |
+| binary / decimal fraction | బైనరీ భిన్నం / దశాంశ భిన్నం | |
+| byte | బైట్ | plural బైట్‌లు |
+| class / instance variable | క్లాస్ వేరియబుల్ / ఇన్‌స్టాన్స్ వేరియబుల్ | |
+| clean-up action | క్లీన్-అప్ చర్య | |
+| compression | కంప్రెషన్ | compress → కంప్రెస్ చేయు |
+| exception chaining | ఎక్సెప్షన్ చైనింగ్ | |
+| file object | ఫైల్ ఆబ్జెక్ట్ | |
+| format (verb) | ఫార్మాట్ చేయు | formatted string literal → ఫార్మాట్ చేసిన స్ట్రింగ్ లిటరల్; f-string → f-స్ట్రింగ్ |
+| garbage collection | గార్బేజ్ కలెక్షన్ | |
+| generator / generator expression | జనరేటర్ / జనరేటర్ ఎక్స్‌ప్రెషన్ | |
+| handle (an exception) | నిర్వహించు | exception handling → ఎక్సెప్షన్ నిర్వహణ |
+| inheritance / multiple inheritance | ఇన్‌హెరిటెన్స్ / బహుళ ఇన్‌హెరిటెన్స్ | inherit → ఇన్‌హెరిట్ చేయు |
+| logging | లాగింగ్ | |
+| method object | మెథడ్ ఆబ్జెక్ట్ | |
+| name mangling | నేమ్ మాంగ్లింగ్ | |
+| override | ఓవర్‌రైడ్ చేయు | |
+| precision | కచ్చితత్వం | |
+| private variable | ప్రైవేట్ వేరియబుల్ | |
+| regular expression | రెగ్యులర్ ఎక్స్‌ప్రెషన్ | |
+| representation error | రిప్రజెంటేషన్ లోపం | |
+| round / rounding | రౌండ్ చేయు / రౌండింగ్ | |
+| serialize / deserialize | సీరియలైజ్ / డీసీరియలైజ్ చేయు | |
+| syntax error | సింటాక్స్ లోపం | the class `SyntaxError` stays in English |
+| template | టెంప్లేట్ | |
+| thread / multi-threading | థ్రెడ్ / మల్టీ-థ్రెడింగ్ | |
+| traceback | ట్రేస్‌బ్యాక్ | |
+| unit test | యూనిట్ టెస్ట్ | |
+| weak reference | వీక్ రిఫరెన్స్ | |
+| wildcard | వైల్డ్‌కార్డ్ | |
+
+### Words reviewers flagged as misleading
+
+| English | Avoid | Use |
+|---------|-------|-----|
+| informal | అనధికారిక (= unofficial) | సరళమైన |
+| unique | ప్రత్యేక (= special) | పునరావృతం కాని |
+| arbitrary (order) | యాదృచ్ఛిక (= random) | ఇష్టానుసార |
+| member / element | సభ్యుడు (a person) | ఐటెమ్ / ఎలిమెంట్ |
+| the caller | వారు (a person) | కాల్ చేసిన కోడ్ |
