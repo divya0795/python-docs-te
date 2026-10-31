@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-10-30 19:22-0700\n"
+"PO-Revision-Date: 2026-10-30 19:32-0700\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -1015,7 +1015,7 @@ msgstr ""
 
 #: tutorial/inputoutput.rst:485
 msgid "Saving structured data with :mod:`json`"
-msgstr ""
+msgstr ":mod:`json` తో నిర్మాణాత్మక డేటాను సేవ్ చేయడం"
 
 #: tutorial/inputoutput.rst:489
 msgid ""
@@ -1026,6 +1026,13 @@ msgid ""
 "want to save more complex data types like nested lists and dictionaries, "
 "parsing and serializing by hand becomes complicated."
 msgstr ""
+"స్ట్రింగ్‌లను ఫైల్‌లో సులభంగా రాయవచ్చు, ఫైల్ నుండి చదవవచ్చు. సంఖ్యలకు కొంచెం "
+"ఎక్కువ శ్రమ పడుతుంది, ఎందుకంటే :meth:`~io.TextIOBase.read` మెథడ్ "
+"స్ట్రింగ్‌లను మాత్రమే రిటర్న్ చేస్తుంది, వాటిని :func:`int` వంటి ఫంక్షన్‌కు "
+"పంపాల్సి ఉంటుంది, అది ``'123'`` వంటి స్ట్రింగ్‌ను తీసుకుని దాని సంఖ్యా విలువ "
+"123 ను రిటర్న్ చేస్తుంది. నెస్టెడ్ లిస్ట్‌లు, డిక్షనరీల వంటి మరింత "
+"సంక్లిష్టమైన డేటా టైప్‌లను సేవ్ చేయాలనుకున్నప్పుడు, చేతితో పార్స్ చేయడం, "
+"సీరియలైజ్ చేయడం సంక్లిష్టంగా మారుతుంది."
 
 #: tutorial/inputoutput.rst:496
 msgid ""
@@ -1039,6 +1046,17 @@ msgid ""
 "deserializing, the string representing the object may have been stored in a "
 "file or data, or sent over a network connection to some distant machine."
 msgstr ""
+"సంక్లిష్టమైన డేటా టైప్‌లను ఫైల్‌లలో సేవ్ చేయడానికి వినియోగదారులు నిరంతరం కోడ్"
+" రాస్తూ, డీబగ్ చేస్తూ ఉండాల్సిన అవసరం లేకుండా, `JSON (JavaScript Object "
+"Notation) <https://json.org>`_ అనే ప్రసిద్ధ డేటా ఇంటర్‌చేంజ్ ఫార్మాట్‌ను "
+"ఉపయోగించడానికి Python మీకు వీలు కల్పిస్తుంది. :mod:`json` అనే స్టాండర్డ్ "
+"మాడ్యూల్ Python డేటా హైరార్కీలను తీసుకుని, వాటిని స్ట్రింగ్ "
+"రిప్రజెంటేషన్‌లుగా మార్చగలదు; ఈ ప్రక్రియను :dfn:`serializing` (సీరియలైజ్ "
+"చేయడం) అంటారు. స్ట్రింగ్ రిప్రజెంటేషన్ నుండి డేటాను పునర్నిర్మించడాన్ని "
+":dfn:`deserializing` (డీసీరియలైజ్ చేయడం) అంటారు. సీరియలైజ్ చేయడానికి, "
+"డీసీరియలైజ్ చేయడానికి మధ్యలో, ఆబ్జెక్ట్‌ను సూచించే స్ట్రింగ్ ఒక ఫైల్‌లో లేదా "
+"డేటాలో నిల్వ చేయబడి ఉండవచ్చు, లేదా నెట్‌వర్క్ కనెక్షన్ ద్వారా దూరంలో ఉన్న ఏదో"
+" ఒక మెషీన్‌కు పంపబడి ఉండవచ్చు."
 
 #: tutorial/inputoutput.rst:507
 msgid ""
@@ -1046,12 +1064,17 @@ msgid ""
 "exchange.  Many programmers are already familiar with it, which makes it a "
 "good choice for interoperability."
 msgstr ""
+"ఆధునిక అప్లికేషన్‌లు డేటా మార్పిడి కోసం సాధారణంగా JSON ఫార్మాట్‌ను "
+"ఉపయోగిస్తాయి. చాలా మంది ప్రోగ్రామర్‌లకు ఇది ఇప్పటికే పరిచయం ఉంది, ఇది "
+"ఇంటర్‌ఆపరబిలిటీకి దీన్ని మంచి ఎంపికగా చేస్తుంది."
 
 #: tutorial/inputoutput.rst:511
 msgid ""
 "If you have an object ``x``, you can view its JSON string representation with"
 " a simple line of code::"
 msgstr ""
+"మీ దగ్గర ``x`` అనే ఆబ్జెక్ట్ ఉంటే, ఒక సరళమైన కోడ్ లైన్‌తో దాని JSON స్ట్రింగ్"
+" రిప్రజెంటేషన్‌ను చూడవచ్చు::"
 
 #: tutorial/inputoutput.rst:514
 msgid ""
@@ -1060,6 +1083,10 @@ msgid ""
 ">>> json.dumps(x)\n"
 "'[1, \"simple\", \"list\"]'"
 msgstr ""
+">>> import json\n"
+">>> x = [1, 'simple', 'list']\n"
+">>> json.dumps(x)\n"
+"'[1, \"simple\", \"list\"]'"
 
 #: tutorial/inputoutput.rst:519
 msgid ""
@@ -1067,26 +1094,34 @@ msgid ""
 ":func:`~json.dump`, simply serializes the object to a :term:`text file`.  So "
 "if ``f`` is a :term:`text file` object opened for writing, we can do this::"
 msgstr ""
+":func:`~json.dumps` ఫంక్షన్ యొక్క మరో రూపాంతరం :func:`~json.dump`, ఇది "
+"ఆబ్జెక్ట్‌ను కేవలం ఒక :term:`టెక్స్ట్ ఫైల్‌లోకి <text file>` సీరియలైజ్ "
+"చేస్తుంది. కాబట్టి ``f`` రాయడానికి తెరిచిన :term:`టెక్స్ట్ ఫైల్ <text file>` "
+"ఆబ్జెక్ట్ అయితే, మనం ఇలా చేయవచ్చు::"
 
 #: tutorial/inputoutput.rst:523
 msgid "json.dump(x, f)"
-msgstr ""
+msgstr "json.dump(x, f)"
 
 #: tutorial/inputoutput.rst:525
 msgid ""
 "To decode the object again, if ``f`` is a :term:`binary file` or :term:`text "
 "file` object which has been opened for reading::"
 msgstr ""
+"ఆబ్జెక్ట్‌ను మళ్లీ డీకోడ్ చేయడానికి, ``f`` చదవడానికి తెరిచిన :term:`బైనరీ "
+"ఫైల్ <binary file>` లేదా :term:`టెక్స్ట్ ఫైల్ <text file>` ఆబ్జెక్ట్ అయితే::"
 
 #: tutorial/inputoutput.rst:528
 msgid "x = json.load(f)"
-msgstr ""
+msgstr "x = json.load(f)"
 
 #: tutorial/inputoutput.rst:531
 msgid ""
 "JSON files must be encoded in UTF-8, the default encoding for :term:`text "
 "files <text file>`."
 msgstr ""
+"JSON ఫైల్‌లు UTF-8 లో ఎన్‌కోడ్ చేయబడి ఉండాలి, ఇది :term:`టెక్స్ట్ ఫైల్‌లకు "
+"<text file>` డిఫాల్ట్ ఎన్‌కోడింగ్."
 
 #: tutorial/inputoutput.rst:534
 msgid ""
@@ -1094,10 +1129,13 @@ msgid ""
 "serializing arbitrary class instances in JSON requires a bit of extra effort."
 " The reference for the :mod:`json` module contains an explanation of this."
 msgstr ""
+"ఈ సరళమైన సీరియలైజేషన్ టెక్నిక్ లిస్ట్‌లను, డిక్షనరీలను నిర్వహించగలదు, కానీ "
+"ఏవైనా క్లాస్ ఇన్‌స్టాన్స్‌లను JSON లో సీరియలైజ్ చేయడానికి కొంచెం అదనపు శ్రమ "
+"అవసరం. :mod:`json` మాడ్యూల్ రిఫరెన్స్‌లో దీని వివరణ ఉంది."
 
 #: tutorial/inputoutput.rst:540
 msgid ":mod:`pickle` - the pickle module"
-msgstr ""
+msgstr ":mod:`pickle` - pickle మాడ్యూల్"
 
 #: tutorial/inputoutput.rst:542
 msgid ""
@@ -1108,55 +1146,61 @@ msgid ""
 "coming from an untrusted source can execute arbitrary code, if the data was "
 "crafted by a skilled attacker."
 msgstr ""
+":ref:`JSON <tut-json>` కు భిన్నంగా, *pickle* అనేది ఎంత సంక్లిష్టమైన Python "
+"ఆబ్జెక్ట్‌లనైనా సీరియలైజ్ చేయడానికి అనుమతించే ఒక ప్రోటోకాల్. అందువల్ల, ఇది "
+"Pythonకు మాత్రమే పరిమితమైనది, ఇతర భాషల్లో రాసిన అప్లికేషన్‌లతో కమ్యూనికేట్ "
+"చేయడానికి దీన్ని ఉపయోగించలేరు. ఇది డిఫాల్ట్‌గా సురక్షితం కాదు కూడా: నైపుణ్యం "
+"ఉన్న దాడి చేసే వ్యక్తి డేటాను రూపొందించి ఉంటే, నమ్మదగని మూలం నుండి వచ్చిన "
+"pickle డేటాను డీసీరియలైజ్ చేయడం ఏ కోడ్‌నైనా అమలు చేయగలదు."
 
 #: tutorial/inputoutput.rst:104
 msgid "formatted string literal"
-msgstr ""
+msgstr "ఫార్మాట్ చేసిన స్ట్రింగ్ లిటరల్"
 
 #: tutorial/inputoutput.rst:104
 msgid "interpolated string literal"
-msgstr ""
+msgstr "ఇంటర్‌పొలేటెడ్ స్ట్రింగ్ లిటరల్"
 
 #: tutorial/inputoutput.rst:104
 msgid "string"
-msgstr ""
+msgstr "స్ట్రింగ్"
 
 #: tutorial/inputoutput.rst:104
 msgid "formatted literal"
-msgstr ""
+msgstr "ఫార్మాట్ చేసిన లిటరల్"
 
 #: tutorial/inputoutput.rst:104
 msgid "interpolated literal"
-msgstr ""
+msgstr "ఇంటర్‌పొలేటెడ్ లిటరల్"
 
 #: tutorial/inputoutput.rst:104
 msgid "f-string"
-msgstr ""
+msgstr "f-స్ట్రింగ్"
 
 #: tutorial/inputoutput.rst:104
 msgid "fstring"
-msgstr ""
+msgstr "fstring"
 
 #: tutorial/inputoutput.rst:309
 msgid "built-in function"
-msgstr ""
+msgstr "బిల్ట్-ఇన్ ఫంక్షన్"
 
 #: tutorial/inputoutput.rst:309
 msgid "open"
-msgstr ""
+msgstr "open"
 
 #: tutorial/inputoutput.rst:309
 msgid "object"
-msgstr ""
+msgstr "ఆబ్జెక్ట్"
 
 #: tutorial/inputoutput.rst:309
 msgid "file"
-msgstr ""
+msgstr "ఫైల్"
 
 #: tutorial/inputoutput.rst:487
 msgid "module"
-msgstr ""
+msgstr "మాడ్యూల్"
 
 #: tutorial/inputoutput.rst:487
 msgid "json"
-msgstr ""
+msgstr "json"
