@@ -323,3 +323,52 @@ Agree on new terms in an issue or PR before using them widely.
 | arbitrary (order) | యాదృచ్ఛిక (= random) | ఇష్టానుసార |
 | member / element | సభ్యుడు (a person) | ఐటెమ్ / ఎలిమెంట్ |
 | the caller | వారు (a person) | కాల్ చేసిన కోడ్ |
+
+## Terms added while translating stage 4
+
+| English | Telugu | Notes |
+|---------|--------|-------|
+| abstract data type | అబ్‌స్ట్రాక్ట్ డేటా టైప్ | |
+| aliasing | అలియాసింగ్ | |
+| append (file mode) | అపెండ్ చేయు | |
+| arithmetic | అంకగణితం | |
+| base (of a number system) | ఆధారం | |
+| binding / rebind | బైండింగ్ / మళ్లీ బైండ్ చేయు | |
+| bit / digit | బిట్ / అంకె | significant digits → సార్థక అంకెలు |
+| callback | కాల్‌బ్యాక్ | |
+| catch (an exception) | క్యాచ్ చేయు | |
+| client | క్లయింట్ | |
+| concurrency | కాన్కరెన్సీ | |
+| data attribute | డేటా అట్రిబ్యూట్ | |
+| debug / debugger | డీబగ్ చేయు / డీబగ్గర్ | |
+| delimiter | డిలిమిటర్ | |
+| enclosing (scope) | ఆవరించి ఉన్న | |
+| exception group | ఎక్సెప్షన్ గ్రూప్ | |
+| field | ఫీల్డ్ | |
+| format specifier | ఫార్మాట్ స్పెసిఫైయర్ | |
+| fraction | భిన్నం | numerator / denominator → లవం / హారం |
+| handler | హ్యాండ్లర్ | |
+| hexadecimal | హెక్సాడెసిమల్ | |
+| hierarchy | హైరార్కీ | |
+| identifier | ఐడెంటిఫైయర్ | |
+| implementation (noun) | ఇంప్లిమెంటేషన్ | the verb stays రూపొందించు |
+| instantiate / instantiation | ఇన్‌స్టాన్షియేట్ చేయు / ఇన్‌స్టాన్షియేషన్ | |
+| invariant | ఇన్‌వేరియంట్ | |
+| iterator protocol | ఇటరేటర్ ప్రోటోకాల్ | |
+| mean / median | సగటు / మధ్యగతం | |
+| member (C++) | మెంబర్ | not సభ్యుడు |
+| method resolution order | మెథడ్ రిజల్యూషన్ ఆర్డర్ | |
+| non-local | నాన్-లోకల్ | |
+| note (on an exception) | నోట్ | |
+| pad (a string) | ప్యాడ్ చేయు | |
+| performance | పనితీరు | |
+| pointer | పాయింటర్ | |
+| quotient | భాగఫలం | |
+| rational number | అకరణీయ సంఖ్య | |
+| redirection | దారి మళ్లింపు | |
+| representation | రిప్రజెంటేషన్ | |
+| subclass / parent class | సబ్‌క్లాస్ / పేరెంట్ క్లాస్ | |
+| text / binary mode | టెక్స్ట్ / బైనరీ మోడ్ | |
+| truncate | కత్తిరించు | |
+| unhandled exception | నిర్వహించని ఎక్సెప్షన్ | |
+| wrapper | ర్యాపర్ | |
