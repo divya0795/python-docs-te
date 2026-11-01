@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-11-01 12:35-0800\n"
+"PO-Revision-Date: 2026-11-01 12:44-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -576,13 +576,15 @@ msgstr ""
 
 #: tutorial/classes.rst:259
 msgid "Class Objects"
-msgstr ""
+msgstr "క్లాస్ ఆబ్జెక్ట్‌లు"
 
 #: tutorial/classes.rst:261
 msgid ""
 "Class objects support two kinds of operations: attribute references and "
 "instantiation."
 msgstr ""
+"క్లాస్ ఆబ్జెక్ట్‌లు రెండు రకాల ఆపరేషన్‌లను సపోర్ట్ చేస్తాయి: అట్రిబ్యూట్ "
+"రిఫరెన్స్‌లు మరియు ఇన్‌స్టాన్షియేషన్."
 
 #: tutorial/classes.rst:264
 msgid ""
@@ -591,6 +593,10 @@ msgid ""
 "that were in the class's namespace when the class object was created.  So, if"
 " the class definition looked like this::"
 msgstr ""
+"*అట్రిబ్యూట్ రిఫరెన్స్‌లు* Pythonలోని అన్ని అట్రిబ్యూట్ రిఫరెన్స్‌లకు "
+"ఉపయోగించే ప్రామాణిక సింటాక్స్‌నే ఉపయోగిస్తాయి: ``obj.name``. క్లాస్ ఆబ్జెక్ట్"
+" సృష్టించబడినప్పుడు క్లాస్ నేమ్‌స్పేస్‌లో ఉన్న పేర్లన్నీ చెల్లుబాటు అయ్యే "
+"అట్రిబ్యూట్ పేర్లు. కాబట్టి, క్లాస్ నిర్వచనం ఇలా ఉంటే::"
 
 #: tutorial/classes.rst:269
 msgid ""
@@ -601,6 +607,12 @@ msgid ""
 "    def f(self):\n"
 "        return 'hello world'"
 msgstr ""
+"class MyClass:\n"
+"    \"\"\"A simple example class\"\"\"\n"
+"    i = 12345\n"
+"\n"
+"    def f(self):\n"
+"        return 'hello world'"
 
 #: tutorial/classes.rst:276
 msgid ""
@@ -610,6 +622,12 @@ msgid ""
 "assignment. :attr:`~type.__doc__` is also a valid attribute, returning the "
 "docstring belonging to the class: ``\"A simple example class\"``."
 msgstr ""
+"అప్పుడు ``MyClass.i`` మరియు ``MyClass.f`` చెల్లుబాటు అయ్యే అట్రిబ్యూట్ "
+"రిఫరెన్స్‌లు, ఇవి వరుసగా ఒక పూర్ణాంకాన్ని, ఒక ఫంక్షన్ ఆబ్జెక్ట్‌ను రిటర్న్ "
+"చేస్తాయి. క్లాస్ అట్రిబ్యూట్‌లకు అసైన్ కూడా చేయవచ్చు, కాబట్టి అసైన్‌మెంట్ "
+"ద్వారా ``MyClass.i`` విలువను మీరు మార్చవచ్చు. :attr:`~type.__doc__` కూడా "
+"చెల్లుబాటు అయ్యే అట్రిబ్యూట్, ఇది క్లాస్‌కు చెందిన డాక్‌స్ట్రింగ్‌ను రిటర్న్ "
+"చేస్తుంది: ``\"A simple example class\"``."
 
 #: tutorial/classes.rst:282
 msgid ""
@@ -617,16 +635,21 @@ msgid ""
 "object is a parameterless function that returns a new instance of the class. "
 "For example (assuming the above class)::"
 msgstr ""
+"క్లాస్ *ఇన్‌స్టాన్షియేషన్* ఫంక్షన్ సంకేతాన్ని ఉపయోగిస్తుంది. క్లాస్ ఆబ్జెక్ట్"
+" అనేది క్లాస్ యొక్క కొత్త ఇన్‌స్టాన్స్‌ను రిటర్న్ చేసే, పారామీటర్‌లు లేని "
+"ఫంక్షన్ అని ఊహించుకోండి. ఉదాహరణకు (పై క్లాస్‌ను తీసుకుంటే)::"
 
 #: tutorial/classes.rst:286 tutorial/classes.rst:303
 msgid "x = MyClass()"
-msgstr ""
+msgstr "x = MyClass()"
 
 #: tutorial/classes.rst:288
 msgid ""
 "creates a new *instance* of the class and assigns this object to the local "
 "variable ``x``."
 msgstr ""
+"ఇది క్లాస్ యొక్క కొత్త *ఇన్‌స్టాన్స్‌ను* సృష్టించి, ఈ ఆబ్జెక్ట్‌ను ``x`` అనే "
+"లోకల్ వేరియబుల్‌కు అసైన్ చేస్తుంది."
 
 #: tutorial/classes.rst:291
 msgid ""
@@ -635,12 +658,19 @@ msgid ""
 "specific initial state. Therefore a class may define a special method named "
 ":meth:`~object.__init__`, like this::"
 msgstr ""
+"ఇన్‌స్టాన్షియేషన్ ఆపరేషన్ (క్లాస్ ఆబ్జెక్ట్‌ను \"కాల్ చేయడం\") ఒక ఖాళీ "
+"ఆబ్జెక్ట్‌ను సృష్టిస్తుంది. చాలా క్లాస్‌లు ఒక నిర్దిష్ట ప్రారంభ స్థితికి "
+"అనుగుణంగా కస్టమైజ్ చేసిన ఇన్‌స్టాన్స్‌లతో ఆబ్జెక్ట్‌లను సృష్టించాలని "
+"కోరుకుంటాయి. అందువల్ల ఒక క్లాస్ :meth:`~object.__init__` అనే ప్రత్యేక "
+"మెథడ్‌ను ఇలా నిర్వచించవచ్చు::"
 
 #: tutorial/classes.rst:296
 msgid ""
 "def __init__(self):\n"
 "    self.data = []"
 msgstr ""
+"def __init__(self):\n"
+"    self.data = []"
 
 #: tutorial/classes.rst:299
 msgid ""
@@ -648,6 +678,10 @@ msgid ""
 "automatically invokes :meth:`!__init__` for the newly created class instance."
 "  So in this example, a new, initialized instance can be obtained by::"
 msgstr ""
+"ఒక క్లాస్ :meth:`~object.__init__` మెథడ్‌ను నిర్వచించినప్పుడు, క్లాస్ "
+"ఇన్‌స్టాన్షియేషన్ కొత్తగా సృష్టించిన క్లాస్ ఇన్‌స్టాన్స్ కోసం "
+":meth:`!__init__` ను ఆటోమేటిక్‌గా కాల్ చేస్తుంది. కాబట్టి ఈ ఉదాహరణలో, ఒక "
+"కొత్త, ఇనిషియలైజ్ చేసిన ఇన్‌స్టాన్స్‌ను ఇలా పొందవచ్చు::"
 
 #: tutorial/classes.rst:305
 msgid ""
@@ -655,6 +689,9 @@ msgid ""
 " flexibility.  In that case, arguments given to the class instantiation "
 "operator are passed on to :meth:`!__init__`.  For example, ::"
 msgstr ""
+"సహజంగానే, ఎక్కువ సౌలభ్యం కోసం :meth:`~object.__init__` మెథడ్‌కు "
+"ఆర్గ్యుమెంట్‌లు ఉండవచ్చు. అలాంటప్పుడు, క్లాస్ ఇన్‌స్టాన్షియేషన్ ఆపరేటర్‌కు "
+"ఇచ్చిన ఆర్గ్యుమెంట్‌లు :meth:`!__init__` కు పంపబడతాయి. ఉదాహరణకు, ::"
 
 #: tutorial/classes.rst:309
 msgid ""
@@ -667,10 +704,18 @@ msgid ""
 ">>> x.r, x.i\n"
 "(3.0, -4.5)"
 msgstr ""
+">>> class Complex:\n"
+"...     def __init__(self, realpart, imagpart):\n"
+"...         self.r = realpart\n"
+"...         self.i = imagpart\n"
+"...\n"
+">>> x = Complex(3.0, -4.5)\n"
+">>> x.r, x.i\n"
+"(3.0, -4.5)"
 
 #: tutorial/classes.rst:322
 msgid "Instance Objects"
-msgstr ""
+msgstr "ఇన్‌స్టాన్స్ ఆబ్జెక్ట్‌లు"
 
 #: tutorial/classes.rst:324
 msgid ""
@@ -678,6 +723,9 @@ msgid ""
 "instance objects are attribute references.  There are two kinds of valid "
 "attribute names: data attributes and methods."
 msgstr ""
+"ఇప్పుడు ఇన్‌స్టాన్స్ ఆబ్జెక్ట్‌లతో మనం ఏమి చేయగలం? ఇన్‌స్టాన్స్ ఆబ్జెక్ట్‌లు "
+"అర్థం చేసుకునే ఆపరేషన్‌లు అట్రిబ్యూట్ రిఫరెన్స్‌లు మాత్రమే. చెల్లుబాటు అయ్యే "
+"అట్రిబ్యూట్ పేర్లు రెండు రకాలు: డేటా అట్రిబ్యూట్‌లు మరియు మెథడ్‌లు."
 
 #: tutorial/classes.rst:328
 msgid ""
@@ -688,6 +736,12 @@ msgid ""
 "following piece of code will print the value ``16``, without leaving a "
 "trace::"
 msgstr ""
+"*డేటా అట్రిబ్యూట్‌లు* Smalltalk లోని \"instance variables\" కు, C++ లోని "
+"\"data members\" కు సమానం. డేటా అట్రిబ్యూట్‌లను డిక్లేర్ చేయాల్సిన అవసరం "
+"లేదు; లోకల్ వేరియబుల్‌ల లాగానే, వాటికి మొదటిసారి అసైన్ చేసినప్పుడు అవి "
+"ఉనికిలోకి వస్తాయి. ఉదాహరణకు, ``x`` పైన సృష్టించిన :class:`!MyClass` యొక్క "
+"ఇన్‌స్టాన్స్ అయితే, కింది కోడ్ ఎలాంటి జాడ వదలకుండా ``16`` విలువను ప్రింట్ "
+"చేస్తుంది::"
 
 #: tutorial/classes.rst:334
 msgid ""
@@ -697,12 +751,19 @@ msgid ""
 "print(x.counter)\n"
 "del x.counter"
 msgstr ""
+"x.counter = 1\n"
+"while x.counter < 10:\n"
+"    x.counter = x.counter * 2\n"
+"print(x.counter)\n"
+"del x.counter"
 
 #: tutorial/classes.rst:340
 msgid ""
 "The other kind of instance attribute reference is a *method*. A method is a "
 "function that \"belongs to\" an object."
 msgstr ""
+"ఇన్‌స్టాన్స్ అట్రిబ్యూట్ రిఫరెన్స్ యొక్క మరో రకం *మెథడ్*. మెథడ్ అనేది ఒక "
+"ఆబ్జెక్ట్‌కు \"చెందిన\" ఫంక్షన్."
 
 #: tutorial/classes.rst:345
 msgid ""
@@ -713,6 +774,13 @@ msgid ""
 "``MyClass.i`` is not.  But ``x.f`` is not the same thing as ``MyClass.f`` ---"
 " it is a *method object*, not a function object."
 msgstr ""
+"ఒక ఇన్‌స్టాన్స్ ఆబ్జెక్ట్ యొక్క చెల్లుబాటు అయ్యే మెథడ్ పేర్లు దాని క్లాస్‌పై "
+"ఆధారపడి ఉంటాయి. నిర్వచనం ప్రకారం, ఒక క్లాస్ యొక్క ఫంక్షన్ ఆబ్జెక్ట్‌లు అయిన "
+"అన్ని అట్రిబ్యూట్‌లు దాని ఇన్‌స్టాన్స్‌ల సంబంధిత మెథడ్‌లను నిర్వచిస్తాయి. "
+"కాబట్టి మన ఉదాహరణలో, ``MyClass.f`` ఒక ఫంక్షన్ కాబట్టి ``x.f`` చెల్లుబాటు "
+"అయ్యే మెథడ్ రిఫరెన్స్, కానీ ``MyClass.i`` ఫంక్షన్ కాదు కాబట్టి ``x.i`` కాదు. "
+"కానీ ``x.f`` అనేది ``MyClass.f`` తో సమానం కాదు --- అది ఒక *మెథడ్ ఆబ్జెక్ట్*, "
+"ఫంక్షన్ ఆబ్జెక్ట్ కాదు."
 
 #: tutorial/classes.rst:356
 msgid "Method Objects"
