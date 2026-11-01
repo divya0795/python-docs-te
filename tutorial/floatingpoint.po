@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-11-01 14:05-0800\n"
+"Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: tutorial/floatingpoint.rst:10
 msgid "Floating-Point Arithmetic:  Issues and Limitations"
-msgstr ""
+msgstr "ఫ్లోటింగ్ పాయింట్ అంకగణితం: సమస్యలు మరియు పరిమితులు"
 
 #: tutorial/floatingpoint.rst:12
 msgid ""
@@ -31,6 +31,11 @@ msgid ""
 "values, the only real difference being that the first is written in base 10 "
 "fractional notation, and the second in base 2."
 msgstr ""
+"కంప్యూటర్ హార్డ్‌వేర్‌లో ఫ్లోటింగ్ పాయింట్ సంఖ్యలు ఆధారం 2 (బైనరీ) భిన్నాలుగా"
+" సూచించబడతాయి. ఉదాహరణకు, **దశాంశ** భిన్నం ``0.625`` విలువ 6/10 + 2/100 + "
+"5/1000, అదే విధంగా **బైనరీ** భిన్నం ``0.101`` విలువ 1/2 + 0/4 + 1/8. ఈ రెండు "
+"భిన్నాల విలువలు ఒకటే; వాటి మధ్య ఉన్న ఏకైక నిజమైన తేడా ఏమిటంటే, మొదటిది ఆధారం "
+"10 భిన్న సంకేతంలో, రెండవది ఆధారం 2లో రాయబడింది."
 
 #: tutorial/floatingpoint.rst:19
 msgid ""
@@ -39,28 +44,34 @@ msgid ""
 "numbers you enter are only approximated by the binary floating-point numbers "
 "actually stored in the machine."
 msgstr ""
+"దురదృష్టవశాత్తు, చాలా దశాంశ భిన్నాలను బైనరీ భిన్నాలుగా కచ్చితంగా సూచించలేము. "
+"దీని పర్యవసానంగా, సాధారణంగా మీరు నమోదు చేసే దశాంశ ఫ్లోటింగ్ పాయింట్ సంఖ్యలు, "
+"మెషీన్‌లో వాస్తవంగా నిల్వ చేయబడే బైనరీ ఫ్లోటింగ్ పాయింట్ సంఖ్యల ద్వారా "
+"సుమారుగా మాత్రమే సూచించబడతాయి."
 
 #: tutorial/floatingpoint.rst:24
 msgid ""
 "The problem is easier to understand at first in base 10.  Consider the "
 "fraction 1/3.  You can approximate that as a base 10 fraction::"
 msgstr ""
+"మొదట ఆధారం 10లో ఈ సమస్యను అర్థం చేసుకోవడం సులభం. 1/3 అనే భిన్నాన్ని "
+"తీసుకోండి. దాన్ని మీరు ఆధారం 10 భిన్నంగా సుమారుగా ఇలా రాయవచ్చు::"
 
 #: tutorial/floatingpoint.rst:27
 msgid "0.3"
-msgstr ""
+msgstr "0.3"
 
 #: tutorial/floatingpoint.rst:29 tutorial/floatingpoint.rst:33
 msgid "or, better, ::"
-msgstr ""
+msgstr "లేదా, ఇంకా మెరుగ్గా, ::"
 
 #: tutorial/floatingpoint.rst:31
 msgid "0.33"
-msgstr ""
+msgstr "0.33"
 
 #: tutorial/floatingpoint.rst:35
 msgid "0.333"
-msgstr ""
+msgstr "0.333"
 
 #: tutorial/floatingpoint.rst:37
 msgid ""
@@ -68,6 +79,8 @@ msgid ""
 "result will never be exactly 1/3, but will be an increasingly better "
 "approximation of 1/3."
 msgstr ""
+"ఇలా కొనసాగుతుంది. మీరు ఎన్ని అంకెలు రాయడానికి సిద్ధపడినా, ఫలితం ఎప్పటికీ "
+"కచ్చితంగా 1/3 కాదు, కానీ 1/3కి క్రమంగా మరింత మెరుగైన ఉజ్జాయింపు అవుతుంది."
 
 #: tutorial/floatingpoint.rst:41
 msgid ""
@@ -75,10 +88,13 @@ msgid ""
 "decimal value 0.1 cannot be represented exactly as a base 2 fraction.  In "
 "base 2, 1/10 is the infinitely repeating fraction ::"
 msgstr ""
+"అదే విధంగా, మీరు ఆధారం 2 అంకెలను ఎన్ని ఉపయోగించడానికి సిద్ధపడినా, దశాంశ విలువ"
+" 0.1ని ఆధారం 2 భిన్నంగా కచ్చితంగా సూచించలేము. ఆధారం 2లో, 1/10 అనేది అనంతంగా "
+"పునరావృతమయ్యే ఈ భిన్నం ::"
 
 #: tutorial/floatingpoint.rst:45
 msgid "0.0001100110011001100110011001100110011001100110011..."
-msgstr ""
+msgstr "0.0001100110011001100110011001100110011001100110011..."
 
 #: tutorial/floatingpoint.rst:47
 msgid ""
@@ -89,6 +105,12 @@ msgid ""
 "fraction is ``3602879701896397 / 2 ** 55`` which is close to but not exactly "
 "equal to the true value of 1/10."
 msgstr ""
+"ఏదైనా పరిమిత సంఖ్యలో బిట్‌ల వద్ద ఆపితే, మీకు ఉజ్జాయింపు వస్తుంది. నేటి చాలా "
+"మెషీన్‌లలో, ఫ్లోట్‌లను ఒక బైనరీ భిన్నంతో సుమారుగా సూచిస్తారు: దాని లవం అత్యంత"
+" ముఖ్యమైన బిట్ (most significant bit) నుండి మొదలయ్యే మొదటి 53 బిట్‌లను "
+"ఉపయోగిస్తుంది, హారం రెండు యొక్క ఘాతంగా ఉంటుంది. 1/10 విషయంలో, బైనరీ భిన్నం "
+"``3602879701896397 / 2 ** 55``, ఇది 1/10 యొక్క నిజమైన విలువకు దగ్గరగా ఉంటుంది"
+" కానీ దానికి కచ్చితంగా సమానం కాదు."
 
 #: tutorial/floatingpoint.rst:54
 msgid ""
@@ -98,30 +120,44 @@ msgid ""
 "if Python were to print the true decimal value of the binary approximation "
 "stored for 0.1, it would have to display::"
 msgstr ""
+"విలువలను ప్రదర్శించే విధానం కారణంగా చాలా మంది వినియోగదారులకు ఈ ఉజ్జాయింపు "
+"గురించి తెలియదు. మెషీన్ నిల్వ చేసిన బైనరీ ఉజ్జాయింపు యొక్క నిజమైన దశాంశ "
+"విలువకు Python ఒక దశాంశ ఉజ్జాయింపును మాత్రమే ప్రింట్ చేస్తుంది. చాలా "
+"మెషీన్‌లలో, 0.1 కోసం నిల్వ చేసిన బైనరీ ఉజ్జాయింపు యొక్క నిజమైన దశాంశ విలువను "
+"Python ప్రింట్ చేయాల్సి వస్తే, అది ఇలా ప్రదర్శించాల్సి ఉంటుంది::"
 
 #: tutorial/floatingpoint.rst:60
 msgid ""
 ">>> 0.1\n"
 "0.1000000000000000055511151231257827021181583404541015625"
 msgstr ""
+">>> 0.1\n"
+"0.1000000000000000055511151231257827021181583404541015625"
 
 #: tutorial/floatingpoint.rst:63
 msgid ""
 "That is more digits than most people find useful, so Python keeps the number "
 "of digits manageable by displaying a rounded value instead:"
 msgstr ""
+"చాలా మందికి ఉపయోగపడే దానికంటే ఇవి ఎక్కువ అంకెలు, కాబట్టి Python బదులుగా రౌండ్"
+" చేసిన విలువను ప్రదర్శించి అంకెల సంఖ్యను నిర్వహించదగినదిగా ఉంచుతుంది:"
 
 #: tutorial/floatingpoint.rst:66
 msgid ""
 ">>> 1 / 10\n"
 "0.1"
 msgstr ""
+">>> 1 / 10\n"
+"0.1"
 
 #: tutorial/floatingpoint.rst:71
 msgid ""
 "Just remember, even though the printed result looks like the exact value of "
 "1/10, the actual stored value is the nearest representable binary fraction."
 msgstr ""
+"గుర్తుంచుకోండి, ప్రింట్ అయిన ఫలితం 1/10 యొక్క కచ్చితమైన విలువలా "
+"కనిపించినప్పటికీ, వాస్తవంగా నిల్వ చేయబడిన విలువ సూచించగలిగే అత్యంత దగ్గరి "
+"బైనరీ భిన్నం."
 
 #: tutorial/floatingpoint.rst:74
 msgid ""
@@ -133,6 +169,12 @@ msgid ""
 "values share the same approximation, any one of them could be displayed while"
 " still preserving the invariant ``eval(repr(x)) == x``."
 msgstr ""
+"ఆసక్తికరంగా, ఒకే అత్యంత దగ్గరి ఉజ్జాయింపు బైనరీ భిన్నాన్ని పంచుకునే అనేక "
+"వేర్వేరు దశాంశ సంఖ్యలు ఉన్నాయి. ఉదాహరణకు, ``0.1``, ``0.10000000000000001`` "
+"మరియు ``0.1000000000000000055511151231257827021181583404541015625`` అనే "
+"సంఖ్యలన్నీ ``3602879701896397 / 2 ** 55`` ద్వారా సుమారుగా సూచించబడతాయి. ఈ "
+"దశాంశ విలువలన్నీ ఒకే ఉజ్జాయింపును పంచుకుంటాయి కాబట్టి, ``eval(repr(x)) == x``"
+" అనే ఇన్‌వేరియంట్‌ను కాపాడుతూనే వీటిలో ఏదైనా ఒకదాన్ని ప్రదర్శించవచ్చు."
 
 #: tutorial/floatingpoint.rst:82
 msgid ""
@@ -141,6 +183,10 @@ msgid ""
 "Starting with Python 3.1, Python (on most systems) is now able to choose the "
 "shortest of these and simply display ``0.1``."
 msgstr ""
+"చారిత్రకంగా, Python ప్రాంప్ట్ మరియు బిల్ట్-ఇన్ :func:`repr` ఫంక్షన్ 17 సార్థక"
+" అంకెలు ఉన్నదాన్ని, అంటే ``0.10000000000000001`` ను ఎంచుకునేవి. Python 3.1 "
+"నుండి, Python (చాలా సిస్టమ్‌లలో) వీటిలో అతి చిన్నదాన్ని ఎంచుకుని కేవలం "
+"``0.1`` ను ప్రదర్శించగలుగుతుంది."
 
 #: tutorial/floatingpoint.rst:87
 msgid ""
@@ -150,6 +196,11 @@ msgid ""
 "arithmetic (although some languages may not *display* the difference by "
 "default, or in all output modes)."
 msgstr ""
+"ఇది బైనరీ ఫ్లోటింగ్ పాయింట్ స్వభావంలోనే ఉందని గమనించండి: ఇది Pythonలో బగ్ "
+"కాదు, మీ కోడ్‌లో బగ్ కూడా కాదు. మీ హార్డ్‌వేర్ యొక్క ఫ్లోటింగ్ పాయింట్ "
+"అంకగణితాన్ని సపోర్ట్ చేసే అన్ని భాషల్లోనూ మీరు ఇదే రకమైన విషయాన్ని చూస్తారు "
+"(అయితే కొన్ని భాషలు డిఫాల్ట్‌గా, లేదా అన్ని అవుట్‌పుట్ మోడ్‌లలో, ఈ తేడాను "
+"*ప్రదర్శించకపోవచ్చు*)."
 
 #: tutorial/floatingpoint.rst:93
 msgid ""
