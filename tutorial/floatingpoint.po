@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-11-02 18:55-0800\n"
+"PO-Revision-Date: 2026-11-02 19:12-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -545,7 +545,7 @@ msgstr ""
 
 #: tutorial/floatingpoint.rst:256
 msgid "Representation Error"
-msgstr ""
+msgstr "రిప్రజెంటేషన్ లోపం"
 
 #: tutorial/floatingpoint.rst:258
 msgid ""
@@ -553,6 +553,9 @@ msgid ""
 "perform an exact analysis of cases like this yourself.  Basic familiarity "
 "with binary floating-point representation is assumed."
 msgstr ""
+"ఈ విభాగం \"0.1\" ఉదాహరణను విపులంగా వివరిస్తుంది, ఇలాంటి సందర్భాలను మీరే "
+"కచ్చితంగా ఎలా విశ్లేషించవచ్చో చూపిస్తుంది. బైనరీ ఫ్లోటింగ్ పాయింట్ రూపంపై "
+"ప్రాథమిక అవగాహన ఉందని భావించబడుతుంది."
 
 #: tutorial/floatingpoint.rst:262
 msgid ""
@@ -561,6 +564,10 @@ msgid ""
 " This is the chief reason why Python (or Perl, C, C++, Java, Fortran, and "
 "many others) often won't display the exact decimal number you expect."
 msgstr ""
+":dfn:`Representation error` (రిప్రజెంటేషన్ లోపం) అంటే, కొన్ని (నిజానికి, "
+"చాలా) దశాంశ భిన్నాలను బైనరీ (ఆధారం 2) భిన్నాలుగా కచ్చితంగా సూచించలేము అనే "
+"వాస్తవం. Python (లేదా Perl, C, C++, Java, Fortran, మరియు అనేక ఇతర భాషలు) మీరు"
+" ఆశించే కచ్చితమైన దశాంశ సంఖ్యను తరచుగా ప్రదర్శించకపోవడానికి ఇదే ప్రధాన కారణం."
 
 #: tutorial/floatingpoint.rst:267
 msgid ""
@@ -572,36 +579,49 @@ msgid ""
 "fraction it can of the form *J*/2**\\ *N* where *J* is an integer containing "
 "exactly 53 bits. Rewriting ::"
 msgstr ""
+"అది ఎందుకు? 1/10ని బైనరీ భిన్నంగా కచ్చితంగా సూచించలేము. కనీసం 2000 నుండి, "
+"దాదాపు అన్ని మెషీన్‌లు IEEE 754 బైనరీ ఫ్లోటింగ్ పాయింట్ అంకగణితాన్ని "
+"ఉపయోగిస్తున్నాయి, దాదాపు అన్ని ప్లాట్‌ఫామ్‌లు Python ఫ్లోట్‌లను IEEE 754 "
+"binary64 \"double precision\" విలువలకు మ్యాప్ చేస్తాయి. IEEE 754 binary64 "
+"విలువలలో 53 బిట్‌ల కచ్చితత్వం ఉంటుంది, కాబట్టి ఇన్‌పుట్ సమయంలో కంప్యూటర్ "
+"0.1ని *J*/2**\\ *N* రూపంలో సాధ్యమైనంత దగ్గరి భిన్నంగా మార్చడానికి "
+"ప్రయత్నిస్తుంది, ఇక్కడ *J* సరిగ్గా 53 బిట్‌లు ఉన్న పూర్ణాంకం. కింది దాన్ని ::"
 
 #: tutorial/floatingpoint.rst:276
 msgid "1 / 10 ~= J / (2**N)"
-msgstr ""
+msgstr "1 / 10 ~= J / (2**N)"
 
 #: tutorial/floatingpoint.rst:278
 msgid "as ::"
-msgstr ""
+msgstr "ఇలా తిరిగి రాసి ::"
 
 #: tutorial/floatingpoint.rst:280
 msgid "J ~= 2**N / 10"
-msgstr ""
+msgstr "J ~= 2**N / 10"
 
 #: tutorial/floatingpoint.rst:282
 msgid ""
 "and recalling that *J* has exactly 53 bits (is ``>= 2**52`` but ``< 2**53``),"
 " the best value for *N* is 56:"
 msgstr ""
+"*J* కి సరిగ్గా 53 బిట్‌లు ఉంటాయని (అంటే అది ``>= 2**52`` కానీ ``< 2**53``) "
+"గుర్తుచేసుకుంటే, *N* కి ఉత్తమ విలువ 56:"
 
 #: tutorial/floatingpoint.rst:285
 msgid ""
 ">>> 2**52 <=  2**56 // 10  < 2**53\n"
 "True"
 msgstr ""
+">>> 2**52 <=  2**56 // 10  < 2**53\n"
+"True"
 
 #: tutorial/floatingpoint.rst:290
 msgid ""
 "That is, 56 is the only value for *N* that leaves *J* with exactly 53 bits.  "
 "The best possible value for *J* is then that quotient rounded:"
 msgstr ""
+"అంటే, *J* కి సరిగ్గా 53 బిట్‌లు ఉండేలా చేసే *N* విలువ 56 ఒక్కటే. అప్పుడు *J* "
+"కి సాధ్యమైన ఉత్తమ విలువ ఆ భాగఫలాన్ని రౌండ్ చేయగా వచ్చేది:"
 
 #: tutorial/floatingpoint.rst:293
 msgid ""
@@ -609,37 +629,46 @@ msgid ""
 ">>> r\n"
 "6"
 msgstr ""
+">>> q, r = divmod(2**56, 10)\n"
+">>> r\n"
+"6"
 
 #: tutorial/floatingpoint.rst:299
 msgid ""
 "Since the remainder is more than half of 10, the best approximation is "
 "obtained by rounding up:"
 msgstr ""
+"శేషం 10లో సగం కంటే ఎక్కువ కాబట్టి, పైకి రౌండ్ చేయడం ద్వారా ఉత్తమ ఉజ్జాయింపు "
+"లభిస్తుంది:"
 
 #: tutorial/floatingpoint.rst:302
 msgid ""
 ">>> q+1\n"
 "7205759403792794"
 msgstr ""
+">>> q+1\n"
+"7205759403792794"
 
 #: tutorial/floatingpoint.rst:309
 msgid ""
 "Therefore the best possible approximation to 1/10 in IEEE 754 double "
 "precision is::"
-msgstr ""
+msgstr "కాబట్టి IEEE 754 double precisionలో 1/10కి సాధ్యమైన ఉత్తమ ఉజ్జాయింపు::"
 
 #: tutorial/floatingpoint.rst:312
 msgid "7205759403792794 / 2 ** 56"
-msgstr ""
+msgstr "7205759403792794 / 2 ** 56"
 
 #: tutorial/floatingpoint.rst:314
 msgid ""
 "Dividing both the numerator and denominator by two reduces the fraction to::"
 msgstr ""
+"లవం మరియు హారం రెండింటినీ రెండుతో భాగిస్తే, భిన్నం ఇలా "
+"సూక్ష్మీకరించబడుతుంది::"
 
 #: tutorial/floatingpoint.rst:316
 msgid "3602879701896397 / 2 ** 55"
-msgstr ""
+msgstr "3602879701896397 / 2 ** 55"
 
 #: tutorial/floatingpoint.rst:318
 msgid ""
@@ -647,30 +676,39 @@ msgid ""
 "1/10; if we had not rounded up, the quotient would have been a little bit "
 "smaller than 1/10.  But in no case can it be *exactly* 1/10!"
 msgstr ""
+"మనం పైకి రౌండ్ చేశాం కాబట్టి, ఇది నిజానికి 1/10 కంటే కొంచెం పెద్దదని "
+"గమనించండి; మనం పైకి రౌండ్ చేయకపోయి ఉంటే, భాగఫలం 1/10 కంటే కొంచెం చిన్నదిగా "
+"ఉండేది. కానీ ఏ సందర్భంలోనూ ఇది *కచ్చితంగా* 1/10 కాజాలదు!"
 
 #: tutorial/floatingpoint.rst:322
 msgid ""
 "So the computer never \"sees\" 1/10:  what it sees is the exact fraction "
 "given above, the best IEEE 754 double approximation it can get:"
 msgstr ""
+"కాబట్టి కంప్యూటర్ 1/10ని ఎప్పుడూ \"చూడదు\": అది చూసేది పైన ఇచ్చిన కచ్చితమైన "
+"భిన్నం, అంటే దానికి లభించగల ఉత్తమ IEEE 754 double ఉజ్జాయింపు:"
 
 #: tutorial/floatingpoint.rst:325
 msgid ""
 ">>> 0.1 * 2 ** 55\n"
 "3602879701896397.0"
 msgstr ""
+">>> 0.1 * 2 ** 55\n"
+"3602879701896397.0"
 
 #: tutorial/floatingpoint.rst:330
 msgid ""
 "If we multiply that fraction by 10\\*\\*55, we can see the value out to 55 "
 "decimal digits:"
-msgstr ""
+msgstr "ఆ భిన్నాన్ని 10\\*\\*55తో గుణిస్తే, 55 దశాంశ అంకెల వరకు విలువను చూడవచ్చు:"
 
 #: tutorial/floatingpoint.rst:333
 msgid ""
 ">>> 3602879701896397 * 10 ** 55 // 2 ** 55\n"
 "1000000000000000055511151231257827021181583404541015625"
 msgstr ""
+">>> 3602879701896397 * 10 ** 55 // 2 ** 55\n"
+"1000000000000000055511151231257827021181583404541015625"
 
 #: tutorial/floatingpoint.rst:338
 msgid ""
@@ -679,17 +717,24 @@ msgid ""
 "displaying the full decimal value, many languages (including older versions "
 "of Python), round the result to 17 significant digits:"
 msgstr ""
+"అంటే కంప్యూటర్‌లో నిల్వ చేయబడిన కచ్చితమైన సంఖ్య దశాంశ విలువ "
+"0.1000000000000000055511151231257827021181583404541015625 కు సమానం. పూర్తి "
+"దశాంశ విలువను ప్రదర్శించడానికి బదులుగా, అనేక భాషలు (Python యొక్క పాత "
+"వెర్షన్‌లతో సహా) ఫలితాన్ని 17 సార్థక అంకెలకు రౌండ్ చేస్తాయి:"
 
 #: tutorial/floatingpoint.rst:343
 msgid ""
 ">>> format(0.1, '.17f')\n"
 "'0.10000000000000001'"
 msgstr ""
+">>> format(0.1, '.17f')\n"
+"'0.10000000000000001'"
 
 #: tutorial/floatingpoint.rst:348
 msgid ""
 "The :mod:`fractions` and :mod:`decimal` modules make these calculations easy:"
 msgstr ""
+":mod:`fractions` మరియు :mod:`decimal` మాడ్యూల్‌లు ఈ గణనలను సులభతరం చేస్తాయి:"
 
 #: tutorial/floatingpoint.rst:351
 msgid ""
@@ -708,3 +753,17 @@ msgid ""
 ">>> format(Decimal.from_float(0.1), '.17')\n"
 "'0.10000000000000001'"
 msgstr ""
+">>> from decimal import Decimal\n"
+">>> from fractions import Fraction\n"
+"\n"
+">>> Fraction.from_float(0.1)\n"
+"Fraction(3602879701896397, 36028797018963968)\n"
+"\n"
+">>> (0.1).as_integer_ratio()\n"
+"(3602879701896397, 36028797018963968)\n"
+"\n"
+">>> Decimal.from_float(0.1)\n"
+"Decimal('0.1000000000000000055511151231257827021181583404541015625')\n"
+"\n"
+">>> format(Decimal.from_float(0.1), '.17')\n"
+"'0.10000000000000001'"
