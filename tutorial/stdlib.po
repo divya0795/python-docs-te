@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-11-03 18:05-0800\n"
+"Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
 "MIME-Version: 1.0\n"
@@ -20,17 +20,19 @@ msgstr ""
 
 #: tutorial/stdlib.rst:5
 msgid "Brief tour of the standard library"
-msgstr ""
+msgstr "స్టాండర్డ్ లైబ్రరీ సంక్షిప్త పరిచయం"
 
 #: tutorial/stdlib.rst:11
 msgid "Operating system interface"
-msgstr ""
+msgstr "ఆపరేటింగ్ సిస్టమ్ ఇంటర్‌ఫేస్"
 
 #: tutorial/stdlib.rst:13
 msgid ""
 "The :mod:`os` module provides dozens of functions for interacting with the "
 "operating system::"
 msgstr ""
+":mod:`os` మాడ్యూల్ ఆపరేటింగ్ సిస్టమ్‌తో పనిచేయడానికి డజన్ల కొద్దీ ఫంక్షన్‌లను"
+" అందిస్తుంది::"
 
 #: tutorial/stdlib.rst:16
 msgid ""
@@ -41,6 +43,12 @@ msgid ""
 ">>> os.system('mkdir today')   # Run the command mkdir in the system shell\n"
 "0"
 msgstr ""
+">>> import os\n"
+">>> os.getcwd()      # Return the current working directory\n"
+"'C:\\\\Python315'\n"
+">>> os.chdir('/server/accesslogs')   # Change current working directory\n"
+">>> os.system('mkdir today')   # Run the command mkdir in the system shell\n"
+"0"
 
 #: tutorial/stdlib.rst:23
 msgid ""
@@ -48,12 +56,17 @@ msgid ""
 " will keep :func:`os.open` from shadowing the built-in :func:`open` function "
 "which operates much differently."
 msgstr ""
+"``from os import *`` కాకుండా ``import os`` శైలిని తప్పకుండా ఉపయోగించండి. "
+"దీనివల్ల :func:`os.open`, చాలా భిన్నంగా పనిచేసే బిల్ట్-ఇన్ :func:`open` "
+"ఫంక్షన్‌ను కప్పివేయకుండా ఉంటుంది."
 
 #: tutorial/stdlib.rst:29
 msgid ""
 "The built-in :func:`dir` and :func:`help` functions are useful as interactive"
 " aids for working with large modules like :mod:`os`::"
 msgstr ""
+"బిల్ట్-ఇన్ :func:`dir` మరియు :func:`help` ఫంక్షన్‌లు :mod:`os` వంటి పెద్ద "
+"మాడ్యూల్‌లతో పనిచేసేటప్పుడు ఇంటరాక్టివ్ సహాయకాలుగా ఉపయోగపడతాయి::"
 
 #: tutorial/stdlib.rst:32
 msgid ""
@@ -63,12 +76,19 @@ msgid ""
 ">>> help(os)\n"
 "<returns an extensive manual page created from the module's docstrings>"
 msgstr ""
+">>> import os\n"
+">>> dir(os)\n"
+"<returns a list of all module functions>\n"
+">>> help(os)\n"
+"<returns an extensive manual page created from the module's docstrings>"
 
 #: tutorial/stdlib.rst:38
 msgid ""
 "For daily file and directory management tasks, the :mod:`shutil` module "
 "provides a higher-level interface that is easier to use::"
 msgstr ""
+"రోజువారీ ఫైల్ మరియు డైరెక్టరీ నిర్వహణ పనుల కోసం, :mod:`shutil` మాడ్యూల్ "
+"ఉపయోగించడానికి సులభమైన, ఉన్నత-స్థాయి ఇంటర్‌ఫేస్‌ను అందిస్తుంది::"
 
 #: tutorial/stdlib.rst:41
 msgid ""
@@ -78,16 +98,23 @@ msgid ""
 ">>> shutil.move('/build/executables', 'installdir')\n"
 "'installdir'"
 msgstr ""
+">>> import shutil\n"
+">>> shutil.copyfile('data.db', 'archive.db')\n"
+"'archive.db'\n"
+">>> shutil.move('/build/executables', 'installdir')\n"
+"'installdir'"
 
 #: tutorial/stdlib.rst:51
 msgid "File wildcards"
-msgstr ""
+msgstr "ఫైల్ వైల్డ్‌కార్డ్‌లు"
 
 #: tutorial/stdlib.rst:53
 msgid ""
 "The :mod:`glob` module provides a function for making file lists from "
 "directory wildcard searches::"
 msgstr ""
+"డైరెక్టరీలో వైల్డ్‌కార్డ్ సెర్చ్‌ల ద్వారా ఫైల్ జాబితాలను తయారు చేయడానికి "
+":mod:`glob` మాడ్యూల్ ఒక ఫంక్షన్‌ను అందిస్తుంది::"
 
 #: tutorial/stdlib.rst:56
 msgid ""
@@ -95,10 +122,13 @@ msgid ""
 ">>> glob.glob('*.py')\n"
 "['primes.py', 'random.py', 'quote.py']"
 msgstr ""
+">>> import glob\n"
+">>> glob.glob('*.py')\n"
+"['primes.py', 'random.py', 'quote.py']"
 
 #: tutorial/stdlib.rst:64
 msgid "Command-line arguments"
-msgstr ""
+msgstr "కమాండ్-లైన్ ఆర్గ్యుమెంట్‌లు"
 
 #: tutorial/stdlib.rst:66
 msgid ""
@@ -106,6 +136,10 @@ msgid ""
 "arguments are stored in the :mod:`sys` module's *argv* attribute as a list.  "
 "For instance, let's take the following :file:`demo.py` file::"
 msgstr ""
+"సాధారణ యుటిలిటీ స్క్రిప్ట్‌లు తరచుగా కమాండ్-లైన్ ఆర్గ్యుమెంట్‌లను ప్రాసెస్ "
+"చేయాల్సి ఉంటుంది. ఈ ఆర్గ్యుమెంట్‌లు :mod:`sys` మాడ్యూల్ యొక్క *argv* "
+"అట్రిబ్యూట్‌లో లిస్ట్‌గా నిల్వ చేయబడతాయి. ఉదాహరణకు, కింది :file:`demo.py` "
+"ఫైల్‌ను తీసుకుందాం::"
 
 #: tutorial/stdlib.rst:70
 msgid ""
@@ -113,16 +147,21 @@ msgid ""
 "import sys\n"
 "print(sys.argv)"
 msgstr ""
+"# File demo.py\n"
+"import sys\n"
+"print(sys.argv)"
 
 #: tutorial/stdlib.rst:74
 msgid ""
 "Here is the output from running ``python demo.py one two three`` at the "
 "command line::"
 msgstr ""
+"కమాండ్ లైన్‌లో ``python demo.py one two three`` ను రన్ చేసినప్పుడు వచ్చే "
+"అవుట్‌పుట్ ఇది::"
 
 #: tutorial/stdlib.rst:77
 msgid "['demo.py', 'one', 'two', 'three']"
-msgstr ""
+msgstr "['demo.py', 'one', 'two', 'three']"
 
 #: tutorial/stdlib.rst:79
 msgid ""
@@ -130,6 +169,10 @@ msgid ""
 " command-line arguments.  The following script extracts one or more filenames"
 " and an optional number of lines to be displayed::"
 msgstr ""
+":mod:`argparse` మాడ్యూల్ కమాండ్-లైన్ ఆర్గ్యుమెంట్‌లను ప్రాసెస్ చేయడానికి "
+"మరింత అధునాతన విధానాన్ని అందిస్తుంది. కింది స్క్రిప్ట్ ఒకటి లేదా అంతకంటే "
+"ఎక్కువ ఫైల్ పేర్లను, మరియు ప్రదర్శించాల్సిన లైన్‌ల సంఖ్యను (ఐచ్ఛికం) "
+"సంగ్రహిస్తుంది::"
 
 #: tutorial/stdlib.rst:83
 msgid ""
@@ -143,6 +186,15 @@ msgid ""
 "args = parser.parse_args()\n"
 "print(args)"
 msgstr ""
+"import argparse\n"
+"\n"
+"parser = argparse.ArgumentParser(\n"
+"    prog='top',\n"
+"    description='Show top lines from each file')\n"
+"parser.add_argument('filenames', nargs='+')\n"
+"parser.add_argument('-l', '--lines', type=int, default=10)\n"
+"args = parser.parse_args()\n"
+"print(args)"
 
 #: tutorial/stdlib.rst:93
 msgid ""
@@ -150,10 +202,13 @@ msgid ""
 "beta.txt``, the script sets ``args.lines`` to ``5`` and ``args.filenames`` to"
 " ``['alpha.txt', 'beta.txt']``."
 msgstr ""
+"కమాండ్ లైన్‌లో ``python top.py --lines=5 alpha.txt beta.txt`` తో రన్ "
+"చేసినప్పుడు, ఈ స్క్రిప్ట్ ``args.lines`` ను ``5`` కు, ``args.filenames`` ను "
+"``['alpha.txt', 'beta.txt']`` కు సెట్ చేస్తుంది."
 
 #: tutorial/stdlib.rst:101
 msgid "Error output redirection and program termination"
-msgstr ""
+msgstr "లోప అవుట్‌పుట్ దారి మళ్లింపు మరియు ప్రోగ్రామ్ ముగింపు"
 
 #: tutorial/stdlib.rst:103
 msgid ""
@@ -161,16 +216,23 @@ msgid ""
 "*stderr*. The latter is useful for emitting warnings and error messages to "
 "make them visible even when *stdout* has been redirected::"
 msgstr ""
+":mod:`sys` మాడ్యూల్‌లో *stdin*, *stdout*, మరియు *stderr* కోసం అట్రిబ్యూట్‌లు "
+"కూడా ఉన్నాయి. వీటిలో చివరిది, *stdout* దారి మళ్లించబడినప్పుడు కూడా హెచ్చరికలు"
+" మరియు లోప సందేశాలు కనిపించేలా వాటిని వెలువరించడానికి ఉపయోగపడుతుంది::"
 
 #: tutorial/stdlib.rst:107
 msgid ""
 ">>> sys.stderr.write('Warning, log file not found starting a new one\\n')\n"
 "Warning, log file not found starting a new one"
 msgstr ""
+">>> sys.stderr.write('Warning, log file not found starting a new one\\n')\n"
+"Warning, log file not found starting a new one"
 
 #: tutorial/stdlib.rst:110
 msgid "The most direct way to terminate a script is to use ``sys.exit()``."
 msgstr ""
+"స్క్రిప్ట్‌ను ముగించడానికి అత్యంత నేరుగా ఉండే మార్గం ``sys.exit()`` ను "
+"ఉపయోగించడం."
 
 #: tutorial/stdlib.rst:116
 msgid "String pattern matching"
