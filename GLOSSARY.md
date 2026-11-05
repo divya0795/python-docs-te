@@ -118,7 +118,7 @@ Agree on new terms in an issue or PR before using them widely.
 | directory | డైరెక్టరీ | |
 | environment variable | ఎన్విరాన్‌మెంట్ వేరియబుల్ | |
 | file | ఫైల్ | |
-| floating-point number | ఫ్లోటింగ్-పాయింట్ సంఖ్య | |
+| floating-point number | ఫ్లోటింగ్ పాయింట్ సంఖ్య | no hyphen, as in the stage 3 table |
 | hardware | హార్డ్‌వేర్ | |
 | input / output | ఇన్‌పుట్ / అవుట్‌పుట్ | |
 | install | ఇన్‌స్టాల్ చేయు | |
