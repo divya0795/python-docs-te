@@ -323,6 +323,10 @@ Agree on new terms in an issue or PR before using them widely.
 | arbitrary (order) | యాదృచ్ఛిక (= random) | ఇష్టానుసార |
 | member / element | సభ్యుడు (a person) | ఐటెమ్ / ఎలిమెంట్ |
 | the caller | వారు (a person) | కాల్ చేసిన కోడ్ |
+| discouraged | ప్రోత్సహించరు (= not encouraged) | ఉపయోగించవద్దని సిఫార్సు చేస్తారు |
+| significant (digits, places) | ముఖ్యమైన / ప్రాముఖ్యత (= important) | సార్థక |
+| informal "we" | మా (excludes the reader) | మన / మనం |
+| email | ఈమెయిల్ | ఇమెయిల్ |
 
 ## Terms added while translating stage 4
 
