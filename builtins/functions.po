@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-11-07 09:50-0800\n"
+"PO-Revision-Date: 2026-11-07 10:02-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -1052,11 +1052,13 @@ msgid ""
 "Convert a single string or number to a complex number, or create a complex "
 "number from real and imaginary parts."
 msgstr ""
+"ఒకే స్ట్రింగ్‌ను లేదా సంఖ్యను సంకీర్ణ సంఖ్యగా మారుస్తుంది, లేదా వాస్తవ మరియు "
+"ఊహాజనిత భాగాల నుండి సంకీర్ణ సంఖ్యను సృష్టిస్తుంది."
 
 #: builtins/functions.rst:412 builtins/functions.rst:800
 #: builtins/functions.rst:1063
 msgid "Examples:"
-msgstr ""
+msgstr "ఉదాహరణలు:"
 
 #: builtins/functions.rst:414
 msgid ""
@@ -1077,6 +1079,22 @@ msgid ""
 ">>> complex(-1.23, 4.5)\n"
 "(-1.23+4.5j)"
 msgstr ""
+">>> complex('+1.23')\n"
+"(1.23+0j)\n"
+">>> complex('-4.5j')\n"
+"-4.5j\n"
+">>> complex('-1.23+4.5j')\n"
+"(-1.23+4.5j)\n"
+">>> complex('\\t( -1.23+4.5J )\\n')\n"
+"(-1.23+4.5j)\n"
+">>> complex('-Infinity+NaNj')\n"
+"(-inf+nanj)\n"
+">>> complex(1.23)\n"
+"(1.23+0j)\n"
+">>> complex(imag=-4.5)\n"
+"-4.5j\n"
+">>> complex(-1.23, 4.5)\n"
+"(-1.23+4.5j)"
 
 #: builtins/functions.rst:433
 msgid ""
@@ -1092,6 +1110,17 @@ msgid ""
 ":token:`~float:complexvalue` production rule in the following grammar, after "
 "parentheses and leading and trailing whitespace characters are removed:"
 msgstr ""
+"ఆర్గ్యుమెంట్ స్ట్రింగ్ అయితే, అందులో ఒక వాస్తవ భాగం (:func:`float` కోసం ఉన్న "
+"ఫార్మాట్‌లోనే) లేదా ఒక ఊహాజనిత భాగం (అదే ఫార్మాట్‌లో, కానీ ``'j'`` లేదా "
+"``'J'`` సఫిక్స్‌తో), లేదా వాస్తవ మరియు ఊహాజనిత భాగాలు రెండూ (ఈ సందర్భంలో "
+"ఊహాజనిత భాగం యొక్క గుర్తు తప్పనిసరి) ఉండాలి. స్ట్రింగ్ చుట్టూ ఐచ్ఛికంగా ఖాళీ "
+"స్థలాలు మరియు ``'('`` మరియు ``')'`` కుండలీకరణాలు ఉండవచ్చు, వాటిని "
+"విస్మరిస్తారు. ``'+'``, ``'-'``, ``'j'`` లేదా ``'J'`` సఫిక్స్, మరియు దశాంశ "
+"సంఖ్య మధ్య స్ట్రింగ్‌లో ఖాళీ స్థలం ఉండకూడదు. ఉదాహరణకు, ``complex('1+2j')`` "
+"సరైనదే, కానీ ``complex('1 + 2j')`` :exc:`ValueError` ను రైజ్ చేస్తుంది. మరింత"
+" కచ్చితంగా చెప్పాలంటే, కుండలీకరణాలను మరియు ముందు, వెనుక ఉండే ఖాళీ స్థల "
+"అక్షరాలను తొలగించిన తర్వాత, ఇన్‌పుట్ కింది గ్రామర్‌లోని "
+":token:`~float:complexvalue` ప్రొడక్షన్ రూల్‌కు అనుగుణంగా ఉండాలి:"
 
 #: builtins/functions.rst:452
 msgid ""
@@ -1102,6 +1131,12 @@ msgid ""
 ":meth:`~object.__float__`. If :meth:`!__float__` is not defined then it falls"
 " back to :meth:`~object.__index__`."
 msgstr ""
+"ఆర్గ్యుమెంట్ సంఖ్య అయితే, కన్‌స్ట్రక్టర్ :class:`int` మరియు :class:`float` "
+"లాగానే సంఖ్యా మార్పిడిగా పనిచేస్తుంది. సాధారణ Python ఆబ్జెక్ట్ ``x`` కోసం, "
+"``complex(x)`` ఆ పనిని ``x.__complex__()`` కు అప్పగిస్తుంది. "
+":meth:`~object.__complex__` నిర్వచించబడకపోతే, అది :meth:`~object.__float__` "
+"ను ఆశ్రయిస్తుంది. :meth:`!__float__` నిర్వచించబడకపోతే, అది "
+":meth:`~object.__index__` ను ఆశ్రయిస్తుంది."
 
 #: builtins/functions.rst:461
 msgid ""
@@ -1113,37 +1148,52 @@ msgid ""
 "imaginary component ``real.imag+imag.real``. If one of arguments is a real "
 "number, only its real component is used in the above expressions."
 msgstr ""
+"రెండు ఆర్గ్యుమెంట్‌లు ఇచ్చినా లేదా కీవర్డ్ ఆర్గ్యుమెంట్‌లు ఉపయోగించినా, ప్రతి"
+" ఆర్గ్యుమెంట్ ఏ సంఖ్యా టైప్ అయినా కావచ్చు (సంకీర్ణ సంఖ్యతో సహా). రెండు "
+"ఆర్గ్యుమెంట్‌లూ వాస్తవ సంఖ్యలు అయితే, వాస్తవ భాగం *real* మరియు ఊహాజనిత భాగం "
+"*imag* గా ఉన్న సంకీర్ణ సంఖ్యను రిటర్న్ చేస్తుంది. రెండు ఆర్గ్యుమెంట్‌లూ "
+"సంకీర్ణ సంఖ్యలు అయితే, వాస్తవ భాగం ``real.real-imag.imag`` మరియు ఊహాజనిత భాగం"
+" ``real.imag+imag.real`` గా ఉన్న సంకీర్ణ సంఖ్యను రిటర్న్ చేస్తుంది. "
+"ఆర్గ్యుమెంట్‌లలో ఒకటి వాస్తవ సంఖ్య అయితే, పై ఎక్స్‌ప్రెషన్‌లలో దాని వాస్తవ "
+"భాగం మాత్రమే ఉపయోగించబడుతుంది."
 
 #: builtins/functions.rst:471
 msgid ""
 "See also :meth:`complex.from_number` which only accepts a single numeric "
 "argument."
 msgstr ""
+"ఒకే సంఖ్యా ఆర్గ్యుమెంట్‌ను మాత్రమే స్వీకరించే :meth:`complex.from_number` ను "
+"కూడా చూడండి."
 
 #: builtins/functions.rst:473
 msgid "If all arguments are omitted, returns ``0j``."
-msgstr ""
+msgstr "అన్ని ఆర్గ్యుమెంట్‌లను వదిలివేస్తే, ``0j`` ను రిటర్న్ చేస్తుంది."
 
 #: builtins/functions.rst:475
 msgid "The complex type is described in :ref:`typesnumeric`."
-msgstr ""
+msgstr "complex టైప్ :ref:`typesnumeric` లో వివరించబడింది."
 
 #: builtins/functions.rst:477 builtins/functions.rst:854
 #: builtins/functions.rst:1111
 msgid "Grouping digits with underscores as in code literals is allowed."
 msgstr ""
+"కోడ్ లిటరల్‌లలో లాగానే అంకెలను అండర్‌స్కోర్‌లతో సమూహం చేయడానికి అనుమతి ఉంది."
 
 #: builtins/functions.rst:480
 msgid ""
 "Falls back to :meth:`~object.__index__` if :meth:`~object.__complex__` and "
 ":meth:`~object.__float__` are not defined."
 msgstr ""
+":meth:`~object.__complex__` మరియు :meth:`~object.__float__` నిర్వచించబడకపోతే "
+":meth:`~object.__index__` ను ఆశ్రయిస్తుంది."
 
 #: builtins/functions.rst:484
 msgid ""
 "Passing a complex number as the *real* or *imag* argument is now deprecated; "
 "it should only be passed as a single positional argument."
 msgstr ""
+"*real* లేదా *imag* ఆర్గ్యుమెంట్‌గా సంకీర్ణ సంఖ్యను ఇవ్వడం ఇప్పుడు డెప్రికేట్ "
+"చేయబడింది; దాన్ని ఒకే పొజిషనల్ ఆర్గ్యుమెంట్‌గా మాత్రమే ఇవ్వాలి."
 
 #: builtins/functions.rst:491
 msgid ""
@@ -1153,12 +1203,19 @@ msgid ""
 "example, ``delattr(x, 'foobar')`` is equivalent to ``del x.foobar``. *name* "
 "need not be a Python identifier (see :func:`setattr`)."
 msgstr ""
+"ఇది :func:`setattr` కు సంబంధించిన ఫంక్షన్. ఆర్గ్యుమెంట్‌లు ఒక ఆబ్జెక్ట్ మరియు"
+" ఒక స్ట్రింగ్. ఆ స్ట్రింగ్ ఆబ్జెక్ట్ యొక్క అట్రిబ్యూట్‌లలో ఒకదాని పేరు అయి "
+"ఉండాలి. ఆబ్జెక్ట్ అనుమతిస్తే, ఈ ఫంక్షన్ ఆ పేరు గల అట్రిబ్యూట్‌ను "
+"తొలగిస్తుంది. ఉదాహరణకు, ``delattr(x, 'foobar')`` అనేది ``del x.foobar`` కు "
+"సమానం. *name* ఒక Python ఐడెంటిఫైయర్ కానవసరం లేదు (:func:`setattr` చూడండి)."
 
 #: builtins/functions.rst:504
 msgid ""
 "Create a new dictionary.  The :class:`dict` object is the dictionary class. "
 "See also :ref:`typesmapping` for documentation about this class."
 msgstr ""
+"కొత్త డిక్షనరీని సృష్టిస్తుంది. :class:`dict` ఆబ్జెక్ట్ డిక్షనరీ క్లాస్. ఈ "
+"క్లాస్ గురించిన డాక్యుమెంటేషన్ కోసం :ref:`typesmapping` కూడా చూడండి."
 
 #: builtins/functions.rst:507
 msgid ""
@@ -1166,12 +1223,18 @@ msgid ""
 ":class:`set`, and :class:`tuple` classes, as well as the :mod:`collections` "
 "module."
 msgstr ""
+"ఇతర కంటెయినర్‌ల కోసం బిల్ట్-ఇన్ :class:`frozendict`, :class:`list`, "
+":class:`set`, మరియు :class:`tuple` క్లాస్‌లను, అలాగే :mod:`collections` "
+"మాడ్యూల్‌ను చూడండి."
 
 #: builtins/functions.rst:514
 msgid ""
 "Without arguments, return the list of names in the current local scope.  With"
 " an argument, attempt to return a list of valid attributes for that object."
 msgstr ""
+"ఆర్గ్యుమెంట్‌లు లేకుండా, ప్రస్తుత లోకల్ స్కోప్‌లోని పేర్ల లిస్ట్‌ను రిటర్న్ "
+"చేస్తుంది. ఆర్గ్యుమెంట్‌తో, ఆ ఆబ్జెక్ట్ యొక్క చెల్లుబాటు అయ్యే అట్రిబ్యూట్‌ల "
+"లిస్ట్‌ను రిటర్న్ చేయడానికి ప్రయత్నిస్తుంది."
 
 #: builtins/functions.rst:517
 msgid ""
@@ -1181,6 +1244,11 @@ msgid ""
 ":func:`~object.__getattribute__` function to customize the way :func:`dir` "
 "reports their attributes."
 msgstr ""
+"ఆబ్జెక్ట్‌కు :meth:`~object.__dir__` అనే మెథడ్ ఉంటే, ఈ మెథడ్ కాల్ "
+"చేయబడుతుంది, అది అట్రిబ్యూట్‌ల లిస్ట్‌ను రిటర్న్ చేయాలి. దీనివల్ల కస్టమ్ "
+":func:`~object.__getattr__` లేదా :func:`~object.__getattribute__` ఫంక్షన్‌ను "
+"రూపొందించే ఆబ్జెక్ట్‌లు, :func:`dir` తమ అట్రిబ్యూట్‌లను నివేదించే విధానాన్ని "
+"కస్టమైజ్ చేయగలవు."
 
 #: builtins/functions.rst:524
 msgid ""
@@ -1190,6 +1258,11 @@ msgid ""
 "necessarily complete and may be inaccurate when the object has a custom "
 ":func:`~object.__getattr__`."
 msgstr ""
+"ఆబ్జెక్ట్ :meth:`~object.__dir__` ను అందించకపోతే, ఫంక్షన్ ఆబ్జెక్ట్ యొక్క "
+":attr:`~object.__dict__` అట్రిబ్యూట్ (నిర్వచించి ఉంటే) నుండి, మరియు దాని టైప్"
+" ఆబ్జెక్ట్ నుండి సమాచారాన్ని సేకరించడానికి తన శాయశక్తులా ప్రయత్నిస్తుంది. "
+"ఫలితంగా వచ్చే లిస్ట్ సంపూర్ణంగా ఉంటుందని హామీ లేదు, మరియు ఆబ్జెక్ట్‌కు కస్టమ్"
+" :func:`~object.__getattr__` ఉన్నప్పుడు అది కచ్చితంగా ఉండకపోవచ్చు."
 
 #: builtins/functions.rst:530
 msgid ""
@@ -1197,18 +1270,25 @@ msgid ""
 " objects, as it attempts to produce the most relevant, rather than complete, "
 "information:"
 msgstr ""
+"డిఫాల్ట్ :func:`dir` విధానం వేర్వేరు రకాల ఆబ్జెక్ట్‌లతో వేర్వేరుగా "
+"ప్రవర్తిస్తుంది, ఎందుకంటే అది సంపూర్ణ సమాచారం కంటే అత్యంత సంబంధిత సమాచారాన్ని"
+" అందించడానికి ప్రయత్నిస్తుంది:"
 
 #: builtins/functions.rst:534
 msgid ""
 "If the object is a module object, the list contains the names of the module's"
 " attributes."
 msgstr ""
+"ఆబ్జెక్ట్ మాడ్యూల్ ఆబ్జెక్ట్ అయితే, లిస్ట్‌లో మాడ్యూల్ యొక్క అట్రిబ్యూట్‌ల "
+"పేర్లు ఉంటాయి."
 
 #: builtins/functions.rst:537
 msgid ""
 "If the object is a type or class object, the list contains the names of its "
 "attributes, and recursively of the attributes of its bases."
 msgstr ""
+"ఆబ్జెక్ట్ టైప్ లేదా క్లాస్ ఆబ్జెక్ట్ అయితే, లిస్ట్‌లో దాని అట్రిబ్యూట్‌ల "
+"పేర్లు, మరియు రికర్సివ్‌గా దాని బేస్‌ల అట్రిబ్యూట్‌ల పేర్లు ఉంటాయి."
 
 #: builtins/functions.rst:540
 msgid ""
@@ -1216,10 +1296,13 @@ msgid ""
 " class's attributes, and recursively of the attributes of its class's base "
 "classes."
 msgstr ""
+"లేకపోతే, లిస్ట్‌లో ఆబ్జెక్ట్ యొక్క అట్రిబ్యూట్‌ల పేర్లు, దాని క్లాస్ యొక్క "
+"అట్రిబ్యూట్‌ల పేర్లు, మరియు రికర్సివ్‌గా దాని క్లాస్ యొక్క బేస్ క్లాస్‌ల "
+"అట్రిబ్యూట్‌ల పేర్లు ఉంటాయి."
 
 #: builtins/functions.rst:544
 msgid "The resulting list is sorted alphabetically.  For example:"
-msgstr ""
+msgstr "ఫలితంగా వచ్చే లిస్ట్ అక్షర క్రమంలో సార్ట్ చేయబడుతుంది. ఉదాహరణకు:"
 
 #: builtins/functions.rst:564
 msgid ""
@@ -1229,6 +1312,11 @@ msgid ""
 " detailed behavior may change across releases.  For example, metaclass "
 "attributes are not in the result list when the argument is a class."
 msgstr ""
+":func:`dir` ప్రధానంగా ఇంటరాక్టివ్ ప్రాంప్ట్ వద్ద సౌలభ్యం కోసం అందించబడింది "
+"కాబట్టి, కచ్చితంగా లేదా స్థిరంగా నిర్వచించిన పేర్ల సెట్‌ను అందించడం కంటే, "
+"ఆసక్తికరమైన పేర్ల సెట్‌ను అందించడానికే అది ఎక్కువ ప్రయత్నిస్తుంది, మరియు దాని"
+" సవివర ప్రవర్తన విడుదలల మధ్య మారవచ్చు. ఉదాహరణకు, ఆర్గ్యుమెంట్ క్లాస్ "
+"అయినప్పుడు మెటాక్లాస్ అట్రిబ్యూట్‌లు ఫలిత లిస్ట్‌లో ఉండవు."
 
 #: builtins/functions.rst:574
 msgid ""
@@ -1241,6 +1329,14 @@ msgid ""
 "close to *a*, if ``a % b`` is non-zero it has the same sign as *b*, and ``0 "
 "<= abs(a % b) < abs(b)``."
 msgstr ""
+"రెండు (సంకీర్ణం కాని) సంఖ్యలను ఆర్గ్యుమెంట్‌లుగా తీసుకుని, పూర్ణాంక భాగహారం "
+"ఉపయోగించినప్పుడు వాటి భాగఫలం మరియు శేషంతో కూడిన సంఖ్యల జతను రిటర్న్ "
+"చేస్తుంది. ఆపరాండ్ టైప్‌లు కలగలిసి ఉంటే, బైనరీ అంకగణిత ఆపరేటర్‌ల నియమాలు "
+"వర్తిస్తాయి. పూర్ణాంకాలకు, ఫలితం ``(a // b, a % b)`` కు సమానం. ఫ్లోటింగ్ "
+"పాయింట్ సంఖ్యలకు ఫలితం ``(q, a % b)``, ఇక్కడ *q* సాధారణంగా ``math.floor(a / "
+"b)`` అయి ఉంటుంది, కానీ దాని కంటే 1 తక్కువ కూడా కావచ్చు. ఏ సందర్భంలోనైనా ``q *"
+" b + a % b`` అనేది *a* కు చాలా దగ్గరగా ఉంటుంది, ``a % b`` సున్నా కాకపోతే "
+"దానికి *b* కు ఉన్న గుర్తే ఉంటుంది, మరియు ``0 <= abs(a % b) < abs(b)``."
 
 #: builtins/functions.rst:586
 msgid ""
