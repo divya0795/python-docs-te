@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-11-06 18:50-0800\n"
+"PO-Revision-Date: 2026-11-06 19:17-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -412,22 +412,33 @@ msgid ""
 "floating-point number, or an object implementing :meth:`~object.__abs__`. If "
 "the argument is a complex number, its magnitude is returned."
 msgstr ""
+"ఒక సంఖ్య యొక్క పరమ విలువను (absolute value) రిటర్న్ చేస్తుంది. ఆర్గ్యుమెంట్ "
+"ఒక పూర్ణాంకం, ఫ్లోటింగ్ పాయింట్ సంఖ్య, లేదా :meth:`~object.__abs__` ను "
+"రూపొందించిన ఆబ్జెక్ట్ కావచ్చు. ఆర్గ్యుమెంట్ సంకీర్ణ సంఖ్య అయితే, దాని పరిమాణం"
+" (magnitude) రిటర్న్ చేయబడుతుంది."
 
 #: builtins/functions.rst:69
 msgid ""
 "Return an :term:`asynchronous iterator` for an :term:`asynchronous iterable`."
 " Equivalent to calling ``x.__aiter__()``."
 msgstr ""
+"ఒక :term:`అసింక్రొనస్ ఇటరబుల్ <asynchronous iterable>` కోసం ఒక "
+":term:`అసింక్రొనస్ ఇటరేటర్‌ను <asynchronous iterator>` రిటర్న్ చేస్తుంది. "
+"``x.__aiter__()`` ను కాల్ చేయడానికి సమానం."
 
 #: builtins/functions.rst:72
 msgid "Note: Unlike :func:`iter`, :func:`aiter` has no 2-argument variant."
 msgstr ""
+"గమనిక: :func:`iter` లా కాకుండా, :func:`aiter` కు 2-ఆర్గ్యుమెంట్‌ల రూపాంతరం "
+"లేదు."
 
 #: builtins/functions.rst:78
 msgid ""
 "Return ``True`` if all elements of the *iterable* are true (or if the "
 "iterable is empty).  Equivalent to::"
 msgstr ""
+"*iterable* లోని అన్ని ఎలిమెంట్‌లు సత్యం అయితే (లేదా ఇటరబుల్ ఖాళీగా ఉంటే) "
+"``True`` ను రిటర్న్ చేస్తుంది. దీనికి సమానం::"
 
 #: builtins/functions.rst:81
 msgid ""
@@ -437,17 +448,27 @@ msgid ""
 "            return False\n"
 "    return True"
 msgstr ""
+"def all(iterable):\n"
+"    for element in iterable:\n"
+"        if not element:\n"
+"            return False\n"
+"    return True"
 
 #: builtins/functions.rst:91
 msgid ""
 "When awaited, return the next item from the given :term:`asynchronous "
 "iterator`, or *default* if given and the iterator is :term:`exhausted`."
 msgstr ""
+"అవెయిట్ చేసినప్పుడు, ఇచ్చిన :term:`అసింక్రొనస్ ఇటరేటర్ <asynchronous "
+"iterator>` నుండి తదుపరి ఐటెమ్‌ను రిటర్న్ చేస్తుంది; *default* ఇచ్చి, ఇటరేటర్ "
+":term:`అయిపోయి <exhausted>` ఉంటే *default* ను రిటర్న్ చేస్తుంది."
 
 #: builtins/functions.rst:94
 msgid ""
 "This is the async variant of the :func:`next` builtin, and behaves similarly."
 msgstr ""
+"ఇది బిల్ట్-ఇన్ :func:`next` యొక్క అసింక్ రూపాంతరం, ఇది కూడా అదే విధంగా "
+"ప్రవర్తిస్తుంది."
 
 #: builtins/functions.rst:97
 msgid ""
@@ -456,12 +477,19 @@ msgid ""
 "iterator. If *default* is given, it is returned if the iterator is exhausted,"
 " otherwise :exc:`StopAsyncIteration` is raised."
 msgstr ""
+"ఇది *async_iterator* యొక్క :meth:`~object.__anext__` మెథడ్‌ను కాల్ చేసి, ఒక "
+":term:`అవెయిటబుల్‌ను <awaitable>` రిటర్న్ చేస్తుంది. దీన్ని అవెయిట్ చేస్తే "
+"ఇటరేటర్ యొక్క తదుపరి విలువ రిటర్న్ అవుతుంది. *default* ఇచ్చినట్లయితే, ఇటరేటర్"
+" అయిపోయినప్పుడు అది రిటర్న్ చేయబడుతుంది, లేకపోతే :exc:`StopAsyncIteration` "
+"రైజ్ చేయబడుతుంది."
 
 #: builtins/functions.rst:106
 msgid ""
 "Return ``True`` if any element of the *iterable* is true.  If the iterable is"
 " empty, return ``False``.  Equivalent to::"
 msgstr ""
+"*iterable* లోని ఏదైనా ఒక ఎలిమెంట్ సత్యం అయితే ``True`` ను రిటర్న్ చేస్తుంది. "
+"ఇటరబుల్ ఖాళీగా ఉంటే, ``False`` ను రిటర్న్ చేస్తుంది. దీనికి సమానం::"
 
 #: builtins/functions.rst:109
 msgid ""
@@ -471,6 +499,11 @@ msgid ""
 "            return True\n"
 "    return False"
 msgstr ""
+"def any(iterable):\n"
+"    for element in iterable:\n"
+"        if element:\n"
+"            return True\n"
+"    return False"
 
 #: builtins/functions.rst:118
 msgid ""
@@ -479,6 +512,11 @@ msgid ""
 ":func:`repr` using ``\\x``, ``\\u``, or ``\\U`` escapes.  This generates a "
 "string similar to that returned by :func:`repr` in Python 2."
 msgstr ""
+":func:`repr` లాగానే, ఒక ఆబ్జెక్ట్ యొక్క ప్రింట్ చేయదగిన రిప్రజెంటేషన్ ఉన్న "
+"స్ట్రింగ్‌ను రిటర్న్ చేస్తుంది, కానీ :func:`repr` రిటర్న్ చేసిన "
+"స్ట్రింగ్‌లోని ASCII కాని అక్షరాలను ``\\x``, ``\\u``, లేదా ``\\U`` "
+"ఎస్కేప్‌లను ఉపయోగించి ఎస్కేప్ చేస్తుంది. ఇది Python 2 లో :func:`repr` రిటర్న్"
+" చేసే స్ట్రింగ్‌ను పోలిన స్ట్రింగ్‌ను తయారు చేస్తుంది."
 
 #: builtins/functions.rst:126
 msgid ""
@@ -487,22 +525,30 @@ msgid ""
 "object, it has to define an :meth:`~object.__index__` method that returns an "
 "integer. Some examples:"
 msgstr ""
+"ఒక పూర్ణాంక సంఖ్యను \"0b\" ప్రిఫిక్స్ ఉన్న బైనరీ స్ట్రింగ్‌గా మారుస్తుంది. "
+"ఫలితం ఒక చెల్లుబాటు అయ్యే Python ఎక్స్‌ప్రెషన్. *integer* ఒక Python "
+":class:`int` ఆబ్జెక్ట్ కాకపోతే, అది ఒక పూర్ణాంకాన్ని రిటర్న్ చేసే "
+":meth:`~object.__index__` మెథడ్‌ను నిర్వచించాలి. కొన్ని ఉదాహరణలు:"
 
 #: builtins/functions.rst:136
 msgid ""
 "If the prefix \"0b\" is desired or not, you can use either of the following "
 "ways."
 msgstr ""
+"\"0b\" ప్రిఫిక్స్ కావాలన్నా వద్దన్నా, మీరు కింది మార్గాలలో దేనినైనా "
+"ఉపయోగించవచ్చు."
 
 #: builtins/functions.rst:143
 msgid ""
 "See also :func:`enum.bin` to represent negative values as twos-complement."
 msgstr ""
+"రుణ విలువలను టూస్-కాంప్లిమెంట్ (twos-complement) రూపంలో సూచించడానికి "
+":func:`enum.bin` ను కూడా చూడండి."
 
 #: builtins/functions.rst:145 builtins/functions.rst:1007
 #: builtins/functions.rst:1391
 msgid "See also :func:`format` for more information."
-msgstr ""
+msgstr "మరింత సమాచారం కోసం :func:`format` ను కూడా చూడండి."
 
 #: builtins/functions.rst:150
 msgid ""
@@ -513,10 +559,17 @@ msgid ""
 ":ref:`typesnumeric`). It cannot be subclassed further.  Its only instances "
 "are ``False`` and ``True`` (see :ref:`typebool`)."
 msgstr ""
+"ఒక బూలియన్ విలువను, అంటే ``True`` లేదా ``False`` లో ఒకదాన్ని, రిటర్న్ "
+"చేస్తుంది. ఆర్గ్యుమెంట్ స్టాండర్డ్ :ref:`సత్యం విలువ పరీక్ష విధానాన్ని "
+"<truth>` ఉపయోగించి మార్చబడుతుంది. ఆర్గ్యుమెంట్ అసత్యం అయినా లేదా ఇవ్వకపోయినా,"
+" ఇది ``False`` ను రిటర్న్ చేస్తుంది; లేకపోతే, ``True`` ను రిటర్న్ చేస్తుంది. "
+":class:`bool` క్లాస్ :class:`int` యొక్క సబ్‌క్లాస్ (:ref:`typesnumeric` "
+"చూడండి). దీన్ని మరింత సబ్‌క్లాస్ చేయడం సాధ్యం కాదు. దీని ఇన్‌స్టాన్స్‌లు "
+"``False`` మరియు ``True`` మాత్రమే (:ref:`typebool` చూడండి)."
 
 #: builtins/functions.rst:160 builtins/functions.rst:857
 msgid "The parameter is now positional-only."
-msgstr ""
+msgstr "ఈ పారామీటర్ ఇప్పుడు పొజిషనల్-మాత్రమే."
 
 #: builtins/functions.rst:165
 msgid ""
@@ -530,6 +583,17 @@ msgid ""
 " drop into the debugger of choice. If :func:`sys.breakpointhook` is not "
 "accessible, this function will raise :exc:`RuntimeError`."
 msgstr ""
+"ఈ ఫంక్షన్ మిమ్మల్ని కాల్ చేసిన చోటే డీబగ్గర్‌లోకి తీసుకెళ్తుంది. వివరంగా "
+"చెప్పాలంటే, ఇది ``args`` మరియు ``kws`` లను నేరుగా అందిస్తూ "
+":func:`sys.breakpointhook` ను కాల్ చేస్తుంది. డిఫాల్ట్‌గా, "
+"``sys.breakpointhook()`` ఎలాంటి ఆర్గ్యుమెంట్‌లను ఆశించకుండా "
+":func:`pdb.set_trace` ను కాల్ చేస్తుంది. ఈ సందర్భంలో, ఇది కేవలం ఒక సౌలభ్య "
+"ఫంక్షన్ మాత్రమే, దీనివల్ల డీబగ్గర్‌లోకి ప్రవేశించడానికి మీరు :mod:`pdb` ను "
+"స్పష్టంగా ఇంపోర్ట్ చేయాల్సిన లేదా అంత ఎక్కువ కోడ్ టైప్ చేయాల్సిన అవసరం ఉండదు."
+" అయితే, :func:`sys.breakpointhook` ను వేరే ఏదైనా ఫంక్షన్‌కు సెట్ చేయవచ్చు, "
+"అప్పుడు :func:`breakpoint` ఆటోమేటిక్‌గా దాన్నే కాల్ చేస్తుంది, తద్వారా మీకు "
+"నచ్చిన డీబగ్గర్‌లోకి ప్రవేశించవచ్చు. :func:`sys.breakpointhook` యాక్సెస్ "
+"చేయలేనిదైతే, ఈ ఫంక్షన్ :exc:`RuntimeError` ను రైజ్ చేస్తుంది."
 
 #: builtins/functions.rst:177
 msgid ""
@@ -537,18 +601,25 @@ msgid ""
 ":envvar:`PYTHONBREAKPOINT` environment variable. See "
 ":func:`sys.breakpointhook` for usage details."
 msgstr ""
+"డిఫాల్ట్‌గా, :func:`breakpoint` యొక్క ప్రవర్తనను :envvar:`PYTHONBREAKPOINT` "
+"ఎన్విరాన్‌మెంట్ వేరియబుల్‌తో మార్చవచ్చు. వినియోగ వివరాల కోసం "
+":func:`sys.breakpointhook` చూడండి."
 
 #: builtins/functions.rst:181
 msgid ""
 "Note that this is not guaranteed if :func:`sys.breakpointhook` has been "
 "replaced."
 msgstr ""
+":func:`sys.breakpointhook` ను వేరే దానితో భర్తీ చేసి ఉంటే, దీనికి హామీ లేదని "
+"గమనించండి."
 
 #: builtins/functions.rst:184
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.breakpoint`` with "
 "argument ``breakpointhook``."
 msgstr ""
+"``breakpointhook`` ఆర్గ్యుమెంట్‌తో ``builtins.breakpoint`` అనే :ref:`ఆడిటింగ్"
+" ఈవెంట్‌ను <auditing>` రైజ్ చేస్తుంది."
 
 #: builtins/functions.rst:193
 msgid ""
