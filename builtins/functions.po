@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-11-07 10:17-0800\n"
+"PO-Revision-Date: 2026-11-07 10:40-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -1629,6 +1629,11 @@ msgid ""
 "iteration, or an iterator.  If *function* is ``None``, the identity function "
 "is assumed, that is, all elements of *iterable* that are false are removed."
 msgstr ""
+"*function* సత్యం అయ్యే *iterable* ఎలిమెంట్‌ల నుండి ఒక ఇటరేటర్‌ను "
+"నిర్మిస్తుంది. *iterable* ఒక సీక్వెన్స్, ఇటరేషన్‌ను సపోర్ట్ చేసే ఒక "
+"కంటెయినర్, లేదా ఒక ఇటరేటర్ కావచ్చు. *function* ``None`` అయితే, ఐడెంటిటీ "
+"ఫంక్షన్ అని భావిస్తారు, అంటే, *iterable* లోని అసత్యమైన ఎలిమెంట్‌లన్నీ "
+"తొలగించబడతాయి."
 
 #: builtins/functions.rst:782
 msgid ""
@@ -1637,16 +1642,24 @@ msgid ""
 "not ``None`` and ``(item for item in iterable if item)`` if function is "
 "``None``."
 msgstr ""
+"function ``None`` కాకపోతే ``filter(function, iterable)`` అనేది జనరేటర్ "
+"ఎక్స్‌ప్రెషన్ ``(item for item in iterable if function(item))`` కు, function "
+"``None`` అయితే ``(item for item in iterable if item)`` కు సమానం అని "
+"గమనించండి."
 
 #: builtins/functions.rst:787
 msgid ""
 "See :func:`itertools.filterfalse` for the complementary function that returns"
 " elements of *iterable* for which *function* is false."
 msgstr ""
+"*function* అసత్యం అయ్యే *iterable* ఎలిమెంట్‌లను రిటర్న్ చేసే పూరక ఫంక్షన్ "
+"కోసం :func:`itertools.filterfalse` చూడండి."
 
 #: builtins/functions.rst:798
 msgid "Return a floating-point number constructed from a number or a string."
 msgstr ""
+"ఒక సంఖ్య లేదా స్ట్రింగ్ నుండి నిర్మించిన ఫ్లోటింగ్ పాయింట్ సంఖ్యను రిటర్న్ "
+"చేస్తుంది."
 
 #: builtins/functions.rst:802
 msgid ""
@@ -1661,6 +1674,16 @@ msgid ""
 ">>> float('-Infinity')\n"
 "-inf"
 msgstr ""
+">>> float('+1.23')\n"
+"1.23\n"
+">>> float('   -12345\\n')\n"
+"-12345.0\n"
+">>> float('1e-003')\n"
+"0.001\n"
+">>> float('+1E6')\n"
+"1000000.0\n"
+">>> float('-Infinity')\n"
+"-inf"
 
 #: builtins/functions.rst:815
 msgid ""
@@ -1672,12 +1695,23 @@ msgid ""
 "conform to the :token:`~float:floatvalue` production rule in the following "
 "grammar, after leading and trailing whitespace characters are removed:"
 msgstr ""
+"ఆర్గ్యుమెంట్ స్ట్రింగ్ అయితే, అందులో ఒక దశాంశ సంఖ్య ఉండాలి; దాని ముందు "
+"ఐచ్ఛికంగా ఒక గుర్తు ఉండవచ్చు, మరియు ఐచ్ఛికంగా దాని చుట్టూ ఖాళీ స్థలం "
+"ఉండవచ్చు. ఐచ్ఛిక గుర్తు ``'+'`` లేదా ``'-'`` కావచ్చు; ``'+'`` గుర్తు ఉత్పత్తి"
+" అయ్యే విలువపై ఎలాంటి ప్రభావం చూపదు. ఆర్గ్యుమెంట్ NaN (not-a-number) ను, లేదా"
+" ధన లేదా రుణ అనంతాన్ని సూచించే స్ట్రింగ్ కూడా కావచ్చు. మరింత కచ్చితంగా "
+"చెప్పాలంటే, ముందు మరియు వెనుక ఉండే ఖాళీ స్థల అక్షరాలను తొలగించిన తర్వాత, "
+"ఇన్‌పుట్ కింది గ్రామర్‌లోని :token:`~float:floatvalue` ప్రొడక్షన్ రూల్‌కు "
+"అనుగుణంగా ఉండాలి:"
 
 #: builtins/functions.rst:836
 msgid ""
 "Case is not significant, so, for example, \"inf\", \"Inf\", \"INFINITY\", and"
 " \"iNfINity\" are all acceptable spellings for positive infinity."
 msgstr ""
+"అక్షరాల కేస్ (పెద్ద/చిన్న అక్షరాలు) ముఖ్యం కాదు, కాబట్టి ఉదాహరణకు, \"inf\", "
+"\"Inf\", \"INFINITY\", మరియు \"iNfINity\" అన్నీ ధన అనంతానికి ఆమోదయోగ్యమైన "
+"స్పెల్లింగ్‌లు."
 
 #: builtins/functions.rst:839
 msgid ""
@@ -1686,6 +1720,10 @@ msgid ""
 "precision) is returned.  If the argument is outside the range of a Python "
 "float, an :exc:`OverflowError` will be raised."
 msgstr ""
+"లేకపోతే, ఆర్గ్యుమెంట్ పూర్ణాంకం లేదా ఫ్లోటింగ్ పాయింట్ సంఖ్య అయితే, అదే విలువ"
+" (Python యొక్క ఫ్లోటింగ్ పాయింట్ కచ్చితత్వం పరిధిలో) ఉన్న ఫ్లోటింగ్ పాయింట్ "
+"సంఖ్య రిటర్న్ చేయబడుతుంది. ఆర్గ్యుమెంట్ Python float పరిధికి బయట ఉంటే, "
+":exc:`OverflowError` రైజ్ అవుతుంది."
 
 #: builtins/functions.rst:844
 msgid ""
@@ -1693,25 +1731,32 @@ msgid ""
 "``x.__float__()``.  If :meth:`~object.__float__` is not defined then it falls"
 " back to :meth:`~object.__index__`."
 msgstr ""
+"సాధారణ Python ఆబ్జెక్ట్ ``x`` కోసం, ``float(x)`` ఆ పనిని ``x.__float__()`` కు"
+" అప్పగిస్తుంది. :meth:`~object.__float__` నిర్వచించబడకపోతే, అది "
+":meth:`~object.__index__` ను ఆశ్రయిస్తుంది."
 
 #: builtins/functions.rst:848
 msgid ""
 "See also :meth:`float.from_number` which only accepts a numeric argument."
 msgstr ""
+"సంఖ్యా ఆర్గ్యుమెంట్‌ను మాత్రమే స్వీకరించే :meth:`float.from_number` ను కూడా "
+"చూడండి."
 
 #: builtins/functions.rst:850
 msgid "If no argument is given, ``0.0`` is returned."
-msgstr ""
+msgstr "ఆర్గ్యుమెంట్ ఏదీ ఇవ్వకపోతే, ``0.0`` రిటర్న్ చేయబడుతుంది."
 
 #: builtins/functions.rst:852
 msgid "The float type is described in :ref:`typesnumeric`."
-msgstr ""
+msgstr "float టైప్ :ref:`typesnumeric` లో వివరించబడింది."
 
 #: builtins/functions.rst:860
 msgid ""
 "Falls back to :meth:`~object.__index__` if :meth:`~object.__float__` is not "
 "defined."
 msgstr ""
+":meth:`~object.__float__` నిర్వచించబడకపోతే :meth:`~object.__index__` ను "
+"ఆశ్రయిస్తుంది."
 
 #: builtins/functions.rst:870
 msgid ""
@@ -1720,12 +1765,18 @@ msgid ""
 "of the *value* argument; however, there is a standard formatting syntax that "
 "is used by most built-in types: :ref:`formatspec`."
 msgstr ""
+"*format_spec* నియంత్రించే విధంగా, ఒక *value* ను \"ఫార్మాట్ చేసిన\" "
+"రిప్రజెంటేషన్‌గా మారుస్తుంది. *format_spec* యొక్క అర్థవివరణ *value* "
+"ఆర్గ్యుమెంట్ టైప్‌పై ఆధారపడి ఉంటుంది; అయితే, చాలా బిల్ట్-ఇన్ టైప్‌లు "
+"ఉపయోగించే ఒక స్టాండర్డ్ ఫార్మాటింగ్ సింటాక్స్ ఉంది: :ref:`formatspec`."
 
 #: builtins/functions.rst:875
 msgid ""
 "The default *format_spec* is an empty string which usually gives the same "
 "effect as calling :func:`str(value) <str>`."
 msgstr ""
+"డిఫాల్ట్ *format_spec* ఒక ఖాళీ స్ట్రింగ్, ఇది సాధారణంగా :func:`str(value) "
+"<str>` ను కాల్ చేసినట్లే అదే ప్రభావాన్ని ఇస్తుంది."
 
 #: builtins/functions.rst:878
 msgid ""
@@ -1736,18 +1787,29 @@ msgid ""
 ":mod:`object` and the *format_spec* is non-empty, or if either the "
 "*format_spec* or the return value are not strings."
 msgstr ""
+"``format(value, format_spec)`` కాల్ ``type(value).__format__(value, "
+"format_spec)`` గా అనువదించబడుతుంది, ఇది విలువ యొక్క "
+":meth:`~object.__format__` మెథడ్‌ను వెతికేటప్పుడు ఇన్‌స్టాన్స్ డిక్షనరీని "
+"దాటవేస్తుంది. మెథడ్ వెతుకులాట :mod:`object` కు చేరుకుని *format_spec* ఖాళీగా "
+"లేకపోతే, లేదా *format_spec* లేదా రిటర్న్ విలువ స్ట్రింగ్‌లు కాకపోతే, "
+":exc:`TypeError` ఎక్సెప్షన్ రైజ్ అవుతుంది."
 
 #: builtins/functions.rst:885
 msgid ""
 "``object().__format__(format_spec)`` raises :exc:`TypeError` if *format_spec*"
 " is not an empty string."
 msgstr ""
+"*format_spec* ఖాళీ స్ట్రింగ్ కాకపోతే ``object().__format__(format_spec)`` "
+":exc:`TypeError` ను రైజ్ చేస్తుంది."
 
 #: builtins/functions.rst:896
 msgid ""
 "Create a new frozen dictionary.  The :class:`frozendict` object is a built-in"
 " class. See also :ref:`typesmapping` for documentation about this class."
 msgstr ""
+"కొత్త ఫ్రోజెన్ డిక్షనరీని సృష్టిస్తుంది. :class:`frozendict` ఆబ్జెక్ట్ ఒక "
+"బిల్ట్-ఇన్ క్లాస్. ఈ క్లాస్ గురించిన డాక్యుమెంటేషన్ కోసం :ref:`typesmapping` "
+"కూడా చూడండి."
 
 #: builtins/functions.rst:899
 msgid ""
@@ -1755,6 +1817,8 @@ msgid ""
 ":class:`set`, and :class:`tuple` classes, as well as the :mod:`collections` "
 "module."
 msgstr ""
+"ఇతర కంటెయినర్‌ల కోసం బిల్ట్-ఇన్ :class:`dict`, :class:`list`, :class:`set`, "
+"మరియు :class:`tuple` క్లాస్‌లను, అలాగే :mod:`collections` మాడ్యూల్‌ను చూడండి."
 
 #: builtins/functions.rst:909
 msgid ""
@@ -1762,6 +1826,9 @@ msgid ""
 "*iterable*.  :class:`frozenset` is a built-in class.  See also :ref:`types-"
 "set` for documentation about this class."
 msgstr ""
+"కొత్త :class:`frozenset` ఆబ్జెక్ట్‌ను రిటర్న్ చేస్తుంది, ఐచ్ఛికంగా *iterable*"
+" నుండి తీసుకున్న ఎలిమెంట్‌లతో. :class:`frozenset` ఒక బిల్ట్-ఇన్ క్లాస్. ఈ "
+"క్లాస్ గురించిన డాక్యుమెంటేషన్ కోసం :ref:`types-set` కూడా చూడండి."
 
 #: builtins/functions.rst:913
 msgid ""
@@ -1769,6 +1836,8 @@ msgid ""
 ":class:`tuple`, and :class:`dict` classes, as well as the :mod:`collections` "
 "module."
 msgstr ""
+"ఇతర కంటెయినర్‌ల కోసం బిల్ట్-ఇన్ :class:`set`, :class:`list`, :class:`tuple`, "
+"మరియు :class:`dict` క్లాస్‌లను, అలాగే :mod:`collections` మాడ్యూల్‌ను చూడండి."
 
 #: builtins/functions.rst:921
 msgid ""
