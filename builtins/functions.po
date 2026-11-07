@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-11-06 18:50-0800\n"
+"Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
 "MIME-Version: 1.0\n"
@@ -20,389 +20,391 @@ msgstr ""
 
 #: builtins/functions.rst:5
 msgid "Built-in functions"
-msgstr ""
+msgstr "బిల్ట్-ఇన్ ఫంక్షన్‌లు"
 
 #: builtins/functions.rst:7
 msgid ""
 "The Python interpreter has a number of functions and types built into it that"
 " are always available.  They are listed here in alphabetical order."
 msgstr ""
+"Python ఇంటర్‌ప్రెటర్‌లో అనేక ఫంక్షన్‌లు మరియు టైప్‌లు బిల్ట్-ఇన్‌గా ఉన్నాయి, "
+"అవి ఎల్లప్పుడూ అందుబాటులో ఉంటాయి. అవి ఇక్కడ అక్షర క్రమంలో జాబితా చేయబడ్డాయి."
 
 #: builtins/functions.rst:11
 msgid "Built-in Functions"
-msgstr ""
+msgstr "బిల్ట్-ఇన్ ఫంక్షన్‌లు"
 
 #: builtins/functions.rst:13
 msgid "**A**"
-msgstr ""
+msgstr "**A**"
 
 #: builtins/functions.rst:14
 msgid ":func:`abs`"
-msgstr ""
+msgstr ":func:`abs`"
 
 #: builtins/functions.rst:15
 msgid ":func:`aiter`"
-msgstr ""
+msgstr ":func:`aiter`"
 
 #: builtins/functions.rst:16
 msgid ":func:`all`"
-msgstr ""
+msgstr ":func:`all`"
 
 #: builtins/functions.rst:17
 msgid ":func:`anext`"
-msgstr ""
+msgstr ":func:`anext`"
 
 #: builtins/functions.rst:18
 msgid ":func:`any`"
-msgstr ""
+msgstr ":func:`any`"
 
 #: builtins/functions.rst:19
 msgid ":func:`ascii`"
-msgstr ""
+msgstr ":func:`ascii`"
 
 #: builtins/functions.rst:21
 msgid "**B**"
-msgstr ""
+msgstr "**B**"
 
 #: builtins/functions.rst:22
 msgid ":func:`bin`"
-msgstr ""
+msgstr ":func:`bin`"
 
 #: builtins/functions.rst:23
 msgid ":func:`bool`"
-msgstr ""
+msgstr ":func:`bool`"
 
 #: builtins/functions.rst:24
 msgid ":func:`breakpoint`"
-msgstr ""
+msgstr ":func:`breakpoint`"
 
 #: builtins/functions.rst:25
 msgid "|func-bytearray|_"
-msgstr ""
+msgstr "|func-bytearray|_"
 
 #: builtins/functions.rst:26
 msgid "|func-bytes|_"
-msgstr ""
+msgstr "|func-bytes|_"
 
 #: builtins/functions.rst:28
 msgid "**C**"
-msgstr ""
+msgstr "**C**"
 
 #: builtins/functions.rst:29
 msgid ":func:`callable`"
-msgstr ""
+msgstr ":func:`callable`"
 
 #: builtins/functions.rst:30
 msgid ":func:`chr`"
-msgstr ""
+msgstr ":func:`chr`"
 
 #: builtins/functions.rst:31
 msgid ":func:`classmethod`"
-msgstr ""
+msgstr ":func:`classmethod`"
 
 #: builtins/functions.rst:32
 msgid ":func:`compile`"
-msgstr ""
+msgstr ":func:`compile`"
 
 #: builtins/functions.rst:33
 msgid ":func:`complex`"
-msgstr ""
+msgstr ":func:`complex`"
 
 #: builtins/functions.rst:35
 msgid "**D**"
-msgstr ""
+msgstr "**D**"
 
 #: builtins/functions.rst:36
 msgid ":func:`delattr`"
-msgstr ""
+msgstr ":func:`delattr`"
 
 #: builtins/functions.rst:37
 msgid "|func-dict|_"
-msgstr ""
+msgstr "|func-dict|_"
 
 #: builtins/functions.rst:38
 msgid ":func:`dir`"
-msgstr ""
+msgstr ":func:`dir`"
 
 #: builtins/functions.rst:39
 msgid ":func:`divmod`"
-msgstr ""
+msgstr ":func:`divmod`"
 
 #: builtins/functions.rst:13
 msgid "**E**"
-msgstr ""
+msgstr "**E**"
 
 #: builtins/functions.rst:14
 msgid ":func:`enumerate`"
-msgstr ""
+msgstr ":func:`enumerate`"
 
 #: builtins/functions.rst:15
 msgid ":func:`eval`"
-msgstr ""
+msgstr ":func:`eval`"
 
 #: builtins/functions.rst:16
 msgid ":func:`exec`"
-msgstr ""
+msgstr ":func:`exec`"
 
 #: builtins/functions.rst:18
 msgid "**F**"
-msgstr ""
+msgstr "**F**"
 
 #: builtins/functions.rst:19
 msgid ":func:`filter`"
-msgstr ""
+msgstr ":func:`filter`"
 
 #: builtins/functions.rst:20
 msgid ":func:`float`"
-msgstr ""
+msgstr ":func:`float`"
 
 #: builtins/functions.rst:21
 msgid ":func:`format`"
-msgstr ""
+msgstr ":func:`format`"
 
 #: builtins/functions.rst:22
 msgid "|func-frozendict|_"
-msgstr ""
+msgstr "|func-frozendict|_"
 
 #: builtins/functions.rst:23
 msgid "|func-frozenset|_"
-msgstr ""
+msgstr "|func-frozenset|_"
 
 #: builtins/functions.rst:25
 msgid "**G**"
-msgstr ""
+msgstr "**G**"
 
 #: builtins/functions.rst:26
 msgid ":func:`getattr`"
-msgstr ""
+msgstr ":func:`getattr`"
 
 #: builtins/functions.rst:27
 msgid ":func:`globals`"
-msgstr ""
+msgstr ":func:`globals`"
 
 #: builtins/functions.rst:29
 msgid "**H**"
-msgstr ""
+msgstr "**H**"
 
 #: builtins/functions.rst:30
 msgid ":func:`hasattr`"
-msgstr ""
+msgstr ":func:`hasattr`"
 
 #: builtins/functions.rst:31
 msgid ":func:`hash`"
-msgstr ""
+msgstr ":func:`hash`"
 
 #: builtins/functions.rst:32
 msgid ":func:`help`"
-msgstr ""
+msgstr ":func:`help`"
 
 #: builtins/functions.rst:33
 msgid ":func:`hex`"
-msgstr ""
+msgstr ":func:`hex`"
 
 #: builtins/functions.rst:35
 msgid "**I**"
-msgstr ""
+msgstr "**I**"
 
 #: builtins/functions.rst:36
 msgid ":func:`id`"
-msgstr ""
+msgstr ":func:`id`"
 
 #: builtins/functions.rst:37
 msgid ":func:`input`"
-msgstr ""
+msgstr ":func:`input`"
 
 #: builtins/functions.rst:38
 msgid ":func:`int`"
-msgstr ""
+msgstr ":func:`int`"
 
 #: builtins/functions.rst:39
 msgid ":func:`isinstance`"
-msgstr ""
+msgstr ":func:`isinstance`"
 
 #: builtins/functions.rst:40
 msgid ":func:`issubclass`"
-msgstr ""
+msgstr ":func:`issubclass`"
 
 #: builtins/functions.rst:41
 msgid ":func:`iter`"
-msgstr ""
+msgstr ":func:`iter`"
 
 #: builtins/functions.rst:13
 msgid "**L**"
-msgstr ""
+msgstr "**L**"
 
 #: builtins/functions.rst:14
 msgid ":func:`len`"
-msgstr ""
+msgstr ":func:`len`"
 
 #: builtins/functions.rst:15
 msgid "|func-list|_"
-msgstr ""
+msgstr "|func-list|_"
 
 #: builtins/functions.rst:16
 msgid ":func:`locals`"
-msgstr ""
+msgstr ":func:`locals`"
 
 #: builtins/functions.rst:18
 msgid "**M**"
-msgstr ""
+msgstr "**M**"
 
 #: builtins/functions.rst:19
 msgid ":func:`map`"
-msgstr ""
+msgstr ":func:`map`"
 
 #: builtins/functions.rst:20
 msgid ":func:`max`"
-msgstr ""
+msgstr ":func:`max`"
 
 #: builtins/functions.rst:21
 msgid "|func-memoryview|_"
-msgstr ""
+msgstr "|func-memoryview|_"
 
 #: builtins/functions.rst:22
 msgid ":func:`min`"
-msgstr ""
+msgstr ":func:`min`"
 
 #: builtins/functions.rst:24
 msgid "**N**"
-msgstr ""
+msgstr "**N**"
 
 #: builtins/functions.rst:25
 msgid ":func:`next`"
-msgstr ""
+msgstr ":func:`next`"
 
 #: builtins/functions.rst:27
 msgid "**O**"
-msgstr ""
+msgstr "**O**"
 
 #: builtins/functions.rst:28
 msgid ":func:`object`"
-msgstr ""
+msgstr ":func:`object`"
 
 #: builtins/functions.rst:29
 msgid ":func:`oct`"
-msgstr ""
+msgstr ":func:`oct`"
 
 #: builtins/functions.rst:30
 msgid ":func:`open`"
-msgstr ""
+msgstr ":func:`open`"
 
 #: builtins/functions.rst:31
 msgid ":func:`ord`"
-msgstr ""
+msgstr ":func:`ord`"
 
 #: builtins/functions.rst:33
 msgid "**P**"
-msgstr ""
+msgstr "**P**"
 
 #: builtins/functions.rst:34
 msgid ":func:`pow`"
-msgstr ""
+msgstr ":func:`pow`"
 
 #: builtins/functions.rst:35
 msgid ":func:`print`"
-msgstr ""
+msgstr ":func:`print`"
 
 #: builtins/functions.rst:36
 msgid ":func:`property`"
-msgstr ""
+msgstr ":func:`property`"
 
 #: builtins/functions.rst:13
 msgid "**R**"
-msgstr ""
+msgstr "**R**"
 
 #: builtins/functions.rst:14
 msgid "|func-range|_"
-msgstr ""
+msgstr "|func-range|_"
 
 #: builtins/functions.rst:15
 msgid ":func:`repr`"
-msgstr ""
+msgstr ":func:`repr`"
 
 #: builtins/functions.rst:16
 msgid ":func:`reversed`"
-msgstr ""
+msgstr ":func:`reversed`"
 
 #: builtins/functions.rst:17
 msgid ":func:`round`"
-msgstr ""
+msgstr ":func:`round`"
 
 #: builtins/functions.rst:19
 msgid "**S**"
-msgstr ""
+msgstr "**S**"
 
 #: builtins/functions.rst:20
 msgid "|func-set|_"
-msgstr ""
+msgstr "|func-set|_"
 
 #: builtins/functions.rst:21
 msgid ":func:`setattr`"
-msgstr ""
+msgstr ":func:`setattr`"
 
 #: builtins/functions.rst:22
 msgid ":func:`sentinel`"
-msgstr ""
+msgstr ":func:`sentinel`"
 
 #: builtins/functions.rst:23
 msgid ":func:`slice`"
-msgstr ""
+msgstr ":func:`slice`"
 
 #: builtins/functions.rst:24
 msgid ":func:`sorted`"
-msgstr ""
+msgstr ":func:`sorted`"
 
 #: builtins/functions.rst:25
 msgid ":func:`staticmethod`"
-msgstr ""
+msgstr ":func:`staticmethod`"
 
 #: builtins/functions.rst:26
 msgid "|func-str|_"
-msgstr ""
+msgstr "|func-str|_"
 
 #: builtins/functions.rst:27
 msgid ":func:`sum`"
-msgstr ""
+msgstr ":func:`sum`"
 
 #: builtins/functions.rst:28
 msgid ":func:`super`"
-msgstr ""
+msgstr ":func:`super`"
 
 #: builtins/functions.rst:30
 msgid "**T**"
-msgstr ""
+msgstr "**T**"
 
 #: builtins/functions.rst:31
 msgid "|func-tuple|_"
-msgstr ""
+msgstr "|func-tuple|_"
 
 #: builtins/functions.rst:32
 msgid ":func:`type`"
-msgstr ""
+msgstr ":func:`type`"
 
 #: builtins/functions.rst:34
 msgid "**V**"
-msgstr ""
+msgstr "**V**"
 
 #: builtins/functions.rst:35
 msgid ":func:`vars`"
-msgstr ""
+msgstr ":func:`vars`"
 
 #: builtins/functions.rst:37
 msgid "**Z**"
-msgstr ""
+msgstr "**Z**"
 
 #: builtins/functions.rst:38
 msgid ":func:`zip`"
-msgstr ""
+msgstr ":func:`zip`"
 
 #: builtins/functions.rst:40
 msgid "**_**"
-msgstr ""
+msgstr "**_**"
 
 #: builtins/functions.rst:41
 msgid ":func:`__import__`"
-msgstr ""
+msgstr ":func:`__import__`"
 
 #: builtins/functions.rst:61
 msgid ""
