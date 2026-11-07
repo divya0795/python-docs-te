@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-11-07 10:02-0800\n"
+"PO-Revision-Date: 2026-11-07 10:17-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -1346,10 +1346,16 @@ msgid ""
 ":func:`enumerate` returns a tuple containing a count (from *start* which "
 "defaults to 0) and the values obtained from iterating over *iterable*."
 msgstr ""
+"ఒక enumerate ఆబ్జెక్ట్‌ను రిటర్న్ చేస్తుంది. *iterable* ఒక సీక్వెన్స్, ఒక "
+":term:`ఇటరేటర్ <iterator>`, లేదా ఇటరేషన్‌ను సపోర్ట్ చేసే వేరే ఏదైనా ఆబ్జెక్ట్"
+" అయి ఉండాలి. :func:`enumerate` రిటర్న్ చేసే ఇటరేటర్ యొక్క "
+":meth:`~iterator.__next__` మెథడ్, ఒక లెక్క (*start* నుండి మొదలై, డిఫాల్ట్‌గా "
+"0) మరియు *iterable* పై ఇటరేట్ చేయడం ద్వారా పొందిన విలువలు ఉన్న టపుల్‌ను "
+"రిటర్న్ చేస్తుంది."
 
 #: builtins/functions.rst:598
 msgid "Equivalent to::"
-msgstr ""
+msgstr "దీనికి సమానం::"
 
 #: builtins/functions.rst:600
 msgid ""
@@ -1359,44 +1365,51 @@ msgid ""
 "        yield n, elem\n"
 "        n += 1"
 msgstr ""
+"def enumerate(iterable, start=0):\n"
+"    n = start\n"
+"    for elem in iterable:\n"
+"        yield n, elem\n"
+"        n += 1"
 
 #: builtins/functions.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "పారామీటర్‌లు"
 
 #: builtins/functions.rst:610
 msgid "A Python expression."
-msgstr ""
+msgstr "ఒక Python ఎక్స్‌ప్రెషన్."
 
 #: builtins/functions.rst:614
 msgid "The global namespace (default: ``None``)."
-msgstr ""
+msgstr "గ్లోబల్ నేమ్‌స్పేస్ (డిఫాల్ట్: ``None``)."
 
 #: builtins/functions.rst:618
 msgid "The local namespace (default: ``None``)."
-msgstr ""
+msgstr "లోకల్ నేమ్‌స్పేస్ (డిఫాల్ట్: ``None``)."
 
 #: builtins/functions.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "రిటర్న్ విలువ"
 
 #: builtins/functions.rst:622
 msgid "The result of the evaluated expression."
-msgstr ""
+msgstr "ఎవాల్యుయేట్ చేసిన ఎక్స్‌ప్రెషన్ యొక్క ఫలితం."
 
 #: builtins/functions.rst:0
 msgid "raises"
-msgstr ""
+msgstr "రైజ్ చేసేవి"
 
 #: builtins/functions.rst:623
 msgid "Syntax errors are reported as exceptions."
-msgstr ""
+msgstr "సింటాక్స్ లోపాలు ఎక్సెప్షన్‌లుగా నివేదించబడతాయి."
 
 #: builtins/functions.rst:627 builtins/functions.rst:697
 msgid ""
 "This function executes arbitrary code. Calling it with untrusted user-"
 "supplied input will lead to security vulnerabilities."
 msgstr ""
+"ఈ ఫంక్షన్ ఏ కోడ్‌నైనా అమలు చేస్తుంది. నమ్మదగని, వినియోగదారు అందించిన "
+"ఇన్‌పుట్‌తో దీన్ని కాల్ చేస్తే భద్రతా లోపాలకు దారితీస్తుంది."
 
 #: builtins/functions.rst:630
 msgid ""
@@ -1416,10 +1429,25 @@ msgid ""
 " referenced in the scope that is calling :func:`eval` (e.g. via a "
 ":keyword:`nonlocal` statement)."
 msgstr ""
+"*source* ఆర్గ్యుమెంట్, *globals* మరియు *locals* మ్యాపింగ్‌లను గ్లోబల్ మరియు "
+"లోకల్ నేమ్‌స్పేస్‌గా ఉపయోగించి, ఒక Python ఎక్స్‌ప్రెషన్‌గా (సాంకేతికంగా "
+"చెప్పాలంటే, ఒక :ref:`ఎక్స్‌ప్రెషన్ లిస్ట్‌గా <exprlists>`) పార్స్ చేయబడి "
+"ఎవాల్యుయేట్ చేయబడుతుంది. *globals* డిక్షనరీ ఉండి, అందులో ``__builtins__`` "
+"కీకి విలువ లేకపోతే, *source* పార్స్ చేయబడే ముందు బిల్ట్-ఇన్ మాడ్యూల్ "
+":mod:`builtins` యొక్క డిక్షనరీకి ఒక రిఫరెన్స్ ఆ కీ కింద చేర్చబడుతుంది. "
+"అందుబాటులో ఉన్న పేర్లను పరిమితం చేయడానికి లేదా మార్చడానికి ``__builtins__`` "
+"ను ఓవర్‌రైడ్ చేయవచ్చు, కానీ ఇది భద్రతా విధానం **కాదు**: అమలు చేయబడే కోడ్ "
+"ఇప్పటికీ అన్ని బిల్ట్-ఇన్‌లను యాక్సెస్ చేయగలదు. *locals* మ్యాపింగ్‌ను "
+"వదిలివేస్తే, అది డిఫాల్ట్‌గా *globals* డిక్షనరీ అవుతుంది. రెండు మ్యాపింగ్‌లనూ"
+" వదిలివేస్తే, :func:`eval` కాల్ చేయబడిన ఎన్విరాన్‌మెంట్‌లోని *globals* మరియు "
+"*locals* తో సోర్స్ అమలు చేయబడుతుంది. గమనిక: ఆవరించి ఉన్న ఎన్విరాన్‌మెంట్‌లోని"
+" :term:`నెస్టెడ్ స్కోప్‌లు <nested scope>` (నాన్-లోకల్‌లు) :func:`eval` ను "
+"కాల్ చేస్తున్న స్కోప్‌లో ఇప్పటికే రిఫర్ చేయబడి ఉంటేనే (ఉదా. "
+":keyword:`nonlocal` స్టేట్‌మెంట్ ద్వారా), *eval()* కు వాటి యాక్సెస్ ఉంటుంది."
 
 #: builtins/functions.rst:648
 msgid "Example:"
-msgstr ""
+msgstr "ఉదాహరణ:"
 
 #: builtins/functions.rst:657
 msgid ""
@@ -1428,6 +1456,10 @@ msgid ""
 "of a string.  If the code object has been compiled with ``'exec'`` as the "
 "*mode* argument, :func:`eval`\\'s return value will be ``None``."
 msgstr ""
+"ఈ ఫంక్షన్‌ను ఏ కోడ్ ఆబ్జెక్ట్‌లనైనా (ఉదాహరణకు :func:`compile` సృష్టించినవి) "
+"అమలు చేయడానికి కూడా ఉపయోగించవచ్చు. ఈ సందర్భంలో, స్ట్రింగ్‌కు బదులుగా కోడ్ "
+"ఆబ్జెక్ట్‌ను ఇవ్వండి. కోడ్ ఆబ్జెక్ట్ *mode* ఆర్గ్యుమెంట్‌గా ``'exec'`` తో "
+"కంపైల్ చేయబడి ఉంటే, :func:`eval` యొక్క రిటర్న్ విలువ ``None`` అవుతుంది."
 
 #: builtins/functions.rst:662
 msgid ""
@@ -1436,18 +1468,26 @@ msgid ""
 "current global and local dictionary, respectively, which may be useful to "
 "pass around for use by :func:`eval` or :func:`exec`."
 msgstr ""
+"సూచనలు: స్టేట్‌మెంట్‌ల డైనమిక్ అమలును :func:`exec` ఫంక్షన్ సపోర్ట్ చేస్తుంది."
+" :func:`globals` మరియు :func:`locals` ఫంక్షన్‌లు వరుసగా ప్రస్తుత గ్లోబల్ "
+"మరియు లోకల్ డిక్షనరీని రిటర్న్ చేస్తాయి, వీటిని :func:`eval` లేదా "
+":func:`exec` ఉపయోగించుకునేలా పంపడం ఉపయోగకరంగా ఉండవచ్చు."
 
 #: builtins/functions.rst:667
 msgid ""
 "If the given source is a string, then leading and trailing spaces and tabs "
 "are stripped."
 msgstr ""
+"ఇచ్చిన సోర్స్ స్ట్రింగ్ అయితే, ముందు మరియు వెనుక ఉన్న స్పేస్‌లు మరియు "
+"ట్యాబ్‌లు తొలగించబడతాయి."
 
 #: builtins/functions.rst:670
 msgid ""
 "See :func:`ast.literal_eval` for a function to evaluate strings with "
 "expressions containing only literals."
 msgstr ""
+"కేవలం లిటరల్‌లు మాత్రమే ఉన్న ఎక్స్‌ప్రెషన్‌లు గల స్ట్రింగ్‌లను ఎవాల్యుయేట్ "
+"చేసే ఫంక్షన్ కోసం :func:`ast.literal_eval` చూడండి."
 
 #: builtins/functions.rst:673 builtins/functions.rst:675
 #: builtins/functions.rst:740 builtins/functions.rst:742
@@ -1455,20 +1495,26 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``exec`` with the code object as "
 "the argument. Code compilation events may also be raised."
 msgstr ""
+"కోడ్ ఆబ్జెక్ట్‌ను ఆర్గ్యుమెంట్‌గా తీసుకుని ``exec`` అనే :ref:`ఆడిటింగ్ "
+"ఈవెంట్‌ను <auditing>` రైజ్ చేస్తుంది. కోడ్ కంపైలేషన్ ఈవెంట్‌లు కూడా రైజ్ "
+"కావచ్చు."
 
 #: builtins/functions.rst:680 builtins/functions.rst:762
 msgid "The *globals* and *locals* arguments can now be passed as keywords."
 msgstr ""
+"*globals* మరియు *locals* ఆర్గ్యుమెంట్‌లను ఇప్పుడు కీవర్డ్‌లుగా ఇవ్వవచ్చు."
 
 #: builtins/functions.rst:684 builtins/functions.rst:766
 msgid ""
 "The semantics of the default *locals* namespace have been adjusted as "
 "described for the :func:`locals` builtin."
 msgstr ""
+"డిఫాల్ట్ *locals* నేమ్‌స్పేస్ యొక్క సెమాంటిక్స్ :func:`locals` బిల్ట్-ఇన్ "
+"కోసం వివరించిన విధంగా సర్దుబాటు చేయబడ్డాయి."
 
 #: builtins/functions.rst:689 builtins/functions.rst:771
 msgid "*globals* can now be a :class:`frozendict`."
-msgstr ""
+msgstr "*globals* ఇప్పుడు :class:`frozendict` కూడా కావచ్చు."
 
 #: builtins/functions.rst:700
 msgid ""
@@ -1482,6 +1528,16 @@ msgid ""
 "not be used outside of function definitions even within the context of code "
 "passed to the :func:`exec` function. The return value is ``None``."
 msgstr ""
+"ఈ ఫంక్షన్ Python కోడ్ యొక్క డైనమిక్ అమలును సపోర్ట్ చేస్తుంది. *source* ఒక "
+"స్ట్రింగ్ లేదా ఒక కోడ్ ఆబ్జెక్ట్ అయి ఉండాలి. అది స్ట్రింగ్ అయితే, ఆ స్ట్రింగ్"
+" Python స్టేట్‌మెంట్‌ల సూట్‌గా పార్స్ చేయబడి, ఆ తర్వాత అమలు చేయబడుతుంది "
+"(సింటాక్స్ లోపం సంభవించకపోతే). అది కోడ్ ఆబ్జెక్ట్ అయితే, దాన్ని నేరుగా అమలు "
+"చేస్తారు. అన్ని సందర్భాల్లో, అమలు చేయబడే కోడ్ ఫైల్ ఇన్‌పుట్‌గా చెల్లుబాటు "
+"అయ్యేలా ఉండాలని ఆశిస్తారు (రిఫరెన్స్ మాన్యువల్‌లోని :ref:`file-input` విభాగం "
+"చూడండి). :func:`exec` ఫంక్షన్‌కు ఇచ్చే కోడ్ సందర్భంలో కూడా, "
+":keyword:`nonlocal`, :keyword:`yield`, మరియు :keyword:`return` "
+"స్టేట్‌మెంట్‌లను ఫంక్షన్ నిర్వచనాల బయట ఉపయోగించకూడదని గుర్తుంచుకోండి. రిటర్న్"
+" విలువ ``None``."
 
 #: builtins/functions.rst:711
 msgid ""
@@ -1493,6 +1549,13 @@ msgid ""
 "mapping object.  Remember that at the module level, globals and locals are "
 "the same dictionary."
 msgstr ""
+"అన్ని సందర్భాల్లో, ఐచ్ఛిక భాగాలను వదిలివేస్తే, కోడ్ ప్రస్తుత స్కోప్‌లో అమలు "
+"చేయబడుతుంది. *globals* మాత్రమే ఇస్తే, అది డిక్షనరీ అయి ఉండాలి (డిక్షనరీ యొక్క"
+" సబ్‌క్లాస్ కాకూడదు), అది గ్లోబల్ మరియు లోకల్ వేరియబుల్‌లు రెండింటికీ "
+"ఉపయోగించబడుతుంది. *globals* మరియు *locals* ఇస్తే, అవి వరుసగా గ్లోబల్ మరియు "
+"లోకల్ వేరియబుల్‌ల కోసం ఉపయోగించబడతాయి. ఇస్తే, *locals* ఏ మ్యాపింగ్ ఆబ్జెక్ట్ "
+"అయినా కావచ్చు. మాడ్యూల్ స్థాయిలో, globals మరియు locals ఒకే డిక్షనరీ అని "
+"గుర్తుంచుకోండి."
 
 #: builtins/functions.rst:721
 msgid ""
@@ -1502,6 +1565,11 @@ msgid ""
 " variables assigned at the top level (as the \"top level\" variables are "
 "treated as class variables in a class definition)."
 msgstr ""
+"``exec`` కు *globals* మరియు *locals* గా రెండు వేర్వేరు ఆబ్జెక్ట్‌లు "
+"లభించినప్పుడు, కోడ్ ఒక క్లాస్ నిర్వచనంలో పొందుపరిచినట్లుగా అమలు చేయబడుతుంది. "
+"అంటే, అమలు చేయబడిన కోడ్‌లో నిర్వచించిన ఫంక్షన్‌లు మరియు క్లాస్‌లు టాప్ "
+"లెవెల్‌లో కేటాయించిన వేరియబుల్‌లను యాక్సెస్ చేయలేవు (ఎందుకంటే \"టాప్ లెవెల్\""
+" వేరియబుల్‌లు క్లాస్ నిర్వచనంలో క్లాస్ వేరియబుల్‌లుగా పరిగణించబడతాయి)."
 
 #: builtins/functions.rst:727
 msgid ""
@@ -1511,6 +1579,11 @@ msgid ""
 "be used to restrict or change the available names, but this is **not** a "
 "security mechanism: the executed code can still access all builtins."
 msgstr ""
+"*globals* డిక్షనరీలో ``__builtins__`` కీకి విలువ లేకపోతే, బిల్ట్-ఇన్ మాడ్యూల్"
+" :mod:`builtins` యొక్క డిక్షనరీకి ఒక రిఫరెన్స్ ఆ కీ కింద చేర్చబడుతుంది. "
+"అందుబాటులో ఉన్న పేర్లను పరిమితం చేయడానికి లేదా మార్చడానికి ``__builtins__`` "
+"ను ఓవర్‌రైడ్ చేయవచ్చు, కానీ ఇది భద్రతా విధానం **కాదు**: అమలు చేయబడే కోడ్ "
+"ఇప్పటికీ అన్ని బిల్ట్-ఇన్‌లను యాక్సెస్ చేయగలదు."
 
 #: builtins/functions.rst:734
 msgid ""
@@ -1519,6 +1592,11 @@ msgid ""
 "variables <closure variable>`. The length of the tuple must exactly match the"
 " length of the code object's :attr:`~codeobject.co_freevars` attribute."
 msgstr ""
+"*closure* ఆర్గ్యుమెంట్ ఒక క్లోజర్‌ను--అంటే cellvars యొక్క "
+"టపుల్‌ను--నిర్దేశిస్తుంది. *source* :term:`ఫ్రీ (క్లోజర్) వేరియబుల్‌లు "
+"<closure variable>` ఉన్న కోడ్ ఆబ్జెక్ట్ అయినప్పుడు మాత్రమే ఇది చెల్లుబాటు "
+"అవుతుంది. టపుల్ పొడవు కోడ్ ఆబ్జెక్ట్ యొక్క :attr:`~codeobject.co_freevars` "
+"అట్రిబ్యూట్ పొడవుకు కచ్చితంగా సరిపోలాలి."
 
 #: builtins/functions.rst:747
 msgid ""
@@ -1526,6 +1604,9 @@ msgid ""
 "global and local namespace, respectively, which may be useful to pass around "
 "for use as the second and third argument to :func:`exec`."
 msgstr ""
+"బిల్ట్-ఇన్ ఫంక్షన్‌లు :func:`globals` మరియు :func:`locals` వరుసగా ప్రస్తుత "
+"గ్లోబల్ మరియు లోకల్ నేమ్‌స్పేస్‌ను రిటర్న్ చేస్తాయి, వీటిని :func:`exec` కు "
+"రెండవ మరియు మూడవ ఆర్గ్యుమెంట్‌గా ఉపయోగించడం కోసం పంపడం ఉపయోగకరంగా ఉండవచ్చు."
 
 #: builtins/functions.rst:753
 msgid ""
@@ -1533,10 +1614,13 @@ msgid ""
 " an explicit *locals* dictionary if you need to see effects of the code on "
 "*locals* after function :func:`exec` returns."
 msgstr ""
+"డిఫాల్ట్ *locals* కింద ఉన్న :func:`locals` ఫంక్షన్ కోసం వివరించిన విధంగా "
+"ప్రవర్తిస్తాయి. ఫంక్షన్ :func:`exec` రిటర్న్ అయిన తర్వాత *locals* పై కోడ్ "
+"యొక్క ప్రభావాలను మీరు చూడాలంటే, స్పష్టమైన *locals* డిక్షనరీని ఇవ్వండి."
 
 #: builtins/functions.rst:757
 msgid "Added the *closure* parameter."
-msgstr ""
+msgstr "*closure* పారామీటర్ జోడించబడింది."
 
 #: builtins/functions.rst:776
 msgid ""
