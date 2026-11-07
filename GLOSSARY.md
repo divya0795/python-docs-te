@@ -404,3 +404,34 @@ Agree on new terms in an issue or PR before using them widely.
 Function names, parameter names (*iterable*, *key*, *default*) and
 exception names stay in English; entries that are only a function name
 in the overview table are copied unchanged.
+
+## Terms added while translating stage 5
+
+| English | Telugu | Notes |
+|---------|--------|-------|
+| absolute value | పరమ విలువ | |
+| accessor / getter / setter / deleter | యాక్సెసర్ / గెటర్ / సెటర్ / డిలీటర్ | |
+| bytecode | బైట్‌కోడ్ | |
+| closure | క్లోజర్ | |
+| coercion | కోర్షన్ | |
+| exhausted (iterator) | అయిపోయిన | `:term:` link text: అయిపోయినప్పుడు &lt;exhausted&gt; |
+| exponent | ఘాతాంకం | |
+| file descriptor | ఫైల్ డిస్క్రిప్టర్ | |
+| functionality | కార్యాచరణ | not పనితీరు (= performance) |
+| identity (of an object) | ఐడెంటిటీ | |
+| idiom | పద్ధతి | |
+| import hook | ఇంపోర్ట్ హుక్ | |
+| infinity | అనంతం | positive / negative → ధన / రుణ అనంతం |
+| inverse | విలోమం | |
+| lazy | లేజీ | |
+| lookup | లుకప్ | |
+| path-like object | పాత్ లాంటి ఆబ్జెక్ట్ | |
+| pickle / pickling | పికిల్ చేయు / పికిలింగ్ | |
+| proxy object | ప్రాక్సీ ఆబ్జెక్ట్ | |
+| qualified name | క్వాలిఫైడ్ నేమ్ | |
+| real part / real number | వాస్తవ భాగం / వాస్తవ సంఖ్య | |
+| runtime | రన్‌టైమ్ | |
+| superclass / sibling class | సూపర్‌క్లాస్ / సిబ్లింగ్ క్లాస్ | |
+| type hint | టైప్ హింట్ | |
+| unique (one of a kind) | ఏకైక | for "no other object has it" → ఇతర ఏ ఆబ్జెక్ట్‌కూ లేని |
+| warning | హెచ్చరిక | |
