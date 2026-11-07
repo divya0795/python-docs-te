@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-11-07 10:40-0800\n"
+"PO-Revision-Date: 2026-11-07 10:54-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -1848,6 +1848,12 @@ msgid ""
 "*default* is returned if provided, otherwise :exc:`AttributeError` is raised."
 " *name* need not be a Python identifier (see :func:`setattr`)."
 msgstr ""
+"*object* యొక్క ఇచ్చిన పేరు గల అట్రిబ్యూట్ విలువను రిటర్న్ చేస్తుంది. *name* "
+"ఒక స్ట్రింగ్ అయి ఉండాలి. ఆ స్ట్రింగ్ ఆబ్జెక్ట్ యొక్క అట్రిబ్యూట్‌లలో ఒకదాని "
+"పేరు అయితే, ఫలితం ఆ అట్రిబ్యూట్ విలువ. ఉదాహరణకు, ``getattr(x, 'foobar')`` "
+"అనేది ``x.foobar`` కు సమానం. ఆ పేరు గల అట్రిబ్యూట్ లేకపోతే, *default* ఇస్తే "
+"అది రిటర్న్ చేయబడుతుంది, లేకపోతే :exc:`AttributeError` రైజ్ అవుతుంది. *name* "
+"ఒక Python ఐడెంటిఫైయర్ కానవసరం లేదు (:func:`setattr` చూడండి)."
 
 #: builtins/functions.rst:930
 msgid ""
@@ -1856,6 +1862,10 @@ msgid ""
 "with two leading underscores) name in order to retrieve it with "
 ":func:`getattr`."
 msgstr ""
+":ref:`ప్రైవేట్ నేమ్ మాంగ్లింగ్ <private-name-mangling>` కంపైలేషన్ సమయంలో "
+"జరుగుతుంది కాబట్టి, :func:`getattr` తో ఒక ప్రైవేట్ అట్రిబ్యూట్‌ను (రెండు "
+"ముందు అండర్‌స్కోర్‌లు ఉన్న అట్రిబ్యూట్‌లు) పొందాలంటే, దాని పేరును "
+"మాన్యువల్‌గా మాంగిల్ చేయాలి."
 
 #: builtins/functions.rst:938
 msgid ""
@@ -1863,6 +1873,9 @@ msgid ""
 "within functions, this is set when the function is defined and remains the "
 "same regardless of where the function is called."
 msgstr ""
+"ప్రస్తుత మాడ్యూల్ నేమ్‌స్పేస్‌ను రూపొందించే డిక్షనరీని రిటర్న్ చేస్తుంది. "
+"ఫంక్షన్‌లలోని కోడ్‌కు, ఫంక్షన్ నిర్వచించబడినప్పుడు ఇది సెట్ చేయబడుతుంది, "
+"మరియు ఫంక్షన్ ఎక్కడ కాల్ చేయబడినా ఇది అలాగే ఉంటుంది."
 
 #: builtins/functions.rst:945
 msgid ""
@@ -1871,6 +1884,10 @@ msgid ""
 " is implemented by calling ``getattr(object, name)`` and seeing whether it "
 "raises an :exc:`AttributeError` or not.)"
 msgstr ""
+"ఆర్గ్యుమెంట్‌లు ఒక ఆబ్జెక్ట్ మరియు ఒక స్ట్రింగ్. ఆ స్ట్రింగ్ ఆబ్జెక్ట్ యొక్క "
+"అట్రిబ్యూట్‌లలో ఒకదాని పేరు అయితే ఫలితం ``True``, కాకపోతే ``False``. "
+"(``getattr(object, name)`` ను కాల్ చేసి, అది :exc:`AttributeError` ను రైజ్ "
+"చేస్తుందో లేదో చూడటం ద్వారా ఇది రూపొందించబడింది.)"
 
 #: builtins/functions.rst:953
 msgid ""
@@ -1879,6 +1896,10 @@ msgid ""
 "dictionary lookup.  Numeric values that compare equal have the same hash "
 "value (even if they are of different types, as is the case for 1 and 1.0)."
 msgstr ""
+"ఆబ్జెక్ట్ యొక్క హ్యాష్ విలువను (దానికి ఒకటి ఉంటే) రిటర్న్ చేస్తుంది. హ్యాష్ "
+"విలువలు పూర్ణాంకాలు. డిక్షనరీ లుకప్ సమయంలో డిక్షనరీ కీలను వేగంగా పోల్చడానికి "
+"వీటిని ఉపయోగిస్తారు. సమానంగా పోల్చబడే సంఖ్యా విలువలకు ఒకే హ్యాష్ విలువ "
+"ఉంటుంది (అవి వేర్వేరు టైప్‌లకు చెందినవైనా సరే, 1 మరియు 1.0 విషయంలో లాగా)."
 
 #: builtins/functions.rst:960
 msgid ""
@@ -1886,6 +1907,9 @@ msgid ""
 ":func:`hash` truncates the return value based on the bit width of the host "
 "machine."
 msgstr ""
+"కస్టమ్ :meth:`~object.__hash__` మెథడ్‌లు ఉన్న ఆబ్జెక్ట్‌ల విషయంలో, "
+":func:`hash` హోస్ట్ మెషీన్ యొక్క బిట్ వెడల్పు ఆధారంగా రిటర్న్ విలువను "
+"కత్తిరిస్తుందని గమనించండి."
 
 #: builtins/functions.rst:967
 msgid ""
@@ -1896,6 +1920,13 @@ msgid ""
 "documentation topic, and a help page is printed on the console.  If the "
 "argument is any other kind of object, a help page on the object is generated."
 msgstr ""
+"బిల్ట్-ఇన్ హెల్ప్ సిస్టమ్‌ను ప్రారంభిస్తుంది. (ఈ ఫంక్షన్ ఇంటరాక్టివ్ ఉపయోగం "
+"కోసం ఉద్దేశించబడింది.) ఆర్గ్యుమెంట్ ఏదీ ఇవ్వకపోతే, ఇంటరాక్టివ్ హెల్ప్ సిస్టమ్"
+" ఇంటర్‌ప్రెటర్ కన్సోల్‌పై ప్రారంభమవుతుంది. ఆర్గ్యుమెంట్ స్ట్రింగ్ అయితే, ఆ "
+"స్ట్రింగ్‌ను ఒక మాడ్యూల్, ఫంక్షన్, క్లాస్, మెథడ్, కీవర్డ్, లేదా "
+"డాక్యుమెంటేషన్ అంశం పేరుగా వెతికి, కన్సోల్‌పై ఒక హెల్ప్ పేజీ ప్రింట్ "
+"చేయబడుతుంది. ఆర్గ్యుమెంట్ వేరే ఏ రకమైన ఆబ్జెక్ట్ అయినా, ఆ ఆబ్జెక్ట్‌పై ఒక "
+"హెల్ప్ పేజీ జనరేట్ చేయబడుతుంది."
 
 #: builtins/functions.rst:974
 msgid ""
@@ -1904,17 +1935,25 @@ msgid ""
 "positional-only. For more info, see :ref:`the FAQ entry on positional-only "
 "parameters <faq-positional-only-arguments>`."
 msgstr ""
+":func:`help` ను కాల్ చేసినప్పుడు ఒక ఫంక్షన్ యొక్క పారామీటర్ జాబితాలో "
+"స్లాష్(/) కనిపిస్తే, స్లాష్ కంటే ముందు ఉన్న పారామీటర్‌లు పొజిషనల్-మాత్రమే అని"
+" అర్థం అని గమనించండి. మరింత సమాచారం కోసం, :ref:`పొజిషనల్-మాత్రమే "
+"పారామీటర్‌లపై FAQ ఎంట్రీని <faq-positional-only-arguments>` చూడండి."
 
 #: builtins/functions.rst:979
 msgid ""
 "This function is added to the built-in namespace by the :mod:`site` module."
 msgstr ""
+"ఈ ఫంక్షన్ :mod:`site` మాడ్యూల్ ద్వారా బిల్ట్-ఇన్ నేమ్‌స్పేస్‌కు "
+"జోడించబడుతుంది."
 
 #: builtins/functions.rst:981
 msgid ""
 "Changes to :mod:`pydoc` and :mod:`inspect` mean that the reported signatures "
 "for callables are now more comprehensive and consistent."
 msgstr ""
+":mod:`pydoc` మరియు :mod:`inspect` లో చేసిన మార్పుల వల్ల, కాలబుల్‌ల కోసం "
+"నివేదించబడే సిగ్నేచర్‌లు ఇప్పుడు మరింత సమగ్రంగా మరియు స్థిరంగా ఉంటాయి."
 
 #: builtins/functions.rst:988
 msgid ""
@@ -1922,24 +1961,35 @@ msgid ""
 "\"0x\". If *integer* is not a Python :class:`int` object, it has to define an"
 " :meth:`~object.__index__` method that returns an integer. Some examples:"
 msgstr ""
+"ఒక పూర్ణాంకాన్ని \"0x\" ప్రిఫిక్స్ ఉన్న చిన్న అక్షరాల హెక్సాడెసిమల్ "
+"స్ట్రింగ్‌గా మారుస్తుంది. *integer* ఒక Python :class:`int` ఆబ్జెక్ట్ కాకపోతే,"
+" అది పూర్ణాంకాన్ని రిటర్న్ చేసే :meth:`~object.__index__` మెథడ్‌ను "
+"నిర్వచించాలి. కొన్ని ఉదాహరణలు:"
 
 #: builtins/functions.rst:997
 msgid ""
 "If you want to convert an integer number to an uppercase or lower hexadecimal"
 " string with prefix or not, you can use either of the following ways:"
 msgstr ""
+"ఒక పూర్ణాంకాన్ని ప్రిఫిక్స్‌తో లేదా లేకుండా, పెద్ద లేదా చిన్న అక్షరాల "
+"హెక్సాడెసిమల్ స్ట్రింగ్‌గా మార్చాలనుకుంటే, కింది మార్గాల్లో దేన్నైనా "
+"ఉపయోగించవచ్చు:"
 
 #: builtins/functions.rst:1009
 msgid ""
 "See also :func:`int` for converting a hexadecimal string to an integer using "
 "a base of 16."
 msgstr ""
+"ఆధారం 16 ఉపయోగించి హెక్సాడెసిమల్ స్ట్రింగ్‌ను పూర్ణాంకంగా మార్చడం కోసం "
+":func:`int` ను కూడా చూడండి."
 
 #: builtins/functions.rst:1014
 msgid ""
 "To obtain a hexadecimal string representation for a float, use the "
 ":meth:`float.hex` method."
 msgstr ""
+"ఒక float కోసం హెక్సాడెసిమల్ స్ట్రింగ్ రిప్రజెంటేషన్ పొందడానికి, "
+":meth:`float.hex` మెథడ్‌ను ఉపయోగించండి."
 
 #: builtins/functions.rst:1020
 msgid ""
@@ -1947,16 +1997,22 @@ msgid ""
 " to be unique and constant for this object during its lifetime. Two objects "
 "with non-overlapping lifetimes may have the same :func:`id` value."
 msgstr ""
+"ఒక ఆబ్జెక్ట్ యొక్క \"ఐడెంటిటీ\" ని రిటర్న్ చేస్తుంది. ఇది ఒక పూర్ణాంకం, ఈ "
+"ఆబ్జెక్ట్ జీవితకాలంలో ఇది ఇతర ఏ ఆబ్జెక్ట్‌కూ లేనిదిగా మరియు స్థిరంగా ఉంటుందని"
+" హామీ ఉంది. జీవితకాలాలు ఒకదానితో ఒకటి కలవని రెండు ఆబ్జెక్ట్‌లకు ఒకే "
+":func:`id` విలువ ఉండవచ్చు."
 
 #: builtins/functions.rst:1025
 msgid "This is the address of the object in memory."
-msgstr ""
+msgstr "ఇది మెమరీలో ఆబ్జెక్ట్ యొక్క అడ్రస్."
 
 #: builtins/functions.rst:1027
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.id`` with argument "
 "``id``."
 msgstr ""
+"``id`` ఆర్గ్యుమెంట్‌తో ``builtins.id`` అనే :ref:`ఆడిటింగ్ ఈవెంట్‌ను "
+"<auditing>` రైజ్ చేస్తుంది."
 
 #: builtins/functions.rst:1033
 msgid ""
@@ -1965,6 +2021,10 @@ msgid ""
 "to a string (stripping a trailing newline), and returns that.  When EOF is "
 "read, :exc:`EOFError` is raised.  Example::"
 msgstr ""
+"*prompt* ఆర్గ్యుమెంట్ ఉంటే, అది చివర న్యూలైన్ లేకుండా స్టాండర్డ్ "
+"అవుట్‌పుట్‌కు రాయబడుతుంది. ఆ తర్వాత ఫంక్షన్ ఇన్‌పుట్ నుండి ఒక లైన్‌ను చదివి, "
+"దాన్ని స్ట్రింగ్‌గా మార్చి (చివరి న్యూలైన్‌ను తొలగించి), దాన్ని రిటర్న్ "
+"చేస్తుంది. EOF చదివినప్పుడు, :exc:`EOFError` రైజ్ అవుతుంది. ఉదాహరణ::"
 
 #: builtins/functions.rst:1038
 msgid ""
@@ -1973,24 +2033,34 @@ msgid ""
 ">>> s\n"
 "\"Monty Python's Flying Circus\""
 msgstr ""
+">>> s = input('--> ')\n"
+"--> Monty Python's Flying Circus\n"
+">>> s\n"
+"\"Monty Python's Flying Circus\""
 
 #: builtins/functions.rst:1043
 msgid ""
 "If the :mod:`readline` module was loaded, then :func:`input` will use it to "
 "provide elaborate line editing and history features."
 msgstr ""
+":mod:`readline` మాడ్యూల్ లోడ్ అయి ఉంటే, :func:`input` దాన్ని ఉపయోగించి "
+"విస్తృతమైన లైన్ ఎడిటింగ్ మరియు హిస్టరీ ఫీచర్‌లను అందిస్తుంది."
 
 #: builtins/functions.rst:1046 builtins/functions.rst:1048
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.input`` with argument "
 "``prompt`` before reading input"
 msgstr ""
+"ఇన్‌పుట్ చదివే ముందు ``prompt`` ఆర్గ్యుమెంట్‌తో ``builtins.input`` అనే "
+":ref:`ఆడిటింగ్ ఈవెంట్‌ను <auditing>` రైజ్ చేస్తుంది"
 
 #: builtins/functions.rst:1051 builtins/functions.rst:1053
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.input/result`` with the"
 " result after successfully reading input."
 msgstr ""
+"ఇన్‌పుట్‌ను విజయవంతంగా చదివిన తర్వాత ఫలితంతో ``builtins.input/result`` అనే "
+":ref:`ఆడిటింగ్ ఈవెంట్‌ను <auditing>` రైజ్ చేస్తుంది."
 
 #: builtins/functions.rst:1060
 msgid ""
