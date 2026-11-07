@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-11-06 19:17-0800\n"
+"PO-Revision-Date: 2026-11-07 09:35-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -628,12 +628,19 @@ msgid ""
 "methods of mutable sequences, described in :ref:`typesseq-mutable`, as well "
 "as most methods that the :class:`bytes` type has, see :ref:`bytes-methods`."
 msgstr ""
+"బైట్‌ల కొత్త అరేను రిటర్న్ చేస్తుంది. :class:`bytearray` క్లాస్ 0 <= x < 256 "
+"పరిధిలోని పూర్ణాంకాల మ్యూటబుల్ (మార్చగలిగే) సీక్వెన్స్. ఇందులో "
+":ref:`typesseq-mutable` లో వివరించిన మ్యూటబుల్ సీక్వెన్స్‌ల సాధారణ మెథడ్‌లలో "
+"చాలావరకు ఉన్నాయి, అలాగే :class:`bytes` టైప్‌కు ఉన్న చాలా మెథడ్‌లు కూడా "
+"ఉన్నాయి, :ref:`bytes-methods` చూడండి."
 
 #: builtins/functions.rst:198
 msgid ""
 "The optional *source* parameter can be used to initialize the array in a few "
 "different ways:"
 msgstr ""
+"ఐచ్ఛిక *source* పారామీటర్‌ను అరేను కొన్ని విభిన్న మార్గాలలో ఇనిషియలైజ్ "
+"చేయడానికి ఉపయోగించవచ్చు:"
 
 #: builtins/functions.rst:201
 msgid ""
@@ -641,32 +648,42 @@ msgid ""
 "*errors*) parameters; :func:`bytearray` then converts the string to bytes "
 "using :meth:`str.encode`."
 msgstr ""
+"అది ఒక *స్ట్రింగ్* అయితే, మీరు *encoding* (మరియు ఐచ్ఛికంగా, *errors*) "
+"పారామీటర్‌లను కూడా ఇవ్వాలి; అప్పుడు :func:`bytearray` :meth:`str.encode` ను "
+"ఉపయోగించి స్ట్రింగ్‌ను బైట్‌లుగా మారుస్తుంది."
 
 #: builtins/functions.rst:205
 msgid ""
 "If it is an *integer*, the array will have that size and will be initialized "
 "with null bytes."
 msgstr ""
+"అది ఒక *పూర్ణాంకం* అయితే, అరే ఆ పరిమాణాన్ని కలిగి ఉంటుంది మరియు null బైట్‌లతో"
+" ఇనిషియలైజ్ చేయబడుతుంది."
 
 #: builtins/functions.rst:208
 msgid ""
 "If it is an object conforming to the :ref:`buffer interface <bufferobjects>`,"
 " a read-only buffer of the object will be used to initialize the bytes array."
 msgstr ""
+"అది :ref:`బఫర్ ఇంటర్‌ఫేస్‌కు <bufferobjects>` అనుగుణంగా ఉండే ఆబ్జెక్ట్ అయితే,"
+" బైట్‌ల అరేను ఇనిషియలైజ్ చేయడానికి ఆ ఆబ్జెక్ట్ యొక్క రీడ్-ఓన్లీ బఫర్ "
+"ఉపయోగించబడుతుంది."
 
 #: builtins/functions.rst:211
 msgid ""
 "If it is an *iterable*, it must be an iterable of integers in the range ``0 "
 "<= x < 256``, which are used as the initial contents of the array."
 msgstr ""
+"అది ఒక *ఇటరబుల్* అయితే, అది ``0 <= x < 256`` పరిధిలోని పూర్ణాంకాల ఇటరబుల్ అయి"
+" ఉండాలి; అవి అరే యొక్క ప్రారంభ ఐటెమ్‌లుగా ఉపయోగించబడతాయి."
 
 #: builtins/functions.rst:214
 msgid "Without an argument, an array of size 0 is created."
-msgstr ""
+msgstr "ఆర్గ్యుమెంట్ లేకపోతే, 0 పరిమాణం గల అరే సృష్టించబడుతుంది."
 
 #: builtins/functions.rst:216
 msgid "See also :ref:`binaryseq` and :ref:`typebytearray`."
-msgstr ""
+msgstr ":ref:`binaryseq` మరియు :ref:`typebytearray` ను కూడా చూడండి."
 
 #: builtins/functions.rst:224
 msgid ""
@@ -675,19 +692,28 @@ msgid ""
 ":class:`bytearray` -- it has the same non-mutating methods and the same "
 "indexing and slicing behavior."
 msgstr ""
+"``0 <= x < 256`` పరిధిలోని పూర్ణాంకాల ఇమ్యూటబుల్ (మార్చలేని) సీక్వెన్స్ అయిన "
+"కొత్త \"bytes\" ఆబ్జెక్ట్‌ను రిటర్న్ చేస్తుంది. :class:`bytes` అనేది "
+":class:`bytearray` యొక్క ఇమ్యూటబుల్ వెర్షన్ -- దీనికి అవే మార్చని (non-"
+"mutating) మెథడ్‌లు, అదే ఇండెక్సింగ్, స్లైసింగ్ ప్రవర్తన ఉంటాయి."
 
 #: builtins/functions.rst:229
 msgid ""
 "Accordingly, constructor arguments are interpreted as for :func:`bytearray`."
 msgstr ""
+"దీని ప్రకారం, కన్‌స్ట్రక్టర్ ఆర్గ్యుమెంట్‌లు :func:`bytearray` కు "
+"ఉన్నట్లుగానే అర్థం చేసుకోబడతాయి."
 
 #: builtins/functions.rst:231
 msgid "Bytes objects can also be created with literals, see :ref:`strings`."
 msgstr ""
+"బైట్స్ ఆబ్జెక్ట్‌లను లిటరల్‌లతో కూడా సృష్టించవచ్చు, :ref:`strings` చూడండి."
 
 #: builtins/functions.rst:233
 msgid "See also :ref:`binaryseq`, :ref:`typebytes`, and :ref:`bytes-methods`."
 msgstr ""
+":ref:`binaryseq`, :ref:`typebytes`, మరియు :ref:`bytes-methods` ను కూడా "
+"చూడండి."
 
 #: builtins/functions.rst:238
 msgid ""
@@ -697,12 +723,20 @@ msgid ""
 "Note that classes are callable (calling a class returns a new instance); "
 "instances are callable if their class has a :meth:`~object.__call__` method."
 msgstr ""
+"*object* ఆర్గ్యుమెంట్ కాలబుల్‌గా కనిపిస్తే :const:`True` ను, లేకపోతే "
+":const:`False` ను రిటర్న్ చేస్తుంది. ఇది ``True`` ను రిటర్న్ చేసినా, కాల్ "
+"విఫలమయ్యే అవకాశం ఇంకా ఉంటుంది, కానీ ఇది ``False`` అయితే, *object* ను కాల్ "
+"చేయడం ఎప్పటికీ విజయవంతం కాదు. క్లాస్‌లు కాలబుల్ అని గమనించండి (ఒక క్లాస్‌ను "
+"కాల్ చేస్తే కొత్త ఇన్‌స్టాన్స్ రిటర్న్ అవుతుంది); ఇన్‌స్టాన్స్‌ల క్లాస్‌కు "
+":meth:`~object.__call__` మెథడ్ ఉంటే ఆ ఇన్‌స్టాన్స్‌లు కాలబుల్."
 
 #: builtins/functions.rst:244
 msgid ""
 "This function was first removed in Python 3.0 and then brought back in Python"
 " 3.2."
 msgstr ""
+"ఈ ఫంక్షన్ మొదట Python 3.0 లో తొలగించబడి, ఆ తర్వాత Python 3.2 లో తిరిగి "
+"తీసుకురాబడింది."
 
 #: builtins/functions.rst:251
 msgid ""
@@ -710,16 +744,22 @@ msgid ""
 "point. For example, ``chr(97)`` returns the string ``'a'``, while "
 "``chr(8364)`` returns the string ``'€'``. This is the inverse of :func:`ord`."
 msgstr ""
+"పేర్కొన్న Unicode కోడ్ పాయింట్ ఉన్న అక్షరాన్ని సూచించే స్ట్రింగ్‌ను రిటర్న్ "
+"చేస్తుంది. ఉదాహరణకు, ``chr(97)`` స్ట్రింగ్ ``'a'`` ను రిటర్న్ చేస్తుంది, అదే "
+"``chr(8364)`` స్ట్రింగ్ ``'€'`` ను రిటర్న్ చేస్తుంది. ఇది :func:`ord` కు "
+"విలోమం (inverse)."
 
 #: builtins/functions.rst:255
 msgid ""
 "The valid range for the argument is from 0 through 1,114,111 (0x10FFFF in "
 "base 16).  :exc:`ValueError` will be raised if it is outside that range."
 msgstr ""
+"ఆర్గ్యుమెంట్‌కు చెల్లుబాటు అయ్యే పరిధి 0 నుండి 1,114,111 వరకు (ఆధారం 16 లో "
+"0x10FFFF). అది ఆ పరిధికి వెలుపల ఉంటే :exc:`ValueError` రైజ్ చేయబడుతుంది."
 
 #: builtins/functions.rst:261
 msgid "Transform a method into a class method."
-msgstr ""
+msgstr "ఒక మెథడ్‌ను క్లాస్ మెథడ్‌గా మారుస్తుంది."
 
 #: builtins/functions.rst:263
 msgid ""
@@ -727,6 +767,9 @@ msgid ""
 " instance method receives the instance. To declare a class method, use this "
 "idiom::"
 msgstr ""
+"ఇన్‌స్టాన్స్ మెథడ్ ఇన్‌స్టాన్స్‌ను స్వీకరించినట్లే, క్లాస్ మెథడ్ క్లాస్‌ను ఒక"
+" అంతర్లీన (implicit) మొదటి ఆర్గ్యుమెంట్‌గా స్వీకరిస్తుంది. క్లాస్ మెథడ్‌ను "
+"డిక్లేర్ చేయడానికి, ఈ పద్ధతిని ఉపయోగించండి::"
 
 #: builtins/functions.rst:267
 msgid ""
@@ -734,12 +777,17 @@ msgid ""
 "    @classmethod\n"
 "    def f(cls, arg1, arg2): ..."
 msgstr ""
+"class C:\n"
+"    @classmethod\n"
+"    def f(cls, arg1, arg2): ..."
 
 #: builtins/functions.rst:271
 msgid ""
 "The ``@classmethod`` form is a function :term:`decorator` -- see "
 ":ref:`function` for details."
 msgstr ""
+"``@classmethod`` రూపం ఒక ఫంక్షన్ :term:`డెకరేటర్ <decorator>` -- వివరాల కోసం "
+":ref:`function` చూడండి."
 
 #: builtins/functions.rst:274
 msgid ""
@@ -748,6 +796,10 @@ msgid ""
 "class. If a class method is called for a derived class, the derived class "
 "object is passed as the implied first argument."
 msgstr ""
+"క్లాస్ మెథడ్‌ను క్లాస్‌పై (``C.f()`` లాగా) గానీ, ఇన్‌స్టాన్స్‌పై (``C().f()``"
+" లాగా) గానీ కాల్ చేయవచ్చు. ఇన్‌స్టాన్స్ యొక్క క్లాస్ తప్ప, ఇన్‌స్టాన్స్ "
+"పట్టించుకోబడదు. డిరైవ్డ్ క్లాస్ కోసం క్లాస్ మెథడ్‌ను కాల్ చేస్తే, డిరైవ్డ్ "
+"క్లాస్ ఆబ్జెక్ట్ అంతర్లీన మొదటి ఆర్గ్యుమెంట్‌గా పంపబడుతుంది."
 
 #: builtins/functions.rst:279
 msgid ""
@@ -755,12 +807,17 @@ msgid ""
 "those, see :func:`staticmethod` in this section. For more information on "
 "class methods, see :ref:`types`."
 msgstr ""
+"క్లాస్ మెథడ్‌లు C++ లేదా Java స్టాటిక్ మెథడ్‌ల కంటే భిన్నమైనవి. మీకు అవి "
+"కావాలంటే, ఈ విభాగంలోని :func:`staticmethod` చూడండి. క్లాస్ మెథడ్‌ల గురించి "
+"మరింత సమాచారం కోసం, :ref:`types` చూడండి."
 
 #: builtins/functions.rst:283
 msgid ""
 "Class methods can now wrap other :term:`descriptors <descriptor>` such as "
 ":func:`property`."
 msgstr ""
+"క్లాస్ మెథడ్‌లు ఇప్పుడు :func:`property` వంటి ఇతర :term:`డిస్క్రిప్టర్‌లను "
+"<descriptor>` ర్యాప్ చేయగలవు."
 
 #: builtins/functions.rst:287
 msgid ""
@@ -769,12 +826,18 @@ msgid ""
 ":attr:`~function.__qualname__`, :attr:`~function.__doc__` and "
 ":attr:`~function.__annotations__`) and have a new ``__wrapped__`` attribute."
 msgstr ""
+"క్లాస్ మెథడ్‌లు ఇప్పుడు మెథడ్ అట్రిబ్యూట్‌లను (:attr:`~function.__module__`, "
+":attr:`~function.__name__`, :attr:`~function.__qualname__`, "
+":attr:`~function.__doc__` మరియు :attr:`~function.__annotations__`) ఇన్‌హెరిట్"
+" చేస్తాయి, వాటికి కొత్త ``__wrapped__`` అట్రిబ్యూట్ కూడా ఉంటుంది."
 
 #: builtins/functions.rst:294
 msgid ""
 "Class methods can no longer wrap other :term:`descriptors <descriptor>` such "
 "as :func:`property`."
 msgstr ""
+"క్లాస్ మెథడ్‌లు ఇకపై :func:`property` వంటి ఇతర :term:`డిస్క్రిప్టర్‌లను "
+"<descriptor>` ర్యాప్ చేయలేవు."
 
 #: builtins/functions.rst:303
 msgid ""
