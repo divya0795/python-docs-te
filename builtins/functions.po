@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-11-09 19:44-0800\n"
+"PO-Revision-Date: 2026-11-09 20:07-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -3067,7 +3067,7 @@ msgstr ""
 
 #: builtins/functions.rst:1602
 msgid "Return the ordinal value of a character."
-msgstr ""
+msgstr "ఒక అక్షరం యొక్క ఆర్డినల్ విలువను రిటర్న్ చేస్తుంది."
 
 #: builtins/functions.rst:1604
 msgid ""
@@ -3076,6 +3076,10 @@ msgid ""
 "``ord('€')`` (Euro sign) returns ``8364``.  This is the inverse of "
 ":func:`chr`."
 msgstr ""
+"ఆర్గ్యుమెంట్ ఒకే అక్షరం ఉన్న స్ట్రింగ్ అయితే, ఆ అక్షరం యొక్క Unicode కోడ్ "
+"పాయింట్‌ను రిటర్న్ చేస్తుంది. ఉదాహరణకు, ``ord('a')`` పూర్ణాంకం ``97`` ను "
+"రిటర్న్ చేస్తుంది, మరియు ``ord('€')`` (యూరో గుర్తు) ``8364`` ను రిటర్న్ "
+"చేస్తుంది. ఇది :func:`chr` కు విలోమం."
 
 #: builtins/functions.rst:1609
 msgid ""
@@ -3083,6 +3087,9 @@ msgid ""
 " return its single byte value. For example, ``ord(b'a')`` returns the integer"
 " ``97``."
 msgstr ""
+"ఆర్గ్యుమెంట్ పొడవు 1 ఉన్న :class:`bytes` లేదా :class:`bytearray` ఆబ్జెక్ట్ "
+"అయితే, దాని ఏకైక బైట్ విలువను రిటర్న్ చేస్తుంది. ఉదాహరణకు, ``ord(b'a')`` "
+"పూర్ణాంకం ``97`` ను రిటర్న్ చేస్తుంది."
 
 #: builtins/functions.rst:1616
 msgid ""
@@ -3091,6 +3098,11 @@ msgid ""
 "mod``). The two-argument form ``pow(base, exp)`` is equivalent to using the "
 "power operator: ``base**exp``."
 msgstr ""
+"*base* ను *exp* ఘాతానికి పెంచిన విలువను రిటర్న్ చేస్తుంది; *mod* ఉంటే, *base*"
+" ను *exp* ఘాతానికి పెంచి, *mod* మాడ్యులో తీసుకున్న విలువను రిటర్న్ చేస్తుంది "
+"(ఇది ``pow(base, exp) % mod`` కంటే మరింత సమర్థవంతంగా గణించబడుతుంది). "
+"రెండు-ఆర్గ్యుమెంట్‌ల రూపం ``pow(base, exp)``, పవర్ ఆపరేటర్ ``base**exp`` ను "
+"ఉపయోగించడానికి సమానం."
 
 #: builtins/functions.rst:1621
 msgid ""
@@ -3106,6 +3118,17 @@ msgid ""
 ":class:`float` with an integral exponent, a float result is delivered. For "
 "example, ``pow(-9, 2.0)`` returns ``81.0``."
 msgstr ""
+"ఆర్గ్యుమెంట్‌లు మిశ్రమ ఆపరాండ్ టైప్‌లు ఉన్న బిల్ట్-ఇన్ న్యూమరిక్ టైప్‌లు "
+"అయినప్పుడు, బైనరీ అంకగణిత ఆపరేటర్‌ల కోర్షన్ (coercion) నియమాలు వర్తిస్తాయి. "
+":class:`int` ఆపరాండ్‌ల కోసం, రెండవ ఆర్గ్యుమెంట్ రుణ సంఖ్య అయితే తప్ప, ఫలితం "
+"(కోర్షన్ తర్వాత) ఆపరాండ్‌ల టైప్‌నే కలిగి ఉంటుంది; ఆ సందర్భంలో, అన్ని "
+"ఆర్గ్యుమెంట్‌లు float కు మార్చబడి, float ఫలితం ఇవ్వబడుతుంది. ఉదాహరణకు, "
+"``pow(10, 2)`` ``100`` ను రిటర్న్ చేస్తుంది, కానీ ``pow(10, -2)`` ``0.01`` ను"
+" రిటర్న్ చేస్తుంది. :class:`int` లేదా :class:`float` టైప్ రుణ ఆధారం మరియు "
+"పూర్ణాంకం కాని ఘాతాంకం కోసం, సంకీర్ణ ఫలితం ఇవ్వబడుతుంది. ఉదాహరణకు, ``pow(-9, "
+"0.5)`` ``3j`` కి దగ్గరగా ఉన్న విలువను రిటర్న్ చేస్తుంది. అయితే, :class:`int` "
+"లేదా :class:`float` టైప్ రుణ ఆధారం మరియు పూర్ణాంక ఘాతాంకం కోసం, float ఫలితం "
+"ఇవ్వబడుతుంది. ఉదాహరణకు, ``pow(-9, 2.0)`` ``81.0`` ను రిటర్న్ చేస్తుంది."
 
 #: builtins/functions.rst:1633
 msgid ""
@@ -3115,10 +3138,15 @@ msgid ""
 "``pow(inv_base, -exp, mod)`` is returned, where *inv_base* is an inverse to "
 "*base* modulo *mod*."
 msgstr ""
+":class:`int` ఆపరాండ్‌లు *base* మరియు *exp* కోసం, *mod* ఉంటే, *mod* కూడా "
+"పూర్ణాంక టైప్ అయి ఉండాలి మరియు *mod* సున్నా కాకూడదు. *mod* ఉండి *exp* రుణ "
+"సంఖ్య అయితే, *base* తప్పనిసరిగా *mod* కు పరస్పర ప్రధానం (relatively prime) "
+"అయి ఉండాలి. ఆ సందర్భంలో, ``pow(inv_base, -exp, mod)`` రిటర్న్ చేయబడుతుంది, "
+"ఇక్కడ *inv_base* అనేది *mod* మాడ్యులో *base* కు విలోమం."
 
 #: builtins/functions.rst:1639
 msgid "Here's an example of computing an inverse for ``38`` modulo ``97``::"
-msgstr ""
+msgstr "``97`` మాడ్యులో ``38`` కు విలోమాన్ని గణించే ఉదాహరణ ఇక్కడ ఉంది::"
 
 #: builtins/functions.rst:1641
 msgid ""
@@ -3127,17 +3155,26 @@ msgid ""
 ">>> 23 * 38 % 97 == 1\n"
 "True"
 msgstr ""
+">>> pow(38, -1, mod=97)\n"
+"23\n"
+">>> 23 * 38 % 97 == 1\n"
+"True"
 
 #: builtins/functions.rst:1646
 msgid ""
 "For :class:`int` operands, the three-argument form of ``pow`` now allows the "
 "second argument to be negative, permitting computation of modular inverses."
 msgstr ""
+":class:`int` ఆపరాండ్‌ల కోసం, ``pow`` యొక్క మూడు-ఆర్గ్యుమెంట్‌ల రూపం ఇప్పుడు "
+"రెండవ ఆర్గ్యుమెంట్ రుణ సంఖ్యగా ఉండటానికి అనుమతిస్తుంది, దీనివల్ల మాడ్యులర్ "
+"విలోమాలను గణించడం సాధ్యమవుతుంది."
 
 #: builtins/functions.rst:1651
 msgid ""
 "Allow keyword arguments.  Formerly, only positional arguments were supported."
 msgstr ""
+"కీవర్డ్ ఆర్గ్యుమెంట్‌లను అనుమతిస్తుంది. గతంలో, పొజిషనల్ ఆర్గ్యుమెంట్‌లు "
+"మాత్రమే సపోర్ట్ చేయబడేవి."
 
 #: builtins/functions.rst:1658
 msgid ""
