@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-11-09 19:24-0800\n"
+"PO-Revision-Date: 2026-11-09 19:44-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -2902,16 +2902,26 @@ msgid ""
 " :mod:`os.open` as *opener* results in functionality similar to passing "
 "``None``)."
 msgstr ""
+"*opener* గా ఒక కాలబుల్‌ను పంపడం ద్వారా కస్టమ్ ఓపెనర్‌ను ఉపయోగించవచ్చు. "
+"అప్పుడు ఫైల్ ఆబ్జెక్ట్ కోసం ఆధారంగా ఉండే ఫైల్ డిస్క్రిప్టర్, (*file*, "
+"*flags*) తో *opener* ను కాల్ చేయడం ద్వారా పొందబడుతుంది. *opener* తప్పనిసరిగా "
+"ఓపెన్‌గా ఉన్న ఫైల్ డిస్క్రిప్టర్‌ను రిటర్న్ చేయాలి (*opener* గా "
+":mod:`os.open` ను పంపితే, ``None`` ను పంపినప్పటి లాంటి పనితీరే వస్తుంది)."
 
 #: builtins/functions.rst:1523
 msgid "The newly created file is :ref:`non-inheritable <fd_inheritance>`."
 msgstr ""
+"కొత్తగా సృష్టించిన ఫైల్ :ref:`నాన్-ఇన్‌హెరిటబుల్‌గా <fd_inheritance>` "
+"ఉంటుంది."
 
 #: builtins/functions.rst:1525
 msgid ""
 "The following example uses the :ref:`dir_fd <dir_fd>` parameter of the "
 ":func:`os.open` function to open a file relative to a given directory::"
 msgstr ""
+"ఇచ్చిన డైరెక్టరీకి సంబంధించి రిలేటివ్‌గా ఒక ఫైల్‌ను తెరవడానికి, కింది ఉదాహరణ "
+":func:`os.open` ఫంక్షన్ యొక్క :ref:`dir_fd <dir_fd>` పారామీటర్‌ను "
+"ఉపయోగిస్తుంది::"
 
 #: builtins/functions.rst:1528
 msgid ""
@@ -2925,6 +2935,15 @@ msgid ""
 "...\n"
 ">>> os.close(dir_fd)  # don't leak a file descriptor"
 msgstr ""
+">>> import os\n"
+">>> dir_fd = os.open('somedir', os.O_RDONLY)\n"
+">>> def opener(path, flags):\n"
+"...     return os.open(path, flags, dir_fd=dir_fd)\n"
+"...\n"
+">>> with open('spamspam.txt', 'w', opener=opener) as f:\n"
+"...     print('This will be written to somedir/spamspam.txt', file=f)\n"
+"...\n"
+">>> os.close(dir_fd)  # don't leak a file descriptor"
 
 #: builtins/functions.rst:1538
 msgid ""
@@ -2940,6 +2959,19 @@ msgid ""
 " disabled, the raw stream, a subclass of :class:`io.RawIOBase`, "
 ":class:`io.FileIO`, is returned."
 msgstr ""
+":func:`open` ఫంక్షన్ రిటర్న్ చేసే :term:`ఫైల్ ఆబ్జెక్ట్ <file object>` యొక్క "
+"టైప్ మోడ్‌పై ఆధారపడి ఉంటుంది. ఫైల్‌ను టెక్స్ట్ మోడ్‌లో (``'w'``, ``'r'``, "
+"``'wt'``, ``'rt'``, మొదలైనవి) తెరవడానికి :func:`open` ను ఉపయోగించినప్పుడు, "
+"అది :class:`io.TextIOBase` యొక్క సబ్‌క్లాస్‌ను (నిర్దిష్టంగా "
+":class:`io.TextIOWrapper`) రిటర్న్ చేస్తుంది. బఫరింగ్‌తో బైనరీ మోడ్‌లో "
+"ఫైల్‌ను తెరవడానికి ఉపయోగించినప్పుడు, రిటర్న్ అయ్యే క్లాస్ "
+":class:`io.BufferedIOBase` యొక్క సబ్‌క్లాస్. కచ్చితమైన క్లాస్ మారుతుంది: రీడ్"
+" బైనరీ మోడ్‌లో, అది :class:`io.BufferedReader` ను రిటర్న్ చేస్తుంది; రైట్ "
+"బైనరీ మరియు అపెండ్ బైనరీ మోడ్‌లలో, అది :class:`io.BufferedWriter` ను రిటర్న్ "
+"చేస్తుంది, మరియు రీడ్/రైట్ మోడ్‌లో, అది :class:`io.BufferedRandom` ను రిటర్న్"
+" చేస్తుంది. బఫరింగ్ నిలిపివేయబడినప్పుడు, రా స్ట్రీమ్, అంటే "
+":class:`io.RawIOBase` యొక్క సబ్‌క్లాస్ అయిన :class:`io.FileIO`, రిటర్న్ "
+"చేయబడుతుంది."
 
 #: builtins/functions.rst:1559
 msgid ""
@@ -2947,40 +2979,50 @@ msgid ""
 "(where :func:`open` is declared), :mod:`os`, :mod:`os.path`, :mod:`tempfile`,"
 " and :mod:`shutil`."
 msgstr ""
+":mod:`fileinput`, :mod:`io` (ఇక్కడ :func:`open` డిక్లేర్ చేయబడింది), "
+":mod:`os`, :mod:`os.path`, :mod:`tempfile`, మరియు :mod:`shutil` వంటి ఫైల్ "
+"హ్యాండ్లింగ్ మాడ్యూల్‌లను కూడా చూడండి."
 
 #: builtins/functions.rst:1563
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``open`` with arguments ``path``, "
 "``mode``, ``flags``."
 msgstr ""
+"``path``, ``mode``, ``flags`` ఆర్గ్యుమెంట్‌లతో ``open`` అనే :ref:`ఆడిటింగ్ "
+"ఈవెంట్‌ను <auditing>` రైజ్ చేస్తుంది."
 
 #: builtins/functions.rst:1565
 msgid ""
 "The ``mode`` and ``flags`` arguments may have been modified or inferred from "
 "the original call."
 msgstr ""
+"``mode`` మరియు ``flags`` ఆర్గ్యుమెంట్‌లు అసలు కాల్ నుండి మార్చబడి ఉండవచ్చు "
+"లేదా ఊహించబడి (inferred) ఉండవచ్చు."
 
 #: builtins/functions.rst:1570
 msgid "The *opener* parameter was added."
-msgstr ""
+msgstr "*opener* పారామీటర్ జోడించబడింది."
 
 #: builtins/functions.rst:1571
 msgid "The ``'x'`` mode was added."
-msgstr ""
+msgstr "``'x'`` మోడ్ జోడించబడింది."
 
 #: builtins/functions.rst:1572
 msgid ":exc:`IOError` used to be raised, it is now an alias of :exc:`OSError`."
 msgstr ""
+"గతంలో :exc:`IOError` రైజ్ అయ్యేది, ఇప్పుడు అది :exc:`OSError` కు అలియాస్."
 
 #: builtins/functions.rst:1573
 msgid ""
 ":exc:`FileExistsError` is now raised if the file opened in exclusive creation"
 " mode (``'x'``) already exists."
 msgstr ""
+"ఎక్స్‌క్లూజివ్ సృష్టి మోడ్‌లో (``'x'``) తెరిచిన ఫైల్ ఇప్పటికే ఉంటే, ఇప్పుడు "
+":exc:`FileExistsError` రైజ్ అవుతుంది."
 
 #: builtins/functions.rst:1578
 msgid "The file is now non-inheritable."
-msgstr ""
+msgstr "ఫైల్ ఇప్పుడు నాన్-ఇన్‌హెరిటబుల్."
 
 #: builtins/functions.rst:1582
 msgid ""
@@ -2988,30 +3030,40 @@ msgid ""
 "exception, the function now retries the system call instead of raising an "
 ":exc:`InterruptedError` exception (see :pep:`475` for the rationale)."
 msgstr ""
+"సిస్టమ్ కాల్ అంతరాయానికి గురై, సిగ్నల్ హ్యాండ్లర్ ఎక్సెప్షన్‌ను రైజ్ "
+"చేయకపోతే, ఫంక్షన్ ఇప్పుడు :exc:`InterruptedError` ఎక్సెప్షన్‌ను రైజ్ "
+"చేయడానికి బదులుగా సిస్టమ్ కాల్‌ను మళ్లీ ప్రయత్నిస్తుంది (కారణం కోసం "
+":pep:`475` చూడండి)."
 
 #: builtins/functions.rst:1585
 msgid "The ``'namereplace'`` error handler was added."
-msgstr ""
+msgstr "``'namereplace'`` లోప హ్యాండ్లర్ జోడించబడింది."
 
 #: builtins/functions.rst:1589
 msgid "Support added to accept objects implementing :class:`os.PathLike`."
 msgstr ""
+":class:`os.PathLike` ను రూపొందించే ఆబ్జెక్ట్‌లను స్వీకరించే సపోర్ట్ "
+"జోడించబడింది."
 
 #: builtins/functions.rst:1590
 msgid ""
 "On Windows, opening a console buffer may return a subclass of "
 ":class:`io.RawIOBase` other than :class:`io.FileIO`."
 msgstr ""
+"Windows లో, కన్సోల్ బఫర్‌ను తెరిస్తే :class:`io.FileIO` కాకుండా "
+":class:`io.RawIOBase` యొక్క వేరే సబ్‌క్లాస్ రిటర్న్ కావచ్చు."
 
 #: builtins/functions.rst:1593
 msgid "The ``'U'`` mode has been removed."
-msgstr ""
+msgstr "``'U'`` మోడ్ తొలగించబడింది."
 
 #: builtins/functions.rst:1596
 msgid ""
 "UTF-8 is now the default encoding, instead of the platform-dependent locale "
 "encoding (:pep:`686`)."
 msgstr ""
+"ప్లాట్‌ఫామ్‌పై ఆధారపడే లోకేల్ ఎన్‌కోడింగ్‌కు బదులుగా, ఇప్పుడు UTF-8 డిఫాల్ట్ "
+"ఎన్‌కోడింగ్ (:pep:`686`)."
 
 #: builtins/functions.rst:1602
 msgid "Return the ordinal value of a character."
