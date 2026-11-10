@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-11-09 20:19-0800\n"
+"PO-Revision-Date: 2026-11-09 20:34-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -3522,6 +3522,9 @@ msgid ""
 "*iterable*.  :class:`set` is a built-in class.  See also :ref:`types-set` for"
 " documentation about this class."
 msgstr ""
+"ఒక కొత్త :class:`set` ఆబ్జెక్ట్‌ను రిటర్న్ చేస్తుంది, ఐచ్ఛికంగా *iterable* "
+"నుండి తీసుకున్న ఎలిమెంట్‌లతో. :class:`set` ఒక బిల్ట్-ఇన్ క్లాస్. ఈ క్లాస్ "
+"గురించిన డాక్యుమెంటేషన్ కోసం :ref:`types-set` కూడా చూడండి."
 
 #: builtins/functions.rst:1846
 msgid ""
@@ -3529,6 +3532,9 @@ msgid ""
 ":class:`tuple`, and :class:`dict` classes, as well as the :mod:`collections` "
 "module."
 msgstr ""
+"ఇతర కంటెయినర్‌ల కోసం బిల్ట్-ఇన్ :class:`frozenset`, :class:`list`, "
+":class:`tuple`, మరియు :class:`dict` క్లాస్‌లను, అలాగే :mod:`collections` "
+"మాడ్యూల్‌ను చూడండి."
 
 #: builtins/functions.rst:1853
 msgid ""
@@ -3538,6 +3544,11 @@ msgid ""
 "the object allows it.  For example, ``setattr(x, 'foobar', 123)`` is "
 "equivalent to ``x.foobar = 123``."
 msgstr ""
+"ఇది :func:`getattr` కు ప్రతిరూపం. ఆర్గ్యుమెంట్‌లు ఒక ఆబ్జెక్ట్, ఒక స్ట్రింగ్,"
+" మరియు ఒక ఇష్టానుసార విలువ. స్ట్రింగ్ ఇప్పటికే ఉన్న అట్రిబ్యూట్ పేరును గానీ "
+"కొత్త అట్రిబ్యూట్ పేరును గానీ సూచించవచ్చు. ఆబ్జెక్ట్ అనుమతిస్తే, ఫంక్షన్ ఆ "
+"విలువను అట్రిబ్యూట్‌కు కేటాయిస్తుంది. ఉదాహరణకు, ``setattr(x, 'foobar', 123)``"
+" అనేది ``x.foobar = 123`` కు సమానం."
 
 #: builtins/functions.rst:1859
 msgid ""
@@ -3547,6 +3558,11 @@ msgid ""
 "attribute whose name is not an identifier will not be accessible using the "
 "dot notation, but is accessible through :func:`getattr` etc.."
 msgstr ""
+"ఆబ్జెక్ట్ దాన్ని తప్పనిసరి చేయాలని ఎంచుకుంటే తప్ప (ఉదాహరణకు, కస్టమ్ "
+":meth:`~object.__getattribute__` లో లేదా :attr:`~object.__slots__` ద్వారా), "
+"*name* అనేది :ref:`identifiers` లో నిర్వచించిన Python ఐడెంటిఫైయర్ కావాల్సిన "
+"అవసరం లేదు. పేరు ఐడెంటిఫైయర్ కాని అట్రిబ్యూట్‌ను డాట్ నొటేషన్ ఉపయోగించి "
+"యాక్సెస్ చేయలేరు, కానీ :func:`getattr` మొదలైనవాటి ద్వారా యాక్సెస్ చేయవచ్చు."
 
 #: builtins/functions.rst:1867
 msgid ""
@@ -3554,12 +3570,19 @@ msgid ""
 "compilation time, one must manually mangle a private attribute's (attributes "
 "with two leading underscores) name in order to set it with :func:`setattr`."
 msgstr ""
+":ref:`ప్రైవేట్ నేమ్ మాంగ్లింగ్ <private-name-mangling>` కంపైలేషన్ సమయంలో "
+"జరుగుతుంది కాబట్టి, ఒక ప్రైవేట్ అట్రిబ్యూట్‌ను (రెండు ముందు అండర్‌స్కోర్‌లు "
+"ఉన్న అట్రిబ్యూట్‌లు) :func:`setattr` తో సెట్ చేయాలంటే, దాని పేరును "
+"మాన్యువల్‌గా మాంగిల్ చేయాలి."
 
 #: builtins/functions.rst:1875
 msgid ""
 "Return a new unique sentinel object.  *name* must be a :class:`str`, and is "
 "used by default as the returned object's representation::"
 msgstr ""
+"ఒక కొత్త, ఏకైక (unique) సెంటినెల్ ఆబ్జెక్ట్‌ను రిటర్న్ చేస్తుంది. *name* "
+"తప్పనిసరిగా :class:`str` అయి ఉండాలి, అది డిఫాల్ట్‌గా రిటర్న్ చేయబడిన "
+"ఆబ్జెక్ట్ యొక్క రిప్రజెంటేషన్‌గా ఉపయోగించబడుతుంది::"
 
 #: builtins/functions.rst:1878
 msgid ""
@@ -3567,12 +3590,17 @@ msgid ""
 ">>> MISSING\n"
 "MISSING"
 msgstr ""
+">>> MISSING = sentinel(\"MISSING\")\n"
+">>> MISSING\n"
+"MISSING"
 
 #: builtins/functions.rst:1882
 msgid ""
 "The optional *repr* argument can be used to specify a different "
 "representation::"
 msgstr ""
+"వేరే రిప్రజెంటేషన్‌ను పేర్కొనడానికి ఐచ్ఛిక *repr* ఆర్గ్యుమెంట్‌ను "
+"ఉపయోగించవచ్చు::"
 
 #: builtins/functions.rst:1884
 msgid ""
@@ -3580,26 +3608,36 @@ msgid ""
 ">>> MISSING\n"
 "<MISSING>"
 msgstr ""
+">>> MISSING = sentinel(\"MISSING\", repr=\"<MISSING>\")\n"
+">>> MISSING\n"
+"<MISSING>"
 
 #: builtins/functions.rst:1888
 msgid ""
 "Sentinel objects are true and compare equal only to themselves.  They are "
 "intended to be compared with the :keyword:`is` operator."
 msgstr ""
+"సెంటినెల్ ఆబ్జెక్ట్‌లు సత్యం, మరియు పోల్చినప్పుడు అవి తమకు తామే మాత్రమే సమానం"
+" అవుతాయి. వాటిని :keyword:`is` ఆపరేటర్‌తో పోల్చడానికి ఉద్దేశించారు."
 
 #: builtins/functions.rst:1891
 msgid "``sentinel`` does not support subclassing."
-msgstr ""
+msgstr "``sentinel`` సబ్‌క్లాసింగ్‌ను సపోర్ట్ చేయదు."
 
 #: builtins/functions.rst:1893
 msgid "Shallow and deep copies of a sentinel object return the object itself."
 msgstr ""
+"సెంటినెల్ ఆబ్జెక్ట్ యొక్క షాలో మరియు డీప్ కాపీలు ఆ ఆబ్జెక్ట్‌నే రిటర్న్ "
+"చేస్తాయి."
 
 #: builtins/functions.rst:1895
 msgid ""
 "Sentinels are conventionally assigned to a variable with a matching name. "
 "Sentinels defined in this way can be used in :term:`type hints <type hint>`::"
 msgstr ""
+"సెంటినెల్‌లను సంప్రదాయంగా సరిపోలే పేరు ఉన్న వేరియబుల్‌కు కేటాయిస్తారు. ఈ "
+"విధంగా నిర్వచించిన సెంటినెల్‌లను :term:`టైప్ హింట్‌లలో <type hint>` "
+"ఉపయోగించవచ్చు::"
 
 #: builtins/functions.rst:1898
 msgid ""
@@ -3608,12 +3646,18 @@ msgid ""
 "def next_value(default: int | MISSING = MISSING):\n"
 "    ..."
 msgstr ""
+"MISSING = sentinel(\"MISSING\")\n"
+"\n"
+"def next_value(default: int | MISSING = MISSING):\n"
+"    ..."
 
 #: builtins/functions.rst:1903
 msgid ""
 "Sentinel objects support the :ref:`| <bitwise>` operator for use in type "
 "expressions."
 msgstr ""
+"టైప్ ఎక్స్‌ప్రెషన్‌లలో ఉపయోగించడానికి సెంటినెల్ ఆబ్జెక్ట్‌లు :ref:`| "
+"<bitwise>` ఆపరేటర్‌ను సపోర్ట్ చేస్తాయి."
 
 #: builtins/functions.rst:1905
 msgid ""
@@ -3624,6 +3668,12 @@ msgid ""
 "defined in a function scope, are not picklable. The identity of the sentinel "
 "is preserved after pickling::"
 msgstr ""
+"మాడ్యూల్ యొక్క గ్లోబల్ స్కోప్‌లో సెంటినెల్ పేరుకు సరిపోలే పేరుతో ఉంచిన "
+"సెంటినెల్ ఆబ్జెక్ట్‌లకు, మరియు సెంటినెల్ యొక్క :term:`క్వాలిఫైడ్ నేమ్‌కు "
+"<qualified name>` సరిపోలే పేరుతో క్లాస్ స్కోప్‌లలో ఉంచిన సెంటినెల్‌లకు "
+":mod:`పికిలింగ్ <pickle>` సపోర్ట్ చేయబడుతుంది. ఫంక్షన్ స్కోప్‌లో "
+"నిర్వచించినవి వంటి ఇతర సెంటినెల్‌లను పికిల్ చేయలేరు. పికిలింగ్ తర్వాత "
+"సెంటినెల్ యొక్క ఐడెంటిటీ అలాగే ఉంటుంది::"
 
 #: builtins/functions.rst:1912
 msgid ""
@@ -3638,20 +3688,31 @@ msgid ""
 "\n"
 "assert pickle.loads(pickle.dumps(Cls.PICKLABLE)) is Cls.PICKLABLE"
 msgstr ""
+"import pickle\n"
+"\n"
+"PICKLABLE = sentinel(\"PICKLABLE\")\n"
+"\n"
+"assert pickle.loads(pickle.dumps(PICKLABLE)) is PICKLABLE\n"
+"\n"
+"class Cls:\n"
+"    PICKLABLE = sentinel(\"Cls.PICKLABLE\")\n"
+"\n"
+"assert pickle.loads(pickle.dumps(Cls.PICKLABLE)) is Cls.PICKLABLE"
 
 #: builtins/functions.rst:1923
 msgid "Sentinel objects have the following attributes:"
-msgstr ""
+msgstr "సెంటినెల్ ఆబ్జెక్ట్‌లకు ఈ కింది అట్రిబ్యూట్‌లు ఉంటాయి:"
 
 #: builtins/functions.rst:1927
 msgid "The sentinel's name."
-msgstr ""
+msgstr "సెంటినెల్ పేరు."
 
 #: builtins/functions.rst:1931
 msgid ""
 "The name of the module where the sentinel was created. This attribute is "
 "writable."
 msgstr ""
+"సెంటినెల్ సృష్టించబడిన మాడ్యూల్ పేరు. ఈ అట్రిబ్యూట్‌లో రాయవచ్చు (writable)."
 
 #: builtins/functions.rst:1939
 msgid ""
@@ -3659,18 +3720,26 @@ msgid ""
 "``range(start, stop, step)``.  The *start* and *step* arguments default to "
 "``None``."
 msgstr ""
+"``range(start, stop, step)`` పేర్కొనే ఇండెక్స్‌ల సెట్‌ను సూచించే "
+":term:`స్లైస్ <slice>` ఆబ్జెక్ట్‌ను రిటర్న్ చేస్తుంది. *start* మరియు *step* "
+"ఆర్గ్యుమెంట్‌ల డిఫాల్ట్ విలువ ``None``."
 
 #: builtins/functions.rst:1943
 msgid ""
 "Slice objects are also generated when :ref:`slicing syntax <slicings>` is "
 "used.  For example: ``a[start:stop:step]`` or ``a[start:stop, i]``."
 msgstr ""
+":ref:`స్లైసింగ్ సింటాక్స్ <slicings>` ఉపయోగించినప్పుడు కూడా స్లైస్ "
+"ఆబ్జెక్ట్‌లు సృష్టించబడతాయి. ఉదాహరణకు: ``a[start:stop:step]`` లేదా "
+"``a[start:stop, i]``."
 
 #: builtins/functions.rst:1946
 msgid ""
 "See :func:`itertools.islice` for an alternate version that returns an "
 ":term:`iterator`."
 msgstr ""
+":term:`ఇటరేటర్‌ను <iterator>` రిటర్న్ చేసే ప్రత్యామ్నాయ వెర్షన్ కోసం "
+":func:`itertools.islice` చూడండి."
 
 #: builtins/functions.rst:1953
 msgid ""
@@ -3678,12 +3747,18 @@ msgid ""
 "  They have no other explicit functionality; however, they are used by NumPy "
 "and other third-party packages."
 msgstr ""
+"ఈ రీడ్-ఓన్లీ అట్రిబ్యూట్‌లు ఆర్గ్యుమెంట్ విలువలకు (లేదా వాటి డిఫాల్ట్‌కు) "
+"సెట్ చేయబడతాయి. వాటికి వేరే స్పష్టమైన కార్యాచరణ ఏదీ లేదు; అయితే, NumPy మరియు "
+"ఇతర థర్డ్-పార్టీ ప్యాకేజీలు వాటిని ఉపయోగిస్తాయి."
 
 #: builtins/functions.rst:1957
 msgid ""
 "Slice objects are now :term:`hashable` (provided :attr:`~slice.start`, "
 ":attr:`~slice.stop`, and :attr:`~slice.step` are hashable)."
 msgstr ""
+"స్లైస్ ఆబ్జెక్ట్‌లు ఇప్పుడు :term:`హ్యాషబుల్ <hashable>` "
+"(:attr:`~slice.start`, :attr:`~slice.stop`, మరియు :attr:`~slice.step` "
+"హ్యాషబుల్ అయితే)."
 
 #: builtins/functions.rst:1963
 msgid "Return a new sorted list from the items in *iterable*."
