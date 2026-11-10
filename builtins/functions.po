@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-11-07 11:14-0800\n"
+"PO-Revision-Date: 2026-11-09 19:01-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -2469,6 +2469,8 @@ msgid ""
 "Return the largest item in an iterable or the largest of two or more "
 "arguments."
 msgstr ""
+"ఒక ఇటరబుల్‌లోని అతి పెద్ద ఐటెమ్‌ను, లేదా రెండు లేదా అంతకంటే ఎక్కువ "
+"ఆర్గ్యుమెంట్‌లలో అతి పెద్దదాన్ని రిటర్న్ చేస్తుంది."
 
 #: builtins/functions.rst:1286
 msgid ""
@@ -2476,6 +2478,10 @@ msgid ""
 " largest item in the iterable is returned.  If two or more positional "
 "arguments are provided, the largest of the positional arguments is returned."
 msgstr ""
+"ఒక పొజిషనల్ ఆర్గ్యుమెంట్ ఇస్తే, అది ఒక :term:`ఇటరబుల్ <iterable>` అయి ఉండాలి."
+" ఇటరబుల్‌లోని అతి పెద్ద ఐటెమ్ రిటర్న్ చేయబడుతుంది. రెండు లేదా అంతకంటే ఎక్కువ "
+"పొజిషనల్ ఆర్గ్యుమెంట్‌లు ఇస్తే, పొజిషనల్ ఆర్గ్యుమెంట్‌లలో అతి పెద్దది రిటర్న్"
+" చేయబడుతుంది."
 
 #: builtins/functions.rst:1291 builtins/functions.rst:1329
 msgid ""
@@ -2485,6 +2491,11 @@ msgid ""
 "empty. If the iterable is empty and *default* is not provided, a "
 ":exc:`ValueError` is raised."
 msgstr ""
+"రెండు ఐచ్ఛిక కీవర్డ్-మాత్రమే ఆర్గ్యుమెంట్‌లు ఉన్నాయి. :meth:`list.sort` కోసం "
+"ఉపయోగించే లాంటి ఒక-ఆర్గ్యుమెంట్ ఆర్డరింగ్ ఫంక్షన్‌ను *key* ఆర్గ్యుమెంట్ "
+"నిర్దేశిస్తుంది. ఇచ్చిన ఇటరబుల్ ఖాళీగా ఉంటే రిటర్న్ చేయాల్సిన ఆబ్జెక్ట్‌ను "
+"*default* ఆర్గ్యుమెంట్ నిర్దేశిస్తుంది. ఇటరబుల్ ఖాళీగా ఉండి *default* "
+"ఇవ్వకపోతే, :exc:`ValueError` రైజ్ అవుతుంది."
 
 #: builtins/functions.rst:1297
 msgid ""
@@ -2493,26 +2504,34 @@ msgid ""
 "such as ``sorted(iterable, key=keyfunc, reverse=True)[0]`` and "
 "``heapq.nlargest(1, iterable, key=keyfunc)``."
 msgstr ""
+"అనేక ఐటెమ్‌లు గరిష్ఠంగా ఉంటే, ఫంక్షన్ మొదట ఎదురైన దాన్ని రిటర్న్ చేస్తుంది. "
+"ఇది ``sorted(iterable, key=keyfunc, reverse=True)[0]`` మరియు "
+"``heapq.nlargest(1, iterable, key=keyfunc)`` వంటి, సార్ట్ స్థిరత్వాన్ని (sort"
+" stability) కాపాడే ఇతర టూల్‌లతో సుసంగతంగా ఉంటుంది."
 
 #: builtins/functions.rst:1302 builtins/functions.rst:1340
 msgid "Added the *default* keyword-only parameter."
-msgstr ""
+msgstr "*default* కీవర్డ్-మాత్రమే పారామీటర్ జోడించబడింది."
 
 #: builtins/functions.rst:1305 builtins/functions.rst:1343
 msgid "The *key* can be ``None``."
-msgstr ""
+msgstr "*key* ``None`` కావచ్చు."
 
 #: builtins/functions.rst:1313
 msgid ""
 "Return a \"memory view\" object created from the given argument.  See "
 ":ref:`typememoryview` for more information."
 msgstr ""
+"ఇచ్చిన ఆర్గ్యుమెంట్ నుండి సృష్టించిన \"memory view\" ఆబ్జెక్ట్‌ను రిటర్న్ "
+"చేస్తుంది. మరింత సమాచారం కోసం :ref:`typememoryview` చూడండి."
 
 #: builtins/functions.rst:1321
 msgid ""
 "Return the smallest item in an iterable or the smallest of two or more "
 "arguments."
 msgstr ""
+"ఒక ఇటరబుల్‌లోని అతి చిన్న ఐటెమ్‌ను, లేదా రెండు లేదా అంతకంటే ఎక్కువ "
+"ఆర్గ్యుమెంట్‌లలో అతి చిన్నదాన్ని రిటర్న్ చేస్తుంది."
 
 #: builtins/functions.rst:1324
 msgid ""
@@ -2520,6 +2539,10 @@ msgid ""
 " smallest item in the iterable is returned.  If two or more positional "
 "arguments are provided, the smallest of the positional arguments is returned."
 msgstr ""
+"ఒక పొజిషనల్ ఆర్గ్యుమెంట్ ఇస్తే, అది ఒక :term:`ఇటరబుల్ <iterable>` అయి ఉండాలి."
+" ఇటరబుల్‌లోని అతి చిన్న ఐటెమ్ రిటర్న్ చేయబడుతుంది. రెండు లేదా అంతకంటే ఎక్కువ "
+"పొజిషనల్ ఆర్గ్యుమెంట్‌లు ఇస్తే, పొజిషనల్ ఆర్గ్యుమెంట్‌లలో అతి చిన్నది రిటర్న్"
+" చేయబడుతుంది."
 
 #: builtins/functions.rst:1335
 msgid ""
@@ -2528,6 +2551,10 @@ msgid ""
 "such as ``sorted(iterable, key=keyfunc)[0]`` and ``heapq.nsmallest(1, "
 "iterable, key=keyfunc)``."
 msgstr ""
+"అనేక ఐటెమ్‌లు కనిష్ఠంగా ఉంటే, ఫంక్షన్ మొదట ఎదురైన దాన్ని రిటర్న్ చేస్తుంది. "
+"ఇది ``sorted(iterable, key=keyfunc)[0]`` మరియు ``heapq.nsmallest(1, iterable,"
+" key=keyfunc)`` వంటి, సార్ట్ స్థిరత్వాన్ని కాపాడే ఇతర టూల్‌లతో సుసంగతంగా "
+"ఉంటుంది."
 
 #: builtins/functions.rst:1350
 msgid ""
@@ -2535,6 +2562,10 @@ msgid ""
 ":meth:`~iterator.__next__` method.  If *default* is given, it is returned if "
 "the iterator is :term:`exhausted`, otherwise :exc:`StopIteration` is raised."
 msgstr ""
+":term:`ఇటరేటర్ <iterator>` యొక్క :meth:`~iterator.__next__` మెథడ్‌ను కాల్ "
+"చేయడం ద్వారా దాని నుండి తదుపరి ఐటెమ్‌ను పొందుతుంది. *default* ఇచ్చినట్లయితే, "
+"ఇటరేటర్ :term:`అయిపోయినప్పుడు <exhausted>` అది రిటర్న్ చేయబడుతుంది, లేకపోతే "
+":exc:`StopIteration` రైజ్ అవుతుంది."
 
 #: builtins/functions.rst:1357
 msgid ""
@@ -2543,12 +2574,19 @@ msgid ""
 "it returns a new featureless object. The constructor does not accept any "
 "arguments."
 msgstr ""
+"ఇది మిగతా అన్ని క్లాస్‌లకు అంతిమ బేస్ క్లాస్. Python క్లాస్‌ల అన్ని "
+"ఇన్‌స్టాన్స్‌లకు సాధారణమైన మెథడ్‌లు ఇందులో ఉన్నాయి. కన్‌స్ట్రక్టర్‌ను కాల్ "
+"చేసినప్పుడు, అది ఎలాంటి ఫీచర్‌లూ లేని కొత్త ఆబ్జెక్ట్‌ను రిటర్న్ చేస్తుంది. "
+"కన్‌స్ట్రక్టర్ ఎలాంటి ఆర్గ్యుమెంట్‌లనూ స్వీకరించదు."
 
 #: builtins/functions.rst:1364
 msgid ""
 ":class:`object` instances do *not* have :attr:`~object.__dict__` attributes, "
 "so you can't assign arbitrary attributes to an instance of :class:`object`."
 msgstr ""
+":class:`object` ఇన్‌స్టాన్స్‌లకు :attr:`~object.__dict__` అట్రిబ్యూట్‌లు "
+"*ఉండవు*, కాబట్టి :class:`object` యొక్క ఇన్‌స్టాన్స్‌కు మీరు ఇష్టానుసార "
+"అట్రిబ్యూట్‌లను అసైన్ చేయలేరు."
 
 #: builtins/functions.rst:1371
 msgid ""
@@ -2557,12 +2595,18 @@ msgid ""
 ":class:`int` object, it has to define an :meth:`~object.__index__` method "
 "that returns an integer. For example:"
 msgstr ""
+"ఒక పూర్ణాంక సంఖ్యను \"0o\" ప్రిఫిక్స్ ఉన్న ఆక్టల్ స్ట్రింగ్‌గా మారుస్తుంది. "
+"ఫలితం చెల్లుబాటు అయ్యే Python ఎక్స్‌ప్రెషన్. *integer* ఒక Python :class:`int`"
+" ఆబ్జెక్ట్ కాకపోతే, అది పూర్ణాంకాన్ని రిటర్న్ చేసే :meth:`~object.__index__` "
+"మెథడ్‌ను నిర్వచించాలి. ఉదాహరణకు:"
 
 #: builtins/functions.rst:1381
 msgid ""
 "If you want to convert an integer number to an octal string either with the "
 "prefix \"0o\" or not, you can use either of the following ways."
 msgstr ""
+"మీరు ఒక పూర్ణాంక సంఖ్యను \"0o\" ప్రిఫిక్స్‌తో లేదా అది లేకుండా ఆక్టల్ "
+"స్ట్రింగ్‌గా మార్చాలనుకుంటే, కింది మార్గాల్లో దేన్నైనా ఉపయోగించవచ్చు."
 
 #: builtins/functions.rst:1398
 msgid ""
