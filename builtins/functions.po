@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-11-09 19:01-0800\n"
+"PO-Revision-Date: 2026-11-09 19:24-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -2614,6 +2614,9 @@ msgid ""
 "cannot be opened, an :exc:`OSError` is raised. See :ref:`tut-files` for more "
 "examples of how to use this function."
 msgstr ""
+"*file* ను తెరిచి, సంబంధిత :term:`ఫైల్ ఆబ్జెక్ట్‌ను <file object>` రిటర్న్ "
+"చేస్తుంది. ఫైల్‌ను తెరవలేకపోతే, :exc:`OSError` రైజ్ అవుతుంది. ఈ ఫంక్షన్‌ను "
+"ఎలా ఉపయోగించాలో మరిన్ని ఉదాహరణల కోసం :ref:`tut-files` చూడండి."
 
 #: builtins/functions.rst:1402
 msgid ""
@@ -2623,6 +2626,12 @@ msgid ""
 "given, it is closed when the returned I/O object is closed unless *closefd* "
 "is set to ``False``.)"
 msgstr ""
+"*file* అనేది తెరవాల్సిన ఫైల్ యొక్క పాత్‌నేమ్‌ను (అబ్సొల్యూట్, లేదా ప్రస్తుత "
+"వర్కింగ్ డైరెక్టరీకి సంబంధించి రిలేటివ్) ఇచ్చే :term:`పాత్ లాంటి ఆబ్జెక్ట్ "
+"<path-like object>`, లేదా ర్యాప్ చేయాల్సిన ఫైల్ యొక్క పూర్ణాంక ఫైల్ "
+"డిస్క్రిప్టర్. (ఫైల్ డిస్క్రిప్టర్ ఇచ్చినట్లయితే, *closefd* ను ``False`` గా "
+"సెట్ చేస్తే తప్ప, రిటర్న్ అయిన I/O ఆబ్జెక్ట్ క్లోజ్ అయినప్పుడు అది కూడా "
+"క్లోజ్ అవుతుంది.)"
 
 #: builtins/functions.rst:1408
 msgid ""
@@ -2637,70 +2646,81 @@ msgid ""
 "the current locale encoding. (For reading and writing raw bytes use binary "
 "mode and leave *encoding* unspecified.)  The available modes are:"
 msgstr ""
+"*mode* అనేది ఫైల్‌ను ఏ మోడ్‌లో తెరవాలో నిర్దేశించే ఐచ్ఛిక స్ట్రింగ్. దీని "
+"డిఫాల్ట్ ``'r'``, అంటే టెక్స్ట్ మోడ్‌లో చదవడానికి తెరవడం. ఇతర సాధారణ విలువలు:"
+" రాయడానికి ``'w'`` (ఫైల్ ఇప్పటికే ఉంటే దాన్ని కత్తిరిస్తుంది), ఎక్స్‌క్లూజివ్"
+" సృష్టి (exclusive creation) కోసం ``'x'``, మరియు అపెండ్ చేయడానికి ``'a'`` "
+"(దీని అర్థం, *కొన్ని* Unix సిస్టమ్‌లలో, ప్రస్తుత సీక్ స్థానంతో సంబంధం లేకుండా"
+" రాసే డేటా *అంతా* ఫైల్ చివరికి అపెండ్ అవుతుంది). టెక్స్ట్ మోడ్‌లో, *encoding*"
+" నిర్దేశించకపోతే, డిఫాల్ట్‌గా UTF-8 ఉపయోగించబడుతుంది; :ref:`Python UTF-8 మోడ్"
+" <utf8-mode>` నిలిపివేయబడి ఉంటే, ప్రస్తుత లోకేల్ ఎన్‌కోడింగ్‌ను పొందడానికి "
+":func:`locale.getencoding` కాల్ చేయబడుతుంది. (రా బైట్‌లను చదవడానికి, "
+"రాయడానికి బైనరీ మోడ్‌ను ఉపయోగించండి, *encoding* ను నిర్దేశించకుండా "
+"వదిలేయండి.) అందుబాటులో ఉన్న మోడ్‌లు:"
 
 #: builtins/functions.rst:1426
 msgid "Character"
-msgstr ""
+msgstr "అక్షరం"
 
 #: builtins/functions.rst:1426
 msgid "Meaning"
-msgstr ""
+msgstr "అర్థం"
 
 #: builtins/functions.rst:1428
 msgid "``'r'``"
-msgstr ""
+msgstr "``'r'``"
 
 #: builtins/functions.rst:1428
 msgid "open for reading (default)"
-msgstr ""
+msgstr "చదవడానికి తెరవడం (డిఫాల్ట్)"
 
 #: builtins/functions.rst:1429
 msgid "``'w'``"
-msgstr ""
+msgstr "``'w'``"
 
 #: builtins/functions.rst:1429
 msgid "open for writing, truncating the file first"
-msgstr ""
+msgstr "రాయడానికి తెరవడం, ముందుగా ఫైల్‌ను కత్తిరిస్తుంది"
 
 #: builtins/functions.rst:1430
 msgid "``'x'``"
-msgstr ""
+msgstr "``'x'``"
 
 #: builtins/functions.rst:1430
 msgid "open for exclusive creation, failing if the file already exists"
-msgstr ""
+msgstr "ఎక్స్‌క్లూజివ్ సృష్టి కోసం తెరవడం, ఫైల్ ఇప్పటికే ఉంటే విఫలమవుతుంది"
 
 #: builtins/functions.rst:1431
 msgid "``'a'``"
-msgstr ""
+msgstr "``'a'``"
 
 #: builtins/functions.rst:1431
 msgid "open for writing, appending to the end of file if it exists"
-msgstr ""
+msgstr "రాయడానికి తెరవడం, ఫైల్ ఉంటే దాని చివరికి అపెండ్ చేస్తుంది"
 
 #: builtins/functions.rst:1432
 msgid "``'b'``"
-msgstr ""
+msgstr "``'b'``"
 
 #: builtins/functions.rst:1432 builtins/functions.rst:1550
 msgid "binary mode"
-msgstr ""
+msgstr "బైనరీ మోడ్"
 
 #: builtins/functions.rst:1433
 msgid "``'t'``"
-msgstr ""
+msgstr "``'t'``"
 
 #: builtins/functions.rst:1433
 msgid "text mode (default)"
-msgstr ""
+msgstr "టెక్స్ట్ మోడ్ (డిఫాల్ట్)"
 
 #: builtins/functions.rst:1434
 msgid "``'+'``"
-msgstr ""
+msgstr "``'+'``"
 
 #: builtins/functions.rst:1434
 msgid "open for updating (reading and writing)"
-msgstr ""
+msgstr "అప్‌డేట్ చేయడానికి తెరవడం (చదవడం మరియు రాయడం)"
 
 #: builtins/functions.rst:1437
 msgid ""
@@ -2708,6 +2728,9 @@ msgid ""
 "Modes ``'w+'`` and ``'w+b'`` open and truncate the file.  Modes ``'r+'`` and "
 "``'r+b'`` open the file with no truncation."
 msgstr ""
+"డిఫాల్ట్ మోడ్ ``'r'`` (టెక్స్ట్ చదవడానికి తెరవడం, ``'rt'`` కి సమానార్థకం). "
+"``'w+'`` మరియు ``'w+b'`` మోడ్‌లు ఫైల్‌ను తెరిచి కత్తిరిస్తాయి. ``'r+'`` మరియు"
+" ``'r+b'`` మోడ్‌లు ఫైల్‌ను కత్తిరించకుండా తెరుస్తాయి."
 
 #: builtins/functions.rst:1441
 msgid ""
@@ -2719,6 +2742,13 @@ msgid ""
 " first decoded using the default encoding or using the specified *encoding* "
 "if given."
 msgstr ""
+":ref:`io-overview` లో చెప్పినట్లుగా, Python బైనరీ I/O మరియు టెక్స్ట్ I/O మధ్య"
+" తేడాను గుర్తిస్తుంది. బైనరీ మోడ్‌లో తెరిచిన ఫైల్‌లు (*mode* ఆర్గ్యుమెంట్‌లో "
+"``'b'`` ఉన్నవి) ఎలాంటి డీకోడింగ్ లేకుండా విషయాలను :class:`bytes` "
+"ఆబ్జెక్ట్‌లుగా రిటర్న్ చేస్తాయి. టెక్స్ట్ మోడ్‌లో (డిఫాల్ట్, లేదా *mode* "
+"ఆర్గ్యుమెంట్‌లో ``'t'`` ఉన్నప్పుడు), ఫైల్ విషయాలు :class:`str` గా రిటర్న్ "
+"చేయబడతాయి; బైట్‌లు ముందుగా డిఫాల్ట్ ఎన్‌కోడింగ్‌ను, లేదా *encoding* "
+"ఇచ్చినట్లయితే ఆ ఎన్‌కోడింగ్‌ను ఉపయోగించి డీకోడ్ చేయబడతాయి."
 
 #: builtins/functions.rst:1451
 msgid ""
@@ -2726,6 +2756,9 @@ msgid ""
 "files; all the processing is done by Python itself, and is therefore "
 "platform-independent."
 msgstr ""
+"Python, ఆధారంగా ఉన్న ఆపరేటింగ్ సిస్టమ్ యొక్క టెక్స్ట్ ఫైల్ భావనపై ఆధారపడదు; "
+"ప్రాసెసింగ్ అంతా Python స్వయంగా చేస్తుంది, కాబట్టి అది ప్లాట్‌ఫామ్‌పై "
+"ఆధారపడదు."
 
 #: builtins/functions.rst:1455
 msgid ""
@@ -2739,6 +2772,17 @@ msgid ""
 "``write_through`` flag for :func:`io.TextIOWrapper.reconfigure`. When no "
 "*buffering* argument is given, the default buffering policy works as follows:"
 msgstr ""
+"*buffering* అనేది బఫరింగ్ విధానాన్ని సెట్ చేయడానికి ఉపయోగించే ఐచ్ఛిక "
+"పూర్ణాంకం. బఫరింగ్‌ను ఆఫ్ చేయడానికి 0 ను పంపండి (బైనరీ మోడ్‌లో మాత్రమే "
+"అనుమతించబడుతుంది), లైన్ బఫరింగ్‌ను ఎంచుకోవడానికి 1 ను (టెక్స్ట్ మోడ్‌లో "
+"రాసేటప్పుడు మాత్రమే ఉపయోగించవచ్చు), మరియు స్థిర-పరిమాణ చంక్ బఫర్ పరిమాణాన్ని "
+"బైట్‌లలో సూచించడానికి > 1 పూర్ణాంకాన్ని పంపండి. ఈ విధంగా బఫర్ పరిమాణాన్ని "
+"నిర్దేశించడం బైనరీ బఫర్డ్ I/O కు వర్తిస్తుందని గమనించండి, కానీ "
+"``TextIOWrapper`` (అంటే, ``mode='r+'`` తో తెరిచిన ఫైల్‌లు) కు వేరే బఫరింగ్ "
+"ఉంటుంది. ``TextIOWrapper`` లో బఫరింగ్‌ను నిలిపివేయడానికి, "
+":func:`io.TextIOWrapper.reconfigure` కోసం ``write_through`` ఫ్లాగ్‌ను "
+"ఉపయోగించడాన్ని పరిగణించండి. *buffering* ఆర్గ్యుమెంట్ ఇవ్వనప్పుడు, డిఫాల్ట్ "
+"బఫరింగ్ విధానం ఈ విధంగా పనిచేస్తుంది:"
 
 #: builtins/functions.rst:1465
 msgid ""
@@ -2747,6 +2791,10 @@ msgid ""
 "size is available. On most systems, the buffer will typically be 128 "
 "kilobytes long."
 msgstr ""
+"బైనరీ ఫైల్‌లు స్థిర-పరిమాణ చంక్‌లలో బఫర్ చేయబడతాయి; పరికరం యొక్క బ్లాక్ "
+"పరిమాణం అందుబాటులో ఉన్నప్పుడు బఫర్ పరిమాణం ``max(min(blocksize, 8 MiB), "
+"DEFAULT_BUFFER_SIZE)``. చాలా సిస్టమ్‌లలో, బఫర్ సాధారణంగా 128 కిలోబైట్‌ల పొడవు"
+" ఉంటుంది."
 
 #: builtins/functions.rst:1470
 msgid ""
@@ -2754,6 +2802,9 @@ msgid ""
 " ``True``) use line buffering.  Other text files use the policy described "
 "above for binary files."
 msgstr ""
+"\"ఇంటరాక్టివ్\" టెక్స్ట్ ఫైల్‌లు (:meth:`~io.IOBase.isatty` ``True`` ను "
+"రిటర్న్ చేసే ఫైల్‌లు) లైన్ బఫరింగ్‌ను ఉపయోగిస్తాయి. ఇతర టెక్స్ట్ ఫైల్‌లు "
+"బైనరీ ఫైల్‌ల కోసం పైన వివరించిన విధానాన్ని ఉపయోగిస్తాయి."
 
 #: builtins/functions.rst:1474
 msgid ""
@@ -2765,6 +2816,14 @@ msgid ""
 "specifies the current locale encoding explicitly. See the :mod:`codecs` "
 "module for the list of supported encodings."
 msgstr ""
+"*encoding* అనేది ఫైల్‌ను డీకోడ్ లేదా ఎన్‌కోడ్ చేయడానికి ఉపయోగించే ఎన్‌కోడింగ్"
+" పేరు. దీన్ని టెక్స్ట్ మోడ్‌లో మాత్రమే ఉపయోగించాలి. డిఫాల్ట్ ఎన్‌కోడింగ్ "
+"UTF-8; :ref:`Python UTF-8 మోడ్ <utf8-mode>` నిలిపివేయబడి ఉంటే, డిఫాల్ట్ "
+"ప్లాట్‌ఫామ్‌పై ఆధారపడి ఉంటుంది (:func:`locale.getencoding` ఏది రిటర్న్ చేస్తే"
+" అది). Python సపోర్ట్ చేసే ఏ :term:`టెక్స్ట్ ఎన్‌కోడింగ్‌నైనా <text "
+"encoding>` ఉపయోగించవచ్చు, మరియు ``encoding=\"locale\"`` ప్రస్తుత లోకేల్ "
+"ఎన్‌కోడింగ్‌ను స్పష్టంగా నిర్దేశిస్తుంది. సపోర్ట్ చేసే ఎన్‌కోడింగ్‌ల జాబితా "
+"కోసం :mod:`codecs` మాడ్యూల్ చూడండి."
 
 #: builtins/functions.rst:1482
 msgid ""
@@ -2774,6 +2833,11 @@ msgid ""
 "has been registered with :func:`codecs.register_error` is also valid.  The "
 "standard names can be found in :ref:`error-handlers`."
 msgstr ""
+"*errors* అనేది ఎన్‌కోడింగ్ మరియు డీకోడింగ్ లోపాలను ఎలా నిర్వహించాలో "
+"నిర్దేశించే ఐచ్ఛిక స్ట్రింగ్—దీన్ని బైనరీ మోడ్‌లో ఉపయోగించలేరు. వివిధ "
+"స్టాండర్డ్ లోప హ్యాండ్లర్‌లు అందుబాటులో ఉన్నాయి, అయితే "
+":func:`codecs.register_error` తో రిజిస్టర్ చేసిన ఏ లోప నిర్వహణ పేరైనా కూడా "
+"చెల్లుతుంది. స్టాండర్డ్ పేర్లు :ref:`error-handlers` లో ఉన్నాయి."
 
 #: builtins/functions.rst:1494
 msgid ""
@@ -2781,6 +2845,9 @@ msgid ""
 "be ``None``, ``''``, ``'\\n'``, ``'\\r'``, and ``'\\r\\n'``.  It works as "
 "follows:"
 msgstr ""
+"*newline* స్ట్రీమ్ నుండి న్యూలైన్ అక్షరాలను ఎలా పార్స్ చేయాలో నిర్ణయిస్తుంది."
+" ఇది ``None``, ``''``, ``'\\n'``, ``'\\r'``, మరియు ``'\\r\\n'`` కావచ్చు. ఇది "
+"ఈ విధంగా పనిచేస్తుంది:"
 
 #: builtins/functions.rst:1498
 msgid ""
@@ -2792,6 +2859,14 @@ msgid ""
 " any of the other legal values, input lines are only terminated by the given "
 "string, and the line ending is returned to the caller untranslated."
 msgstr ""
+"స్ట్రీమ్ నుండి ఇన్‌పుట్ చదివేటప్పుడు, *newline* ``None`` అయితే, యూనివర్సల్ "
+"న్యూలైన్స్ మోడ్ ఎనేబుల్ అవుతుంది. ఇన్‌పుట్‌లోని లైన్‌లు ``'\\n'``, ``'\\r'``,"
+" లేదా ``'\\r\\n'`` తో ముగియవచ్చు, మరియు ఇవి కాల్ చేసిన కోడ్‌కు రిటర్న్ చేయబడే"
+" ముందు ``'\\n'`` గా మార్చబడతాయి. అది ``''`` అయితే, యూనివర్సల్ న్యూలైన్స్ మోడ్"
+" ఎనేబుల్ అవుతుంది, కానీ లైన్ ఎండింగ్‌లు మార్చకుండానే కాల్ చేసిన కోడ్‌కు "
+"రిటర్న్ చేయబడతాయి. అది ఇతర చెల్లుబాటు అయ్యే విలువల్లో ఏదైనా అయితే, ఇన్‌పుట్ "
+"లైన్‌లు ఇచ్చిన స్ట్రింగ్‌తో మాత్రమే ముగుస్తాయి, మరియు లైన్ ఎండింగ్ "
+"మార్చకుండానే కాల్ చేసిన కోడ్‌కు రిటర్న్ చేయబడుతుంది."
 
 #: builtins/functions.rst:1506
 msgid ""
@@ -2801,6 +2876,11 @@ msgid ""
 "takes place.  If *newline* is any of the other legal values, any ``'\\n'`` "
 "characters written are translated to the given string."
 msgstr ""
+"స్ట్రీమ్‌కు అవుట్‌పుట్ రాసేటప్పుడు, *newline* ``None`` అయితే, రాసే ఏ "
+"``'\\n'`` అక్షరాలైనా సిస్టమ్ డిఫాల్ట్ లైన్ సెపరేటర్ :data:`os.linesep` గా "
+"మార్చబడతాయి. *newline* ``''`` లేదా ``'\\n'`` అయితే, ఎలాంటి మార్పిడీ జరగదు. "
+"*newline* ఇతర చెల్లుబాటు అయ్యే విలువల్లో ఏదైనా అయితే, రాసే ఏ ``'\\n'`` "
+"అక్షరాలైనా ఇచ్చిన స్ట్రింగ్‌గా మార్చబడతాయి."
 
 #: builtins/functions.rst:1512
 msgid ""
@@ -2809,6 +2889,10 @@ msgid ""
 "closed.  If a filename is given *closefd* must be ``True`` (the default); "
 "otherwise, an error will be raised."
 msgstr ""
+"*closefd* ``False`` అయి, ఫైల్ పేరుకు బదులుగా ఫైల్ డిస్క్రిప్టర్ "
+"ఇచ్చినట్లయితే, ఫైల్ క్లోజ్ అయినప్పుడు ఆధారంగా ఉన్న ఫైల్ డిస్క్రిప్టర్ "
+"ఓపెన్‌గానే ఉంచబడుతుంది. ఫైల్ పేరు ఇచ్చినట్లయితే *closefd* తప్పనిసరిగా "
+"``True`` (డిఫాల్ట్) అయి ఉండాలి; లేకపోతే, లోపం రైజ్ అవుతుంది."
 
 #: builtins/functions.rst:1517
 msgid ""
