@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-11-11 19:13-0800\n"
+"PO-Revision-Date: 2026-11-11 19:34-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -4186,6 +4186,8 @@ msgid ""
 "Rather than being a function, :class:`tuple` is actually an immutable "
 "sequence type, as documented in :ref:`typesseq-tuple` and :ref:`typesseq`."
 msgstr ""
+":class:`tuple` ఒక ఫంక్షన్ కాదు; :ref:`typesseq-tuple` మరియు :ref:`typesseq` "
+"లో వివరించినట్లుగా, ఇది నిజానికి ఒక ఇమ్యూటబుల్ (మార్చలేని) సీక్వెన్స్ టైప్."
 
 #: builtins/functions.rst:2172
 msgid ""
@@ -4193,12 +4195,18 @@ msgid ""
 "type object and generally the same object as returned by "
 ":attr:`object.__class__`."
 msgstr ""
+"ఒక ఆర్గ్యుమెంట్‌తో, *object* యొక్క టైప్‌ను రిటర్న్ చేస్తుంది. రిటర్న్ విలువ "
+"ఒక టైప్ ఆబ్జెక్ట్, సాధారణంగా :attr:`object.__class__` రిటర్న్ చేసే అదే "
+"ఆబ్జెక్ట్."
 
 #: builtins/functions.rst:2176
 msgid ""
 "The :func:`isinstance` built-in function is recommended for testing the type "
 "of an object, because it takes subclasses into account."
 msgstr ""
+"ఒక ఆబ్జెక్ట్ టైప్‌ను పరీక్షించడానికి :func:`isinstance` బిల్ట్-ఇన్ ఫంక్షన్‌ను"
+" ఉపయోగించమని సిఫార్సు చేయబడింది, ఎందుకంటే అది సబ్‌క్లాస్‌లను కూడా పరిగణనలోకి "
+"తీసుకుంటుంది."
 
 #: builtins/functions.rst:2179
 msgid ""
@@ -4212,20 +4220,31 @@ msgid ""
 ":attr:`~type.__dict__` attribute. The following two statements create "
 "identical :class:`!type` objects:"
 msgstr ""
+"మూడు ఆర్గ్యుమెంట్‌లతో, ఒక కొత్త టైప్ ఆబ్జెక్ట్‌ను రిటర్న్ చేస్తుంది. ఇది "
+"మౌలికంగా :keyword:`class` స్టేట్‌మెంట్ యొక్క డైనమిక్ రూపం. *name* స్ట్రింగ్ "
+"క్లాస్ పేరు, ఇది :attr:`~type.__name__` అట్రిబ్యూట్ అవుతుంది. *bases* "
+"టపుల్‌లో బేస్ క్లాస్‌లు ఉంటాయి, ఇది :attr:`~type.__bases__` అట్రిబ్యూట్ "
+"అవుతుంది; అది ఖాళీగా ఉంటే, అన్ని క్లాస్‌లకు అంతిమ బేస్ అయిన :class:`object` "
+"జోడించబడుతుంది. *dict* డిక్షనరీలో క్లాస్ బాడీకి సంబంధించిన అట్రిబ్యూట్ మరియు "
+"మెథడ్ నిర్వచనాలు ఉంటాయి; :attr:`~type.__dict__` అట్రిబ్యూట్ అయ్యే ముందు అది "
+"కాపీ చేయబడవచ్చు లేదా ర్యాప్ చేయబడవచ్చు. కింది రెండు స్టేట్‌మెంట్‌లు ఒకేలాంటి "
+":class:`!type` ఆబ్జెక్ట్‌లను సృష్టిస్తాయి:"
 
 #: builtins/functions.rst:2194
 msgid "See also:"
-msgstr ""
+msgstr "ఇవి కూడా చూడండి:"
 
 #: builtins/functions.rst:2196
 msgid ""
 ":ref:`Documentation on attributes and methods on classes <class-attrs-and-"
 "methods>`."
 msgstr ""
+":ref:`క్లాస్‌లలోని అట్రిబ్యూట్‌లు మరియు మెథడ్‌లపై డాక్యుమెంటేషన్ <class-"
+"attrs-and-methods>`."
 
 #: builtins/functions.rst:2197
 msgid ":ref:`bltin-type-objects`"
-msgstr ""
+msgstr ":ref:`bltin-type-objects`"
 
 #: builtins/functions.rst:2199
 msgid ""
@@ -4234,6 +4253,10 @@ msgid ""
 "in the same way that keywords in a class definition (besides *metaclass*) "
 "would."
 msgstr ""
+"మూడు-ఆర్గ్యుమెంట్ రూపానికి ఇచ్చిన కీవర్డ్ ఆర్గ్యుమెంట్‌లు, క్లాస్ "
+"నిర్వచనంలోని కీవర్డ్‌లు (*metaclass* తప్ప) ఎలా పంపబడతాయో అదే విధంగా, తగిన "
+"మెటాక్లాస్ యంత్రాంగానికి (సాధారణంగా :meth:`~object.__init_subclass__`) "
+"పంపబడతాయి."
 
 #: builtins/functions.rst:2204
 msgid ""
@@ -4242,26 +4265,35 @@ msgid ""
 ":func:`types.new_class` to dynamically create a class using the appropriate "
 "metaclass."
 msgstr ""
+":keyword:`class` స్టేట్‌మెంట్‌లా కాకుండా, మూడు-ఆర్గ్యుమెంట్ రూపం మెటాక్లాస్ "
+"``__prepare__`` మెథడ్‌ను కాల్ చేయదు (:ref:`prepare` చూడండి). తగిన "
+"మెటాక్లాస్‌ను ఉపయోగించి డైనమిక్‌గా క్లాస్‌ను సృష్టించడానికి "
+":func:`types.new_class` ను ఉపయోగించండి."
 
 #: builtins/functions.rst:2209
 msgid "See also :ref:`class-customization`."
-msgstr ""
+msgstr ":ref:`class-customization` కూడా చూడండి."
 
 #: builtins/functions.rst:2211
 msgid ""
 "Subclasses of :class:`!type` which don't override ``type.__new__`` may no "
 "longer use the one-argument form to get the type of an object."
 msgstr ""
+"``type.__new__`` ను ఓవర్‌రైడ్ చేయని :class:`!type` సబ్‌క్లాస్‌లు, ఒక "
+"ఆబ్జెక్ట్ టైప్‌ను పొందడానికి ఇకపై ఒక-ఆర్గ్యుమెంట్ రూపాన్ని ఉపయోగించలేవు."
 
 #: builtins/functions.rst:2217
 msgid "*dict* can now be a :class:`frozendict`."
-msgstr ""
+msgstr "*dict* ఇప్పుడు :class:`frozendict` కూడా కావచ్చు."
 
 #: builtins/functions.rst:2222
 msgid ""
 "Return the :attr:`~object.__dict__` attribute for a module, class, instance, "
 "or any other object with a :attr:`!__dict__` attribute."
 msgstr ""
+"ఒక మాడ్యూల్, క్లాస్, ఇన్‌స్టాన్స్, లేదా :attr:`!__dict__` అట్రిబ్యూట్ ఉన్న "
+"మరే ఇతర ఆబ్జెక్ట్ యొక్క :attr:`~object.__dict__` అట్రిబ్యూట్‌ను రిటర్న్ "
+"చేస్తుంది."
 
 #: builtins/functions.rst:2225
 msgid ""
@@ -4270,10 +4302,16 @@ msgid ""
 "restrictions on their :attr:`!__dict__` attributes (for example, classes use "
 "a :class:`types.MappingProxyType` to prevent direct dictionary updates)."
 msgstr ""
+"మాడ్యూల్‌లు, ఇన్‌స్టాన్స్‌ల వంటి ఆబ్జెక్ట్‌లకు అప్‌డేట్ చేయగల "
+":attr:`~object.__dict__` అట్రిబ్యూట్ ఉంటుంది; అయితే, ఇతర ఆబ్జెక్ట్‌లకు వాటి "
+":attr:`!__dict__` అట్రిబ్యూట్‌లపై రాసే పరిమితులు ఉండవచ్చు (ఉదాహరణకు, నేరుగా "
+"డిక్షనరీ అప్‌డేట్‌లను నిరోధించడానికి క్లాస్‌లు "
+":class:`types.MappingProxyType` ను ఉపయోగిస్తాయి)."
 
 #: builtins/functions.rst:2230
 msgid "Without an argument, :func:`vars` acts like :func:`locals`."
 msgstr ""
+"ఆర్గ్యుమెంట్ లేకుండా, :func:`vars` అనేది :func:`locals` లాగా పనిచేస్తుంది."
 
 #: builtins/functions.rst:2232
 msgid ""
@@ -4281,12 +4319,17 @@ msgid ""
 "doesn't have a :attr:`~object.__dict__` attribute (for example, if its class "
 "defines the :attr:`~object.__slots__` attribute)."
 msgstr ""
+"ఒక ఆబ్జెక్ట్‌ను పేర్కొన్నప్పటికీ దానికి :attr:`~object.__dict__` అట్రిబ్యూట్ "
+"లేకపోతే (ఉదాహరణకు, దాని క్లాస్ :attr:`~object.__slots__` అట్రిబ్యూట్‌ను "
+"నిర్వచిస్తే), :exc:`TypeError` ఎక్సెప్షన్ రైజ్ అవుతుంది."
 
 #: builtins/functions.rst:2238
 msgid ""
 "The result of calling this function without an argument has been updated as "
 "described for the :func:`locals` builtin."
 msgstr ""
+"ఆర్గ్యుమెంట్ లేకుండా ఈ ఫంక్షన్‌ను కాల్ చేసినప్పుడు వచ్చే ఫలితం, "
+":func:`locals` బిల్ట్-ఇన్ కోసం వివరించిన విధంగా అప్‌డేట్ చేయబడింది."
 
 #: builtins/functions.rst:2244
 msgid ""
