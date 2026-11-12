@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-11-11 19:34-0800\n"
+"PO-Revision-Date: 2026-11-11 19:56-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -4336,10 +4336,12 @@ msgid ""
 "Iterate over several iterables in parallel, producing tuples with an item "
 "from each one."
 msgstr ""
+"అనేక ఇటరబుల్‌లపై సమాంతరంగా ఇటరేట్ చేస్తుంది, ప్రతి దాని నుండి ఒక్కో ఐటెమ్‌తో "
+"టపుల్‌లను ఉత్పత్తి చేస్తుంది."
 
 #: builtins/functions.rst:2247
 msgid "Example::"
-msgstr ""
+msgstr "ఉదాహరణ::"
 
 #: builtins/functions.rst:2249
 msgid ""
@@ -4350,12 +4352,21 @@ msgid ""
 "(2, 'spice')\n"
 "(3, 'everything nice')"
 msgstr ""
+">>> for item in zip([1, 2, 3], ['sugar', 'spice', 'everything nice']):\n"
+"...     print(item)\n"
+"...\n"
+"(1, 'sugar')\n"
+"(2, 'spice')\n"
+"(3, 'everything nice')"
 
 #: builtins/functions.rst:2256
 msgid ""
 "More formally: :func:`zip` returns an iterator of tuples, where the *i*-th "
 "tuple contains the *i*-th element from each of the argument iterables."
 msgstr ""
+"మరింత కచ్చితంగా చెప్పాలంటే: :func:`zip` టపుల్‌ల ఇటరేటర్‌ను రిటర్న్ చేస్తుంది,"
+" ఇందులో *i*-వ టపుల్‌లో ఆర్గ్యుమెంట్ ఇటరబుల్‌లలో ప్రతి దాని నుండి *i*-వ "
+"ఎలిమెంట్ ఉంటుంది."
 
 #: builtins/functions.rst:2259
 msgid ""
@@ -4363,6 +4374,9 @@ msgid ""
 "columns into rows.  This is similar to `transposing a matrix "
 "<https://en.wikipedia.org/wiki/Transpose>`_."
 msgstr ""
+":func:`zip` గురించి ఆలోచించడానికి మరో మార్గం: అది అడ్డు వరుసలను నిలువు "
+"వరుసలుగా, నిలువు వరుసలను అడ్డు వరుసలుగా మారుస్తుంది. ఇది `మాట్రిక్స్‌ను "
+"ట్రాన్స్‌పోజ్ చేయడం <https://en.wikipedia.org/wiki/Transpose>`_ లాంటిది."
 
 #: builtins/functions.rst:2263
 msgid ""
@@ -4370,6 +4384,9 @@ msgid ""
 "iterated on, e.g. by a :keyword:`!for` loop or by wrapping in a "
 ":class:`list`."
 msgstr ""
+":func:`zip` లేజీ (lazy) గా పనిచేస్తుంది: ఇటరబుల్‌పై ఇటరేట్ చేసే వరకు, ఉదా. "
+":keyword:`!for` లూప్ ద్వారా లేదా :class:`list` లో ర్యాప్ చేయడం ద్వారా, "
+"ఎలిమెంట్‌లు ప్రాసెస్ చేయబడవు."
 
 #: builtins/functions.rst:2267
 msgid ""
@@ -4378,6 +4395,10 @@ msgid ""
 " code that prepared these iterables.  Python offers three different "
 "approaches to dealing with this issue:"
 msgstr ""
+"గమనించాల్సిన ఒక విషయం ఏమిటంటే, :func:`zip` కు పంపిన ఇటరబుల్‌ల పొడవులు "
+"వేర్వేరుగా ఉండవచ్చు; కొన్నిసార్లు ఉద్దేశపూర్వకంగా, కొన్నిసార్లు ఈ ఇటరబుల్‌లను"
+" సిద్ధం చేసిన కోడ్‌లోని బగ్ వల్ల. ఈ సమస్యను ఎదుర్కోవడానికి Python మూడు "
+"వేర్వేరు విధానాలను అందిస్తుంది:"
 
 #: builtins/functions.rst:2272
 msgid ""
@@ -4385,12 +4406,18 @@ msgid ""
 ":term:`exhausted`. It will ignore the remaining items in the longer "
 "iterables, cutting off the result to the length of the shortest iterable::"
 msgstr ""
+"డిఫాల్ట్‌గా, అతి తక్కువ పొడవు ఉన్న ఇటరబుల్ :term:`అయిపోయినప్పుడు <exhausted>`"
+" :func:`zip` ఆగిపోతుంది. ఇది పొడవైన ఇటరబుల్‌లలో మిగిలిన ఐటెమ్‌లను "
+"విస్మరిస్తుంది, ఫలితాన్ని అతి తక్కువ పొడవు ఉన్న ఇటరబుల్ పొడవుకు "
+"కత్తిరిస్తుంది::"
 
 #: builtins/functions.rst:2276
 msgid ""
 ">>> list(zip(range(3), ['fee', 'fi', 'fo', 'fum']))\n"
 "[(0, 'fee'), (1, 'fi'), (2, 'fo')]"
 msgstr ""
+">>> list(zip(range(3), ['fee', 'fi', 'fo', 'fum']))\n"
+"[(0, 'fee'), (1, 'fi'), (2, 'fo')]"
 
 #: builtins/functions.rst:2279
 msgid ""
@@ -4398,18 +4425,26 @@ msgid ""
 "equal length.  In such cases, it's recommended to use the ``strict=True`` "
 "option. Its output is the same as regular :func:`zip`::"
 msgstr ""
+"ఇటరబుల్‌లు సమాన పొడవు కలిగి ఉంటాయని భావించే సందర్భాల్లో :func:`zip` తరచుగా "
+"ఉపయోగించబడుతుంది. అలాంటి సందర్భాల్లో, ``strict=True`` ఆప్షన్‌ను ఉపయోగించమని "
+"సిఫార్సు చేయబడింది. దాని అవుట్‌పుట్ సాధారణ :func:`zip` అవుట్‌పుట్ లాగానే "
+"ఉంటుంది::"
 
 #: builtins/functions.rst:2283
 msgid ""
 ">>> list(zip(('a', 'b', 'c'), (1, 2, 3), strict=True))\n"
 "[('a', 1), ('b', 2), ('c', 3)]"
 msgstr ""
+">>> list(zip(('a', 'b', 'c'), (1, 2, 3), strict=True))\n"
+"[('a', 1), ('b', 2), ('c', 3)]"
 
 #: builtins/functions.rst:2286
 msgid ""
 "Unlike the default behavior, it raises a :exc:`ValueError` if one iterable is"
 " :term:`exhausted` before the others:"
 msgstr ""
+"డిఫాల్ట్ ప్రవర్తనలా కాకుండా, ఒక ఇటరబుల్ మిగతావాటి కంటే ముందే :term:`అయిపోతే "
+"<exhausted>`, ఇది :exc:`ValueError` ను రైజ్ చేస్తుంది:"
 
 #: builtins/functions.rst:2304
 msgid ""
@@ -4417,6 +4452,9 @@ msgid ""
 "different lengths will be silenced, possibly manifesting as a hard-to-find "
 "bug in another part of the program."
 msgstr ""
+"``strict=True`` ఆర్గ్యుమెంట్ లేకుండా, వేర్వేరు పొడవుల ఇటరబుల్‌లకు దారితీసే ఏ "
+"బగ్ అయినా బయటపడకుండా అణచివేయబడుతుంది; అది ప్రోగ్రామ్‌లోని మరో భాగంలో "
+"కనుగొనడానికి కష్టమైన బగ్‌గా బయటపడే అవకాశం ఉంది."
 
 #: builtins/functions.rst:2308
 msgid ""
@@ -4424,16 +4462,21 @@ msgid ""
 "iterables have the same length.  This is done by "
 ":func:`itertools.zip_longest`."
 msgstr ""
+"అన్ని ఇటరబుల్‌లకూ ఒకే పొడవు ఉండేలా, తక్కువ పొడవున్న ఇటరబుల్‌లను ఒక స్థిరాంక "
+"విలువతో ప్యాడ్ చేయవచ్చు. ఇది :func:`itertools.zip_longest` ద్వారా జరుగుతుంది."
 
 #: builtins/functions.rst:2312
 msgid ""
 "Edge cases: With a single iterable argument, :func:`zip` returns an iterator "
 "of 1-tuples.  With no arguments, it returns an empty iterator."
 msgstr ""
+"అంచు సందర్భాలు (edge cases): ఒకే ఇటరబుల్ ఆర్గ్యుమెంట్‌తో, :func:`zip` "
+"1-టపుల్‌ల ఇటరేటర్‌ను రిటర్న్ చేస్తుంది. ఆర్గ్యుమెంట్‌లు లేకుండా, అది ఖాళీ "
+"ఇటరేటర్‌ను రిటర్న్ చేస్తుంది."
 
 #: builtins/functions.rst:2315
 msgid "Tips and tricks:"
-msgstr ""
+msgstr "చిట్కాలు మరియు ఉపాయాలు:"
 
 #: builtins/functions.rst:2317
 msgid ""
@@ -4443,12 +4486,20 @@ msgid ""
 "times so that each output tuple has the result of ``n`` calls to the "
 "iterator. This has the effect of dividing the input into n-length chunks."
 msgstr ""
+"ఇటరబుల్‌లు ఎడమ నుండి కుడికి ఎవాల్యుయేట్ అయ్యే క్రమానికి హామీ ఉంది. దీనివల్ల, "
+"``zip(*[iter(s)]*n, strict=True)`` ఉపయోగించి ఒక డేటా శ్రేణిని n-పొడవు గల "
+"గ్రూప్‌లుగా సమూహపరిచే ఒక పద్ధతి సాధ్యమవుతుంది. ఇది *అదే* ఇటరేటర్‌ను ``n`` "
+"సార్లు పునరావృతం చేస్తుంది, తద్వారా ప్రతి అవుట్‌పుట్ టపుల్‌లో ఇటరేటర్‌కు "
+"చేసిన ``n`` కాల్‌ల ఫలితం ఉంటుంది. దీనివల్ల ఇన్‌పుట్ n-పొడవు గల ముక్కలుగా "
+"విభజించబడుతుంది."
 
 #: builtins/functions.rst:2323
 msgid ""
 ":func:`zip` in conjunction with the ``*`` operator can be used to unzip a "
 "list::"
 msgstr ""
+"``*`` ఆపరేటర్‌తో కలిపి :func:`zip` ను ఒక లిస్ట్‌ను అన్‌జిప్ చేయడానికి "
+"ఉపయోగించవచ్చు::"
 
 #: builtins/functions.rst:2326
 msgid ""
@@ -4460,10 +4511,17 @@ msgid ""
 ">>> x == list(x2) and y == list(y2)\n"
 "True"
 msgstr ""
+">>> x = [1, 2, 3]\n"
+">>> y = [4, 5, 6]\n"
+">>> list(zip(x, y))\n"
+"[(1, 4), (2, 5), (3, 6)]\n"
+">>> x2, y2 = zip(*zip(x, y))\n"
+">>> x == list(x2) and y == list(y2)\n"
+"True"
 
 #: builtins/functions.rst:2334
 msgid "Added the ``strict`` argument."
-msgstr ""
+msgstr "``strict`` ఆర్గ్యుమెంట్ జోడించబడింది."
 
 #: builtins/functions.rst:2346
 msgid ""
