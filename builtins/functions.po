@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-11-09 20:34-0800\n"
+"PO-Revision-Date: 2026-11-11 19:00-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -3763,11 +3763,15 @@ msgstr ""
 #: builtins/functions.rst:1963
 msgid "Return a new sorted list from the items in *iterable*."
 msgstr ""
+"*iterable* లోని ఐటెమ్‌ల నుండి కొత్తగా సార్ట్ చేసిన లిస్ట్‌ను రిటర్న్ "
+"చేస్తుంది."
 
 #: builtins/functions.rst:1965
 msgid ""
 "Has two optional arguments which must be specified as keyword arguments."
 msgstr ""
+"దీనికి రెండు ఐచ్ఛిక ఆర్గ్యుమెంట్‌లు ఉన్నాయి, వాటిని కీవర్డ్ "
+"ఆర్గ్యుమెంట్‌లుగానే పేర్కొనాలి."
 
 #: builtins/functions.rst:1967
 msgid ""
@@ -3776,18 +3780,25 @@ msgid ""
 "``key=str.lower``).  The default value is ``None`` (compare the elements "
 "directly)."
 msgstr ""
+"*key* అనేది *iterable* లోని ప్రతి ఎలిమెంట్ నుండి పోలిక కీని తీయడానికి "
+"ఉపయోగించే, ఒకే ఆర్గ్యుమెంట్ తీసుకునే ఫంక్షన్‌ను పేర్కొంటుంది (ఉదాహరణకు, "
+"``key=str.lower``). డిఫాల్ట్ విలువ ``None`` (ఎలిమెంట్‌లను నేరుగా పోల్చడం)."
 
 #: builtins/functions.rst:1971
 msgid ""
 "*reverse* is a boolean value.  If set to ``True``, then the list elements are"
 " sorted as if each comparison were reversed."
 msgstr ""
+"*reverse* ఒక బూలియన్ విలువ. దాన్ని ``True`` కు సెట్ చేస్తే, ప్రతి పోలిక "
+"తిరగబడినట్లుగా లిస్ట్ ఎలిమెంట్‌లు సార్ట్ చేయబడతాయి."
 
 #: builtins/functions.rst:1974
 msgid ""
 "Use :func:`functools.cmp_to_key` to convert an old-style *cmp* function to a "
 "*key* function."
 msgstr ""
+"పాత-శైలి *cmp* ఫంక్షన్‌ను *key* ఫంక్షన్‌గా మార్చడానికి "
+":func:`functools.cmp_to_key` ను ఉపయోగించండి."
 
 #: builtins/functions.rst:1977
 msgid ""
@@ -3796,6 +3807,10 @@ msgid ""
 "compare equal --- this is helpful for sorting in multiple passes (for "
 "example, sort by department, then by salary grade)."
 msgstr ""
+"బిల్ట్-ఇన్ :func:`sorted` ఫంక్షన్ స్థిరంగా (stable) ఉంటుందని హామీ ఉంది. "
+"సమానంగా పోల్చబడే ఎలిమెంట్‌ల సాపేక్ష క్రమాన్ని మార్చదని హామీ ఇస్తే, ఆ సార్ట్ "
+"స్థిరమైనది --- ఇది అనేక దశల్లో సార్ట్ చేయడానికి సహాయపడుతుంది (ఉదాహరణకు, "
+"విభాగం ప్రకారం, ఆ తర్వాత జీతం గ్రేడ్ ప్రకారం సార్ట్ చేయడం)."
 
 #: builtins/functions.rst:1982
 msgid ""
@@ -3807,21 +3822,33 @@ msgid ""
 "Implementing all six comparisons also helps avoid confusion for mixed type "
 "comparisons which can call the reflected :meth:`~object.__gt__` method."
 msgstr ""
+"సార్ట్ అల్గారిథమ్ ఐటెమ్‌ల మధ్య ``<`` పోలికలను మాత్రమే ఉపయోగిస్తుంది. "
+"సార్టింగ్ కోసం :meth:`~object.__lt__` మెథడ్‌ను నిర్వచించడం సరిపోతుంది, "
+"అయినప్పటికీ ఆరు :ref:`రిచ్ కంపారిజన్‌లనూ <comparisons>` రూపొందించాలని "
+":PEP:`8` సిఫార్సు చేస్తుంది. వేరే అంతర్గత మెథడ్‌పై ఆధారపడే :func:`max` వంటి "
+"ఇతర ఆర్డరింగ్ టూల్‌లతో అదే డేటాను ఉపయోగించినప్పుడు బగ్‌లను నివారించడానికి ఇది"
+" సహాయపడుతుంది. ఆరు పోలికలనూ రూపొందించడం, రిఫ్లెక్టెడ్ :meth:`~object.__gt__` "
+"మెథడ్‌ను కాల్ చేయగల మిశ్రమ టైప్ పోలికల విషయంలో గందరగోళాన్ని నివారించడానికి "
+"కూడా సహాయపడుతుంది."
 
 #: builtins/functions.rst:1991
 msgid ""
 "For sorting examples and a brief sorting tutorial, see :ref:`sortinghowto`."
 msgstr ""
+"సార్టింగ్ ఉదాహరణలు మరియు సార్టింగ్‌పై సంక్షిప్త ట్యుటోరియల్ కోసం "
+":ref:`sortinghowto` చూడండి."
 
 #: builtins/functions.rst:1995
 msgid "Transform a method into a static method."
-msgstr ""
+msgstr "ఒక మెథడ్‌ను స్టాటిక్ మెథడ్‌గా మారుస్తుంది."
 
 #: builtins/functions.rst:1997
 msgid ""
 "A static method does not receive an implicit first argument. To declare a "
 "static method, use this idiom::"
 msgstr ""
+"స్టాటిక్ మెథడ్‌కు పరోక్షమైన మొదటి ఆర్గ్యుమెంట్ అందదు. స్టాటిక్ మెథడ్‌ను "
+"డిక్లేర్ చేయడానికి, ఈ పద్ధతిని ఉపయోగించండి::"
 
 #: builtins/functions.rst:2000
 msgid ""
@@ -3829,12 +3856,17 @@ msgid ""
 "    @staticmethod\n"
 "    def f(arg1, arg2, argN): ..."
 msgstr ""
+"class C:\n"
+"    @staticmethod\n"
+"    def f(arg1, arg2, argN): ..."
 
 #: builtins/functions.rst:2004
 msgid ""
 "The ``@staticmethod`` form is a function :term:`decorator` -- see "
 ":ref:`function` for details."
 msgstr ""
+"``@staticmethod`` రూపం ఒక ఫంక్షన్ :term:`డెకరేటర్ <decorator>` -- వివరాల కోసం"
+" :ref:`function` చూడండి."
 
 #: builtins/functions.rst:2007
 msgid ""
@@ -3843,6 +3875,10 @@ msgid ""
 ":term:`descriptor` is also callable, so it can be used in the class "
 "definition (such as ``f()``)."
 msgstr ""
+"స్టాటిక్ మెథడ్‌ను క్లాస్‌పై (``C.f()`` వంటి) గానీ ఇన్‌స్టాన్స్‌పై "
+"(``C().f()`` వంటి) గానీ కాల్ చేయవచ్చు. అంతేకాకుండా, స్టాటిక్ మెథడ్ "
+":term:`డిస్క్రిప్టర్ <descriptor>` కూడా కాలబుల్, కాబట్టి దాన్ని క్లాస్ "
+"నిర్వచనంలో (``f()`` వంటి) ఉపయోగించవచ్చు."
 
 #: builtins/functions.rst:2012
 msgid ""
@@ -3850,6 +3886,9 @@ msgid ""
 " :deco:`classmethod` for a variant that is useful for creating alternate "
 "class constructors."
 msgstr ""
+"Python లోని స్టాటిక్ మెథడ్‌లు Java లేదా C++ లో ఉండే వాటిని పోలి ఉంటాయి. "
+"అలాగే, ప్రత్యామ్నాయ క్లాస్ కన్‌స్ట్రక్టర్‌లను సృష్టించడానికి ఉపయోగపడే ఒక "
+"రూపాంతరం కోసం :deco:`classmethod` చూడండి."
 
 #: builtins/functions.rst:2016
 msgid ""
@@ -3859,6 +3898,11 @@ msgid ""
 " to avoid the automatic transformation to instance method.  For these cases, "
 "use this idiom::"
 msgstr ""
+"అన్ని డెకరేటర్‌ల లాగానే, ``staticmethod`` ను సాధారణ ఫంక్షన్‌లా కాల్ చేసి, "
+"దాని ఫలితంతో ఏదైనా చేయడం కూడా సాధ్యమే. క్లాస్ బాడీ నుండి ఒక ఫంక్షన్‌కు "
+"రిఫరెన్స్ అవసరమై, అది ఆటోమేటిక్‌గా ఇన్‌స్టాన్స్ మెథడ్‌గా మారకుండా "
+"నివారించాలనుకునే కొన్ని సందర్భాల్లో ఇది అవసరం. ఈ సందర్భాల కోసం, ఈ పద్ధతిని "
+"ఉపయోగించండి::"
 
 #: builtins/functions.rst:2022
 msgid ""
@@ -3868,10 +3912,15 @@ msgid ""
 "class C:\n"
 "    method = staticmethod(regular_function)"
 msgstr ""
+"def regular_function():\n"
+"    ...\n"
+"\n"
+"class C:\n"
+"    method = staticmethod(regular_function)"
 
 #: builtins/functions.rst:2028
 msgid "For more information on static methods, see :ref:`types`."
-msgstr ""
+msgstr "స్టాటిక్ మెథడ్‌ల గురించి మరింత సమాచారం కోసం :ref:`types` చూడండి."
 
 #: builtins/functions.rst:2030
 msgid ""
@@ -3881,17 +3930,27 @@ msgid ""
 ":attr:`~function.__annotations__`), have a new ``__wrapped__`` attribute, and"
 " are now callable as regular functions."
 msgstr ""
+"స్టాటిక్ మెథడ్‌లు ఇప్పుడు మెథడ్ అట్రిబ్యూట్‌లను "
+"(:attr:`~function.__module__`, :attr:`~function.__name__`, "
+":attr:`~function.__qualname__`, :attr:`~function.__doc__` మరియు "
+":attr:`~function.__annotations__`) ఇన్‌హెరిట్ చేస్తాయి, వాటికి కొత్త "
+"``__wrapped__`` అట్రిబ్యూట్ ఉంది, మరియు అవి ఇప్పుడు సాధారణ ఫంక్షన్‌ల లాగా "
+"కాలబుల్."
 
 #: builtins/functions.rst:2048
 msgid ""
 "Return a :class:`str` version of *object*.  See :func:`str` for details."
 msgstr ""
+"*object* యొక్క :class:`str` వెర్షన్‌ను రిటర్న్ చేస్తుంది. వివరాల కోసం "
+":func:`str` చూడండి."
 
 #: builtins/functions.rst:2050
 msgid ""
 "``str`` is the built-in string :term:`class`.  For general information about "
 "strings, see :ref:`textseq`."
 msgstr ""
+"``str`` అనేది బిల్ట్-ఇన్ స్ట్రింగ్ :term:`క్లాస్ <class>`. స్ట్రింగ్‌ల "
+"గురించి సాధారణ సమాచారం కోసం :ref:`textseq` చూడండి."
 
 #: builtins/functions.rst:2056
 msgid ""
@@ -3899,6 +3958,9 @@ msgid ""
 "the total.  The *iterable*'s items are normally numbers, and the start value "
 "is not allowed to be a string."
 msgstr ""
+"*start* ను మరియు *iterable* లోని ఐటెమ్‌లను ఎడమ నుండి కుడికి కూడి, మొత్తాన్ని "
+"రిటర్న్ చేస్తుంది. *iterable* లోని ఐటెమ్‌లు సాధారణంగా సంఖ్యలు, మరియు ప్రారంభ "
+"విలువ స్ట్రింగ్ కావడానికి అనుమతి లేదు."
 
 #: builtins/functions.rst:2060
 msgid ""
@@ -3908,22 +3970,31 @@ msgid ""
 " see :func:`math.fsum`\\.  To concatenate a series of iterables, consider "
 "using :func:`itertools.chain`."
 msgstr ""
+"కొన్ని సందర్భాల్లో, :func:`sum` కు మంచి ప్రత్యామ్నాయాలు ఉన్నాయి. స్ట్రింగ్‌ల "
+"సీక్వెన్స్‌ను కలపడానికి ప్రాధాన్య, వేగవంతమైన మార్గం ``''.join(sequence)`` ను "
+"కాల్ చేయడం. విస్తరించిన కచ్చితత్వంతో ఫ్లోటింగ్ పాయింట్ విలువలను కూడటానికి, "
+":func:`math.fsum` చూడండి. ఇటరబుల్‌ల శ్రేణిని కలపడానికి, "
+":func:`itertools.chain` ను ఉపయోగించడాన్ని పరిశీలించండి."
 
 #: builtins/functions.rst:2066
 msgid "The *start* parameter can be specified as a keyword argument."
-msgstr ""
+msgstr "*start* పారామీటర్‌ను కీవర్డ్ ఆర్గ్యుమెంట్‌గా పేర్కొనవచ్చు."
 
 #: builtins/functions.rst:2069
 msgid ""
 "Summation of floats switched to an algorithm that gives higher accuracy and "
 "better commutativity on most builds."
 msgstr ""
+"చాలా బిల్డ్‌లలో, ఫ్లోట్‌ల కూడిక అధిక కచ్చితత్వాన్ని మరియు మెరుగైన "
+"కమ్యుటేటివిటీని ఇచ్చే అల్గారిథమ్‌కు మార్చబడింది."
 
 #: builtins/functions.rst:2072
 msgid ""
 "Added specialization for summation of complexes, using same algorithm as for "
 "summation of floats."
 msgstr ""
+"ఫ్లోట్‌ల కూడికకు ఉపయోగించే అదే అల్గారిథమ్‌ను ఉపయోగించి, సంకీర్ణ సంఖ్యల కూడిక "
+"కోసం ప్రత్యేకీకరణ (specialization) జోడించబడింది."
 
 #: builtins/functions.rst:2080
 msgid ""
