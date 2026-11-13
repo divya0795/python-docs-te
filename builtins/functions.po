@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-11-11 19:56-0800\n"
+"PO-Revision-Date: 2026-11-13 09:40-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -4528,6 +4528,8 @@ msgid ""
 "This is an advanced function that is not needed in everyday Python "
 "programming, unlike :func:`importlib.import_module`."
 msgstr ""
+":func:`importlib.import_module` లా కాకుండా, ఇది రోజువారీ Python "
+"ప్రోగ్రామింగ్‌లో అవసరం లేని ఒక అధునాతన ఫంక్షన్."
 
 #: builtins/functions.rst:2349
 msgid ""
@@ -4540,6 +4542,15 @@ msgid ""
 "implementation is in use.  Direct use of :func:`__import__` is also "
 "discouraged in favor of :func:`importlib.import_module`."
 msgstr ""
+"ఈ ఫంక్షన్‌ను :keyword:`import` స్టేట్‌మెంట్ కాల్ చేస్తుంది. "
+":keyword:`!import` స్టేట్‌మెంట్ యొక్క సెమాంటిక్స్‌ను మార్చడానికి దీన్ని భర్తీ"
+" చేయవచ్చు (:mod:`builtins` మాడ్యూల్‌ను ఇంపోర్ట్ చేసి ``builtins.__import__`` "
+"కు కేటాయించడం ద్వారా), కానీ అలా చేయవద్దని **గట్టిగా** సిఫార్సు చేయబడింది, "
+"ఎందుకంటే అవే లక్ష్యాలను సాధించడానికి ఇంపోర్ట్ హుక్‌లను (:pep:`302` చూడండి) "
+"ఉపయోగించడం సాధారణంగా సులభం, మరియు అది డిఫాల్ట్ ఇంపోర్ట్ ఇంప్లిమెంటేషన్ "
+"వాడుకలో ఉందని భావించే కోడ్‌తో సమస్యలను కలిగించదు. :func:`__import__` ను "
+"నేరుగా ఉపయోగించవద్దని, దానికి బదులుగా :func:`importlib.import_module` ను "
+"ఉపయోగించమని కూడా సిఫార్సు చేయబడింది."
 
 #: builtins/functions.rst:2358
 msgid ""
@@ -4550,6 +4561,13 @@ msgid ""
 "not use its *locals* argument at all and uses its *globals* only to determine"
 " the package context of the :keyword:`import` statement."
 msgstr ""
+"ఈ ఫంక్షన్ *name* మాడ్యూల్‌ను ఇంపోర్ట్ చేస్తుంది; ప్యాకేజీ సందర్భంలో ఆ పేరును "
+"ఎలా అర్థం చేసుకోవాలో నిర్ణయించడానికి ఇది ఇచ్చిన *globals* మరియు *locals* ను "
+"ఉపయోగించవచ్చు. *name* సూచించే మాడ్యూల్ నుండి ఇంపోర్ట్ చేయాల్సిన ఆబ్జెక్ట్‌లు "
+"లేదా సబ్‌మాడ్యూల్‌ల పేర్లను *fromlist* ఇస్తుంది. స్టాండర్డ్ ఇంప్లిమెంటేషన్ "
+"దాని *locals* ఆర్గ్యుమెంట్‌ను అసలు ఉపయోగించదు, మరియు :keyword:`import` "
+"స్టేట్‌మెంట్ యొక్క ప్యాకేజీ సందర్భాన్ని నిర్ణయించడానికి మాత్రమే దాని "
+"*globals* ను ఉపయోగిస్తుంది."
 
 #: builtins/functions.rst:2365
 msgid ""
@@ -4558,6 +4576,11 @@ msgid ""
 "refers to the current package, ``2`` to its parent package, and so on (see "
 ":pep:`328` for details)."
 msgstr ""
+"అబ్సొల్యూట్ ఇంపోర్ట్‌లను ఉపయోగించాలా లేదా రిలేటివ్ ఇంపోర్ట్‌లను ఉపయోగించాలా "
+"అనేది *level* నిర్దేశిస్తుంది. ``0`` (డిఫాల్ట్) అంటే అబ్సొల్యూట్ ఇంపోర్ట్‌లను"
+" మాత్రమే చేయాలి. రిలేటివ్ ఇంపోర్ట్‌ల కోసం, ``1`` ప్రస్తుత ప్యాకేజీని, ``2`` "
+"దాని పేరెంట్ ప్యాకేజీని సూచిస్తాయి, అలా కొనసాగుతుంది (వివరాల కోసం :pep:`328` "
+"చూడండి)."
 
 #: builtins/functions.rst:2370
 msgid ""
@@ -4566,36 +4589,47 @@ msgid ""
 "module named by *name*.  However, when a non-empty *fromlist* argument is "
 "given, the module named by *name* is returned."
 msgstr ""
+"*name* వేరియబుల్ ``package.module`` రూపంలో ఉన్నప్పుడు, సాధారణంగా టాప్ లెవెల్ "
+"ప్యాకేజీ (మొదటి డాట్ వరకు ఉన్న పేరు) రిటర్న్ అవుతుంది, *name* పేర్కొన్న "
+"మాడ్యూల్ *కాదు*. అయితే, ఖాళీ కాని *fromlist* ఆర్గ్యుమెంట్ ఇచ్చినప్పుడు, "
+"*name* పేర్కొన్న మాడ్యూల్ రిటర్న్ అవుతుంది."
 
 #: builtins/functions.rst:2375
 msgid ""
 "For example, the statement ``import spam`` results in bytecode resembling the"
 " following code::"
 msgstr ""
+"ఉదాహరణకు, ``import spam`` స్టేట్‌మెంట్ కింది కోడ్‌ను పోలిన బైట్‌కోడ్‌ను "
+"ఉత్పత్తి చేస్తుంది::"
 
 #: builtins/functions.rst:2378
 msgid "spam = __import__('spam', globals(), locals(), [], 0)"
-msgstr ""
+msgstr "spam = __import__('spam', globals(), locals(), [], 0)"
 
 #: builtins/functions.rst:2380
 msgid "The statement ``import spam.ham`` results in this call::"
-msgstr ""
+msgstr "``import spam.ham`` స్టేట్‌మెంట్ ఈ కాల్‌ను ఉత్పత్తి చేస్తుంది::"
 
 #: builtins/functions.rst:2382
 msgid "spam = __import__('spam.ham', globals(), locals(), [], 0)"
-msgstr ""
+msgstr "spam = __import__('spam.ham', globals(), locals(), [], 0)"
 
 #: builtins/functions.rst:2384
 msgid ""
 "Note how :func:`__import__` returns the toplevel module here because this is "
 "the object that is bound to a name by the :keyword:`import` statement."
 msgstr ""
+":keyword:`import` స్టేట్‌మెంట్ ఒక పేరుకు బైండ్ చేసేది ఈ ఆబ్జెక్ట్‌నే కాబట్టి,"
+" ఇక్కడ :func:`__import__` టాప్ లెవెల్ మాడ్యూల్‌ను ఎలా రిటర్న్ చేస్తుందో "
+"గమనించండి."
 
 #: builtins/functions.rst:2387
 msgid ""
 "On the other hand, the statement ``from spam.ham import eggs, sausage as "
 "saus`` results in ::"
 msgstr ""
+"మరోవైపు, ``from spam.ham import eggs, sausage as saus`` స్టేట్‌మెంట్ కింది "
+"దాన్ని ఉత్పత్తి చేస్తుంది::"
 
 #: builtins/functions.rst:2390
 msgid ""
@@ -4603,6 +4637,9 @@ msgid ""
 "eggs = _temp.eggs\n"
 "saus = _temp.sausage"
 msgstr ""
+"_temp = __import__('spam.ham', globals(), locals(), ['eggs', 'sausage'], 0)\n"
+"eggs = _temp.eggs\n"
+"saus = _temp.sausage"
 
 #: builtins/functions.rst:2394
 msgid ""
@@ -4610,24 +4647,33 @@ msgid ""
 " object, the names to import are retrieved and assigned to their respective "
 "names."
 msgstr ""
+"ఇక్కడ, :func:`__import__` నుండి ``spam.ham`` మాడ్యూల్ రిటర్న్ అవుతుంది. ఈ "
+"ఆబ్జెక్ట్ నుండి, ఇంపోర్ట్ చేయాల్సిన పేర్లను తీసుకుని, వాటికి సంబంధించిన "
+"పేర్లకు కేటాయిస్తారు."
 
 #: builtins/functions.rst:2398
 msgid ""
 "If you simply want to import a module (potentially within a package) by name,"
 " use :func:`importlib.import_module`."
 msgstr ""
+"మీరు కేవలం ఒక మాడ్యూల్‌ను (బహుశా ఒక ప్యాకేజీ లోపల ఉన్నదాన్ని) పేరు ద్వారా "
+"ఇంపోర్ట్ చేయాలనుకుంటే, :func:`importlib.import_module` ను ఉపయోగించండి."
 
 #: builtins/functions.rst:2401
 msgid ""
 "Negative values for *level* are no longer supported (which also changes the "
 "default value to 0)."
 msgstr ""
+"*level* కు రుణ విలువలు ఇకపై సపోర్ట్ చేయబడవు (దీనివల్ల డిఫాల్ట్ విలువ కూడా 0 "
+"కు మారుతుంది)."
 
 #: builtins/functions.rst:2405
 msgid ""
 "When the command line options :option:`-E` or :option:`-I` are being used, "
 "the environment variable :envvar:`PYTHONCASEOK` is now ignored."
 msgstr ""
+":option:`-E` లేదా :option:`-I` కమాండ్ లైన్ ఆప్షన్‌లను ఉపయోగిస్తున్నప్పుడు, "
+":envvar:`PYTHONCASEOK` ఎన్విరాన్‌మెంట్ వేరియబుల్ ఇప్పుడు విస్మరించబడుతుంది."
 
 #: builtins/functions.rst:158
 msgid "Boolean"
