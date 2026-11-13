@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-10 12:56-0700\n"
-"PO-Revision-Date: 2026-11-13 09:40-0800\n"
+"PO-Revision-Date: 2026-11-13 09:52-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -4677,108 +4677,108 @@ msgstr ""
 
 #: builtins/functions.rst:158
 msgid "Boolean"
-msgstr ""
+msgstr "బూలియన్"
 
 #: builtins/functions.rst:158 builtins/functions.rst:2170
 msgid "type"
-msgstr ""
+msgstr "టైప్"
 
 #: builtins/functions.rst:691
 msgid "built-in function"
-msgstr ""
+msgstr "బిల్ట్-ఇన్ ఫంక్షన్"
 
 #: builtins/functions.rst:691
 msgid "exec"
-msgstr ""
+msgstr "exec"
 
 #: builtins/functions.rst:794
 msgid "NaN"
-msgstr ""
+msgstr "NaN"
 
 #: builtins/functions.rst:794
 msgid "Infinity"
-msgstr ""
+msgstr "Infinity"
 
 #: builtins/functions.rst:864
 msgid "__format__"
-msgstr ""
+msgstr "__format__"
 
 #: builtins/functions.rst:864 builtins/functions.rst:2038
 msgid "string"
-msgstr ""
+msgstr "స్ట్రింగ్"
 
 #: builtins/functions.rst:864
 msgid "format() (built-in function)"
-msgstr ""
+msgstr "format() (బిల్ట్-ఇన్ ఫంక్షన్)"
 
 #: builtins/functions.rst:1393
 msgid "file object"
-msgstr ""
+msgstr "ఫైల్ ఆబ్జెక్ట్"
 
 #: builtins/functions.rst:1393 builtins/functions.rst:1489
 msgid "open() built-in function"
-msgstr ""
+msgstr "open() బిల్ట్-ఇన్ ఫంక్షన్"
 
 #: builtins/functions.rst:1422
 msgid "file"
-msgstr ""
+msgstr "ఫైల్"
 
 #: builtins/functions.rst:1422
 msgid "modes"
-msgstr ""
+msgstr "మోడ్‌లు"
 
 #: builtins/functions.rst:1489
 msgid "universal newlines"
-msgstr ""
+msgstr "యూనివర్సల్ న్యూలైన్‌లు"
 
 #: builtins/functions.rst:1550
 msgid "line-buffered I/O"
-msgstr ""
+msgstr "లైన్-బఫర్డ్ I/O"
 
 #: builtins/functions.rst:1550
 msgid "unbuffered I/O"
-msgstr ""
+msgstr "అన్‌బఫర్డ్ I/O"
 
 #: builtins/functions.rst:1550
 msgid "buffer size, I/O"
-msgstr ""
+msgstr "బఫర్ పరిమాణం, I/O"
 
 #: builtins/functions.rst:1550
 msgid "I/O control"
-msgstr ""
+msgstr "I/O కంట్రోల్"
 
 #: builtins/functions.rst:1550
 msgid "buffering"
-msgstr ""
+msgstr "బఫరింగ్"
 
 #: builtins/functions.rst:1550
 msgid "text mode"
-msgstr ""
+msgstr "టెక్స్ట్ మోడ్"
 
 #: builtins/functions.rst:1550 builtins/functions.rst:2340
 msgid "module"
-msgstr ""
+msgstr "మాడ్యూల్"
 
 #: builtins/functions.rst:1550
 msgid "sys"
-msgstr ""
+msgstr "sys"
 
 #: builtins/functions.rst:2038
 msgid "str() (built-in function)"
-msgstr ""
+msgstr "str() (బిల్ట్-ఇన్ ఫంక్షన్)"
 
 #: builtins/functions.rst:2170
 msgid "object"
-msgstr ""
+msgstr "ఆబ్జెక్ట్"
 
 #: builtins/functions.rst:2340
 msgid "statement"
-msgstr ""
+msgstr "స్టేట్‌మెంట్"
 
 #: builtins/functions.rst:2340
 msgid "import"
-msgstr ""
+msgstr "import"
 
 #: builtins/functions.rst:2340
 msgid "builtins"
-msgstr ""
+msgstr "builtins"
