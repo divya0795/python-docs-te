@@ -25,6 +25,32 @@ To get added to the language switcher on docs.python.org, these files have to be
 
 Read the [translating guide](https://devguide.python.org/documentation/translations/translating/) before you start.
 
+Never change code samples, interactive sessions or tracebacks: copy them
+exactly as they are in English, so prompts (`>>>`, `...`), indentation and
+error messages keep working.
+
+## Keeping up with CPython
+
+[translations.python.org](https://translations.python.org) measures this
+translation against the *latest* CPython 3.15 sources, so new or changed
+upstream strings lower the core completion (`bugs.po`, `tutorial/` and
+`builtins/functions.po`) even when nothing changed here. To stay at 100%:
+
+1. Run `make merge` to update every `.po` file (new strings appear
+   untranslated, slightly changed ones as fuzzy).
+2. Run `make core` to list the core strings that need work, and translate them.
+3. Commit the result.
+
+The tools need `polib` and `potodo` (`python -m pip install polib potodo`);
+`make spell` needs `pospell` and the `hunspell-te` dictionary. The Test
+workflow runs the same core check every week and fails when upstream has
+moved ahead.
+
+This repository is the source of truth and translations are made through
+pull requests. If the translation is ever connected to Transifex, upload
+fixes made here to Transifex (`tx push -t`) before the next pull from it,
+otherwise the sync overwrites them.
+
 ## Communication
 
 - Discourse: [Documentation › Translations](https://discuss.python.org/c/documentation/translations/)
