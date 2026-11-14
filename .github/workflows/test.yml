@@ -1,0 +1,52 @@
+name: Test
+
+on:
+  push:
+    branches: ['3.15']
+  pull_request:
+  schedule:
+    # Weekly: upstream CPython keeps changing the documentation, which lowers
+    # core completion on translations.python.org even without changes here.
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  CPYTHON_BRANCH: '3.15'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install sphinx-lint
+      - name: sphinx-lint
+        run: sphinx-lint --enable all --disable line-too-long *.po */*.po
+
+  core-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Check out the latest CPython ${{ env.CPYTHON_BRANCH }} sources
+        run: git clone --depth 1 --branch "$CPYTHON_BRANCH" https://github.com/python/cpython venv/cpython
+      - name: Install documentation requirements
+        run: python -m pip install -r venv/cpython/Doc/requirements.txt polib potodo
+      - name: Build .pot templates from the latest sources
+        run: make -C venv/cpython/Doc gettext
+      - name: Core completion, measured like translations.python.org
+        run: python scripts/core_completion.py venv/cpython/Doc/build/gettext
+      - name: Build the Telugu documentation (warnings are errors)
+        if: success() || failure()
+        run: |
+          mkdir -p locales/te/LC_MESSAGES
+          cp --parents *.po */*.po locales/te/LC_MESSAGES/
+          make -C venv/cpython/Doc html SPHINXERRORHANDLING=-W \
+            SPHINXOPTS="-D locale_dirs=$PWD/locales -D language=te -D gettext_compact=0 --keep-going"
