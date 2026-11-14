@@ -9,6 +9,8 @@
 # - make spell  # To check for spelling
 # - make clean # To remove build artifacts
 # - make fuzzy  # To find fuzzy strings
+# - make merge  # To update all .po files to the latest CPython $(BRANCH) sources
+# - make core  # To check core completion the way translations.python.org does
 #
 # Modes are: autobuild-stable, autobuild-dev, and autobuild-html
 
@@ -93,6 +95,28 @@ ensure_prerequisites: venv/cpython/.git/HEAD
 .PHONY: htmlview
 htmlview: MODE=htmlview
 htmlview: all
+
+# The documentation keeps changing upstream. translations.python.org measures
+# this translation against .pot files built from the *latest* CPython sources
+# of $(BRANCH), so new or changed upstream strings lower the core completion
+# even when nothing changed here. "make merge" brings every .po file up to
+# date (new strings untranslated, slightly changed ones fuzzy) and records the
+# CPython commit in CPYTHON_CURRENT_COMMIT; "make core" reports what is left.
+.PHONY: pot
+pot: ensure_prerequisites
+	git -C venv/cpython fetch origin $(BRANCH)
+	git -C venv/cpython checkout --quiet FETCH_HEAD
+	$(MAKE) -C venv/cpython/Doc gettext
+
+.PHONY: merge
+merge: pot
+	$(PYTHON) scripts/merge_pot.py venv/cpython/Doc/build/gettext
+	sed -i.bak "s/^CPYTHON_CURRENT_COMMIT := .*/CPYTHON_CURRENT_COMMIT := $$(git -C venv/cpython rev-parse HEAD)/" Makefile
+	rm -f Makefile.bak
+
+.PHONY: core
+core: pot
+	$(PYTHON) scripts/core_completion.py venv/cpython/Doc/build/gettext
 
 .PHONY: todo
 todo: ensure_prerequisites
