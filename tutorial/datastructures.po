@@ -958,16 +958,12 @@ msgstr ""
 "{'r', 'd', 'b', 'm', 'z', 'l'}"
 
 #: tutorial/datastructures.rst:486
-#, fuzzy
-#| msgid ""
-#| "Similarly to :ref:`list comprehensions <tut-listcomps>`, set comprehensions "
-#| "are also supported, including comprehensions with unpacking::"
 msgid ""
 "Similarly to :ref:`list comprehensions <tut-listcomps>`, set comprehensions "
 "are also supported::"
 msgstr ""
-":ref:`లిస్ట్ కాంప్రహెన్షన్‌ల <tut-listcomps>` మాదిరిగానే, అన్‌ప్యాకింగ్ ఉన్న "
-"కాంప్రహెన్షన్‌లతో సహా సెట్ కాంప్రహెన్షన్‌లు కూడా సపోర్ట్ చేయబడతాయి::"
+":ref:`లిస్ట్ కాంప్రహెన్షన్‌ల <tut-listcomps>` మాదిరిగానే, సెట్ "
+"కాంప్రహెన్షన్‌లు కూడా సపోర్ట్ చేయబడతాయి::"
 
 #: tutorial/datastructures.rst:489
 msgid ""
