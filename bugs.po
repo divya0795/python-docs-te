@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-16 02:05-0800\n"
-"PO-Revision-Date: 2026-10-29 19:29-0700\n"
+"PO-Revision-Date: 2026-11-16 02:10-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -121,28 +121,20 @@ msgid ""
 msgstr "Python డాక్యుమెంటేషన్‌కు సహకరించాలనే ఆసక్తి ఉన్నవారి కోసం సమగ్ర గైడ్."
 
 #: bugs.rst:46
-#, fuzzy
-#| msgid ""
-#| "`Documentation Translations "
-#| "<https://devguide.python.org/documentation/translations/translating/#translation-"
-#| "coordinators>`_"
 msgid ""
 "`Documentation Translations "
 "<https://devguide.python.org/documentation/translating/>`_"
 msgstr ""
 "`డాక్యుమెంటేషన్ అనువాదాలు "
-"<https://devguide.python.org/documentation/translations/translating/#translation-"
-"coordinators>`_"
+"<https://devguide.python.org/documentation/translating/>`_"
 
 #: bugs.rst:47
-#, fuzzy
-#| msgid ""
-#| "A list of GitHub pages for documentation translation and their coordination "
-#| "teams."
 msgid ""
 "A list of GitHub pages for documentation translation and their primary "
 "contacts."
-msgstr "డాక్యుమెంటేషన్ అనువాదాల GitHub పేజీలు మరియు వాటి సమన్వయ బృందాల జాబితా."
+msgstr ""
+"డాక్యుమెంటేషన్ అనువాదాల GitHub పేజీలు మరియు వాటి ప్రధాన సంప్రదింపు వ్యక్తుల "
+"జాబితా."
 
 #: bugs.rst:53
 msgid "Using the Python issue tracker"
