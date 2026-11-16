@@ -2791,18 +2791,24 @@ msgid ""
 "``'strict'`` to raise a :exc:`ValueError` exception if there is an encoding "
 "error.  The default value of ``None`` has the same effect."
 msgstr ""
+"``'strict'`` ఎన్‌కోడింగ్ లోపం ఉన్నప్పుడు :exc:`ValueError` ఎక్సెప్షన్‌ను రైజ్"
+" చేస్తుంది. డిఫాల్ట్ విలువ ``None`` కూడా ఇదే ప్రభావాన్ని చూపుతుంది."
 
 #: builtins/functions.rst:1457
 msgid ""
 "``'ignore'`` ignores errors.  Note that ignoring encoding errors can lead to "
 "data loss."
 msgstr ""
+"``'ignore'`` లోపాలను విస్మరిస్తుంది. ఎన్‌కోడింగ్ లోపాలను విస్మరించడం వల్ల "
+"డేటా నష్టం జరగవచ్చని గమనించండి."
 
 #: builtins/functions.rst:1460
 msgid ""
 "``'replace'`` causes a replacement marker (such as ``'?'``) to be inserted "
 "where there is malformed data."
 msgstr ""
+"``'replace'`` తప్పుగా ఏర్పడిన (malformed) డేటా ఉన్న చోట ఒక రీప్లేస్‌మెంట్ "
+"మార్కర్‌ను (``'?'`` వంటిది) చొప్పిస్తుంది."
 
 #: builtins/functions.rst:1463
 msgid ""
@@ -2812,6 +2818,11 @@ msgid ""
 "handler is used when writing data.  This is useful for processing files in an"
 " unknown encoding."
 msgstr ""
+"``'surrogateescape'`` ఏవైనా తప్పు బైట్‌లను U+DC80 నుండి U+DCFF వరకు ఉండే లో "
+"సరోగేట్ కోడ్ యూనిట్‌లుగా సూచిస్తుంది. డేటాను రాసేటప్పుడు ``surrogateescape`` "
+"లోప హ్యాండ్లర్‌ను ఉపయోగిస్తే, ఈ సరోగేట్ కోడ్ యూనిట్‌లు తిరిగి అవే బైట్‌లుగా "
+"మార్చబడతాయి. తెలియని ఎన్‌కోడింగ్‌లో ఉన్న ఫైల్‌లను ప్రాసెస్ చేయడానికి ఇది "
+"ఉపయోగపడుతుంది."
 
 #: builtins/functions.rst:1470
 msgid ""
@@ -2819,18 +2830,25 @@ msgid ""
 "not supported by the encoding are replaced with the appropriate XML character"
 " reference :samp:`&#{nnn};`."
 msgstr ""
+"``'xmlcharrefreplace'`` ఫైల్‌లో రాసేటప్పుడు మాత్రమే సపోర్ట్ చేయబడుతుంది. "
+"ఎన్‌కోడింగ్ సపోర్ట్ చేయని అక్షరాలు తగిన XML క్యారెక్టర్ రిఫరెన్స్ "
+":samp:`&#{nnn};` తో భర్తీ చేయబడతాయి."
 
 #: builtins/functions.rst:1474
 msgid ""
 "``'backslashreplace'`` replaces malformed data by Python's backslashed escape"
 " sequences."
 msgstr ""
+"``'backslashreplace'`` తప్పుగా ఏర్పడిన డేటాను Python యొక్క బ్యాక్‌స్లాష్ "
+"ఎస్కేప్ సీక్వెన్స్‌లతో భర్తీ చేస్తుంది."
 
 #: builtins/functions.rst:1477
 msgid ""
 "``'namereplace'`` (also only supported when writing) replaces unsupported "
 "characters with ``\\N{...}`` escape sequences."
 msgstr ""
+"``'namereplace'`` (ఇది కూడా రాసేటప్పుడు మాత్రమే సపోర్ట్ చేయబడుతుంది) సపోర్ట్ "
+"చేయని అక్షరాలను ``\\N{...}`` ఎస్కేప్ సీక్వెన్స్‌లతో భర్తీ చేస్తుంది."
 
 #: builtins/functions.rst:1485
 msgid ""
