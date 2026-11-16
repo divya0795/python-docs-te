@@ -4,17 +4,17 @@ on:
   push:
     branches: ['3.15']
   pull_request:
+    branches: ['3.15']
   schedule:
     # Weekly: upstream CPython keeps changing the documentation, which lowers
     # core completion on translations.python.org even without changes here.
+    # GitHub only runs schedules from the default branch, so this weekly run
+    # also checks the 3.14 branch.
     - cron: '17 6 * * 1'
   workflow_dispatch:
 
 permissions:
   contents: read
-
-env:
-  CPYTHON_BRANCH: '3.15'
 
 jobs:
   lint:
@@ -30,8 +30,18 @@ jobs:
 
   core-and-build:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # Scheduled and manual runs check every version branch; pushes and
+        # pull requests check only 3.15.
+        branch: ${{ fromJSON((github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && '["3.15", "3.14"]' || '["3.15"]') }}
+    env:
+      CPYTHON_BRANCH: ${{ matrix.branch }}
     steps:
       - uses: actions/checkout@v7
+        with:
+          ref: ${{ (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && matrix.branch || '' }}
       - uses: actions/setup-python@v7
         with:
           python-version: '3.13'

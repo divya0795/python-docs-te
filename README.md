@@ -5,7 +5,8 @@ This repository holds the Telugu (`te`) translation of the
 [PEP 545](https://peps.python.org/pep-0545/) and the
 [Python Developer's Guide translation process](https://devguide.python.org/documentation/translations/coordinating/).
 
-**Status:** just started. Translating Python 3.15 (branch `3.15`).
+**Status:** the core resources (`bugs.po`, `tutorial/` and `builtins/functions.po`)
+are translated. This branch is for Python 3.15; Python 3.14 is on branch `3.14`.
 
 ## Priorities
 
@@ -17,7 +18,8 @@ To get added to the language switcher on docs.python.org, these files have to be
 
 ## How to contribute
 
-1. Fork this repository and create a branch from `3.15`.
+1. Fork this repository and create a branch from the branch of the Python
+   version you are translating (`3.15` or `3.14`).
 2. Pick a `.po` file (run `make todo` to see what's left) and translate the `msgstr` entries.
 3. Keep terms consistent with [`GLOSSARY.md`](GLOSSARY.md).
 4. Run `make verifs` (wrapping and spelling checks) before you commit.
@@ -32,7 +34,7 @@ error messages keep working.
 ## Keeping up with CPython
 
 [translations.python.org](https://translations.python.org) measures this
-translation against the *latest* CPython 3.15 sources, so new or changed
+translation against the *latest* CPython sources of each branch, so new or changed
 upstream strings lower the core completion (`bugs.po`, `tutorial/` and
 `builtins/functions.po`) even when nothing changed here. To stay at 100%:
 
