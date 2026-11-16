@@ -71,7 +71,11 @@ def merge_file(pot_path: Path, po_path: Path) -> tuple[int, int]:
                 entry.previous_msgid = close[0]
                 fuzzied += 1
         new.append(entry)
-    if old is not None and _entries(old) == _entries(new):
+    if (
+        old is not None
+        and _entries(old) == _entries(new)
+        and old.metadata.get("Project-Id-Version") == pot.metadata.get("Project-Id-Version")
+    ):
         return 0, 0  # nothing changed upstream: leave the file (and its header) as is
     po_path.parent.mkdir(parents=True, exist_ok=True)
     new.save(str(po_path))
@@ -93,14 +97,29 @@ def main() -> int:
     repo = Path(__file__).resolve().parent.parent
     pot_dir = Path(sys.argv[1]).resolve()
     total_added = total_fuzzy = 0
+    templates = set()
     for pot_path in sorted(pot_dir.rglob("*.pot")):
         rel = pot_path.relative_to(pot_dir).with_suffix(".po")
+        templates.add(rel)
         added, fuzzied = merge_file(pot_path, repo / rel)
         if added:
             print(f"{rel}: {added} new or changed strings ({fuzzied} pre-filled as fuzzy)")
         total_added += added
         total_fuzzy += fuzzied
-    print(f"Done: {total_added} new or changed strings, {total_fuzzy} marked fuzzy.")
+    # Pages removed upstream (or absent from this branch's Python version)
+    removed = [
+        po.relative_to(repo)
+        for po in sorted(repo.glob("**/*.po"))
+        if po.relative_to(repo).parts[0] not in ("venv", ".venv", "locales")
+        and po.relative_to(repo) not in templates
+    ]
+    for rel in removed:
+        (repo / rel).unlink()
+        print(f"{rel}: removed (no longer in the CPython sources)")
+    print(
+        f"Done: {total_added} new or changed strings, {total_fuzzy} marked fuzzy, "
+        f"{len(removed)} files removed."
+    )
     return 0
 
 
