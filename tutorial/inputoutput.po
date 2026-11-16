@@ -652,18 +652,14 @@ msgid "Reading and Writing Files"
 msgstr "ఫైల్‌లను చదవడం మరియు రాయడం"
 
 #: tutorial/inputoutput.rst:313
-#, fuzzy
-#| msgid ""
-#| ":func:`open` returns a :term:`file object`, and is most commonly used with "
-#| "two positional arguments: ``open(filename, mode)``"
 msgid ""
 ":func:`open` returns a :term:`file object`, and is most commonly used with "
 "two positional arguments and one keyword argument: ``open(filename, mode, "
 "encoding=None)``"
 msgstr ""
 ":func:`open` ఒక :term:`ఫైల్ ఆబ్జెక్ట్‌ను <file object>` రిటర్న్ చేస్తుంది, "
-"మరియు సాధారణంగా రెండు పొజిషనల్ ఆర్గ్యుమెంట్‌లతో ఉపయోగిస్తారు: "
-"``open(filename, mode)``"
+"మరియు సాధారణంగా రెండు పొజిషనల్ ఆర్గ్యుమెంట్‌లు, ఒక కీవర్డ్ ఆర్గ్యుమెంట్‌తో "
+"ఉపయోగిస్తారు: ``open(filename, mode, encoding=None)``"
 
 #: tutorial/inputoutput.rst:319
 msgid ">>> f = open('workfile', 'w', encoding=\"utf-8\")"
@@ -689,14 +685,6 @@ msgstr ""
 " *mode* ఆర్గ్యుమెంట్ ఐచ్ఛికం; దాన్ని వదిలేస్తే ``'r'`` అని భావించబడుతుంది."
 
 #: tutorial/inputoutput.rst:335
-#, fuzzy
-#| msgid ""
-#| "Normally, files are opened in :dfn:`text mode`, that means, you read and "
-#| "write strings from and to the file, which are encoded in a specific "
-#| "*encoding*. If *encoding* is not specified, the default is UTF-8 (see "
-#| ":func:`open`). Appending a ``'b'`` to the mode opens the file in :dfn:`binary"
-#| " mode`. Binary mode data is read and written as :class:`bytes` objects. You "
-#| "can not specify *encoding* when opening file in binary mode."
 msgid ""
 "Normally, files are opened in :dfn:`text mode`, that means, you read and "
 "write strings from and to the file, which are encoded in a specific "
@@ -710,10 +698,13 @@ msgstr ""
 "సాధారణంగా, ఫైల్‌లు :dfn:`text mode` (టెక్స్ట్ మోడ్) లో తెరవబడతాయి, అంటే, మీరు"
 " ఫైల్‌లో స్ట్రింగ్‌లను రాస్తారు, ఫైల్ నుండి స్ట్రింగ్‌లను చదువుతారు, అవి ఒక "
 "నిర్దిష్ట *encoding* లో ఎన్‌కోడ్ చేయబడి ఉంటాయి. *encoding* పేర్కొనకపోతే, "
-"డిఫాల్ట్ UTF-8 (:func:`open` చూడండి). మోడ్‌కు ``'b'`` జోడిస్తే ఫైల్ "
-":dfn:`binary mode` (బైనరీ మోడ్) లో తెరవబడుతుంది. బైనరీ మోడ్ డేటా "
-":class:`bytes` ఆబ్జెక్ట్‌లుగా చదవబడుతుంది, రాయబడుతుంది. బైనరీ మోడ్‌లో ఫైల్‌ను"
-" తెరిచేటప్పుడు మీరు *encoding* ను పేర్కొనలేరు."
+"డిఫాల్ట్ ప్లాట్‌ఫామ్‌పై ఆధారపడి ఉంటుంది (:func:`open` చూడండి). UTF-8 ఈ "
+"రోజుల్లో వాస్తవ ప్రమాణం (de-facto standard) కాబట్టి, వేరే ఎన్‌కోడింగ్ అవసరమని"
+" మీకు తెలిస్తే తప్ప ``encoding=\"utf-8\"`` ను ఉపయోగించడం సిఫార్సు "
+"చేయబడుతుంది. మోడ్‌కు ``'b'`` జోడిస్తే ఫైల్ :dfn:`binary mode` (బైనరీ మోడ్) లో"
+" తెరవబడుతుంది. బైనరీ మోడ్ డేటా :class:`bytes` ఆబ్జెక్ట్‌లుగా చదవబడుతుంది, "
+"రాయబడుతుంది. బైనరీ మోడ్‌లో ఫైల్‌ను తెరిచేటప్పుడు మీరు *encoding* ను "
+"పేర్కొనలేరు."
 
 #: tutorial/inputoutput.rst:345
 msgid ""
@@ -1137,6 +1128,9 @@ msgid ""
 "JSON files must be encoded in UTF-8. Use ``encoding=\"utf-8\"`` when opening "
 "JSON file as a :term:`text file` for both of reading and writing."
 msgstr ""
+"JSON ఫైల్‌లు UTF-8 లో ఎన్‌కోడ్ చేయబడి ఉండాలి. JSON ఫైల్‌ను చదవడానికి, "
+"రాయడానికి రెండింటికీ :term:`టెక్స్ట్ ఫైల్‌గా <text file>` తెరిచేటప్పుడు "
+"``encoding=\"utf-8\"`` ను ఉపయోగించండి."
 
 #: tutorial/inputoutput.rst:538
 msgid ""
