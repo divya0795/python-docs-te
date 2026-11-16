@@ -2,19 +2,18 @@ name: Test
 
 on:
   push:
-    branches: ['3.15']
+    branches: ['3.14']
   pull_request:
-  schedule:
-    # Weekly: upstream CPython keeps changing the documentation, which lowers
-    # core completion on translations.python.org even without changes here.
-    - cron: '17 6 * * 1'
+    branches: ['3.14']
+  # The weekly check of this branch runs from the default branch (3.15),
+  # because GitHub only runs scheduled workflows from the default branch.
   workflow_dispatch:
 
 permissions:
   contents: read
 
 env:
-  CPYTHON_BRANCH: '3.15'
+  CPYTHON_BRANCH: '3.14'
 
 jobs:
   lint:
