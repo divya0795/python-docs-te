@@ -19,8 +19,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: tutorial/inputoutput.rst:5
-#, fuzzy
-#| msgid "Input and output"
 msgid "Input and Output"
 msgstr "ఇన్‌పుట్ మరియు అవుట్‌పుట్"
 
@@ -35,8 +33,6 @@ msgstr ""
 "ఫైల్‌లో రాయవచ్చు. ఈ అధ్యాయం వాటిలో కొన్ని అవకాశాలను చర్చిస్తుంది."
 
 #: tutorial/inputoutput.rst:15
-#, fuzzy
-#| msgid "Fancier output formatting"
 msgid "Fancier Output Formatting"
 msgstr "మరింత మెరుగైన అవుట్‌పుట్ ఫార్మాటింగ్"
 
@@ -235,8 +231,6 @@ msgstr ""
 "ఫార్మాటింగ్‌పై ఇది చాలా తక్కువ నియంత్రణను అందిస్తుంది."
 
 #: tutorial/inputoutput.rst:115
-#, fuzzy
-#| msgid "Formatted string literals"
 msgid "Formatted String Literals"
 msgstr "ఫార్మాట్ చేసిన స్ట్రింగ్ లిటరల్‌లు"
 
@@ -344,8 +338,6 @@ msgstr ""
 "రిఫరెన్స్ కోసం, :ref:`formatspec` కోసం ఉన్న రిఫరెన్స్ గైడ్ చూడండి."
 
 #: tutorial/inputoutput.rst:167
-#, fuzzy
-#| msgid "The string format() method"
 msgid "The String format() Method"
 msgstr "స్ట్రింగ్ format() మెథడ్"
 
@@ -526,8 +518,6 @@ msgstr ""
 ":ref:`formatstrings` చూడండి."
 
 #: tutorial/inputoutput.rst:244
-#, fuzzy
-#| msgid "Manual string formatting"
 msgid "Manual String Formatting"
 msgstr "మాన్యువల్ స్ట్రింగ్ ఫార్మాటింగ్"
 
@@ -658,8 +648,6 @@ msgid ""
 msgstr "మరింత సమాచారం :ref:`old-string-formatting` విభాగంలో లభిస్తుంది."
 
 #: tutorial/inputoutput.rst:307
-#, fuzzy
-#| msgid "Reading and writing files"
 msgid "Reading and Writing Files"
 msgstr "ఫైల్‌లను చదవడం మరియు రాయడం"
 
@@ -822,8 +810,6 @@ msgstr ""
 "ValueError: I/O operation on closed file."
 
 #: tutorial/inputoutput.rst:393
-#, fuzzy
-#| msgid "Methods of file objects"
 msgid "Methods of File Objects"
 msgstr "ఫైల్ ఆబ్జెక్ట్‌ల మెథడ్‌లు"
 
