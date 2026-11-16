@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.15\n"
+"Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 12:56-0700\n"
+"POT-Creation-Date: 2026-11-16 02:05-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Telugu\n"
@@ -31,13 +31,12 @@ msgstr ""
 
 #: library/datatypes.rst:11
 msgid ""
-"Python also provides :ref:`some built-in data types <bltin-types>`, in "
-"particular, :class:`list`, :class:`tuple`, :class:`dict`, "
-":class:`frozendict`, :class:`set`,  and :class:`frozenset`. The :class:`str` "
-"class is used to hold Unicode strings, and the :class:`bytes` and "
-":class:`bytearray` classes are used to hold binary data."
+"Python also provides some built-in data types, in particular, :class:`dict`, "
+":class:`list`, :class:`set` and :class:`frozenset`, and :class:`tuple`.  The "
+":class:`str` class is used to hold Unicode strings, and the :class:`bytes` "
+"and :class:`bytearray` classes are used to hold binary data."
 msgstr ""
 
-#: library/datatypes.rst:18
+#: library/datatypes.rst:17
 msgid "The following modules are documented in this chapter:"
 msgstr ""

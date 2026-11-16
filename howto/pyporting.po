@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.15\n"
+"Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 12:56-0700\n"
+"POT-Creation-Date: 2026-11-16 02:05-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Telugu\n"
@@ -22,7 +22,15 @@ msgstr ""
 msgid "How to port Python 2 Code to Python 3"
 msgstr ""
 
+#: howto/pyporting.rst:0
+msgid "author"
+msgstr ""
+
 #: howto/pyporting.rst:9
+msgid "Brett Cannon"
+msgstr ""
+
+#: howto/pyporting.rst:11
 msgid ""
 "Python 2 reached its official end-of-life at the start of 2020. This means "
 "that no new bug reports, fixes, or changes will be made to Python 2 - it's no"
@@ -30,47 +38,47 @@ msgid ""
 "<https://devguide.python.org/versions>`_."
 msgstr ""
 
-#: howto/pyporting.rst:14
+#: howto/pyporting.rst:16
 msgid ""
 "If you are looking to port an extension module instead of pure Python code, "
 "please see :ref:`cporting-howto`."
 msgstr ""
 
-#: howto/pyporting.rst:17
+#: howto/pyporting.rst:19
 msgid ""
 "The archived python-porting_ mailing list may contain some useful guidance."
 msgstr ""
 
-#: howto/pyporting.rst:19
+#: howto/pyporting.rst:21
 msgid ""
 "Since Python 3.11 the original porting guide was discontinued. You can find "
 "the old guide in the `archive "
 "<https://docs.python.org/3.10/howto/pyporting.html>`_."
 msgstr ""
 
-#: howto/pyporting.rst:25
+#: howto/pyporting.rst:27
 msgid "Third-party guides"
 msgstr ""
 
-#: howto/pyporting.rst:27
+#: howto/pyporting.rst:29
 msgid "There are also multiple third-party guides that might be useful:"
 msgstr ""
 
-#: howto/pyporting.rst:29
+#: howto/pyporting.rst:31
 msgid "`Guide by Fedora <https://portingguide.readthedocs.io>`_"
 msgstr ""
 
-#: howto/pyporting.rst:30
+#: howto/pyporting.rst:32
 msgid "`PyCon 2020 tutorial <https://www.youtube.com/watch?v=JgIgEjASOlk>`_"
 msgstr ""
 
-#: howto/pyporting.rst:31
+#: howto/pyporting.rst:33
 msgid ""
 "`Guide by DigitalOcean <https://www.digitalocean.com/community/tutorials/how-"
 "to-port-python-2-code-to-python-3>`_"
 msgstr ""
 
-#: howto/pyporting.rst:32
+#: howto/pyporting.rst:34
 msgid ""
 "`Guide by ActiveState <https://www.activestate.com/blog/how-to-migrate-"
 "python-2-applications-to-python-3>`_"

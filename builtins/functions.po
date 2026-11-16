@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.15\n"
+"Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 12:56-0700\n"
+"POT-Creation-Date: 2026-11-16 02:05-0800\n"
 "PO-Revision-Date: 2026-11-13 10:39-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: builtins/functions.rst:5
-msgid "Built-in functions"
+#: builtins/functions.rst:5 builtins/functions.rst:11
+msgid "Built-in Functions"
 msgstr "బిల్ట్-ఇన్ ఫంక్షన్‌లు"
 
 #: builtins/functions.rst:7
@@ -29,10 +29,6 @@ msgid ""
 msgstr ""
 "Python ఇంటర్‌ప్రెటర్‌లో అనేక ఫంక్షన్‌లు మరియు టైప్‌లు బిల్ట్-ఇన్‌గా ఉన్నాయి, "
 "అవి ఎల్లప్పుడూ అందుబాటులో ఉంటాయి. అవి ఇక్కడ అక్షర క్రమంలో జాబితా చేయబడ్డాయి."
-
-#: builtins/functions.rst:11
-msgid "Built-in Functions"
-msgstr "బిల్ట్-ఇన్ ఫంక్షన్‌లు"
 
 #: builtins/functions.rst:13
 msgid "**A**"
@@ -163,70 +159,66 @@ msgid ":func:`format`"
 msgstr ":func:`format`"
 
 #: builtins/functions.rst:22
-msgid "|func-frozendict|_"
-msgstr "|func-frozendict|_"
-
-#: builtins/functions.rst:23
 msgid "|func-frozenset|_"
 msgstr "|func-frozenset|_"
 
-#: builtins/functions.rst:25
+#: builtins/functions.rst:24
 msgid "**G**"
 msgstr "**G**"
 
-#: builtins/functions.rst:26
+#: builtins/functions.rst:25
 msgid ":func:`getattr`"
 msgstr ":func:`getattr`"
 
-#: builtins/functions.rst:27
+#: builtins/functions.rst:26
 msgid ":func:`globals`"
 msgstr ":func:`globals`"
 
-#: builtins/functions.rst:29
+#: builtins/functions.rst:28
 msgid "**H**"
 msgstr "**H**"
 
-#: builtins/functions.rst:30
+#: builtins/functions.rst:29
 msgid ":func:`hasattr`"
 msgstr ":func:`hasattr`"
 
-#: builtins/functions.rst:31
+#: builtins/functions.rst:30
 msgid ":func:`hash`"
 msgstr ":func:`hash`"
 
-#: builtins/functions.rst:32
+#: builtins/functions.rst:31
 msgid ":func:`help`"
 msgstr ":func:`help`"
 
-#: builtins/functions.rst:33
+#: builtins/functions.rst:32
 msgid ":func:`hex`"
 msgstr ":func:`hex`"
 
-#: builtins/functions.rst:35
+#: builtins/functions.rst:34
 msgid "**I**"
 msgstr "**I**"
 
-#: builtins/functions.rst:36
+#: builtins/functions.rst:35
 msgid ":func:`id`"
 msgstr ":func:`id`"
 
-#: builtins/functions.rst:37
+#: builtins/functions.rst:36
 msgid ":func:`input`"
 msgstr ":func:`input`"
 
-#: builtins/functions.rst:38
+#: builtins/functions.rst:37
 msgid ":func:`int`"
 msgstr ":func:`int`"
 
-#: builtins/functions.rst:39
+#: builtins/functions.rst:38
 msgid ":func:`isinstance`"
 msgstr ":func:`isinstance`"
 
-#: builtins/functions.rst:40
+#: builtins/functions.rst:39
 msgid ":func:`issubclass`"
 msgstr ":func:`issubclass`"
 
-#: builtins/functions.rst:41
+#: builtins/functions.rst:40
 msgid ":func:`iter`"
 msgstr ":func:`iter`"
 
@@ -343,70 +335,66 @@ msgid ":func:`setattr`"
 msgstr ":func:`setattr`"
 
 #: builtins/functions.rst:22
-msgid ":func:`sentinel`"
-msgstr ":func:`sentinel`"
-
-#: builtins/functions.rst:23
 msgid ":func:`slice`"
 msgstr ":func:`slice`"
 
-#: builtins/functions.rst:24
+#: builtins/functions.rst:23
 msgid ":func:`sorted`"
 msgstr ":func:`sorted`"
 
-#: builtins/functions.rst:25
+#: builtins/functions.rst:24
 msgid ":func:`staticmethod`"
 msgstr ":func:`staticmethod`"
 
-#: builtins/functions.rst:26
+#: builtins/functions.rst:25
 msgid "|func-str|_"
 msgstr "|func-str|_"
 
-#: builtins/functions.rst:27
+#: builtins/functions.rst:26
 msgid ":func:`sum`"
 msgstr ":func:`sum`"
 
-#: builtins/functions.rst:28
+#: builtins/functions.rst:27
 msgid ":func:`super`"
 msgstr ":func:`super`"
 
-#: builtins/functions.rst:30
+#: builtins/functions.rst:29
 msgid "**T**"
 msgstr "**T**"
 
-#: builtins/functions.rst:31
+#: builtins/functions.rst:30
 msgid "|func-tuple|_"
 msgstr "|func-tuple|_"
 
-#: builtins/functions.rst:32
+#: builtins/functions.rst:31
 msgid ":func:`type`"
 msgstr ":func:`type`"
 
-#: builtins/functions.rst:34
+#: builtins/functions.rst:33
 msgid "**V**"
 msgstr "**V**"
 
-#: builtins/functions.rst:35
+#: builtins/functions.rst:34
 msgid ":func:`vars`"
 msgstr ":func:`vars`"
 
-#: builtins/functions.rst:37
+#: builtins/functions.rst:36
 msgid "**Z**"
 msgstr "**Z**"
 
-#: builtins/functions.rst:38
+#: builtins/functions.rst:37
 msgid ":func:`zip`"
 msgstr ":func:`zip`"
 
-#: builtins/functions.rst:40
+#: builtins/functions.rst:39
 msgid "**_**"
 msgstr "**_**"
 
-#: builtins/functions.rst:41
+#: builtins/functions.rst:40
 msgid ":func:`__import__`"
 msgstr ":func:`__import__`"
 
-#: builtins/functions.rst:61
+#: builtins/functions.rst:59
 msgid ""
 "Return the absolute value of a number.  The argument may be an integer, a "
 "floating-point number, or an object implementing :meth:`~object.__abs__`. If "
@@ -417,7 +405,7 @@ msgstr ""
 "రూపొందించిన ఆబ్జెక్ట్ కావచ్చు. ఆర్గ్యుమెంట్ సంకీర్ణ సంఖ్య అయితే, దాని పరిమాణం"
 " (magnitude) రిటర్న్ చేయబడుతుంది."
 
-#: builtins/functions.rst:69
+#: builtins/functions.rst:67
 msgid ""
 "Return an :term:`asynchronous iterator` for an :term:`asynchronous iterable`."
 " Equivalent to calling ``x.__aiter__()``."
@@ -426,13 +414,13 @@ msgstr ""
 ":term:`అసింక్రొనస్ ఇటరేటర్‌ను <asynchronous iterator>` రిటర్న్ చేస్తుంది. "
 "``x.__aiter__()`` ను కాల్ చేయడానికి సమానం."
 
-#: builtins/functions.rst:72
+#: builtins/functions.rst:70
 msgid "Note: Unlike :func:`iter`, :func:`aiter` has no 2-argument variant."
 msgstr ""
 "గమనిక: :func:`iter` లా కాకుండా, :func:`aiter` కు 2-ఆర్గ్యుమెంట్‌ల రూపాంతరం "
 "లేదు."
 
-#: builtins/functions.rst:78
+#: builtins/functions.rst:76
 msgid ""
 "Return ``True`` if all elements of the *iterable* are true (or if the "
 "iterable is empty).  Equivalent to::"
@@ -440,7 +428,7 @@ msgstr ""
 "*iterable* లోని అన్ని ఎలిమెంట్‌లు సత్యం అయితే (లేదా ఇటరబుల్ ఖాళీగా ఉంటే) "
 "``True`` ను రిటర్న్ చేస్తుంది. దీనికి సమానం::"
 
-#: builtins/functions.rst:81
+#: builtins/functions.rst:79
 msgid ""
 "def all(iterable):\n"
 "    for element in iterable:\n"
@@ -454,7 +442,7 @@ msgstr ""
 "            return False\n"
 "    return True"
 
-#: builtins/functions.rst:91
+#: builtins/functions.rst:89
 msgid ""
 "When awaited, return the next item from the given :term:`asynchronous "
 "iterator`, or *default* if given and the iterator is :term:`exhausted`."
@@ -463,14 +451,14 @@ msgstr ""
 "iterator>` నుండి తదుపరి ఐటెమ్‌ను రిటర్న్ చేస్తుంది; *default* ఇచ్చి, ఇటరేటర్ "
 ":term:`అయిపోయినప్పుడు <exhausted>` *default* ను రిటర్న్ చేస్తుంది."
 
-#: builtins/functions.rst:94
+#: builtins/functions.rst:92
 msgid ""
 "This is the async variant of the :func:`next` builtin, and behaves similarly."
 msgstr ""
 "ఇది బిల్ట్-ఇన్ :func:`next` యొక్క అసింక్రొనస్ రూపాంతరం, ఇది కూడా అదే విధంగా "
 "ప్రవర్తిస్తుంది."
 
-#: builtins/functions.rst:97
+#: builtins/functions.rst:95
 msgid ""
 "This calls the :meth:`~object.__anext__` method of *async_iterator*, "
 "returning an :term:`awaitable`. Awaiting this returns the next value of the "
@@ -483,7 +471,7 @@ msgstr ""
 " అయిపోయినప్పుడు అది రిటర్న్ చేయబడుతుంది, లేకపోతే :exc:`StopAsyncIteration` "
 "రైజ్ చేయబడుతుంది."
 
-#: builtins/functions.rst:106
+#: builtins/functions.rst:104
 msgid ""
 "Return ``True`` if any element of the *iterable* is true.  If the iterable is"
 " empty, return ``False``.  Equivalent to::"
@@ -491,7 +479,7 @@ msgstr ""
 "*iterable* లోని ఏదైనా ఒక ఎలిమెంట్ సత్యం అయితే ``True`` ను రిటర్న్ చేస్తుంది. "
 "ఇటరబుల్ ఖాళీగా ఉంటే, ``False`` ను రిటర్న్ చేస్తుంది. దీనికి సమానం::"
 
-#: builtins/functions.rst:109
+#: builtins/functions.rst:107
 msgid ""
 "def any(iterable):\n"
 "    for element in iterable:\n"
@@ -505,7 +493,7 @@ msgstr ""
 "            return True\n"
 "    return False"
 
-#: builtins/functions.rst:118
+#: builtins/functions.rst:116
 msgid ""
 "As :func:`repr`, return a string containing a printable representation of an "
 "object, but escape the non-ASCII characters in the string returned by "
@@ -518,7 +506,7 @@ msgstr ""
 "ఎస్కేప్‌లను ఉపయోగించి ఎస్కేప్ చేస్తుంది. ఇది Python 2 లో :func:`repr` రిటర్న్"
 " చేసే స్ట్రింగ్‌ను పోలిన స్ట్రింగ్‌ను తయారు చేస్తుంది."
 
-#: builtins/functions.rst:126
+#: builtins/functions.rst:124
 msgid ""
 "Convert an integer number to a binary string prefixed with \"0b\". The result"
 " is a valid Python expression. If *integer* is not a Python :class:`int` "
@@ -530,7 +518,7 @@ msgstr ""
 ":class:`int` ఆబ్జెక్ట్ కాకపోతే, అది ఒక పూర్ణాంకాన్ని రిటర్న్ చేసే "
 ":meth:`~object.__index__` మెథడ్‌ను నిర్వచించాలి. కొన్ని ఉదాహరణలు:"
 
-#: builtins/functions.rst:136
+#: builtins/functions.rst:134
 msgid ""
 "If the prefix \"0b\" is desired or not, you can use either of the following "
 "ways."
@@ -538,19 +526,19 @@ msgstr ""
 "\"0b\" ప్రిఫిక్స్ కావాలన్నా వద్దన్నా, మీరు కింది మార్గాలలో దేనినైనా "
 "ఉపయోగించవచ్చు."
 
-#: builtins/functions.rst:143
+#: builtins/functions.rst:141
 msgid ""
 "See also :func:`enum.bin` to represent negative values as twos-complement."
 msgstr ""
 "రుణ విలువలను టూస్-కాంప్లిమెంట్ (twos-complement) రూపంలో సూచించడానికి "
 ":func:`enum.bin` ను కూడా చూడండి."
 
-#: builtins/functions.rst:145 builtins/functions.rst:1007
-#: builtins/functions.rst:1391
+#: builtins/functions.rst:143 builtins/functions.rst:973
+#: builtins/functions.rst:1357
 msgid "See also :func:`format` for more information."
 msgstr "మరింత సమాచారం కోసం :func:`format` ను కూడా చూడండి."
 
-#: builtins/functions.rst:150
+#: builtins/functions.rst:148
 msgid ""
 "Return a Boolean value, i.e. one of ``True`` or ``False``.  The argument is "
 "converted using the standard :ref:`truth testing procedure <truth>`. If the "
@@ -567,11 +555,11 @@ msgstr ""
 "చూడండి). దీన్ని మరింత సబ్‌క్లాస్ చేయడం సాధ్యం కాదు. దీని ఇన్‌స్టాన్స్‌లు "
 "``False`` మరియు ``True`` మాత్రమే (:ref:`typebool` చూడండి)."
 
-#: builtins/functions.rst:160 builtins/functions.rst:857
+#: builtins/functions.rst:158 builtins/functions.rst:838
 msgid "The parameter is now positional-only."
 msgstr "ఈ పారామీటర్ ఇప్పుడు పొజిషనల్-మాత్రమే."
 
-#: builtins/functions.rst:165
+#: builtins/functions.rst:163
 msgid ""
 "This function drops you into the debugger at the call site.  Specifically, it"
 " calls :func:`sys.breakpointhook`, passing ``args`` and ``kws`` straight "
@@ -595,7 +583,7 @@ msgstr ""
 "నచ్చిన డీబగ్గర్‌లోకి ప్రవేశించవచ్చు. :func:`sys.breakpointhook` యాక్సెస్ "
 "చేయలేనిదైతే, ఈ ఫంక్షన్ :exc:`RuntimeError` ను రైజ్ చేస్తుంది."
 
-#: builtins/functions.rst:177
+#: builtins/functions.rst:175
 msgid ""
 "By default, the behavior of :func:`breakpoint` can be changed with the "
 ":envvar:`PYTHONBREAKPOINT` environment variable. See "
@@ -605,7 +593,7 @@ msgstr ""
 "ఎన్విరాన్‌మెంట్ వేరియబుల్‌తో మార్చవచ్చు. వినియోగ వివరాల కోసం "
 ":func:`sys.breakpointhook` చూడండి."
 
-#: builtins/functions.rst:181
+#: builtins/functions.rst:179
 msgid ""
 "Note that this is not guaranteed if :func:`sys.breakpointhook` has been "
 "replaced."
@@ -613,7 +601,7 @@ msgstr ""
 ":func:`sys.breakpointhook` ను వేరే దానితో భర్తీ చేసి ఉంటే, దీనికి హామీ లేదని "
 "గమనించండి."
 
-#: builtins/functions.rst:184
+#: builtins/functions.rst:182
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.breakpoint`` with "
 "argument ``breakpointhook``."
@@ -621,7 +609,7 @@ msgstr ""
 "``breakpointhook`` ఆర్గ్యుమెంట్‌తో ``builtins.breakpoint`` అనే :ref:`ఆడిటింగ్"
 " ఈవెంట్‌ను <auditing>` రైజ్ చేస్తుంది."
 
-#: builtins/functions.rst:193
+#: builtins/functions.rst:191
 msgid ""
 "Return a new array of bytes.  The :class:`bytearray` class is a mutable "
 "sequence of integers in the range 0 <= x < 256.  It has most of the usual "
@@ -634,7 +622,7 @@ msgstr ""
 "చాలావరకు ఉన్నాయి, అలాగే :class:`bytes` టైప్‌కు ఉన్న చాలా మెథడ్‌లు కూడా "
 "ఉన్నాయి, :ref:`bytes-methods` చూడండి."
 
-#: builtins/functions.rst:198
+#: builtins/functions.rst:196
 msgid ""
 "The optional *source* parameter can be used to initialize the array in a few "
 "different ways:"
@@ -642,7 +630,7 @@ msgstr ""
 "ఐచ్ఛిక *source* పారామీటర్‌ను అరేను కొన్ని విభిన్న మార్గాలలో ఇనిషియలైజ్ "
 "చేయడానికి ఉపయోగించవచ్చు:"
 
-#: builtins/functions.rst:201
+#: builtins/functions.rst:199
 msgid ""
 "If it is a *string*, you must also give the *encoding* (and optionally, "
 "*errors*) parameters; :func:`bytearray` then converts the string to bytes "
@@ -652,7 +640,7 @@ msgstr ""
 "పారామీటర్‌లను కూడా ఇవ్వాలి; అప్పుడు :func:`bytearray` :meth:`str.encode` ను "
 "ఉపయోగించి స్ట్రింగ్‌ను బైట్‌లుగా మారుస్తుంది."
 
-#: builtins/functions.rst:205
+#: builtins/functions.rst:203
 msgid ""
 "If it is an *integer*, the array will have that size and will be initialized "
 "with null bytes."
@@ -660,7 +648,7 @@ msgstr ""
 "అది ఒక *పూర్ణాంకం* అయితే, అరే ఆ పరిమాణాన్ని కలిగి ఉంటుంది మరియు null బైట్‌లతో"
 " ఇనిషియలైజ్ చేయబడుతుంది."
 
-#: builtins/functions.rst:208
+#: builtins/functions.rst:206
 msgid ""
 "If it is an object conforming to the :ref:`buffer interface <bufferobjects>`,"
 " a read-only buffer of the object will be used to initialize the bytes array."
@@ -669,7 +657,7 @@ msgstr ""
 " బైట్‌ల అరేను ఇనిషియలైజ్ చేయడానికి ఆ ఆబ్జెక్ట్ యొక్క రీడ్-ఓన్లీ బఫర్ "
 "ఉపయోగించబడుతుంది."
 
-#: builtins/functions.rst:211
+#: builtins/functions.rst:209
 msgid ""
 "If it is an *iterable*, it must be an iterable of integers in the range ``0 "
 "<= x < 256``, which are used as the initial contents of the array."
@@ -677,15 +665,15 @@ msgstr ""
 "అది ఒక *ఇటరబుల్* అయితే, అది ``0 <= x < 256`` పరిధిలోని పూర్ణాంకాల ఇటరబుల్ అయి"
 " ఉండాలి; అవి అరే యొక్క ప్రారంభ ఐటెమ్‌లుగా ఉపయోగించబడతాయి."
 
-#: builtins/functions.rst:214
+#: builtins/functions.rst:212
 msgid "Without an argument, an array of size 0 is created."
 msgstr "ఆర్గ్యుమెంట్ లేకపోతే, 0 పరిమాణం గల అరే సృష్టించబడుతుంది."
 
-#: builtins/functions.rst:216
+#: builtins/functions.rst:214
 msgid "See also :ref:`binaryseq` and :ref:`typebytearray`."
 msgstr ":ref:`binaryseq` మరియు :ref:`typebytearray` ను కూడా చూడండి."
 
-#: builtins/functions.rst:224
+#: builtins/functions.rst:222
 msgid ""
 "Return a new \"bytes\" object which is an immutable sequence of integers in "
 "the range ``0 <= x < 256``.  :class:`bytes` is an immutable version of "
@@ -697,25 +685,25 @@ msgstr ""
 ":class:`bytearray` యొక్క ఇమ్యూటబుల్ వెర్షన్ -- దీనికి అవే మార్చని (non-"
 "mutating) మెథడ్‌లు, అదే ఇండెక్సింగ్, స్లైసింగ్ ప్రవర్తన ఉంటాయి."
 
-#: builtins/functions.rst:229
+#: builtins/functions.rst:227
 msgid ""
 "Accordingly, constructor arguments are interpreted as for :func:`bytearray`."
 msgstr ""
 "దీని ప్రకారం, కన్‌స్ట్రక్టర్ ఆర్గ్యుమెంట్‌లు :func:`bytearray` కు "
 "ఉన్నట్లుగానే అర్థం చేసుకోబడతాయి."
 
-#: builtins/functions.rst:231
+#: builtins/functions.rst:229
 msgid "Bytes objects can also be created with literals, see :ref:`strings`."
 msgstr ""
 "బైట్స్ ఆబ్జెక్ట్‌లను లిటరల్‌లతో కూడా సృష్టించవచ్చు, :ref:`strings` చూడండి."
 
-#: builtins/functions.rst:233
+#: builtins/functions.rst:231
 msgid "See also :ref:`binaryseq`, :ref:`typebytes`, and :ref:`bytes-methods`."
 msgstr ""
 ":ref:`binaryseq`, :ref:`typebytes`, మరియు :ref:`bytes-methods` ను కూడా "
 "చూడండి."
 
-#: builtins/functions.rst:238
+#: builtins/functions.rst:236
 msgid ""
 "Return :const:`True` if the *object* argument appears callable, "
 ":const:`False` if not.  If this returns ``True``, it is still possible that a"
@@ -730,7 +718,7 @@ msgstr ""
 "కాల్ చేస్తే కొత్త ఇన్‌స్టాన్స్ రిటర్న్ అవుతుంది); ఇన్‌స్టాన్స్‌ల క్లాస్‌కు "
 ":meth:`~object.__call__` మెథడ్ ఉంటే ఆ ఇన్‌స్టాన్స్‌లు కాలబుల్."
 
-#: builtins/functions.rst:244
+#: builtins/functions.rst:242
 msgid ""
 "This function was first removed in Python 3.0 and then brought back in Python"
 " 3.2."
@@ -738,7 +726,7 @@ msgstr ""
 "ఈ ఫంక్షన్ మొదట Python 3.0 లో తొలగించబడి, ఆ తర్వాత Python 3.2 లో తిరిగి "
 "తీసుకురాబడింది."
 
-#: builtins/functions.rst:251
+#: builtins/functions.rst:249
 msgid ""
 "Return the string representing a character with the specified Unicode code "
 "point. For example, ``chr(97)`` returns the string ``'a'``, while "
@@ -749,7 +737,7 @@ msgstr ""
 "అలాగే ``chr(8364)`` స్ట్రింగ్ ``'€'`` ను రిటర్న్ చేస్తుంది. ఇది :func:`ord` "
 "కు విలోమం (inverse)."
 
-#: builtins/functions.rst:255
+#: builtins/functions.rst:253
 msgid ""
 "The valid range for the argument is from 0 through 1,114,111 (0x10FFFF in "
 "base 16).  :exc:`ValueError` will be raised if it is outside that range."
@@ -757,11 +745,11 @@ msgstr ""
 "ఆర్గ్యుమెంట్‌కు చెల్లుబాటు అయ్యే పరిధి 0 నుండి 1,114,111 వరకు (ఆధారం 16 లో "
 "0x10FFFF). అది ఆ పరిధికి వెలుపల ఉంటే :exc:`ValueError` రైజ్ చేయబడుతుంది."
 
-#: builtins/functions.rst:261
+#: builtins/functions.rst:259
 msgid "Transform a method into a class method."
 msgstr "ఒక మెథడ్‌ను క్లాస్ మెథడ్‌గా మారుస్తుంది."
 
-#: builtins/functions.rst:263
+#: builtins/functions.rst:261
 msgid ""
 "A class method receives the class as an implicit first argument, just like an"
 " instance method receives the instance. To declare a class method, use this "
@@ -771,7 +759,7 @@ msgstr ""
 " అంతర్లీన (implicit) మొదటి ఆర్గ్యుమెంట్‌గా స్వీకరిస్తుంది. క్లాస్ మెథడ్‌ను "
 "డిక్లేర్ చేయడానికి, ఈ పద్ధతిని ఉపయోగించండి::"
 
-#: builtins/functions.rst:267
+#: builtins/functions.rst:265
 msgid ""
 "class C:\n"
 "    @classmethod\n"
@@ -781,7 +769,7 @@ msgstr ""
 "    @classmethod\n"
 "    def f(cls, arg1, arg2): ..."
 
-#: builtins/functions.rst:271
+#: builtins/functions.rst:269
 msgid ""
 "The ``@classmethod`` form is a function :term:`decorator` -- see "
 ":ref:`function` for details."
@@ -789,7 +777,7 @@ msgstr ""
 "``@classmethod`` రూపం ఒక ఫంక్షన్ :term:`డెకరేటర్ <decorator>` -- వివరాల కోసం "
 ":ref:`function` చూడండి."
 
-#: builtins/functions.rst:274
+#: builtins/functions.rst:272
 msgid ""
 "A class method can be called either on the class (such as ``C.f()``) or on an"
 " instance (such as ``C().f()``).  The instance is ignored except for its "
@@ -801,7 +789,7 @@ msgstr ""
 "పట్టించుకోబడదు. డిరైవ్డ్ క్లాస్ కోసం క్లాస్ మెథడ్‌ను కాల్ చేస్తే, డిరైవ్డ్ "
 "క్లాస్ ఆబ్జెక్ట్ అంతర్లీన మొదటి ఆర్గ్యుమెంట్‌గా పంపబడుతుంది."
 
-#: builtins/functions.rst:279
+#: builtins/functions.rst:277
 msgid ""
 "Class methods are different than C++ or Java static methods. If you want "
 "those, see :func:`staticmethod` in this section. For more information on "
@@ -811,7 +799,7 @@ msgstr ""
 "కావాలంటే, ఈ విభాగంలోని :func:`staticmethod` చూడండి. క్లాస్ మెథడ్‌ల గురించి "
 "మరింత సమాచారం కోసం, :ref:`types` చూడండి."
 
-#: builtins/functions.rst:283
+#: builtins/functions.rst:281
 msgid ""
 "Class methods can now wrap other :term:`descriptors <descriptor>` such as "
 ":func:`property`."
@@ -819,7 +807,7 @@ msgstr ""
 "క్లాస్ మెథడ్‌లు ఇప్పుడు :func:`property` వంటి ఇతర :term:`డిస్క్రిప్టర్‌లను "
 "<descriptor>` ర్యాప్ చేయగలవు."
 
-#: builtins/functions.rst:287
+#: builtins/functions.rst:285
 msgid ""
 "Class methods now inherit the method attributes "
 "(:attr:`~function.__module__`, :attr:`~function.__name__`, "
@@ -831,7 +819,7 @@ msgstr ""
 ":attr:`~function.__doc__` మరియు :attr:`~function.__annotations__`) ఇన్‌హెరిట్"
 " చేస్తాయి, వాటికి కొత్త ``__wrapped__`` అట్రిబ్యూట్ కూడా ఉంటుంది."
 
-#: builtins/functions.rst:294
+#: builtins/functions.rst:292
 msgid ""
 "Class methods can no longer wrap other :term:`descriptors <descriptor>` such "
 "as :func:`property`."
@@ -839,7 +827,7 @@ msgstr ""
 "క్లాస్ మెథడ్‌లు ఇకపై :func:`property` వంటి ఇతర :term:`డిస్క్రిప్టర్‌లను "
 "<descriptor>` ర్యాప్ చేయలేవు."
 
-#: builtins/functions.rst:303
+#: builtins/functions.rst:299
 msgid ""
 "Compile the *source* into a code or AST object.  Code objects can be executed"
 " by :func:`exec` or :func:`eval`.  *source* can either be a normal string, a "
@@ -852,7 +840,7 @@ msgstr ""
 "ఆబ్జెక్ట్‌లతో ఎలా పనిచేయాలో సమాచారం కోసం :mod:`ast` మాడ్యూల్ డాక్యుమెంటేషన్ "
 "చూడండి."
 
-#: builtins/functions.rst:308
+#: builtins/functions.rst:304
 msgid ""
 "The *filename* argument should give the file from which the code was read; "
 "pass some recognizable value if it wasn't read from a file (``'<string>'`` is"
@@ -862,7 +850,7 @@ msgstr ""
 "ఫైల్ నుండి చదవబడకపోతే, గుర్తించగలిగే ఏదైనా విలువను ఇవ్వండి (సాధారణంగా "
 "``'<string>'`` ను ఉపయోగిస్తారు)."
 
-#: builtins/functions.rst:312
+#: builtins/functions.rst:308
 msgid ""
 "The *mode* argument specifies what kind of code must be compiled; it can be "
 "``'exec'`` if *source* consists of a sequence of statements, ``'eval'`` if it"
@@ -882,7 +870,7 @@ msgstr ""
 " మరింత సమాచారం కోసం :func:`ast.parse` చూడండి. ఈ మోడ్‌కు *flags* లో "
 ":data:`ast.PyCF_ONLY_AST` ను ఇవ్వడం అవసరం."
 
-#: builtins/functions.rst:322
+#: builtins/functions.rst:318
 msgid ""
 "The optional arguments *flags* and *dont_inherit* control which "
 ":ref:`compiler options <ast-compiler-flags>` should be activated and which "
@@ -906,7 +894,7 @@ msgstr ""
 "*flags* ఆర్గ్యుమెంట్ మాత్రమే పరిగణించబడుతుంది -- చుట్టుపక్కల కోడ్‌లోని "
 "ఫ్లాగ్‌లు (ఫ్యూచర్ ఫీచర్‌లు మరియు కంపైలర్ ఆప్షన్‌లు) విస్మరించబడతాయి."
 
-#: builtins/functions.rst:333
+#: builtins/functions.rst:329
 msgid ""
 "Compiler options and future statements are specified by bits which can be "
 "bitwise ORed together to specify multiple options. The bitfield required to "
@@ -924,7 +912,7 @@ msgstr ""
 "అట్రిబ్యూట్‌గా కనుగొనవచ్చు. :ref:`కంపైలర్ ఫ్లాగ్‌లను <ast-compiler-flags>` "
 ":mod:`ast` మాడ్యూల్‌లో ``PyCF_`` ప్రిఫిక్స్‌తో కనుగొనవచ్చు."
 
-#: builtins/functions.rst:341
+#: builtins/functions.rst:337
 msgid ""
 "The argument *optimize* specifies the optimization level of the compiler; the"
 " default value of ``-1`` selects the optimization level of the interpreter as"
@@ -939,16 +927,7 @@ msgstr ""
 "తొలగించబడతాయి, ``__debug__`` అసత్యం) లేదా ``2`` (డాక్‌స్ట్రింగ్‌లు కూడా "
 "తొలగించబడతాయి)."
 
-#: builtins/functions.rst:347
-msgid ""
-"The optional argument *module* specifies the module name. It is needed to "
-"unambiguous :ref:`filter <warning-filter>` syntax warnings by module name."
-msgstr ""
-"ఐచ్ఛిక ఆర్గ్యుమెంట్ *module* మాడ్యూల్ పేరును నిర్దేశిస్తుంది. మాడ్యూల్ పేరు "
-"ద్వారా సింటాక్స్ హెచ్చరికలను సందిగ్ధత లేకుండా :ref:`ఫిల్టర్ <warning-filter>`"
-" చేయడానికి ఇది అవసరం."
-
-#: builtins/functions.rst:351
+#: builtins/functions.rst:343
 msgid ""
 "This function raises :exc:`SyntaxError` if the compiled source is invalid, "
 "including a *source* containing a null character or that cannot be decoded; "
@@ -966,7 +945,7 @@ msgstr ""
 ":exc:`MemoryError` లేదా :exc:`RecursionError` ను; మరియు *source* చాలా "
 "పెద్దదిగా ఉంటే :exc:`OverflowError` ను రైజ్ చేస్తుంది."
 
-#: builtins/functions.rst:360
+#: builtins/functions.rst:352
 msgid ""
 "If you want to parse Python code into its AST representation, see "
 ":func:`ast.parse`."
@@ -974,7 +953,7 @@ msgstr ""
 "Python కోడ్‌ను దాని AST రిప్రజెంటేషన్‌లోకి పార్స్ చేయాలనుకుంటే, "
 ":func:`ast.parse` చూడండి."
 
-#: builtins/functions.rst:363 builtins/functions.rst:365
+#: builtins/functions.rst:355 builtins/functions.rst:357
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``compile`` with arguments "
 "``source`` and ``filename``. This event may also be raised by implicit "
@@ -984,7 +963,7 @@ msgstr ""
 " ఈవెంట్‌ను <auditing>` రైజ్ చేస్తుంది. పరోక్ష కంపైలేషన్ ద్వారా కూడా ఈ ఈవెంట్ "
 "రైజ్ కావచ్చు."
 
-#: builtins/functions.rst:371
+#: builtins/functions.rst:363
 msgid ""
 "When compiling a string with multi-line code in ``'single'`` or ``'eval'`` "
 "mode, input must be terminated by at least one newline character.  This is to"
@@ -996,7 +975,7 @@ msgstr ""
 "మాడ్యూల్‌లో అసంపూర్ణ మరియు సంపూర్ణ స్టేట్‌మెంట్‌లను గుర్తించడాన్ని సులభతరం "
 "చేయడానికి ఇది అవసరం."
 
-#: builtins/functions.rst:378
+#: builtins/functions.rst:370
 msgid ""
 "It is possible to crash the Python interpreter with a sufficiently "
 "large/complex string when compiling to an AST object due to stack depth "
@@ -1006,7 +985,7 @@ msgstr ""
 "ఆబ్జెక్ట్‌గా కంపైల్ చేస్తున్నప్పుడు తగినంత పెద్ద/సంక్లిష్టమైన స్ట్రింగ్‌తో "
 "Python ఇంటర్‌ప్రెటర్‌ను క్రాష్ చేయడం సాధ్యమే."
 
-#: builtins/functions.rst:382
+#: builtins/functions.rst:374
 msgid ""
 "Allowed use of Windows and Mac newlines.  Also, input in ``'exec'`` mode does"
 " not have to end in a newline anymore.  Added the *optimize* parameter."
@@ -1015,14 +994,14 @@ msgstr ""
 "ఇన్‌పుట్ ఇకపై న్యూలైన్‌తో ముగియాల్సిన అవసరం లేదు. *optimize* పారామీటర్ "
 "జోడించబడింది."
 
-#: builtins/functions.rst:386
+#: builtins/functions.rst:378
 msgid ""
 "Previously, :exc:`TypeError` was raised when null bytes were encountered in "
 "*source*."
 msgstr ""
 "గతంలో, *source* లో null బైట్‌లు ఎదురైనప్పుడు :exc:`TypeError` రైజ్ అయ్యేది."
 
-#: builtins/functions.rst:390
+#: builtins/functions.rst:382
 msgid ""
 "``ast.PyCF_ALLOW_TOP_LEVEL_AWAIT`` can now be passed in flags to enable "
 "support for top-level ``await``, ``async for``, and ``async with``."
@@ -1031,11 +1010,11 @@ msgstr ""
 "ఎనేబుల్ చేయడానికి ఇప్పుడు flags లో ``ast.PyCF_ALLOW_TOP_LEVEL_AWAIT`` ను "
 "ఇవ్వవచ్చు."
 
-#: builtins/functions.rst:394
+#: builtins/functions.rst:386
 msgid "Added support for ``mode='func_type'``."
 msgstr "``mode='func_type'`` కు సపోర్ట్ జోడించబడింది."
 
-#: builtins/functions.rst:397
+#: builtins/functions.rst:389
 msgid ""
 ":exc:`SyntaxError` is raised instead of :exc:`ValueError` when null bytes are"
 " encountered in *source*."
@@ -1043,11 +1022,7 @@ msgstr ""
 "*source* లో null బైట్‌లు ఎదురైనప్పుడు :exc:`ValueError` కు బదులుగా "
 ":exc:`SyntaxError` రైజ్ అవుతుంది."
 
-#: builtins/functions.rst:401
-msgid "Added the *module* parameter."
-msgstr "*module* పారామీటర్ జోడించబడింది."
-
-#: builtins/functions.rst:409
+#: builtins/functions.rst:398
 msgid ""
 "Convert a single string or number to a complex number, or create a complex "
 "number from real and imaginary parts."
@@ -1055,12 +1030,12 @@ msgstr ""
 "ఒకే స్ట్రింగ్‌ను లేదా సంఖ్యను సంకీర్ణ సంఖ్యగా మారుస్తుంది, లేదా వాస్తవ మరియు "
 "ఊహాజనిత భాగాల నుండి సంకీర్ణ సంఖ్యను సృష్టిస్తుంది."
 
-#: builtins/functions.rst:412 builtins/functions.rst:800
-#: builtins/functions.rst:1063
+#: builtins/functions.rst:401 builtins/functions.rst:781
+#: builtins/functions.rst:1029
 msgid "Examples:"
 msgstr "ఉదాహరణలు:"
 
-#: builtins/functions.rst:414
+#: builtins/functions.rst:403
 msgid ""
 ">>> complex('+1.23')\n"
 "(1.23+0j)\n"
@@ -1096,7 +1071,7 @@ msgstr ""
 ">>> complex(-1.23, 4.5)\n"
 "(-1.23+4.5j)"
 
-#: builtins/functions.rst:433
+#: builtins/functions.rst:422
 msgid ""
 "If the argument is a string, it must contain either a real part (in the same "
 "format as for :func:`float`) or an imaginary part (in the same format but "
@@ -1122,7 +1097,7 @@ msgstr ""
 "అక్షరాలను తొలగించిన తర్వాత, ఇన్‌పుట్ కింది గ్రామర్‌లోని "
 ":token:`~float:complexvalue` ప్రొడక్షన్ రూల్‌కు అనుగుణంగా ఉండాలి:"
 
-#: builtins/functions.rst:452
+#: builtins/functions.rst:441
 msgid ""
 "If the argument is a number, the constructor serves as a numeric conversion "
 "like :class:`int` and :class:`float`. For a general Python object ``x``, "
@@ -1138,7 +1113,7 @@ msgstr ""
 "ను ఆశ్రయిస్తుంది. :meth:`!__float__` నిర్వచించబడకపోతే, అది "
 ":meth:`~object.__index__` ను ఆశ్రయిస్తుంది."
 
-#: builtins/functions.rst:461
+#: builtins/functions.rst:450
 msgid ""
 "If two arguments are provided or keyword arguments are used, each argument "
 "may be any numeric type (including complex). If both arguments are real "
@@ -1157,7 +1132,7 @@ msgstr ""
 "ఆర్గ్యుమెంట్‌లలో ఒకటి వాస్తవ సంఖ్య అయితే, పై ఎక్స్‌ప్రెషన్‌లలో దాని వాస్తవ "
 "భాగం మాత్రమే ఉపయోగించబడుతుంది."
 
-#: builtins/functions.rst:471
+#: builtins/functions.rst:460
 msgid ""
 "See also :meth:`complex.from_number` which only accepts a single numeric "
 "argument."
@@ -1165,21 +1140,21 @@ msgstr ""
 "ఒకే సంఖ్యా ఆర్గ్యుమెంట్‌ను మాత్రమే స్వీకరించే :meth:`complex.from_number` ను "
 "కూడా చూడండి."
 
-#: builtins/functions.rst:473
+#: builtins/functions.rst:462
 msgid "If all arguments are omitted, returns ``0j``."
 msgstr "అన్ని ఆర్గ్యుమెంట్‌లను వదిలివేస్తే, ``0j`` ను రిటర్న్ చేస్తుంది."
 
-#: builtins/functions.rst:475
+#: builtins/functions.rst:464
 msgid "The complex type is described in :ref:`typesnumeric`."
 msgstr "complex టైప్ :ref:`typesnumeric` లో వివరించబడింది."
 
-#: builtins/functions.rst:477 builtins/functions.rst:854
-#: builtins/functions.rst:1111
+#: builtins/functions.rst:466 builtins/functions.rst:835
+#: builtins/functions.rst:1077
 msgid "Grouping digits with underscores as in code literals is allowed."
 msgstr ""
 "కోడ్ లిటరల్‌లలో లాగానే అంకెలను అండర్‌స్కోర్‌లతో సమూహం చేయడానికి అనుమతి ఉంది."
 
-#: builtins/functions.rst:480
+#: builtins/functions.rst:469
 msgid ""
 "Falls back to :meth:`~object.__index__` if :meth:`~object.__complex__` and "
 ":meth:`~object.__float__` are not defined."
@@ -1187,7 +1162,7 @@ msgstr ""
 ":meth:`~object.__complex__` మరియు :meth:`~object.__float__` నిర్వచించబడకపోతే "
 ":meth:`~object.__index__` ను ఆశ్రయిస్తుంది."
 
-#: builtins/functions.rst:484
+#: builtins/functions.rst:473
 msgid ""
 "Passing a complex number as the *real* or *imag* argument is now deprecated; "
 "it should only be passed as a single positional argument."
@@ -1195,7 +1170,7 @@ msgstr ""
 "*real* లేదా *imag* ఆర్గ్యుమెంట్‌గా సంకీర్ణ సంఖ్యను ఇవ్వడం ఇప్పుడు డెప్రికేట్ "
 "చేయబడింది; దాన్ని ఒకే పొజిషనల్ ఆర్గ్యుమెంట్‌గా మాత్రమే ఇవ్వాలి."
 
-#: builtins/functions.rst:491
+#: builtins/functions.rst:480
 msgid ""
 "This is a relative of :func:`setattr`.  The arguments are an object and a "
 "string.  The string must be the name of one of the object's attributes.  The "
@@ -1209,7 +1184,7 @@ msgstr ""
 "తొలగిస్తుంది. ఉదాహరణకు, ``delattr(x, 'foobar')`` అనేది ``del x.foobar`` కు "
 "సమానం. *name* ఒక Python ఐడెంటిఫైయర్ కానవసరం లేదు (:func:`setattr` చూడండి)."
 
-#: builtins/functions.rst:504
+#: builtins/functions.rst:493
 msgid ""
 "Create a new dictionary.  The :class:`dict` object is the dictionary class. "
 "See also :ref:`typesmapping` for documentation about this class."
@@ -1217,17 +1192,20 @@ msgstr ""
 "కొత్త డిక్షనరీని సృష్టిస్తుంది. :class:`dict` ఆబ్జెక్ట్ డిక్షనరీ క్లాస్. ఈ "
 "క్లాస్ గురించిన డాక్యుమెంటేషన్ కోసం :ref:`typesmapping` కూడా చూడండి."
 
-#: builtins/functions.rst:507
+#: builtins/functions.rst:496
+#, fuzzy
+#| msgid ""
+#| "For other containers see the built-in :class:`dict`, :class:`list`, "
+#| ":class:`set`, and :class:`tuple` classes, as well as the :mod:`collections` "
+#| "module."
 msgid ""
-"For other containers see the built-in :class:`frozendict`, :class:`list`, "
-":class:`set`, and :class:`tuple` classes, as well as the :mod:`collections` "
-"module."
+"For other containers see the built-in :class:`list`, :class:`set`, and "
+":class:`tuple` classes, as well as the :mod:`collections` module."
 msgstr ""
-"ఇతర కంటెయినర్‌ల కోసం బిల్ట్-ఇన్ :class:`frozendict`, :class:`list`, "
-":class:`set`, మరియు :class:`tuple` క్లాస్‌లను, అలాగే :mod:`collections` "
-"మాడ్యూల్‌ను చూడండి."
+"ఇతర కంటెయినర్‌ల కోసం బిల్ట్-ఇన్ :class:`dict`, :class:`list`, :class:`set`, "
+"మరియు :class:`tuple` క్లాస్‌లను, అలాగే :mod:`collections` మాడ్యూల్‌ను చూడండి."
 
-#: builtins/functions.rst:514
+#: builtins/functions.rst:503
 msgid ""
 "Without arguments, return the list of names in the current local scope.  With"
 " an argument, attempt to return a list of valid attributes for that object."
@@ -1236,7 +1214,7 @@ msgstr ""
 "చేస్తుంది. ఆర్గ్యుమెంట్‌తో, ఆ ఆబ్జెక్ట్ యొక్క చెల్లుబాటు అయ్యే అట్రిబ్యూట్‌ల "
 "లిస్ట్‌ను రిటర్న్ చేయడానికి ప్రయత్నిస్తుంది."
 
-#: builtins/functions.rst:517
+#: builtins/functions.rst:506
 msgid ""
 "If the object has a method named :meth:`~object.__dir__`, this method will be"
 " called and must return the list of attributes. This allows objects that "
@@ -1250,7 +1228,7 @@ msgstr ""
 "రూపొందించే ఆబ్జెక్ట్‌లు, :func:`dir` తమ అట్రిబ్యూట్‌లను నివేదించే విధానాన్ని "
 "కస్టమైజ్ చేయగలవు."
 
-#: builtins/functions.rst:524
+#: builtins/functions.rst:513
 msgid ""
 "If the object does not provide :meth:`~object.__dir__`, the function tries "
 "its best to gather information from the object's :attr:`~object.__dict__` "
@@ -1264,7 +1242,7 @@ msgstr ""
 "ఫలితంగా వచ్చే లిస్ట్ సంపూర్ణంగా ఉంటుందని హామీ లేదు, మరియు ఆబ్జెక్ట్‌కు కస్టమ్"
 " :func:`~object.__getattr__` ఉన్నప్పుడు అది కచ్చితమైనదిగా ఉండకపోవచ్చు."
 
-#: builtins/functions.rst:530
+#: builtins/functions.rst:519
 msgid ""
 "The default :func:`dir` mechanism behaves differently with different types of"
 " objects, as it attempts to produce the most relevant, rather than complete, "
@@ -1274,7 +1252,7 @@ msgstr ""
 "ప్రవర్తిస్తుంది, ఎందుకంటే అది సంపూర్ణ సమాచారం కంటే అత్యంత సంబంధిత సమాచారాన్ని"
 " అందించడానికి ప్రయత్నిస్తుంది:"
 
-#: builtins/functions.rst:534
+#: builtins/functions.rst:523
 msgid ""
 "If the object is a module object, the list contains the names of the module's"
 " attributes."
@@ -1282,7 +1260,7 @@ msgstr ""
 "ఆబ్జెక్ట్ మాడ్యూల్ ఆబ్జెక్ట్ అయితే, లిస్ట్‌లో మాడ్యూల్ యొక్క అట్రిబ్యూట్‌ల "
 "పేర్లు ఉంటాయి."
 
-#: builtins/functions.rst:537
+#: builtins/functions.rst:526
 msgid ""
 "If the object is a type or class object, the list contains the names of its "
 "attributes, and recursively of the attributes of its bases."
@@ -1290,7 +1268,7 @@ msgstr ""
 "ఆబ్జెక్ట్ టైప్ లేదా క్లాస్ ఆబ్జెక్ట్ అయితే, లిస్ట్‌లో దాని అట్రిబ్యూట్‌ల "
 "పేర్లు, మరియు రికర్సివ్‌గా దాని బేస్‌ల అట్రిబ్యూట్‌ల పేర్లు ఉంటాయి."
 
-#: builtins/functions.rst:540
+#: builtins/functions.rst:529
 msgid ""
 "Otherwise, the list contains the object's attributes' names, the names of its"
 " class's attributes, and recursively of the attributes of its class's base "
@@ -1300,11 +1278,11 @@ msgstr ""
 "అట్రిబ్యూట్‌ల పేర్లు, మరియు రికర్సివ్‌గా దాని క్లాస్ యొక్క బేస్ క్లాస్‌ల "
 "అట్రిబ్యూట్‌ల పేర్లు ఉంటాయి."
 
-#: builtins/functions.rst:544
+#: builtins/functions.rst:533
 msgid "The resulting list is sorted alphabetically.  For example:"
 msgstr "ఫలితంగా వచ్చే లిస్ట్ అక్షర క్రమంలో సార్ట్ చేయబడుతుంది. ఉదాహరణకు:"
 
-#: builtins/functions.rst:564
+#: builtins/functions.rst:553
 msgid ""
 "Because :func:`dir` is supplied primarily as a convenience for use at an "
 "interactive prompt, it tries to supply an interesting set of names more than "
@@ -1318,7 +1296,7 @@ msgstr ""
 " దాని సవివర ప్రవర్తన విడుదలల మధ్య మారవచ్చు. ఉదాహరణకు, ఆర్గ్యుమెంట్ క్లాస్ "
 "అయినప్పుడు మెటాక్లాస్ అట్రిబ్యూట్‌లు ఫలిత లిస్ట్‌లో ఉండవు."
 
-#: builtins/functions.rst:574
+#: builtins/functions.rst:563
 msgid ""
 "Take two (non-complex) numbers as arguments and return a pair of numbers "
 "consisting of their quotient and remainder when using integer division.  With"
@@ -1338,7 +1316,7 @@ msgstr ""
 " b + a % b`` అనేది *a* కు చాలా దగ్గరగా ఉంటుంది, ``a % b`` సున్నా కాకపోతే "
 "దానికి *b* కు ఉన్న గుర్తే ఉంటుంది, మరియు ``0 <= abs(a % b) < abs(b)``."
 
-#: builtins/functions.rst:586
+#: builtins/functions.rst:575
 msgid ""
 "Return an enumerate object. *iterable* must be a sequence, an "
 ":term:`iterator`, or some other object which supports iteration. The "
@@ -1353,11 +1331,11 @@ msgstr ""
 "0) మరియు *iterable* పై ఇటరేట్ చేయడం ద్వారా పొందిన విలువలు ఉన్న టపుల్‌ను "
 "రిటర్న్ చేస్తుంది."
 
-#: builtins/functions.rst:598
+#: builtins/functions.rst:587
 msgid "Equivalent to::"
 msgstr "దీనికి సమానం::"
 
-#: builtins/functions.rst:600
+#: builtins/functions.rst:589
 msgid ""
 "def enumerate(iterable, start=0):\n"
 "    n = start\n"
@@ -1375,15 +1353,15 @@ msgstr ""
 msgid "Parameters"
 msgstr "పారామీటర్‌లు"
 
-#: builtins/functions.rst:610
+#: builtins/functions.rst:599
 msgid "A Python expression."
 msgstr "ఒక Python ఎక్స్‌ప్రెషన్."
 
-#: builtins/functions.rst:614
+#: builtins/functions.rst:603
 msgid "The global namespace (default: ``None``)."
 msgstr "గ్లోబల్ నేమ్‌స్పేస్ (డిఫాల్ట్: ``None``)."
 
-#: builtins/functions.rst:618
+#: builtins/functions.rst:607
 msgid "The local namespace (default: ``None``)."
 msgstr "లోకల్ నేమ్‌స్పేస్ (డిఫాల్ట్: ``None``)."
 
@@ -1391,7 +1369,7 @@ msgstr "లోకల్ నేమ్‌స్పేస్ (డిఫాల్ట
 msgid "Returns"
 msgstr "రిటర్న్ విలువ"
 
-#: builtins/functions.rst:622
+#: builtins/functions.rst:611
 msgid "The result of the evaluated expression."
 msgstr "ఎవాల్యుయేట్ చేసిన ఎక్స్‌ప్రెషన్ యొక్క ఫలితం."
 
@@ -1399,11 +1377,11 @@ msgstr "ఎవాల్యుయేట్ చేసిన ఎక్స్‌ప�
 msgid "raises"
 msgstr "రైజ్ చేసేవి"
 
-#: builtins/functions.rst:623
+#: builtins/functions.rst:612
 msgid "Syntax errors are reported as exceptions."
 msgstr "సింటాక్స్ లోపాలు ఎక్సెప్షన్‌లుగా నివేదించబడతాయి."
 
-#: builtins/functions.rst:627 builtins/functions.rst:697
+#: builtins/functions.rst:616 builtins/functions.rst:682
 msgid ""
 "This function executes arbitrary code. Calling it with untrusted user-"
 "supplied input will lead to security vulnerabilities."
@@ -1411,7 +1389,7 @@ msgstr ""
 "ఈ ఫంక్షన్ ఏ కోడ్‌నైనా అమలు చేస్తుంది. నమ్మదగని, వినియోగదారు అందించిన "
 "ఇన్‌పుట్‌తో దీన్ని కాల్ చేస్తే భద్రతా లోపాలకు దారితీస్తుంది."
 
-#: builtins/functions.rst:630
+#: builtins/functions.rst:619
 msgid ""
 "The *source* argument is parsed and evaluated as a Python expression "
 "(technically speaking, an :ref:`expression list <exprlists>`) using the "
@@ -1445,11 +1423,11 @@ msgstr ""
 "కాల్ చేస్తున్న స్కోప్‌లో ఇప్పటికే రిఫర్ చేయబడి ఉంటేనే (ఉదా. "
 ":keyword:`nonlocal` స్టేట్‌మెంట్ ద్వారా), *eval()* కు వాటి యాక్సెస్ ఉంటుంది."
 
-#: builtins/functions.rst:648
+#: builtins/functions.rst:637
 msgid "Example:"
 msgstr "ఉదాహరణ:"
 
-#: builtins/functions.rst:657
+#: builtins/functions.rst:646
 msgid ""
 "This function can also be used to execute arbitrary code objects (such as "
 "those created by :func:`compile`).  In this case, pass a code object instead "
@@ -1461,7 +1439,7 @@ msgstr ""
 "ఆబ్జెక్ట్‌ను ఇవ్వండి. కోడ్ ఆబ్జెక్ట్ *mode* ఆర్గ్యుమెంట్‌గా ``'exec'`` తో "
 "కంపైల్ చేయబడి ఉంటే, :func:`eval` యొక్క రిటర్న్ విలువ ``None`` అవుతుంది."
 
-#: builtins/functions.rst:662
+#: builtins/functions.rst:651
 msgid ""
 "Hints: dynamic execution of statements is supported by the :func:`exec` "
 "function.  The :func:`globals` and :func:`locals` functions return the "
@@ -1473,7 +1451,7 @@ msgstr ""
 "మరియు లోకల్ డిక్షనరీని రిటర్న్ చేస్తాయి, వీటిని :func:`eval` లేదా "
 ":func:`exec` ఉపయోగించుకునేలా పంపడం ఉపయోగకరంగా ఉండవచ్చు."
 
-#: builtins/functions.rst:667
+#: builtins/functions.rst:656
 msgid ""
 "If the given source is a string, then leading and trailing spaces and tabs "
 "are stripped."
@@ -1481,7 +1459,7 @@ msgstr ""
 "ఇచ్చిన సోర్స్ స్ట్రింగ్ అయితే, ముందు మరియు వెనుక ఉన్న స్పేస్‌లు మరియు "
 "ట్యాబ్‌లు తొలగించబడతాయి."
 
-#: builtins/functions.rst:670
+#: builtins/functions.rst:659
 msgid ""
 "See :func:`ast.literal_eval` for a function to evaluate strings with "
 "expressions containing only literals."
@@ -1489,8 +1467,8 @@ msgstr ""
 "కేవలం లిటరల్‌లు మాత్రమే ఉన్న ఎక్స్‌ప్రెషన్‌లు గల స్ట్రింగ్‌లను ఎవాల్యుయేట్ "
 "చేసే ఫంక్షన్ కోసం :func:`ast.literal_eval` చూడండి."
 
-#: builtins/functions.rst:673 builtins/functions.rst:675
-#: builtins/functions.rst:740 builtins/functions.rst:742
+#: builtins/functions.rst:662 builtins/functions.rst:664
+#: builtins/functions.rst:725 builtins/functions.rst:727
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``exec`` with the code object as "
 "the argument. Code compilation events may also be raised."
@@ -1499,12 +1477,12 @@ msgstr ""
 "ఈవెంట్‌ను <auditing>` రైజ్ చేస్తుంది. కోడ్ కంపైలేషన్ ఈవెంట్‌లు కూడా రైజ్ "
 "కావచ్చు."
 
-#: builtins/functions.rst:680 builtins/functions.rst:762
+#: builtins/functions.rst:669 builtins/functions.rst:747
 msgid "The *globals* and *locals* arguments can now be passed as keywords."
 msgstr ""
 "*globals* మరియు *locals* ఆర్గ్యుమెంట్‌లను ఇప్పుడు కీవర్డ్‌లుగా ఇవ్వవచ్చు."
 
-#: builtins/functions.rst:684 builtins/functions.rst:766
+#: builtins/functions.rst:673 builtins/functions.rst:751
 msgid ""
 "The semantics of the default *locals* namespace have been adjusted as "
 "described for the :func:`locals` builtin."
@@ -1512,11 +1490,7 @@ msgstr ""
 "డిఫాల్ట్ *locals* నేమ్‌స్పేస్ యొక్క సెమాంటిక్స్ :func:`locals` బిల్ట్-ఇన్ "
 "కోసం వివరించిన విధంగా సర్దుబాటు చేయబడ్డాయి."
 
-#: builtins/functions.rst:689 builtins/functions.rst:771
-msgid "*globals* can now be a :class:`frozendict`."
-msgstr "*globals* ఇప్పుడు :class:`frozendict` కూడా కావచ్చు."
-
-#: builtins/functions.rst:700
+#: builtins/functions.rst:685
 msgid ""
 "This function supports dynamic execution of Python code. *source* must be "
 "either a string or a code object.  If it is a string, the string is parsed as"
@@ -1539,7 +1513,7 @@ msgstr ""
 "స్టేట్‌మెంట్‌లను ఫంక్షన్ నిర్వచనాల బయట ఉపయోగించకూడదని గుర్తుంచుకోండి. రిటర్న్"
 " విలువ ``None``."
 
-#: builtins/functions.rst:711
+#: builtins/functions.rst:696
 msgid ""
 "In all cases, if the optional parts are omitted, the code is executed in the "
 "current scope.  If only *globals* is provided, it must be a dictionary (and "
@@ -1557,7 +1531,7 @@ msgstr ""
 "అయినా కావచ్చు. మాడ్యూల్ స్థాయిలో, globals మరియు locals ఒకే డిక్షనరీ అని "
 "గుర్తుంచుకోండి."
 
-#: builtins/functions.rst:721
+#: builtins/functions.rst:706
 msgid ""
 "When ``exec`` gets two separate objects as *globals* and *locals*, the code "
 "will be executed as if it were embedded in a class definition. This means "
@@ -1572,7 +1546,7 @@ msgstr ""
 "లెవెల్\" వేరియబుల్‌లు క్లాస్ నిర్వచనంలో క్లాస్ వేరియబుల్‌లుగా "
 "పరిగణించబడతాయి)."
 
-#: builtins/functions.rst:727
+#: builtins/functions.rst:712
 msgid ""
 "If the *globals* dictionary does not contain a value for the key "
 "``__builtins__``, a reference to the dictionary of the built-in module "
@@ -1586,7 +1560,7 @@ msgstr ""
 "ను ఓవర్‌రైడ్ చేయవచ్చు, కానీ ఇది భద్రతా విధానం **కాదు**: అమలు చేయబడే కోడ్ "
 "ఇప్పటికీ అన్ని బిల్ట్-ఇన్‌లను యాక్సెస్ చేయగలదు."
 
-#: builtins/functions.rst:734
+#: builtins/functions.rst:719
 msgid ""
 "The *closure* argument specifies a closure--a tuple of cellvars. It's only "
 "valid when *source* is a code object containing :term:`free (closure) "
@@ -1599,7 +1573,7 @@ msgstr ""
 "అవుతుంది. టపుల్ పొడవు కోడ్ ఆబ్జెక్ట్ యొక్క :attr:`~codeobject.co_freevars` "
 "అట్రిబ్యూట్ పొడవుకు కచ్చితంగా సరిపోలాలి."
 
-#: builtins/functions.rst:747
+#: builtins/functions.rst:732
 msgid ""
 "The built-in functions :func:`globals` and :func:`locals` return the current "
 "global and local namespace, respectively, which may be useful to pass around "
@@ -1609,7 +1583,7 @@ msgstr ""
 "గ్లోబల్ మరియు లోకల్ నేమ్‌స్పేస్‌ను రిటర్న్ చేస్తాయి, వీటిని :func:`exec` కు "
 "రెండవ మరియు మూడవ ఆర్గ్యుమెంట్‌గా ఉపయోగించడం కోసం పంపడం ఉపయోగకరంగా ఉండవచ్చు."
 
-#: builtins/functions.rst:753
+#: builtins/functions.rst:738
 msgid ""
 "The default *locals* act as described for function :func:`locals` below. Pass"
 " an explicit *locals* dictionary if you need to see effects of the code on "
@@ -1619,11 +1593,11 @@ msgstr ""
 "ప్రవర్తిస్తాయి. ఫంక్షన్ :func:`exec` రిటర్న్ అయిన తర్వాత *locals* పై కోడ్ "
 "యొక్క ప్రభావాలను మీరు చూడాలంటే, స్పష్టమైన *locals* డిక్షనరీని ఇవ్వండి."
 
-#: builtins/functions.rst:757
+#: builtins/functions.rst:742
 msgid "Added the *closure* parameter."
 msgstr "*closure* పారామీటర్ జోడించబడింది."
 
-#: builtins/functions.rst:776
+#: builtins/functions.rst:757
 msgid ""
 "Construct an iterator from those elements of *iterable* for which *function* "
 "is true.  *iterable* may be either a sequence, a container which supports "
@@ -1636,7 +1610,7 @@ msgstr ""
 "ఫంక్షన్ అని భావిస్తారు, అంటే, *iterable* లోని అసత్యమైన ఎలిమెంట్‌లన్నీ "
 "తొలగించబడతాయి."
 
-#: builtins/functions.rst:782
+#: builtins/functions.rst:763
 msgid ""
 "Note that ``filter(function, iterable)`` is equivalent to the generator "
 "expression ``(item for item in iterable if function(item))`` if function is "
@@ -1648,7 +1622,7 @@ msgstr ""
 "``None`` అయితే ``(item for item in iterable if item)`` కు సమానం అని "
 "గమనించండి."
 
-#: builtins/functions.rst:787
+#: builtins/functions.rst:768
 msgid ""
 "See :func:`itertools.filterfalse` for the complementary function that returns"
 " elements of *iterable* for which *function* is false."
@@ -1656,13 +1630,13 @@ msgstr ""
 "*function* అసత్యం అయ్యే *iterable* ఎలిమెంట్‌లను రిటర్న్ చేసే పూరక ఫంక్షన్ "
 "కోసం :func:`itertools.filterfalse` చూడండి."
 
-#: builtins/functions.rst:798
+#: builtins/functions.rst:779
 msgid "Return a floating-point number constructed from a number or a string."
 msgstr ""
 "ఒక సంఖ్య లేదా స్ట్రింగ్ నుండి నిర్మించిన ఫ్లోటింగ్ పాయింట్ సంఖ్యను రిటర్న్ "
 "చేస్తుంది."
 
-#: builtins/functions.rst:802
+#: builtins/functions.rst:783
 msgid ""
 ">>> float('+1.23')\n"
 "1.23\n"
@@ -1686,7 +1660,7 @@ msgstr ""
 ">>> float('-Infinity')\n"
 "-inf"
 
-#: builtins/functions.rst:815
+#: builtins/functions.rst:796
 msgid ""
 "If the argument is a string, it should contain a decimal number, optionally "
 "preceded by a sign, and optionally embedded in whitespace.  The optional sign"
@@ -1705,7 +1679,7 @@ msgstr ""
 "ఇన్‌పుట్ కింది గ్రామర్‌లోని :token:`~float:floatvalue` ప్రొడక్షన్ రూల్‌కు "
 "అనుగుణంగా ఉండాలి:"
 
-#: builtins/functions.rst:836
+#: builtins/functions.rst:817
 msgid ""
 "Case is not significant, so, for example, \"inf\", \"Inf\", \"INFINITY\", and"
 " \"iNfINity\" are all acceptable spellings for positive infinity."
@@ -1714,7 +1688,7 @@ msgstr ""
 "\"inf\", \"Inf\", \"INFINITY\", మరియు \"iNfINity\" అన్నీ ధన అనంతానికి "
 "ఆమోదయోగ్యమైన స్పెల్లింగ్‌లు."
 
-#: builtins/functions.rst:839
+#: builtins/functions.rst:820
 msgid ""
 "Otherwise, if the argument is an integer or a floating-point number, a "
 "floating-point number with the same value (within Python's floating-point "
@@ -1726,7 +1700,7 @@ msgstr ""
 "సంఖ్య రిటర్న్ చేయబడుతుంది. ఆర్గ్యుమెంట్ Python float పరిధికి బయట ఉంటే, "
 ":exc:`OverflowError` రైజ్ అవుతుంది."
 
-#: builtins/functions.rst:844
+#: builtins/functions.rst:825
 msgid ""
 "For a general Python object ``x``, ``float(x)`` delegates to "
 "``x.__float__()``.  If :meth:`~object.__float__` is not defined then it falls"
@@ -1736,22 +1710,22 @@ msgstr ""
 " అప్పగిస్తుంది. :meth:`~object.__float__` నిర్వచించబడకపోతే, అది "
 ":meth:`~object.__index__` ను ఆశ్రయిస్తుంది."
 
-#: builtins/functions.rst:848
+#: builtins/functions.rst:829
 msgid ""
 "See also :meth:`float.from_number` which only accepts a numeric argument."
 msgstr ""
 "సంఖ్యా ఆర్గ్యుమెంట్‌ను మాత్రమే స్వీకరించే :meth:`float.from_number` ను కూడా "
 "చూడండి."
 
-#: builtins/functions.rst:850
+#: builtins/functions.rst:831
 msgid "If no argument is given, ``0.0`` is returned."
 msgstr "ఆర్గ్యుమెంట్ ఏదీ ఇవ్వకపోతే, ``0.0`` రిటర్న్ చేయబడుతుంది."
 
-#: builtins/functions.rst:852
+#: builtins/functions.rst:833
 msgid "The float type is described in :ref:`typesnumeric`."
 msgstr "float టైప్ :ref:`typesnumeric` లో వివరించబడింది."
 
-#: builtins/functions.rst:860
+#: builtins/functions.rst:841
 msgid ""
 "Falls back to :meth:`~object.__index__` if :meth:`~object.__float__` is not "
 "defined."
@@ -1759,7 +1733,7 @@ msgstr ""
 ":meth:`~object.__float__` నిర్వచించబడకపోతే :meth:`~object.__index__` ను "
 "ఆశ్రయిస్తుంది."
 
-#: builtins/functions.rst:870
+#: builtins/functions.rst:851
 msgid ""
 "Convert a *value* to a \"formatted\" representation, as controlled by "
 "*format_spec*.  The interpretation of *format_spec* will depend on the type "
@@ -1771,7 +1745,7 @@ msgstr ""
 "ఆర్గ్యుమెంట్ టైప్‌పై ఆధారపడి ఉంటుంది; అయితే, చాలా బిల్ట్-ఇన్ టైప్‌లు "
 "ఉపయోగించే ఒక స్టాండర్డ్ ఫార్మాటింగ్ సింటాక్స్ ఉంది: :ref:`formatspec`."
 
-#: builtins/functions.rst:875
+#: builtins/functions.rst:856
 msgid ""
 "The default *format_spec* is an empty string which usually gives the same "
 "effect as calling :func:`str(value) <str>`."
@@ -1779,7 +1753,7 @@ msgstr ""
 "డిఫాల్ట్ *format_spec* ఒక ఖాళీ స్ట్రింగ్, ఇది సాధారణంగా :func:`str(value) "
 "<str>` ను కాల్ చేసినట్లే అదే ప్రభావాన్ని ఇస్తుంది."
 
-#: builtins/functions.rst:878
+#: builtins/functions.rst:859
 msgid ""
 "A call to ``format(value, format_spec)`` is translated to "
 "``type(value).__format__(value, format_spec)`` which bypasses the instance "
@@ -1795,7 +1769,7 @@ msgstr ""
 "లేదా రిటర్న్ విలువ స్ట్రింగ్‌లు కాకపోతే, :exc:`TypeError` ఎక్సెప్షన్ రైజ్ "
 "అవుతుంది."
 
-#: builtins/functions.rst:885
+#: builtins/functions.rst:866
 msgid ""
 "``object().__format__(format_spec)`` raises :exc:`TypeError` if *format_spec*"
 " is not an empty string."
@@ -1803,25 +1777,7 @@ msgstr ""
 "*format_spec* ఖాళీ స్ట్రింగ్ కాకపోతే ``object().__format__(format_spec)`` "
 ":exc:`TypeError` ను రైజ్ చేస్తుంది."
 
-#: builtins/functions.rst:896
-msgid ""
-"Create a new frozen dictionary.  The :class:`frozendict` object is a built-in"
-" class. See also :ref:`typesmapping` for documentation about this class."
-msgstr ""
-"కొత్త ఫ్రోజెన్ డిక్షనరీని సృష్టిస్తుంది. :class:`frozendict` ఆబ్జెక్ట్ ఒక "
-"బిల్ట్-ఇన్ క్లాస్. ఈ క్లాస్ గురించిన డాక్యుమెంటేషన్ కోసం :ref:`typesmapping` "
-"కూడా చూడండి."
-
-#: builtins/functions.rst:899
-msgid ""
-"For other containers see the built-in :class:`dict`, :class:`list`, "
-":class:`set`, and :class:`tuple` classes, as well as the :mod:`collections` "
-"module."
-msgstr ""
-"ఇతర కంటెయినర్‌ల కోసం బిల్ట్-ఇన్ :class:`dict`, :class:`list`, :class:`set`, "
-"మరియు :class:`tuple` క్లాస్‌లను, అలాగే :mod:`collections` మాడ్యూల్‌ను చూడండి."
-
-#: builtins/functions.rst:909
+#: builtins/functions.rst:875
 msgid ""
 "Return a new :class:`frozenset` object, optionally with elements taken from "
 "*iterable*.  :class:`frozenset` is a built-in class.  See also :ref:`types-"
@@ -1831,7 +1787,7 @@ msgstr ""
 " నుండి తీసుకున్న ఎలిమెంట్‌లతో. :class:`frozenset` ఒక బిల్ట్-ఇన్ క్లాస్. ఈ "
 "క్లాస్ గురించిన డాక్యుమెంటేషన్ కోసం :ref:`types-set` కూడా చూడండి."
 
-#: builtins/functions.rst:913
+#: builtins/functions.rst:879
 msgid ""
 "For other containers see the built-in :class:`set`, :class:`list`, "
 ":class:`tuple`, and :class:`dict` classes, as well as the :mod:`collections` "
@@ -1840,7 +1796,7 @@ msgstr ""
 "ఇతర కంటెయినర్‌ల కోసం బిల్ట్-ఇన్ :class:`set`, :class:`list`, :class:`tuple`, "
 "మరియు :class:`dict` క్లాస్‌లను, అలాగే :mod:`collections` మాడ్యూల్‌ను చూడండి."
 
-#: builtins/functions.rst:921
+#: builtins/functions.rst:887
 msgid ""
 "Return the value of the named attribute of *object*.  *name* must be a "
 "string. If the string is the name of one of the object's attributes, the "
@@ -1856,7 +1812,7 @@ msgstr ""
 "అది రిటర్న్ చేయబడుతుంది, లేకపోతే :exc:`AttributeError` రైజ్ అవుతుంది. *name* "
 "ఒక Python ఐడెంటిఫైయర్ కానవసరం లేదు (:func:`setattr` చూడండి)."
 
-#: builtins/functions.rst:930
+#: builtins/functions.rst:896
 msgid ""
 "Since :ref:`private name mangling <private-name-mangling>` happens at "
 "compilation time, one must manually mangle a private attribute's (attributes "
@@ -1868,7 +1824,7 @@ msgstr ""
 "రెండు అండర్‌స్కోర్‌లు ఉన్న అట్రిబ్యూట్‌లు) పొందాలంటే, దాని పేరును "
 "మాన్యువల్‌గా మాంగిల్ చేయాలి."
 
-#: builtins/functions.rst:938
+#: builtins/functions.rst:904
 msgid ""
 "Return the dictionary implementing the current module namespace. For code "
 "within functions, this is set when the function is defined and remains the "
@@ -1878,7 +1834,7 @@ msgstr ""
 "ఫంక్షన్‌లలోని కోడ్‌కు, ఫంక్షన్ నిర్వచించబడినప్పుడు ఇది సెట్ చేయబడుతుంది, "
 "మరియు ఫంక్షన్ ఎక్కడ కాల్ చేయబడినా ఇది అలాగే ఉంటుంది."
 
-#: builtins/functions.rst:945
+#: builtins/functions.rst:911
 msgid ""
 "The arguments are an object and a string.  The result is ``True`` if the "
 "string is the name of one of the object's attributes, ``False`` if not. (This"
@@ -1890,7 +1846,7 @@ msgstr ""
 "(``getattr(object, name)`` ను కాల్ చేసి, అది :exc:`AttributeError` ను రైజ్ "
 "చేస్తుందో లేదో చూడటం ద్వారా ఇది రూపొందించబడింది.)"
 
-#: builtins/functions.rst:953
+#: builtins/functions.rst:919
 msgid ""
 "Return the hash value of the object (if it has one).  Hash values are "
 "integers.  They are used to quickly compare dictionary keys during a "
@@ -1902,7 +1858,7 @@ msgstr ""
 "వీటిని ఉపయోగిస్తారు. సమానంగా పోల్చబడే సంఖ్యా విలువలకు ఒకే హ్యాష్ విలువ "
 "ఉంటుంది (అవి వేర్వేరు టైప్‌లకు చెందినవైనా సరే, 1 మరియు 1.0 విషయంలో లాగా)."
 
-#: builtins/functions.rst:960
+#: builtins/functions.rst:926
 msgid ""
 "For objects with custom :meth:`~object.__hash__` methods, note that "
 ":func:`hash` truncates the return value based on the bit width of the host "
@@ -1912,7 +1868,7 @@ msgstr ""
 ":func:`hash` హోస్ట్ మెషీన్ యొక్క బిట్ వెడల్పు ఆధారంగా రిటర్న్ విలువను "
 "కత్తిరిస్తుందని గమనించండి."
 
-#: builtins/functions.rst:967
+#: builtins/functions.rst:933
 msgid ""
 "Invoke the built-in help system.  (This function is intended for interactive "
 "use.)  If no argument is given, the interactive help system starts on the "
@@ -1929,7 +1885,7 @@ msgstr ""
 "చేయబడుతుంది. ఆర్గ్యుమెంట్ వేరే ఏ రకమైన ఆబ్జెక్ట్ అయినా, ఆ ఆబ్జెక్ట్‌పై ఒక "
 "హెల్ప్ పేజీ జనరేట్ చేయబడుతుంది."
 
-#: builtins/functions.rst:974
+#: builtins/functions.rst:940
 msgid ""
 "Note that if a slash(/) appears in the parameter list of a function when "
 "invoking :func:`help`, it means that the parameters prior to the slash are "
@@ -1941,14 +1897,14 @@ msgstr ""
 " అర్థం అని గమనించండి. మరింత సమాచారం కోసం, :ref:`పొజిషనల్-మాత్రమే "
 "పారామీటర్‌లపై FAQ ఎంట్రీని <faq-positional-only-arguments>` చూడండి."
 
-#: builtins/functions.rst:979
+#: builtins/functions.rst:945
 msgid ""
 "This function is added to the built-in namespace by the :mod:`site` module."
 msgstr ""
 "ఈ ఫంక్షన్ :mod:`site` మాడ్యూల్ ద్వారా బిల్ట్-ఇన్ నేమ్‌స్పేస్‌కు "
 "జోడించబడుతుంది."
 
-#: builtins/functions.rst:981
+#: builtins/functions.rst:947
 msgid ""
 "Changes to :mod:`pydoc` and :mod:`inspect` mean that the reported signatures "
 "for callables are now more comprehensive and consistent."
@@ -1956,7 +1912,7 @@ msgstr ""
 ":mod:`pydoc` మరియు :mod:`inspect` లో చేసిన మార్పుల వల్ల, కాలబుల్‌ల కోసం "
 "నివేదించబడే సిగ్నేచర్‌లు ఇప్పుడు మరింత సమగ్రంగా మరియు స్థిరంగా ఉంటాయి."
 
-#: builtins/functions.rst:988
+#: builtins/functions.rst:954
 msgid ""
 "Convert an integer number to a lowercase hexadecimal string prefixed with "
 "\"0x\". If *integer* is not a Python :class:`int` object, it has to define an"
@@ -1967,7 +1923,7 @@ msgstr ""
 " అది పూర్ణాంకాన్ని రిటర్న్ చేసే :meth:`~object.__index__` మెథడ్‌ను "
 "నిర్వచించాలి. కొన్ని ఉదాహరణలు:"
 
-#: builtins/functions.rst:997
+#: builtins/functions.rst:963
 msgid ""
 "If you want to convert an integer number to an uppercase or lower hexadecimal"
 " string with prefix or not, you can use either of the following ways:"
@@ -1976,7 +1932,7 @@ msgstr ""
 "హెక్సాడెసిమల్ స్ట్రింగ్‌గా మార్చాలనుకుంటే, కింది మార్గాల్లో దేన్నైనా "
 "ఉపయోగించవచ్చు:"
 
-#: builtins/functions.rst:1009
+#: builtins/functions.rst:975
 msgid ""
 "See also :func:`int` for converting a hexadecimal string to an integer using "
 "a base of 16."
@@ -1984,7 +1940,7 @@ msgstr ""
 "ఆధారం 16 ఉపయోగించి హెక్సాడెసిమల్ స్ట్రింగ్‌ను పూర్ణాంకంగా మార్చడం కోసం "
 ":func:`int` ను కూడా చూడండి."
 
-#: builtins/functions.rst:1014
+#: builtins/functions.rst:980
 msgid ""
 "To obtain a hexadecimal string representation for a float, use the "
 ":meth:`float.hex` method."
@@ -1992,7 +1948,7 @@ msgstr ""
 "ఒక float కోసం హెక్సాడెసిమల్ స్ట్రింగ్ రిప్రజెంటేషన్ పొందడానికి, "
 ":meth:`float.hex` మెథడ్‌ను ఉపయోగించండి."
 
-#: builtins/functions.rst:1020
+#: builtins/functions.rst:986
 msgid ""
 "Return the \"identity\" of an object.  This is an integer which is guaranteed"
 " to be unique and constant for this object during its lifetime. Two objects "
@@ -2003,11 +1959,11 @@ msgstr ""
 " హామీ ఉంది. జీవితకాలాలు ఒకదానితో ఒకటి కలవని రెండు ఆబ్జెక్ట్‌లకు ఒకే "
 ":func:`id` విలువ ఉండవచ్చు."
 
-#: builtins/functions.rst:1025
+#: builtins/functions.rst:991
 msgid "This is the address of the object in memory."
 msgstr "ఇది మెమరీలో ఆబ్జెక్ట్ యొక్క అడ్రస్."
 
-#: builtins/functions.rst:1027
+#: builtins/functions.rst:993
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.id`` with argument "
 "``id``."
@@ -2015,7 +1971,7 @@ msgstr ""
 "``id`` ఆర్గ్యుమెంట్‌తో ``builtins.id`` అనే :ref:`ఆడిటింగ్ ఈవెంట్‌ను "
 "<auditing>` రైజ్ చేస్తుంది."
 
-#: builtins/functions.rst:1033
+#: builtins/functions.rst:999
 msgid ""
 "If the *prompt* argument is present, it is written to standard output without"
 " a trailing newline.  The function then reads a line from input, converts it "
@@ -2027,7 +1983,7 @@ msgstr ""
 "దాన్ని స్ట్రింగ్‌గా మార్చి (చివరి న్యూలైన్‌ను తొలగించి), దాన్ని రిటర్న్ "
 "చేస్తుంది. EOF చదివినప్పుడు, :exc:`EOFError` రైజ్ అవుతుంది. ఉదాహరణ::"
 
-#: builtins/functions.rst:1038
+#: builtins/functions.rst:1004
 msgid ""
 ">>> s = input('--> ')\n"
 "--> Monty Python's Flying Circus\n"
@@ -2039,7 +1995,7 @@ msgstr ""
 ">>> s\n"
 "\"Monty Python's Flying Circus\""
 
-#: builtins/functions.rst:1043
+#: builtins/functions.rst:1009
 msgid ""
 "If the :mod:`readline` module was loaded, then :func:`input` will use it to "
 "provide elaborate line editing and history features."
@@ -2047,7 +2003,7 @@ msgstr ""
 ":mod:`readline` మాడ్యూల్ లోడ్ అయి ఉంటే, :func:`input` దాన్ని ఉపయోగించి "
 "విస్తృతమైన లైన్ ఎడిటింగ్ మరియు హిస్టరీ ఫీచర్‌లను అందిస్తుంది."
 
-#: builtins/functions.rst:1046 builtins/functions.rst:1048
+#: builtins/functions.rst:1012 builtins/functions.rst:1014
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.input`` with argument "
 "``prompt`` before reading input"
@@ -2055,7 +2011,7 @@ msgstr ""
 "ఇన్‌పుట్ చదివే ముందు ``prompt`` ఆర్గ్యుమెంట్‌తో ``builtins.input`` అనే "
 ":ref:`ఆడిటింగ్ ఈవెంట్‌ను <auditing>` రైజ్ చేస్తుంది"
 
-#: builtins/functions.rst:1051 builtins/functions.rst:1053
+#: builtins/functions.rst:1017 builtins/functions.rst:1019
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.input/result`` with the"
 " result after successfully reading input."
@@ -2063,7 +2019,7 @@ msgstr ""
 "ఇన్‌పుట్‌ను విజయవంతంగా చదివిన తర్వాత ఫలితంతో ``builtins.input/result`` అనే "
 ":ref:`ఆడిటింగ్ ఈవెంట్‌ను <auditing>` రైజ్ చేస్తుంది."
 
-#: builtins/functions.rst:1060
+#: builtins/functions.rst:1026
 msgid ""
 "Return an integer object constructed from a number or a string, or return "
 "``0`` if no arguments are given."
@@ -2071,7 +2027,7 @@ msgstr ""
 "ఒక సంఖ్య లేదా స్ట్రింగ్ నుండి నిర్మించిన పూర్ణాంక ఆబ్జెక్ట్‌ను రిటర్న్ "
 "చేస్తుంది, లేదా ఆర్గ్యుమెంట్‌లు ఏవీ ఇవ్వకపోతే ``0`` ను రిటర్న్ చేస్తుంది."
 
-#: builtins/functions.rst:1065
+#: builtins/functions.rst:1031
 msgid ""
 ">>> int(123.45)\n"
 "123\n"
@@ -2099,7 +2055,7 @@ msgstr ""
 ">>> int('01110011', base=2)\n"
 "115"
 
-#: builtins/functions.rst:1080
+#: builtins/functions.rst:1046
 msgid ""
 "If the argument defines :meth:`~object.__int__`, ``int(x)`` returns "
 "``x.__int__()``.  If the argument defines :meth:`~object.__index__`, it "
@@ -2111,7 +2067,7 @@ msgstr ""
 "ను నిర్వచిస్తే, ఇది ``x.__index__()`` ను రిటర్న్ చేస్తుంది. ఫ్లోటింగ్ పాయింట్"
 " సంఖ్యల విషయంలో, ఇది సున్నా వైపుకు కత్తిరిస్తుంది (truncate)."
 
-#: builtins/functions.rst:1085
+#: builtins/functions.rst:1051
 msgid ""
 "If the argument is not a number or if *base* is given, then it must be a "
 "string, :class:`bytes`, or :class:`bytearray` instance representing an "
@@ -2126,7 +2082,7 @@ msgstr ""
 "స్థలం (whitespace) ఉండవచ్చు, మరియు అంకెల మధ్యలో అక్కడక్కడ ఒక్కొక్క "
 "అండర్‌స్కోర్ ఉండవచ్చు."
 
-#: builtins/functions.rst:1091
+#: builtins/functions.rst:1057
 msgid ""
 "A base-n integer string contains digits, each representing a value from 0 to "
 "n-1. The values 0--9 can be represented by any Unicode decimal digit. The "
@@ -2150,11 +2106,11 @@ msgstr ""
 " 16 అవుతుంది. ఆధారం 0 అదనంగా ముందు సున్నాలను అనుమతించదు: ``int('010', 0)`` "
 "చెల్లదు, అయితే ``int('010')`` మరియు ``int('010', 8)`` చెల్లుతాయి."
 
-#: builtins/functions.rst:1102
+#: builtins/functions.rst:1068
 msgid "The integer type is described in :ref:`typesnumeric`."
 msgstr "పూర్ణాంక టైప్ :ref:`typesnumeric` లో వివరించబడింది."
 
-#: builtins/functions.rst:1104
+#: builtins/functions.rst:1070
 msgid ""
 "If *base* is not an instance of :class:`int` and the *base* object has a "
 ":meth:`base.__index__ <object.__index__>` method, that method is called to "
@@ -2167,11 +2123,11 @@ msgstr ""
 ":meth:`base.__index__ <object.__index__>` కు బదులుగా :meth:`base.__int__ "
 "<object.__int__>` ను ఉపయోగించేవి."
 
-#: builtins/functions.rst:1114
+#: builtins/functions.rst:1080
 msgid "The first parameter is now positional-only."
 msgstr "మొదటి పారామీటర్ ఇప్పుడు పొజిషనల్-మాత్రమే."
 
-#: builtins/functions.rst:1117
+#: builtins/functions.rst:1083
 msgid ""
 "Falls back to :meth:`~object.__index__` if :meth:`~object.__int__` is not "
 "defined."
@@ -2179,7 +2135,7 @@ msgstr ""
 ":meth:`~object.__int__` నిర్వచించబడకపోతే, :meth:`~object.__index__` ను "
 "ఆశ్రయిస్తుంది."
 
-#: builtins/functions.rst:1120
+#: builtins/functions.rst:1086
 msgid ""
 ":class:`int` string inputs and string representations can be limited to help "
 "avoid denial of service attacks. A :exc:`ValueError` is raised when the limit"
@@ -2194,12 +2150,12 @@ msgstr ""
 ":exc:`ValueError` రైజ్ అవుతుంది. :ref:`పూర్ణాంక స్ట్రింగ్ కన్వర్షన్ పొడవు "
 "పరిమితి <int_max_str_digits>` డాక్యుమెంటేషన్ చూడండి."
 
-#: builtins/functions.rst:1128
+#: builtins/functions.rst:1094
 msgid ""
 ":func:`int` no longer delegates to the :meth:`~object.__trunc__` method."
 msgstr ":func:`int` ఇకపై :meth:`~object.__trunc__` మెథడ్‌కు పనిని అప్పగించదు."
 
-#: builtins/functions.rst:1133
+#: builtins/functions.rst:1099
 msgid ""
 "Return ``True`` if the *object* argument is an instance of the *classinfo* "
 "argument, or of a (direct, indirect, or :term:`virtual <abstract base "
@@ -2222,17 +2178,25 @@ msgstr ""
 "ఎక్సెప్షన్ రైజ్ అవుతుంది. ముందు జరిగిన తనిఖీ విజయవంతమైతే, చెల్లని టైప్ కోసం "
 ":exc:`TypeError` రైజ్ కాకపోవచ్చు."
 
-#: builtins/functions.rst:1144 builtins/functions.rst:1158
+#: builtins/functions.rst:1110 builtins/functions.rst:1124
 msgid "*classinfo* can be a :ref:`types-union`."
 msgstr "*classinfo* ఒక :ref:`types-union` కావచ్చు."
 
-#: builtins/functions.rst:1150
+#: builtins/functions.rst:1116
+#, fuzzy
+#| msgid ""
+#| "Return ``True`` if *cls* is a subclass (direct, indirect, or :term:`virtual "
+#| "<abstract base class>`) of *classinfo*.  A class is considered a subclass of "
+#| "itself. *classinfo* may be a tuple of class objects (or recursively, other "
+#| "such tuples) or a :ref:`types-union`, in which case return ``True`` if *cls* "
+#| "is a subclass of any entry in *classinfo*.  In any other case, a "
+#| ":exc:`TypeError` exception is raised."
 msgid ""
-"Return ``True`` if *cls* is a subclass (direct, indirect, or :term:`virtual "
-"<abstract base class>`) of *classinfo*.  A class is considered a subclass of "
-"itself. *classinfo* may be a tuple of class objects (or recursively, other "
-"such tuples) or a :ref:`types-union`, in which case return ``True`` if *cls* "
-"is a subclass of any entry in *classinfo*.  In any other case, a "
+"Return ``True`` if *class* is a subclass (direct, indirect, or :term:`virtual"
+" <abstract base class>`) of *classinfo*.  A class is considered a subclass of"
+" itself. *classinfo* may be a tuple of class objects (or recursively, other "
+"such tuples) or a :ref:`types-union`, in which case return ``True`` if "
+"*class* is a subclass of any entry in *classinfo*.  In any other case, a "
 ":exc:`TypeError` exception is raised."
 msgstr ""
 "*cls* అనేది *classinfo* యొక్క సబ్‌క్లాస్ (ప్రత్యక్ష, పరోక్ష, లేదా "
@@ -2243,7 +2207,7 @@ msgstr ""
 "ఎంట్రీకైనా సబ్‌క్లాస్ అయితే ``True`` ను రిటర్న్ చేస్తుంది. మిగతా అన్ని "
 "సందర్భాల్లో, :exc:`TypeError` ఎక్సెప్షన్ రైజ్ అవుతుంది."
 
-#: builtins/functions.rst:1165
+#: builtins/functions.rst:1131
 msgid ""
 "Return an :term:`iterator` object.  The first argument is interpreted very "
 "differently depending on the presence of the second argument. Without a "
@@ -2272,11 +2236,11 @@ msgstr ""
 "*sentinel* కు సమానమైతే, :exc:`StopIteration` రైజ్ అవుతుంది, లేకపోతే ఆ విలువ "
 "రిటర్న్ చేయబడుతుంది."
 
-#: builtins/functions.rst:1179
+#: builtins/functions.rst:1145
 msgid "See also :ref:`typeiter`."
 msgstr ":ref:`typeiter` కూడా చూడండి."
 
-#: builtins/functions.rst:1181
+#: builtins/functions.rst:1147
 msgid ""
 "One useful application of the second form of :func:`iter` is to build a "
 "block-reader. For example, reading fixed-width blocks from a binary database "
@@ -2286,7 +2250,7 @@ msgstr ""
 "చేయడం. ఉదాహరణకు, ఫైల్ చివరికి చేరే వరకు బైనరీ డేటాబేస్ ఫైల్ నుండి "
 "స్థిర-వెడల్పు బ్లాక్‌లను చదవడం::"
 
-#: builtins/functions.rst:1185
+#: builtins/functions.rst:1151
 msgid ""
 "from functools import partial\n"
 "with open('mydata.db', 'rb') as f:\n"
@@ -2298,7 +2262,7 @@ msgstr ""
 "    for block in iter(partial(f.read, 64), b''):\n"
 "        process_block(block)"
 
-#: builtins/functions.rst:1193
+#: builtins/functions.rst:1159
 msgid ""
 "Return the length (the number of items) of an object.  The argument may be a "
 "sequence (such as a string, bytes, tuple, list, or range) or a collection "
@@ -2308,7 +2272,7 @@ msgstr ""
 "ఒక సీక్వెన్స్ (స్ట్రింగ్, bytes, టపుల్, లిస్ట్, లేదా range వంటివి) లేదా ఒక "
 "కలెక్షన్ (డిక్షనరీ, సెట్, లేదా ఫ్రోజెన్ సెట్ వంటివి) కావచ్చు."
 
-#: builtins/functions.rst:1199
+#: builtins/functions.rst:1165
 msgid ""
 "``len`` raises :exc:`OverflowError` on lengths larger than "
 ":data:`sys.maxsize`, such as :class:`range(2 ** 100) <range>`."
@@ -2316,7 +2280,7 @@ msgstr ""
 ":class:`range(2 ** 100) <range>` వంటి, :data:`sys.maxsize` కంటే పెద్ద పొడవుల "
 "విషయంలో ``len`` :exc:`OverflowError` ను రైజ్ చేస్తుంది."
 
-#: builtins/functions.rst:1207
+#: builtins/functions.rst:1173
 msgid ""
 "Rather than being a function, :class:`list` is actually a mutable sequence "
 "type, as documented in :ref:`typesseq-list` and :ref:`typesseq`."
@@ -2325,7 +2289,7 @@ msgstr ""
 "సీక్వెన్స్ టైప్; దీని గురించి :ref:`typesseq-list` మరియు :ref:`typesseq` లో "
 "వివరించబడింది."
 
-#: builtins/functions.rst:1213
+#: builtins/functions.rst:1179
 msgid ""
 "Return a mapping object representing the current local symbol table, with "
 "variable names as the keys, and their currently bound references as the "
@@ -2335,7 +2299,7 @@ msgstr ""
 "చేస్తుంది, ఇందులో వేరియబుల్ పేర్లు కీలుగా, వాటికి ప్రస్తుతం బైండ్ అయిన "
 "రిఫరెన్స్‌లు విలువలుగా ఉంటాయి."
 
-#: builtins/functions.rst:1217
+#: builtins/functions.rst:1183
 msgid ""
 "At module scope, as well as when using :func:`exec` or :func:`eval` with a "
 "single namespace, this function returns the same namespace as "
@@ -2345,7 +2309,7 @@ msgstr ""
 "ను ఉపయోగిస్తున్నప్పుడు, ఈ ఫంక్షన్ :func:`globals` రిటర్న్ చేసే నేమ్‌స్పేస్‌నే"
 " రిటర్న్ చేస్తుంది."
 
-#: builtins/functions.rst:1221
+#: builtins/functions.rst:1187
 msgid ""
 "At class scope, it returns the namespace that will be passed to the metaclass"
 " constructor."
@@ -2353,7 +2317,7 @@ msgstr ""
 "క్లాస్ స్కోప్‌లో, ఇది మెటాక్లాస్ కన్‌స్ట్రక్టర్‌కు పంపబడే నేమ్‌స్పేస్‌ను "
 "రిటర్న్ చేస్తుంది."
 
-#: builtins/functions.rst:1224
+#: builtins/functions.rst:1190
 msgid ""
 "When using ``exec()`` or ``eval()`` with separate local and global arguments,"
 " it returns the local namespace passed in to the function call."
@@ -2362,7 +2326,7 @@ msgstr ""
 "ఉపయోగిస్తున్నప్పుడు, ఇది ఫంక్షన్ కాల్‌కు పంపిన లోకల్ నేమ్‌స్పేస్‌ను రిటర్న్ "
 "చేస్తుంది."
 
-#: builtins/functions.rst:1227
+#: builtins/functions.rst:1193
 msgid ""
 "In all of the above cases, each call to ``locals()`` in a given frame of "
 "execution will return the *same* mapping object. Changes made through the "
@@ -2378,7 +2342,7 @@ msgstr ""
 "వేరియబుల్‌లను అసైన్ చేయడం, మళ్లీ అసైన్ చేయడం, లేదా తొలగించడం రిటర్న్ అయిన "
 "మ్యాపింగ్ ఆబ్జెక్ట్ యొక్క విషయాలను వెంటనే ప్రభావితం చేస్తుంది."
 
-#: builtins/functions.rst:1234
+#: builtins/functions.rst:1200
 msgid ""
 "In an :term:`optimized scope` (including functions, generators, and "
 "coroutines), each call to ``locals()`` instead returns a fresh dictionary "
@@ -2398,7 +2362,7 @@ msgstr ""
 "వేరియబుల్‌లను, నాన్-లోకల్ సెల్ రిఫరెన్స్‌లను అసైన్ చేయడం, మళ్లీ అసైన్ చేయడం, "
 "లేదా తొలగించడం మునుపు రిటర్న్ అయిన డిక్షనరీల విషయాలను *ప్రభావితం చేయదు*."
 
-#: builtins/functions.rst:1243
+#: builtins/functions.rst:1209
 msgid ""
 "Calling ``locals()`` as part of a comprehension in a function, generator, or "
 "coroutine is equivalent to calling it in the containing scope, except that "
@@ -2412,7 +2376,7 @@ msgstr ""
 "చేర్చబడతాయి. ఇతర స్కోప్‌లలో, కాంప్రహెన్షన్ ఒక నెస్టెడ్ ఫంక్షన్‌గా రన్ "
 "అవుతున్నట్లుగా ఇది ప్రవర్తిస్తుంది."
 
-#: builtins/functions.rst:1249
+#: builtins/functions.rst:1215
 msgid ""
 "Calling ``locals()`` as part of a generator expression is equivalent to "
 "calling it in a nested generator function."
@@ -2420,7 +2384,7 @@ msgstr ""
 "జనరేటర్ ఎక్స్‌ప్రెషన్‌లో భాగంగా ``locals()`` ను కాల్ చేయడం, ఒక నెస్టెడ్ "
 "జనరేటర్ ఫంక్షన్‌లో దాన్ని కాల్ చేయడానికి సమానం."
 
-#: builtins/functions.rst:1252
+#: builtins/functions.rst:1218
 msgid ""
 "The behaviour of ``locals()`` in a comprehension has been updated as "
 "described in :pep:`709`."
@@ -2428,7 +2392,7 @@ msgstr ""
 "కాంప్రహెన్షన్‌లో ``locals()`` ప్రవర్తన :pep:`709` లో వివరించినట్లుగా "
 "నవీకరించబడింది."
 
-#: builtins/functions.rst:1256
+#: builtins/functions.rst:1222
 msgid ""
 "As part of :pep:`667`, the semantics of mutating the mapping objects returned"
 " from this function are now defined. The behavior in :term:`optimized scopes "
@@ -2440,7 +2404,7 @@ msgstr ""
 "స్కోప్‌లలో <optimized scope>` ప్రవర్తన ఇప్పుడు పైన వివరించినట్లుగా ఉంది. "
 "నిర్వచించబడటం తప్ప, ఇతర స్కోప్‌లలో ప్రవర్తన మునుపటి వెర్షన్‌ల నుండి మారలేదు."
 
-#: builtins/functions.rst:1266
+#: builtins/functions.rst:1232
 msgid ""
 "Return an iterator that applies *function* to every item of *iterable*, "
 "yielding the results.  If additional *iterables* arguments are passed, "
@@ -2461,11 +2425,11 @@ msgstr ""
 "ఇన్‌పుట్‌లు ఇప్పటికే ఆర్గ్యుమెంట్ టపుల్‌లుగా అమర్చబడిన సందర్భాల కోసం, "
 ":func:`itertools.starmap` చూడండి."
 
-#: builtins/functions.rst:1275
+#: builtins/functions.rst:1241
 msgid "Added the *strict* parameter."
 msgstr "*strict* పారామీటర్ జోడించబడింది."
 
-#: builtins/functions.rst:1283
+#: builtins/functions.rst:1249
 msgid ""
 "Return the largest item in an iterable or the largest of two or more "
 "arguments."
@@ -2473,7 +2437,7 @@ msgstr ""
 "ఒక ఇటరబుల్‌లోని అతి పెద్ద ఐటెమ్‌ను, లేదా రెండు లేదా అంతకంటే ఎక్కువ "
 "ఆర్గ్యుమెంట్‌లలో అతి పెద్దదాన్ని రిటర్న్ చేస్తుంది."
 
-#: builtins/functions.rst:1286
+#: builtins/functions.rst:1252
 msgid ""
 "If one positional argument is provided, it should be an :term:`iterable`. The"
 " largest item in the iterable is returned.  If two or more positional "
@@ -2484,7 +2448,7 @@ msgstr ""
 "పొజిషనల్ ఆర్గ్యుమెంట్‌లు ఇస్తే, పొజిషనల్ ఆర్గ్యుమెంట్‌లలో అతి పెద్దది రిటర్న్"
 " చేయబడుతుంది."
 
-#: builtins/functions.rst:1291 builtins/functions.rst:1329
+#: builtins/functions.rst:1257 builtins/functions.rst:1295
 msgid ""
 "There are two optional keyword-only arguments. The *key* argument specifies a"
 " one-argument ordering function like that used for :meth:`list.sort`. The "
@@ -2498,7 +2462,7 @@ msgstr ""
 "*default* ఆర్గ్యుమెంట్ నిర్దేశిస్తుంది. ఇటరబుల్ ఖాళీగా ఉండి *default* "
 "ఇవ్వకపోతే, :exc:`ValueError` రైజ్ అవుతుంది."
 
-#: builtins/functions.rst:1297
+#: builtins/functions.rst:1263
 msgid ""
 "If multiple items are maximal, the function returns the first one "
 "encountered.  This is consistent with other sort-stability preserving tools "
@@ -2510,15 +2474,15 @@ msgstr ""
 "``heapq.nlargest(1, iterable, key=keyfunc)`` వంటి, సార్ట్ స్థిరత్వాన్ని (sort"
 " stability) కాపాడే ఇతర టూల్‌లతో సుసంగతంగా ఉంటుంది."
 
-#: builtins/functions.rst:1302 builtins/functions.rst:1340
+#: builtins/functions.rst:1268 builtins/functions.rst:1306
 msgid "Added the *default* keyword-only parameter."
 msgstr "*default* కీవర్డ్-మాత్రమే పారామీటర్ జోడించబడింది."
 
-#: builtins/functions.rst:1305 builtins/functions.rst:1343
+#: builtins/functions.rst:1271 builtins/functions.rst:1309
 msgid "The *key* can be ``None``."
 msgstr "*key* ``None`` కావచ్చు."
 
-#: builtins/functions.rst:1313
+#: builtins/functions.rst:1279
 msgid ""
 "Return a \"memory view\" object created from the given argument.  See "
 ":ref:`typememoryview` for more information."
@@ -2526,7 +2490,7 @@ msgstr ""
 "ఇచ్చిన ఆర్గ్యుమెంట్ నుండి సృష్టించిన \"memory view\" ఆబ్జెక్ట్‌ను రిటర్న్ "
 "చేస్తుంది. మరింత సమాచారం కోసం :ref:`typememoryview` చూడండి."
 
-#: builtins/functions.rst:1321
+#: builtins/functions.rst:1287
 msgid ""
 "Return the smallest item in an iterable or the smallest of two or more "
 "arguments."
@@ -2534,7 +2498,7 @@ msgstr ""
 "ఒక ఇటరబుల్‌లోని అతి చిన్న ఐటెమ్‌ను, లేదా రెండు లేదా అంతకంటే ఎక్కువ "
 "ఆర్గ్యుమెంట్‌లలో అతి చిన్నదాన్ని రిటర్న్ చేస్తుంది."
 
-#: builtins/functions.rst:1324
+#: builtins/functions.rst:1290
 msgid ""
 "If one positional argument is provided, it should be an :term:`iterable`. The"
 " smallest item in the iterable is returned.  If two or more positional "
@@ -2545,7 +2509,7 @@ msgstr ""
 "పొజిషనల్ ఆర్గ్యుమెంట్‌లు ఇస్తే, పొజిషనల్ ఆర్గ్యుమెంట్‌లలో అతి చిన్నది రిటర్న్"
 " చేయబడుతుంది."
 
-#: builtins/functions.rst:1335
+#: builtins/functions.rst:1301
 msgid ""
 "If multiple items are minimal, the function returns the first one "
 "encountered.  This is consistent with other sort-stability preserving tools "
@@ -2557,7 +2521,7 @@ msgstr ""
 " key=keyfunc)`` వంటి, సార్ట్ స్థిరత్వాన్ని కాపాడే ఇతర టూల్‌లతో సుసంగతంగా "
 "ఉంటుంది."
 
-#: builtins/functions.rst:1350
+#: builtins/functions.rst:1316
 msgid ""
 "Retrieve the next item from the :term:`iterator` by calling its "
 ":meth:`~iterator.__next__` method.  If *default* is given, it is returned if "
@@ -2568,7 +2532,7 @@ msgstr ""
 "ఇటరేటర్ :term:`అయిపోయినప్పుడు <exhausted>` అది రిటర్న్ చేయబడుతుంది, లేకపోతే "
 ":exc:`StopIteration` రైజ్ అవుతుంది."
 
-#: builtins/functions.rst:1357
+#: builtins/functions.rst:1323
 msgid ""
 "This is the ultimate base class of all other classes. It has methods that are"
 " common to all instances of Python classes. When the constructor is called, "
@@ -2580,7 +2544,7 @@ msgstr ""
 "చేసినప్పుడు, అది ఎలాంటి ఫీచర్‌లూ లేని కొత్త ఆబ్జెక్ట్‌ను రిటర్న్ చేస్తుంది. "
 "కన్‌స్ట్రక్టర్ ఎలాంటి ఆర్గ్యుమెంట్‌లనూ స్వీకరించదు."
 
-#: builtins/functions.rst:1364
+#: builtins/functions.rst:1330
 msgid ""
 ":class:`object` instances do *not* have :attr:`~object.__dict__` attributes, "
 "so you can't assign arbitrary attributes to an instance of :class:`object`."
@@ -2589,7 +2553,7 @@ msgstr ""
 "*ఉండవు*, కాబట్టి :class:`object` యొక్క ఇన్‌స్టాన్స్‌కు మీరు ఇష్టానుసార "
 "అట్రిబ్యూట్‌లను అసైన్ చేయలేరు."
 
-#: builtins/functions.rst:1371
+#: builtins/functions.rst:1337
 msgid ""
 "Convert an integer number to an octal string prefixed with \"0o\".  The "
 "result is a valid Python expression. If *integer* is not a Python "
@@ -2601,7 +2565,7 @@ msgstr ""
 " ఆబ్జెక్ట్ కాకపోతే, అది పూర్ణాంకాన్ని రిటర్న్ చేసే :meth:`~object.__index__` "
 "మెథడ్‌ను నిర్వచించాలి. ఉదాహరణకు:"
 
-#: builtins/functions.rst:1381
+#: builtins/functions.rst:1347
 msgid ""
 "If you want to convert an integer number to an octal string either with the "
 "prefix \"0o\" or not, you can use either of the following ways."
@@ -2609,7 +2573,7 @@ msgstr ""
 "మీరు ఒక పూర్ణాంక సంఖ్యను \"0o\" ప్రిఫిక్స్‌తో లేదా అది లేకుండా ఆక్టల్ "
 "స్ట్రింగ్‌గా మార్చాలనుకుంటే, కింది మార్గాల్లో దేన్నైనా ఉపయోగించవచ్చు."
 
-#: builtins/functions.rst:1398
+#: builtins/functions.rst:1364
 msgid ""
 "Open *file* and return a corresponding :term:`file object`.  If the file "
 "cannot be opened, an :exc:`OSError` is raised. See :ref:`tut-files` for more "
@@ -2619,7 +2583,7 @@ msgstr ""
 "చేస్తుంది. ఫైల్‌ను తెరవలేకపోతే, :exc:`OSError` రైజ్ అవుతుంది. ఈ ఫంక్షన్‌ను "
 "ఎలా ఉపయోగించాలో మరిన్ని ఉదాహరణల కోసం :ref:`tut-files` చూడండి."
 
-#: builtins/functions.rst:1402
+#: builtins/functions.rst:1368
 msgid ""
 "*file* is a :term:`path-like object` giving the pathname (absolute or "
 "relative to the current working directory) of the file to be opened or an "
@@ -2634,7 +2598,7 @@ msgstr ""
 "సెట్ చేస్తే తప్ప, రిటర్న్ అయిన I/O ఆబ్జెక్ట్ క్లోజ్ అయినప్పుడు అది కూడా "
 "క్లోజ్ అవుతుంది.)"
 
-#: builtins/functions.rst:1408
+#: builtins/functions.rst:1374
 msgid ""
 "*mode* is an optional string that specifies the mode in which the file is "
 "opened.  It defaults to ``'r'`` which means open for reading in text mode. "
@@ -2642,88 +2606,77 @@ msgid ""
 "already exists), ``'x'`` for exclusive creation, and ``'a'`` for appending "
 "(which on *some* Unix systems, means that *all* writes append to the end of "
 "the file regardless of the current seek position).  In text mode, if "
-"*encoding* is not specified, UTF-8 is used by default; if :ref:`Python UTF-8 "
-"Mode <utf8-mode>` is disabled, :func:`locale.getencoding` is called to get "
-"the current locale encoding. (For reading and writing raw bytes use binary "
-"mode and leave *encoding* unspecified.)  The available modes are:"
+"*encoding* is not specified the encoding used is platform-dependent: "
+":func:`locale.getencoding` is called to get the current locale encoding. (For"
+" reading and writing raw bytes use binary mode and leave *encoding* "
+"unspecified.)  The available modes are:"
 msgstr ""
-"*mode* అనేది ఫైల్‌ను ఏ మోడ్‌లో తెరవాలో నిర్దేశించే ఐచ్ఛిక స్ట్రింగ్. దీని "
-"డిఫాల్ట్ ``'r'``, అంటే టెక్స్ట్ మోడ్‌లో చదవడానికి తెరవడం. ఇతర సాధారణ విలువలు:"
-" రాయడానికి ``'w'`` (ఫైల్ ఇప్పటికే ఉంటే దాన్ని కత్తిరిస్తుంది), ఎక్స్‌క్లూజివ్"
-" సృష్టి (exclusive creation) కోసం ``'x'``, మరియు అపెండ్ చేయడానికి ``'a'`` "
-"(దీని అర్థం, *కొన్ని* Unix సిస్టమ్‌లలో, ప్రస్తుత సీక్ స్థానంతో సంబంధం లేకుండా"
-" రాసే డేటా *అంతా* ఫైల్ చివరికి అపెండ్ అవుతుంది). టెక్స్ట్ మోడ్‌లో, *encoding*"
-" నిర్దేశించకపోతే, డిఫాల్ట్‌గా UTF-8 ఉపయోగించబడుతుంది; :ref:`Python UTF-8 మోడ్"
-" <utf8-mode>` నిలిపివేయబడి ఉంటే, ప్రస్తుత లోకేల్ ఎన్‌కోడింగ్‌ను పొందడానికి "
-":func:`locale.getencoding` కాల్ చేయబడుతుంది. (రా బైట్‌లను చదవడానికి, "
-"రాయడానికి బైనరీ మోడ్‌ను ఉపయోగించండి, *encoding* ను నిర్దేశించకుండా "
-"వదిలేయండి.) అందుబాటులో ఉన్న మోడ్‌లు:"
 
-#: builtins/functions.rst:1426
+#: builtins/functions.rst:1391
 msgid "Character"
 msgstr "అక్షరం"
 
-#: builtins/functions.rst:1426
+#: builtins/functions.rst:1391
 msgid "Meaning"
 msgstr "అర్థం"
 
-#: builtins/functions.rst:1428
+#: builtins/functions.rst:1393
 msgid "``'r'``"
 msgstr "``'r'``"
 
-#: builtins/functions.rst:1428
+#: builtins/functions.rst:1393
 msgid "open for reading (default)"
 msgstr "చదవడానికి తెరవడం (డిఫాల్ట్)"
 
-#: builtins/functions.rst:1429
+#: builtins/functions.rst:1394
 msgid "``'w'``"
 msgstr "``'w'``"
 
-#: builtins/functions.rst:1429
+#: builtins/functions.rst:1394
 msgid "open for writing, truncating the file first"
 msgstr "రాయడానికి తెరవడం, ముందుగా ఫైల్‌ను కత్తిరిస్తుంది"
 
-#: builtins/functions.rst:1430
+#: builtins/functions.rst:1395
 msgid "``'x'``"
 msgstr "``'x'``"
 
-#: builtins/functions.rst:1430
+#: builtins/functions.rst:1395
 msgid "open for exclusive creation, failing if the file already exists"
 msgstr "ఎక్స్‌క్లూజివ్ సృష్టి కోసం తెరవడం, ఫైల్ ఇప్పటికే ఉంటే విఫలమవుతుంది"
 
-#: builtins/functions.rst:1431
+#: builtins/functions.rst:1396
 msgid "``'a'``"
 msgstr "``'a'``"
 
-#: builtins/functions.rst:1431
+#: builtins/functions.rst:1396
 msgid "open for writing, appending to the end of file if it exists"
 msgstr "రాయడానికి తెరవడం, ఫైల్ ఉంటే దాని చివరికి అపెండ్ చేస్తుంది"
 
-#: builtins/functions.rst:1432
+#: builtins/functions.rst:1397
 msgid "``'b'``"
 msgstr "``'b'``"
 
-#: builtins/functions.rst:1432 builtins/functions.rst:1550
+#: builtins/functions.rst:1397 builtins/functions.rst:1541
 msgid "binary mode"
 msgstr "బైనరీ మోడ్"
 
-#: builtins/functions.rst:1433
+#: builtins/functions.rst:1398
 msgid "``'t'``"
 msgstr "``'t'``"
 
-#: builtins/functions.rst:1433
+#: builtins/functions.rst:1398
 msgid "text mode (default)"
 msgstr "టెక్స్ట్ మోడ్ (డిఫాల్ట్)"
 
-#: builtins/functions.rst:1434
+#: builtins/functions.rst:1399
 msgid "``'+'``"
 msgstr "``'+'``"
 
-#: builtins/functions.rst:1434
+#: builtins/functions.rst:1399
 msgid "open for updating (reading and writing)"
 msgstr "అప్‌డేట్ చేయడానికి తెరవడం (చదవడం మరియు రాయడం)"
 
-#: builtins/functions.rst:1437
+#: builtins/functions.rst:1402
 msgid ""
 "The default mode is ``'r'`` (open for reading text, a synonym of ``'rt'``). "
 "Modes ``'w+'`` and ``'w+b'`` open and truncate the file.  Modes ``'r+'`` and "
@@ -2733,15 +2686,24 @@ msgstr ""
 "``'w+'`` మరియు ``'w+b'`` మోడ్‌లు ఫైల్‌ను తెరిచి కత్తిరిస్తాయి. ``'r+'`` మరియు"
 " ``'r+b'`` మోడ్‌లు ఫైల్‌ను కత్తిరించకుండా తెరుస్తాయి."
 
-#: builtins/functions.rst:1441
+#: builtins/functions.rst:1406
+#, fuzzy
+#| msgid ""
+#| "As mentioned in the :ref:`io-overview`, Python distinguishes between binary "
+#| "and text I/O.  Files opened in binary mode (including ``'b'`` in the *mode* "
+#| "argument) return contents as :class:`bytes` objects without any decoding.  In"
+#| " text mode (the default, or when ``'t'`` is included in the *mode* argument),"
+#| " the contents of the file are returned as :class:`str`, the bytes having been"
+#| " first decoded using the default encoding or using the specified *encoding* "
+#| "if given."
 msgid ""
 "As mentioned in the :ref:`io-overview`, Python distinguishes between binary "
 "and text I/O.  Files opened in binary mode (including ``'b'`` in the *mode* "
 "argument) return contents as :class:`bytes` objects without any decoding.  In"
 " text mode (the default, or when ``'t'`` is included in the *mode* argument),"
 " the contents of the file are returned as :class:`str`, the bytes having been"
-" first decoded using the default encoding or using the specified *encoding* "
-"if given."
+" first decoded using a platform-dependent encoding or using the specified "
+"*encoding* if given."
 msgstr ""
 ":ref:`io-overview` లో చెప్పినట్లుగా, Python బైనరీ I/O మరియు టెక్స్ట్ I/O మధ్య"
 " తేడాను గుర్తిస్తుంది. బైనరీ మోడ్‌లో తెరిచిన ఫైల్‌లు (*mode* ఆర్గ్యుమెంట్‌లో "
@@ -2751,7 +2713,7 @@ msgstr ""
 "చేయబడతాయి; బైట్‌లు ముందుగా డిఫాల్ట్ ఎన్‌కోడింగ్‌ను, లేదా *encoding* "
 "ఇచ్చినట్లయితే ఆ ఎన్‌కోడింగ్‌ను ఉపయోగించి డీకోడ్ చేయబడతాయి."
 
-#: builtins/functions.rst:1451
+#: builtins/functions.rst:1416
 msgid ""
 "Python doesn't depend on the underlying operating system's notion of text "
 "files; all the processing is done by Python itself, and is therefore "
@@ -2761,7 +2723,7 @@ msgstr ""
 "ప్రాసెసింగ్ అంతా Python స్వయంగా చేస్తుంది, కాబట్టి అది ప్లాట్‌ఫామ్‌పై "
 "ఆధారపడదు."
 
-#: builtins/functions.rst:1455
+#: builtins/functions.rst:1420
 msgid ""
 "*buffering* is an optional integer used to set the buffering policy.  Pass 0 "
 "to switch buffering off (only allowed in binary mode), 1 to select line "
@@ -2785,7 +2747,7 @@ msgstr ""
 "ఉపయోగించడాన్ని పరిగణించండి. *buffering* ఆర్గ్యుమెంట్ ఇవ్వనప్పుడు, డిఫాల్ట్ "
 "బఫరింగ్ విధానం ఈ విధంగా పనిచేస్తుంది:"
 
-#: builtins/functions.rst:1465
+#: builtins/functions.rst:1430
 msgid ""
 "Binary files are buffered in fixed-size chunks; the size of the buffer is "
 "``max(min(blocksize, 8 MiB), DEFAULT_BUFFER_SIZE)`` when the device block "
@@ -2797,7 +2759,7 @@ msgstr ""
 "DEFAULT_BUFFER_SIZE)``. చాలా సిస్టమ్‌లలో, బఫర్ సాధారణంగా 128 కిలోబైట్‌ల పొడవు"
 " ఉంటుంది."
 
-#: builtins/functions.rst:1470
+#: builtins/functions.rst:1435
 msgid ""
 "\"Interactive\" text files (files for which :meth:`~io.IOBase.isatty` returns"
 " ``True``) use line buffering.  Other text files use the policy described "
@@ -2807,32 +2769,29 @@ msgstr ""
 "రిటర్న్ చేసే ఫైల్‌లు) లైన్ బఫరింగ్‌ను ఉపయోగిస్తాయి. ఇతర టెక్స్ట్ ఫైల్‌లు "
 "బైనరీ ఫైల్‌ల కోసం పైన వివరించిన విధానాన్ని ఉపయోగిస్తాయి."
 
-#: builtins/functions.rst:1474
+#: builtins/functions.rst:1439
 msgid ""
 "*encoding* is the name of the encoding used to decode or encode the file. "
-"This should only be used in text mode.  The default encoding is UTF-8; if "
-":ref:`Python UTF-8 Mode <utf8-mode>` is disabled, the default is platform-"
-"dependent (whatever :func:`locale.getencoding` returns). Any :term:`text "
-"encoding` supported by Python can be used, and ``encoding=\"locale\"`` "
-"specifies the current locale encoding explicitly. See the :mod:`codecs` "
-"module for the list of supported encodings."
+"This should only be used in text mode.  The default encoding is platform "
+"dependent (whatever :func:`locale.getencoding` returns), but any :term:`text "
+"encoding` supported by Python can be used. See the :mod:`codecs` module for "
+"the list of supported encodings."
 msgstr ""
-"*encoding* అనేది ఫైల్‌ను డీకోడ్ లేదా ఎన్‌కోడ్ చేయడానికి ఉపయోగించే ఎన్‌కోడింగ్"
-" పేరు. దీన్ని టెక్స్ట్ మోడ్‌లో మాత్రమే ఉపయోగించాలి. డిఫాల్ట్ ఎన్‌కోడింగ్ "
-"UTF-8; :ref:`Python UTF-8 మోడ్ <utf8-mode>` నిలిపివేయబడి ఉంటే, డిఫాల్ట్ "
-"ప్లాట్‌ఫామ్‌పై ఆధారపడి ఉంటుంది (:func:`locale.getencoding` ఏది రిటర్న్ చేస్తే"
-" అది). Python సపోర్ట్ చేసే ఏ :term:`టెక్స్ట్ ఎన్‌కోడింగ్‌నైనా <text "
-"encoding>` ఉపయోగించవచ్చు, మరియు ``encoding=\"locale\"`` ప్రస్తుత లోకేల్ "
-"ఎన్‌కోడింగ్‌ను స్పష్టంగా నిర్దేశిస్తుంది. సపోర్ట్ చేసే ఎన్‌కోడింగ్‌ల జాబితా "
-"కోసం :mod:`codecs` మాడ్యూల్ చూడండి."
 
-#: builtins/functions.rst:1482
+#: builtins/functions.rst:1445
+#, fuzzy
+#| msgid ""
+#| "*errors* is an optional string that specifies how encoding and decoding "
+#| "errors are to be handled—this cannot be used in binary mode. A variety of "
+#| "standard error handlers are available, though any error handling name that "
+#| "has been registered with :func:`codecs.register_error` is also valid.  The "
+#| "standard names can be found in :ref:`error-handlers`."
 msgid ""
 "*errors* is an optional string that specifies how encoding and decoding "
 "errors are to be handled—this cannot be used in binary mode. A variety of "
-"standard error handlers are available, though any error handling name that "
-"has been registered with :func:`codecs.register_error` is also valid.  The "
-"standard names can be found in :ref:`error-handlers`."
+"standard error handlers are available (listed under :ref:`error-handlers`), "
+"though any error handling name that has been registered with "
+":func:`codecs.register_error` is also valid.  The standard names include:"
 msgstr ""
 "*errors* అనేది ఎన్‌కోడింగ్ మరియు డీకోడింగ్ లోపాలను ఎలా నిర్వహించాలో "
 "నిర్దేశించే ఐచ్ఛిక స్ట్రింగ్—దీన్ని బైనరీ మోడ్‌లో ఉపయోగించలేరు. వివిధ "
@@ -2840,7 +2799,53 @@ msgstr ""
 ":func:`codecs.register_error` తో రిజిస్టర్ చేసిన ఏ లోప నిర్వహణ పేరైనా కూడా "
 "చెల్లుతుంది. స్టాండర్డ్ పేర్లు :ref:`error-handlers` లో ఉన్నాయి."
 
-#: builtins/functions.rst:1494
+#: builtins/functions.rst:1453
+msgid ""
+"``'strict'`` to raise a :exc:`ValueError` exception if there is an encoding "
+"error.  The default value of ``None`` has the same effect."
+msgstr ""
+
+#: builtins/functions.rst:1457
+msgid ""
+"``'ignore'`` ignores errors.  Note that ignoring encoding errors can lead to "
+"data loss."
+msgstr ""
+
+#: builtins/functions.rst:1460
+msgid ""
+"``'replace'`` causes a replacement marker (such as ``'?'``) to be inserted "
+"where there is malformed data."
+msgstr ""
+
+#: builtins/functions.rst:1463
+msgid ""
+"``'surrogateescape'`` will represent any incorrect bytes as low surrogate "
+"code units ranging from U+DC80 to U+DCFF. These surrogate code units will "
+"then be turned back into the same bytes when the ``surrogateescape`` error "
+"handler is used when writing data.  This is useful for processing files in an"
+" unknown encoding."
+msgstr ""
+
+#: builtins/functions.rst:1470
+msgid ""
+"``'xmlcharrefreplace'`` is only supported when writing to a file. Characters "
+"not supported by the encoding are replaced with the appropriate XML character"
+" reference :samp:`&#{nnn};`."
+msgstr ""
+
+#: builtins/functions.rst:1474
+msgid ""
+"``'backslashreplace'`` replaces malformed data by Python's backslashed escape"
+" sequences."
+msgstr ""
+
+#: builtins/functions.rst:1477
+msgid ""
+"``'namereplace'`` (also only supported when writing) replaces unsupported "
+"characters with ``\\N{...}`` escape sequences."
+msgstr ""
+
+#: builtins/functions.rst:1485
 msgid ""
 "*newline* determines how to parse newline characters from the stream. It can "
 "be ``None``, ``''``, ``'\\n'``, ``'\\r'``, and ``'\\r\\n'``.  It works as "
@@ -2850,7 +2855,7 @@ msgstr ""
 " ఇది ``None``, ``''``, ``'\\n'``, ``'\\r'``, మరియు ``'\\r\\n'`` కావచ్చు. ఇది "
 "ఈ విధంగా పనిచేస్తుంది:"
 
-#: builtins/functions.rst:1498
+#: builtins/functions.rst:1489
 msgid ""
 "When reading input from the stream, if *newline* is ``None``, universal "
 "newlines mode is enabled.  Lines in the input can end in ``'\\n'``, "
@@ -2869,7 +2874,7 @@ msgstr ""
 "లైన్‌లు ఇచ్చిన స్ట్రింగ్‌తో మాత్రమే ముగుస్తాయి, మరియు లైన్ ఎండింగ్ "
 "మార్చకుండానే కాల్ చేసిన కోడ్‌కు రిటర్న్ చేయబడుతుంది."
 
-#: builtins/functions.rst:1506
+#: builtins/functions.rst:1497
 msgid ""
 "When writing output to the stream, if *newline* is ``None``, any ``'\\n'`` "
 "characters written are translated to the system default line separator, "
@@ -2883,7 +2888,7 @@ msgstr ""
 "*newline* ఇతర చెల్లుబాటు అయ్యే విలువల్లో ఏదైనా అయితే, రాసే ఏ ``'\\n'`` "
 "అక్షరాలైనా ఇచ్చిన స్ట్రింగ్‌గా మార్చబడతాయి."
 
-#: builtins/functions.rst:1512
+#: builtins/functions.rst:1503
 msgid ""
 "If *closefd* is ``False`` and a file descriptor rather than a filename was "
 "given, the underlying file descriptor will be kept open when the file is "
@@ -2895,7 +2900,7 @@ msgstr ""
 "ఓపెన్‌గానే ఉంచబడుతుంది. ఫైల్ పేరు ఇచ్చినట్లయితే *closefd* తప్పనిసరిగా "
 "``True`` (డిఫాల్ట్) అయి ఉండాలి; లేకపోతే, లోపం రైజ్ అవుతుంది."
 
-#: builtins/functions.rst:1517
+#: builtins/functions.rst:1508
 msgid ""
 "A custom opener can be used by passing a callable as *opener*. The underlying"
 " file descriptor for the file object is then obtained by calling *opener* "
@@ -2909,13 +2914,13 @@ msgstr ""
 "ఓపెన్‌గా ఉన్న ఫైల్ డిస్క్రిప్టర్‌ను రిటర్న్ చేయాలి (*opener* గా "
 ":mod:`os.open` ను పంపితే, ``None`` ను పంపినప్పటి లాంటి కార్యాచరణే వస్తుంది)."
 
-#: builtins/functions.rst:1523
+#: builtins/functions.rst:1514
 msgid "The newly created file is :ref:`non-inheritable <fd_inheritance>`."
 msgstr ""
 "కొత్తగా సృష్టించిన ఫైల్ :ref:`నాన్-ఇన్‌హెరిటబుల్‌గా <fd_inheritance>` "
 "ఉంటుంది."
 
-#: builtins/functions.rst:1525
+#: builtins/functions.rst:1516
 msgid ""
 "The following example uses the :ref:`dir_fd <dir_fd>` parameter of the "
 ":func:`os.open` function to open a file relative to a given directory::"
@@ -2924,7 +2929,7 @@ msgstr ""
 ":func:`os.open` ఫంక్షన్ యొక్క :ref:`dir_fd <dir_fd>` పారామీటర్‌ను "
 "ఉపయోగిస్తుంది::"
 
-#: builtins/functions.rst:1528
+#: builtins/functions.rst:1519
 msgid ""
 ">>> import os\n"
 ">>> dir_fd = os.open('somedir', os.O_RDONLY)\n"
@@ -2946,7 +2951,7 @@ msgstr ""
 "...\n"
 ">>> os.close(dir_fd)  # don't leak a file descriptor"
 
-#: builtins/functions.rst:1538
+#: builtins/functions.rst:1529
 msgid ""
 "The type of :term:`file object` returned by the :func:`open` function depends"
 " on the mode.  When :func:`open` is used to open a file in a text mode "
@@ -2974,7 +2979,7 @@ msgstr ""
 ":class:`io.RawIOBase` యొక్క సబ్‌క్లాస్ అయిన :class:`io.FileIO`, రిటర్న్ "
 "చేయబడుతుంది."
 
-#: builtins/functions.rst:1559
+#: builtins/functions.rst:1550
 msgid ""
 "See also the file handling modules, such as :mod:`fileinput`, :mod:`io` "
 "(where :func:`open` is declared), :mod:`os`, :mod:`os.path`, :mod:`tempfile`,"
@@ -2984,7 +2989,7 @@ msgstr ""
 ":mod:`os`, :mod:`os.path`, :mod:`tempfile`, మరియు :mod:`shutil` వంటి ఫైల్ "
 "నిర్వహణ మాడ్యూల్‌లను కూడా చూడండి."
 
-#: builtins/functions.rst:1563
+#: builtins/functions.rst:1554
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``open`` with arguments ``path``, "
 "``mode``, ``flags``."
@@ -2992,7 +2997,7 @@ msgstr ""
 "``path``, ``mode``, ``flags`` ఆర్గ్యుమెంట్‌లతో ``open`` అనే :ref:`ఆడిటింగ్ "
 "ఈవెంట్‌ను <auditing>` రైజ్ చేస్తుంది."
 
-#: builtins/functions.rst:1565
+#: builtins/functions.rst:1556
 msgid ""
 "The ``mode`` and ``flags`` arguments may have been modified or inferred from "
 "the original call."
@@ -3000,20 +3005,20 @@ msgstr ""
 "``mode`` మరియు ``flags`` ఆర్గ్యుమెంట్‌లు అసలు కాల్ నుండి మార్చబడి ఉండవచ్చు "
 "లేదా ఊహించబడి (inferred) ఉండవచ్చు."
 
-#: builtins/functions.rst:1570
+#: builtins/functions.rst:1561
 msgid "The *opener* parameter was added."
 msgstr "*opener* పారామీటర్ జోడించబడింది."
 
-#: builtins/functions.rst:1571
+#: builtins/functions.rst:1562
 msgid "The ``'x'`` mode was added."
 msgstr "``'x'`` మోడ్ జోడించబడింది."
 
-#: builtins/functions.rst:1572
+#: builtins/functions.rst:1563
 msgid ":exc:`IOError` used to be raised, it is now an alias of :exc:`OSError`."
 msgstr ""
 "గతంలో :exc:`IOError` రైజ్ అయ్యేది, ఇప్పుడు అది :exc:`OSError` కు అలియాస్."
 
-#: builtins/functions.rst:1573
+#: builtins/functions.rst:1564
 msgid ""
 ":exc:`FileExistsError` is now raised if the file opened in exclusive creation"
 " mode (``'x'``) already exists."
@@ -3021,11 +3026,11 @@ msgstr ""
 "ఎక్స్‌క్లూజివ్ సృష్టి మోడ్‌లో (``'x'``) తెరిచిన ఫైల్ ఇప్పటికే ఉంటే, ఇప్పుడు "
 ":exc:`FileExistsError` రైజ్ అవుతుంది."
 
-#: builtins/functions.rst:1578
+#: builtins/functions.rst:1569
 msgid "The file is now non-inheritable."
 msgstr "ఫైల్ ఇప్పుడు నాన్-ఇన్‌హెరిటబుల్."
 
-#: builtins/functions.rst:1582
+#: builtins/functions.rst:1573
 msgid ""
 "If the system call is interrupted and the signal handler does not raise an "
 "exception, the function now retries the system call instead of raising an "
@@ -3036,17 +3041,17 @@ msgstr ""
 "చేయడానికి బదులుగా సిస్టమ్ కాల్‌ను మళ్లీ ప్రయత్నిస్తుంది (కారణం కోసం "
 ":pep:`475` చూడండి)."
 
-#: builtins/functions.rst:1585
+#: builtins/functions.rst:1576
 msgid "The ``'namereplace'`` error handler was added."
 msgstr "``'namereplace'`` లోప హ్యాండ్లర్ జోడించబడింది."
 
-#: builtins/functions.rst:1589
+#: builtins/functions.rst:1580
 msgid "Support added to accept objects implementing :class:`os.PathLike`."
 msgstr ""
 ":class:`os.PathLike` ను రూపొందించే ఆబ్జెక్ట్‌లను స్వీకరించే సపోర్ట్ "
 "జోడించబడింది."
 
-#: builtins/functions.rst:1590
+#: builtins/functions.rst:1581
 msgid ""
 "On Windows, opening a console buffer may return a subclass of "
 ":class:`io.RawIOBase` other than :class:`io.FileIO`."
@@ -3054,23 +3059,15 @@ msgstr ""
 "Windows లో, కన్సోల్ బఫర్‌ను తెరిస్తే :class:`io.FileIO` కాకుండా "
 ":class:`io.RawIOBase` యొక్క వేరే సబ్‌క్లాస్ రిటర్న్ కావచ్చు."
 
-#: builtins/functions.rst:1593
+#: builtins/functions.rst:1584
 msgid "The ``'U'`` mode has been removed."
 msgstr "``'U'`` మోడ్ తొలగించబడింది."
 
-#: builtins/functions.rst:1596
-msgid ""
-"UTF-8 is now the default encoding, instead of the platform-dependent locale "
-"encoding (:pep:`686`)."
-msgstr ""
-"ప్లాట్‌ఫామ్‌పై ఆధారపడే లోకేల్ ఎన్‌కోడింగ్‌కు బదులుగా, ఇప్పుడు UTF-8 డిఫాల్ట్ "
-"ఎన్‌కోడింగ్ (:pep:`686`)."
-
-#: builtins/functions.rst:1602
+#: builtins/functions.rst:1589
 msgid "Return the ordinal value of a character."
 msgstr "ఒక అక్షరం యొక్క ఆర్డినల్ విలువను రిటర్న్ చేస్తుంది."
 
-#: builtins/functions.rst:1604
+#: builtins/functions.rst:1591
 msgid ""
 "If the argument is a one-character string, return the Unicode code point of "
 "that character.  For example, ``ord('a')`` returns the integer ``97`` and "
@@ -3082,7 +3079,7 @@ msgstr ""
 "రిటర్న్ చేస్తుంది, మరియు ``ord('€')`` (యూరో గుర్తు) ``8364`` ను రిటర్న్ "
 "చేస్తుంది. ఇది :func:`chr` కు విలోమం."
 
-#: builtins/functions.rst:1609
+#: builtins/functions.rst:1596
 msgid ""
 "If the argument is a :class:`bytes` or :class:`bytearray` object of length 1,"
 " return its single byte value. For example, ``ord(b'a')`` returns the integer"
@@ -3092,7 +3089,7 @@ msgstr ""
 "అయితే, దాని ఏకైక బైట్ విలువను రిటర్న్ చేస్తుంది. ఉదాహరణకు, ``ord(b'a')`` "
 "పూర్ణాంకం ``97`` ను రిటర్న్ చేస్తుంది."
 
-#: builtins/functions.rst:1616
+#: builtins/functions.rst:1603
 msgid ""
 "Return *base* to the power *exp*; if *mod* is present, return *base* to the "
 "power *exp*, modulo *mod* (computed more efficiently than ``pow(base, exp) % "
@@ -3105,7 +3102,7 @@ msgstr ""
 "రెండు-ఆర్గ్యుమెంట్‌ల రూపం ``pow(base, exp)``, పవర్ ఆపరేటర్ ``base**exp`` ను "
 "ఉపయోగించడానికి సమానం."
 
-#: builtins/functions.rst:1621
+#: builtins/functions.rst:1608
 msgid ""
 "When arguments are builtin numeric types with mixed operand types, the "
 "coercion rules for binary arithmetic operators apply.  For :class:`int` "
@@ -3131,7 +3128,7 @@ msgstr ""
 "లేదా :class:`float` టైప్ రుణ ఆధారం మరియు పూర్ణాంక ఘాతాంకం కోసం, float ఫలితం "
 "ఇవ్వబడుతుంది. ఉదాహరణకు, ``pow(-9, 2.0)`` ``81.0`` ను రిటర్న్ చేస్తుంది."
 
-#: builtins/functions.rst:1633
+#: builtins/functions.rst:1620
 msgid ""
 "For :class:`int` operands *base* and *exp*, if *mod* is present, *mod* must "
 "also be of integer type and *mod* must be nonzero. If *mod* is present and "
@@ -3145,11 +3142,11 @@ msgstr ""
 "అయి ఉండాలి. ఆ సందర్భంలో, ``pow(inv_base, -exp, mod)`` రిటర్న్ చేయబడుతుంది, "
 "ఇక్కడ *inv_base* అనేది *mod* మాడ్యులో *base* కు విలోమం."
 
-#: builtins/functions.rst:1639
+#: builtins/functions.rst:1626
 msgid "Here's an example of computing an inverse for ``38`` modulo ``97``::"
 msgstr "``97`` మాడ్యులో ``38`` కు విలోమాన్ని గణించే ఉదాహరణ ఇక్కడ ఉంది::"
 
-#: builtins/functions.rst:1641
+#: builtins/functions.rst:1628
 msgid ""
 ">>> pow(38, -1, mod=97)\n"
 "23\n"
@@ -3161,7 +3158,7 @@ msgstr ""
 ">>> 23 * 38 % 97 == 1\n"
 "True"
 
-#: builtins/functions.rst:1646
+#: builtins/functions.rst:1633
 msgid ""
 "For :class:`int` operands, the three-argument form of ``pow`` now allows the "
 "second argument to be negative, permitting computation of modular inverses."
@@ -3170,14 +3167,14 @@ msgstr ""
 "రెండవ ఆర్గ్యుమెంట్ రుణ సంఖ్యగా ఉండటానికి అనుమతిస్తుంది, దీనివల్ల మాడ్యులర్ "
 "విలోమాలను గణించడం సాధ్యమవుతుంది."
 
-#: builtins/functions.rst:1651
+#: builtins/functions.rst:1638
 msgid ""
 "Allow keyword arguments.  Formerly, only positional arguments were supported."
 msgstr ""
 "కీవర్డ్ ఆర్గ్యుమెంట్‌లను అనుమతిస్తుంది. గతంలో, పొజిషనల్ ఆర్గ్యుమెంట్‌లు "
 "మాత్రమే సపోర్ట్ చేయబడేవి."
 
-#: builtins/functions.rst:1658
+#: builtins/functions.rst:1645
 msgid ""
 "Print *objects* to the text stream *file*, separated by *sep* and followed by"
 " *end*.  *sep*, *end*, *file*, and *flush*, if present, must be given as "
@@ -3187,7 +3184,7 @@ msgstr ""
 " కు ప్రింట్ చేస్తుంది. *sep*, *end*, *file*, మరియు *flush* ఇస్తే, వాటిని "
 "కీవర్డ్ ఆర్గ్యుమెంట్‌లుగానే ఇవ్వాలి."
 
-#: builtins/functions.rst:1662
+#: builtins/functions.rst:1649
 msgid ""
 "All non-keyword arguments are converted to strings like :func:`str` does and "
 "written to the stream, separated by *sep* and followed by *end*.  Both *sep* "
@@ -3201,7 +3198,7 @@ msgstr ""
 "అంటే డిఫాల్ట్ విలువలను ఉపయోగించాలని అర్థం. *objects* ఏవీ ఇవ్వకపోతే, "
 ":func:`print` కేవలం *end* ను మాత్రమే రాస్తుంది."
 
-#: builtins/functions.rst:1668
+#: builtins/functions.rst:1655
 msgid ""
 "The *file* argument must be an object with a ``write(string)`` method; if it "
 "is not present or ``None``, :data:`sys.stdout` will be used.  Since printed "
@@ -3214,7 +3211,7 @@ msgstr ""
 "ఫైల్ ఆబ్జెక్ట్‌లతో :func:`print` ను ఉపయోగించలేరు. వాటి కోసం, బదులుగా "
 "``file.write(...)`` ను ఉపయోగించండి."
 
-#: builtins/functions.rst:1673
+#: builtins/functions.rst:1660
 msgid ""
 "Output buffering is usually determined by *file*. However, if *flush* is "
 "true, the stream is forcibly flushed."
@@ -3222,15 +3219,15 @@ msgstr ""
 "అవుట్‌పుట్ బఫరింగ్ సాధారణంగా *file* ద్వారా నిర్ణయించబడుతుంది. అయితే, *flush* "
 "సత్యం అయితే, స్ట్రీమ్ బలవంతంగా ఫ్లష్ చేయబడుతుంది."
 
-#: builtins/functions.rst:1677
+#: builtins/functions.rst:1664
 msgid "Added the *flush* keyword argument."
 msgstr "*flush* కీవర్డ్ ఆర్గ్యుమెంట్ జోడించబడింది."
 
-#: builtins/functions.rst:1683
+#: builtins/functions.rst:1670
 msgid "Return a property attribute."
 msgstr "ఒక ప్రాపర్టీ అట్రిబ్యూట్‌ను రిటర్న్ చేస్తుంది."
 
-#: builtins/functions.rst:1685
+#: builtins/functions.rst:1672
 msgid ""
 "*fget* is a function for getting an attribute value.  *fset* is a function "
 "for setting an attribute value. *fdel* is a function for deleting an "
@@ -3241,12 +3238,12 @@ msgstr ""
 "అట్రిబ్యూట్ విలువను తొలగించడానికి ఉపయోగించే ఫంక్షన్. మరియు *doc* అట్రిబ్యూట్ "
 "కోసం ఒక డాక్‌స్ట్రింగ్‌ను సృష్టిస్తుంది."
 
-#: builtins/functions.rst:1689
+#: builtins/functions.rst:1676
 msgid "A typical use is to define a managed attribute ``x``::"
 msgstr ""
 "ఒక సాధారణ ఉపయోగం, నిర్వహించబడే (managed) అట్రిబ్యూట్ ``x`` ను నిర్వచించడం::"
 
-#: builtins/functions.rst:1691
+#: builtins/functions.rst:1678
 msgid ""
 "class C:\n"
 "    def __init__(self):\n"
@@ -3278,7 +3275,7 @@ msgstr ""
 "\n"
 "    x = property(getx, setx, delx, \"I'm the 'x' property.\")"
 
-#: builtins/functions.rst:1706
+#: builtins/functions.rst:1693
 msgid ""
 "If *c* is an instance of *C*, ``c.x`` will invoke the getter, ``c.x = value``"
 " will invoke the setter, and ``del c.x`` the deleter."
@@ -3286,7 +3283,7 @@ msgstr ""
 "*c* అనేది *C* యొక్క ఇన్‌స్టాన్స్ అయితే, ``c.x`` గెటర్‌ను, ``c.x = value`` "
 "సెటర్‌ను, మరియు ``del c.x`` డిలీటర్‌ను కాల్ చేస్తాయి."
 
-#: builtins/functions.rst:1709
+#: builtins/functions.rst:1696
 msgid ""
 "If given, *doc* will be the docstring of the property attribute. Otherwise, "
 "the property will copy *fget*'s docstring (if it exists).  This makes it "
@@ -3298,7 +3295,7 @@ msgstr ""
 "దీనివల్ల :deco:`property` ను :term:`డెకరేటర్‌గా <decorator>` ఉపయోగించి "
 "రీడ్-ఓన్లీ ప్రాపర్టీలను సులభంగా సృష్టించడం సాధ్యమవుతుంది::"
 
-#: builtins/functions.rst:1713
+#: builtins/functions.rst:1700
 msgid ""
 "class Parrot:\n"
 "    def __init__(self):\n"
@@ -3318,7 +3315,7 @@ msgstr ""
 "        \"\"\"Get the current voltage.\"\"\"\n"
 "        return self._voltage"
 
-#: builtins/functions.rst:1722
+#: builtins/functions.rst:1709
 msgid ""
 "The ``@property`` decorator turns the :meth:`!voltage` method into a "
 "\"getter\" for a read-only attribute with the same name, and it sets the "
@@ -3328,7 +3325,7 @@ msgstr ""
 "అట్రిబ్యూట్ కోసం ఒక \"గెటర్\" (getter) గా మారుస్తుంది, మరియు *voltage* యొక్క "
 "డాక్‌స్ట్రింగ్‌ను \"Get the current voltage.\" గా సెట్ చేస్తుంది."
 
-#: builtins/functions.rst:1730
+#: builtins/functions.rst:1717
 msgid ""
 "A property object has ``getter``, ``setter``, and ``deleter`` methods usable "
 "as decorators that create a copy of the property with the corresponding "
@@ -3340,7 +3337,7 @@ msgstr ""
 " ఫంక్షన్ సెట్ చేయబడిన, ప్రాపర్టీ యొక్క కాపీని సృష్టిస్తాయి. దీన్ని ఒక "
 "ఉదాహరణతో ఉత్తమంగా వివరించవచ్చు:"
 
-#: builtins/functions.rst:1735
+#: builtins/functions.rst:1722
 msgid ""
 "class C:\n"
 "    def __init__(self):\n"
@@ -3376,7 +3373,7 @@ msgstr ""
 "    def x(self):\n"
 "        del self._x"
 
-#: builtins/functions.rst:1754
+#: builtins/functions.rst:1741
 msgid ""
 "This code is exactly equivalent to the first example.  Be sure to give the "
 "additional functions the same name as the original property (``x`` in this "
@@ -3385,7 +3382,7 @@ msgstr ""
 "ఈ కోడ్ మొదటి ఉదాహరణకు పూర్తిగా సమానమైనది. అదనపు ఫంక్షన్‌లకు అసలు ప్రాపర్టీ "
 "పేరునే (ఈ సందర్భంలో ``x``) తప్పకుండా ఇవ్వండి."
 
-#: builtins/functions.rst:1758
+#: builtins/functions.rst:1745
 msgid ""
 "The returned property object also has the attributes ``fget``, ``fset``, and "
 "``fdel`` corresponding to the constructor arguments."
@@ -3393,12 +3390,12 @@ msgstr ""
 "రిటర్న్ చేయబడిన ప్రాపర్టీ ఆబ్జెక్ట్‌కు కన్‌స్ట్రక్టర్ ఆర్గ్యుమెంట్‌లకు "
 "సంబంధించిన ``fget``, ``fset``, మరియు ``fdel`` అట్రిబ్యూట్‌లు కూడా ఉంటాయి."
 
-#: builtins/functions.rst:1761
+#: builtins/functions.rst:1748
 msgid "The docstrings of property objects are now writeable."
 msgstr ""
 "ప్రాపర్టీ ఆబ్జెక్ట్‌ల డాక్‌స్ట్రింగ్‌లు ఇప్పుడు రాయగలిగేవి (writeable)."
 
-#: builtins/functions.rst:1766
+#: builtins/functions.rst:1753
 msgid ""
 "Attribute holding the name of the property. The name of the property can be "
 "changed at runtime."
@@ -3406,7 +3403,7 @@ msgstr ""
 "ప్రాపర్టీ పేరును కలిగి ఉండే అట్రిబ్యూట్. ప్రాపర్టీ పేరును రన్‌టైమ్‌లో "
 "మార్చవచ్చు."
 
-#: builtins/functions.rst:1777
+#: builtins/functions.rst:1764
 msgid ""
 "Rather than being a function, :class:`range` is actually an immutable "
 "sequence type, as documented in :ref:`typesseq-range` and :ref:`typesseq`."
@@ -3414,7 +3411,7 @@ msgstr ""
 ":class:`range` ఒక ఫంక్షన్ కాదు; :ref:`typesseq-range` మరియు :ref:`typesseq` "
 "లో వివరించినట్లుగా, అది నిజానికి ఒక ఇమ్యూటబుల్ (మార్చలేని) సీక్వెన్స్ టైప్."
 
-#: builtins/functions.rst:1783
+#: builtins/functions.rst:1770
 msgid ""
 "Return a string containing a printable representation of an object.  For many"
 " types, this function makes an attempt to return a string that would yield an"
@@ -3434,11 +3431,20 @@ msgstr ""
 "నిర్వచించడం ద్వారా తన ఇన్‌స్టాన్స్‌ల కోసం ఈ ఫంక్షన్ ఏమి రిటర్న్ చేయాలో "
 "నియంత్రించవచ్చు."
 
-#: builtins/functions.rst:1792
+#: builtins/functions.rst:1779
 msgid "This class has a custom representation that can be evaluated::"
 msgstr "ఈ క్లాస్‌కు ఎవాల్యుయేట్ చేయగల కస్టమ్ రిప్రజెంటేషన్ ఉంది::"
 
-#: builtins/functions.rst:1794
+#: builtins/functions.rst:1781
+#, fuzzy
+#| msgid ""
+#| "class Person:\n"
+#| "   def __init__(self, name, age):\n"
+#| "      self.name = name\n"
+#| "      self.age = age\n"
+#| "\n"
+#| "   def __repr__(self):\n"
+#| "      return f\"Person({self.name!r}, {self.age!r})\""
 msgid ""
 "class Person:\n"
 "   def __init__(self, name, age):\n"
@@ -3446,7 +3452,7 @@ msgid ""
 "      self.age = age\n"
 "\n"
 "   def __repr__(self):\n"
-"      return f\"Person({self.name!r}, {self.age!r})\""
+"      return f\"Person('{self.name}', {self.age})\""
 msgstr ""
 "class Person:\n"
 "   def __init__(self, name, age):\n"
@@ -3456,7 +3462,7 @@ msgstr ""
 "   def __repr__(self):\n"
 "      return f\"Person({self.name!r}, {self.age!r})\""
 
-#: builtins/functions.rst:1805
+#: builtins/functions.rst:1792
 msgid ""
 "Return a reverse :term:`iterator`.  The argument must be an object which has "
 "a :meth:`~object.__reversed__` method or supports the sequence protocol (the "
@@ -3468,7 +3474,7 @@ msgstr ""
 " ప్రోటోకాల్‌ను (:meth:`~object.__len__` మెథడ్ మరియు ``0`` నుండి మొదలయ్యే "
 "పూర్ణాంక ఆర్గ్యుమెంట్‌లతో :meth:`~object.__getitem__` మెథడ్) సపోర్ట్ చేయాలి."
 
-#: builtins/functions.rst:1813
+#: builtins/functions.rst:1800
 msgid ""
 "Return *number* rounded to *ndigits* precision after the decimal point.  If "
 "*ndigits* is omitted or is ``None``, it returns the nearest integer to its "
@@ -3478,7 +3484,7 @@ msgstr ""
 " చేస్తుంది. *ndigits* ను వదిలేస్తే లేదా అది ``None`` అయితే, ఇది ఇన్‌పుట్‌కు "
 "అత్యంత దగ్గరి పూర్ణాంకాన్ని రిటర్న్ చేస్తుంది."
 
-#: builtins/functions.rst:1817
+#: builtins/functions.rst:1804
 msgid ""
 "For the built-in types supporting :func:`round`, values are rounded to the "
 "closest multiple of 10 to the power minus *ndigits*; if two multiples are "
@@ -3496,7 +3502,7 @@ msgstr ""
 "చెల్లుతుంది. *ndigits* ను వదిలేస్తే లేదా అది ``None`` అయితే, రిటర్న్ విలువ "
 "పూర్ణాంకం. లేకపోతే, రిటర్న్ విలువ *number* కు ఉన్న టైప్‌నే కలిగి ఉంటుంది."
 
-#: builtins/functions.rst:1826
+#: builtins/functions.rst:1813
 msgid ""
 "For a general Python object ``number``, ``round`` delegates to "
 "``number.__round__``."
@@ -3504,7 +3510,7 @@ msgstr ""
 "సాధారణ Python ఆబ్జెక్ట్ ``number`` కోసం, ``round`` పనిని ``number.__round__``"
 " కు అప్పగిస్తుంది."
 
-#: builtins/functions.rst:1831
+#: builtins/functions.rst:1818
 msgid ""
 "The behavior of :func:`round` for floats can be surprising: for example, "
 "``round(2.675, 2)`` gives ``2.67`` instead of the expected ``2.68``. This is "
@@ -3517,7 +3523,7 @@ msgstr ""
 " కాదు: చాలా దశాంశ భిన్నాలను ఫ్లోట్‌గా కచ్చితంగా రిప్రజెంట్ చేయలేము అనే "
 "వాస్తవం యొక్క ఫలితం ఇది. మరింత సమాచారం కోసం :ref:`tut-fp-issues` చూడండి."
 
-#: builtins/functions.rst:1842
+#: builtins/functions.rst:1829
 msgid ""
 "Return a new :class:`set` object, optionally with elements taken from "
 "*iterable*.  :class:`set` is a built-in class.  See also :ref:`types-set` for"
@@ -3527,7 +3533,7 @@ msgstr ""
 "నుండి తీసుకున్న ఎలిమెంట్‌లతో. :class:`set` ఒక బిల్ట్-ఇన్ క్లాస్. ఈ క్లాస్ "
 "గురించిన డాక్యుమెంటేషన్ కోసం :ref:`types-set` కూడా చూడండి."
 
-#: builtins/functions.rst:1846
+#: builtins/functions.rst:1833
 msgid ""
 "For other containers see the built-in :class:`frozenset`, :class:`list`, "
 ":class:`tuple`, and :class:`dict` classes, as well as the :mod:`collections` "
@@ -3537,7 +3543,7 @@ msgstr ""
 ":class:`tuple`, మరియు :class:`dict` క్లాస్‌లను, అలాగే :mod:`collections` "
 "మాడ్యూల్‌ను చూడండి."
 
-#: builtins/functions.rst:1853
+#: builtins/functions.rst:1840
 msgid ""
 "This is the counterpart of :func:`getattr`.  The arguments are an object, a "
 "string, and an arbitrary value.  The string may name an existing attribute or"
@@ -3551,7 +3557,7 @@ msgstr ""
 "విలువను అట్రిబ్యూట్‌కు కేటాయిస్తుంది. ఉదాహరణకు, ``setattr(x, 'foobar', 123)``"
 " అనేది ``x.foobar = 123`` కు సమానం."
 
-#: builtins/functions.rst:1859
+#: builtins/functions.rst:1846
 msgid ""
 "*name* need not be a Python identifier as defined in :ref:`identifiers` "
 "unless the object chooses to enforce that, for example in a custom "
@@ -3565,7 +3571,7 @@ msgstr ""
 "అవసరం లేదు. పేరు ఐడెంటిఫైయర్ కాని అట్రిబ్యూట్‌ను డాట్ నొటేషన్ ఉపయోగించి "
 "యాక్సెస్ చేయలేరు, కానీ :func:`getattr` మొదలైనవాటి ద్వారా యాక్సెస్ చేయవచ్చు."
 
-#: builtins/functions.rst:1867
+#: builtins/functions.rst:1854
 msgid ""
 "Since :ref:`private name mangling <private-name-mangling>` happens at "
 "compilation time, one must manually mangle a private attribute's (attributes "
@@ -3576,146 +3582,7 @@ msgstr ""
 "ఉన్న అట్రిబ్యూట్‌లు) :func:`setattr` తో సెట్ చేయాలంటే, దాని పేరును "
 "మాన్యువల్‌గా మాంగిల్ చేయాలి."
 
-#: builtins/functions.rst:1875
-msgid ""
-"Return a new unique sentinel object.  *name* must be a :class:`str`, and is "
-"used by default as the returned object's representation::"
-msgstr ""
-"ఒక కొత్త, ఏకైక (unique) సెంటినెల్ ఆబ్జెక్ట్‌ను రిటర్న్ చేస్తుంది. *name* "
-"తప్పనిసరిగా :class:`str` అయి ఉండాలి, అది డిఫాల్ట్‌గా రిటర్న్ చేయబడిన "
-"ఆబ్జెక్ట్ యొక్క రిప్రజెంటేషన్‌గా ఉపయోగించబడుతుంది::"
-
-#: builtins/functions.rst:1878
-msgid ""
-">>> MISSING = sentinel(\"MISSING\")\n"
-">>> MISSING\n"
-"MISSING"
-msgstr ""
-">>> MISSING = sentinel(\"MISSING\")\n"
-">>> MISSING\n"
-"MISSING"
-
-#: builtins/functions.rst:1882
-msgid ""
-"The optional *repr* argument can be used to specify a different "
-"representation::"
-msgstr ""
-"వేరే రిప్రజెంటేషన్‌ను పేర్కొనడానికి ఐచ్ఛిక *repr* ఆర్గ్యుమెంట్‌ను "
-"ఉపయోగించవచ్చు::"
-
-#: builtins/functions.rst:1884
-msgid ""
-">>> MISSING = sentinel(\"MISSING\", repr=\"<MISSING>\")\n"
-">>> MISSING\n"
-"<MISSING>"
-msgstr ""
-">>> MISSING = sentinel(\"MISSING\", repr=\"<MISSING>\")\n"
-">>> MISSING\n"
-"<MISSING>"
-
-#: builtins/functions.rst:1888
-msgid ""
-"Sentinel objects are true and compare equal only to themselves.  They are "
-"intended to be compared with the :keyword:`is` operator."
-msgstr ""
-"సెంటినెల్ ఆబ్జెక్ట్‌లు సత్యం, మరియు పోల్చినప్పుడు అవి తమకు తామే మాత్రమే సమానం"
-" అవుతాయి. వాటిని :keyword:`is` ఆపరేటర్‌తో పోల్చడానికి ఉద్దేశించారు."
-
-#: builtins/functions.rst:1891
-msgid "``sentinel`` does not support subclassing."
-msgstr "``sentinel`` సబ్‌క్లాసింగ్‌ను సపోర్ట్ చేయదు."
-
-#: builtins/functions.rst:1893
-msgid "Shallow and deep copies of a sentinel object return the object itself."
-msgstr ""
-"సెంటినెల్ ఆబ్జెక్ట్ యొక్క షాలో మరియు డీప్ కాపీలు ఆ ఆబ్జెక్ట్‌నే రిటర్న్ "
-"చేస్తాయి."
-
-#: builtins/functions.rst:1895
-msgid ""
-"Sentinels are conventionally assigned to a variable with a matching name. "
-"Sentinels defined in this way can be used in :term:`type hints <type hint>`::"
-msgstr ""
-"సెంటినెల్‌లను సంప్రదాయంగా సరిపోలే పేరు ఉన్న వేరియబుల్‌కు కేటాయిస్తారు. ఈ "
-"విధంగా నిర్వచించిన సెంటినెల్‌లను :term:`టైప్ హింట్‌లలో <type hint>` "
-"ఉపయోగించవచ్చు::"
-
-#: builtins/functions.rst:1898
-msgid ""
-"MISSING = sentinel(\"MISSING\")\n"
-"\n"
-"def next_value(default: int | MISSING = MISSING):\n"
-"    ..."
-msgstr ""
-"MISSING = sentinel(\"MISSING\")\n"
-"\n"
-"def next_value(default: int | MISSING = MISSING):\n"
-"    ..."
-
-#: builtins/functions.rst:1903
-msgid ""
-"Sentinel objects support the :ref:`| <bitwise>` operator for use in type "
-"expressions."
-msgstr ""
-"టైప్ ఎక్స్‌ప్రెషన్‌లలో ఉపయోగించడానికి సెంటినెల్ ఆబ్జెక్ట్‌లు :ref:`| "
-"<bitwise>` ఆపరేటర్‌ను సపోర్ట్ చేస్తాయి."
-
-#: builtins/functions.rst:1905
-msgid ""
-":mod:`Pickling <pickle>` is supported for sentinel objects that are placed in"
-" the global scope of a module under a name matching the sentinel's name, and "
-"for sentinels placed in class scopes with a name matching the "
-":term:`qualified name` of the sentinel. Other sentinels, such as those "
-"defined in a function scope, are not picklable. The identity of the sentinel "
-"is preserved after pickling::"
-msgstr ""
-"మాడ్యూల్ యొక్క గ్లోబల్ స్కోప్‌లో సెంటినెల్ పేరుకు సరిపోలే పేరుతో ఉంచిన "
-"సెంటినెల్ ఆబ్జెక్ట్‌లకు, మరియు సెంటినెల్ యొక్క :term:`క్వాలిఫైడ్ నేమ్‌కు "
-"<qualified name>` సరిపోలే పేరుతో క్లాస్ స్కోప్‌లలో ఉంచిన సెంటినెల్‌లకు "
-":mod:`పికిలింగ్ <pickle>` సపోర్ట్ చేయబడుతుంది. ఫంక్షన్ స్కోప్‌లో "
-"నిర్వచించినవి వంటి ఇతర సెంటినెల్‌లను పికిల్ చేయలేరు. పికిలింగ్ తర్వాత "
-"సెంటినెల్ యొక్క ఐడెంటిటీ అలాగే ఉంటుంది::"
-
-#: builtins/functions.rst:1912
-msgid ""
-"import pickle\n"
-"\n"
-"PICKLABLE = sentinel(\"PICKLABLE\")\n"
-"\n"
-"assert pickle.loads(pickle.dumps(PICKLABLE)) is PICKLABLE\n"
-"\n"
-"class Cls:\n"
-"    PICKLABLE = sentinel(\"Cls.PICKLABLE\")\n"
-"\n"
-"assert pickle.loads(pickle.dumps(Cls.PICKLABLE)) is Cls.PICKLABLE"
-msgstr ""
-"import pickle\n"
-"\n"
-"PICKLABLE = sentinel(\"PICKLABLE\")\n"
-"\n"
-"assert pickle.loads(pickle.dumps(PICKLABLE)) is PICKLABLE\n"
-"\n"
-"class Cls:\n"
-"    PICKLABLE = sentinel(\"Cls.PICKLABLE\")\n"
-"\n"
-"assert pickle.loads(pickle.dumps(Cls.PICKLABLE)) is Cls.PICKLABLE"
-
-#: builtins/functions.rst:1923
-msgid "Sentinel objects have the following attributes:"
-msgstr "సెంటినెల్ ఆబ్జెక్ట్‌లకు ఈ కింది అట్రిబ్యూట్‌లు ఉంటాయి:"
-
-#: builtins/functions.rst:1927
-msgid "The sentinel's name."
-msgstr "సెంటినెల్ పేరు."
-
-#: builtins/functions.rst:1931
-msgid ""
-"The name of the module where the sentinel was created. This attribute is "
-"writable."
-msgstr ""
-"సెంటినెల్ సృష్టించబడిన మాడ్యూల్ పేరు. ఈ అట్రిబ్యూట్‌లో రాయవచ్చు (writable)."
-
-#: builtins/functions.rst:1939
+#: builtins/functions.rst:1863
 msgid ""
 "Return a :term:`slice` object representing the set of indices specified by "
 "``range(start, stop, step)``.  The *start* and *step* arguments default to "
@@ -3725,7 +3592,7 @@ msgstr ""
 ":term:`స్లైస్ <slice>` ఆబ్జెక్ట్‌ను రిటర్న్ చేస్తుంది. *start* మరియు *step* "
 "ఆర్గ్యుమెంట్‌ల డిఫాల్ట్ విలువ ``None``."
 
-#: builtins/functions.rst:1943
+#: builtins/functions.rst:1867
 msgid ""
 "Slice objects are also generated when :ref:`slicing syntax <slicings>` is "
 "used.  For example: ``a[start:stop:step]`` or ``a[start:stop, i]``."
@@ -3734,7 +3601,7 @@ msgstr ""
 "ఆబ్జెక్ట్‌లు సృష్టించబడతాయి. ఉదాహరణకు: ``a[start:stop:step]`` లేదా "
 "``a[start:stop, i]``."
 
-#: builtins/functions.rst:1946
+#: builtins/functions.rst:1870
 msgid ""
 "See :func:`itertools.islice` for an alternate version that returns an "
 ":term:`iterator`."
@@ -3742,7 +3609,7 @@ msgstr ""
 ":term:`ఇటరేటర్‌ను <iterator>` రిటర్న్ చేసే ప్రత్యామ్నాయ వెర్షన్ కోసం "
 ":func:`itertools.islice` చూడండి."
 
-#: builtins/functions.rst:1953
+#: builtins/functions.rst:1877
 msgid ""
 "These read-only attributes are set to the argument values (or their default)."
 "  They have no other explicit functionality; however, they are used by NumPy "
@@ -3752,7 +3619,7 @@ msgstr ""
 "సెట్ చేయబడతాయి. వాటికి వేరే స్పష్టమైన కార్యాచరణ ఏదీ లేదు; అయితే, NumPy మరియు "
 "ఇతర థర్డ్-పార్టీ ప్యాకేజీలు వాటిని ఉపయోగిస్తాయి."
 
-#: builtins/functions.rst:1957
+#: builtins/functions.rst:1881
 msgid ""
 "Slice objects are now :term:`hashable` (provided :attr:`~slice.start`, "
 ":attr:`~slice.stop`, and :attr:`~slice.step` are hashable)."
@@ -3761,19 +3628,19 @@ msgstr ""
 "(:attr:`~slice.start`, :attr:`~slice.stop`, మరియు :attr:`~slice.step` "
 "హ్యాషబుల్ అయితే)."
 
-#: builtins/functions.rst:1963
+#: builtins/functions.rst:1887
 msgid "Return a new sorted list from the items in *iterable*."
 msgstr ""
 "*iterable* లోని ఐటెమ్‌ల నుండి సార్ట్ చేసిన కొత్త లిస్ట్‌ను రిటర్న్ చేస్తుంది."
 
-#: builtins/functions.rst:1965
+#: builtins/functions.rst:1889
 msgid ""
 "Has two optional arguments which must be specified as keyword arguments."
 msgstr ""
 "దీనికి రెండు ఐచ్ఛిక ఆర్గ్యుమెంట్‌లు ఉన్నాయి, వాటిని కీవర్డ్ "
 "ఆర్గ్యుమెంట్‌లుగానే పేర్కొనాలి."
 
-#: builtins/functions.rst:1967
+#: builtins/functions.rst:1891
 msgid ""
 "*key* specifies a function of one argument that is used to extract a "
 "comparison key from each element in *iterable* (for example, "
@@ -3784,7 +3651,7 @@ msgstr ""
 "ఉపయోగించే, ఒకే ఆర్గ్యుమెంట్ తీసుకునే ఫంక్షన్‌ను పేర్కొంటుంది (ఉదాహరణకు, "
 "``key=str.lower``). డిఫాల్ట్ విలువ ``None`` (ఎలిమెంట్‌లను నేరుగా పోల్చడం)."
 
-#: builtins/functions.rst:1971
+#: builtins/functions.rst:1895
 msgid ""
 "*reverse* is a boolean value.  If set to ``True``, then the list elements are"
 " sorted as if each comparison were reversed."
@@ -3792,7 +3659,7 @@ msgstr ""
 "*reverse* ఒక బూలియన్ విలువ. దాన్ని ``True`` కు సెట్ చేస్తే, ప్రతి పోలిక "
 "తిరగబడినట్లుగా లిస్ట్ ఎలిమెంట్‌లు సార్ట్ చేయబడతాయి."
 
-#: builtins/functions.rst:1974
+#: builtins/functions.rst:1898
 msgid ""
 "Use :func:`functools.cmp_to_key` to convert an old-style *cmp* function to a "
 "*key* function."
@@ -3800,7 +3667,7 @@ msgstr ""
 "పాత-శైలి *cmp* ఫంక్షన్‌ను *key* ఫంక్షన్‌గా మార్చడానికి "
 ":func:`functools.cmp_to_key` ను ఉపయోగించండి."
 
-#: builtins/functions.rst:1977
+#: builtins/functions.rst:1901
 msgid ""
 "The built-in :func:`sorted` function is guaranteed to be stable. A sort is "
 "stable if it guarantees not to change the relative order of elements that "
@@ -3812,7 +3679,7 @@ msgstr ""
 "స్థిరమైనది --- ఇది అనేక దశల్లో సార్ట్ చేయడానికి సహాయపడుతుంది (ఉదాహరణకు, "
 "విభాగం ప్రకారం, ఆ తర్వాత జీతం గ్రేడ్ ప్రకారం సార్ట్ చేయడం)."
 
-#: builtins/functions.rst:1982
+#: builtins/functions.rst:1906
 msgid ""
 "The sort algorithm uses only ``<`` comparisons between items.  While defining"
 " an :meth:`~object.__lt__` method will suffice for sorting, :PEP:`8` "
@@ -3831,18 +3698,18 @@ msgstr ""
 "మెథడ్‌ను కాల్ చేయగల మిశ్రమ టైప్ పోలికల విషయంలో గందరగోళాన్ని నివారించడానికి "
 "కూడా సహాయపడుతుంది."
 
-#: builtins/functions.rst:1991
+#: builtins/functions.rst:1915
 msgid ""
 "For sorting examples and a brief sorting tutorial, see :ref:`sortinghowto`."
 msgstr ""
 "సార్టింగ్ ఉదాహరణలు మరియు సార్టింగ్‌పై సంక్షిప్త ట్యుటోరియల్ కోసం "
 ":ref:`sortinghowto` చూడండి."
 
-#: builtins/functions.rst:1995
+#: builtins/functions.rst:1919
 msgid "Transform a method into a static method."
 msgstr "ఒక మెథడ్‌ను స్టాటిక్ మెథడ్‌గా మారుస్తుంది."
 
-#: builtins/functions.rst:1997
+#: builtins/functions.rst:1921
 msgid ""
 "A static method does not receive an implicit first argument. To declare a "
 "static method, use this idiom::"
@@ -3850,7 +3717,7 @@ msgstr ""
 "స్టాటిక్ మెథడ్‌కు పరోక్షమైన మొదటి ఆర్గ్యుమెంట్ అందదు. స్టాటిక్ మెథడ్‌ను "
 "డిక్లేర్ చేయడానికి, ఈ పద్ధతిని ఉపయోగించండి::"
 
-#: builtins/functions.rst:2000
+#: builtins/functions.rst:1924
 msgid ""
 "class C:\n"
 "    @staticmethod\n"
@@ -3860,7 +3727,7 @@ msgstr ""
 "    @staticmethod\n"
 "    def f(arg1, arg2, argN): ..."
 
-#: builtins/functions.rst:2004
+#: builtins/functions.rst:1928
 msgid ""
 "The ``@staticmethod`` form is a function :term:`decorator` -- see "
 ":ref:`function` for details."
@@ -3868,7 +3735,7 @@ msgstr ""
 "``@staticmethod`` రూపం ఒక ఫంక్షన్ :term:`డెకరేటర్ <decorator>` -- వివరాల కోసం"
 " :ref:`function` చూడండి."
 
-#: builtins/functions.rst:2007
+#: builtins/functions.rst:1931
 msgid ""
 "A static method can be called either on the class (such as ``C.f()``) or on "
 "an instance (such as ``C().f()``). Moreover, the static method "
@@ -3880,7 +3747,7 @@ msgstr ""
 ":term:`డిస్క్రిప్టర్ <descriptor>` కూడా కాలబుల్, కాబట్టి దాన్ని క్లాస్ "
 "నిర్వచనంలో (``f()`` వంటి) ఉపయోగించవచ్చు."
 
-#: builtins/functions.rst:2012
+#: builtins/functions.rst:1936
 msgid ""
 "Static methods in Python are similar to those found in Java or C++. Also, see"
 " :deco:`classmethod` for a variant that is useful for creating alternate "
@@ -3890,7 +3757,7 @@ msgstr ""
 "అలాగే, ప్రత్యామ్నాయ క్లాస్ కన్‌స్ట్రక్టర్‌లను సృష్టించడానికి ఉపయోగపడే ఒక "
 "రూపాంతరం కోసం :deco:`classmethod` చూడండి."
 
-#: builtins/functions.rst:2016
+#: builtins/functions.rst:1940
 msgid ""
 "Like all decorators, it is also possible to call ``staticmethod`` as a "
 "regular function and do something with its result.  This is needed in some "
@@ -3904,7 +3771,7 @@ msgstr ""
 "నివారించాలనుకునే కొన్ని సందర్భాల్లో ఇది అవసరం. ఈ సందర్భాల కోసం, ఈ పద్ధతిని "
 "ఉపయోగించండి::"
 
-#: builtins/functions.rst:2022
+#: builtins/functions.rst:1946
 msgid ""
 "def regular_function():\n"
 "    ...\n"
@@ -3918,11 +3785,11 @@ msgstr ""
 "class C:\n"
 "    method = staticmethod(regular_function)"
 
-#: builtins/functions.rst:2028
+#: builtins/functions.rst:1952
 msgid "For more information on static methods, see :ref:`types`."
 msgstr "స్టాటిక్ మెథడ్‌ల గురించి మరింత సమాచారం కోసం :ref:`types` చూడండి."
 
-#: builtins/functions.rst:2030
+#: builtins/functions.rst:1954
 msgid ""
 "Static methods now inherit the method attributes "
 "(:attr:`~function.__module__`, :attr:`~function.__name__`, "
@@ -3937,14 +3804,14 @@ msgstr ""
 "``__wrapped__`` అట్రిబ్యూట్ ఉంది, మరియు అవి ఇప్పుడు సాధారణ ఫంక్షన్‌ల లాగా "
 "కాలబుల్."
 
-#: builtins/functions.rst:2048
+#: builtins/functions.rst:1972
 msgid ""
 "Return a :class:`str` version of *object*.  See :func:`str` for details."
 msgstr ""
 "*object* యొక్క :class:`str` వెర్షన్‌ను రిటర్న్ చేస్తుంది. వివరాల కోసం "
 ":func:`str` చూడండి."
 
-#: builtins/functions.rst:2050
+#: builtins/functions.rst:1974
 msgid ""
 "``str`` is the built-in string :term:`class`.  For general information about "
 "strings, see :ref:`textseq`."
@@ -3952,7 +3819,7 @@ msgstr ""
 "``str`` అనేది బిల్ట్-ఇన్ స్ట్రింగ్ :term:`క్లాస్ <class>`. స్ట్రింగ్‌ల "
 "గురించి సాధారణ సమాచారం కోసం :ref:`textseq` చూడండి."
 
-#: builtins/functions.rst:2056
+#: builtins/functions.rst:1980
 msgid ""
 "Sums *start* and the items of an *iterable* from left to right and returns "
 "the total.  The *iterable*'s items are normally numbers, and the start value "
@@ -3962,7 +3829,7 @@ msgstr ""
 "రిటర్న్ చేస్తుంది. *iterable* లోని ఐటెమ్‌లు సాధారణంగా సంఖ్యలు, మరియు ప్రారంభ "
 "విలువ స్ట్రింగ్ కావడానికి అనుమతి లేదు."
 
-#: builtins/functions.rst:2060
+#: builtins/functions.rst:1984
 msgid ""
 "For some use cases, there are good alternatives to :func:`sum`. The "
 "preferred, fast way to concatenate a sequence of strings is by calling "
@@ -3976,11 +3843,11 @@ msgstr ""
 ":func:`math.fsum` చూడండి. ఇటరబుల్‌ల శ్రేణిని కలపడానికి, "
 ":func:`itertools.chain` ను ఉపయోగించడాన్ని పరిశీలించండి."
 
-#: builtins/functions.rst:2066
+#: builtins/functions.rst:1990
 msgid "The *start* parameter can be specified as a keyword argument."
 msgstr "*start* పారామీటర్‌ను కీవర్డ్ ఆర్గ్యుమెంట్‌గా పేర్కొనవచ్చు."
 
-#: builtins/functions.rst:2069
+#: builtins/functions.rst:1993
 msgid ""
 "Summation of floats switched to an algorithm that gives higher accuracy and "
 "better commutativity on most builds."
@@ -3988,7 +3855,7 @@ msgstr ""
 "చాలా బిల్డ్‌లలో, ఫ్లోట్‌ల కూడిక అధిక కచ్చితత్వాన్ని మరియు మెరుగైన "
 "కమ్యుటేటివిటీని ఇచ్చే అల్గారిథమ్‌కు మార్చబడింది."
 
-#: builtins/functions.rst:2072
+#: builtins/functions.rst:1996
 msgid ""
 "Added specialization for summation of complexes, using same algorithm as for "
 "summation of floats."
@@ -3996,7 +3863,7 @@ msgstr ""
 "ఫ్లోట్‌ల కూడికకు ఉపయోగించే అదే అల్గారిథమ్‌ను ఉపయోగించి, సంకీర్ణ సంఖ్యల కూడిక "
 "కోసం ప్రత్యేకీకరణ (specialization) జోడించబడింది."
 
-#: builtins/functions.rst:2080
+#: builtins/functions.rst:2004
 msgid ""
 "Return a proxy object that delegates method calls to a parent or sibling "
 "class of *type*.  This is useful for accessing inherited methods that have "
@@ -4006,7 +3873,7 @@ msgstr ""
 "ప్రాక్సీ ఆబ్జెక్ట్‌ను రిటర్న్ చేస్తుంది. ఒక క్లాస్‌లో ఓవర్‌రైడ్ చేయబడిన, "
 "ఇన్‌హెరిట్ చేసుకున్న మెథడ్‌లను యాక్సెస్ చేయడానికి ఇది ఉపయోగపడుతుంది."
 
-#: builtins/functions.rst:2084
+#: builtins/functions.rst:2008
 msgid ""
 "The *object_or_type* determines the :term:`method resolution order` to be "
 "searched.  The search starts from the class right after the *type*."
@@ -4015,7 +3882,7 @@ msgstr ""
 "*object_or_type* నిర్ణయిస్తుంది. *type* తర్వాత వెంటనే ఉన్న క్లాస్ నుండి "
 "వెతకడం ప్రారంభమవుతుంది."
 
-#: builtins/functions.rst:2088
+#: builtins/functions.rst:2012
 msgid ""
 "For example, if :attr:`~type.__mro__` of *object_or_type* is ``D -> B -> C ->"
 " A -> object`` and the value of *type* is ``B``, then :func:`super` searches "
@@ -4025,7 +3892,7 @@ msgstr ""
 "object`` అయి, *type* విలువ ``B`` అయితే, :func:`super` ``C -> A -> object`` లో"
 " వెతుకుతుంది."
 
-#: builtins/functions.rst:2092
+#: builtins/functions.rst:2016
 msgid ""
 "The :attr:`~type.__mro__` attribute of the class corresponding to "
 "*object_or_type* lists the method resolution search order used by both "
@@ -4037,7 +3904,7 @@ msgstr ""
 "రిజల్యూషన్ సెర్చ్ క్రమాన్ని జాబితా చేస్తుంది. ఈ అట్రిబ్యూట్ డైనమిక్, "
 "ఇన్‌హెరిటెన్స్ హైరార్కీ అప్‌డేట్ అయినప్పుడల్లా ఇది మారవచ్చు."
 
-#: builtins/functions.rst:2097
+#: builtins/functions.rst:2021
 msgid ""
 "If the second argument is omitted, the super object returned is unbound.  If "
 "the second argument is an object, ``isinstance(obj, type)`` must be true.  If"
@@ -4050,7 +3917,7 @@ msgstr ""
 "``issubclass(type2, type)`` సత్యం కావాలి (క్లాస్ మెథడ్‌ల కోసం ఇది "
 "ఉపయోగపడుతుంది)."
 
-#: builtins/functions.rst:2102
+#: builtins/functions.rst:2026
 msgid ""
 "When called directly within an ordinary method of a class, both arguments may"
 " be omitted (\"zero-argument :func:`!super`\"). In this case, *type* will be "
@@ -4067,7 +3934,7 @@ msgstr ""
 "ఎక్స్‌ప్రెషన్‌లతో సహా, సున్నా-ఆర్గ్యుమెంట్ :func:`!super` ఆశించిన విధంగా "
 "పనిచేయదు."
 
-#: builtins/functions.rst:2109
+#: builtins/functions.rst:2033
 msgid ""
 "There are two typical use cases for *super*.  In a class hierarchy with "
 "single inheritance, *super* can be used to refer to parent classes without "
@@ -4080,7 +3947,7 @@ msgstr ""
 " నిర్వహించడం సులభం అవుతుంది. ఈ ఉపయోగం ఇతర ప్రోగ్రామింగ్ భాషల్లో *super* "
 "ఉపయోగానికి చాలా దగ్గరగా ఉంటుంది."
 
-#: builtins/functions.rst:2114
+#: builtins/functions.rst:2038
 msgid ""
 "The second use case is to support cooperative multiple inheritance in a "
 "dynamic execution environment.  This use case is unique to Python and is not "
@@ -4103,11 +3970,11 @@ msgstr ""
 "అనుగుణంగా మారుతుంది, మరియు రన్‌టైమ్‌కు ముందు తెలియని సిబ్లింగ్ క్లాస్‌లు కూడా"
 " ఆ క్రమంలో ఉండవచ్చు)."
 
-#: builtins/functions.rst:2124
+#: builtins/functions.rst:2048
 msgid "For both use cases, a typical superclass call looks like this::"
 msgstr "రెండు ఉపయోగాలకూ, ఒక సాధారణ సూపర్‌క్లాస్ కాల్ ఇలా ఉంటుంది::"
 
-#: builtins/functions.rst:2126
+#: builtins/functions.rst:2050
 msgid ""
 "class C(B):\n"
 "    def method(self, arg):\n"
@@ -4119,7 +3986,7 @@ msgstr ""
 "        super().method(arg)    # This does the same thing as:\n"
 "                               # super(C, self).method(arg)"
 
-#: builtins/functions.rst:2131
+#: builtins/functions.rst:2055
 msgid ""
 "In addition to method lookups, :func:`super` also works for attribute "
 "lookups.  One possible use case for this is calling :term:`descriptors "
@@ -4129,7 +3996,7 @@ msgstr ""
 "పేరెంట్ లేదా సిబ్లింగ్ క్లాస్‌లోని :term:`డిస్క్రిప్టర్‌లను <descriptor>` "
 "కాల్ చేయడం దీనికి ఒక సాధ్యమైన ఉపయోగం."
 
-#: builtins/functions.rst:2135
+#: builtins/functions.rst:2059
 msgid ""
 "Note that :func:`super` is implemented as part of the binding process for "
 "explicit dotted attribute lookups such as ``super().__getitem__(name)``. It "
@@ -4145,7 +4012,7 @@ msgstr ""
 " పని చేస్తుంది. అందువల్ల, ``super()[name]`` వంటి స్టేట్‌మెంట్‌లు లేదా "
 "ఆపరేటర్‌లను ఉపయోగించే పరోక్ష లుకప్‌లకు :func:`super` నిర్వచించబడలేదు."
 
-#: builtins/functions.rst:2143
+#: builtins/functions.rst:2067
 msgid ""
 "Also note that, aside from the zero argument form, :func:`super` is not "
 "limited to use inside methods.  The two argument form specifies the arguments"
@@ -4162,7 +4029,7 @@ msgstr ""
 "ప్రస్తుత ఇన్‌స్టాన్స్‌ను యాక్సెస్ చేయడానికి అవసరమైన వివరాలను కంపైలర్ "
 "నింపుతుంది."
 
-#: builtins/functions.rst:2150
+#: builtins/functions.rst:2074
 msgid ""
 "For practical suggestions on how to design cooperative classes using "
 ":func:`super`, see `guide to using super() "
@@ -4173,7 +4040,7 @@ msgstr ""
 "<https://rhettinger.wordpress.com/2011/05/26/super-considered-super/>`_ "
 "చూడండి."
 
-#: builtins/functions.rst:2154
+#: builtins/functions.rst:2078
 msgid ""
 ":class:`super` objects are now :mod:`pickleable <pickle>` and  :mod:`copyable"
 " <copy>`."
@@ -4181,7 +4048,7 @@ msgstr ""
 ":class:`super` ఆబ్జెక్ట్‌లు ఇప్పుడు :mod:`పికిల్ చేయగలిగేవి <pickle>` మరియు "
 ":mod:`కాపీ చేయగలిగేవి <copy>`."
 
-#: builtins/functions.rst:2163
+#: builtins/functions.rst:2087
 msgid ""
 "Rather than being a function, :class:`tuple` is actually an immutable "
 "sequence type, as documented in :ref:`typesseq-tuple` and :ref:`typesseq`."
@@ -4189,7 +4056,7 @@ msgstr ""
 ":class:`tuple` ఒక ఫంక్షన్ కాదు; :ref:`typesseq-tuple` మరియు :ref:`typesseq` "
 "లో వివరించినట్లుగా, ఇది నిజానికి ఒక ఇమ్యూటబుల్ (మార్చలేని) సీక్వెన్స్ టైప్."
 
-#: builtins/functions.rst:2172
+#: builtins/functions.rst:2096
 msgid ""
 "With one argument, return the type of an *object*.  The return value is a "
 "type object and generally the same object as returned by "
@@ -4199,7 +4066,7 @@ msgstr ""
 "ఒక టైప్ ఆబ్జెక్ట్, సాధారణంగా :attr:`object.__class__` రిటర్న్ చేసే అదే "
 "ఆబ్జెక్ట్."
 
-#: builtins/functions.rst:2176
+#: builtins/functions.rst:2100
 msgid ""
 "The :func:`isinstance` built-in function is recommended for testing the type "
 "of an object, because it takes subclasses into account."
@@ -4208,7 +4075,7 @@ msgstr ""
 " ఉపయోగించమని సిఫార్సు చేయబడింది, ఎందుకంటే అది సబ్‌క్లాస్‌లను కూడా పరిగణనలోకి "
 "తీసుకుంటుంది."
 
-#: builtins/functions.rst:2179
+#: builtins/functions.rst:2103
 msgid ""
 "With three arguments, return a new type object.  This is essentially a "
 "dynamic form of the :keyword:`class` statement. The *name* string is the "
@@ -4230,11 +4097,11 @@ msgstr ""
 "కాపీ చేయబడవచ్చు లేదా ర్యాప్ చేయబడవచ్చు. కింది రెండు స్టేట్‌మెంట్‌లు ఒకేలాంటి "
 ":class:`!type` ఆబ్జెక్ట్‌లను సృష్టిస్తాయి:"
 
-#: builtins/functions.rst:2194
+#: builtins/functions.rst:2118
 msgid "See also:"
 msgstr "ఇవి కూడా చూడండి:"
 
-#: builtins/functions.rst:2196
+#: builtins/functions.rst:2120
 msgid ""
 ":ref:`Documentation on attributes and methods on classes <class-attrs-and-"
 "methods>`."
@@ -4242,11 +4109,11 @@ msgstr ""
 ":ref:`క్లాస్‌లలోని అట్రిబ్యూట్‌లు మరియు మెథడ్‌లపై డాక్యుమెంటేషన్ <class-"
 "attrs-and-methods>`."
 
-#: builtins/functions.rst:2197
+#: builtins/functions.rst:2121
 msgid ":ref:`bltin-type-objects`"
 msgstr ":ref:`bltin-type-objects`"
 
-#: builtins/functions.rst:2199
+#: builtins/functions.rst:2123
 msgid ""
 "Keyword arguments provided to the three argument form are passed to the "
 "appropriate metaclass machinery (usually :meth:`~object.__init_subclass__`) "
@@ -4258,7 +4125,7 @@ msgstr ""
 "మెటాక్లాస్ యంత్రాంగానికి (సాధారణంగా :meth:`~object.__init_subclass__`) "
 "పంపబడతాయి."
 
-#: builtins/functions.rst:2204
+#: builtins/functions.rst:2128
 msgid ""
 "Unlike a :keyword:`class` statement, the three argument form does not call "
 "the metaclass ``__prepare__`` method (see :ref:`prepare`).  Use "
@@ -4270,11 +4137,11 @@ msgstr ""
 "మెటాక్లాస్‌ను ఉపయోగించి డైనమిక్‌గా క్లాస్‌ను సృష్టించడానికి "
 ":func:`types.new_class` ను ఉపయోగించండి."
 
-#: builtins/functions.rst:2209
+#: builtins/functions.rst:2133
 msgid "See also :ref:`class-customization`."
 msgstr ":ref:`class-customization` కూడా చూడండి."
 
-#: builtins/functions.rst:2211
+#: builtins/functions.rst:2135
 msgid ""
 "Subclasses of :class:`!type` which don't override ``type.__new__`` may no "
 "longer use the one-argument form to get the type of an object."
@@ -4282,11 +4149,7 @@ msgstr ""
 "``type.__new__`` ను ఓవర్‌రైడ్ చేయని :class:`!type` సబ్‌క్లాస్‌లు, ఒక "
 "ఆబ్జెక్ట్ టైప్‌ను పొందడానికి ఇకపై ఒక-ఆర్గ్యుమెంట్ రూపాన్ని ఉపయోగించలేవు."
 
-#: builtins/functions.rst:2217
-msgid "*dict* can now be a :class:`frozendict`."
-msgstr "*dict* ఇప్పుడు :class:`frozendict` కూడా కావచ్చు."
-
-#: builtins/functions.rst:2222
+#: builtins/functions.rst:2142
 msgid ""
 "Return the :attr:`~object.__dict__` attribute for a module, class, instance, "
 "or any other object with a :attr:`!__dict__` attribute."
@@ -4295,7 +4158,7 @@ msgstr ""
 "మరే ఇతర ఆబ్జెక్ట్ యొక్క :attr:`~object.__dict__` అట్రిబ్యూట్‌ను రిటర్న్ "
 "చేస్తుంది."
 
-#: builtins/functions.rst:2225
+#: builtins/functions.rst:2145
 msgid ""
 "Objects such as modules and instances have an updateable "
 ":attr:`~object.__dict__` attribute; however, other objects may have write "
@@ -4308,12 +4171,12 @@ msgstr ""
 "డిక్షనరీ అప్‌డేట్‌లను నిరోధించడానికి క్లాస్‌లు "
 ":class:`types.MappingProxyType` ను ఉపయోగిస్తాయి)."
 
-#: builtins/functions.rst:2230
+#: builtins/functions.rst:2150
 msgid "Without an argument, :func:`vars` acts like :func:`locals`."
 msgstr ""
 "ఆర్గ్యుమెంట్ లేకుండా, :func:`vars` అనేది :func:`locals` లాగా పనిచేస్తుంది."
 
-#: builtins/functions.rst:2232
+#: builtins/functions.rst:2152
 msgid ""
 "A :exc:`TypeError` exception is raised if an object is specified but it "
 "doesn't have a :attr:`~object.__dict__` attribute (for example, if its class "
@@ -4323,7 +4186,7 @@ msgstr ""
 "లేకపోతే (ఉదాహరణకు, దాని క్లాస్ :attr:`~object.__slots__` అట్రిబ్యూట్‌ను "
 "నిర్వచిస్తే), :exc:`TypeError` ఎక్సెప్షన్ రైజ్ అవుతుంది."
 
-#: builtins/functions.rst:2238
+#: builtins/functions.rst:2158
 msgid ""
 "The result of calling this function without an argument has been updated as "
 "described for the :func:`locals` builtin."
@@ -4331,7 +4194,7 @@ msgstr ""
 "ఆర్గ్యుమెంట్ లేకుండా ఈ ఫంక్షన్‌ను కాల్ చేసినప్పుడు వచ్చే ఫలితం, "
 ":func:`locals` బిల్ట్-ఇన్ కోసం వివరించిన విధంగా అప్‌డేట్ చేయబడింది."
 
-#: builtins/functions.rst:2244
+#: builtins/functions.rst:2164
 msgid ""
 "Iterate over several iterables in parallel, producing tuples with an item "
 "from each one."
@@ -4339,11 +4202,11 @@ msgstr ""
 "అనేక ఇటరబుల్‌లపై సమాంతరంగా ఇటరేట్ చేస్తుంది, ప్రతి దాని నుండి ఒక్కో ఐటెమ్‌తో "
 "టపుల్‌లను ఉత్పత్తి చేస్తుంది."
 
-#: builtins/functions.rst:2247
+#: builtins/functions.rst:2167
 msgid "Example::"
 msgstr "ఉదాహరణ::"
 
-#: builtins/functions.rst:2249
+#: builtins/functions.rst:2169
 msgid ""
 ">>> for item in zip([1, 2, 3], ['sugar', 'spice', 'everything nice']):\n"
 "...     print(item)\n"
@@ -4359,7 +4222,7 @@ msgstr ""
 "(2, 'spice')\n"
 "(3, 'everything nice')"
 
-#: builtins/functions.rst:2256
+#: builtins/functions.rst:2176
 msgid ""
 "More formally: :func:`zip` returns an iterator of tuples, where the *i*-th "
 "tuple contains the *i*-th element from each of the argument iterables."
@@ -4368,7 +4231,7 @@ msgstr ""
 " ఇందులో *i*-వ టపుల్‌లో ఆర్గ్యుమెంట్ ఇటరబుల్‌లలో ప్రతి దాని నుండి *i*-వ "
 "ఎలిమెంట్ ఉంటుంది."
 
-#: builtins/functions.rst:2259
+#: builtins/functions.rst:2179
 msgid ""
 "Another way to think of :func:`zip` is that it turns rows into columns, and "
 "columns into rows.  This is similar to `transposing a matrix "
@@ -4378,7 +4241,7 @@ msgstr ""
 "వరుసలుగా, నిలువు వరుసలను అడ్డు వరుసలుగా మారుస్తుంది. ఇది `మాట్రిక్స్‌ను "
 "ట్రాన్స్‌పోజ్ చేయడం <https://en.wikipedia.org/wiki/Transpose>`_ లాంటిది."
 
-#: builtins/functions.rst:2263
+#: builtins/functions.rst:2183
 msgid ""
 ":func:`zip` is lazy: The elements won't be processed until the iterable is "
 "iterated on, e.g. by a :keyword:`!for` loop or by wrapping in a "
@@ -4388,7 +4251,7 @@ msgstr ""
 ":keyword:`!for` లూప్ ద్వారా లేదా :class:`list` లో ర్యాప్ చేయడం ద్వారా, "
 "ఎలిమెంట్‌లు ప్రాసెస్ చేయబడవు."
 
-#: builtins/functions.rst:2267
+#: builtins/functions.rst:2187
 msgid ""
 "One thing to consider is that the iterables passed to :func:`zip` could have "
 "different lengths; sometimes by design, and sometimes because of a bug in the"
@@ -4400,7 +4263,7 @@ msgstr ""
 " సిద్ధం చేసిన కోడ్‌లోని బగ్ వల్ల. ఈ సమస్యను ఎదుర్కోవడానికి Python మూడు "
 "వేర్వేరు విధానాలను అందిస్తుంది:"
 
-#: builtins/functions.rst:2272
+#: builtins/functions.rst:2192
 msgid ""
 "By default, :func:`zip` stops when the shortest iterable is "
 ":term:`exhausted`. It will ignore the remaining items in the longer "
@@ -4411,7 +4274,7 @@ msgstr ""
 "విస్మరిస్తుంది, ఫలితాన్ని అతి తక్కువ పొడవు ఉన్న ఇటరబుల్ పొడవుకు "
 "కత్తిరిస్తుంది::"
 
-#: builtins/functions.rst:2276
+#: builtins/functions.rst:2196
 msgid ""
 ">>> list(zip(range(3), ['fee', 'fi', 'fo', 'fum']))\n"
 "[(0, 'fee'), (1, 'fi'), (2, 'fo')]"
@@ -4419,7 +4282,7 @@ msgstr ""
 ">>> list(zip(range(3), ['fee', 'fi', 'fo', 'fum']))\n"
 "[(0, 'fee'), (1, 'fi'), (2, 'fo')]"
 
-#: builtins/functions.rst:2279
+#: builtins/functions.rst:2199
 msgid ""
 ":func:`zip` is often used in cases where the iterables are assumed to be of "
 "equal length.  In such cases, it's recommended to use the ``strict=True`` "
@@ -4430,7 +4293,7 @@ msgstr ""
 "సిఫార్సు చేయబడింది. దాని అవుట్‌పుట్ సాధారణ :func:`zip` అవుట్‌పుట్ లాగానే "
 "ఉంటుంది::"
 
-#: builtins/functions.rst:2283
+#: builtins/functions.rst:2203
 msgid ""
 ">>> list(zip(('a', 'b', 'c'), (1, 2, 3), strict=True))\n"
 "[('a', 1), ('b', 2), ('c', 3)]"
@@ -4438,7 +4301,7 @@ msgstr ""
 ">>> list(zip(('a', 'b', 'c'), (1, 2, 3), strict=True))\n"
 "[('a', 1), ('b', 2), ('c', 3)]"
 
-#: builtins/functions.rst:2286
+#: builtins/functions.rst:2206
 msgid ""
 "Unlike the default behavior, it raises a :exc:`ValueError` if one iterable is"
 " :term:`exhausted` before the others:"
@@ -4446,7 +4309,7 @@ msgstr ""
 "డిఫాల్ట్ ప్రవర్తనలా కాకుండా, ఒక ఇటరబుల్ మిగతావాటి కంటే ముందే :term:`అయిపోతే "
 "<exhausted>`, ఇది :exc:`ValueError` ను రైజ్ చేస్తుంది:"
 
-#: builtins/functions.rst:2304
+#: builtins/functions.rst:2224
 msgid ""
 "Without the ``strict=True`` argument, any bug that results in iterables of "
 "different lengths will be silenced, possibly manifesting as a hard-to-find "
@@ -4456,7 +4319,7 @@ msgstr ""
 "బగ్ అయినా బయటపడకుండా అణచివేయబడుతుంది; అది ప్రోగ్రామ్‌లోని మరో భాగంలో "
 "కనుగొనడానికి కష్టమైన బగ్‌గా బయటపడే అవకాశం ఉంది."
 
-#: builtins/functions.rst:2308
+#: builtins/functions.rst:2228
 msgid ""
 "Shorter iterables can be padded with a constant value to make all the "
 "iterables have the same length.  This is done by "
@@ -4465,7 +4328,7 @@ msgstr ""
 "అన్ని ఇటరబుల్‌లకూ ఒకే పొడవు ఉండేలా, తక్కువ పొడవున్న ఇటరబుల్‌లను ఒక స్థిరాంక "
 "విలువతో ప్యాడ్ చేయవచ్చు. ఇది :func:`itertools.zip_longest` ద్వారా జరుగుతుంది."
 
-#: builtins/functions.rst:2312
+#: builtins/functions.rst:2232
 msgid ""
 "Edge cases: With a single iterable argument, :func:`zip` returns an iterator "
 "of 1-tuples.  With no arguments, it returns an empty iterator."
@@ -4474,11 +4337,11 @@ msgstr ""
 "1-టపుల్‌ల ఇటరేటర్‌ను రిటర్న్ చేస్తుంది. ఆర్గ్యుమెంట్‌లు లేకుండా, అది ఖాళీ "
 "ఇటరేటర్‌ను రిటర్న్ చేస్తుంది."
 
-#: builtins/functions.rst:2315
+#: builtins/functions.rst:2235
 msgid "Tips and tricks:"
 msgstr "చిట్కాలు మరియు ఉపాయాలు:"
 
-#: builtins/functions.rst:2317
+#: builtins/functions.rst:2237
 msgid ""
 "The left-to-right evaluation order of the iterables is guaranteed. This makes"
 " possible an idiom for clustering a data series into n-length groups using "
@@ -4493,7 +4356,7 @@ msgstr ""
 "చేసిన ``n`` కాల్‌ల ఫలితం ఉంటుంది. దీనివల్ల ఇన్‌పుట్ n-పొడవు గల ముక్కలుగా "
 "విభజించబడుతుంది."
 
-#: builtins/functions.rst:2323
+#: builtins/functions.rst:2243
 msgid ""
 ":func:`zip` in conjunction with the ``*`` operator can be used to unzip a "
 "list::"
@@ -4501,7 +4364,7 @@ msgstr ""
 "``*`` ఆపరేటర్‌తో కలిపి :func:`zip` ను ఒక లిస్ట్‌ను అన్‌జిప్ చేయడానికి "
 "ఉపయోగించవచ్చు::"
 
-#: builtins/functions.rst:2326
+#: builtins/functions.rst:2246
 msgid ""
 ">>> x = [1, 2, 3]\n"
 ">>> y = [4, 5, 6]\n"
@@ -4519,11 +4382,11 @@ msgstr ""
 ">>> x == list(x2) and y == list(y2)\n"
 "True"
 
-#: builtins/functions.rst:2334
+#: builtins/functions.rst:2254
 msgid "Added the ``strict`` argument."
 msgstr "``strict`` ఆర్గ్యుమెంట్ జోడించబడింది."
 
-#: builtins/functions.rst:2346
+#: builtins/functions.rst:2266
 msgid ""
 "This is an advanced function that is not needed in everyday Python "
 "programming, unlike :func:`importlib.import_module`."
@@ -4531,7 +4394,7 @@ msgstr ""
 ":func:`importlib.import_module` లా కాకుండా, ఇది రోజువారీ Python "
 "ప్రోగ్రామింగ్‌లో అవసరం లేని ఒక అధునాతన ఫంక్షన్."
 
-#: builtins/functions.rst:2349
+#: builtins/functions.rst:2269
 msgid ""
 "This function is invoked by the :keyword:`import` statement.  It can be "
 "replaced (by importing the :mod:`builtins` module and assigning to "
@@ -4552,7 +4415,7 @@ msgstr ""
 "నేరుగా ఉపయోగించవద్దని, దానికి బదులుగా :func:`importlib.import_module` ను "
 "ఉపయోగించమని కూడా సిఫార్సు చేయబడింది."
 
-#: builtins/functions.rst:2358
+#: builtins/functions.rst:2278
 msgid ""
 "The function imports the module *name*, potentially using the given *globals*"
 " and *locals* to determine how to interpret the name in a package context. "
@@ -4569,7 +4432,7 @@ msgstr ""
 "స్టేట్‌మెంట్ యొక్క ప్యాకేజీ సందర్భాన్ని నిర్ణయించడానికి మాత్రమే దాని "
 "*globals* ను ఉపయోగిస్తుంది."
 
-#: builtins/functions.rst:2365
+#: builtins/functions.rst:2285
 msgid ""
 "*level* specifies whether to use absolute or relative imports. ``0`` (the "
 "default) means only perform absolute imports.  For relative imports, ``1`` "
@@ -4582,7 +4445,7 @@ msgstr ""
 "దాని పేరెంట్ ప్యాకేజీని సూచిస్తాయి, అలా కొనసాగుతుంది (వివరాల కోసం :pep:`328` "
 "చూడండి)."
 
-#: builtins/functions.rst:2370
+#: builtins/functions.rst:2290
 msgid ""
 "When the *name* variable is of the form ``package.module``, normally, the "
 "top-level package (the name up till the first dot) is returned, *not* the "
@@ -4594,7 +4457,7 @@ msgstr ""
 "మాడ్యూల్ *కాదు*. అయితే, ఖాళీ కాని *fromlist* ఆర్గ్యుమెంట్ ఇచ్చినప్పుడు, "
 "*name* పేర్కొన్న మాడ్యూల్ రిటర్న్ అవుతుంది."
 
-#: builtins/functions.rst:2375
+#: builtins/functions.rst:2295
 msgid ""
 "For example, the statement ``import spam`` results in bytecode resembling the"
 " following code::"
@@ -4602,19 +4465,19 @@ msgstr ""
 "ఉదాహరణకు, ``import spam`` స్టేట్‌మెంట్ కింది కోడ్‌ను పోలిన బైట్‌కోడ్‌ను "
 "ఉత్పత్తి చేస్తుంది::"
 
-#: builtins/functions.rst:2378
+#: builtins/functions.rst:2298
 msgid "spam = __import__('spam', globals(), locals(), [], 0)"
 msgstr "spam = __import__('spam', globals(), locals(), [], 0)"
 
-#: builtins/functions.rst:2380
+#: builtins/functions.rst:2300
 msgid "The statement ``import spam.ham`` results in this call::"
 msgstr "``import spam.ham`` స్టేట్‌మెంట్ ఈ కాల్‌ను ఉత్పత్తి చేస్తుంది::"
 
-#: builtins/functions.rst:2382
+#: builtins/functions.rst:2302
 msgid "spam = __import__('spam.ham', globals(), locals(), [], 0)"
 msgstr "spam = __import__('spam.ham', globals(), locals(), [], 0)"
 
-#: builtins/functions.rst:2384
+#: builtins/functions.rst:2304
 msgid ""
 "Note how :func:`__import__` returns the toplevel module here because this is "
 "the object that is bound to a name by the :keyword:`import` statement."
@@ -4623,7 +4486,7 @@ msgstr ""
 " ఇక్కడ :func:`__import__` టాప్ లెవెల్ మాడ్యూల్‌ను ఎలా రిటర్న్ చేస్తుందో "
 "గమనించండి."
 
-#: builtins/functions.rst:2387
+#: builtins/functions.rst:2307
 msgid ""
 "On the other hand, the statement ``from spam.ham import eggs, sausage as "
 "saus`` results in ::"
@@ -4631,7 +4494,7 @@ msgstr ""
 "మరోవైపు, ``from spam.ham import eggs, sausage as saus`` స్టేట్‌మెంట్ కింది "
 "దాన్ని ఉత్పత్తి చేస్తుంది::"
 
-#: builtins/functions.rst:2390
+#: builtins/functions.rst:2310
 msgid ""
 "_temp = __import__('spam.ham', globals(), locals(), ['eggs', 'sausage'], 0)\n"
 "eggs = _temp.eggs\n"
@@ -4641,7 +4504,7 @@ msgstr ""
 "eggs = _temp.eggs\n"
 "saus = _temp.sausage"
 
-#: builtins/functions.rst:2394
+#: builtins/functions.rst:2314
 msgid ""
 "Here, the ``spam.ham`` module is returned from :func:`__import__`.  From this"
 " object, the names to import are retrieved and assigned to their respective "
@@ -4651,7 +4514,7 @@ msgstr ""
 "ఆబ్జెక్ట్ నుండి, ఇంపోర్ట్ చేయాల్సిన పేర్లను తీసుకుని, వాటికి సంబంధించిన "
 "పేర్లకు కేటాయిస్తారు."
 
-#: builtins/functions.rst:2398
+#: builtins/functions.rst:2318
 msgid ""
 "If you simply want to import a module (potentially within a package) by name,"
 " use :func:`importlib.import_module`."
@@ -4659,7 +4522,7 @@ msgstr ""
 "మీరు కేవలం ఒక మాడ్యూల్‌ను (బహుశా ఒక ప్యాకేజీ లోపల ఉన్నదాన్ని) పేరు ద్వారా "
 "ఇంపోర్ట్ చేయాలనుకుంటే, :func:`importlib.import_module` ను ఉపయోగించండి."
 
-#: builtins/functions.rst:2401
+#: builtins/functions.rst:2321
 msgid ""
 "Negative values for *level* are no longer supported (which also changes the "
 "default value to 0)."
@@ -4667,7 +4530,7 @@ msgstr ""
 "*level* కు రుణ విలువలు ఇకపై సపోర్ట్ చేయబడవు (దీనివల్ల డిఫాల్ట్ విలువ కూడా 0 "
 "కు మారుతుంది)."
 
-#: builtins/functions.rst:2405
+#: builtins/functions.rst:2325
 msgid ""
 "When the command line options :option:`-E` or :option:`-I` are being used, "
 "the environment variable :envvar:`PYTHONCASEOK` is now ignored."
@@ -4675,110 +4538,110 @@ msgstr ""
 ":option:`-E` లేదా :option:`-I` కమాండ్ లైన్ ఆప్షన్‌లను ఉపయోగిస్తున్నప్పుడు, "
 ":envvar:`PYTHONCASEOK` ఎన్విరాన్‌మెంట్ వేరియబుల్ ఇప్పుడు విస్మరించబడుతుంది."
 
-#: builtins/functions.rst:158
+#: builtins/functions.rst:156
 msgid "Boolean"
 msgstr "బూలియన్"
 
-#: builtins/functions.rst:158 builtins/functions.rst:2170
+#: builtins/functions.rst:156 builtins/functions.rst:2094
 msgid "type"
 msgstr "టైప్"
 
-#: builtins/functions.rst:691
+#: builtins/functions.rst:676
 msgid "built-in function"
 msgstr "బిల్ట్-ఇన్ ఫంక్షన్"
 
-#: builtins/functions.rst:691
+#: builtins/functions.rst:676
 msgid "exec"
 msgstr "exec"
 
-#: builtins/functions.rst:794
+#: builtins/functions.rst:775
 msgid "NaN"
 msgstr "NaN"
 
-#: builtins/functions.rst:794
+#: builtins/functions.rst:775
 msgid "Infinity"
 msgstr "Infinity"
 
-#: builtins/functions.rst:864
+#: builtins/functions.rst:845
 msgid "__format__"
 msgstr "__format__"
 
-#: builtins/functions.rst:864 builtins/functions.rst:2038
+#: builtins/functions.rst:845 builtins/functions.rst:1962
 msgid "string"
 msgstr "స్ట్రింగ్"
 
-#: builtins/functions.rst:864
+#: builtins/functions.rst:845
 msgid "format() (built-in function)"
 msgstr "format() (బిల్ట్-ఇన్ ఫంక్షన్)"
 
-#: builtins/functions.rst:1393
+#: builtins/functions.rst:1359
 msgid "file object"
 msgstr "ఫైల్ ఆబ్జెక్ట్"
 
-#: builtins/functions.rst:1393 builtins/functions.rst:1489
+#: builtins/functions.rst:1359 builtins/functions.rst:1480
 msgid "open() built-in function"
 msgstr "open() బిల్ట్-ఇన్ ఫంక్షన్"
 
-#: builtins/functions.rst:1422
+#: builtins/functions.rst:1387
 msgid "file"
 msgstr "ఫైల్"
 
-#: builtins/functions.rst:1422
+#: builtins/functions.rst:1387
 msgid "modes"
 msgstr "మోడ్‌లు"
 
-#: builtins/functions.rst:1489
+#: builtins/functions.rst:1480
 msgid "universal newlines"
 msgstr "యూనివర్సల్ న్యూలైన్‌లు"
 
-#: builtins/functions.rst:1550
+#: builtins/functions.rst:1541
 msgid "line-buffered I/O"
 msgstr "లైన్-బఫర్డ్ I/O"
 
-#: builtins/functions.rst:1550
+#: builtins/functions.rst:1541
 msgid "unbuffered I/O"
 msgstr "అన్‌బఫర్డ్ I/O"
 
-#: builtins/functions.rst:1550
+#: builtins/functions.rst:1541
 msgid "buffer size, I/O"
 msgstr "బఫర్ పరిమాణం, I/O"
 
-#: builtins/functions.rst:1550
+#: builtins/functions.rst:1541
 msgid "I/O control"
 msgstr "I/O కంట్రోల్"
 
-#: builtins/functions.rst:1550
+#: builtins/functions.rst:1541
 msgid "buffering"
 msgstr "బఫరింగ్"
 
-#: builtins/functions.rst:1550
+#: builtins/functions.rst:1541
 msgid "text mode"
 msgstr "టెక్స్ట్ మోడ్"
 
-#: builtins/functions.rst:1550 builtins/functions.rst:2340
+#: builtins/functions.rst:1541 builtins/functions.rst:2260
 msgid "module"
 msgstr "మాడ్యూల్"
 
-#: builtins/functions.rst:1550
+#: builtins/functions.rst:1541
 msgid "sys"
 msgstr "sys"
 
-#: builtins/functions.rst:2038
+#: builtins/functions.rst:1962
 msgid "str() (built-in function)"
 msgstr "str() (బిల్ట్-ఇన్ ఫంక్షన్)"
 
-#: builtins/functions.rst:2170
+#: builtins/functions.rst:2094
 msgid "object"
 msgstr "ఆబ్జెక్ట్"
 
-#: builtins/functions.rst:2340
+#: builtins/functions.rst:2260
 msgid "statement"
 msgstr "స్టేట్‌మెంట్"
 
-#: builtins/functions.rst:2340
+#: builtins/functions.rst:2260
 msgid "import"
 msgstr "import"
 
-#: builtins/functions.rst:2340
+#: builtins/functions.rst:2260
 msgid "builtins"
 msgstr "builtins"

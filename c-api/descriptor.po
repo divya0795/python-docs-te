@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.15\n"
+"Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 12:56-0700\n"
+"POT-Creation-Date: 2026-11-16 02:05-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Telugu\n"
@@ -29,12 +29,16 @@ msgid ""
 msgstr ""
 
 #: c-api/descriptor.rst:13
+msgid "The type object for the built-in descriptor types."
+msgstr ""
+
+#: c-api/descriptor.rst:18
 msgid ""
 "Create a new get-set descriptor for extension type *type* from the "
 ":c:type:`PyGetSetDef` structure *getset*."
 msgstr ""
 
-#: c-api/descriptor.rst:16
+#: c-api/descriptor.rst:21
 msgid ""
 "Get-set descriptors expose attributes implemented by C getter and setter "
 "functions rather than stored directly in the instance. This is the same kind "
@@ -42,20 +46,20 @@ msgid ""
 " it appears in Python as a :class:`types.GetSetDescriptorType` object."
 msgstr ""
 
-#: c-api/descriptor.rst:21 c-api/descriptor.rst:34 c-api/descriptor.rst:65
-#: c-api/descriptor.rst:114
+#: c-api/descriptor.rst:26 c-api/descriptor.rst:39 c-api/descriptor.rst:70
+#: c-api/descriptor.rst:119
 msgid ""
 "On success, return a :term:`strong reference` to the descriptor. Return "
 "``NULL`` with an exception set on failure."
 msgstr ""
 
-#: c-api/descriptor.rst:26
+#: c-api/descriptor.rst:31
 msgid ""
 "Create a new member descriptor for extension type *type* from the "
 ":c:type:`PyMemberDef` structure *member*."
 msgstr ""
 
-#: c-api/descriptor.rst:29
+#: c-api/descriptor.rst:34
 msgid ""
 "Member descriptors expose fields in the type's C struct as Python attributes."
 " This is the same kind of descriptor created for entries in "
@@ -63,7 +67,7 @@ msgid ""
 ":class:`types.MemberDescriptorType` object."
 msgstr ""
 
-#: c-api/descriptor.rst:39
+#: c-api/descriptor.rst:44
 msgid ""
 "The type object for member descriptor objects created from "
 ":c:type:`PyMemberDef` structures. These descriptors expose fields of a C "
@@ -71,7 +75,7 @@ msgid ""
 ":class:`types.MemberDescriptorType` objects in Python."
 msgstr ""
 
-#: c-api/descriptor.rst:48
+#: c-api/descriptor.rst:53
 msgid ""
 "The type object for get/set descriptor objects created from "
 ":c:type:`PyGetSetDef` structures. These descriptors implement attributes "
@@ -80,13 +84,13 @@ msgid ""
 ":class:`types.GetSetDescriptorType` objects in Python."
 msgstr ""
 
-#: c-api/descriptor.rst:57
+#: c-api/descriptor.rst:62
 msgid ""
 "Create a new method descriptor for extension type *type* from the "
 ":c:type:`PyMethodDef` structure *meth*."
 msgstr ""
 
-#: c-api/descriptor.rst:60
+#: c-api/descriptor.rst:65
 msgid ""
 "Method descriptors expose C functions as methods on a type. This is the same "
 "kind of descriptor created for entries in "
@@ -94,7 +98,7 @@ msgid ""
 ":class:`types.MethodDescriptorType` object."
 msgstr ""
 
-#: c-api/descriptor.rst:70
+#: c-api/descriptor.rst:75
 msgid ""
 "The type object for method descriptor objects created from "
 ":c:type:`PyMethodDef` structures. These descriptors expose C functions as "
@@ -102,41 +106,41 @@ msgid ""
 "objects in Python."
 msgstr ""
 
-#: c-api/descriptor.rst:77
+#: c-api/descriptor.rst:82
 msgid ""
 "The type object for wrapper descriptor objects created by "
 ":c:func:`PyDescr_NewWrapper` and :c:func:`PyWrapper_New`."
 msgstr ""
 
-#: c-api/descriptor.rst:80
+#: c-api/descriptor.rst:85
 msgid ""
 "Wrapper descriptors are used internally to expose special methods such as "
 "``__repr__`` or ``__add__``, which are implemented by type slots. The type is"
 " exposed in Python as  :class:`types.WrapperDescriptorType`."
 msgstr ""
 
-#: c-api/descriptor.rst:96
+#: c-api/descriptor.rst:101
 msgid "Create a new wrapper descriptor of type :c:var:`PyWrapperDescr_Type`."
 msgstr ""
 
-#: c-api/descriptor.rst:98
+#: c-api/descriptor.rst:103
 msgid ""
 "This function is meant for internal use only; it and related API (``struct "
 "wrapperbase`` and the ``PyWrapperFlag_KEYWORDS`` flag) are exposed publicly "
 "for backwards compatibility reasons."
 msgstr ""
 
-#: c-api/descriptor.rst:102
+#: c-api/descriptor.rst:107
 msgid "See :c:func:`PyCMethod_New` for wrapping a C function."
 msgstr ""
 
-#: c-api/descriptor.rst:106
+#: c-api/descriptor.rst:111
 msgid ""
 "Create a new class method descriptor for extension type *type* from the "
 ":c:type:`PyMethodDef` structure *method*."
 msgstr ""
 
-#: c-api/descriptor.rst:109
+#: c-api/descriptor.rst:114
 msgid ""
 "Class method descriptors expose C methods that receive the class rather than "
 "an instance when accessed. This is the same kind of descriptor created for "
@@ -144,20 +148,20 @@ msgid ""
 "appears in Python as a :class:`types.ClassMethodDescriptorType` object."
 msgstr ""
 
-#: c-api/descriptor.rst:119
+#: c-api/descriptor.rst:124
 msgid ""
 "Return non-zero if the descriptor object *descr* describes a data attribute, "
 "or ``0`` if it describes a method.  *descr* must be a descriptor object; "
 "there is no error checking."
 msgstr ""
 
-#: c-api/descriptor.rst:126
+#: c-api/descriptor.rst:131
 msgid ""
 "Create a new bound wrapper object from the wrapper descriptor *d* and the "
 "instance *self*."
 msgstr ""
 
-#: c-api/descriptor.rst:129
+#: c-api/descriptor.rst:134
 msgid ""
 "This is the bound form of a wrapper descriptor created by "
 ":c:func:`PyDescr_NewWrapper`. CPython creates these objects when a slot "
@@ -165,19 +169,19 @@ msgid ""
 ":class:`types.MethodWrapperType` objects."
 msgstr ""
 
-#: c-api/descriptor.rst:134
+#: c-api/descriptor.rst:139
 msgid ""
 "On success, return a :term:`strong reference` to the wrapper object. Return "
 "``NULL`` with an exception set on failure."
 msgstr ""
 
-#: c-api/descriptor.rst:139
+#: c-api/descriptor.rst:144
 msgid ""
 "Return a :term:`borrowed reference` to the type that the descriptor *descr* "
 "belongs to. This is accessible as :attr:`~object.__objclass__` in Python."
 msgstr ""
 
-#: c-api/descriptor.rst:143
+#: c-api/descriptor.rst:148
 msgid ""
 "*descr* must be a descriptor object created by one of the ``PyDescr_New*`` "
 "functions (an instance of :c:var:`PyMethodDescr_Type`, "
@@ -187,54 +191,36 @@ msgid ""
 "undefined."
 msgstr ""
 
-#: c-api/descriptor.rst:153
+#: c-api/descriptor.rst:158
 msgid ""
 "Return the name of the descriptor *descr* as a :term:`borrowed reference` to "
 "a :class:`str` object. This is available as :attr:`~definition.__name__` in "
 "Python."
 msgstr ""
 
-#: c-api/descriptor.rst:157
+#: c-api/descriptor.rst:162
 msgid ""
 "*descr* must be a descriptor object created by one of the ``PyDescr_New*`` "
 "functions. If not, the behavior is undefined."
 msgstr ""
 
-#: c-api/descriptor.rst:163
-msgid "This is a macro including the common fields for a descriptor object."
-msgstr ""
-
-#: c-api/descriptor.rst:166
-msgid ""
-"This was included in Python's C API by mistake; do not use it in extensions. "
-"For creating custom descriptor objects, create a class implementing the "
-"descriptor protocol (:c:member:`~PyTypeObject.tp_descr_get` and "
-":c:member:`~PyTypeObject.tp_descr_set`)."
-msgstr ""
-
-#: c-api/descriptor.rst:175
+#: c-api/descriptor.rst:167
 msgid "Built-in descriptors"
 msgstr ""
 
-#: c-api/descriptor.rst:179
-msgid ""
-"The type object for property objects. This is the same object as "
-":class:`property` in the Python layer."
-msgstr ""
-
-#: c-api/descriptor.rst:185
+#: c-api/descriptor.rst:171
 msgid ""
 "The type object for super objects. This is the same object as :class:`super` "
 "in the Python layer."
 msgstr ""
 
-#: c-api/descriptor.rst:191
+#: c-api/descriptor.rst:177
 msgid ""
 "The type of class method objects. This is the same object as "
 ":class:`classmethod` in the Python layer."
 msgstr ""
 
-#: c-api/descriptor.rst:197
+#: c-api/descriptor.rst:183
 msgid ""
 "The type object for C-level class method descriptor objects. This is the type"
 " of the descriptors created for :func:`classmethod` defined in C extension "
@@ -242,32 +228,32 @@ msgid ""
 " Python."
 msgstr ""
 
-#: c-api/descriptor.rst:205
+#: c-api/descriptor.rst:191
 msgid ""
 "Create a new :class:`classmethod` object wrapping *callable*. *callable* must"
 " be a callable object and must not be ``NULL``."
 msgstr ""
 
-#: c-api/descriptor.rst:208
+#: c-api/descriptor.rst:194
 msgid ""
 "On success, this function returns a :term:`strong reference` to a new class "
 "method descriptor. On failure, this function returns ``NULL`` with an "
 "exception set."
 msgstr ""
 
-#: c-api/descriptor.rst:215
+#: c-api/descriptor.rst:201
 msgid ""
 "The type of static method objects. This is the same object as "
 ":class:`staticmethod` in the Python layer."
 msgstr ""
 
-#: c-api/descriptor.rst:221
+#: c-api/descriptor.rst:207
 msgid ""
 "Create a new :class:`staticmethod` object wrapping *callable*. *callable* "
 "must be a callable object and must not be ``NULL``."
 msgstr ""
 
-#: c-api/descriptor.rst:224
+#: c-api/descriptor.rst:210
 msgid ""
 "On success, this function returns a :term:`strong reference` to a new static "
 "method descriptor. On failure, this function returns ``NULL`` with an "

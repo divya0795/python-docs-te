@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.15\n"
+"Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 12:56-0700\n"
+"POT-Creation-Date: 2026-11-16 02:05-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Telugu\n"
@@ -1207,7 +1207,7 @@ msgstr ""
 
 #: whatsnew/3.7.rst:844
 msgid ""
-"The :mod:`!cProfile` command line now accepts ``-m module_name`` as an "
+"The :mod:`cProfile` command line now accepts ``-m module_name`` as an "
 "alternative to script path.  (Contributed by Sanyam Khurana in "
 ":issue:`21862`.)"
 msgstr ""

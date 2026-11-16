@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.15\n"
+"Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 12:56-0700\n"
+"POT-Creation-Date: 2026-11-16 02:05-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Telugu\n"
@@ -22,17 +22,17 @@ msgstr ""
 msgid ":mod:`!sched` --- Event scheduler"
 msgstr ""
 
-#: library/sched.rst:7
+#: library/sched.rst:9
 msgid "**Source code:** :source:`Lib/sched.py`"
 msgstr ""
 
-#: library/sched.rst:13
+#: library/sched.rst:15
 msgid ""
 "The :mod:`!sched` module defines a class which implements a general purpose "
 "event scheduler:"
 msgstr ""
 
-#: library/sched.rst:18
+#: library/sched.rst:20
 msgid ""
 "The :class:`scheduler` class defines a generic interface to scheduling "
 "events. It needs two functions to actually deal with the \"outside world\" "
@@ -44,20 +44,20 @@ msgid ""
 "to run in multi-threaded applications."
 msgstr ""
 
-#: library/sched.rst:27
+#: library/sched.rst:29
 msgid "*timefunc* and *delayfunc* parameters are optional."
 msgstr ""
 
-#: library/sched.rst:30
+#: library/sched.rst:32
 msgid ""
 ":class:`scheduler` class can be safely used in multi-threaded environments."
 msgstr ""
 
-#: library/sched.rst:34
+#: library/sched.rst:36
 msgid "Example::"
 msgstr ""
 
-#: library/sched.rst:36
+#: library/sched.rst:38
 msgid ""
 ">>> import sched, time\n"
 ">>> s = sched.scheduler(time.time, time.sleep)\n"
@@ -85,15 +85,15 @@ msgid ""
 "1652342840.3697174"
 msgstr ""
 
-#: library/sched.rst:65
+#: library/sched.rst:67
 msgid "Scheduler Objects"
 msgstr ""
 
-#: library/sched.rst:67
+#: library/sched.rst:69
 msgid ":class:`scheduler` instances have the following methods and attributes:"
 msgstr ""
 
-#: library/sched.rst:72
+#: library/sched.rst:74
 msgid ""
 "Schedule a new event. The *time* argument should be a numeric type compatible"
 " with the return value of the *timefunc* function passed  to the constructor."
@@ -101,52 +101,52 @@ msgid ""
 "*priority*. A lower number represents a higher priority."
 msgstr ""
 
-#: library/sched.rst:77
+#: library/sched.rst:79
 msgid ""
 "Executing the event means executing ``action(*argument, **kwargs)``. "
 "*argument* is a sequence holding the positional arguments for *action*. "
 "*kwargs* is a dictionary holding the keyword arguments for *action*."
 msgstr ""
 
-#: library/sched.rst:81
+#: library/sched.rst:83
 msgid ""
 "Return value is an event which may be used for later cancellation of the "
 "event (see :meth:`cancel`)."
 msgstr ""
 
-#: library/sched.rst:84 library/sched.rst:97
+#: library/sched.rst:86 library/sched.rst:99
 msgid "*argument* parameter is optional."
 msgstr ""
 
-#: library/sched.rst:87 library/sched.rst:100
+#: library/sched.rst:89 library/sched.rst:102
 msgid "*kwargs* parameter was added."
 msgstr ""
 
-#: library/sched.rst:93
+#: library/sched.rst:95
 msgid ""
 "Schedule an event for *delay* more time units. Other than the relative time, "
 "the other arguments, the effect and the return value are the same as those "
 "for :meth:`enterabs`."
 msgstr ""
 
-#: library/sched.rst:105
+#: library/sched.rst:107
 msgid ""
 "Remove the event from the queue. If *event* is not an event currently in the "
 "queue, this method will raise a :exc:`ValueError`."
 msgstr ""
 
-#: library/sched.rst:111
+#: library/sched.rst:113
 msgid "Return ``True`` if the event queue is empty."
 msgstr ""
 
-#: library/sched.rst:116
+#: library/sched.rst:118
 msgid ""
 "Run all scheduled events. This method will wait  (using the *delayfunc* "
 "function passed to the constructor) for the next event, then execute it and "
 "so on until there are no more scheduled events."
 msgstr ""
 
-#: library/sched.rst:120
+#: library/sched.rst:122
 msgid ""
 "If *blocking* is false, immediately executes all events in the queue which "
 "have a time value less than or equal to the current *timefunc* value (if any)"
@@ -155,7 +155,7 @@ msgid ""
 "queue is empty, returns ``None``."
 msgstr ""
 
-#: library/sched.rst:126
+#: library/sched.rst:128
 msgid ""
 "Either *action* or *delayfunc* can raise an exception.  In either case, the "
 "scheduler will maintain a consistent state and propagate the exception.  If "
@@ -163,7 +163,7 @@ msgid ""
 " calls to :meth:`run`."
 msgstr ""
 
-#: library/sched.rst:131
+#: library/sched.rst:133
 msgid ""
 "If a sequence of events takes longer to run than the time available before "
 "the next event, the scheduler will simply fall behind.  No events will be "
@@ -171,17 +171,17 @@ msgid ""
 "longer pertinent."
 msgstr ""
 
-#: library/sched.rst:136
+#: library/sched.rst:138
 msgid "*blocking* parameter was added."
 msgstr ""
 
-#: library/sched.rst:141
+#: library/sched.rst:143
 msgid ""
 "Read-only attribute returning a list of upcoming events in the order they "
 "will be run.  Each event is shown as a :term:`named tuple` with the following"
 " fields:  time, priority, action, argument, kwargs."
 msgstr ""
 
-#: library/sched.rst:9
+#: library/sched.rst:11
 msgid "event scheduling"
 msgstr ""

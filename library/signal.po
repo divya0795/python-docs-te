@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.15\n"
+"Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 12:56-0700\n"
+"POT-Creation-Date: 2026-11-16 02:05-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Telugu\n"
@@ -166,9 +166,9 @@ msgstr ""
 #: library/signal.rst:261 library/signal.rst:267 library/signal.rst:273
 #: library/signal.rst:279 library/signal.rst:297 library/signal.rst:307
 #: library/signal.rst:386 library/signal.rst:425 library/signal.rst:449
-#: library/signal.rst:472 library/signal.rst:506 library/signal.rst:537
-#: library/signal.rst:548 library/signal.rst:603 library/signal.rst:645
-#: library/signal.rst:660 library/signal.rst:685 library/signal.rst:705
+#: library/signal.rst:472 library/signal.rst:506 library/signal.rst:536
+#: library/signal.rst:543 library/signal.rst:598 library/signal.rst:640
+#: library/signal.rst:655 library/signal.rst:680 library/signal.rst:700
 msgid "Availability"
 msgstr ""
 
@@ -574,7 +574,7 @@ msgstr ""
 msgid ""
 "Sets given interval timer (one of :const:`signal.ITIMER_REAL`, "
 ":const:`signal.ITIMER_VIRTUAL` or :const:`signal.ITIMER_PROF`) specified by "
-"*which* to fire after *seconds* (rounded up to microseconds, different from "
+"*which* to fire after *seconds* (float is accepted, different from "
 ":func:`alarm`) and after that every *interval* seconds (if *interval* is non-"
 "zero). The interval timer specified by *which* can be cleared by setting "
 "*seconds* to zero."
@@ -590,28 +590,20 @@ msgid ""
 msgstr ""
 
 #: library/signal.rst:531
-msgid ""
-"The old values are returned as a two-tuple of floats: (``delay``, "
-"``interval``)."
+msgid "The old values are returned as a tuple: (delay, interval)."
 msgstr ""
 
-#: library/signal.rst:534
+#: library/signal.rst:533
 msgid ""
 "Attempting to pass an invalid interval timer will cause an "
 ":exc:`ItimerError`."
 msgstr ""
 
-#: library/signal.rst:539
-msgid ""
-"Accepts any real numbers as *seconds* and *interval*, not only integers or "
-"floats."
-msgstr ""
-
-#: library/signal.rst:546
+#: library/signal.rst:541
 msgid "Returns current value of a given interval timer specified by *which*."
 msgstr ""
 
-#: library/signal.rst:553
+#: library/signal.rst:548
 msgid ""
 "Set the wakeup file descriptor to *fd*.  When a signal your program has "
 "registered a signal handler for is received, the signal number is written as "
@@ -621,7 +613,7 @@ msgid ""
 "signal to be fully processed."
 msgstr ""
 
-#: library/signal.rst:560
+#: library/signal.rst:555
 msgid ""
 "The old wakeup fd is returned (or -1 if file descriptor wakeup was not "
 "enabled).  If *fd* is -1, file descriptor wakeup is disabled. If not -1, *fd*"
@@ -629,7 +621,7 @@ msgid ""
 " before calling poll or select again."
 msgstr ""
 
-#: library/signal.rst:565 library/signal.rst:620
+#: library/signal.rst:560 library/signal.rst:615
 msgid ""
 "When threads are enabled, this function can only be called from :ref:`the "
 "main thread of the main interpreter <signals-and-threads>`; attempting to "
@@ -637,14 +629,14 @@ msgid ""
 "raised."
 msgstr ""
 
-#: library/signal.rst:570
+#: library/signal.rst:565
 msgid ""
 "There are two common ways to use this function. In both approaches, you use "
 "the fd to wake up when a signal arrives, but then they differ in how they "
 "determine *which* signal or signals have arrived."
 msgstr ""
 
-#: library/signal.rst:575
+#: library/signal.rst:570
 msgid ""
 "In the first approach, we read the data out of the fd's buffer, and the byte "
 "values give you the signal numbers. This is simple, but in rare cases it can "
@@ -655,7 +647,7 @@ msgid ""
 "to be printed to stderr when signals are lost."
 msgstr ""
 
-#: library/signal.rst:584
+#: library/signal.rst:579
 msgid ""
 "In the second approach, we use the wakeup fd *only* for wakeups, and ignore "
 "the actual byte values. In this case, all we care about is whether the fd's "
@@ -665,33 +657,33 @@ msgid ""
 "spurious warning messages."
 msgstr ""
 
-#: library/signal.rst:591
+#: library/signal.rst:586
 msgid "On Windows, the function now also supports socket handles."
 msgstr ""
 
-#: library/signal.rst:594
+#: library/signal.rst:589
 msgid "Added ``warn_on_full_buffer`` parameter."
 msgstr ""
 
-#: library/signal.rst:599
+#: library/signal.rst:594
 msgid ""
 "Change system call restart behaviour: if *flag* is :const:`False`, system "
 "calls will be restarted when interrupted by signal *signalnum*, otherwise "
 "system calls will be interrupted.  Returns nothing."
 msgstr ""
 
-#: library/signal.rst:605
+#: library/signal.rst:600
 msgid "See the man page :manpage:`siginterrupt(3)` for further information."
 msgstr ""
 
-#: library/signal.rst:607
+#: library/signal.rst:602
 msgid ""
 "Note that installing a signal handler with :func:`~signal.signal` will reset "
 "the restart behaviour to interruptible by implicitly calling "
 ":c:func:`!siginterrupt` with a true *flag* value for the given signal."
 msgstr ""
 
-#: library/signal.rst:614
+#: library/signal.rst:609
 msgid ""
 "Set the handler for signal *signalnum* to the function *handler*.  *handler* "
 "can be a callable Python object taking two arguments (see below), or one of "
@@ -701,7 +693,7 @@ msgid ""
 "further information.)"
 msgstr ""
 
-#: library/signal.rst:625
+#: library/signal.rst:620
 msgid ""
 "The *handler* is called with two arguments: the signal number and the current"
 " stack frame (``None`` or a frame object; for a description of frame objects,"
@@ -709,7 +701,7 @@ msgid ""
 "attribute descriptions in the :mod:`inspect` module)."
 msgstr ""
 
-#: library/signal.rst:630
+#: library/signal.rst:625
 msgid ""
 "On Windows, :func:`~signal.signal` can only be called with :const:`SIGABRT`, "
 ":const:`SIGFPE`, :const:`SIGILL`, :const:`SIGINT`, :const:`SIGSEGV`, "
@@ -719,22 +711,22 @@ msgid ""
 "defined as ``SIG*`` module level constant."
 msgstr ""
 
-#: library/signal.rst:641
+#: library/signal.rst:636
 msgid ""
 "Examine the set of signals that are pending for delivery to the calling "
 "thread (i.e., the signals which have been raised while blocked).  Return the "
 "set of the pending signals."
 msgstr ""
 
-#: library/signal.rst:647
+#: library/signal.rst:642
 msgid "See the man page :manpage:`sigpending(2)` for further information."
 msgstr ""
 
-#: library/signal.rst:649
+#: library/signal.rst:644
 msgid "See also :func:`pause`, :func:`pthread_sigmask` and :func:`sigwait`."
 msgstr ""
 
-#: library/signal.rst:656
+#: library/signal.rst:651
 msgid ""
 "Suspend execution of the calling thread until the delivery of one of the "
 "signals specified in the signal set *sigset*.  The function accepts the "
@@ -742,17 +734,17 @@ msgid ""
 "number."
 msgstr ""
 
-#: library/signal.rst:662
+#: library/signal.rst:657
 msgid "See the man page :manpage:`sigwait(3)` for further information."
 msgstr ""
 
-#: library/signal.rst:664
+#: library/signal.rst:659
 msgid ""
 "See also :func:`pause`, :func:`pthread_sigmask`, :func:`sigpending`, "
 ":func:`sigwaitinfo` and :func:`sigtimedwait`."
 msgstr ""
 
-#: library/signal.rst:672
+#: library/signal.rst:667
 msgid ""
 "Suspend execution of the calling thread until the delivery of one of the "
 "signals specified in the signal set *sigset*.  The function accepts the "
@@ -764,59 +756,55 @@ msgid ""
 "*sigset*."
 msgstr ""
 
-#: library/signal.rst:681
+#: library/signal.rst:676
 msgid ""
 "The return value is an object representing the data contained in the "
 "``siginfo_t`` structure, namely: ``si_signo``, ``si_code``, ``si_errno``, "
 "``si_pid``, ``si_uid``, ``si_status``, ``si_band``."
 msgstr ""
 
-#: library/signal.rst:687
+#: library/signal.rst:682
 msgid "See the man page :manpage:`sigwaitinfo(2)` for further information."
 msgstr ""
 
-#: library/signal.rst:689
+#: library/signal.rst:684
 msgid "See also :func:`pause`, :func:`sigwait` and :func:`sigtimedwait`."
 msgstr ""
 
-#: library/signal.rst:693
+#: library/signal.rst:688
 msgid ""
 "The function is now retried if interrupted by a signal not in *sigset* and "
 "the signal handler does not raise an exception (see :pep:`475` for the "
 "rationale)."
 msgstr ""
 
-#: library/signal.rst:701
+#: library/signal.rst:696
 msgid ""
 "Like :func:`sigwaitinfo`, but takes an additional *timeout* argument "
 "specifying a timeout. If *timeout* is specified as ``0``, a poll is "
 "performed. Returns :const:`None` if a timeout occurs."
 msgstr ""
 
-#: library/signal.rst:707
+#: library/signal.rst:702
 msgid "See the man page :manpage:`sigtimedwait(2)` for further information."
 msgstr ""
 
-#: library/signal.rst:709
+#: library/signal.rst:704
 msgid "See also :func:`pause`, :func:`sigwait` and :func:`sigwaitinfo`."
 msgstr ""
 
-#: library/signal.rst:713
+#: library/signal.rst:708
 msgid ""
 "The function is now retried with the recomputed *timeout* if interrupted by a"
 " signal not in *sigset* and the signal handler does not raise an exception "
 "(see :pep:`475` for the rationale)."
 msgstr ""
 
-#: library/signal.rst:718
-msgid "Accepts any real number as *timeout*, not only integer or float."
-msgstr ""
-
-#: library/signal.rst:725
+#: library/signal.rst:717
 msgid "Examples"
 msgstr ""
 
-#: library/signal.rst:727
+#: library/signal.rst:719
 msgid ""
 "Here is a minimal example program. It uses the :func:`alarm` function to "
 "limit the time spent waiting to open a file; this is useful if the file is "
@@ -826,7 +814,7 @@ msgid ""
 "signal will be sent, and the handler raises an exception. ::"
 msgstr ""
 
-#: library/signal.rst:734
+#: library/signal.rst:726
 msgid ""
 "import signal, os\n"
 "\n"
@@ -845,11 +833,11 @@ msgid ""
 "signal.alarm(0)          # Disable the alarm"
 msgstr ""
 
-#: library/signal.rst:751
+#: library/signal.rst:743
 msgid "Note on SIGPIPE"
 msgstr ""
 
-#: library/signal.rst:753
+#: library/signal.rst:745
 msgid ""
 "Piping output of your program to tools like :manpage:`head(1)` will cause a "
 ":const:`SIGPIPE` signal to be sent to your process when the receiver of its "
@@ -858,7 +846,7 @@ msgid ""
 "your entry point to catch this exception as follows::"
 msgstr ""
 
-#: library/signal.rst:759
+#: library/signal.rst:751
 msgid ""
 "import os\n"
 "import sys\n"
@@ -882,7 +870,7 @@ msgid ""
 "    main()"
 msgstr ""
 
-#: library/signal.rst:780
+#: library/signal.rst:772
 msgid ""
 "Do not set :const:`SIGPIPE`'s disposition to :const:`SIG_DFL` in order to "
 "avoid :exc:`BrokenPipeError`.  Doing that would cause your program to exit "
@@ -890,11 +878,11 @@ msgid ""
 " is still writing to it."
 msgstr ""
 
-#: library/signal.rst:789
+#: library/signal.rst:781
 msgid "Note on Signal Handlers and Exceptions"
 msgstr ""
 
-#: library/signal.rst:791
+#: library/signal.rst:783
 msgid ""
 "If a signal handler raises an exception, the exception will be propagated to "
 "the main thread and may be raised after any :term:`bytecode` instruction. "
@@ -905,11 +893,11 @@ msgid ""
 "program in an unexpected state."
 msgstr ""
 
-#: library/signal.rst:798
+#: library/signal.rst:790
 msgid "To illustrate this issue, consider the following code::"
 msgstr ""
 
-#: library/signal.rst:800
+#: library/signal.rst:792
 msgid ""
 "class SpamContext:\n"
 "    def __init__(self):\n"
@@ -927,7 +915,7 @@ msgid ""
 "        self.lock.release()"
 msgstr ""
 
-#: library/signal.rst:815
+#: library/signal.rst:807
 msgid ""
 "For many programs, especially those that merely want to exit on "
 ":exc:`KeyboardInterrupt`, this is not a problem, but applications that are "
@@ -938,7 +926,7 @@ msgid ""
 ":exc:`KeyboardInterrupt`::"
 msgstr ""
 
-#: library/signal.rst:823
+#: library/signal.rst:815
 msgid ""
 "import signal\n"
 "import socket\n"

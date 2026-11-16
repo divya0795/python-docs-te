@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.15\n"
+"Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 12:56-0700\n"
+"POT-Creation-Date: 2026-11-16 02:05-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Telugu\n"
@@ -892,15 +892,11 @@ msgid ""
 msgstr ""
 
 #: extending/newtypes.rst:564
-msgid "If this flag is set, :c:macro:`Py_TPFLAGS_HAVE_GC` should also be set."
-msgstr ""
-
-#: extending/newtypes.rst:566
 msgid ""
 "Concretely, here is how the statically declared type object would look::"
 msgstr ""
 
-#: extending/newtypes.rst:568
+#: extending/newtypes.rst:566
 msgid ""
 "static PyTypeObject TrivialType = {\n"
 "    PyVarObject_HEAD_INIT(NULL, 0)\n"
@@ -909,13 +905,13 @@ msgid ""
 "};"
 msgstr ""
 
-#: extending/newtypes.rst:575
+#: extending/newtypes.rst:573
 msgid ""
 "The only further addition is that ``tp_dealloc`` needs to clear any weak "
 "references (by calling :c:func:`PyObject_ClearWeakRefs`)::"
 msgstr ""
 
-#: extending/newtypes.rst:578
+#: extending/newtypes.rst:576
 msgid ""
 "static void\n"
 "Trivial_dealloc(PyObject *op)\n"
@@ -927,11 +923,11 @@ msgid ""
 "}"
 msgstr ""
 
-#: extending/newtypes.rst:589
+#: extending/newtypes.rst:587
 msgid "More Suggestions"
 msgstr ""
 
-#: extending/newtypes.rst:591
+#: extending/newtypes.rst:589
 msgid ""
 "In order to learn how to implement any specific method for your new data "
 "type, get the :term:`CPython` source code.  Go to the :file:`Objects` "
@@ -940,14 +936,14 @@ msgid ""
 "function you want to implement."
 msgstr ""
 
-#: extending/newtypes.rst:597
+#: extending/newtypes.rst:595
 msgid ""
 "When you need to verify that an object is a concrete instance of the type you"
 " are implementing, use the :c:func:`PyObject_TypeCheck` function.  A sample "
 "of its use might be something like the following::"
 msgstr ""
 
-#: extending/newtypes.rst:601
+#: extending/newtypes.rst:599
 msgid ""
 "if (!PyObject_TypeCheck(some_object, &MyType)) {\n"
 "    PyErr_SetString(PyExc_TypeError, \"arg #1 not a mything\");\n"
@@ -955,20 +951,20 @@ msgid ""
 "}"
 msgstr ""
 
-#: extending/newtypes.rst:607
+#: extending/newtypes.rst:605
 msgid "Download CPython source releases."
 msgstr ""
 
-#: extending/newtypes.rst:608
+#: extending/newtypes.rst:606
 msgid "https://www.python.org/downloads/source/"
 msgstr ""
 
-#: extending/newtypes.rst:610
+#: extending/newtypes.rst:608
 msgid ""
 "The CPython project on GitHub, where the CPython source code is developed."
 msgstr ""
 
-#: extending/newtypes.rst:611
+#: extending/newtypes.rst:609
 msgid "https://github.com/python/cpython"
 msgstr ""
 

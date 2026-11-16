@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.15\n"
+"Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 12:56-0700\n"
+"POT-Creation-Date: 2026-11-16 02:05-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Telugu\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid ":mod:`!test` --- Regression tests package for Python"
 msgstr ""
 
-#: library/test.rst:8
+#: library/test.rst:10
 msgid ""
 "The :mod:`!test` package is meant for internal use by Python only. It is "
 "documented for the benefit of the core developers of Python. Any use of this "
@@ -30,7 +30,7 @@ msgid ""
 " here can change or be removed without notice between releases of Python."
 msgstr ""
 
-#: library/test.rst:16
+#: library/test.rst:18
 msgid ""
 "The :mod:`!test` package contains all regression tests for Python as well as "
 "the modules :mod:`test.support` and :mod:`test.regrtest`. :mod:`test.support`"
@@ -38,7 +38,7 @@ msgid ""
 "suite."
 msgstr ""
 
-#: library/test.rst:21
+#: library/test.rst:23
 msgid ""
 "Each module in the :mod:`!test` package whose name starts with ``test_`` is a"
 " testing suite for a specific module or feature. All new tests should be "
@@ -47,27 +47,27 @@ msgid ""
 "printed to ``sys.stdout``; this style of test is considered deprecated."
 msgstr ""
 
-#: library/test.rst:30
+#: library/test.rst:32
 msgid "Module :mod:`unittest`"
 msgstr ""
 
-#: library/test.rst:31
+#: library/test.rst:33
 msgid "Writing PyUnit regression tests."
 msgstr ""
 
-#: library/test.rst:33
+#: library/test.rst:35
 msgid "Module :mod:`doctest`"
 msgstr ""
 
-#: library/test.rst:34
+#: library/test.rst:36
 msgid "Tests embedded in documentation strings."
 msgstr ""
 
-#: library/test.rst:40
+#: library/test.rst:42
 msgid "Writing Unit Tests for the :mod:`!test` package"
 msgstr ""
 
-#: library/test.rst:42
+#: library/test.rst:44
 msgid ""
 "It is preferred that tests that use the :mod:`unittest` module follow a few "
 "guidelines. One is to name the test module by starting it with ``test_`` and "
@@ -81,11 +81,11 @@ msgid ""
 "what test is being run is not stated."
 msgstr ""
 
-#: library/test.rst:53
+#: library/test.rst:55
 msgid "A basic boilerplate is often used::"
 msgstr ""
 
-#: library/test.rst:55
+#: library/test.rst:57
 msgid ""
 "import unittest\n"
 "from test import support\n"
@@ -119,27 +119,27 @@ msgid ""
 "    unittest.main()"
 msgstr ""
 
-#: library/test.rst:86
+#: library/test.rst:88
 msgid ""
 "This code pattern allows the testing suite to be run by :mod:`test.regrtest`,"
 " on its own as a script that supports the :mod:`unittest` CLI, or via the "
 "``python -m unittest`` CLI."
 msgstr ""
 
-#: library/test.rst:90
+#: library/test.rst:92
 msgid ""
 "The goal for regression testing is to try to break code. This leads to a few "
 "guidelines to be followed:"
 msgstr ""
 
-#: library/test.rst:93
+#: library/test.rst:95
 msgid ""
 "The testing suite should exercise all classes, functions, and constants. This"
 " includes not just the external API that is to be presented to the outside "
 "world but also \"private\" code."
 msgstr ""
 
-#: library/test.rst:97
+#: library/test.rst:99
 msgid ""
 "Whitebox testing (examining the code being tested when the tests are being "
 "written) is preferred. Blackbox testing (testing only the published user "
@@ -147,53 +147,53 @@ msgid ""
 "are tested."
 msgstr ""
 
-#: library/test.rst:102
+#: library/test.rst:104
 msgid ""
 "Make sure all possible values are tested including invalid ones. This makes "
 "sure that not only all valid values are acceptable but also that improper "
 "values are handled correctly."
 msgstr ""
 
-#: library/test.rst:106
+#: library/test.rst:108
 msgid ""
 "Exhaust as many code paths as possible. Test where branching occurs and thus "
 "tailor input to make sure as many different paths through the code are taken."
 msgstr ""
 
-#: library/test.rst:109
+#: library/test.rst:111
 msgid ""
 "Add an explicit test for any bugs discovered for the tested code. This will "
 "make sure that the error does not crop up again if the code is changed in the"
 " future."
 msgstr ""
 
-#: library/test.rst:113
+#: library/test.rst:115
 msgid ""
 "Make sure to clean up after your tests (such as close and remove all "
 "temporary files)."
 msgstr ""
 
-#: library/test.rst:116
+#: library/test.rst:118
 msgid ""
 "If a test is dependent on a specific condition of the operating system then "
 "verify the condition already exists before attempting the test."
 msgstr ""
 
-#: library/test.rst:119
+#: library/test.rst:121
 msgid ""
 "Import as few modules as possible and do it as soon as possible. This "
 "minimizes external dependencies of tests and also minimizes possible "
 "anomalous behavior from side-effects of importing a module."
 msgstr ""
 
-#: library/test.rst:123
+#: library/test.rst:125
 msgid ""
 "Try to maximize code reuse. On occasion, tests will vary by something as "
 "small as what type of input is used. Minimize code duplication by subclassing"
 " a basic test class with a class that specifies the input::"
 msgstr ""
 
-#: library/test.rst:127
+#: library/test.rst:129
 msgid ""
 "class TestFuncAcceptsSequencesMixin:\n"
 "\n"
@@ -212,7 +212,7 @@ msgid ""
 "    arg = (1, 2, 3)"
 msgstr ""
 
-#: library/test.rst:143
+#: library/test.rst:145
 msgid ""
 "When using this pattern, remember that all classes that inherit from "
 ":class:`unittest.TestCase` are run as tests.  The "
@@ -221,19 +221,19 @@ msgid ""
 ":class:`unittest.TestCase`."
 msgstr ""
 
-#: library/test.rst:151
+#: library/test.rst:153
 msgid "Test Driven Development"
 msgstr ""
 
-#: library/test.rst:152
+#: library/test.rst:154
 msgid "A book by Kent Beck on writing tests before code."
 msgstr ""
 
-#: library/test.rst:158
+#: library/test.rst:160
 msgid "Running tests using the command-line interface"
 msgstr ""
 
-#: library/test.rst:163
+#: library/test.rst:165
 msgid ""
 "The :mod:`!test` package can be run as a script to drive Python's regression "
 "test suite, thanks to the :option:`-m` option: :program:`python -m test`. "
@@ -251,7 +251,7 @@ msgid ""
 "whether the test passed or failed."
 msgstr ""
 
-#: library/test.rst:178
+#: library/test.rst:180
 msgid ""
 "Running :mod:`!test` directly allows what resources are available for tests "
 "to use to be set. You do this by using the ``-u`` command-line option. "
@@ -264,7 +264,7 @@ msgid ""
 "command-line options, run :program:`python -m test -h`."
 msgstr ""
 
-#: library/test.rst:189
+#: library/test.rst:191
 msgid ""
 "Some other ways to execute the regression tests depend on what platform the "
 "tests are being executed on. On Unix, you can run :program:`make test` at the"
@@ -273,165 +273,165 @@ msgid ""
 " tests."
 msgstr ""
 
-#: library/test.rst:195
+#: library/test.rst:197
 msgid ""
 "Output is colorized by default and can be :ref:`controlled using environment "
 "variables <using-on-controlling-color>`."
 msgstr ""
 
-#: library/test.rst:201
+#: library/test.rst:203
 msgid ":mod:`!test.support` --- Utilities for the Python test suite"
 msgstr ""
 
-#: library/test.rst:207
+#: library/test.rst:209
 msgid ""
 "The :mod:`!test.support` module provides support for Python's regression test"
 " suite."
 msgstr ""
 
-#: library/test.rst:212
+#: library/test.rst:214
 msgid ""
 ":mod:`!test.support` is not a public module.  It is documented here to help "
 "Python developers write tests.  The API of this module is subject to change "
 "without backwards compatibility concerns between releases."
 msgstr ""
 
-#: library/test.rst:217
+#: library/test.rst:219
 msgid "This module defines the following exceptions:"
 msgstr ""
 
-#: library/test.rst:221
+#: library/test.rst:223
 msgid ""
 "Exception to be raised when a test fails. This is deprecated in favor of "
 ":mod:`unittest`\\ -based tests and :class:`unittest.TestCase`'s assertion "
 "methods."
 msgstr ""
 
-#: library/test.rst:228
+#: library/test.rst:230
 msgid ""
 "Subclass of :exc:`unittest.SkipTest`. Raised when a resource (such as a "
 "network connection) is not available. Raised by the :func:`requires` "
 "function."
 msgstr ""
 
-#: library/test.rst:233
+#: library/test.rst:235
 msgid "The :mod:`!test.support` module defines the following constants:"
 msgstr ""
 
-#: library/test.rst:237
+#: library/test.rst:239
 msgid ""
 "``True`` when verbose output is enabled. Should be checked when more detailed"
 " information is desired about a running test. *verbose* is set by "
 ":mod:`test.regrtest`."
 msgstr ""
 
-#: library/test.rst:244
+#: library/test.rst:246
 msgid "``True`` if the running interpreter is Jython."
 msgstr ""
 
-#: library/test.rst:249
+#: library/test.rst:251
 msgid "``True`` if ``sys.platform`` is ``android``."
 msgstr ""
 
-#: library/test.rst:254
+#: library/test.rst:256
 msgid "``True`` if ``sys.platform`` is ``emscripten``."
 msgstr ""
 
-#: library/test.rst:259
+#: library/test.rst:261
 msgid "``True`` if ``sys.platform`` is ``wasi``."
 msgstr ""
 
-#: library/test.rst:264
+#: library/test.rst:266
 msgid "``True`` if ``sys.platform`` is ``ios``, ``tvos``, or ``watchos``."
 msgstr ""
 
-#: library/test.rst:269
+#: library/test.rst:271
 msgid ""
 "``True`` if ``sys.platform`` is ``darwin`` or ``is_apple_mobile`` is "
 "``True``."
 msgstr ""
 
-#: library/test.rst:274
+#: library/test.rst:276
 msgid "Path for shell if not on Windows; otherwise ``None``."
 msgstr ""
 
-#: library/test.rst:279
+#: library/test.rst:281
 msgid ""
 "Timeout in seconds for tests using a network server listening on the network "
 "local loopback interface like ``127.0.0.1``."
 msgstr ""
 
-#: library/test.rst:282
+#: library/test.rst:284
 msgid ""
 "The timeout is long enough to prevent test failure: it takes into account "
 "that the client and the server can run in different threads or even different"
 " processes."
 msgstr ""
 
-#: library/test.rst:286
+#: library/test.rst:288
 msgid ""
 "The timeout should be long enough for :meth:`~socket.socket.connect`, "
 ":meth:`~socket.socket.recv` and :meth:`~socket.socket.send` methods of "
 ":class:`socket.socket`."
 msgstr ""
 
-#: library/test.rst:290
+#: library/test.rst:292
 msgid "Its default value is 10 seconds."
 msgstr ""
 
-#: library/test.rst:292
+#: library/test.rst:294
 msgid "See also :data:`INTERNET_TIMEOUT`."
 msgstr ""
 
-#: library/test.rst:297
+#: library/test.rst:299
 msgid "Timeout in seconds for network requests going to the internet."
 msgstr ""
 
-#: library/test.rst:299
+#: library/test.rst:301
 msgid ""
 "The timeout is short enough to prevent a test to wait for too long if the "
 "internet request is blocked for whatever reason."
 msgstr ""
 
-#: library/test.rst:302
+#: library/test.rst:304
 msgid ""
 "Usually, a timeout using :data:`INTERNET_TIMEOUT` should not mark a test as "
 "failed, but skip the test instead: see "
 ":func:`~test.support.socket_helper.transient_internet`."
 msgstr ""
 
-#: library/test.rst:306
+#: library/test.rst:308
 msgid "Its default value is 1 minute."
 msgstr ""
 
-#: library/test.rst:308
+#: library/test.rst:310
 msgid "See also :data:`LOOPBACK_TIMEOUT`."
 msgstr ""
 
-#: library/test.rst:313
+#: library/test.rst:315
 msgid "Timeout in seconds to mark a test as failed if the test takes \"too long\"."
 msgstr ""
 
-#: library/test.rst:315
+#: library/test.rst:317
 msgid ""
 "The timeout value depends on the regrtest ``--timeout`` command line option."
 msgstr ""
 
-#: library/test.rst:317
+#: library/test.rst:319
 msgid ""
 "If a test using :data:`SHORT_TIMEOUT` starts to fail randomly on slow "
 "buildbots, use :data:`LONG_TIMEOUT` instead."
 msgstr ""
 
-#: library/test.rst:320
+#: library/test.rst:322
 msgid "Its default value is 30 seconds."
 msgstr ""
 
-#: library/test.rst:325
+#: library/test.rst:327
 msgid "Timeout in seconds to detect when a test hangs."
 msgstr ""
 
-#: library/test.rst:327
+#: library/test.rst:329
 msgid ""
 "It is long enough to reduce the risk of test failure on the slowest Python "
 "buildbots. It should not be used to mark a test as failed if the test takes "
@@ -439,144 +439,144 @@ msgid ""
 "command line option."
 msgstr ""
 
-#: library/test.rst:332
+#: library/test.rst:334
 msgid "Its default value is 5 minutes."
 msgstr ""
 
-#: library/test.rst:334
+#: library/test.rst:336
 msgid ""
 "See also :data:`LOOPBACK_TIMEOUT`, :data:`INTERNET_TIMEOUT` and "
 ":data:`SHORT_TIMEOUT`."
 msgstr ""
 
-#: library/test.rst:340
+#: library/test.rst:342
 msgid "Set when tests can be skipped when they are not useful for PGO."
 msgstr ""
 
-#: library/test.rst:345
+#: library/test.rst:347
 msgid ""
 "A constant that is likely larger than the underlying OS pipe buffer size, to "
 "make writes blocking."
 msgstr ""
 
-#: library/test.rst:351
+#: library/test.rst:353
 msgid ""
 "``True`` if Python was built with the :c:macro:`Py_DEBUG` macro defined, that"
 " is, if Python was :ref:`built in debug mode <debug-build>`."
 msgstr ""
 
-#: library/test.rst:360
+#: library/test.rst:362
 msgid ""
 "A constant that is likely larger than the underlying OS socket buffer size, "
 "to make writes blocking."
 msgstr ""
 
-#: library/test.rst:366
+#: library/test.rst:368
 msgid "Set to the top level directory that contains :mod:`!test.support`."
 msgstr ""
 
-#: library/test.rst:371
+#: library/test.rst:373
 msgid "Set to the top level directory for the test package."
 msgstr ""
 
-#: library/test.rst:376
+#: library/test.rst:378
 msgid "Set to the ``data`` directory within the test package."
 msgstr ""
 
-#: library/test.rst:381
+#: library/test.rst:383
 msgid "Set to :data:`sys.maxsize` for big memory tests."
 msgstr ""
 
-#: library/test.rst:386
+#: library/test.rst:388
 msgid ""
 "Set by :func:`set_memlimit` as the memory limit for big memory tests. Limited"
 " by :data:`MAX_Py_ssize_t`."
 msgstr ""
 
-#: library/test.rst:392
+#: library/test.rst:394
 msgid ""
 "Set by :func:`set_memlimit` as the memory limit for big memory tests.  Not "
 "limited by :data:`MAX_Py_ssize_t`."
 msgstr ""
 
-#: library/test.rst:398
+#: library/test.rst:400
 msgid ""
 "Set to ``True`` if Python is built without docstrings (the "
 ":c:macro:`WITH_DOC_STRINGS` macro is not defined). See the :option:`configure"
 " --without-doc-strings <--without-doc-strings>` option."
 msgstr ""
 
-#: library/test.rst:402
+#: library/test.rst:404
 msgid "See also the :data:`HAVE_DOCSTRINGS` variable."
 msgstr ""
 
-#: library/test.rst:407
+#: library/test.rst:409
 msgid ""
 "Set to ``True`` if function docstrings are available. See the :option:`python"
 " -OO <-O>` option, which strips docstrings of functions implemented in "
 "Python."
 msgstr ""
 
-#: library/test.rst:410
+#: library/test.rst:412
 msgid "See also the :data:`MISSING_C_DOCSTRINGS` variable."
 msgstr ""
 
-#: library/test.rst:415
+#: library/test.rst:417
 msgid "Define the URL of a dedicated HTTP server for the network tests."
 msgstr ""
 
-#: library/test.rst:420
+#: library/test.rst:422
 msgid "Object that is equal to anything.  Used to test mixed type comparison."
 msgstr ""
 
-#: library/test.rst:425
+#: library/test.rst:427
 msgid ""
 "Object that is not equal to anything (even to :data:`ALWAYS_EQ`). Used to "
 "test mixed type comparison."
 msgstr ""
 
-#: library/test.rst:431
+#: library/test.rst:433
 msgid ""
 "Object that is greater than anything (except itself). Used to test mixed type"
 " comparison."
 msgstr ""
 
-#: library/test.rst:437
+#: library/test.rst:439
 msgid ""
 "Object that is less than anything (except itself). Used to test mixed type "
 "comparison."
 msgstr ""
 
-#: library/test.rst:441
+#: library/test.rst:443
 msgid "The :mod:`!test.support` module defines the following functions:"
 msgstr ""
 
-#: library/test.rst:445
+#: library/test.rst:447
 msgid "Run the loop body until ``break`` stops the loop."
 msgstr ""
 
-#: library/test.rst:447
+#: library/test.rst:449
 msgid ""
 "After *timeout* seconds, raise an :exc:`AssertionError` if *error* is true, "
 "or just stop the loop if *error* is false."
 msgstr ""
 
-#: library/test.rst:450
+#: library/test.rst:452
 msgid "Example::"
 msgstr ""
 
-#: library/test.rst:452
+#: library/test.rst:454
 msgid ""
 "for _ in support.busy_retry(support.SHORT_TIMEOUT):\n"
 "    if check():\n"
 "        break"
 msgstr ""
 
-#: library/test.rst:456 library/test.rst:480
+#: library/test.rst:458 library/test.rst:482
 msgid "Example of error=False usage::"
 msgstr ""
 
-#: library/test.rst:458
+#: library/test.rst:460
 msgid ""
 "for _ in support.busy_retry(support.SHORT_TIMEOUT, error=False):\n"
 "    if check():\n"
@@ -585,33 +585,33 @@ msgid ""
 "    raise RuntimeError('my custom error')"
 msgstr ""
 
-#: library/test.rst:466
+#: library/test.rst:468
 msgid "Wait strategy that applies exponential backoff."
 msgstr ""
 
-#: library/test.rst:468
+#: library/test.rst:470
 msgid ""
 "Run the loop body until ``break`` stops the loop. Sleep at each loop "
 "iteration, but not at the first iteration. The sleep delay is doubled at each"
 " iteration (up to *max_delay* seconds)."
 msgstr ""
 
-#: library/test.rst:472
+#: library/test.rst:474
 msgid "See :func:`busy_retry` documentation for the parameters usage."
 msgstr ""
 
-#: library/test.rst:474
+#: library/test.rst:476
 msgid "Example raising an exception after SHORT_TIMEOUT seconds::"
 msgstr ""
 
-#: library/test.rst:476
+#: library/test.rst:478
 msgid ""
 "for _ in support.sleeping_retry(support.SHORT_TIMEOUT):\n"
 "    if check():\n"
 "        break"
 msgstr ""
 
-#: library/test.rst:482
+#: library/test.rst:484
 msgid ""
 "for _ in support.sleeping_retry(support.SHORT_TIMEOUT, error=False):\n"
 "    if check():\n"
@@ -620,29 +620,29 @@ msgid ""
 "    raise RuntimeError('my custom error')"
 msgstr ""
 
-#: library/test.rst:490
+#: library/test.rst:492
 msgid ""
 "Return ``True`` if *resource* is enabled and available. The list of available"
 " resources is only set when :mod:`test.regrtest` is executing the tests."
 msgstr ""
 
-#: library/test.rst:497
+#: library/test.rst:499
 msgid ""
 "Return the value specified for *resource* (as :samp:`-u {resource}={value}`)."
 " Return ``None`` if *resource* is disabled or no value is specified."
 msgstr ""
 
-#: library/test.rst:503
+#: library/test.rst:505
 msgid "Return ``True`` if Python was not built with ``-O0`` or ``-Og``."
 msgstr ""
 
-#: library/test.rst:508
+#: library/test.rst:510
 msgid ""
 "Return ``True`` if Python was built with :ref:`pymalloc <pymalloc>` enabled "
 "and is not a :term:`free-threaded build`."
 msgstr ""
 
-#: library/test.rst:514
+#: library/test.rst:516
 msgid ""
 "Raise :exc:`ResourceDenied` if *resource* is not available. *msg* is the "
 "argument to :exc:`ResourceDenied` if it is raised. Always returns ``True`` if"
@@ -650,88 +650,88 @@ msgid ""
 "are executed by :mod:`test.regrtest`."
 msgstr ""
 
-#: library/test.rst:522
+#: library/test.rst:524
 msgid "Return a repr of *dict* with keys sorted."
 msgstr ""
 
-#: library/test.rst:527
+#: library/test.rst:529
 msgid ""
 "Return the path to the file named *filename*. If no match is found *filename*"
 " is returned. This does not equal a failure since it could be the path to the"
 " file."
 msgstr ""
 
-#: library/test.rst:531
+#: library/test.rst:533
 msgid ""
 "Setting *subdir* indicates a relative path to use to find the file rather "
 "than looking directly in the path directories."
 msgstr ""
 
-#: library/test.rst:537
+#: library/test.rst:539
 msgid "Get size of a page in bytes."
 msgstr ""
 
-#: library/test.rst:544
+#: library/test.rst:546
 msgid ""
 "Set the :func:`sys.setswitchinterval` to the given *interval*.  Defines a "
 "minimum interval for Android systems to prevent the system from hanging."
 msgstr ""
 
-#: library/test.rst:550
+#: library/test.rst:552
 msgid ""
 "Use this check to guard CPython's implementation-specific tests or to run "
 "them only on the implementations guarded by the arguments.  This function "
 "returns ``True`` or ``False`` depending on the host platform. Example usage::"
 msgstr ""
 
-#: library/test.rst:555
+#: library/test.rst:557
 msgid ""
 "check_impl_detail()               # Only on CPython (default).\n"
 "check_impl_detail(jython=True)    # Only on Jython.\n"
 "check_impl_detail(cpython=False)  # Everywhere except CPython."
 msgstr ""
 
-#: library/test.rst:562
+#: library/test.rst:564
 msgid ""
 "Set the values for :data:`max_memuse` and :data:`real_max_memuse` for big "
 "memory tests."
 msgstr ""
 
-#: library/test.rst:568
+#: library/test.rst:570
 msgid ""
 "Store the value from *stdout*.  It is meant to hold the stdout at the time "
 "the regrtest began."
 msgstr ""
 
-#: library/test.rst:574
+#: library/test.rst:576
 msgid ""
 "Return the original stdout set by :func:`record_original_stdout` or "
 "``sys.stdout`` if it's not set."
 msgstr ""
 
-#: library/test.rst:580
+#: library/test.rst:582
 msgid ""
 "Return a list of command line arguments reproducing the current settings in "
 "``sys.flags`` and ``sys.warnoptions``."
 msgstr ""
 
-#: library/test.rst:586
+#: library/test.rst:588
 msgid ""
 "Return a list of command line arguments reproducing the current optimization "
 "settings in ``sys.flags``."
 msgstr ""
 
-#: library/test.rst:594
+#: library/test.rst:596
 msgid ""
 "A context managers that temporarily replaces the named stream with "
 ":class:`io.StringIO` object."
 msgstr ""
 
-#: library/test.rst:597
+#: library/test.rst:599
 msgid "Example use with output streams::"
 msgstr ""
 
-#: library/test.rst:599
+#: library/test.rst:601
 msgid ""
 "with captured_stdout() as stdout, captured_stderr() as stderr:\n"
 "    print(\"hello\")\n"
@@ -740,11 +740,11 @@ msgid ""
 "assert stderr.getvalue() == \"error\\n\""
 msgstr ""
 
-#: library/test.rst:605
+#: library/test.rst:607
 msgid "Example use with input stream::"
 msgstr ""
 
-#: library/test.rst:607
+#: library/test.rst:609
 msgid ""
 "with captured_stdin() as stdin:\n"
 "    stdin.write('hello\\n')\n"
@@ -754,11 +754,11 @@ msgid ""
 "self.assertEqual(captured, \"hello\")"
 msgstr ""
 
-#: library/test.rst:617
+#: library/test.rst:619
 msgid "A context manager that temporary disables :mod:`faulthandler`."
 msgstr ""
 
-#: library/test.rst:622
+#: library/test.rst:624
 msgid ""
 "Force as many objects as possible to be collected.  This is needed because "
 "timely deallocation is not guaranteed by the garbage collector.  This means "
@@ -766,124 +766,124 @@ msgid ""
 "remain alive for longer than expected."
 msgstr ""
 
-#: library/test.rst:630
+#: library/test.rst:632
 msgid ""
 "A context manager that disables the garbage collector on entry. On exit, the "
 "garbage collector is restored to its prior state."
 msgstr ""
 
-#: library/test.rst:636
+#: library/test.rst:638
 msgid "Context manager to swap out an attribute with a new object."
 msgstr ""
 
-#: library/test.rst:638 library/test.rst:656 library/test.rst:913
-#: library/test.rst:1445
+#: library/test.rst:640 library/test.rst:658 library/test.rst:915
+#: library/test.rst:1447
 msgid "Usage::"
 msgstr ""
 
-#: library/test.rst:640
+#: library/test.rst:642
 msgid ""
 "with swap_attr(obj, \"attr\", 5):\n"
 "    ..."
 msgstr ""
 
-#: library/test.rst:643
+#: library/test.rst:645
 msgid ""
 "This will set ``obj.attr`` to 5 for the duration of the ``with`` block, "
 "restoring the old value at the end of the block.  If ``attr`` doesn't exist "
 "on ``obj``, it will be created and then deleted at the end of the block."
 msgstr ""
 
-#: library/test.rst:648 library/test.rst:666
+#: library/test.rst:650 library/test.rst:668
 msgid ""
 "The old value (or ``None`` if it doesn't exist) will be assigned to the "
 "target of the \"as\" clause, if there is one."
 msgstr ""
 
-#: library/test.rst:654
+#: library/test.rst:656
 msgid "Context manager to swap out an item with a new object."
 msgstr ""
 
-#: library/test.rst:658
+#: library/test.rst:660
 msgid ""
 "with swap_item(obj, \"item\", 5):\n"
 "    ..."
 msgstr ""
 
-#: library/test.rst:661
+#: library/test.rst:663
 msgid ""
 "This will set ``obj[\"item\"]`` to 5 for the duration of the ``with`` block, "
 "restoring the old value at the end of the block. If ``item`` doesn't exist on"
 " ``obj``, it will be created and then deleted at the end of the block."
 msgstr ""
 
-#: library/test.rst:672
+#: library/test.rst:674
 msgid ""
 "Call the ``flush()`` method on :data:`sys.stdout` and then on "
 ":data:`sys.stderr`. It can be used to make sure that the logs order is "
 "consistent before writing into stderr."
 msgstr ""
 
-#: library/test.rst:681
+#: library/test.rst:683
 msgid ""
 "Print a warning into :data:`sys.__stderr__`. Format the message as: "
 "``f\"Warning -- {msg}\"``. If *msg* is made of multiple lines, add "
 "``\"Warning -- \"`` prefix to each line."
 msgstr ""
 
-#: library/test.rst:690
+#: library/test.rst:692
 msgid ""
 "Wait until process *pid* completes and check that the process exit code is "
 "*exitcode*."
 msgstr ""
 
-#: library/test.rst:693
+#: library/test.rst:695
 msgid ""
 "Raise an :exc:`AssertionError` if the process exit code is not equal to "
 "*exitcode*."
 msgstr ""
 
-#: library/test.rst:696
+#: library/test.rst:698
 msgid ""
 "If the process runs longer than *timeout* seconds (:data:`SHORT_TIMEOUT` by "
 "default), kill the process and raise an :exc:`AssertionError`. The timeout "
 "feature is not available on Windows."
 msgstr ""
 
-#: library/test.rst:705
+#: library/test.rst:707
 msgid ""
 "Return the size of the :c:type:`PyObject` whose structure members are defined"
 " by *fmt*. The returned value includes the size of the Python object header "
 "and alignment."
 msgstr ""
 
-#: library/test.rst:711
+#: library/test.rst:713
 msgid ""
 "Return the size of the :c:type:`PyVarObject` whose structure members are "
 "defined by *fmt*. The returned value includes the size of the Python object "
 "header and alignment."
 msgstr ""
 
-#: library/test.rst:717
+#: library/test.rst:719
 msgid ""
 "For testcase *test*, assert that the ``sys.getsizeof`` for *o* plus the GC "
 "header size equals *size*."
 msgstr ""
 
-#: library/test.rst:723
+#: library/test.rst:725
 msgid ""
 "A decorator to conditionally mark tests with "
 ":deco:`unittest.expectedFailure`. Any use of this decorator should have an "
 "associated comment identifying the relevant tracker issue."
 msgstr ""
 
-#: library/test.rst:730
+#: library/test.rst:732
 msgid ""
 "A decorator that skips the decorated test on TLS certification validation "
 "failures."
 msgstr ""
 
-#: library/test.rst:735
+#: library/test.rst:737
 msgid ""
 "A decorator for running a function in a different locale, correctly resetting"
 " it after it has finished.  *catstr* is the locale category as a string (for "
@@ -891,91 +891,91 @@ msgid ""
 "and the first valid locale will be used."
 msgstr ""
 
-#: library/test.rst:743
+#: library/test.rst:745
 msgid ""
 "A decorator for running a function in a specific timezone, correctly "
 "resetting it after it has finished."
 msgstr ""
 
-#: library/test.rst:749
+#: library/test.rst:751
 msgid ""
 "Decorator for the minimum version when running test on FreeBSD.  If the "
 "FreeBSD version is less than the minimum, the test is skipped."
 msgstr ""
 
-#: library/test.rst:755
+#: library/test.rst:757
 msgid ""
 "Decorator for the minimum version when running test on Linux.  If the Linux "
 "version is less than the minimum, the test is skipped."
 msgstr ""
 
-#: library/test.rst:761
+#: library/test.rst:763
 msgid ""
 "Decorator for the minimum version when running test on macOS.  If the macOS "
 "version is less than the minimum, the test is skipped."
 msgstr ""
 
-#: library/test.rst:767
+#: library/test.rst:769
 msgid ""
 "Decorator for skipping tests on the free-threaded build.  If the :term:`GIL` "
 "is disabled, the test is skipped."
 msgstr ""
 
-#: library/test.rst:773
+#: library/test.rst:775
 msgid "Decorator for skipping tests on non-IEEE 754 platforms."
 msgstr ""
 
-#: library/test.rst:778
+#: library/test.rst:780
 msgid "Decorator for skipping tests if :mod:`zlib` doesn't exist."
 msgstr ""
 
-#: library/test.rst:783
+#: library/test.rst:785
 msgid "Decorator for skipping tests if :mod:`gzip` doesn't exist."
 msgstr ""
 
-#: library/test.rst:788
+#: library/test.rst:790
 msgid "Decorator for skipping tests if :mod:`bz2` doesn't exist."
 msgstr ""
 
-#: library/test.rst:793
+#: library/test.rst:795
 msgid "Decorator for skipping tests if :mod:`lzma` doesn't exist."
 msgstr ""
 
-#: library/test.rst:798
+#: library/test.rst:800
 msgid "Decorator for skipping tests if *resource* is not available."
 msgstr ""
 
-#: library/test.rst:803
+#: library/test.rst:805
 msgid "Decorator for only running the test if :data:`HAVE_DOCSTRINGS`."
 msgstr ""
 
-#: library/test.rst:808
+#: library/test.rst:810
 msgid ""
 "Decorator for only running the test if :ref:`Limited C API <limited-c-api>` "
 "is available."
 msgstr ""
 
-#: library/test.rst:814
+#: library/test.rst:816
 msgid "Decorator for tests only applicable to CPython."
 msgstr ""
 
-#: library/test.rst:819
+#: library/test.rst:821
 msgid ""
 "Decorator for invoking :func:`check_impl_detail` on *guards*.  If that "
 "returns ``False``, then uses *msg* as the reason for skipping the test."
 msgstr ""
 
-#: library/test.rst:824
+#: library/test.rst:826
 msgid ""
 "Decorator for marking tests as thread-unsafe.  This test always runs in one "
 "thread even when invoked with ``--parallel-threads``."
 msgstr ""
 
-#: library/test.rst:830
+#: library/test.rst:832
 msgid "Decorator to temporarily turn off tracing for the duration of the test."
 msgstr ""
 
-#: library/test.rst:835
+#: library/test.rst:837
 msgid ""
 "Decorator for tests which involve reference counting.  The decorator does not"
 " run the test if it is not run by CPython.  Any trace function is unset for "
@@ -983,11 +983,11 @@ msgid ""
 "function."
 msgstr ""
 
-#: library/test.rst:843
+#: library/test.rst:845
 msgid "Decorator for bigmem tests."
 msgstr ""
 
-#: library/test.rst:845
+#: library/test.rst:847
 msgid ""
 "*size* is a requested size for the test (in arbitrary, test-interpreted "
 "units.)  *memuse* is the number of bytes per unit for the test, or a good "
@@ -995,7 +995,7 @@ msgid ""
 "each, could be decorated with ``@bigmemtest(size=_4G, memuse=2)``."
 msgstr ""
 
-#: library/test.rst:850
+#: library/test.rst:852
 msgid ""
 "The *size* argument is normally passed to the decorated test method as an "
 "extra argument.  If *dry_run* is ``True``, the value passed to the test "
@@ -1003,11 +1003,11 @@ msgid ""
 "means the test doesn't support dummy runs when ``-M`` is not specified."
 msgstr ""
 
-#: library/test.rst:858
+#: library/test.rst:860
 msgid "Decorator for tests that fill the address space."
 msgstr ""
 
-#: library/test.rst:863
+#: library/test.rst:865
 msgid ""
 "Return ``False`` if there is no evidence the interpreter was compiled with "
 "``musl``, otherwise return a version triple, either ``(0, 0, 0)`` if the "
@@ -1016,7 +1016,7 @@ msgid ""
 "compiled with ``musl``; otherwise ``platform.libc_ver`` is checked."
 msgstr ""
 
-#: library/test.rst:872
+#: library/test.rst:874
 msgid ""
 "Test for syntax errors in *statement* by attempting to compile *statement*. "
 "*testcase* is the :mod:`unittest` instance for the test.  *errtext* is the "
@@ -1026,11 +1026,11 @@ msgid ""
 "exception."
 msgstr ""
 
-#: library/test.rst:882
+#: library/test.rst:884
 msgid "Open *url*.  If open fails, raises :exc:`TestFailed`."
 msgstr ""
 
-#: library/test.rst:887
+#: library/test.rst:889
 msgid ""
 "Call this from :meth:`~unittest.TestCase.setUp`, "
 ":meth:`~unittest.TestCase.tearDown`, or ``tearDownModule()`` in tests that "
@@ -1038,33 +1038,33 @@ msgid ""
 "stick around to hog resources and create problems when looking for refleaks."
 msgstr ""
 
-#: library/test.rst:896
+#: library/test.rst:898
 msgid ""
 "Get an attribute, raising :exc:`unittest.SkipTest` if :exc:`AttributeError` "
 "is raised."
 msgstr ""
 
-#: library/test.rst:902
+#: library/test.rst:904
 msgid ""
 "Context manager catching unraisable exception using "
 ":func:`sys.unraisablehook`."
 msgstr ""
 
-#: library/test.rst:905
+#: library/test.rst:907
 msgid ""
 "Storing the exception value (``cm.unraisable.exc_value``) creates a reference"
 " cycle. The reference cycle is broken explicitly when the context manager "
 "exits."
 msgstr ""
 
-#: library/test.rst:909
+#: library/test.rst:911
 msgid ""
 "Storing the object (``cm.unraisable.object``) can resurrect it if it is set "
 "to an object which is being finalized. Exiting the context manager clears the"
 " stored object."
 msgstr ""
 
-#: library/test.rst:915
+#: library/test.rst:917
 msgid ""
 "with support.catch_unraisable_exception() as cm:\n"
 "    # code creating an \"unraisable exception\"\n"
@@ -1077,7 +1077,7 @@ msgid ""
 "# (to break a reference cycle)"
 msgstr ""
 
-#: library/test.rst:930
+#: library/test.rst:932
 msgid ""
 "Generic implementation of the :mod:`unittest` ``load_tests`` protocol for use"
 " in test packages.  *pkg_dir* is the root directory of the package; *loader*,"
@@ -1086,7 +1086,7 @@ msgid ""
 "the following::"
 msgstr ""
 
-#: library/test.rst:936
+#: library/test.rst:938
 msgid ""
 "import os\n"
 "from test.support import load_package_tests\n"
@@ -1095,33 +1095,33 @@ msgid ""
 "    return load_package_tests(os.path.dirname(__file__), *args)"
 msgstr ""
 
-#: library/test.rst:945
+#: library/test.rst:947
 msgid ""
 "Returns the set of attributes, functions or methods of *ref_api* not found on"
 " *other_api*, except for a defined list of items to be ignored in this check "
 "specified in *ignore*."
 msgstr ""
 
-#: library/test.rst:949
+#: library/test.rst:951
 msgid ""
 "By default this skips private attributes beginning with '_' but includes all "
 "magic methods, i.e. those starting and ending in '__'."
 msgstr ""
 
-#: library/test.rst:957
+#: library/test.rst:959
 msgid ""
 "Override *object_to_patch.attr_name* with *new_value*.  Also add cleanup "
 "procedure to *test_instance* to restore *object_to_patch* for *attr_name*.  "
 "The *attr_name* should be a valid attribute for *object_to_patch*."
 msgstr ""
 
-#: library/test.rst:965
+#: library/test.rst:967
 msgid ""
 "Run *code* in subinterpreter.  Raise :exc:`unittest.SkipTest` if "
 ":mod:`tracemalloc` is enabled."
 msgstr ""
 
-#: library/test.rst:973
+#: library/test.rst:975
 msgid ""
 "Decorator that runs the decorated test in a fresh interpreter subprocess, in "
 "isolation, so that it does not share global or interpreter state with the "
@@ -1134,7 +1134,7 @@ msgid ""
 "traceback as the cause of the exception."
 msgstr ""
 
-#: library/test.rst:983
+#: library/test.rst:985
 msgid ""
 "When a **method** is decorated, only that method runs in a subprocess; all "
 "fixtures (:meth:`~unittest.TestCase.setUp` / "
@@ -1144,7 +1144,7 @@ msgid ""
 "subprocess around the method."
 msgstr ""
 
-#: library/test.rst:989
+#: library/test.rst:991
 msgid ""
 "When a **class** is decorated, the whole class runs in a single subprocess, "
 "and :meth:`~unittest.TestCase.setUpClass`, "
@@ -1157,7 +1157,7 @@ msgid ""
 ":data:`runningInSubprocess` if needed."
 msgstr ""
 
-#: library/test.rst:999
+#: library/test.rst:1001
 msgid ""
 "The subprocess inherits the enabled resources (``-u``), memory limit (``-M``)"
 " and verbosity (``-v``) of the parent test run, so that "
@@ -1166,7 +1166,7 @@ msgid ""
 "processes."
 msgstr ""
 
-#: library/test.rst:1005
+#: library/test.rst:1007
 msgid ""
 "*options* is a sequence of interpreter command line options to run the "
 "subprocess with, and *env* is a mapping of environment variables to set in "
@@ -1175,18 +1175,18 @@ msgid ""
 "ignore the ``PYTHON*`` environment variables, including :envvar:`PYTHONPATH`."
 msgstr ""
 
-#: library/test.rst:1013
+#: library/test.rst:1015
 msgid ""
 "*timeout* is the number of seconds to wait for the subprocess; the test is "
 "reported as an error if it does not complete in time. By default there is no "
 "timeout, and a hung test is left to the timeout of the test runner."
 msgstr ""
 
-#: library/test.rst:1018
+#: library/test.rst:1020
 msgid "The test is skipped on platforms without subprocess support."
 msgstr ""
 
-#: library/test.rst:1023
+#: library/test.rst:1025
 msgid ""
 "``True`` while the code runs in the isolated subprocess spawned by "
 ":func:`runInSubprocess`, and ``False`` otherwise (including in the parent "
@@ -1198,29 +1198,29 @@ msgid ""
 "subprocess."
 msgstr ""
 
-#: library/test.rst:1037
+#: library/test.rst:1039
 msgid "Assert instances of *cls* are deallocated after iterating."
 msgstr ""
 
-#: library/test.rst:1042
+#: library/test.rst:1044
 msgid ""
 "Check for the existence of the compiler executables whose names are listed in"
 " *cmd_names* or all the compiler executables when *cmd_names* is empty and "
 "return the first missing executable or ``None`` when none is found missing."
 msgstr ""
 
-#: library/test.rst:1050
+#: library/test.rst:1052
 msgid ""
 "Assert that the ``__all__`` variable of *module* contains all public names."
 msgstr ""
 
-#: library/test.rst:1052
+#: library/test.rst:1054
 msgid ""
 "The module's public names (its API) are detected automatically based on "
 "whether they match the public name convention and were defined in *module*."
 msgstr ""
 
-#: library/test.rst:1056
+#: library/test.rst:1058
 msgid ""
 "The *name_of_module* argument can specify (as a string or tuple thereof) what"
 " module(s) an API could be defined in order to be detected as a public API. "
@@ -1228,7 +1228,7 @@ msgid ""
 "modules, possibly a C backend (like ``csv`` and its ``_csv``)."
 msgstr ""
 
-#: library/test.rst:1061
+#: library/test.rst:1063
 msgid ""
 "The *extra* argument can be a set of names that wouldn't otherwise be "
 "automatically detected as \"public\", like objects without a proper "
@@ -1236,17 +1236,17 @@ msgid ""
 "the automatically detected ones."
 msgstr ""
 
-#: library/test.rst:1065
+#: library/test.rst:1067
 msgid ""
 "The *not_exported* argument can be a set of names that must not be treated as"
 " part of the public API even though their names indicate otherwise."
 msgstr ""
 
-#: library/test.rst:1068 library/test.rst:1823
+#: library/test.rst:1070 library/test.rst:1799
 msgid "Example use::"
 msgstr ""
 
-#: library/test.rst:1070
+#: library/test.rst:1072
 msgid ""
 "import bar\n"
 "import foo\n"
@@ -1266,18 +1266,18 @@ msgid ""
 "                             extra=extra, not_exported=not_exported)"
 msgstr ""
 
-#: library/test.rst:1091
+#: library/test.rst:1093
 msgid ""
 "Skip tests if the :mod:`!multiprocessing.synchronize` module is missing, if "
 "there is no available semaphore implementation, or if creating a lock raises "
 "an :exc:`OSError`."
 msgstr ""
 
-#: library/test.rst:1100
+#: library/test.rst:1102
 msgid "Assert that type *tp* cannot be instantiated using *args* and *kwds*."
 msgstr ""
 
-#: library/test.rst:1107
+#: library/test.rst:1109
 msgid ""
 "This function returns a context manager that will change the global "
 ":func:`sys.set_int_max_str_digits` setting for the duration of the context to"
@@ -1285,74 +1285,74 @@ msgid ""
 "digits when converting between an integer and string."
 msgstr ""
 
-#: library/test.rst:1115
+#: library/test.rst:1117
 msgid "The :mod:`!test.support` module defines the following classes:"
 msgstr ""
 
-#: library/test.rst:1120
+#: library/test.rst:1122
 msgid ""
 "A context manager used to try to prevent crash dialog popups on tests that "
 "are expected to crash a subprocess."
 msgstr ""
 
-#: library/test.rst:1123
+#: library/test.rst:1125
 msgid ""
 "On Windows, it disables Windows Error Reporting dialogs using `SetErrorMode "
 "<https://msdn.microsoft.com/en-us/library/windows/desktop/ms680621.aspx>`_."
 msgstr ""
 
-#: library/test.rst:1126
+#: library/test.rst:1128
 msgid ""
 "On UNIX, :func:`resource.setrlimit` is used to set "
 ":const:`resource.RLIMIT_CORE`'s soft limit to 0 to prevent coredump file "
 "creation."
 msgstr ""
 
-#: library/test.rst:1130
+#: library/test.rst:1132
 msgid ""
 "On both platforms, the old value is restored by :meth:`~object.__exit__`."
 msgstr ""
 
-#: library/test.rst:1135
+#: library/test.rst:1137
 msgid ""
 "Class to save and restore signal handlers registered by the Python signal "
 "handler."
 msgstr ""
 
-#: library/test.rst:1140
+#: library/test.rst:1142
 msgid ""
 "Save the signal handlers to a dictionary mapping signal numbers to the "
 "current signal handler."
 msgstr ""
 
-#: library/test.rst:1145
+#: library/test.rst:1147
 msgid ""
 "Set the signal numbers from the :meth:`save` dictionary to the saved handler."
 msgstr ""
 
-#: library/test.rst:1153
+#: library/test.rst:1155
 msgid "Try to match a single dict with the supplied arguments."
 msgstr ""
 
-#: library/test.rst:1158
+#: library/test.rst:1160
 msgid "Try to match a single stored value (*dv*) with a supplied value (*v*)."
 msgstr ""
 
-#: library/test.rst:1162
+#: library/test.rst:1164
 msgid ":mod:`!test.support.socket_helper` --- Utilities for socket tests"
 msgstr ""
 
-#: library/test.rst:1168
+#: library/test.rst:1170
 msgid ""
 "The :mod:`!test.support.socket_helper` module provides support for socket "
 "tests."
 msgstr ""
 
-#: library/test.rst:1175
+#: library/test.rst:1177
 msgid "Set to ``True`` if IPv6 is enabled on this host, ``False`` otherwise."
 msgstr ""
 
-#: library/test.rst:1180
+#: library/test.rst:1182
 msgid ""
 "Returns an unused port that should be suitable for binding.  This is achieved"
 " by creating a temporary socket with the same family and type as the ``sock``"
@@ -1363,7 +1363,7 @@ msgid ""
 "and the ephemeral port is returned."
 msgstr ""
 
-#: library/test.rst:1189
+#: library/test.rst:1191
 msgid ""
 "Either this method or :func:`bind_port` should be used for any tests where a "
 "server socket needs to be bound to a particular port for the duration of the "
@@ -1376,7 +1376,7 @@ msgid ""
 "run simultaneously, which is a problem for buildbots."
 msgstr ""
 
-#: library/test.rst:1203
+#: library/test.rst:1205
 msgid ""
 "Bind the socket to a free port and return the port number.  Relies on "
 "ephemeral ports in order to ensure we are using an unbound port.  This is "
@@ -1389,65 +1389,65 @@ msgid ""
 " for setting these options is testing multicasting via multiple UDP sockets."
 msgstr ""
 
-#: library/test.rst:1214
+#: library/test.rst:1216
 msgid ""
 "Additionally, if the :const:`~socket.SO_EXCLUSIVEADDRUSE` socket option is "
 "available (i.e. on Windows), it will be set on the socket.  This will prevent"
 " anyone else from binding to our host/port for the duration of the test."
 msgstr ""
 
-#: library/test.rst:1222
+#: library/test.rst:1224
 msgid ""
 "Bind a Unix socket, raising :exc:`unittest.SkipTest` if "
 ":exc:`PermissionError` is raised."
 msgstr ""
 
-#: library/test.rst:1228
+#: library/test.rst:1230
 msgid ""
 "A decorator for running tests that require a functional ``bind()`` for Unix "
 "sockets."
 msgstr ""
 
-#: library/test.rst:1234
+#: library/test.rst:1236
 msgid ""
 "A context manager that raises :exc:`~test.support.ResourceDenied` when "
 "various issues with the internet connection manifest themselves as "
 "exceptions."
 msgstr ""
 
-#: library/test.rst:1240
+#: library/test.rst:1242
 msgid ""
 ":mod:`!test.support.script_helper` --- Utilities for the Python execution "
 "tests"
 msgstr ""
 
-#: library/test.rst:1246
+#: library/test.rst:1248
 msgid ""
 "The :mod:`!test.support.script_helper` module provides support for Python's "
 "script execution tests."
 msgstr ""
 
-#: library/test.rst:1251
+#: library/test.rst:1253
 msgid ""
 "Return ``True`` if ``sys.executable interpreter`` requires environment "
 "variables in order to be able to run at all."
 msgstr ""
 
-#: library/test.rst:1254
+#: library/test.rst:1256
 msgid ""
 "This is designed to be used with ``@unittest.skipIf()`` to annotate tests "
 "that need to use an ``assert_python*()`` function to launch an isolated mode "
 "(``-I``) or no environment mode (``-E``) sub-interpreter process."
 msgstr ""
 
-#: library/test.rst:1258
+#: library/test.rst:1260
 msgid ""
 "A normal build & test does not run into this situation but it can happen when"
 " trying to run the standard library test suite from an interpreter that "
 "doesn't have an obvious home with Python's current home finding logic."
 msgstr ""
 
-#: library/test.rst:1262
+#: library/test.rst:1264
 msgid ""
 "Setting :envvar:`PYTHONHOME` is one way to get most of the testsuite to run "
 "in that situation.  :envvar:`PYTHONPATH` or :envvar:`PYTHONNOUSERSITE` are "
@@ -1455,84 +1455,84 @@ msgid ""
 "interpreter can start."
 msgstr ""
 
-#: library/test.rst:1270
+#: library/test.rst:1272
 msgid ""
 "Set up the environment based on *env_vars* for running the interpreter in a "
 "subprocess.  The values can include ``__isolated``, ``__cleanenv``, "
 "``__cwd``, and ``TERM``."
 msgstr ""
 
-#: library/test.rst:1274 library/test.rst:1290 library/test.rst:1302
+#: library/test.rst:1276 library/test.rst:1292 library/test.rst:1304
 msgid "The function no longer strips whitespaces from *stderr*."
 msgstr ""
 
-#: library/test.rst:1280
+#: library/test.rst:1282
 msgid ""
 "Assert that running the interpreter with *args* and optional environment "
 "variables *env_vars* succeeds (``rc == 0``) and return a ``(return code, "
 "stdout, stderr)`` tuple."
 msgstr ""
 
-#: library/test.rst:1284
+#: library/test.rst:1286
 msgid ""
 "If the *__cleanenv* keyword-only parameter is set, *env_vars* is used as a "
 "fresh environment."
 msgstr ""
 
-#: library/test.rst:1287
+#: library/test.rst:1289
 msgid ""
 "Python is started in isolated mode (command line option ``-I``), except if "
 "the *__isolated* keyword-only parameter is set to ``False``."
 msgstr ""
 
-#: library/test.rst:1296
+#: library/test.rst:1298
 msgid ""
 "Assert that running the interpreter with *args* and optional environment "
 "variables *env_vars* fails (``rc != 0``) and return a ``(return code, stdout,"
 " stderr)`` tuple."
 msgstr ""
 
-#: library/test.rst:1300
+#: library/test.rst:1302
 msgid "See :func:`assert_python_ok` for more options."
 msgstr ""
 
-#: library/test.rst:1308
+#: library/test.rst:1310
 msgid "Run a Python subprocess with the given arguments."
 msgstr ""
 
-#: library/test.rst:1310
+#: library/test.rst:1312
 msgid ""
 "*kw* is extra keyword args to pass to :func:`subprocess.Popen`. Returns a "
 ":class:`subprocess.Popen` object."
 msgstr ""
 
-#: library/test.rst:1316
+#: library/test.rst:1318
 msgid ""
 "Run the given :class:`subprocess.Popen` process until completion and return "
 "stdout."
 msgstr ""
 
-#: library/test.rst:1322
+#: library/test.rst:1324
 msgid ""
 "Create script containing *source* in path *script_dir* and *script_basename*."
 " If *omit_suffix* is ``False``, append ``.py`` to the name.  Return the full "
 "script path."
 msgstr ""
 
-#: library/test.rst:1329
+#: library/test.rst:1331
 msgid ""
 "Create zip file at *zip_dir* and *zip_basename* with extension ``zip`` which "
 "contains the files in *script_name*. *name_in_zip* is the archive name. "
 "Return a tuple containing ``(full path, full path of archive name)``."
 msgstr ""
 
-#: library/test.rst:1336
+#: library/test.rst:1338
 msgid ""
 "Create a directory named *pkg_dir* containing an ``__init__`` file with "
 "*init_source* as its contents."
 msgstr ""
 
-#: library/test.rst:1343
+#: library/test.rst:1345
 msgid ""
 "Create a zip package directory with a path of *zip_dir* and *zip_basename* "
 "containing an empty ``__init__`` file and a file *script_basename* containing"
@@ -1541,60 +1541,60 @@ msgid ""
 "archive name for the zip file."
 msgstr ""
 
-#: library/test.rst:1351
+#: library/test.rst:1353
 msgid ""
 ":mod:`!test.support.bytecode_helper` --- Support tools for testing correct "
 "bytecode generation"
 msgstr ""
 
-#: library/test.rst:1356
+#: library/test.rst:1358
 msgid ""
 "The :mod:`!test.support.bytecode_helper` module provides support for testing "
 "and inspecting bytecode generation."
 msgstr ""
 
-#: library/test.rst:1361
+#: library/test.rst:1363
 msgid "The module defines the following class:"
 msgstr ""
 
-#: library/test.rst:1365
+#: library/test.rst:1367
 msgid "This class has custom assertion methods for inspecting bytecode."
 msgstr ""
 
-#: library/test.rst:1369
+#: library/test.rst:1371
 msgid "Return the disassembly of *co* as string."
 msgstr ""
 
-#: library/test.rst:1374
+#: library/test.rst:1376
 msgid ""
 "Return instr if *opname* is found, otherwise throws :exc:`AssertionError`."
 msgstr ""
 
-#: library/test.rst:1379
+#: library/test.rst:1381
 msgid "Throws :exc:`AssertionError` if *opname* is found."
 msgstr ""
 
-#: library/test.rst:1383
+#: library/test.rst:1385
 msgid ":mod:`!test.support.threading_helper` --- Utilities for threading tests"
 msgstr ""
 
-#: library/test.rst:1388
+#: library/test.rst:1390
 msgid ""
 "The :mod:`!test.support.threading_helper` module provides support for "
 "threading tests."
 msgstr ""
 
-#: library/test.rst:1395
+#: library/test.rst:1397
 msgid ""
 "Join a *thread* within *timeout*.  Raise an :exc:`AssertionError` if thread "
 "is still alive after *timeout* seconds."
 msgstr ""
 
-#: library/test.rst:1401
+#: library/test.rst:1403
 msgid "Decorator to ensure the threads are cleaned up even if the test fails."
 msgstr ""
 
-#: library/test.rst:1406
+#: library/test.rst:1408
 msgid ""
 "Context manager to start *threads*, which is a sequence of threads. *unlock* "
 "is a function called after the threads are started, even if an exception was "
@@ -1602,57 +1602,57 @@ msgid ""
 "will attempt to join the started threads upon exit."
 msgstr ""
 
-#: library/test.rst:1414
+#: library/test.rst:1416
 msgid ""
 "Cleanup up threads not specified in *original_values*.  Designed to emit a "
 "warning if a test leaves running threads in the background."
 msgstr ""
 
-#: library/test.rst:1420
+#: library/test.rst:1422
 msgid "Return current thread count and copy of dangling threads."
 msgstr ""
 
-#: library/test.rst:1425
+#: library/test.rst:1427
 msgid ""
 "Context manager to wait until all threads created in the ``with`` statement "
 "exit."
 msgstr ""
 
-#: library/test.rst:1431
+#: library/test.rst:1433
 msgid ""
 "Context manager catching :class:`threading.Thread` exception using "
 ":func:`threading.excepthook`."
 msgstr ""
 
-#: library/test.rst:1434
+#: library/test.rst:1436
 msgid "Attributes set when an exception is caught:"
 msgstr ""
 
-#: library/test.rst:1436
+#: library/test.rst:1438
 msgid "``exc_type``"
 msgstr ""
 
-#: library/test.rst:1437
+#: library/test.rst:1439
 msgid "``exc_value``"
 msgstr ""
 
-#: library/test.rst:1438
+#: library/test.rst:1440
 msgid "``exc_traceback``"
 msgstr ""
 
-#: library/test.rst:1439
+#: library/test.rst:1441
 msgid "``thread``"
 msgstr ""
 
-#: library/test.rst:1441
+#: library/test.rst:1443
 msgid "See :func:`threading.excepthook` documentation."
 msgstr ""
 
-#: library/test.rst:1443
+#: library/test.rst:1445
 msgid "These attributes are deleted at the context manager exit."
 msgstr ""
 
-#: library/test.rst:1447
+#: library/test.rst:1449
 msgid ""
 "with threading_helper.catch_threading_exception() as cm:\n"
 "    # code spawning a thread which raises an exception\n"
@@ -1667,36 +1667,36 @@ msgid ""
 "# (to avoid reference cycles)"
 msgstr ""
 
-#: library/test.rst:1464
+#: library/test.rst:1466
 msgid ""
 "Run the worker function concurrently in multiple threads. Re-raises an "
 "exception if any thread raises one, after all threads have finished."
 msgstr ""
 
-#: library/test.rst:1470
+#: library/test.rst:1472
 msgid ":mod:`!test.support.os_helper` --- Utilities for os tests"
 msgstr ""
 
-#: library/test.rst:1475
+#: library/test.rst:1477
 msgid ""
 "The :mod:`!test.support.os_helper` module provides support for os tests."
 msgstr ""
 
-#: library/test.rst:1482
+#: library/test.rst:1484
 msgid "A non-ASCII character encodable by :func:`os.fsencode`."
 msgstr ""
 
-#: library/test.rst:1487
+#: library/test.rst:1489
 msgid "Set to :func:`os.getcwd`."
 msgstr ""
 
-#: library/test.rst:1492
+#: library/test.rst:1494
 msgid ""
 "Set to a name that is safe to use as the name of a temporary file.  Any "
 "temporary file that is created should be closed and unlinked (removed)."
 msgstr ""
 
-#: library/test.rst:1498
+#: library/test.rst:1500
 msgid ""
 "Set to a filename containing the :data:`FS_NONASCII` character, if it exists."
 " This guarantees that if the filename exists, it can be encoded and decoded "
@@ -1704,25 +1704,25 @@ msgid ""
 "ASCII filename to be easily skipped on platforms where they can't work."
 msgstr ""
 
-#: library/test.rst:1506
+#: library/test.rst:1508
 msgid ""
 "Set to a filename (str type) that should not be able to be encoded by file "
 "system encoding in strict mode.  It may be ``None`` if it's not possible to "
 "generate such a filename."
 msgstr ""
 
-#: library/test.rst:1513
+#: library/test.rst:1515
 msgid ""
 "Set to a filename (bytes type) that should not be able to be decoded by file "
 "system encoding in strict mode.  It may be ``None`` if it's not possible to "
 "generate such a filename."
 msgstr ""
 
-#: library/test.rst:1520
+#: library/test.rst:1522
 msgid "Set to a non-ASCII name for a temporary file."
 msgstr ""
 
-#: library/test.rst:1525
+#: library/test.rst:1527
 msgid ""
 "Class used to temporarily set or unset environment variables.  Instances can "
 "be used as a context manager and have a complete dictionary interface for "
@@ -1731,11 +1731,11 @@ msgid ""
 " be rolled back."
 msgstr ""
 
-#: library/test.rst:1531
+#: library/test.rst:1533
 msgid "Added dictionary interface."
 msgstr ""
 
-#: library/test.rst:1537
+#: library/test.rst:1539
 msgid ""
 "Simple :term:`path-like object`.  It implements the "
 ":meth:`~os.PathLike.__fspath__` method which just returns the *path* "
@@ -1743,68 +1743,68 @@ msgid ""
 ":meth:`!__fspath__`."
 msgstr ""
 
-#: library/test.rst:1545
+#: library/test.rst:1547
 msgid ""
 "Temporarily set the environment variable ``envvar`` to the value of "
 "``value``."
 msgstr ""
 
-#: library/test.rst:1551
+#: library/test.rst:1553
 msgid "Temporarily unset one or more environment variables."
 msgstr ""
 
-#: library/test.rst:1553
+#: library/test.rst:1555
 msgid "More than one environment variable can be unset."
 msgstr ""
 
-#: library/test.rst:1559
+#: library/test.rst:1561
 msgid "Return ``True`` if the OS supports symbolic links, ``False`` otherwise."
 msgstr ""
 
-#: library/test.rst:1565
+#: library/test.rst:1567
 msgid "Return ``True`` if the OS supports xattr, ``False`` otherwise."
 msgstr ""
 
-#: library/test.rst:1571
+#: library/test.rst:1573
 msgid ""
 "A context manager that temporarily changes the current working directory to "
 "*path* and yields the directory."
 msgstr ""
 
-#: library/test.rst:1574
+#: library/test.rst:1576
 msgid ""
 "If *quiet* is ``False``, the context manager raises an exception on error.  "
 "Otherwise, it issues only a warning and keeps the current working directory "
 "the same."
 msgstr ""
 
-#: library/test.rst:1581
+#: library/test.rst:1583
 msgid ""
 "Create an empty file with *filename*.  If it already exists, truncate it."
 msgstr ""
 
-#: library/test.rst:1586
+#: library/test.rst:1588
 msgid "Count the number of open file descriptors."
 msgstr ""
 
-#: library/test.rst:1591
+#: library/test.rst:1593
 msgid "Return ``True`` if the file system for *directory* is case-insensitive."
 msgstr ""
 
-#: library/test.rst:1596
+#: library/test.rst:1598
 msgid ""
 "Create an invalid file descriptor by opening and closing a temporary file, "
 "and returning its descriptor."
 msgstr ""
 
-#: library/test.rst:1602
+#: library/test.rst:1604
 msgid ""
 "Call :func:`os.rmdir` on *filename*.  On Windows platforms, this is wrapped "
 "with a wait loop that checks for the existence of the file, which is needed "
 "due to antivirus programs that can hold files open and prevent deletion."
 msgstr ""
 
-#: library/test.rst:1610
+#: library/test.rst:1612
 msgid ""
 "Call :func:`shutil.rmtree` on *path* or call :func:`os.lstat` and "
 ":func:`os.rmdir` to remove a path and its contents.  As with :func:`rmdir`, "
@@ -1812,21 +1812,21 @@ msgid ""
 "existence of the files."
 msgstr ""
 
-#: library/test.rst:1618
+#: library/test.rst:1620
 msgid "A decorator for running tests that require support for symbolic links."
 msgstr ""
 
-#: library/test.rst:1623
+#: library/test.rst:1625
 msgid "A decorator for running tests that require support for xattr."
 msgstr ""
 
-#: library/test.rst:1628
+#: library/test.rst:1630
 msgid ""
 "A context manager that temporarily creates a new directory and changes the "
 "current working directory (CWD)."
 msgstr ""
 
-#: library/test.rst:1631
+#: library/test.rst:1633
 msgid ""
 "The context manager creates a temporary directory in the current directory "
 "with name *name* before temporarily changing the current working directory.  "
@@ -1834,20 +1834,20 @@ msgid ""
 ":func:`tempfile.mkdtemp`."
 msgstr ""
 
-#: library/test.rst:1636
+#: library/test.rst:1638
 msgid ""
 "If *quiet* is ``False`` and it is not possible to create or change the CWD, "
 "an error is raised.  Otherwise, only a warning is raised and the original CWD"
 " is used."
 msgstr ""
 
-#: library/test.rst:1643
+#: library/test.rst:1645
 msgid ""
 "A context manager that creates a temporary directory at *path* and yields the"
 " directory."
 msgstr ""
 
-#: library/test.rst:1646
+#: library/test.rst:1648
 msgid ""
 "If *path* is ``None``, the temporary directory is created using "
 ":func:`tempfile.mkdtemp`.  If *quiet* is ``False``, the context manager "
@@ -1855,165 +1855,137 @@ msgid ""
 "be created, only a warning is issued."
 msgstr ""
 
-#: library/test.rst:1654
+#: library/test.rst:1656
 msgid "A context manager that temporarily sets the process umask."
 msgstr ""
 
-#: library/test.rst:1659
+#: library/test.rst:1661
 msgid ""
 "Call :func:`os.unlink` on *filename*.  As with :func:`rmdir`, on Windows "
 "platforms, this is wrapped with a wait loop that checks for the existence of "
 "the file."
 msgstr ""
 
-#: library/test.rst:1666
-msgid ""
-"A decorator for running tests with the :envvar:`SOURCE_DATE_EPOCH` "
-"environment variable set to *epoch*."
-msgstr ""
-
-#: library/test.rst:1672
-msgid ""
-"A decorator for running tests with the :envvar:`SOURCE_DATE_EPOCH` "
-"environment variable unset."
-msgstr ""
-
-#: library/test.rst:1678
-msgid ""
-"Metaclass wrapping all test methods of the class with "
-":func:`with_source_date_epoch` if the *source_date_epoch* keyword class "
-"argument is true, or with :func:`without_source_date_epoch` otherwise. For "
-"example::"
-msgstr ""
-
-#: library/test.rst:1683
-msgid ""
-"class TestsWithSourceEpoch(Tests,\n"
-"                           metaclass=SourceDateEpochTestMeta,\n"
-"                           source_date_epoch=True):\n"
-"    pass"
-msgstr ""
-
-#: library/test.rst:1691
+#: library/test.rst:1667
 msgid ":mod:`!test.support.import_helper` --- Utilities for import tests"
 msgstr ""
 
-#: library/test.rst:1696
+#: library/test.rst:1672
 msgid ""
 "The :mod:`!test.support.import_helper` module provides support for import "
 "tests."
 msgstr ""
 
-#: library/test.rst:1701
+#: library/test.rst:1677
 msgid "Creating module objects"
 msgstr ""
 
-#: library/test.rst:1705
+#: library/test.rst:1681
 msgid "Create a new, empty :term:`module` or :term:`package` and return it."
 msgstr ""
 
-#: library/test.rst:1707
+#: library/test.rst:1683
 msgid ""
 "*name*, *loader* and *ispkg* (as ``is_package``) are passed to "
 ":class:`importlib.machinery.ModuleSpec`."
 msgstr ""
 
-#: library/test.rst:1713
+#: library/test.rst:1689
 msgid ""
 "Create a :term:`module` from a name or spec and add it to "
 ":data:`sys.modules`."
 msgstr ""
 
-#: library/test.rst:1715 library/test.rst:1724
+#: library/test.rst:1691 library/test.rst:1700
 msgid "If *parents* is ``True``, create any missing parent modules."
 msgstr ""
 
-#: library/test.rst:1717
+#: library/test.rst:1693
 msgid "Return the new module."
 msgstr ""
 
-#: library/test.rst:1722
+#: library/test.rst:1698
 msgid ""
 "Create a :term:`package` from a name or spec and add it to "
 ":data:`sys.modules`."
 msgstr ""
 
-#: library/test.rst:1726
+#: library/test.rst:1702
 msgid "Return the new package."
 msgstr ""
 
-#: library/test.rst:1730
+#: library/test.rst:1706
 msgid "Manipulating sys.modules"
 msgstr ""
 
-#: library/test.rst:1735
+#: library/test.rst:1711
 msgid "Remove the module named *name* from :data:`sys.modules`."
 msgstr ""
 
-#: library/test.rst:1740
+#: library/test.rst:1716
 msgid ""
 "Remove the module named *modname* from :data:`sys.modules` and delete any "
 "byte-compiled files of the module."
 msgstr ""
 
-#: library/test.rst:1746
+#: library/test.rst:1722
 msgid "Return a tuple containing a copy of :data:`sys.modules`."
 msgstr ""
 
-#: library/test.rst:1751
+#: library/test.rst:1727
 msgid ""
 "Remove modules except for *oldmodules* and ``encodings`` from "
 ":data:`sys.modules` in order to preserve the internal cache."
 msgstr ""
 
-#: library/test.rst:1757
+#: library/test.rst:1733
 msgid ""
 "A context manager that makes a copy of :data:`sys.modules` on entry and "
 "restores it on exit."
 msgstr ""
 
-#: library/test.rst:1763
+#: library/test.rst:1739
 msgid ""
 "A context manager to force imports to return new module references.  This is "
 "useful for testing module-level behaviors, such as the emission of a "
 ":exc:`DeprecationWarning` on import."
 msgstr ""
 
-#: library/test.rst:1767
+#: library/test.rst:1743
 msgid ""
 "When created, this makes a copy of :data:`sys.modules` and removes names from"
 " *module_names* from the original. On exit, the original module references "
 "are restored."
 msgstr ""
 
-#: library/test.rst:1771 library/test.rst:1817
+#: library/test.rst:1747 library/test.rst:1793
 msgid ""
 "If *usefrozen* is False (the default) then the frozen importer is disabled "
 "(except for essential modules like ``importlib._bootstrap``)."
 msgstr ""
 
-#: library/test.rst:1774
+#: library/test.rst:1750
 msgid "Example usage::"
 msgstr ""
 
-#: library/test.rst:1776
+#: library/test.rst:1752
 msgid ""
 "with CleanImport('foo'):\n"
 "      importlib.import_module('foo')  # New reference."
 msgstr ""
 
-#: library/test.rst:1781
+#: library/test.rst:1757
 msgid "Importing modules"
 msgstr ""
 
-#: library/test.rst:1785
+#: library/test.rst:1761
 msgid ""
 "This function imports and returns the named module. Unlike a normal import, "
 "this function raises :exc:`unittest.SkipTest` if the module cannot be "
 "imported."
 msgstr ""
 
-#: library/test.rst:1789
+#: library/test.rst:1765
 msgid ""
 "Module and package deprecation messages are suppressed during this import if "
 "*deprecated* is ``True``.  If a module is required on a platform but optional"
@@ -2021,7 +1993,7 @@ msgid ""
 " be compared against :data:`sys.platform`."
 msgstr ""
 
-#: library/test.rst:1798
+#: library/test.rst:1774
 msgid ""
 "This function imports and returns a fresh copy of the named Python module by "
 "removing the named module from :data:`sys.modules` before doing the import. "
@@ -2029,39 +2001,39 @@ msgid ""
 "not affected by this operation."
 msgstr ""
 
-#: library/test.rst:1803
+#: library/test.rst:1779
 msgid ""
 "*fresh* is an iterable of additional module names that are also removed from "
 "the :data:`sys.modules` cache before doing the import."
 msgstr ""
 
-#: library/test.rst:1806
+#: library/test.rst:1782
 msgid ""
 "*blocked* is an iterable of module names that are replaced with ``None`` in "
 "the module cache during the import to ensure that attempts to import them "
 "raise :exc:`ImportError`."
 msgstr ""
 
-#: library/test.rst:1810
+#: library/test.rst:1786
 msgid ""
 "The named module and any modules named in the *fresh* and *blocked* "
 "parameters are saved before starting the import and then reinserted into "
 ":data:`sys.modules` when the fresh import is complete."
 msgstr ""
 
-#: library/test.rst:1814
+#: library/test.rst:1790
 msgid ""
 "Module and package deprecation messages are suppressed during this import if "
 "*deprecated* is ``True``."
 msgstr ""
 
-#: library/test.rst:1820
+#: library/test.rst:1796
 msgid ""
 "This function will raise :exc:`ImportError` if the named module cannot be "
 "imported."
 msgstr ""
 
-#: library/test.rst:1825
+#: library/test.rst:1801
 msgid ""
 "# Get copies of the warnings module for testing without affecting the\n"
 "# version being used by the rest of the test suite. One copy uses the\n"
@@ -2071,46 +2043,46 @@ msgid ""
 "c_warnings = import_fresh_module('warnings', fresh=['_warnings'])"
 msgstr ""
 
-#: library/test.rst:1837
+#: library/test.rst:1813
 msgid "Import and return the named module."
 msgstr ""
 
-#: library/test.rst:1839
+#: library/test.rst:1815
 msgid ""
 "If the module is already imported, this is returned. Otherwise, import the "
 "module and return it. If the module is not found a new, empty module will be "
 "created."
 msgstr ""
 
-#: library/test.rst:1843
+#: library/test.rst:1819
 msgid ""
 "If *clearnone* is ``True``, this will first remove any ``None`` values that "
 "would block the import."
 msgstr ""
 
-#: library/test.rst:1848
+#: library/test.rst:1824
 msgid "Manipulating sys.path"
 msgstr ""
 
-#: library/test.rst:1852
+#: library/test.rst:1828
 msgid "A context manager to temporarily add directories to :data:`sys.path`."
 msgstr ""
 
-#: library/test.rst:1854
+#: library/test.rst:1830
 msgid ""
 "This makes a copy of :data:`sys.path`, appends any directories given as "
 "positional arguments, then reverts :data:`sys.path` to the copied settings "
 "when the context ends."
 msgstr ""
 
-#: library/test.rst:1858
+#: library/test.rst:1834
 msgid ""
 "Note that *all* :data:`sys.path` modifications in the body of the context "
 "manager, including replacement of the object, will be reverted at the end of "
 "the block."
 msgstr ""
 
-#: library/test.rst:1865
+#: library/test.rst:1841
 msgid ""
 "A context manager that will create a new Python module *name* with *source* "
 "source code in a temporary directory and inserts this directory at the start "
@@ -2118,21 +2090,21 @@ msgid ""
 " path to the script in the temporary directory."
 msgstr ""
 
-#: library/test.rst:1870
+#: library/test.rst:1846
 msgid ""
 "If the name matches an existing module, this will be cleared from "
 ":data:`sys.modules` on entry and restored on exit."
 msgstr ""
 
-#: library/test.rst:1873
+#: library/test.rst:1849
 msgid "If no name is given, the module will be named \"spam\"."
 msgstr ""
 
-#: library/test.rst:1878
+#: library/test.rst:1854
 msgid "Manipulating internals"
 msgstr ""
 
-#: library/test.rst:1882
+#: library/test.rst:1858
 msgid ""
 "Move a :pep:`3147`/:pep:`488` pyc file to its legacy pyc location and return "
 "the file system path to the legacy pyc file.  The *source* value is the file "
@@ -2140,67 +2112,67 @@ msgid ""
 "3147/488 pyc file must exist or *allow_compile* must be set."
 msgstr ""
 
-#: library/test.rst:1887
+#: library/test.rst:1863
 msgid ""
 "If *allow_compile* is ``True`` this will create a .pyc file if it does not "
 "exist."
 msgstr ""
 
-#: library/test.rst:1892
+#: library/test.rst:1868
 msgid "A context manager that forces frozen modules to be used or excluded."
 msgstr ""
 
-#: library/test.rst:1894
+#: library/test.rst:1870
 msgid ""
 "If *enabled* is ``True`` frozen modules are used, otherwise they are "
 "excluded."
 msgstr ""
 
-#: library/test.rst:1896
+#: library/test.rst:1872
 msgid ""
 "This only applies to modules that have not yet been imported. Some essential "
 "modules will always be imported frozen."
 msgstr ""
 
-#: library/test.rst:1902
+#: library/test.rst:1878
 msgid ""
 "A context manager that forces (if *enabled* is ``True``) or prevents legacy "
 "(single-phase init) modules from being allowed in subinterpreters."
 msgstr ""
 
-#: library/test.rst:1905
+#: library/test.rst:1881
 msgid ""
 "This only applies to modules that haven't been imported yet. It overrides the"
 " :c:member:`PyInterpreterConfig.check_multi_interp_extensions` setting."
 msgstr ""
 
-#: library/test.rst:1911
+#: library/test.rst:1887
 msgid "Lazy imports"
 msgstr ""
 
-#: library/test.rst:1915
+#: library/test.rst:1891
 msgid ""
 "Test that when *imported_module* is imported, none of the modules named in "
 "*modules_to_block* are imported as a side effect."
 msgstr ""
 
-#: library/test.rst:1918
+#: library/test.rst:1894
 msgid ""
 "*additional_code* if given should be additional Python source code to execute"
 " before checking that the blocked modules still haven't been imported."
 msgstr ""
 
-#: library/test.rst:1923
+#: library/test.rst:1899
 msgid ":mod:`!test.support.warnings_helper` --- Utilities for warnings tests"
 msgstr ""
 
-#: library/test.rst:1928
+#: library/test.rst:1904
 msgid ""
 "The :mod:`!test.support.warnings_helper` module provides support for warnings"
 " tests."
 msgstr ""
 
-#: library/test.rst:1935
+#: library/test.rst:1911
 msgid ""
 "Suppress warnings that are instances of *category*, which must be "
 ":exc:`Warning` or a subclass. Roughly equivalent to "
@@ -2208,21 +2180,21 @@ msgid ""
 "category=category) <warnings.simplefilter>`. For example::"
 msgstr ""
 
-#: library/test.rst:1941
+#: library/test.rst:1917
 msgid ""
 "@warning_helper.ignore_warnings(category=DeprecationWarning)\n"
 "def test_suppress_warning():\n"
 "    # do something"
 msgstr ""
 
-#: library/test.rst:1950
+#: library/test.rst:1926
 msgid ""
 "Context manager to check that no :exc:`ResourceWarning` was raised.  You must"
 " remove the object which may emit :exc:`ResourceWarning` before the end of "
 "the context manager."
 msgstr ""
 
-#: library/test.rst:1957
+#: library/test.rst:1933
 msgid ""
 "Test for syntax warning in *statement* by attempting to compile *statement*. "
 "Test also that the :exc:`SyntaxWarning` is emitted only once, and that it "
@@ -2234,7 +2206,7 @@ msgid ""
 "not ``None``, compares to the offset of the exception."
 msgstr ""
 
-#: library/test.rst:1971
+#: library/test.rst:1947
 msgid ""
 "A convenience wrapper for :func:`warnings.catch_warnings` that makes it "
 "easier to test that a warning was correctly raised.  It is approximately "
@@ -2243,7 +2215,7 @@ msgid ""
 "automatically validate the results that are recorded."
 msgstr ""
 
-#: library/test.rst:1977
+#: library/test.rst:1953
 msgid ""
 "``check_warnings`` accepts 2-tuples of the form ``(\"message regexp\", "
 "WarningCategory)`` as positional arguments. If one or more *filters* are "
@@ -2255,19 +2227,19 @@ msgid ""
 "``True``."
 msgstr ""
 
-#: library/test.rst:1986
+#: library/test.rst:1962
 msgid "If no arguments are specified, it defaults to::"
 msgstr ""
 
-#: library/test.rst:1988
+#: library/test.rst:1964
 msgid "check_warnings((\"\", Warning), quiet=True)"
 msgstr ""
 
-#: library/test.rst:1990
+#: library/test.rst:1966
 msgid "In this case all warnings are caught and no errors are raised."
 msgstr ""
 
-#: library/test.rst:1992
+#: library/test.rst:1968
 msgid ""
 "On entry to the context manager, a :class:`WarningsRecorder` instance is "
 "returned. The recorded warnings are available via its "
@@ -2275,11 +2247,11 @@ msgid ""
 ":meth:`~WarningsRecorder.reset` method discards previously recorded warnings."
 msgstr ""
 
-#: library/test.rst:1997
+#: library/test.rst:1973
 msgid "The context manager is designed to be used like this::"
 msgstr ""
 
-#: library/test.rst:1999
+#: library/test.rst:1975
 msgid ""
 "with check_warnings((\"assertion is always true\", SyntaxWarning),\n"
 "                    (\"\", UserWarning)):\n"
@@ -2287,19 +2259,19 @@ msgid ""
 "    warnings.warn(UserWarning(\"Hide me!\"))"
 msgstr ""
 
-#: library/test.rst:2004
+#: library/test.rst:1980
 msgid ""
 "In this case if either warning was not raised, or some other warning was "
 "raised, :func:`check_warnings` would raise an error."
 msgstr ""
 
-#: library/test.rst:2007
+#: library/test.rst:1983
 msgid ""
 "When a test needs to look more deeply into the warnings, rather than just "
 "checking whether or not they occurred, code like this can be used::"
 msgstr ""
 
-#: library/test.rst:2010
+#: library/test.rst:1986
 msgid ""
 "with check_warnings(quiet=True) as w:\n"
 "    warnings.warn(\"foo\")\n"
@@ -2312,24 +2284,24 @@ msgid ""
 "    assert len(w.warnings) == 0"
 msgstr ""
 
-#: library/test.rst:2021
+#: library/test.rst:1997
 msgid ""
 "Here all warnings will be caught, and the test code tests the captured "
 "warnings directly."
 msgstr ""
 
-#: library/test.rst:2024
+#: library/test.rst:2000
 msgid "New optional arguments *filters* and *quiet*."
 msgstr ""
 
-#: library/test.rst:2030
+#: library/test.rst:2006
 msgid ""
 "Class used to record warnings for unit tests. Wraps the warnings list "
 "returned by :func:`warnings.catch_warnings` when recording is enabled. "
 ":func:`check_warnings` returns an instance of this class."
 msgstr ""
 
-#: library/test.rst:2034
+#: library/test.rst:2010
 msgid ""
 "As a convenience, the attributes of the object representing the most recent "
 "warning can also be accessed directly through the recorder object. If no "
@@ -2337,12 +2309,12 @@ msgid ""
 "attributes return ``None``."
 msgstr ""
 
-#: library/test.rst:2041
+#: library/test.rst:2017
 msgid ""
 "A list of warnings recorded since the recorder was created or last reset."
 msgstr ""
 
-#: library/test.rst:2045
+#: library/test.rst:2021
 msgid ""
 "Discard previously recorded warnings from the recorder's view. The underlying"
 " warnings list is not modified."

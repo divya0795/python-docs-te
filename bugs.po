@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.15\n"
+"Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 12:56-0700\n"
+"POT-Creation-Date: 2026-11-16 02:05-0800\n"
 "PO-Revision-Date: 2026-10-29 19:29-0700\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
@@ -42,11 +42,11 @@ msgstr ""
 "ఉంటుంది, ఎందుకంటే అది ప్రక్రియను సులభతరం చేస్తుంది మరియు తక్కువ మంది ఇందులో "
 "పాల్గొంటారు. :ref:`ఎలా సహకరించాలో <contributing-to-python>` తెలుసుకోండి."
 
-#: bugs.rst:19
+#: bugs.rst:16
 msgid "Documentation bugs"
 msgstr "డాక్యుమెంటేషన్ బగ్‌లు"
 
-#: bugs.rst:21
+#: bugs.rst:18
 msgid ""
 "If you find a bug in this documentation or would like to propose an "
 "improvement, please submit a bug report on the :ref:`issue tracker <using-"
@@ -58,7 +58,7 @@ msgstr ""
 " రిపోర్ట్ సమర్పించండి. దాన్ని ఎలా సరిచేయాలో మీకు ఏదైనా సూచన ఉంటే, దాన్ని కూడా"
 " చేర్చండి."
 
-#: bugs.rst:27
+#: bugs.rst:24
 msgid ""
 "If the bug or suggested improvement concerns the translation of this "
 "documentation, submit the report to the `translation’s repository "
@@ -68,7 +68,7 @@ msgstr ""
 "రిపోర్ట్‌ను బదులుగా `అనువాద రిపోజిటరీ ఇష్యూ ట్రాకర్‌కు "
 "<https://github.com/python/python-docs-te/issues>`__ సమర్పించండి. #noqa"
 
-#: bugs.rst:31
+#: bugs.rst:28
 msgid ""
 "You can also open a discussion item on our `Documentation Discourse forum "
 "<https://discuss.python.org/c/documentation/26>`_."
@@ -77,7 +77,7 @@ msgstr ""
 "<https://discuss.python.org/c/documentation/26>`_ ఒక చర్చను కూడా "
 "ప్రారంభించవచ్చు."
 
-#: bugs.rst:34
+#: bugs.rst:31
 msgid ""
 "If you find a bug in the theme (HTML / CSS / JavaScript) of the "
 "documentation, please submit a bug report on the `python-doc-theme issue "
@@ -87,26 +87,26 @@ msgstr ""
 "`python-doc-theme ఇష్యూ ట్రాకర్‌లో <https://github.com/python/python-docs-"
 "theme>`_ బగ్ రిపోర్ట్ సమర్పించండి."
 
-#: bugs.rst:40
+#: bugs.rst:37
 msgid "`Documentation bugs`_"
 msgstr "`డాక్యుమెంటేషన్ బగ్‌లు <Documentation bugs_>`__ #noqa"
 
-#: bugs.rst:41
+#: bugs.rst:38
 msgid ""
 "A list of documentation bugs that have been submitted to the Python issue "
 "tracker."
 msgstr "Python ఇష్యూ ట్రాకర్‌కు సమర్పించిన డాక్యుమెంటేషన్ బగ్‌ల జాబితా."
 
-#: bugs.rst:43
+#: bugs.rst:40
 msgid "`Issue Tracking <https://devguide.python.org/tracker/>`_"
 msgstr "`ఇష్యూ ట్రాకింగ్ <https://devguide.python.org/tracker/>`_"
 
-#: bugs.rst:44
+#: bugs.rst:41
 msgid ""
 "Overview of the process involved in reporting an improvement on the tracker."
 msgstr "ట్రాకర్‌లో ఒక మెరుగుదలను రిపోర్ట్ చేసే ప్రక్రియ యొక్క అవలోకనం."
 
-#: bugs.rst:46
+#: bugs.rst:43
 msgid ""
 "`Helping with Documentation <https://devguide.python.org/docquality/#helping-"
 "with-documentation>`_"
@@ -114,33 +114,41 @@ msgstr ""
 "`డాక్యుమెంటేషన్‌లో సహాయం చేయడం "
 "<https://devguide.python.org/docquality/#helping-with-documentation>`_"
 
-#: bugs.rst:47
+#: bugs.rst:44
 msgid ""
 "Comprehensive guide for individuals that are interested in contributing to "
 "Python documentation."
 msgstr "Python డాక్యుమెంటేషన్‌కు సహకరించాలనే ఆసక్తి ఉన్నవారి కోసం సమగ్ర గైడ్."
 
-#: bugs.rst:49
+#: bugs.rst:46
+#, fuzzy
+#| msgid ""
+#| "`Documentation Translations "
+#| "<https://devguide.python.org/documentation/translations/translating/#translation-"
+#| "coordinators>`_"
 msgid ""
 "`Documentation Translations "
-"<https://devguide.python.org/documentation/translations/translating/#translation-"
-"coordinators>`_"
+"<https://devguide.python.org/documentation/translating/>`_"
 msgstr ""
 "`డాక్యుమెంటేషన్ అనువాదాలు "
 "<https://devguide.python.org/documentation/translations/translating/#translation-"
 "coordinators>`_"
 
-#: bugs.rst:50
+#: bugs.rst:47
+#, fuzzy
+#| msgid ""
+#| "A list of GitHub pages for documentation translation and their coordination "
+#| "teams."
 msgid ""
-"A list of GitHub pages for documentation translation and their coordination "
-"teams."
+"A list of GitHub pages for documentation translation and their primary "
+"contacts."
 msgstr "డాక్యుమెంటేషన్ అనువాదాల GitHub పేజీలు మరియు వాటి సమన్వయ బృందాల జాబితా."
 
-#: bugs.rst:56
+#: bugs.rst:53
 msgid "Using the Python issue tracker"
 msgstr "Python ఇష్యూ ట్రాకర్‌ను ఉపయోగించడం"
 
-#: bugs.rst:58
+#: bugs.rst:55
 msgid ""
 "Issue reports for Python itself should be submitted via the GitHub issues "
 "tracker (https://github.com/python/cpython/issues). The GitHub issues tracker"
@@ -152,7 +160,7 @@ msgstr ""
 "ట్రాకర్ ఒక వెబ్ ఫారమ్‌ను అందిస్తుంది, దాని ద్వారా సంబంధిత సమాచారాన్ని నమోదు "
 "చేసి డెవలపర్‌లకు సమర్పించవచ్చు."
 
-#: bugs.rst:63
+#: bugs.rst:60
 msgid ""
 "The first step in filing a report is to determine whether the problem has "
 "already been reported.  The advantage in doing so, aside from saving the "
@@ -169,7 +177,7 @@ msgstr ""
 "(అలాంటప్పుడు మీకు వీలైతే ఆ సమాచారం అందించడానికి మీకు స్వాగతం!). ఇందుకోసం, "
 "పేజీ పైభాగంలో ఉన్న సెర్చ్ బాక్స్‌ను ఉపయోగించి ట్రాకర్‌లో వెతకండి."
 
-#: bugs.rst:70
+#: bugs.rst:67
 msgid ""
 "If the problem you're reporting is not already in the list, log in to GitHub."
 " If you don't already have a GitHub account, create a new account using the "
@@ -180,7 +188,7 @@ msgstr ""
 "ఖాతాను సృష్టించండి. అజ్ఞాతంగా (anonymous) బగ్ రిపోర్ట్ సమర్పించడం సాధ్యం "
 "కాదు."
 
-#: bugs.rst:75
+#: bugs.rst:72
 msgid ""
 "Being now logged in, you can submit an issue. Click on the \"New issue\" "
 "button in the top bar to report a new issue."
@@ -188,11 +196,11 @@ msgstr ""
 "లాగిన్ అయిన తర్వాత, మీరు ఇష్యూను సమర్పించవచ్చు. కొత్త ఇష్యూను రిపోర్ట్ "
 "చేయడానికి పై బార్‌లో ఉన్న \"New issue\" బటన్‌పై క్లిక్ చేయండి."
 
-#: bugs.rst:78
+#: bugs.rst:75
 msgid "The submission form has two fields, \"Title\" and \"Comment\"."
 msgstr "సమర్పణ ఫారమ్‌లో \"Title\" మరియు \"Comment\" అనే రెండు ఫీల్డ్‌లు ఉంటాయి."
 
-#: bugs.rst:80
+#: bugs.rst:77
 msgid ""
 "For the \"Title\" field, enter a *very* short description of the problem; "
 "fewer than ten words is good."
@@ -200,7 +208,7 @@ msgstr ""
 "\"Title\" ఫీల్డ్‌లో సమస్య గురించి *చాలా* చిన్న వివరణను నమోదు చేయండి; పది పదాల"
 " కంటే తక్కువ ఉంటే మంచిది."
 
-#: bugs.rst:83
+#: bugs.rst:80
 msgid ""
 "In the \"Comment\" field, describe the problem in detail, including what you "
 "expected to happen and what did happen.  Be sure to include whether any "
@@ -212,7 +220,7 @@ msgstr ""
 "లేదో, మరియు మీరు ఏ హార్డ్‌వేర్, సాఫ్ట్‌వేర్ ప్లాట్‌ఫామ్‌ను ఉపయోగిస్తున్నారో "
 "(తగిన చోట వెర్షన్ సమాచారంతో సహా) తప్పకుండా చేర్చండి."
 
-#: bugs.rst:88
+#: bugs.rst:85
 msgid ""
 "Each issue report will be reviewed by a developer who will determine what "
 "needs to be done to correct the problem. You will receive an update each time"
@@ -222,7 +230,7 @@ msgstr ""
 "చేయాలో నిర్ణయిస్తారు. ఇష్యూపై ఏదైనా చర్య తీసుకున్న ప్రతిసారీ మీకు అప్‌డేట్ "
 "అందుతుంది."
 
-#: bugs.rst:95
+#: bugs.rst:92
 msgid ""
 "`How to Report Bugs Effectively "
 "<https://www.chiark.greenend.org.uk/~sgtatham/bugs.html>`_"
@@ -230,7 +238,7 @@ msgstr ""
 "`బగ్‌లను సమర్థవంతంగా ఎలా రిపోర్ట్ చేయాలి "
 "<https://www.chiark.greenend.org.uk/~sgtatham/bugs.html>`_"
 
-#: bugs.rst:96
+#: bugs.rst:93
 msgid ""
 "Article which goes into some detail about how to create a useful bug report. "
 "This describes what kind of information is useful and why it is useful."
@@ -238,7 +246,7 @@ msgstr ""
 "ఉపయోగకరమైన బగ్ రిపోర్ట్‌ను ఎలా తయారు చేయాలో కొంత వివరంగా చర్చించే వ్యాసం. ఏ "
 "రకమైన సమాచారం ఉపయోగపడుతుందో, అది ఎందుకు ఉపయోగపడుతుందో ఇది వివరిస్తుంది."
 
-#: bugs.rst:99
+#: bugs.rst:96
 msgid ""
 "`Bug Writing Guidelines <https://bugzilla.mozilla.org/page.cgi?id=bug-"
 "writing.html>`_"
@@ -246,7 +254,7 @@ msgstr ""
 "`బగ్ రిపోర్ట్‌లు రాయడానికి మార్గదర్శకాలు "
 "<https://bugzilla.mozilla.org/page.cgi?id=bug-writing.html>`_"
 
-#: bugs.rst:100
+#: bugs.rst:97
 msgid ""
 "Information about writing a good bug report.  Some of this is specific to the"
 " Mozilla project, but describes general good practices."
@@ -255,11 +263,11 @@ msgstr ""
 "ప్రాజెక్ట్‌కు మాత్రమే సంబంధించినది, అయినా ఇది సాధారణంగా పాటించదగిన మంచి "
 "పద్ధతులను వివరిస్తుంది."
 
-#: bugs.rst:106
+#: bugs.rst:103
 msgid "Getting started contributing to Python yourself"
 msgstr "Pythonకు మీరే సహకరించడం ప్రారంభించడం"
 
-#: bugs.rst:108
+#: bugs.rst:105
 msgid ""
 "Beyond just reporting bugs that you find, you are also welcome to submit "
 "patches to fix them.  You can find more information on how to get started "

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.15\n"
+"Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 12:56-0700\n"
+"POT-Creation-Date: 2026-11-16 02:05-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Telugu\n"
@@ -22,11 +22,11 @@ msgstr ""
 msgid ":mod:`!xmlrpc.server` --- Basic XML-RPC servers"
 msgstr ""
 
-#: library/xmlrpc.server.rst:7
+#: library/xmlrpc.server.rst:10
 msgid "**Source code:** :source:`Lib/xmlrpc/server.py`"
 msgstr ""
 
-#: library/xmlrpc.server.rst:11
+#: library/xmlrpc.server.rst:14
 msgid ""
 "The :mod:`!xmlrpc.server` module provides a basic server framework for XML-"
 "RPC servers written in Python.  Servers can either be free standing, using "
@@ -34,7 +34,7 @@ msgid ""
 ":class:`CGIXMLRPCRequestHandler`."
 msgstr ""
 
-#: library/xmlrpc.server.rst:19
+#: library/xmlrpc.server.rst:22
 msgid ""
 "The :mod:`!xmlrpc.server` module is not secure against maliciously "
 "constructed data.  If you need to parse untrusted or unauthenticated data, "
@@ -51,7 +51,7 @@ msgid ""
 "availability` for more information."
 msgstr ""
 
-#: library/xmlrpc.server.rst:29
+#: library/xmlrpc.server.rst:32
 msgid ""
 "Create a new server instance.  This class provides methods for registration "
 "of functions that can be called by the XML-RPC protocol.  The "
@@ -71,12 +71,12 @@ msgid ""
 "binary data are received; it defaults to false."
 msgstr ""
 
-#: library/xmlrpc.server.rst:45 library/xmlrpc.server.rst:59
-#: library/xmlrpc.server.rst:371
+#: library/xmlrpc.server.rst:48 library/xmlrpc.server.rst:62
+#: library/xmlrpc.server.rst:374
 msgid "The *use_builtin_types* flag was added."
 msgstr ""
 
-#: library/xmlrpc.server.rst:52
+#: library/xmlrpc.server.rst:55
 msgid ""
 "Create a new instance to handle XML-RPC requests in a CGI environment.  The "
 "*allow_none* and *encoding* parameters are passed on to :mod:`xmlrpc.client` "
@@ -86,25 +86,25 @@ msgid ""
 "binary data are received; it defaults to false."
 msgstr ""
 
-#: library/xmlrpc.server.rst:65
+#: library/xmlrpc.server.rst:68
 msgid ""
 "Create a new request handler instance.  This request handler supports "
 "``POST`` requests and modifies logging so that the *logRequests* parameter to"
 " the :class:`SimpleXMLRPCServer` constructor parameter is honored."
 msgstr ""
 
-#: library/xmlrpc.server.rst:73
+#: library/xmlrpc.server.rst:76
 msgid "SimpleXMLRPCServer objects"
 msgstr ""
 
-#: library/xmlrpc.server.rst:75
+#: library/xmlrpc.server.rst:78
 msgid ""
 "The :class:`SimpleXMLRPCServer` class is based on "
 ":class:`socketserver.TCPServer` and provides a means of creating simple, "
 "stand alone XML-RPC servers."
 msgstr ""
 
-#: library/xmlrpc.server.rst:82 library/xmlrpc.server.rst:296
+#: library/xmlrpc.server.rst:85 library/xmlrpc.server.rst:299
 msgid ""
 "Register a function that can respond to XML-RPC requests.  If *name* is "
 "given, it will be the method name associated with *function*, otherwise "
@@ -112,18 +112,18 @@ msgid ""
 "characters not legal in Python identifiers, including the period character."
 msgstr ""
 
-#: library/xmlrpc.server.rst:87 library/xmlrpc.server.rst:301
+#: library/xmlrpc.server.rst:90 library/xmlrpc.server.rst:304
 msgid ""
 "This method can also be used as a decorator.  When used as a decorator, "
 "*name* can only be given as a keyword argument to register *function* under "
 "*name*.  If no *name* is given, :attr:`function.__name__` will be used."
 msgstr ""
 
-#: library/xmlrpc.server.rst:91 library/xmlrpc.server.rst:305
+#: library/xmlrpc.server.rst:94 library/xmlrpc.server.rst:308
 msgid ":meth:`register_function` can be used as a decorator."
 msgstr ""
 
-#: library/xmlrpc.server.rst:97
+#: library/xmlrpc.server.rst:100
 msgid ""
 "Register an object which is used to expose method names which have not been "
 "registered using :meth:`register_function`.  If *instance* contains a "
@@ -137,7 +137,7 @@ msgid ""
 "attribute matching the name of the requested method."
 msgstr ""
 
-#: library/xmlrpc.server.rst:108
+#: library/xmlrpc.server.rst:111
 msgid ""
 "If the optional *allow_dotted_names* argument is true and the instance does "
 "not have a :meth:`_dispatch` method, then if the requested method name "
@@ -147,24 +147,24 @@ msgid ""
 "the request, and the return value is passed back to the client."
 msgstr ""
 
-#: library/xmlrpc.server.rst:117
+#: library/xmlrpc.server.rst:120
 msgid ""
 "Enabling the *allow_dotted_names* option allows intruders to access your "
 "module's global variables and may allow intruders to execute arbitrary code "
 "on your machine.  Only use this option on a secure, closed network."
 msgstr ""
 
-#: library/xmlrpc.server.rst:124
+#: library/xmlrpc.server.rst:127
 msgid ""
 "Registers the XML-RPC introspection functions ``system.listMethods``, "
 "``system.methodHelp`` and ``system.methodSignature``."
 msgstr ""
 
-#: library/xmlrpc.server.rst:130
+#: library/xmlrpc.server.rst:133
 msgid "Registers the XML-RPC multicall function system.multicall."
 msgstr ""
 
-#: library/xmlrpc.server.rst:135
+#: library/xmlrpc.server.rst:138
 msgid ""
 "An attribute value that must be a tuple listing valid path portions of the "
 "URL for receiving XML-RPC requests.  Requests posted to other paths will "
@@ -172,15 +172,15 @@ msgid ""
 "paths will be considered valid. The default value is ``('/', '/RPC2')``."
 msgstr ""
 
-#: library/xmlrpc.server.rst:144
+#: library/xmlrpc.server.rst:147
 msgid "SimpleXMLRPCServer example"
 msgstr ""
 
-#: library/xmlrpc.server.rst:145
+#: library/xmlrpc.server.rst:148
 msgid "Server code::"
 msgstr ""
 
-#: library/xmlrpc.server.rst:147
+#: library/xmlrpc.server.rst:150
 msgid ""
 "from xmlrpc.server import SimpleXMLRPCServer\n"
 "from xmlrpc.server import SimpleXMLRPCRequestHandler\n"
@@ -215,13 +215,13 @@ msgid ""
 "    server.serve_forever()"
 msgstr ""
 
-#: library/xmlrpc.server.rst:179
+#: library/xmlrpc.server.rst:182
 msgid ""
 "The following client code will call the methods made available by the "
 "preceding server::"
 msgstr ""
 
-#: library/xmlrpc.server.rst:182
+#: library/xmlrpc.server.rst:185
 msgid ""
 "import xmlrpc.client\n"
 "\n"
@@ -234,13 +234,13 @@ msgid ""
 "print(s.system.listMethods())"
 msgstr ""
 
-#: library/xmlrpc.server.rst:192
+#: library/xmlrpc.server.rst:195
 msgid ""
 ":meth:`register_function` can also be used as a decorator. The previous "
 "server example can register functions in a decorator way::"
 msgstr ""
 
-#: library/xmlrpc.server.rst:195
+#: library/xmlrpc.server.rst:198
 msgid ""
 "from xmlrpc.server import SimpleXMLRPCServer\n"
 "from xmlrpc.server import SimpleXMLRPCRequestHandler\n"
@@ -271,20 +271,20 @@ msgid ""
 "    server.serve_forever()"
 msgstr ""
 
-#: library/xmlrpc.server.rst:223
+#: library/xmlrpc.server.rst:226
 msgid ""
 "The following example included in the :file:`Lib/xmlrpc/server.py` module "
 "shows a server allowing dotted names and registering a multicall function."
 msgstr ""
 
-#: library/xmlrpc.server.rst:228
+#: library/xmlrpc.server.rst:231
 msgid ""
 "Enabling the *allow_dotted_names* option allows intruders to access your "
 "module's global variables and may allow intruders to execute arbitrary code "
 "on your machine.  Only use this example within a secure, closed network."
 msgstr ""
 
-#: library/xmlrpc.server.rst:234
+#: library/xmlrpc.server.rst:237
 msgid ""
 "import datetime as dt\n"
 "\n"
@@ -310,21 +310,21 @@ msgid ""
 "        sys.exit(0)"
 msgstr ""
 
-#: library/xmlrpc.server.rst:257
+#: library/xmlrpc.server.rst:260
 msgid "This ExampleService demo can be invoked from the command line::"
 msgstr ""
 
-#: library/xmlrpc.server.rst:259
+#: library/xmlrpc.server.rst:262
 msgid "python -m xmlrpc.server"
 msgstr ""
 
-#: library/xmlrpc.server.rst:262
+#: library/xmlrpc.server.rst:265
 msgid ""
 "The client that interacts with the above server is included in "
 "``Lib/xmlrpc/client.py``::"
 msgstr ""
 
-#: library/xmlrpc.server.rst:265
+#: library/xmlrpc.server.rst:268
 msgid ""
 "server = ServerProxy(\"http://localhost:8000\")\n"
 "\n"
@@ -344,26 +344,26 @@ msgid ""
 "    print(\"ERROR\", v)"
 msgstr ""
 
-#: library/xmlrpc.server.rst:282
+#: library/xmlrpc.server.rst:285
 msgid ""
 "This client which interacts with the demo XMLRPC server can be invoked as::"
 msgstr ""
 
-#: library/xmlrpc.server.rst:284
+#: library/xmlrpc.server.rst:287
 msgid "python -m xmlrpc.client"
 msgstr ""
 
-#: library/xmlrpc.server.rst:288
+#: library/xmlrpc.server.rst:291
 msgid "CGIXMLRPCRequestHandler"
 msgstr ""
 
-#: library/xmlrpc.server.rst:290
+#: library/xmlrpc.server.rst:293
 msgid ""
 "The :class:`CGIXMLRPCRequestHandler` class can be used to handle XML-RPC "
 "requests sent to Python CGI scripts."
 msgstr ""
 
-#: library/xmlrpc.server.rst:311
+#: library/xmlrpc.server.rst:314
 msgid ""
 "Register an object which is used to expose method names  which have not been "
 "registered using :meth:`register_function`. If  instance contains a "
@@ -378,28 +378,28 @@ msgid ""
 "client."
 msgstr ""
 
-#: library/xmlrpc.server.rst:325
+#: library/xmlrpc.server.rst:328
 msgid ""
 "Register the XML-RPC introspection functions  ``system.listMethods``, "
 "``system.methodHelp`` and  ``system.methodSignature``."
 msgstr ""
 
-#: library/xmlrpc.server.rst:331
+#: library/xmlrpc.server.rst:334
 msgid "Register the XML-RPC multicall function ``system.multicall``."
 msgstr ""
 
-#: library/xmlrpc.server.rst:336
+#: library/xmlrpc.server.rst:339
 msgid ""
 "Handle an XML-RPC request. If *request_text* is given, it should be the POST "
 "data provided by the HTTP server,  otherwise the contents of stdin will be "
 "used."
 msgstr ""
 
-#: library/xmlrpc.server.rst:339
+#: library/xmlrpc.server.rst:342
 msgid "Example::"
 msgstr ""
 
-#: library/xmlrpc.server.rst:341
+#: library/xmlrpc.server.rst:344
 msgid ""
 "class MyFuncs:\n"
 "    def mul(self, x, y):\n"
@@ -414,11 +414,11 @@ msgid ""
 "handler.handle_request()"
 msgstr ""
 
-#: library/xmlrpc.server.rst:355
+#: library/xmlrpc.server.rst:358
 msgid "Documenting XMLRPC server"
 msgstr ""
 
-#: library/xmlrpc.server.rst:357
+#: library/xmlrpc.server.rst:360
 msgid ""
 "These classes extend the above classes to serve HTML documentation in "
 "response to HTTP GET requests.  Servers can either be free standing, using "
@@ -426,18 +426,18 @@ msgid ""
 ":class:`DocCGIXMLRPCRequestHandler`."
 msgstr ""
 
-#: library/xmlrpc.server.rst:367
+#: library/xmlrpc.server.rst:370
 msgid ""
 "Create a new server instance. All parameters have the same meaning as for "
 ":class:`SimpleXMLRPCServer`; *requestHandler* defaults to "
 ":class:`DocXMLRPCRequestHandler`."
 msgstr ""
 
-#: library/xmlrpc.server.rst:377
+#: library/xmlrpc.server.rst:380
 msgid "Create a new instance to handle XML-RPC requests in a CGI environment."
 msgstr ""
 
-#: library/xmlrpc.server.rst:382
+#: library/xmlrpc.server.rst:385
 msgid ""
 "Create a new request handler instance. This request handler supports XML-RPC "
 "POST requests, documentation GET requests, and modifies logging so that the "
@@ -445,11 +445,11 @@ msgid ""
 " is honored."
 msgstr ""
 
-#: library/xmlrpc.server.rst:391
+#: library/xmlrpc.server.rst:394
 msgid "DocXMLRPCServer objects"
 msgstr ""
 
-#: library/xmlrpc.server.rst:393
+#: library/xmlrpc.server.rst:396
 msgid ""
 "The :class:`DocXMLRPCServer` class is derived from "
 ":class:`SimpleXMLRPCServer` and provides a means of creating self-"
@@ -459,30 +459,30 @@ msgid ""
 "documentation."
 msgstr ""
 
-#: library/xmlrpc.server.rst:402 library/xmlrpc.server.rst:430
+#: library/xmlrpc.server.rst:405 library/xmlrpc.server.rst:433
 msgid ""
 "Set the title used in the generated HTML documentation. This title will be "
 "used inside the HTML \"title\" element."
 msgstr ""
 
-#: library/xmlrpc.server.rst:408 library/xmlrpc.server.rst:436
+#: library/xmlrpc.server.rst:411 library/xmlrpc.server.rst:439
 msgid ""
 "Set the name used in the generated HTML documentation. This name will appear "
 "at the top of the generated documentation inside a \"h1\" element."
 msgstr ""
 
-#: library/xmlrpc.server.rst:414 library/xmlrpc.server.rst:442
+#: library/xmlrpc.server.rst:417 library/xmlrpc.server.rst:445
 msgid ""
 "Set the description used in the generated HTML documentation. This "
 "description will appear as a paragraph, below the server name, in the "
 "documentation."
 msgstr ""
 
-#: library/xmlrpc.server.rst:419
+#: library/xmlrpc.server.rst:422
 msgid "DocCGIXMLRPCRequestHandler"
 msgstr ""
 
-#: library/xmlrpc.server.rst:421
+#: library/xmlrpc.server.rst:424
 msgid ""
 "The :class:`DocCGIXMLRPCRequestHandler` class is derived from "
 ":class:`CGIXMLRPCRequestHandler` and provides a means of creating self-"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.15\n"
+"Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 12:56-0700\n"
+"POT-Creation-Date: 2026-11-16 02:05-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Telugu\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid ":mod:`!getpass` --- Portable password input"
 msgstr ""
 
-#: library/getpass.rst:7
+#: library/getpass.rst:11
 msgid "**Source code:** :source:`Lib/getpass.py`"
 msgstr ""
 
@@ -36,11 +36,11 @@ msgid ""
 "availability` for more information."
 msgstr ""
 
-#: library/getpass.rst:13
+#: library/getpass.rst:17
 msgid "The :mod:`!getpass` module provides two functions:"
 msgstr ""
 
-#: library/getpass.rst:17
+#: library/getpass.rst:21
 msgid ""
 "Prompt the user for a password without echoing.  The user is prompted using "
 "the string *prompt*, which defaults to ``'Password: '``.  On Unix, the prompt"
@@ -50,7 +50,7 @@ msgid ""
 "Windows)."
 msgstr ""
 
-#: library/getpass.rst:24
+#: library/getpass.rst:28
 msgid ""
 "The *echo_char* argument controls how user input is displayed while typing. "
 "If *echo_char* is ``None`` (default), input remains hidden. Otherwise, "
@@ -59,81 +59,41 @@ msgid ""
 "asterisks instead of the actual input."
 msgstr ""
 
-#: library/getpass.rst:30
+#: library/getpass.rst:34
 msgid ""
 "If echo-free input is unavailable, :func:`~getpass.getpass` falls back to "
 "printing a warning message to *stream* and reading from :data:`sys.stdin` and"
 " issuing a :exc:`GetPassWarning`."
 msgstr ""
 
-#: library/getpass.rst:35
+#: library/getpass.rst:39
 msgid ""
 "If you call :func:`~getpass.getpass` from within IDLE, the input may be done "
 "in the terminal you launched IDLE from rather than the idle window itself."
 msgstr ""
 
-#: library/getpass.rst:40
+#: library/getpass.rst:44
 msgid ""
 "On Unix systems, when *echo_char* is set, the terminal will be configured to "
 "operate in :manpage:`noncanonical mode "
-"<termios(3)#Canonical_and_noncanonical_mode>`. Common terminal control "
-"characters are supported:"
-msgstr ""
-
-#: library/getpass.rst:45
-msgid ":kbd:`Ctrl+A` - Move cursor to beginning of line"
-msgstr ""
-
-#: library/getpass.rst:46
-msgid ":kbd:`Ctrl+E` - Move cursor to end of line"
-msgstr ""
-
-#: library/getpass.rst:47
-msgid ":kbd:`Ctrl+K` - Kill (delete) from cursor to end of line"
-msgstr ""
-
-#: library/getpass.rst:48
-msgid ":kbd:`Ctrl+U` - Kill (delete) entire line"
-msgstr ""
-
-#: library/getpass.rst:49
-msgid ":kbd:`Ctrl+W` - Erase previous word"
-msgstr ""
-
-#: library/getpass.rst:50
-msgid ":kbd:`Ctrl+V` - Insert next character literally (quote)"
+"<termios(3)#Canonical_and_noncanonical_mode>`. In particular, this means that"
+" line editing shortcuts such as :kbd:`Ctrl+U` will not work and may insert "
+"unexpected characters into the input."
 msgstr ""
 
 #: library/getpass.rst:51
-msgid ":kbd:`Backspace`/:kbd:`DEL` - Delete character before cursor"
-msgstr ""
-
-#: library/getpass.rst:53
-msgid ""
-"These shortcuts work by reading the terminal's configured control character "
-"mappings from termios settings."
-msgstr ""
-
-#: library/getpass.rst:56
 msgid "Added the *echo_char* parameter for keyboard feedback."
 msgstr ""
 
-#: library/getpass.rst:59
-msgid ""
-"When using non-empty *echo_char* on Unix, keyboard shortcuts (including "
-"cursor movement and line editing) are now properly handled using the "
-"terminal's control character configuration."
-msgstr ""
-
-#: library/getpass.rst:66
+#: library/getpass.rst:56
 msgid "A :exc:`UserWarning` subclass issued when password input may be echoed."
 msgstr ""
 
-#: library/getpass.rst:71
+#: library/getpass.rst:61
 msgid "Return the \"login name\" of the user."
 msgstr ""
 
-#: library/getpass.rst:73
+#: library/getpass.rst:63
 msgid ""
 "This function checks the environment variables :envvar:`LOGNAME`, "
 ":envvar:`USER`, :envvar:`!LNAME` and :envvar:`USERNAME`, in order, and "
@@ -143,10 +103,10 @@ msgid ""
 "raised."
 msgstr ""
 
-#: library/getpass.rst:80
+#: library/getpass.rst:70
 msgid "In general, this function should be preferred over :func:`os.getlogin`."
 msgstr ""
 
-#: library/getpass.rst:82
+#: library/getpass.rst:72
 msgid "Previously, various exceptions beyond just :exc:`OSError` were raised."
 msgstr ""

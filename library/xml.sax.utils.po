@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.15\n"
+"Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 12:56-0700\n"
+"POT-Creation-Date: 2026-11-16 02:05-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Telugu\n"
@@ -22,22 +22,22 @@ msgstr ""
 msgid ":mod:`!xml.sax.saxutils` --- SAX Utilities"
 msgstr ""
 
-#: library/xml.sax.utils.rst:7
+#: library/xml.sax.utils.rst:10
 msgid "**Source code:** :source:`Lib/xml/sax/saxutils.py`"
 msgstr ""
 
-#: library/xml.sax.utils.rst:11
+#: library/xml.sax.utils.rst:14
 msgid ""
 "The module :mod:`!xml.sax.saxutils` contains a number of classes and "
 "functions that are commonly useful when creating SAX applications, either in "
 "direct use, or as base classes."
 msgstr ""
 
-#: library/xml.sax.utils.rst:18
+#: library/xml.sax.utils.rst:21
 msgid "Escape ``'&'``, ``'<'``, and ``'>'`` in a string of data."
 msgstr ""
 
-#: library/xml.sax.utils.rst:20
+#: library/xml.sax.utils.rst:23
 msgid ""
 "You can escape other strings of data by passing a dictionary as the optional "
 "*entities* parameter.  The keys and values must all be strings; each key will"
@@ -45,18 +45,18 @@ msgid ""
 "and ``'>'`` are always escaped, even if *entities* is provided."
 msgstr ""
 
-#: library/xml.sax.utils.rst:27
+#: library/xml.sax.utils.rst:30
 msgid ""
 "This function should only be used to escape characters that can't be used "
 "directly in XML. Do not use this function as a general string translation "
 "function."
 msgstr ""
 
-#: library/xml.sax.utils.rst:33
+#: library/xml.sax.utils.rst:36
 msgid "Unescape ``'&amp;'``, ``'&lt;'``, and ``'&gt;'`` in a string of data."
 msgstr ""
 
-#: library/xml.sax.utils.rst:35
+#: library/xml.sax.utils.rst:38
 msgid ""
 "You can unescape other strings of data by passing a dictionary as the "
 "optional *entities* parameter.  The keys and values must all be strings; each"
@@ -64,7 +64,7 @@ msgid ""
 " and ``'&gt;'`` are always unescaped, even if *entities* is provided."
 msgstr ""
 
-#: library/xml.sax.utils.rst:43
+#: library/xml.sax.utils.rst:46
 msgid ""
 "Similar to :func:`escape`, but also prepares *data* to be used as an "
 "attribute value.  The return value is a quoted version of *data* with any "
@@ -76,19 +76,19 @@ msgid ""
 " as an attribute value::"
 msgstr ""
 
-#: library/xml.sax.utils.rst:52
+#: library/xml.sax.utils.rst:55
 msgid ""
 ">>> print(\"<element attr=%s>\" % quoteattr(\"ab ' cd \\\" ef\"))\n"
 "<element attr=\"ab ' cd &quot; ef\">"
 msgstr ""
 
-#: library/xml.sax.utils.rst:55
+#: library/xml.sax.utils.rst:58
 msgid ""
 "This function is useful when generating attribute values for HTML or any SGML"
 " using the reference concrete syntax."
 msgstr ""
 
-#: library/xml.sax.utils.rst:61
+#: library/xml.sax.utils.rst:64
 msgid ""
 "This class implements the :class:`~xml.sax.handler.ContentHandler` interface "
 "by writing SAX events back into an XML document. In other words, using an "
@@ -101,11 +101,11 @@ msgid ""
 " single self-closed tag."
 msgstr ""
 
-#: library/xml.sax.utils.rst:71
+#: library/xml.sax.utils.rst:74
 msgid "Added the *short_empty_elements* parameter."
 msgstr ""
 
-#: library/xml.sax.utils.rst:77
+#: library/xml.sax.utils.rst:80
 msgid ""
 "This class is designed to sit between an "
 ":class:`~xml.sax.xmlreader.XMLReader` and the client application's event "
@@ -115,15 +115,15 @@ msgid ""
 " through."
 msgstr ""
 
-#: library/xml.sax.utils.rst:86
+#: library/xml.sax.utils.rst:89
 msgid "Return the parent reader, or ``None`` if it is not set."
 msgstr ""
 
-#: library/xml.sax.utils.rst:91
+#: library/xml.sax.utils.rst:94
 msgid "Set the parent reader, which the events are read from."
 msgstr ""
 
-#: library/xml.sax.utils.rst:96
+#: library/xml.sax.utils.rst:99
 msgid ""
 "This function takes an input source and an optional base URL and returns a "
 "fully resolved :class:`~xml.sax.xmlreader.InputSource` object ready for "

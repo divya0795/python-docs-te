@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.15\n"
+"Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 12:56-0700\n"
+"POT-Creation-Date: 2026-11-16 02:05-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Telugu\n"
@@ -41,8 +41,8 @@ msgid ""
 "the OS-level primitives used."
 msgstr ""
 
-#: library/select.rst:57 library/select.rst:99 library/select.rst:109
-#: library/select.rst:122 library/select.rst:130 library/select.rst:196
+#: library/select.rst:57 library/select.rst:94 library/select.rst:104
+#: library/select.rst:117 library/select.rst:125 library/select.rst:188
 #: includes/wasm-notavail.rst:3
 msgid "Availability"
 msgstr ""
@@ -79,11 +79,11 @@ msgid ""
 ":c:func:`!devpoll` may return an incomplete list of active file descriptors."
 msgstr ""
 
-#: library/select.rst:50 library/select.rst:81 library/select.rst:117
+#: library/select.rst:50 library/select.rst:81 library/select.rst:112
 msgid "The new file descriptor is :ref:`non-inheritable <fd_inheritance>`."
 msgstr ""
 
-#: library/select.rst:54 library/select.rst:119
+#: library/select.rst:54 library/select.rst:114
 msgid "The new file descriptor is now non-inheritable."
 msgstr ""
 
@@ -97,7 +97,7 @@ msgstr ""
 msgid ""
 "*sizehint* informs epoll about the expected number of events to be "
 "registered.  It must be positive, or ``-1`` to use the default. It is only "
-"used on older systems where :manpage:`epoll_create1(2)` is not available; "
+"used on older systems where :c:func:`!epoll_create1` is not available; "
 "otherwise it has no effect (though its value is still checked)."
 msgstr ""
 
@@ -137,32 +137,26 @@ msgid ""
 ":func:`os.set_inheritable` to make the file descriptor inheritable."
 msgstr ""
 
-#: library/select.rst:96
-msgid ""
-"When CPython is built, this function may be disabled using "
-":option:`--disable-epoll`."
-msgstr ""
-
-#: library/select.rst:104
+#: library/select.rst:99
 msgid ""
 "Returns a polling object, which supports registering and unregistering file "
 "descriptors, and then polling them for I/O events; see section :ref:`poll-"
 "objects` below for the methods supported by polling objects."
 msgstr ""
 
-#: library/select.rst:114
+#: library/select.rst:109
 msgid ""
 "Returns a kernel queue object; see section :ref:`kqueue-objects` below for "
 "the methods supported by kqueue objects."
 msgstr ""
 
-#: library/select.rst:127
+#: library/select.rst:122
 msgid ""
 "Returns a kernel event object; see section :ref:`kevent-objects` below for "
 "the methods supported by kevent objects."
 msgstr ""
 
-#: library/select.rst:135
+#: library/select.rst:130
 msgid ""
 "This is a straightforward interface to the Unix :c:func:`!select` system "
 "call. The first three arguments are iterables of 'waitable objects': either "
@@ -170,38 +164,38 @@ msgid ""
 " named :meth:`~io.IOBase.fileno` returning such an integer:"
 msgstr ""
 
-#: library/select.rst:140
+#: library/select.rst:135
 msgid "*rlist*: wait until ready for reading"
 msgstr ""
 
-#: library/select.rst:141
+#: library/select.rst:136
 msgid "*wlist*: wait until ready for writing"
 msgstr ""
 
-#: library/select.rst:142
+#: library/select.rst:137
 msgid ""
 "*xlist*: wait for an \"exceptional condition\" (see the manual page for what "
 "your system considers such a condition)"
 msgstr ""
 
-#: library/select.rst:145
+#: library/select.rst:140
 msgid ""
 "Empty iterables are allowed, but acceptance of three empty iterables is "
 "platform-dependent. (It is known to work on Unix but not on Windows.)  The "
-"optional *timeout* argument specifies a time-out in seconds; it may be a non-"
-"integer to specify fractions of seconds. When the *timeout* argument is "
-"omitted or ``None``, the function blocks until at least one file descriptor "
-"is ready.  A time-out value of zero specifies a poll and never blocks."
+"optional *timeout* argument specifies a time-out as a floating-point number "
+"in seconds. When the *timeout* argument is omitted or ``None``, the function "
+"blocks until at least one file descriptor is ready.  A time-out value of zero"
+" specifies a poll and never blocks."
 msgstr ""
 
-#: library/select.rst:153
+#: library/select.rst:148
 msgid ""
 "The return value is a triple of lists of objects that are ready: subsets of "
 "the first three arguments.  When the time-out is reached without a file "
 "descriptor becoming ready, three empty lists are returned."
 msgstr ""
 
-#: library/select.rst:161
+#: library/select.rst:156
 msgid ""
 "Among the acceptable object types in the iterables are Python :term:`file "
 "objects <file object>` (e.g. ``sys.stdin``, or objects returned by "
@@ -211,27 +205,22 @@ msgid ""
 "really returns a file descriptor, not just a random integer)."
 msgstr ""
 
-#: library/select.rst:172
+#: library/select.rst:167
 msgid ""
 "File objects on Windows are not acceptable, but sockets are.  On Windows, the"
 " underlying :c:func:`!select` function is provided by the WinSock library, "
 "and does not handle file descriptors that don't originate from WinSock."
 msgstr ""
 
-#: library/select.rst:177 library/select.rst:286 library/select.rst:397
-#: library/select.rst:488 library/select.rst:534
+#: library/select.rst:172 library/select.rst:278 library/select.rst:384
+#: library/select.rst:472 library/select.rst:513
 msgid ""
 "The function is now retried with a recomputed timeout when interrupted by a "
 "signal, except if the signal handler raises an exception (see :pep:`475` for "
 "the rationale), instead of raising :exc:`InterruptedError`."
 msgstr ""
 
-#: library/select.rst:183 library/select.rst:292 library/select.rst:403
-#: library/select.rst:540
-msgid "Accepts any real number as *timeout*, not only integer or float."
-msgstr ""
-
-#: library/select.rst:189
+#: library/select.rst:181
 msgid ""
 "The minimum number of bytes which can be written without blocking to a pipe "
 "when the pipe has been reported as ready for writing by "
@@ -239,39 +228,39 @@ msgid ""
 "This doesn't apply to other kinds of file-like objects such as sockets."
 msgstr ""
 
-#: library/select.rst:194
+#: library/select.rst:186
 msgid "This value is guaranteed by POSIX to be at least 512."
 msgstr ""
 
-#: library/select.rst:204
+#: library/select.rst:196
 msgid "``/dev/poll`` polling objects"
 msgstr ""
 
-#: library/select.rst:206
+#: library/select.rst:198
 msgid ""
 "Solaris and derivatives have ``/dev/poll``. While :c:func:`!select` is *O*\\ "
 "(*highest file descriptor*) and :c:func:`!poll` is *O*\\ (*number of file "
 "descriptors*), ``/dev/poll`` is *O*\\ (*active file descriptors*)."
 msgstr ""
 
-#: library/select.rst:210
+#: library/select.rst:202
 msgid ""
 "``/dev/poll`` behaviour is very close to the standard :c:func:`!poll` object."
 msgstr ""
 
-#: library/select.rst:216
+#: library/select.rst:208
 msgid "Close the file descriptor of the polling object."
 msgstr ""
 
-#: library/select.rst:223
+#: library/select.rst:215
 msgid "``True`` if the polling object is closed."
 msgstr ""
 
-#: library/select.rst:230
+#: library/select.rst:222
 msgid "Return the file descriptor number of the polling object."
 msgstr ""
 
-#: library/select.rst:237 library/select.rst:423
+#: library/select.rst:229 library/select.rst:407
 msgid ""
 "Register a file descriptor with the polling object.  Future calls to the "
 ":meth:`poll` method will then check whether the file descriptor has any "
@@ -280,7 +269,7 @@ msgid ""
 "implement :meth:`!fileno`, so they can also be used as the argument."
 msgstr ""
 
-#: library/select.rst:243
+#: library/select.rst:235
 msgid ""
 "*eventmask* is an optional bitmask describing the type of events you want to "
 "check for. The constants are the same as with :c:func:`!poll` object. The "
@@ -288,33 +277,33 @@ msgid ""
 ":const:`POLLPRI`, and :const:`POLLOUT`."
 msgstr ""
 
-#: library/select.rst:250
+#: library/select.rst:242
 msgid ""
 "Registering a file descriptor that's already registered is not an error, but "
 "the result is undefined. The appropriate action is to unregister or modify it"
 " first. This is an important difference compared with :c:func:`!poll`."
 msgstr ""
 
-#: library/select.rst:258
+#: library/select.rst:250
 msgid ""
 "This method does an :meth:`unregister` followed by a :meth:`register`. It is "
 "(a bit) more efficient than doing the same explicitly."
 msgstr ""
 
-#: library/select.rst:265 library/select.rst:467
+#: library/select.rst:257 library/select.rst:451
 msgid ""
 "Remove a file descriptor being tracked by a polling object.  Just like the "
 ":meth:`register` method, *fd* can be an integer or an object with a "
 ":meth:`~io.IOBase.fileno` method that returns an integer."
 msgstr ""
 
-#: library/select.rst:269
+#: library/select.rst:261
 msgid ""
 "Attempting to remove a file descriptor that was never registered is safely "
 "ignored."
 msgstr ""
 
-#: library/select.rst:275
+#: library/select.rst:267
 msgid ""
 "Polls the set of registered file descriptors, and returns a possibly empty "
 "list containing ``(fd, event)`` 2-tuples for the descriptors that have events"
@@ -328,211 +317,208 @@ msgid ""
 "call will block until there is an event for this poll object."
 msgstr ""
 
-#: library/select.rst:299
+#: library/select.rst:288
 msgid "Edge and level trigger polling (epoll) objects"
 msgstr ""
 
-#: library/select.rst:301
+#: library/select.rst:290
 msgid "https://linux.die.net/man/4/epoll"
 msgstr ""
 
-#: library/select.rst:303
+#: library/select.rst:292
 msgid "The *eventmask* is a bit mask using the following constants:"
 msgstr ""
 
-#: library/select.rst:306 library/select.rst:435 library/select.rst:563
-#: library/select.rst:592 library/select.rst:623 library/select.rst:631
-#: library/select.rst:651 library/select.rst:674
+#: library/select.rst:295 library/select.rst:419 library/select.rst:539
+#: library/select.rst:568 library/select.rst:599 library/select.rst:607
+#: library/select.rst:627 library/select.rst:650
 msgid "Constant"
 msgstr ""
 
-#: library/select.rst:306 library/select.rst:435 library/select.rst:563
-#: library/select.rst:592 library/select.rst:623 library/select.rst:631
-#: library/select.rst:651 library/select.rst:674
+#: library/select.rst:295 library/select.rst:419 library/select.rst:539
+#: library/select.rst:568 library/select.rst:599 library/select.rst:607
+#: library/select.rst:627 library/select.rst:650
 msgid "Meaning"
 msgstr ""
 
-#: library/select.rst:308
+#: library/select.rst:297
 msgid ":const:`EPOLLIN`"
 msgstr ""
 
-#: library/select.rst:308
+#: library/select.rst:297
 msgid "Available for read."
 msgstr ""
 
-#: library/select.rst:310
+#: library/select.rst:299
 msgid ":const:`EPOLLOUT`"
 msgstr ""
 
-#: library/select.rst:310
+#: library/select.rst:299
 msgid "Available for write."
 msgstr ""
 
-#: library/select.rst:312
+#: library/select.rst:301
 msgid ":const:`EPOLLPRI`"
 msgstr ""
 
-#: library/select.rst:312
+#: library/select.rst:301
 msgid "Urgent data for read."
 msgstr ""
 
-#: library/select.rst:314
+#: library/select.rst:303
 msgid ":const:`EPOLLERR`"
 msgstr ""
 
-#: library/select.rst:314
+#: library/select.rst:303
 msgid "Error condition happened on the associated fd."
 msgstr ""
 
-#: library/select.rst:316
+#: library/select.rst:305
 msgid ":const:`EPOLLHUP`"
 msgstr ""
 
-#: library/select.rst:316
+#: library/select.rst:305
 msgid "Hang up happened on the associated fd."
 msgstr ""
 
-#: library/select.rst:318
+#: library/select.rst:307
 msgid ":const:`EPOLLET`"
 msgstr ""
 
-#: library/select.rst:318
+#: library/select.rst:307
 msgid "Set Edge Trigger behavior, the default is Level Trigger behavior."
 msgstr ""
 
-#: library/select.rst:321
+#: library/select.rst:310
 msgid ":const:`EPOLLONESHOT`"
 msgstr ""
 
-#: library/select.rst:321
+#: library/select.rst:310
 msgid ""
 "Set one-shot behavior. After one event is pulled out, the fd is internally "
 "disabled."
 msgstr ""
 
-#: library/select.rst:324
+#: library/select.rst:313
 msgid ":const:`EPOLLEXCLUSIVE`"
 msgstr ""
 
-#: library/select.rst:324
+#: library/select.rst:313
 msgid ""
 "Wake only one epoll object when the associated fd has an event. The default "
 "(if this flag is not set) is to wake all epoll objects polling on an fd."
 msgstr ""
 
-#: library/select.rst:329
+#: library/select.rst:318
 msgid ":const:`EPOLLRDHUP`"
 msgstr ""
 
-#: library/select.rst:329
+#: library/select.rst:318
 msgid ""
 "Stream socket peer closed connection or shut down writing half of connection."
 msgstr ""
 
-#: library/select.rst:332
+#: library/select.rst:321
 msgid ":const:`EPOLLRDNORM`"
 msgstr ""
 
-#: library/select.rst:332
+#: library/select.rst:321
 msgid "Equivalent to :const:`EPOLLIN`"
 msgstr ""
 
-#: library/select.rst:334
+#: library/select.rst:323
 msgid ":const:`EPOLLRDBAND`"
 msgstr ""
 
-#: library/select.rst:334
+#: library/select.rst:323
 msgid "Priority data band can be read."
 msgstr ""
 
-#: library/select.rst:336
+#: library/select.rst:325
 msgid ":const:`EPOLLWRNORM`"
 msgstr ""
 
-#: library/select.rst:336
+#: library/select.rst:325
 msgid "Equivalent to :const:`EPOLLOUT`."
 msgstr ""
 
-#: library/select.rst:338
+#: library/select.rst:327
 msgid ":const:`EPOLLWRBAND`"
 msgstr ""
 
-#: library/select.rst:338
+#: library/select.rst:327
 msgid "Priority data may be written."
 msgstr ""
 
-#: library/select.rst:340
+#: library/select.rst:329
 msgid ":const:`EPOLLMSG`"
 msgstr ""
 
-#: library/select.rst:340
+#: library/select.rst:329
 msgid "Ignored."
 msgstr ""
 
-#: library/select.rst:342
+#: library/select.rst:331
 msgid ":const:`EPOLLWAKEUP`"
 msgstr ""
 
-#: library/select.rst:342
+#: library/select.rst:331
 msgid "Prevents sleep during event waiting."
 msgstr ""
 
-#: library/select.rst:345
+#: library/select.rst:334
 msgid ""
 ":const:`EPOLLEXCLUSIVE` was added.  It's only supported by Linux Kernel 4.5 "
 "or later."
 msgstr ""
 
-#: library/select.rst:349
+#: library/select.rst:338
 msgid ""
 ":const:`EPOLLWAKEUP` was added. It's only supported by Linux Kernel 3.5 or "
 "later."
 msgstr ""
 
-#: library/select.rst:355
+#: library/select.rst:344
 msgid "Close the control file descriptor of the epoll object."
 msgstr ""
 
-#: library/select.rst:360
+#: library/select.rst:349
 msgid "``True`` if the epoll object is closed."
 msgstr ""
 
-#: library/select.rst:365 library/select.rst:517
+#: library/select.rst:354 library/select.rst:496
 msgid "Return the file descriptor number of the control fd."
 msgstr ""
 
-#: library/select.rst:370
+#: library/select.rst:359
 msgid "Create an epoll object from a given file descriptor."
 msgstr ""
 
-#: library/select.rst:375
+#: library/select.rst:364
 msgid "Register a file descriptor *fd* with the epoll object."
 msgstr ""
 
-#: library/select.rst:380
+#: library/select.rst:369
 msgid "Modify a registered file descriptor *fd*."
 msgstr ""
 
-#: library/select.rst:385
+#: library/select.rst:374
 msgid "Remove a registered file descriptor from the epoll object."
 msgstr ""
 
-#: library/select.rst:387
+#: library/select.rst:376
 msgid "The method no longer ignores the :data:`~errno.EBADF` error."
 msgstr ""
 
-#: library/select.rst:393
-msgid ""
-"Wait for events. If *timeout* is given, it specifies the length of time in "
-"seconds (may be non-integer) which the system will wait for events before "
-"returning."
+#: library/select.rst:382
+msgid "Wait for events. timeout in seconds (float)"
 msgstr ""
 
-#: library/select.rst:410
+#: library/select.rst:394
 msgid "Polling objects"
 msgstr ""
 
-#: library/select.rst:412
+#: library/select.rst:396
 msgid ""
 "The :c:func:`!poll` system call, supported on most Unix systems, provides "
 "better scalability for network servers that service many, many clients at the"
@@ -544,7 +530,7 @@ msgid ""
 " descriptors*)."
 msgstr ""
 
-#: library/select.rst:429
+#: library/select.rst:413
 msgid ""
 "*eventmask* is an optional bitmask describing the type of events you want to "
 "check for, and can be a combination of the constants :const:`POLLIN`, "
@@ -552,71 +538,71 @@ msgid ""
 " specified, the default value used will check for all 3 types of events."
 msgstr ""
 
-#: library/select.rst:437
+#: library/select.rst:421
 msgid ":const:`POLLIN`"
 msgstr ""
 
-#: library/select.rst:437
+#: library/select.rst:421
 msgid "There is data to read."
 msgstr ""
 
-#: library/select.rst:439
+#: library/select.rst:423
 msgid ":const:`POLLPRI`"
 msgstr ""
 
-#: library/select.rst:439
+#: library/select.rst:423
 msgid "There is urgent data to read."
 msgstr ""
 
-#: library/select.rst:441
+#: library/select.rst:425
 msgid ":const:`POLLOUT`"
 msgstr ""
 
-#: library/select.rst:441
+#: library/select.rst:425
 msgid "Ready for output: writing will not block."
 msgstr ""
 
-#: library/select.rst:443
+#: library/select.rst:427
 msgid ":const:`POLLERR`"
 msgstr ""
 
-#: library/select.rst:443
+#: library/select.rst:427
 msgid "Error condition of some sort."
 msgstr ""
 
-#: library/select.rst:445
+#: library/select.rst:429
 msgid ":const:`POLLHUP`"
 msgstr ""
 
-#: library/select.rst:445
+#: library/select.rst:429
 msgid "Hung up."
 msgstr ""
 
-#: library/select.rst:447
+#: library/select.rst:431
 msgid ":const:`POLLRDHUP`"
 msgstr ""
 
-#: library/select.rst:447
+#: library/select.rst:431
 msgid ""
 "Stream socket peer closed connection, or shut down writing half of "
 "connection."
 msgstr ""
 
-#: library/select.rst:450
+#: library/select.rst:434
 msgid ":const:`POLLNVAL`"
 msgstr ""
 
-#: library/select.rst:450
+#: library/select.rst:434
 msgid "Invalid request: descriptor not open."
 msgstr ""
 
-#: library/select.rst:453
+#: library/select.rst:437
 msgid ""
 "Registering a file descriptor that's already registered is not an error, and "
 "has the same effect as registering the descriptor exactly once."
 msgstr ""
 
-#: library/select.rst:459
+#: library/select.rst:443
 msgid ""
 "Modifies an already registered fd. This has the same effect as ``register(fd,"
 " eventmask)``.  Attempting to modify a file descriptor that was never "
@@ -624,13 +610,13 @@ msgid ""
 "be raised."
 msgstr ""
 
-#: library/select.rst:471
+#: library/select.rst:455
 msgid ""
 "Attempting to remove a file descriptor that was never registered causes a "
 ":exc:`KeyError` exception to be raised."
 msgstr ""
 
-#: library/select.rst:477
+#: library/select.rst:461
 msgid ""
 "Polls the set of registered file descriptors, and returns a possibly empty "
 "list containing ``(fd, event)`` 2-tuples for the descriptors that have events"
@@ -644,56 +630,49 @@ msgid ""
 " the call will block until there is an event for this poll object."
 msgstr ""
 
-#: library/select.rst:494
-msgid ""
-"Accepts any real number as *timeout*, not only integer or float. If "
-"``ppoll()`` function is available, *timeout* has a resolution of ``1`` ns "
-"(``1e-6`` ms) instead of ``1`` ms."
-msgstr ""
-
-#: library/select.rst:503
+#: library/select.rst:482
 msgid "Kqueue objects"
 msgstr ""
 
-#: library/select.rst:507
+#: library/select.rst:486
 msgid "Close the control file descriptor of the kqueue object."
 msgstr ""
 
-#: library/select.rst:512
+#: library/select.rst:491
 msgid "``True`` if the kqueue object is closed."
 msgstr ""
 
-#: library/select.rst:522
+#: library/select.rst:501
 msgid "Create a kqueue object from a given file descriptor."
 msgstr ""
 
-#: library/select.rst:527
+#: library/select.rst:506
 msgid "Low level interface to kevent"
 msgstr ""
 
-#: library/select.rst:529
+#: library/select.rst:508
 msgid "changelist must be an iterable of kevent objects or ``None``"
 msgstr ""
 
-#: library/select.rst:530
+#: library/select.rst:509
 msgid "max_events must be 0 or a positive integer"
 msgstr ""
 
-#: library/select.rst:531
+#: library/select.rst:510
 msgid ""
-"timeout in seconds (non-integers are possible); the default is ``None``, to "
-"wait forever"
+"timeout in seconds (floats possible); the default is ``None``, to wait "
+"forever"
 msgstr ""
 
-#: library/select.rst:547
+#: library/select.rst:523
 msgid "Kevent objects"
 msgstr ""
 
-#: library/select.rst:549
+#: library/select.rst:525
 msgid "https://man.freebsd.org/cgi/man.cgi?query=kqueue&sektion=2"
 msgstr ""
 
-#: library/select.rst:553
+#: library/select.rst:529
 msgid ""
 "Value used to identify the event. The interpretation depends on the filter "
 "but it's usually the file descriptor. In the constructor ident can either be "
@@ -701,341 +680,341 @@ msgid ""
 "the integer internally."
 msgstr ""
 
-#: library/select.rst:560
+#: library/select.rst:536
 msgid "Name of the kernel filter."
 msgstr ""
 
-#: library/select.rst:565
+#: library/select.rst:541
 msgid ":const:`KQ_FILTER_READ`"
 msgstr ""
 
-#: library/select.rst:565
+#: library/select.rst:541
 msgid ""
 "Takes a descriptor and returns whenever there is data available to read."
 msgstr ""
 
-#: library/select.rst:568
+#: library/select.rst:544
 msgid ":const:`KQ_FILTER_WRITE`"
 msgstr ""
 
-#: library/select.rst:568
+#: library/select.rst:544
 msgid ""
 "Takes a descriptor and returns whenever there is data available to write."
 msgstr ""
 
-#: library/select.rst:571
+#: library/select.rst:547
 msgid ":const:`KQ_FILTER_AIO`"
 msgstr ""
 
-#: library/select.rst:571
+#: library/select.rst:547
 msgid "AIO requests."
 msgstr ""
 
-#: library/select.rst:573
+#: library/select.rst:549
 msgid ":const:`KQ_FILTER_VNODE`"
 msgstr ""
 
-#: library/select.rst:573
+#: library/select.rst:549
 msgid ""
 "Returns when one or more of the requested events watched in *fflags* occurs."
 msgstr ""
 
-#: library/select.rst:576
+#: library/select.rst:552
 msgid ":const:`KQ_FILTER_PROC`"
 msgstr ""
 
-#: library/select.rst:576
+#: library/select.rst:552
 msgid "Watch for events on a process ID."
 msgstr ""
 
-#: library/select.rst:578
+#: library/select.rst:554
 msgid ":const:`KQ_FILTER_NETDEV`"
 msgstr ""
 
-#: library/select.rst:578
+#: library/select.rst:554
 msgid "Watch for events on a network device (not available on macOS)."
 msgstr ""
 
-#: library/select.rst:581
+#: library/select.rst:557
 msgid ":const:`KQ_FILTER_SIGNAL`"
 msgstr ""
 
-#: library/select.rst:581
+#: library/select.rst:557
 msgid "Returns whenever the watched signal is delivered to the process."
 msgstr ""
 
-#: library/select.rst:584
+#: library/select.rst:560
 msgid ":const:`KQ_FILTER_TIMER`"
 msgstr ""
 
-#: library/select.rst:584
+#: library/select.rst:560
 msgid "Establishes an arbitrary timer."
 msgstr ""
 
-#: library/select.rst:589
+#: library/select.rst:565
 msgid "Filter action."
 msgstr ""
 
-#: library/select.rst:594
+#: library/select.rst:570
 msgid ":const:`KQ_EV_ADD`"
 msgstr ""
 
-#: library/select.rst:594
+#: library/select.rst:570
 msgid "Adds or modifies an event."
 msgstr ""
 
-#: library/select.rst:596
+#: library/select.rst:572
 msgid ":const:`KQ_EV_DELETE`"
 msgstr ""
 
-#: library/select.rst:596
+#: library/select.rst:572
 msgid "Removes an event from the queue."
 msgstr ""
 
-#: library/select.rst:598
+#: library/select.rst:574
 msgid ":const:`KQ_EV_ENABLE`"
 msgstr ""
 
-#: library/select.rst:598
+#: library/select.rst:574
 msgid "Permits control() to return the event."
 msgstr ""
 
-#: library/select.rst:600
+#: library/select.rst:576
 msgid ":const:`KQ_EV_DISABLE`"
 msgstr ""
 
-#: library/select.rst:600
+#: library/select.rst:576
 msgid "Disables event."
 msgstr ""
 
-#: library/select.rst:602
+#: library/select.rst:578
 msgid ":const:`KQ_EV_ONESHOT`"
 msgstr ""
 
-#: library/select.rst:602
+#: library/select.rst:578
 msgid "Removes event after first occurrence."
 msgstr ""
 
-#: library/select.rst:604
+#: library/select.rst:580
 msgid ":const:`KQ_EV_CLEAR`"
 msgstr ""
 
-#: library/select.rst:604
+#: library/select.rst:580
 msgid "Reset the state after an event is retrieved."
 msgstr ""
 
-#: library/select.rst:606
+#: library/select.rst:582
 msgid ":const:`KQ_EV_SYSFLAGS`"
 msgstr ""
 
-#: library/select.rst:606 library/select.rst:608
+#: library/select.rst:582 library/select.rst:584
 msgid "Internal event."
 msgstr ""
 
-#: library/select.rst:608
+#: library/select.rst:584
 msgid ":const:`KQ_EV_FLAG1`"
 msgstr ""
 
-#: library/select.rst:610
+#: library/select.rst:586
 msgid ":const:`KQ_EV_EOF`"
 msgstr ""
 
-#: library/select.rst:610
+#: library/select.rst:586
 msgid "Filter-specific EOF condition."
 msgstr ""
 
-#: library/select.rst:612
+#: library/select.rst:588
 msgid ":const:`KQ_EV_ERROR`"
 msgstr ""
 
-#: library/select.rst:612
+#: library/select.rst:588
 msgid "See return values."
 msgstr ""
 
-#: library/select.rst:618
+#: library/select.rst:594
 msgid "Filter-specific flags."
 msgstr ""
 
-#: library/select.rst:620
+#: library/select.rst:596
 msgid ":const:`KQ_FILTER_READ` and  :const:`KQ_FILTER_WRITE` filter flags:"
 msgstr ""
 
-#: library/select.rst:625
+#: library/select.rst:601
 msgid ":const:`KQ_NOTE_LOWAT`"
 msgstr ""
 
-#: library/select.rst:625
+#: library/select.rst:601
 msgid "Low water mark of a socket buffer."
 msgstr ""
 
-#: library/select.rst:628
+#: library/select.rst:604
 msgid ":const:`KQ_FILTER_VNODE` filter flags:"
 msgstr ""
 
-#: library/select.rst:633
+#: library/select.rst:609
 msgid ":const:`KQ_NOTE_DELETE`"
 msgstr ""
 
-#: library/select.rst:633
+#: library/select.rst:609
 msgid "*unlink()* was called."
 msgstr ""
 
-#: library/select.rst:635
+#: library/select.rst:611
 msgid ":const:`KQ_NOTE_WRITE`"
 msgstr ""
 
-#: library/select.rst:635
+#: library/select.rst:611
 msgid "A write occurred."
 msgstr ""
 
-#: library/select.rst:637
+#: library/select.rst:613
 msgid ":const:`KQ_NOTE_EXTEND`"
 msgstr ""
 
-#: library/select.rst:637
+#: library/select.rst:613
 msgid "The file was extended."
 msgstr ""
 
-#: library/select.rst:639
+#: library/select.rst:615
 msgid ":const:`KQ_NOTE_ATTRIB`"
 msgstr ""
 
-#: library/select.rst:639
+#: library/select.rst:615
 msgid "An attribute was changed."
 msgstr ""
 
-#: library/select.rst:641
+#: library/select.rst:617
 msgid ":const:`KQ_NOTE_LINK`"
 msgstr ""
 
-#: library/select.rst:641
+#: library/select.rst:617
 msgid "The link count has changed."
 msgstr ""
 
-#: library/select.rst:643
+#: library/select.rst:619
 msgid ":const:`KQ_NOTE_RENAME`"
 msgstr ""
 
-#: library/select.rst:643
+#: library/select.rst:619
 msgid "The file was renamed."
 msgstr ""
 
-#: library/select.rst:645
+#: library/select.rst:621
 msgid ":const:`KQ_NOTE_REVOKE`"
 msgstr ""
 
-#: library/select.rst:645
+#: library/select.rst:621
 msgid "Access to the file was revoked."
 msgstr ""
 
-#: library/select.rst:648
+#: library/select.rst:624
 msgid ":const:`KQ_FILTER_PROC` filter flags:"
 msgstr ""
 
-#: library/select.rst:653
+#: library/select.rst:629
 msgid ":const:`KQ_NOTE_EXIT`"
 msgstr ""
 
-#: library/select.rst:653
+#: library/select.rst:629
 msgid "The process has exited."
 msgstr ""
 
-#: library/select.rst:655
+#: library/select.rst:631
 msgid ":const:`KQ_NOTE_FORK`"
 msgstr ""
 
-#: library/select.rst:655
+#: library/select.rst:631
 msgid "The process has called *fork()*."
 msgstr ""
 
-#: library/select.rst:657
+#: library/select.rst:633
 msgid ":const:`KQ_NOTE_EXEC`"
 msgstr ""
 
-#: library/select.rst:657
+#: library/select.rst:633
 msgid "The process has executed a new process."
 msgstr ""
 
-#: library/select.rst:659
+#: library/select.rst:635
 msgid ":const:`KQ_NOTE_PCTRLMASK`"
 msgstr ""
 
-#: library/select.rst:659 library/select.rst:661
+#: library/select.rst:635 library/select.rst:637
 msgid "Internal filter flag."
 msgstr ""
 
-#: library/select.rst:661
+#: library/select.rst:637
 msgid ":const:`KQ_NOTE_PDATAMASK`"
 msgstr ""
 
-#: library/select.rst:663
+#: library/select.rst:639
 msgid ":const:`KQ_NOTE_TRACK`"
 msgstr ""
 
-#: library/select.rst:663
+#: library/select.rst:639
 msgid "Follow a process across *fork()*."
 msgstr ""
 
-#: library/select.rst:665
+#: library/select.rst:641
 msgid ":const:`KQ_NOTE_CHILD`"
 msgstr ""
 
-#: library/select.rst:665
+#: library/select.rst:641
 msgid "Returned on the child process for *NOTE_TRACK*."
 msgstr ""
 
-#: library/select.rst:668
+#: library/select.rst:644
 msgid ":const:`KQ_NOTE_TRACKERR`"
 msgstr ""
 
-#: library/select.rst:668
+#: library/select.rst:644
 msgid "Unable to attach to a child."
 msgstr ""
 
-#: library/select.rst:671
+#: library/select.rst:647
 msgid ":const:`KQ_FILTER_NETDEV` filter flags (not available on macOS):"
 msgstr ""
 
-#: library/select.rst:676
+#: library/select.rst:652
 msgid ":const:`KQ_NOTE_LINKUP`"
 msgstr ""
 
-#: library/select.rst:676
+#: library/select.rst:652
 msgid "Link is up."
 msgstr ""
 
-#: library/select.rst:678
+#: library/select.rst:654
 msgid ":const:`KQ_NOTE_LINKDOWN`"
 msgstr ""
 
-#: library/select.rst:678
+#: library/select.rst:654
 msgid "Link is down."
 msgstr ""
 
-#: library/select.rst:680
+#: library/select.rst:656
 msgid ":const:`KQ_NOTE_LINKINV`"
 msgstr ""
 
-#: library/select.rst:680
+#: library/select.rst:656
 msgid "Link state is invalid."
 msgstr ""
 
-#: library/select.rst:686
+#: library/select.rst:662
 msgid "Filter-specific data."
 msgstr ""
 
-#: library/select.rst:691
+#: library/select.rst:667
 msgid "User-defined value."
 msgstr ""
 
-#: library/select.rst:157
+#: library/select.rst:152
 msgid "socket() (in module socket)"
 msgstr ""
 
-#: library/select.rst:157
+#: library/select.rst:152
 msgid "popen() (in module os)"
 msgstr ""
 
-#: library/select.rst:170
+#: library/select.rst:165
 msgid "WinSock"
 msgstr ""

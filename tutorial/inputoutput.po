@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.15\n"
+"Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 12:56-0700\n"
+"POT-Creation-Date: 2026-11-16 02:05-0800\n"
 "PO-Revision-Date: 2026-11-04 18:38-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
@@ -19,7 +19,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: tutorial/inputoutput.rst:5
-msgid "Input and output"
+#, fuzzy
+#| msgid "Input and output"
+msgid "Input and Output"
 msgstr "ఇన్‌పుట్ మరియు అవుట్‌పుట్"
 
 #: tutorial/inputoutput.rst:7
@@ -33,7 +35,9 @@ msgstr ""
 "ఫైల్‌లో రాయవచ్చు. ఈ అధ్యాయం వాటిలో కొన్ని అవకాశాలను చర్చిస్తుంది."
 
 #: tutorial/inputoutput.rst:15
-msgid "Fancier output formatting"
+#, fuzzy
+#| msgid "Fancier output formatting"
+msgid "Fancier Output Formatting"
 msgstr "మరింత మెరుగైన అవుట్‌పుట్ ఫార్మాటింగ్"
 
 #: tutorial/inputoutput.rst:17
@@ -231,7 +235,9 @@ msgstr ""
 "ఫార్మాటింగ్‌పై ఇది చాలా తక్కువ నియంత్రణను అందిస్తుంది."
 
 #: tutorial/inputoutput.rst:115
-msgid "Formatted string literals"
+#, fuzzy
+#| msgid "Formatted string literals"
+msgid "Formatted String Literals"
 msgstr "ఫార్మాట్ చేసిన స్ట్రింగ్ లిటరల్‌లు"
 
 #: tutorial/inputoutput.rst:117
@@ -338,7 +344,9 @@ msgstr ""
 "రిఫరెన్స్ కోసం, :ref:`formatspec` కోసం ఉన్న రిఫరెన్స్ గైడ్ చూడండి."
 
 #: tutorial/inputoutput.rst:167
-msgid "The string format() method"
+#, fuzzy
+#| msgid "The string format() method"
+msgid "The String format() Method"
 msgstr "స్ట్రింగ్ format() మెథడ్"
 
 #: tutorial/inputoutput.rst:169
@@ -518,7 +526,9 @@ msgstr ""
 ":ref:`formatstrings` చూడండి."
 
 #: tutorial/inputoutput.rst:244
-msgid "Manual string formatting"
+#, fuzzy
+#| msgid "Manual string formatting"
+msgid "Manual String Formatting"
 msgstr "మాన్యువల్ స్ట్రింగ్ ఫార్మాటింగ్"
 
 #: tutorial/inputoutput.rst:246
@@ -648,23 +658,30 @@ msgid ""
 msgstr "మరింత సమాచారం :ref:`old-string-formatting` విభాగంలో లభిస్తుంది."
 
 #: tutorial/inputoutput.rst:307
-msgid "Reading and writing files"
+#, fuzzy
+#| msgid "Reading and writing files"
+msgid "Reading and Writing Files"
 msgstr "ఫైల్‌లను చదవడం మరియు రాయడం"
 
 #: tutorial/inputoutput.rst:313
+#, fuzzy
+#| msgid ""
+#| ":func:`open` returns a :term:`file object`, and is most commonly used with "
+#| "two positional arguments: ``open(filename, mode)``"
 msgid ""
 ":func:`open` returns a :term:`file object`, and is most commonly used with "
-"two positional arguments: ``open(filename, mode)``"
+"two positional arguments and one keyword argument: ``open(filename, mode, "
+"encoding=None)``"
 msgstr ""
 ":func:`open` ఒక :term:`ఫైల్ ఆబ్జెక్ట్‌ను <file object>` రిటర్న్ చేస్తుంది, "
 "మరియు సాధారణంగా రెండు పొజిషనల్ ఆర్గ్యుమెంట్‌లతో ఉపయోగిస్తారు: "
 "``open(filename, mode)``"
 
-#: tutorial/inputoutput.rst:318
-msgid ">>> f = open('workfile', 'w')"
-msgstr ">>> f = open('workfile', 'w')"
+#: tutorial/inputoutput.rst:319
+msgid ">>> f = open('workfile', 'w', encoding=\"utf-8\")"
+msgstr ""
 
-#: tutorial/inputoutput.rst:325
+#: tutorial/inputoutput.rst:326
 msgid ""
 "The first argument is a string containing the filename.  The second argument "
 "is another string containing a few characters describing the way in which the"
@@ -683,14 +700,24 @@ msgstr ""
 "జోడించబడుతుంది. ``'r+'`` ఫైల్‌ను చదవడానికి, రాయడానికి రెండింటికీ తెరుస్తుంది."
 " *mode* ఆర్గ్యుమెంట్ ఐచ్ఛికం; దాన్ని వదిలేస్తే ``'r'`` అని భావించబడుతుంది."
 
-#: tutorial/inputoutput.rst:334
+#: tutorial/inputoutput.rst:335
+#, fuzzy
+#| msgid ""
+#| "Normally, files are opened in :dfn:`text mode`, that means, you read and "
+#| "write strings from and to the file, which are encoded in a specific "
+#| "*encoding*. If *encoding* is not specified, the default is UTF-8 (see "
+#| ":func:`open`). Appending a ``'b'`` to the mode opens the file in :dfn:`binary"
+#| " mode`. Binary mode data is read and written as :class:`bytes` objects. You "
+#| "can not specify *encoding* when opening file in binary mode."
 msgid ""
 "Normally, files are opened in :dfn:`text mode`, that means, you read and "
 "write strings from and to the file, which are encoded in a specific "
-"*encoding*. If *encoding* is not specified, the default is UTF-8 (see "
-":func:`open`). Appending a ``'b'`` to the mode opens the file in :dfn:`binary"
-" mode`. Binary mode data is read and written as :class:`bytes` objects. You "
-"can not specify *encoding* when opening file in binary mode."
+"*encoding*. If *encoding* is not specified, the default is platform dependent"
+" (see :func:`open`). Because UTF-8 is the modern de-facto standard, "
+"``encoding=\"utf-8\"`` is recommended unless you know that you need to use a "
+"different encoding. Appending a ``'b'`` to the mode opens the file in "
+":dfn:`binary mode`. Binary mode data is read and written as :class:`bytes` "
+"objects. You can not specify *encoding* when opening file in binary mode."
 msgstr ""
 "సాధారణంగా, ఫైల్‌లు :dfn:`text mode` (టెక్స్ట్ మోడ్) లో తెరవబడతాయి, అంటే, మీరు"
 " ఫైల్‌లో స్ట్రింగ్‌లను రాస్తారు, ఫైల్ నుండి స్ట్రింగ్‌లను చదువుతారు, అవి ఒక "
@@ -700,7 +727,7 @@ msgstr ""
 ":class:`bytes` ఆబ్జెక్ట్‌లుగా చదవబడుతుంది, రాయబడుతుంది. బైనరీ మోడ్‌లో ఫైల్‌ను"
 " తెరిచేటప్పుడు మీరు *encoding* ను పేర్కొనలేరు."
 
-#: tutorial/inputoutput.rst:341
+#: tutorial/inputoutput.rst:345
 msgid ""
 "In text mode, the default when reading is to convert platform-specific line "
 "endings (``\\n`` on Unix, ``\\r\\n`` on Windows) to just ``\\n``.  When "
@@ -719,7 +746,7 @@ msgstr ""
 "చదివేటప్పుడు, రాసేటప్పుడు తప్పకుండా బైనరీ మోడ్‌నే ఉపయోగించేలా చాలా జాగ్రత్త "
 "వహించండి."
 
-#: tutorial/inputoutput.rst:349
+#: tutorial/inputoutput.rst:353
 msgid ""
 "It is good practice to use the :keyword:`with` keyword when dealing with file"
 " objects.  The advantage is that the file is properly closed after its suite "
@@ -733,9 +760,17 @@ msgstr ""
 "ఉపయోగించడం, దానికి సమానమైన :keyword:`try`\\ -\\ :keyword:`finally` బ్లాక్‌లను"
 " రాయడం కంటే చాలా చిన్నది కూడా::"
 
-#: tutorial/inputoutput.rst:355
+#: tutorial/inputoutput.rst:359
+#, fuzzy
+#| msgid ""
+#| ">>> with open('workfile') as f:\n"
+#| "...     read_data = f.read()\n"
+#| "\n"
+#| ">>> # We can check that the file has been automatically closed.\n"
+#| ">>> f.closed\n"
+#| "True"
 msgid ""
-">>> with open('workfile') as f:\n"
+">>> with open('workfile', encoding=\"utf-8\") as f:\n"
 "...     read_data = f.read()\n"
 "\n"
 ">>> # We can check that the file has been automatically closed.\n"
@@ -749,7 +784,7 @@ msgstr ""
 ">>> f.closed\n"
 "True"
 
-#: tutorial/inputoutput.rst:362
+#: tutorial/inputoutput.rst:366
 msgid ""
 "If you're not using the :keyword:`with` keyword, then you should call "
 "``f.close()`` to close the file and immediately free up any system resources "
@@ -759,7 +794,7 @@ msgstr ""
 "ఉపయోగిస్తున్న సిస్టమ్ వనరులను వెంటనే విడుదల చేయడానికి ``f.close()`` ను కాల్ "
 "చేయాలి."
 
-#: tutorial/inputoutput.rst:367
+#: tutorial/inputoutput.rst:371
 msgid ""
 "Calling ``f.write()`` without using the :keyword:`!with` keyword or calling "
 "``f.close()`` **might** result in the arguments of ``f.write()`` not being "
@@ -770,7 +805,7 @@ msgstr ""
 "``f.write()`` యొక్క ఆర్గ్యుమెంట్‌లు డిస్క్‌కు పూర్తిగా రాయబడకపోయే **అవకాశం "
 "ఉంది**."
 
-#: tutorial/inputoutput.rst:375
+#: tutorial/inputoutput.rst:379
 msgid ""
 "After a file object is closed, either by a :keyword:`with` statement or by "
 "calling ``f.close()``, attempts to use the file object will automatically "
@@ -780,7 +815,7 @@ msgstr ""
 " చేయడం ద్వారా గానీ మూసివేయబడిన తర్వాత, ఆ ఫైల్ ఆబ్జెక్ట్‌ను ఉపయోగించే "
 "ప్రయత్నాలు ఆటోమేటిక్‌గా విఫలమవుతాయి. ::"
 
-#: tutorial/inputoutput.rst:379
+#: tutorial/inputoutput.rst:383
 msgid ""
 ">>> f.close()\n"
 ">>> f.read()\n"
@@ -794,11 +829,13 @@ msgstr ""
 "  File \"<stdin>\", line 1, in <module>\n"
 "ValueError: I/O operation on closed file."
 
-#: tutorial/inputoutput.rst:389
-msgid "Methods of file objects"
+#: tutorial/inputoutput.rst:393
+#, fuzzy
+#| msgid "Methods of file objects"
+msgid "Methods of File Objects"
 msgstr "ఫైల్ ఆబ్జెక్ట్‌ల మెథడ్‌లు"
 
-#: tutorial/inputoutput.rst:391
+#: tutorial/inputoutput.rst:395
 msgid ""
 "The rest of the examples in this section will assume that a file object "
 "called ``f`` has already been created."
@@ -806,7 +843,7 @@ msgstr ""
 "ఈ విభాగంలోని మిగిలిన ఉదాహరణలు, ``f`` అనే ఫైల్ ఆబ్జెక్ట్ ఇప్పటికే "
 "సృష్టించబడిందని భావిస్తాయి."
 
-#: tutorial/inputoutput.rst:394
+#: tutorial/inputoutput.rst:398
 msgid ""
 "To read a file's contents, call ``f.read(size)``, which reads some quantity "
 "of data and returns it as a string (in text mode) or bytes object (in binary "
@@ -827,7 +864,7 @@ msgstr ""
 "చేయబడతాయి. ఫైల్ చివరికి చేరుకుంటే, ``f.read()`` ఖాళీ స్ట్రింగ్‌ను (``''``) "
 "రిటర్న్ చేస్తుంది. ::"
 
-#: tutorial/inputoutput.rst:403
+#: tutorial/inputoutput.rst:407
 msgid ""
 ">>> f.read()\n"
 "'This is the entire file.\\n'\n"
@@ -839,7 +876,7 @@ msgstr ""
 ">>> f.read()\n"
 "''"
 
-#: tutorial/inputoutput.rst:408
+#: tutorial/inputoutput.rst:412
 msgid ""
 "``f.readline()`` reads a single line from the file; a newline character "
 "(``\\n``) is left at the end of the string, and is only omitted on the last "
@@ -855,7 +892,7 @@ msgstr ""
 " అర్థం, అయితే ఖాళీ లైన్‌ను ``'\\n'`` తో, అంటే ఒకే ఒక న్యూలైన్ మాత్రమే ఉన్న "
 "స్ట్రింగ్‌తో, సూచిస్తారు. ::"
 
-#: tutorial/inputoutput.rst:415
+#: tutorial/inputoutput.rst:419
 msgid ""
 ">>> f.readline()\n"
 "'This is the first line of the file.\\n'\n"
@@ -871,7 +908,7 @@ msgstr ""
 ">>> f.readline()\n"
 "''"
 
-#: tutorial/inputoutput.rst:422
+#: tutorial/inputoutput.rst:426
 msgid ""
 "For reading lines from a file, you can loop over the file object. This is "
 "memory efficient, fast, and leads to simple code::"
@@ -879,7 +916,7 @@ msgstr ""
 "ఫైల్ నుండి లైన్‌లను చదవడానికి, మీరు ఫైల్ ఆబ్జెక్ట్‌పై లూప్ చేయవచ్చు. ఇది "
 "మెమరీని సమర్థవంతంగా వాడుతుంది, వేగంగా ఉంటుంది, సరళమైన కోడ్‌కు దారితీస్తుంది::"
 
-#: tutorial/inputoutput.rst:425
+#: tutorial/inputoutput.rst:429
 msgid ""
 ">>> for line in f:\n"
 "...     print(line, end='')\n"
@@ -893,7 +930,7 @@ msgstr ""
 "This is the first line of the file.\n"
 "Second line of the file"
 
-#: tutorial/inputoutput.rst:431
+#: tutorial/inputoutput.rst:435
 msgid ""
 "If you want to read all the lines of a file in a list you can also use "
 "``list(f)`` or ``f.readlines()``."
@@ -901,7 +938,7 @@ msgstr ""
 "ఫైల్‌లోని అన్ని లైన్‌లను ఒక లిస్ట్‌లో చదవాలనుకుంటే, మీరు ``list(f)`` లేదా "
 "``f.readlines()`` ను కూడా ఉపయోగించవచ్చు."
 
-#: tutorial/inputoutput.rst:434
+#: tutorial/inputoutput.rst:438
 msgid ""
 "``f.write(string)`` writes the contents of *string* to the file, returning "
 "the number of characters written. ::"
@@ -909,7 +946,7 @@ msgstr ""
 "``f.write(string)`` *string* లోని విషయాలను ఫైల్‌లో రాసి, రాసిన అక్షరాల "
 "సంఖ్యను రిటర్న్ చేస్తుంది. ::"
 
-#: tutorial/inputoutput.rst:437
+#: tutorial/inputoutput.rst:441
 msgid ""
 ">>> f.write('This is a test\\n')\n"
 "15"
@@ -917,7 +954,7 @@ msgstr ""
 ">>> f.write('This is a test\\n')\n"
 "15"
 
-#: tutorial/inputoutput.rst:440
+#: tutorial/inputoutput.rst:444
 msgid ""
 "Other types of objects need to be converted -- either to a string (in text "
 "mode) or a bytes object (in binary mode) -- before writing them::"
@@ -925,7 +962,7 @@ msgstr ""
 "ఇతర రకాల ఆబ్జెక్ట్‌లను రాయడానికి ముందు వాటిని మార్చాలి -- స్ట్రింగ్‌గా "
 "(టెక్స్ట్ మోడ్‌లో) గానీ, bytes ఆబ్జెక్ట్‌గా (బైనరీ మోడ్‌లో) గానీ::"
 
-#: tutorial/inputoutput.rst:443
+#: tutorial/inputoutput.rst:447
 msgid ""
 ">>> value = ('the answer', 42)\n"
 ">>> s = str(value)  # convert the tuple to string\n"
@@ -937,7 +974,7 @@ msgstr ""
 ">>> f.write(s)\n"
 "18"
 
-#: tutorial/inputoutput.rst:448
+#: tutorial/inputoutput.rst:452
 msgid ""
 "``f.tell()`` returns an integer giving the file object's current position in "
 "the file represented as number of bytes from the beginning of the file when "
@@ -948,7 +985,7 @@ msgstr ""
 " సంఖ్యగా ఉంటుంది, టెక్స్ట్ మోడ్‌లో లోపలి అర్థం బయటకు తెలియని (opaque) సంఖ్యగా"
 " ఉంటుంది."
 
-#: tutorial/inputoutput.rst:452
+#: tutorial/inputoutput.rst:456
 msgid ""
 "To change the file object's position, use ``f.seek(offset, whence)``.  The "
 "position is computed from adding *offset* to a reference point; the reference"
@@ -965,7 +1002,7 @@ msgstr ""
 " ను వదిలేయవచ్చు, అప్పుడు దాని డిఫాల్ట్ 0, అంటే ఫైల్ ప్రారంభాన్ని రిఫరెన్స్ "
 "పాయింట్‌గా ఉపయోగిస్తుంది. ::"
 
-#: tutorial/inputoutput.rst:459
+#: tutorial/inputoutput.rst:463
 msgid ""
 ">>> f = open('workfile', 'rb+')\n"
 ">>> f.write(b'0123456789abcdef')\n"
@@ -991,7 +1028,7 @@ msgstr ""
 ">>> f.read(1)\n"
 "b'd'"
 
-#: tutorial/inputoutput.rst:471
+#: tutorial/inputoutput.rst:475
 msgid ""
 "In text files (those opened without a ``b`` in the mode string), only seeks "
 "relative to the beginning of the file are allowed (the exception being "
@@ -1005,7 +1042,7 @@ msgstr ""
 "*offset* విలువలు ``f.tell()`` రిటర్న్ చేసినవి లేదా సున్నా మాత్రమే. ఇంకే "
 "*offset* విలువ అయినా నిర్వచించబడని ప్రవర్తనకు దారితీస్తుంది."
 
-#: tutorial/inputoutput.rst:477
+#: tutorial/inputoutput.rst:481
 msgid ""
 "File objects have some additional methods, such as :meth:`~io.IOBase.isatty` "
 "and :meth:`~io.IOBase.truncate` which are less frequently used; consult the "
@@ -1015,11 +1052,11 @@ msgstr ""
 ":meth:`~io.IOBase.truncate` వంటి, తక్కువగా ఉపయోగించే కొన్ని అదనపు మెథడ్‌లు "
 "ఉన్నాయి; ఫైల్ ఆబ్జెక్ట్‌లకు పూర్తి గైడ్ కోసం లైబ్రరీ రిఫరెన్స్ చూడండి."
 
-#: tutorial/inputoutput.rst:485
+#: tutorial/inputoutput.rst:489
 msgid "Saving structured data with :mod:`json`"
 msgstr ":mod:`json` తో నిర్మాణం గల డేటాను సేవ్ చేయడం"
 
-#: tutorial/inputoutput.rst:489
+#: tutorial/inputoutput.rst:493
 msgid ""
 "Strings can easily be written to and read from a file.  Numbers take a bit "
 "more effort, since the :meth:`~io.TextIOBase.read` method only returns "
@@ -1036,7 +1073,7 @@ msgstr ""
 "సంక్లిష్టమైన డేటా టైప్‌లను సేవ్ చేయాలనుకున్నప్పుడు, చేతితో పార్స్ చేయడం, "
 "సీరియలైజ్ చేయడం సంక్లిష్టంగా మారుతుంది."
 
-#: tutorial/inputoutput.rst:496
+#: tutorial/inputoutput.rst:500
 msgid ""
 "Rather than having users constantly writing and debugging code to save "
 "complicated data types to files, Python allows you to use the popular data "
@@ -1060,7 +1097,7 @@ msgstr ""
 "డేటాలో నిల్వ చేయబడి ఉండవచ్చు, లేదా నెట్‌వర్క్ కనెక్షన్ ద్వారా దూరంలో ఉన్న ఏదో"
 " ఒక మెషీన్‌కు పంపబడి ఉండవచ్చు."
 
-#: tutorial/inputoutput.rst:507
+#: tutorial/inputoutput.rst:511
 msgid ""
 "The JSON format is commonly used by modern applications to allow for data "
 "exchange.  Many programmers are already familiar with it, which makes it a "
@@ -1070,7 +1107,7 @@ msgstr ""
 "ఉపయోగిస్తాయి. చాలా మంది ప్రోగ్రామర్‌లకు ఇది ఇప్పటికే పరిచయం ఉంది, ఇది "
 "ఇంటర్‌ఆపరబిలిటీకి దీన్ని మంచి ఎంపికగా చేస్తుంది."
 
-#: tutorial/inputoutput.rst:511
+#: tutorial/inputoutput.rst:515
 msgid ""
 "If you have an object ``x``, you can view its JSON string representation with"
 " a simple line of code::"
@@ -1078,7 +1115,7 @@ msgstr ""
 "మీ దగ్గర ``x`` అనే ఆబ్జెక్ట్ ఉంటే, ఒక సరళమైన కోడ్ లైన్‌తో దాని JSON స్ట్రింగ్"
 " రిప్రజెంటేషన్‌ను చూడవచ్చు::"
 
-#: tutorial/inputoutput.rst:514
+#: tutorial/inputoutput.rst:518
 msgid ""
 ">>> import json\n"
 ">>> x = [1, 'simple', 'list']\n"
@@ -1090,7 +1127,7 @@ msgstr ""
 ">>> json.dumps(x)\n"
 "'[1, \"simple\", \"list\"]'"
 
-#: tutorial/inputoutput.rst:519
+#: tutorial/inputoutput.rst:523
 msgid ""
 "Another variant of the :func:`~json.dumps` function, called "
 ":func:`~json.dump`, simply serializes the object to a :term:`text file`.  So "
@@ -1101,11 +1138,11 @@ msgstr ""
 "చేస్తుంది. కాబట్టి ``f`` రాయడానికి తెరిచిన :term:`టెక్స్ట్ ఫైల్ <text file>` "
 "ఆబ్జెక్ట్ అయితే, మనం ఇలా చేయవచ్చు::"
 
-#: tutorial/inputoutput.rst:523
+#: tutorial/inputoutput.rst:527
 msgid "json.dump(x, f)"
 msgstr "json.dump(x, f)"
 
-#: tutorial/inputoutput.rst:525
+#: tutorial/inputoutput.rst:529
 msgid ""
 "To decode the object again, if ``f`` is a :term:`binary file` or :term:`text "
 "file` object which has been opened for reading::"
@@ -1113,19 +1150,17 @@ msgstr ""
 "ఆబ్జెక్ట్‌ను మళ్లీ డీకోడ్ చేయడానికి, ``f`` చదవడానికి తెరిచిన :term:`బైనరీ "
 "ఫైల్ <binary file>` లేదా :term:`టెక్స్ట్ ఫైల్ <text file>` ఆబ్జెక్ట్ అయితే::"
 
-#: tutorial/inputoutput.rst:528
+#: tutorial/inputoutput.rst:532
 msgid "x = json.load(f)"
 msgstr "x = json.load(f)"
 
-#: tutorial/inputoutput.rst:531
+#: tutorial/inputoutput.rst:535
 msgid ""
-"JSON files must be encoded in UTF-8, the default encoding for :term:`text "
-"files <text file>`."
+"JSON files must be encoded in UTF-8. Use ``encoding=\"utf-8\"`` when opening "
+"JSON file as a :term:`text file` for both of reading and writing."
 msgstr ""
-"JSON ఫైల్‌లు UTF-8 లో ఎన్‌కోడ్ చేయబడి ఉండాలి, ఇది :term:`టెక్స్ట్ ఫైల్‌లకు "
-"<text file>` డిఫాల్ట్ ఎన్‌కోడింగ్."
 
-#: tutorial/inputoutput.rst:534
+#: tutorial/inputoutput.rst:538
 msgid ""
 "This simple serialization technique can handle lists and dictionaries, but "
 "serializing arbitrary class instances in JSON requires a bit of extra effort."
@@ -1135,11 +1170,11 @@ msgstr ""
 "ఏవైనా క్లాస్ ఇన్‌స్టాన్స్‌లను JSON లో సీరియలైజ్ చేయడానికి కొంచెం అదనపు శ్రమ "
 "అవసరం. :mod:`json` మాడ్యూల్ రిఫరెన్స్‌లో దీని వివరణ ఉంది."
 
-#: tutorial/inputoutput.rst:540
+#: tutorial/inputoutput.rst:544
 msgid ":mod:`pickle` - the pickle module"
 msgstr ":mod:`pickle` - pickle మాడ్యూల్"
 
-#: tutorial/inputoutput.rst:542
+#: tutorial/inputoutput.rst:546
 msgid ""
 "Contrary to :ref:`JSON <tut-json>`, *pickle* is a protocol which allows the "
 "serialization of arbitrarily complex Python objects.  As such, it is specific"
@@ -1199,10 +1234,10 @@ msgstr "ఆబ్జెక్ట్"
 msgid "file"
 msgstr "ఫైల్"
 
-#: tutorial/inputoutput.rst:487
+#: tutorial/inputoutput.rst:491
 msgid "module"
 msgstr "మాడ్యూల్"
 
-#: tutorial/inputoutput.rst:487
+#: tutorial/inputoutput.rst:491
 msgid "json"
 msgstr "json"

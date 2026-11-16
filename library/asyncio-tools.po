@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.15\n"
+"Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 12:56-0700\n"
+"POT-Creation-Date: 2026-11-16 02:05-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Telugu\n"
@@ -40,8 +40,8 @@ msgstr ""
 
 #: library/asyncio-tools.rst:20
 msgid ""
-"$ python -m asyncio pstree [--retries N] PID\n"
-"$ python -m asyncio ps [--retries N] PID"
+"$ python -m asyncio pstree PID\n"
+"$ python -m asyncio ps PID"
 msgstr ""
 
 #: library/asyncio-tools.rst:25
@@ -199,10 +199,4 @@ msgid ""
 "18445801   0x10a2a38a0          Levitate             sleep -> play                                      TaskGroup._aexit -> TaskGroup.__aexit__ -> album   Sundowning      0x10a439f60\n"
 "18445801   0x10a2d7150          DYWTYLM              sleep -> play                                      TaskGroup._aexit -> TaskGroup.__aexit__ -> album   TMBTE           0x10a439d70\n"
 "18445801   0x10a6bdaa0          Aqua Regia           sleep -> play                                      TaskGroup._aexit -> TaskGroup.__aexit__ -> album   TMBTE           0x10a439d70"
-msgstr ""
-
-#: library/asyncio-tools.rst:154
-msgid ""
-"Retry failed attempts to inspect the target process up to *N* times.  This "
-"can help when the target process changes while its state is being read."
 msgstr ""

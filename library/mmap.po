@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.15\n"
+"Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 12:56-0700\n"
+"POT-Creation-Date: 2026-11-16 02:05-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Telugu\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid ":mod:`!mmap` --- Memory-mapped file support"
 msgstr ""
 
-#: library/mmap.rst:348 library/mmap.rst:434 includes/wasm-notavail.rst:3
+#: library/mmap.rst:391 includes/wasm-notavail.rst:3
 msgid "Availability"
 msgstr ""
 
@@ -89,17 +89,17 @@ msgid ""
 "length."
 msgstr ""
 
-#: library/mmap.rst:55
+#: library/mmap.rst:54
 msgid ""
 "**(Windows version)** Maps *length* bytes from the file specified by the file"
-" descriptor *fileno*, and creates a mmap object.  If *length* is larger than "
-"the current size of the file, the file is extended to contain *length* bytes."
-"  If *length* is ``0``, the maximum length of the map is the current size of "
-"the file, except that if the file is empty Windows raises an exception (you "
+" handle *fileno*, and creates a mmap object.  If *length* is larger than the "
+"current size of the file, the file is extended to contain *length* bytes.  If"
+" *length* is ``0``, the maximum length of the map is the current size of the "
+"file, except that if the file is empty Windows raises an exception (you "
 "cannot create an empty mapping on Windows)."
 msgstr ""
 
-#: library/mmap.rst:62
+#: library/mmap.rst:61
 msgid ""
 "*tagname*, if specified and not ``None``, is a string giving a tag name for "
 "the mapping.  Windows allows you to have many different mappings against the "
@@ -110,7 +110,7 @@ msgid ""
 "and Windows."
 msgstr ""
 
-#: library/mmap.rst:70
+#: library/mmap.rst:69
 msgid ""
 "*offset* may be specified as a non-negative integer offset. mmap references "
 "will be relative to the offset from the beginning of the file. *offset* "
@@ -118,27 +118,13 @@ msgid ""
 ":const:`ALLOCATIONGRANULARITY`."
 msgstr ""
 
-#: library/mmap.rst:74
-msgid ""
-"If *trackfd* is ``False``, the file handle corresponding to *fileno* will not"
-" be duplicated, and the resulting :class:`!mmap` object will not be "
-"associated with the map's underlying file. This means that the "
-":meth:`~mmap.mmap.size` and :meth:`~mmap.mmap.resize` methods will fail. This"
-" mode is useful to limit the number of open file handles. The original file "
-"can be renamed (but not deleted) after closing *fileno*."
-msgstr ""
-
-#: library/mmap.rst:82 library/mmap.rst:130
-msgid "The *trackfd* parameter was added."
-msgstr ""
-
-#: library/mmap.rst:85 library/mmap.rst:187
+#: library/mmap.rst:73 library/mmap.rst:175
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``mmap.__new__`` with arguments "
 "``fileno``, ``length``, ``access``, ``offset``."
 msgstr ""
 
-#: library/mmap.rst:91
+#: library/mmap.rst:79
 msgid ""
 "**(Unix version)** Maps *length* bytes from the file specified by the file "
 "descriptor *fileno*, and returns a mmap object.  If *length* is ``0``, the "
@@ -146,7 +132,7 @@ msgid ""
 ":class:`~mmap.mmap` is called."
 msgstr ""
 
-#: library/mmap.rst:96
+#: library/mmap.rst:84
 msgid ""
 "*flags* specifies the nature of the mapping. :const:`MAP_PRIVATE` creates a "
 "private copy-on-write mapping, so changes to the contents of the mmap object "
@@ -157,7 +143,7 @@ msgid ""
 "constants>`."
 msgstr ""
 
-#: library/mmap.rst:104
+#: library/mmap.rst:92
 msgid ""
 "*prot*, if specified, gives the desired memory protection; the two most "
 "useful values are :const:`PROT_READ` and :const:`PROT_WRITE`, to specify that"
@@ -165,7 +151,7 @@ msgid ""
 " :const:`PROT_WRITE`."
 msgstr ""
 
-#: library/mmap.rst:109
+#: library/mmap.rst:97
 msgid ""
 "*access* may be specified in lieu of *flags* and *prot* as an optional "
 "keyword parameter.  It is an error to specify both *flags*, *prot* and "
@@ -173,7 +159,7 @@ msgid ""
 "use this parameter."
 msgstr ""
 
-#: library/mmap.rst:114
+#: library/mmap.rst:102
 msgid ""
 "*offset* may be specified as a non-negative integer offset. mmap references "
 "will be relative to the offset from the beginning of the file. *offset* "
@@ -181,7 +167,7 @@ msgid ""
 "which is equal to :const:`PAGESIZE` on Unix systems."
 msgstr ""
 
-#: library/mmap.rst:119
+#: library/mmap.rst:107
 msgid ""
 "If *trackfd* is ``False``, the file descriptor specified by *fileno* will not"
 " be duplicated, and the resulting :class:`!mmap` object will not be "
@@ -190,18 +176,22 @@ msgid ""
 " mode is useful to limit the number of open file descriptors."
 msgstr ""
 
-#: library/mmap.rst:126
+#: library/mmap.rst:114
 msgid ""
 "To ensure validity of the created memory mapping the file specified by the "
 "descriptor *fileno* is internally automatically synchronized with the "
 "physical backing store on macOS."
 msgstr ""
 
-#: library/mmap.rst:133
+#: library/mmap.rst:118
+msgid "The *trackfd* parameter was added."
+msgstr ""
+
+#: library/mmap.rst:121
 msgid "This example shows a simple way of using :class:`~mmap.mmap`::"
 msgstr ""
 
-#: library/mmap.rst:135
+#: library/mmap.rst:123
 msgid ""
 "import mmap\n"
 "\n"
@@ -226,13 +216,13 @@ msgid ""
 "    mm.close()"
 msgstr ""
 
-#: library/mmap.rst:158
+#: library/mmap.rst:146
 msgid ""
 ":class:`~mmap.mmap` can also be used as a context manager in a "
 ":keyword:`with` statement::"
 msgstr ""
 
-#: library/mmap.rst:161
+#: library/mmap.rst:149
 msgid ""
 "import mmap\n"
 "\n"
@@ -240,17 +230,17 @@ msgid ""
 "    mm.write(b\"Hello world!\")"
 msgstr ""
 
-#: library/mmap.rst:166
+#: library/mmap.rst:154
 msgid "Context manager support."
 msgstr ""
 
-#: library/mmap.rst:170
+#: library/mmap.rst:158
 msgid ""
 "The next example demonstrates how to create an anonymous map and exchange "
 "data between the parent and child processes::"
 msgstr ""
 
-#: library/mmap.rst:173
+#: library/mmap.rst:161
 msgid ""
 "import mmap\n"
 "import os\n"
@@ -267,21 +257,21 @@ msgid ""
 "    mm.close()"
 msgstr ""
 
-#: library/mmap.rst:189
+#: library/mmap.rst:177
 msgid "Memory-mapped file objects support the following methods:"
 msgstr ""
 
-#: library/mmap.rst:193
+#: library/mmap.rst:181
 msgid ""
 "Closes the mmap. Subsequent calls to other methods of the object will result "
 "in a ValueError exception being raised. This will not close the open file."
 msgstr ""
 
-#: library/mmap.rst:200
+#: library/mmap.rst:188
 msgid "``True`` if the file is closed."
 msgstr ""
 
-#: library/mmap.rst:207
+#: library/mmap.rst:195
 msgid ""
 "Returns the lowest index in the object where the subsequence *sub* is found, "
 "such that *sub* is contained in the range [*start*, *end*]. Optional "
@@ -289,11 +279,11 @@ msgid ""
 "``-1`` on failure."
 msgstr ""
 
-#: library/mmap.rst:212 library/mmap.rst:321 library/mmap.rst:376
+#: library/mmap.rst:200 library/mmap.rst:293 library/mmap.rst:333
 msgid "Writable :term:`bytes-like object` is now accepted."
 msgstr ""
 
-#: library/mmap.rst:218
+#: library/mmap.rst:207
 msgid ""
 "Flushes changes made to the in-memory copy of a file back to disk. Without "
 "use of this call there is no guarantee that changes are written back before "
@@ -303,42 +293,20 @@ msgid ""
 ":const:`PAGESIZE` or :const:`ALLOCATIONGRANULARITY`."
 msgstr ""
 
-#: library/mmap.rst:225
-msgid ""
-"The *flags* parameter specifies the synchronization behavior. *flags* must be"
-" one of the :ref:`MS_* constants <ms-constants>` available on the system."
-msgstr ""
-
-#: library/mmap.rst:229
-msgid "On Windows, the *flags* parameter is ignored."
-msgstr ""
-
-#: library/mmap.rst:231
+#: library/mmap.rst:214
 msgid ""
 "``None`` is returned to indicate success.  An exception is raised when the "
 "call failed."
 msgstr ""
 
-#: library/mmap.rst:234
+#: library/mmap.rst:217
 msgid ""
 "Previously, a nonzero value was returned on success; zero was returned on "
 "error under Windows.  A zero value was returned on success; an exception was "
 "raised on error under Unix."
 msgstr ""
 
-#: library/mmap.rst:239
-msgid ""
-"Allow specifying *offset* without *size*. Previously, both *offset* and "
-"*size* parameters were required together. Now *offset* can be specified "
-"alone, and the flush operation will extend from *offset* to the end of the "
-"mmap."
-msgstr ""
-
-#: library/mmap.rst:245
-msgid "Added *flags* parameter to control synchronization behavior."
-msgstr ""
-
-#: library/mmap.rst:251
+#: library/mmap.rst:225
 msgid ""
 "Send advice *option* to the kernel about the memory region beginning at "
 "*start* and extending *length* bytes.  *option* must be one of the "
@@ -348,18 +316,18 @@ msgid ""
 ":const:`PAGESIZE`."
 msgstr ""
 
-#: library/mmap.rst:258
+#: library/mmap.rst:232
 msgid "Availability: Systems with the ``madvise()`` system call."
 msgstr ""
 
-#: library/mmap.rst:265
+#: library/mmap.rst:239
 msgid ""
 "Copy the *count* bytes starting at offset *src* to the destination index "
 "*dest*.  If the mmap was created with :const:`ACCESS_READ`, then calls to "
 "move will raise a :exc:`TypeError` exception."
 msgstr ""
 
-#: library/mmap.rst:272
+#: library/mmap.rst:246
 msgid ""
 "Return a :class:`bytes` containing up to *n* bytes starting from the current "
 "file position. If the argument is omitted, ``None`` or negative, return all "
@@ -367,28 +335,28 @@ msgid ""
 "position is updated to point after the bytes that were returned."
 msgstr ""
 
-#: library/mmap.rst:278
+#: library/mmap.rst:252
 msgid "Argument can be omitted or ``None``."
 msgstr ""
 
-#: library/mmap.rst:283
+#: library/mmap.rst:257
 msgid ""
 "Returns a byte at the current file position as an integer, and advances the "
 "file position by 1."
 msgstr ""
 
-#: library/mmap.rst:289
+#: library/mmap.rst:263
 msgid ""
 "Returns a single line, starting at the current file position and up to the "
 "next newline. The file position is updated to point after the bytes that were"
 " returned."
 msgstr ""
 
-#: library/mmap.rst:296
+#: library/mmap.rst:270
 msgid "Resizes the map and the underlying file, if any."
 msgstr ""
 
-#: library/mmap.rst:298
+#: library/mmap.rst:272
 msgid ""
 "Resizing a map created with *access* of :const:`ACCESS_READ` or "
 ":const:`ACCESS_COPY`, will raise a :exc:`TypeError` exception. Resizing a map"
@@ -396,7 +364,7 @@ msgid ""
 "exception."
 msgstr ""
 
-#: library/mmap.rst:303
+#: library/mmap.rst:277
 msgid ""
 "**On Windows**: Resizing the map will raise an :exc:`OSError` if there are "
 "other maps against the same named file. Resizing an anonymous map (ie against"
@@ -404,17 +372,13 @@ msgid ""
 "over up to the length of the new size."
 msgstr ""
 
-#: library/mmap.rst:308
-msgid "Availability: Windows and systems with the ``mremap()`` system call."
-msgstr ""
-
-#: library/mmap.rst:310
+#: library/mmap.rst:282
 msgid ""
 "Correctly fails if attempting to resize when another map is held Allows "
 "resize against an anonymous map on Windows"
 msgstr ""
 
-#: library/mmap.rst:316
+#: library/mmap.rst:288
 msgid ""
 "Returns the highest index in the object where the subsequence *sub* is found,"
 " such that *sub* is contained in the range [*start*, *end*]. Optional "
@@ -422,7 +386,7 @@ msgid ""
 "``-1`` on failure."
 msgstr ""
 
-#: library/mmap.rst:327
+#: library/mmap.rst:299
 msgid ""
 "Set the file's current position.  *whence* argument is optional and defaults "
 "to ``os.SEEK_SET`` or ``0`` (absolute file positioning); other values are "
@@ -430,40 +394,27 @@ msgid ""
 "``os.SEEK_END`` or ``2`` (seek relative to the file's end)."
 msgstr ""
 
-#: library/mmap.rst:332
+#: library/mmap.rst:304
 msgid "Return the new absolute position instead of ``None``."
 msgstr ""
 
-#: library/mmap.rst:337
+#: library/mmap.rst:309
 msgid ""
 "Return whether the file supports seeking, and the return value is always "
 "``True``."
 msgstr ""
 
-#: library/mmap.rst:343
-msgid ""
-"Annotate the memory mapping with the given *name* for easier identification "
-"in ``/proc/<pid>/maps`` if the kernel supports the feature and :option:`-X "
-"dev <-X>` is passed to Python or if Python is built in :ref:`debug mode "
-"<debug-build>`. The length of *name* must not exceed 67 bytes including the "
-"``'\\0'`` terminator."
-msgstr ""
-
-#: library/mmap.rst:354
+#: library/mmap.rst:315
 msgid ""
 "Return the length of the file, which can be larger than the size of the "
-"memory-mapped area. For an anonymous mapping, return its size."
+"memory-mapped area."
 msgstr ""
 
-#: library/mmap.rst:358
-msgid "Anonymous mappings are now supported on Unix."
-msgstr ""
-
-#: library/mmap.rst:364
+#: library/mmap.rst:321
 msgid "Returns the current position of the file pointer."
 msgstr ""
 
-#: library/mmap.rst:369
+#: library/mmap.rst:326
 msgid ""
 "Write the bytes in *bytes* into memory at the current position of the file "
 "pointer and return the number of bytes written (never less than "
@@ -473,11 +424,11 @@ msgid ""
 "it will raise a :exc:`TypeError` exception."
 msgstr ""
 
-#: library/mmap.rst:379
+#: library/mmap.rst:336
 msgid "The number of bytes written is now returned."
 msgstr ""
 
-#: library/mmap.rst:385
+#: library/mmap.rst:342
 msgid ""
 "Write the integer *byte* into memory at the current position of the file "
 "pointer; the file position is advanced by ``1``. If the mmap was created with"
@@ -485,11 +436,11 @@ msgid ""
 "exception."
 msgstr ""
 
-#: library/mmap.rst:393
+#: library/mmap.rst:350
 msgid "ACCESS_* constants"
 msgstr ""
 
-#: library/mmap.rst:400
+#: library/mmap.rst:357
 msgid ""
 "These constants specify the access mode for a memory mapping. "
 ":const:`ACCESS_READ` provides read-only access, :const:`ACCESS_WRITE` "
@@ -498,11 +449,11 @@ msgid ""
 ":class:`~mmap.mmap`."
 msgstr ""
 
-#: library/mmap.rst:409
+#: library/mmap.rst:366
 msgid "Page size constants"
 msgstr ""
 
-#: library/mmap.rst:414
+#: library/mmap.rst:371
 msgid ""
 ":const:`PAGESIZE` is the system memory page size in bytes. "
 ":const:`ALLOCATIONGRANULARITY` is the minimum alignment in bytes required for"
@@ -510,11 +461,11 @@ msgid ""
 ":const:`ALLOCATIONGRANULARITY` is equal to :const:`PAGESIZE`."
 msgstr ""
 
-#: library/mmap.rst:422
+#: library/mmap.rst:379
 msgid "PROT_* constants"
 msgstr ""
 
-#: library/mmap.rst:428
+#: library/mmap.rst:385
 msgid ""
 "Memory protection flags accepted by the *prot* argument of "
 ":class:`~mmap.mmap`. :const:`PROT_READ` allows pages to be read, "
@@ -523,25 +474,25 @@ msgid ""
 "Not every option is present on every system."
 msgstr ""
 
-#: library/mmap.rst:439
+#: library/mmap.rst:396
 msgid "MADV_* constants"
 msgstr ""
 
-#: library/mmap.rst:466
+#: library/mmap.rst:423
 msgid ""
 "These options can be passed to :meth:`mmap.madvise`.  Not every option will "
 "be present on every system."
 msgstr ""
 
-#: library/mmap.rst:469
+#: library/mmap.rst:426
 msgid "Availability: Systems with the madvise() system call."
 msgstr ""
 
-#: library/mmap.rst:476
+#: library/mmap.rst:433
 msgid "MAP_* constants"
 msgstr ""
 
-#: library/mmap.rst:500
+#: library/mmap.rst:457
 msgid ""
 "These are the various flags that can be passed to :meth:`mmap.mmap`.  "
 ":data:`MAP_ALIGNED_SUPER` is only available at FreeBSD and "
@@ -549,50 +500,23 @@ msgid ""
 "might not be present on some systems."
 msgstr ""
 
-#: library/mmap.rst:504
+#: library/mmap.rst:461
 msgid "Added :data:`MAP_POPULATE` constant."
 msgstr ""
 
-#: library/mmap.rst:507
+#: library/mmap.rst:464
 msgid "Added :data:`MAP_STACK` constant."
 msgstr ""
 
-#: library/mmap.rst:510
+#: library/mmap.rst:467
 msgid "Added :data:`MAP_ALIGNED_SUPER` and :data:`MAP_CONCEAL` constants."
 msgstr ""
 
-#: library/mmap.rst:513
+#: library/mmap.rst:470
 msgid ""
 "Added :data:`MAP_32BIT`, :data:`MAP_HASSEMAPHORE`, :data:`MAP_JIT`, "
 ":data:`MAP_NOCACHE`, :data:`MAP_NOEXTEND`, :data:`MAP_NORESERVE`, "
 ":data:`MAP_RESILIENT_CODESIGN`, :data:`MAP_RESILIENT_MEDIA`, "
 ":data:`MAP_TPRO`, :data:`MAP_TRANSLATED_ALLOW_EXECUTE`, and "
 ":data:`MAP_UNIX03` constants."
-msgstr ""
-
-#: library/mmap.rst:523
-msgid "MS_* constants"
-msgstr ""
-
-#: library/mmap.rst:529
-msgid ""
-"These flags control the synchronization behavior for :meth:`mmap.flush`:"
-msgstr ""
-
-#: library/mmap.rst:531
-msgid ""
-":data:`MS_SYNC` - Synchronous flush: writes are scheduled and the call blocks"
-" until they are physically written to storage."
-msgstr ""
-
-#: library/mmap.rst:533
-msgid ""
-":data:`MS_ASYNC` - Asynchronous flush: writes are scheduled but the call "
-"returns immediately without waiting for completion."
-msgstr ""
-
-#: library/mmap.rst:535
-msgid ""
-":data:`MS_INVALIDATE` - Invalidate cached data: invalidates other mappings of"
-" the same file so they can see the changes."
 msgstr ""

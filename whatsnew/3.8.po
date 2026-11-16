@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.15\n"
+"Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 12:56-0700\n"
+"POT-Creation-Date: 2026-11-16 02:05-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Telugu\n"
@@ -2452,8 +2452,8 @@ msgstr ""
 #: whatsnew/3.8.rst:1633
 msgid ""
 ":c:func:`!Py_SetPath` now sets :data:`sys.executable` to the program full "
-"path (:c:func:`!Py_GetProgramFullPath`) rather than to the program name "
-"(:c:func:`!Py_GetProgramName`). (Contributed by Victor Stinner in "
+"path (:c:func:`Py_GetProgramFullPath`) rather than to the program name "
+"(:c:func:`Py_GetProgramName`). (Contributed by Victor Stinner in "
 ":issue:`38234`.)"
 msgstr ""
 
