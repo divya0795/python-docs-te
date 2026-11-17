@@ -12,7 +12,7 @@
 # - make merge  # To update all .po files to the latest CPython $(BRANCH) sources
 # - make core  # To check core completion the way translations.python.org does
 #
-# Modes are: autobuild-stable, autobuild-dev, and autobuild-html
+# Modes are: autobuild-dev, autobuild-stable, autobuild-dev-html and autobuild-stable-html
 
 # Configuration
 
