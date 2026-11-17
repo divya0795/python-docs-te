@@ -137,7 +137,7 @@ spell: ensure_prerequisites $(DESTS)
 .PHONY: line-length
 line-length:
 	@echo "Searching for long lines..."
-	@awk '{if (length(gensub(/శ్రీనివాస్/, ".", "g", $$0)) > 80 && length(gensub(/[^ ]/, "", "g")) > 1) {print FILENAME ":" FNR, "line too long:", $$0; ERRORS+=1}} END {if (ERRORS>0) {exit 1}}' *.po */*.po
+	@$(PYTHON) -c 'import glob, sys; bad = [f"{f}:{n}: line too long: {l.rstrip()}" for f in sorted(glob.glob("*.po") + glob.glob("*/*.po")) for n, l in enumerate(open(f, encoding="utf-8"), 1) if len(l.rstrip("\n")) > 80 and l.count(" ") > 1]; print(*bad, sep="\n") if bad else None; sys.exit(1 if bad else 0)'
 
 .PHONY: sphinx-lint
 sphinx-lint:
