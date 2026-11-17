@@ -33,13 +33,31 @@ def git(repo: Path, *args: str) -> str:
     ).stdout
 
 
+def read_files(repo: Path, branch: str, paths: list[str]) -> dict[str, str]:
+    """Read the files at ``branch`` with a single ``git cat-file --batch``."""
+    out = subprocess.run(
+        ["git", "-C", str(repo), "cat-file", "--batch"],
+        input="".join(f"{branch}:{path}\n" for path in paths).encode(),
+        capture_output=True, check=True,
+    ).stdout
+    contents, pos = {}, 0
+    for path in paths:
+        header_end = out.index(b"\n", pos)
+        size = int(out[pos:header_end].split()[2])  # "<sha> blob <size>"
+        contents[path] = out[header_end + 1 : header_end + 1 + size].decode("utf-8")
+        pos = header_end + 1 + size + 1  # content is followed by a newline
+    return contents
+
+
 def load_branch(repo: Path, branch: str) -> tuple[dict, dict]:
     """Return {(file, msgctxt, msgid): msgstr} and {(msgctxt, msgid): msgstr}."""
     per_file, anywhere = {}, {}
-    for path in git(repo, "ls-tree", "-r", "--name-only", branch).split():
-        if not path.endswith(".po"):
-            continue
-        po = polib.pofile(git(repo, "show", f"{branch}:{path}"))
+    paths = [
+        path for path in git(repo, "ls-tree", "-r", "--name-only", branch).splitlines()
+        if path.endswith(".po")
+    ]
+    for path, text in read_files(repo, branch, paths).items():
+        po = polib.pofile(text)
         for e in po:
             if e.msgstr and not e.obsolete and "fuzzy" not in e.flags:
                 per_file[(path, e.msgctxt, e.msgid)] = e.msgstr
