@@ -44,7 +44,10 @@ upstream strings lower the core completion (`bugs.po`, `tutorial/` and
 3. Commit the result.
 
 The tools need `polib` and `potodo` (`python -m pip install polib potodo`);
-`make spell` needs `pospell` and the `hunspell-te` dictionary. The Test
+`make spell` needs `pospell` and the `hunspell-te` dictionary; `make wrap`
+needs `powrap` and GNU gettext's `msgcat` (`apt install gettext` or
+`brew install gettext`). On macOS, `make` (the HTML build) also needs GNU
+coreutils (`brew install coreutils`). The Test
 workflow runs the same core check every week and fails when upstream has
 moved ahead.
 
