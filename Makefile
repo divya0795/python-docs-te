@@ -4,7 +4,7 @@
 #
 # - make  # Automatically build an HTML local version
 # - make todo  # To list remaining tasks and show current progression
-# - make verifs  # To check for correctness: wrapping, spelling
+# - make verifs  # To check for correctness: wrapping, spelling, reST markup
 # - make wrap  # To rewrap modified files
 # - make spell  # To check for spelling
 # - make clean # To remove build artifacts
@@ -112,6 +112,7 @@ pot: ensure_prerequisites
 .PHONY: merge
 merge: pot
 	$(PYTHON) scripts/merge_pot.py venv/cpython/Doc/build/gettext
+	powrap --modified --quiet  # merge_pot.py writes with polib; keep msgcat's wrapping
 	sed -i.bak "s/^CPYTHON_CURRENT_COMMIT := .*/CPYTHON_CURRENT_COMMIT := $$(git -C venv/cpython rev-parse HEAD)/" Makefile
 	rm -f Makefile.bak
 
@@ -135,10 +136,10 @@ DESTS = $(addprefix $(POSPELL_TMP_DIR)/,$(addsuffix .out,$(SRCS)))
 .PHONY: spell
 spell: $(DESTS)
 
-.PHONY: line-length
-line-length:
-	@echo "Searching for long lines..."
-	@$(PYTHON) -c 'import glob, sys; bad = [f"{f}:{n}: line too long: {l.rstrip()}" for f in sorted(glob.glob("*.po") + glob.glob("*/*.po")) for n, l in enumerate(open(f, encoding="utf-8"), 1) if len(l.rstrip("\n")) > 80 and l.count(" ") > 1]; print(*bad, sep="\n") if bad else None; sys.exit(1 if bad else 0)'
+.PHONY: wrap-check
+wrap-check:
+	@echo "Checking that the .po files are wrapped the powrap (msgcat) way..."
+	@powrap --check --quiet *.po */*.po
 
 .PHONY: sphinx-lint
 sphinx-lint:
@@ -155,7 +156,7 @@ fuzzy:
 	potodo -f --exclude venv .venv $(EXCLUDED)
 
 .PHONY: verifs
-verifs: spell line-length sphinx-lint
+verifs: spell wrap-check sphinx-lint
 
 .PHONY: clean
 clean:
