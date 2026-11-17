@@ -48,8 +48,8 @@ msgstr ""
 
 #: library/asyncio-exceptions.rst:34
 msgid ""
-":exc:`CancelledError` is now a subclass of :class:`BaseException` rather than"
-" :class:`Exception`."
+":exc:`CancelledError` is now a subclass of :class:`BaseException` rather "
+"than :class:`Exception`."
 msgstr ""
 
 #: library/asyncio-exceptions.rst:39
@@ -58,8 +58,8 @@ msgstr ""
 
 #: library/asyncio-exceptions.rst:41
 msgid ""
-"Can be raised in situations like setting a result value for a *Future* object"
-" that already has a result value set."
+"Can be raised in situations like setting a result value for a *Future* "
+"object that already has a result value set."
 msgstr ""
 
 #: library/asyncio-exceptions.rst:47

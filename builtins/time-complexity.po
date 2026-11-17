@@ -25,9 +25,9 @@ msgstr ""
 #: builtins/time-complexity.rst:7
 msgid ""
 "This page documents the time complexity of various operations on built-in "
-"types in CPython. Other Python implementations may have different performance"
-" characteristics. Additionally, the listed costs assume exact built-in types,"
-" as instances of subclasses may have different costs."
+"types in CPython. Other Python implementations may have different "
+"performance characteristics. Additionally, the listed costs assume exact "
+"built-in types, as instances of subclasses may have different costs."
 msgstr ""
 
 #: builtins/time-complexity.rst:12
@@ -44,12 +44,12 @@ msgstr ""
 
 #: builtins/time-complexity.rst:24
 msgid ""
-"Lists are mutable sequences; for more detail on the implementation see "
-":ref:`how-are-lists-implemented`. The largest costs come from growing beyond "
-"the current allocation size (because everything must move), or from inserting"
-" or deleting somewhere near the beginning (because everything after that must"
-" move). If you need to add or remove at both ends, consider using a "
-":class:`collections.deque` instead."
+"Lists are mutable sequences; for more detail on the implementation "
+"see :ref:`how-are-lists-implemented`. The largest costs come from growing "
+"beyond the current allocation size (because everything must move), or from "
+"inserting or deleting somewhere near the beginning (because everything after "
+"that must move). If you need to add or remove at both ends, consider using "
+"a :class:`collections.deque` instead."
 msgstr ""
 
 #: builtins/time-complexity.rst:34 builtins/time-complexity.rst:85
@@ -263,8 +263,8 @@ msgid ""
 "uncommon. They also assume the keys are well-distributed among the set of "
 "possible keys. In the worst case, when every key hashes to the same value, "
 "each of the *O*\\ (1) operations below instead takes *O*\\ (*n*) time. They "
-"also assume that hashing and comparing a key is *O*\\ (1). For more detail on"
-" the implementation, see :ref:`how-are-dictionaries-implemented`."
+"also assume that hashing and comparing a key is *O*\\ (1). For more detail "
+"on the implementation, see :ref:`how-are-dictionaries-implemented`."
 msgstr ""
 
 #: builtins/time-complexity.rst:123
@@ -399,10 +399,10 @@ msgstr ""
 
 #: builtins/time-complexity.rst:189
 msgid ""
-":class:`str` and :class:`bytes` objects are immutable sequences of characters"
-" and bytes, respectively. As with tuples, copying one returns the original "
-"object. A :class:`bytearray` is mutable, and additionally supports the "
-"mutating operations of :class:`list` (except :meth:`!sort`), at the same "
+":class:`str` and :class:`bytes` objects are immutable sequences of "
+"characters and bytes, respectively. As with tuples, copying one returns the "
+"original object. A :class:`bytearray` is mutable, and additionally supports "
+"the mutating operations of :class:`list` (except :meth:`!sort`), at the same "
 "costs. However, deleting at the front with ``del`` (``del b[0]``, ``del "
 "b[:k]``) only advances the start of the buffer instead of moving the "
 "remaining bytes, and is amortized *O*\\ (1)."
@@ -490,9 +490,9 @@ msgstr ""
 
 #: builtins/time-complexity.rst:253
 msgid ""
-"A :class:`range` object computes its items on demand from its *start*, *stop*"
-" and *step* values, so most operations do not depend on the length of the "
-"range."
+"A :class:`range` object computes its items on demand from its *start*, "
+"*stop* and *step* values, so most operations do not depend on the length of "
+"the range."
 msgstr ""
 
 #: builtins/time-complexity.rst:261
@@ -532,13 +532,13 @@ msgstr ""
 
 #: builtins/time-complexity.rst:284
 msgid ""
-"Popping or deleting the element at index *k* of a list of size *n* shifts all"
-" elements after *k* one slot to the left, moving *n* - *k* - 1 elements; "
+"Popping or deleting the element at index *k* of a list of size *n* shifts "
+"all elements after *k* one slot to the left, moving *n* - *k* - 1 elements; "
 "inserting at index *k* shifts the elements from *k* onwards one slot to the "
 "right, moving *n* - *k* elements. The worst case is index 0, where the whole "
-"rest of the list has to be moved; the average case, an index in the middle of"
-" the list, takes *O*\\ (*n*/2) = *O*\\ (*n*) operations; and operating at the"
-" end of the list moves nothing and is *O*\\ (1)."
+"rest of the list has to be moved; the average case, an index in the middle "
+"of the list, takes *O*\\ (*n*/2) = *O*\\ (*n*) operations; and operating at "
+"the end of the list moves nothing and is *O*\\ (1)."
 msgstr ""
 
 #: builtins/time-complexity.rst:293
@@ -550,14 +550,14 @@ msgstr ""
 #: builtins/time-complexity.rst:296
 msgid ""
 "This is the worst case scenario. Sorting is adaptive and input that is "
-"already sorted or reverse-sorted takes only *O*\\ (*n*) comparisons. See "
-":source:`Objects/listsort.txt` for more information."
+"already sorted or reverse-sorted takes only *O*\\ (*n*) comparisons. "
+"See :source:`Objects/listsort.txt` for more information."
 msgstr ""
 
 #: builtins/time-complexity.rst:300
 msgid ""
-"The number of elements is stored in the object, so ``len()`` does not need to"
-" count them."
+"The number of elements is stored in the object, so ``len()`` does not need "
+"to count them."
 msgstr ""
 
 #: builtins/time-complexity.rst:303
@@ -583,10 +583,10 @@ msgstr ""
 
 #: builtins/time-complexity.rst:315
 msgid ""
-"Each concatenation builds a new object, so building a string by concatenating"
-" many pieces in a loop is quadratic in the total length. See the :ref:`note "
-"on concatenating immutable sequences <typesseq-repeated-concatenation>` for "
-"alternatives."
+"Each concatenation builds a new object, so building a string by "
+"concatenating many pieces in a loop is quadratic in the total length. See "
+"the :ref:`note on concatenating immutable sequences <typesseq-repeated-"
+"concatenation>` for alternatives."
 msgstr ""
 
 #: builtins/time-complexity.rst:320
@@ -599,8 +599,8 @@ msgstr ""
 msgid ""
 "This is the worst case. Reverse searches are *O*\\ (*n*) on typical input. "
 "Forward searches instead use a more elaborate algorithm with a linear worst "
-"case, described in "
-":source:`Objects/stringlib/stringlib_find_two_way_notes.txt`."
+"case, described in :source:`Objects/stringlib/"
+"stringlib_find_two_way_notes.txt`."
 msgstr ""
 
 #: builtins/time-complexity.rst:328

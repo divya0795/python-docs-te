@@ -28,8 +28,8 @@ msgstr ""
 
 #: library/tkinter.dnd.rst:11
 msgid ""
-"This is experimental and due to be deprecated when it is replaced with the Tk"
-" DND."
+"This is experimental and due to be deprecated when it is replaced with the "
+"Tk DND."
 msgstr ""
 
 #: library/tkinter.dnd.rst:14
@@ -40,8 +40,8 @@ msgid ""
 "starts the drag-and-drop process. Typically, you bind a ButtonPress event to "
 "a callback function that you write (see :ref:`Bindings-and-Events`). The "
 "function should call :func:`dnd_start`, where *source* is the object to be "
-"dragged, and *event* is the event that invoked the call (the argument to your"
-" callback function)."
+"dragged, and *event* is the event that invoked the call (the argument to "
+"your callback function)."
 msgstr ""
 
 #: library/tkinter.dnd.rst:22
@@ -108,9 +108,9 @@ msgstr ""
 
 #: library/tkinter.dnd.rst:61
 msgid ""
-"Factory function for the drag-and-drop process. Return the "
-":class:`DndHandler` instance managing the drag, or ``None`` if a drag could "
-"not be started."
+"Factory function for the drag-and-drop process. Return "
+"the :class:`DndHandler` instance managing the drag, or ``None`` if a drag "
+"could not be started."
 msgstr ""
 
 #: library/tkinter.dnd.rst:67

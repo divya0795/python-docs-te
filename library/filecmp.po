@@ -29,8 +29,8 @@ msgstr ""
 #: library/filecmp.rst:13
 msgid ""
 "The :mod:`!filecmp` module defines functions to compare files and "
-"directories, with various optional time/correctness trade-offs. For comparing"
-" files, see also the :mod:`difflib` module."
+"directories, with various optional time/correctness trade-offs. For "
+"comparing files, see also the :mod:`difflib` module."
 msgstr ""
 
 #: library/filecmp.rst:17
@@ -39,15 +39,15 @@ msgstr ""
 
 #: library/filecmp.rst:22
 msgid ""
-"Compare the files named *f1* and *f2*, returning ``True`` if they seem equal,"
-" ``False`` otherwise."
+"Compare the files named *f1* and *f2*, returning ``True`` if they seem "
+"equal, ``False`` otherwise."
 msgstr ""
 
 #: library/filecmp.rst:25
 msgid ""
-"If *shallow* is true and the :func:`os.stat` signatures (file type, size, and"
-" modification time) of both files are identical, the files are taken to be "
-"equal."
+"If *shallow* is true and the :func:`os.stat` signatures (file type, size, "
+"and modification time) of both files are identical, the files are taken to "
+"be equal."
 msgstr ""
 
 #: library/filecmp.rst:29
@@ -65,21 +65,21 @@ msgstr ""
 #: library/filecmp.rst:34
 msgid ""
 "This function uses a cache for past comparisons and the results, with cache "
-"entries invalidated if the :func:`os.stat` information for the file changes."
-"  The entire cache may be cleared using :func:`clear_cache`."
+"entries invalidated if the :func:`os.stat` information for the file "
+"changes.  The entire cache may be cleared using :func:`clear_cache`."
 msgstr ""
 
 #: library/filecmp.rst:41
 msgid ""
-"Compare the files in the two directories *a* and *b* whose names are given by"
-" *common*."
+"Compare the files in the two directories *a* and *b* whose names are given "
+"by *common*."
 msgstr ""
 
 #: library/filecmp.rst:44
 msgid ""
 "Returns three lists of file names: *match*, *mismatch*, *errors*.  *match* "
-"contains the list of files that match, *mismatch* contains the names of those"
-" that don't, and *errors* lists the names of files which could not be "
+"contains the list of files that match, *mismatch* contains the names of "
+"those that don't, and *errors* lists the names of files which could not be "
 "compared.  Files are listed in *errors* if they don't exist in one of the "
 "directories, the user lacks permission to read them or if the comparison "
 "could not be done for some other reason."
@@ -87,8 +87,8 @@ msgstr ""
 
 #: library/filecmp.rst:51
 msgid ""
-"The *shallow* parameter has the same meaning and default value as for "
-":func:`filecmp.cmp`."
+"The *shallow* parameter has the same meaning and default value as "
+"for :func:`filecmp.cmp`."
 msgstr ""
 
 #: library/filecmp.rst:54
@@ -101,8 +101,8 @@ msgstr ""
 #: library/filecmp.rst:61
 msgid ""
 "Clear the filecmp cache. This may be useful if a file is compared so quickly "
-"after it is modified that it is within the mtime resolution of the underlying"
-" filesystem."
+"after it is modified that it is within the mtime resolution of the "
+"underlying filesystem."
 msgstr ""
 
 #: library/filecmp.rst:71
@@ -112,8 +112,8 @@ msgstr ""
 #: library/filecmp.rst:75
 msgid ""
 "Construct a new directory comparison object, to compare the directories *a* "
-"and *b*.  *ignore* is a list of names to ignore, and defaults to "
-":const:`filecmp.DEFAULT_IGNORES`.  *hide* is a list of names to hide, and "
+"and *b*.  *ignore* is a list of names to ignore, and defaults "
+"to :const:`filecmp.DEFAULT_IGNORES`.  *hide* is a list of names to hide, and "
 "defaults to ``[os.curdir, os.pardir]``."
 msgstr ""
 
@@ -227,8 +227,8 @@ msgstr ""
 
 #: library/filecmp.rst:187
 msgid ""
-"Previously entries were always :class:`dircmp` instances. Now entries are the"
-" same type as *self*, if *self* is a subclass of :class:`dircmp`."
+"Previously entries were always :class:`dircmp` instances. Now entries are "
+"the same type as *self*, if *self* is a subclass of :class:`dircmp`."
 msgstr ""
 
 #: library/filecmp.rst:196

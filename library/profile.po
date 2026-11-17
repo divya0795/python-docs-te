@@ -54,20 +54,21 @@ msgstr ""
 
 #: library/profile.rst:33
 msgid ""
-":mod:`profile`, a pure Python module whose interface is imitated by "
-":mod:`cProfile`, but which adds significant overhead to profiled programs. If"
-" you're trying to extend the profiler in some way, the task might be easier "
-"with this module.  Originally designed and written by Jim Roskind."
+":mod:`profile`, a pure Python module whose interface is imitated "
+"by :mod:`cProfile`, but which adds significant overhead to profiled "
+"programs. If you're trying to extend the profiler in some way, the task "
+"might be easier with this module.  Originally designed and written by Jim "
+"Roskind."
 msgstr ""
 
 #: library/profile.rst:40
 msgid ""
-"The profiler modules are designed to provide an execution profile for a given"
-" program, not for benchmarking purposes (for that, there is :mod:`timeit` for"
-" reasonably accurate results).  This particularly applies to benchmarking "
-"Python code against C code: the profilers introduce overhead for Python code,"
-" but not for C-level functions, and so the C code would seem faster than any "
-"Python one."
+"The profiler modules are designed to provide an execution profile for a "
+"given program, not for benchmarking purposes (for that, there "
+"is :mod:`timeit` for reasonably accurate results).  This particularly "
+"applies to benchmarking Python code against C code: the profilers introduce "
+"overhead for Python code, but not for C-level functions, and so the C code "
+"would seem faster than any Python one."
 msgstr ""
 
 #: library/profile.rst:51
@@ -76,8 +77,8 @@ msgstr ""
 
 #: library/profile.rst:53
 msgid ""
-"This section is provided for users that \"don't want to read the manual.\" It"
-" provides a very brief overview, and allows a user to rapidly perform "
+"This section is provided for users that \"don't want to read the manual.\" "
+"It provides a very brief overview, and allows a user to rapidly perform "
 "profiling on an existing application."
 msgstr ""
 
@@ -94,8 +95,8 @@ msgstr ""
 
 #: library/profile.rst:63
 msgid ""
-"(Use :mod:`profile` instead of :mod:`cProfile` if the latter is not available"
-" on your system.)"
+"(Use :mod:`profile` instead of :mod:`cProfile` if the latter is not "
+"available on your system.)"
 msgstr ""
 
 #: library/profile.rst:66
@@ -125,8 +126,8 @@ msgstr ""
 msgid ""
 "The first line indicates that 214 calls were monitored.  Of those calls, 207 "
 "were :dfn:`primitive`, meaning that the call was not induced via recursion. "
-"The next line: ``Ordered by: cumulative time`` indicates the output is sorted"
-" by the ``cumtime`` values. The column headings include:"
+"The next line: ``Ordered by: cumulative time`` indicates the output is "
+"sorted by the ``cumtime`` values. The column headings include:"
 msgstr ""
 
 #: library/profile.rst:88
@@ -201,8 +202,8 @@ msgstr ""
 
 #: library/profile.rst:121
 msgid ""
-"The :class:`pstats.Stats` class reads profile results from a file and formats"
-" them in various ways."
+"The :class:`pstats.Stats` class reads profile results from a file and "
+"formats them in various ways."
 msgstr ""
 
 #: library/profile.rst:128
@@ -222,8 +223,8 @@ msgstr ""
 
 #: library/profile.rst:139
 msgid ""
-"Specifies one of the :func:`~pstats.Stats.sort_stats` sort values to sort the"
-" output by. This only applies when :option:`-o <cProfile -o>` is not "
+"Specifies one of the :func:`~pstats.Stats.sort_stats` sort values to sort "
+"the output by. This only applies when :option:`-o <cProfile -o>` is not "
 "supplied."
 msgstr ""
 
@@ -272,8 +273,8 @@ msgstr ""
 #: library/profile.rst:170
 msgid ""
 "The first call will actually sort the list by function name, and the second "
-"call will print out the statistics.  The following are some interesting calls"
-" to experiment with::"
+"call will print out the statistics.  The following are some interesting "
+"calls to experiment with::"
 msgstr ""
 
 #: library/profile.rst:174
@@ -282,9 +283,9 @@ msgstr ""
 
 #: library/profile.rst:176
 msgid ""
-"This sorts the profile by cumulative time in a function, and then only prints"
-" the ten most significant lines.  If you want to understand what algorithms "
-"are taking time, the above line is what you would use."
+"This sorts the profile by cumulative time in a function, and then only "
+"prints the ten most significant lines.  If you want to understand what "
+"algorithms are taking time, the above line is what you would use."
 msgstr ""
 
 #: library/profile.rst:180
@@ -313,9 +314,9 @@ msgstr ""
 
 #: library/profile.rst:192
 msgid ""
-"This will sort all the statistics by file name, and then print out statistics"
-" for only the class init methods (since they are spelled with ``__init__`` in"
-" them).  As one final example, you could try::"
+"This will sort all the statistics by file name, and then print out "
+"statistics for only the class init methods (since they are spelled with "
+"``__init__`` in them).  As one final example, you could try::"
 msgstr ""
 
 #: library/profile.rst:196
@@ -324,11 +325,11 @@ msgstr ""
 
 #: library/profile.rst:198
 msgid ""
-"This line sorts statistics with a primary key of time, and a secondary key of"
-" cumulative time, and then prints out some of the statistics. To be specific,"
-" the list is first culled down to 50% (re: ``.5``) of its original size, then"
-" only lines containing ``init`` are maintained, and that sub-sub-list is "
-"printed."
+"This line sorts statistics with a primary key of time, and a secondary key "
+"of cumulative time, and then prints out some of the statistics. To be "
+"specific, the list is first culled down to 50% (re: ``.5``) of its original "
+"size, then only lines containing ``init`` are maintained, and that sub-sub-"
+"list is printed."
 msgstr ""
 
 #: library/profile.rst:203
@@ -360,8 +361,8 @@ msgstr ""
 #: library/profile.rst:216
 msgid ""
 "Invoked as a script, the :mod:`pstats` module is a statistics browser for "
-"reading and examining profile dumps.  It has a simple line-oriented interface"
-" (implemented using :mod:`cmd`) and interactive help."
+"reading and examining profile dumps.  It has a simple line-oriented "
+"interface (implemented using :mod:`cmd`) and interactive help."
 msgstr ""
 
 #: library/profile.rst:221
@@ -480,15 +481,15 @@ msgstr ""
 
 #: library/profile.rst:308
 msgid ""
-"Create a :class:`~pstats.Stats` object based on the current profile and print"
-" the results to stdout."
+"Create a :class:`~pstats.Stats` object based on the current profile and "
+"print the results to stdout."
 msgstr ""
 
 #: library/profile.rst:311
 msgid ""
-"The *sort* parameter specifies the sorting order of the displayed statistics."
-" It accepts a single key or a tuple of keys to enable multi-level sorting, as"
-" in :func:`Stats.sort_stats <pstats.Stats.sort_stats>`."
+"The *sort* parameter specifies the sorting order of the displayed "
+"statistics. It accepts a single key or a tuple of keys to enable multi-level "
+"sorting, as in :func:`Stats.sort_stats <pstats.Stats.sort_stats>`."
 msgstr ""
 
 #: library/profile.rst:315
@@ -533,8 +534,8 @@ msgstr ""
 #: library/profile.rst:352
 msgid ""
 "This class constructor creates an instance of a \"statistics object\" from a "
-"*filename* (or list of filenames) or from a :class:`Profile` instance. Output"
-" will be printed to the stream specified by *stream*."
+"*filename* (or list of filenames) or from a :class:`Profile` instance. "
+"Output will be printed to the stream specified by *stream*."
 msgstr ""
 
 #: library/profile.rst:356
@@ -563,39 +564,41 @@ msgstr ""
 
 #: library/profile.rst:374
 msgid ""
-"This method for the :class:`Stats` class removes all leading path information"
-" from file names.  It is very useful in reducing the size of the printout to "
-"fit within (close to) 80 columns.  This method modifies the object, and the "
-"stripped information is lost.  After performing a strip operation, the object"
-" is considered to have its entries in a \"random\" order, as it was just "
-"after object initialization and loading. If :meth:`~pstats.Stats.strip_dirs` "
-"causes two function names to be indistinguishable (they are on the same line "
-"of the same filename, and have the same function name), then the statistics "
-"for these two entries are accumulated into a single entry."
+"This method for the :class:`Stats` class removes all leading path "
+"information from file names.  It is very useful in reducing the size of the "
+"printout to fit within (close to) 80 columns.  This method modifies the "
+"object, and the stripped information is lost.  After performing a strip "
+"operation, the object is considered to have its entries in a \"random\" "
+"order, as it was just after object initialization and loading. "
+"If :meth:`~pstats.Stats.strip_dirs` causes two function names to be "
+"indistinguishable (they are on the same line of the same filename, and have "
+"the same function name), then the statistics for these two entries are "
+"accumulated into a single entry."
 msgstr ""
 
 #: library/profile.rst:388
 msgid ""
 "This method of the :class:`Stats` class accumulates additional profiling "
-"information into the current profiling object.  Its arguments should refer to"
-" filenames created by the corresponding version of :func:`profile.run` or "
-":func:`cProfile.run`. Statistics for identically named (re: file, line, name)"
-" functions are automatically accumulated into single function statistics."
+"information into the current profiling object.  Its arguments should refer "
+"to filenames created by the corresponding version of :func:`profile.run` "
+"or :func:`cProfile.run`. Statistics for identically named (re: file, line, "
+"name) functions are automatically accumulated into single function "
+"statistics."
 msgstr ""
 
 #: library/profile.rst:398
 msgid ""
 "Save the data loaded into the :class:`Stats` object to a file named "
 "*filename*.  The file is created if it does not exist, and is overwritten if "
-"it already exists.  This is equivalent to the method of the same name on the "
-":class:`profile.Profile` and :class:`cProfile.Profile` classes."
+"it already exists.  This is equivalent to the method of the same name on "
+"the :class:`profile.Profile` and :class:`cProfile.Profile` classes."
 msgstr ""
 
 #: library/profile.rst:406
 msgid ""
-"This method modifies the :class:`Stats` object by sorting it according to the"
-" supplied criteria.  The argument can be either a string or a SortKey enum "
-"identifying the basis of a sort (example: ``'time'``, ``'name'``, "
+"This method modifies the :class:`Stats` object by sorting it according to "
+"the supplied criteria.  The argument can be either a string or a SortKey "
+"enum identifying the basis of a sort (example: ``'time'``, ``'name'``, "
 "``SortKey.TIME`` or ``SortKey.NAME``). The SortKey enums argument have "
 "advantage over the string argument in that it is more robust and less error "
 "prone."
@@ -612,8 +615,8 @@ msgstr ""
 
 #: library/profile.rst:419
 msgid ""
-"For the string argument, abbreviations can be used for any key names, as long"
-" as the abbreviation is unambiguous."
+"For the string argument, abbreviations can be used for any key names, as "
+"long as the abbreviation is unambiguous."
 msgstr ""
 
 #: library/profile.rst:422
@@ -807,20 +810,22 @@ msgstr ""
 
 #: library/profile.rst:493
 msgid ""
-"The order of the printing is based on the last "
-":meth:`~pstats.Stats.sort_stats` operation done on the object (subject to "
-"caveats in :meth:`~pstats.Stats.add` and :meth:`~pstats.Stats.strip_dirs`)."
+"The order of the printing is based on the "
+"last :meth:`~pstats.Stats.sort_stats` operation done on the object (subject "
+"to caveats in :meth:`~pstats.Stats.add` "
+"and :meth:`~pstats.Stats.strip_dirs`)."
 msgstr ""
 
 #: library/profile.rst:498
 msgid ""
 "The arguments provided (if any) can be used to limit the list down to the "
 "significant entries.  Initially, the list is taken to be the complete set of "
-"profiled functions.  Each restriction is either an integer (to select a count"
-" of lines), or a decimal fraction between 0.0 and 1.0 inclusive (to select a "
-"percentage of lines), or a string that will be interpreted as a regular "
-"expression (to pattern match the standard name that is printed). If several "
-"restrictions are provided, then they are applied sequentially. For example::"
+"profiled functions.  Each restriction is either an integer (to select a "
+"count of lines), or a decimal fraction between 0.0 and 1.0 inclusive (to "
+"select a percentage of lines), or a string that will be interpreted as a "
+"regular expression (to pattern match the standard name that is printed). If "
+"several restrictions are provided, then they are applied sequentially. For "
+"example::"
 msgstr ""
 
 #: library/profile.rst:507
@@ -840,49 +845,49 @@ msgstr ""
 
 #: library/profile.rst:515
 msgid ""
-"would limit the list to all functions having file names :file:`.\\*foo:`, and"
-" then proceed to only print the first 10% of them."
+"would limit the list to all functions having file names :file:`.\\*foo:`, "
+"and then proceed to only print the first 10% of them."
 msgstr ""
 
 #: library/profile.rst:521
 msgid ""
 "This method for the :class:`Stats` class prints a list of all functions that "
 "called each function in the profiled database.  The ordering is identical to "
-"that provided by :meth:`~pstats.Stats.print_stats`, and the definition of the"
-" restricting argument is also identical.  Each caller is reported on its own "
-"line.  The format differs slightly depending on the profiler that produced "
-"the stats:"
+"that provided by :meth:`~pstats.Stats.print_stats`, and the definition of "
+"the restricting argument is also identical.  Each caller is reported on its "
+"own line.  The format differs slightly depending on the profiler that "
+"produced the stats:"
 msgstr ""
 
 #: library/profile.rst:528
 msgid ""
 "With :mod:`profile`, a number is shown in parentheses after each caller to "
 "show how many times this specific call was made.  For convenience, a second "
-"non-parenthesized number repeats the cumulative time spent in the function at"
-" the right."
+"non-parenthesized number repeats the cumulative time spent in the function "
+"at the right."
 msgstr ""
 
 #: library/profile.rst:533
 msgid ""
-"With :mod:`cProfile`, each caller is preceded by three numbers: the number of"
-" times this specific call was made, and the total and cumulative times spent "
-"in the current function while it was invoked by this specific caller."
+"With :mod:`cProfile`, each caller is preceded by three numbers: the number "
+"of times this specific call was made, and the total and cumulative times "
+"spent in the current function while it was invoked by this specific caller."
 msgstr ""
 
 #: library/profile.rst:541
 msgid ""
 "This method for the :class:`Stats` class prints a list of all function that "
-"were called by the indicated function.  Aside from this reversal of direction"
-" of calls (re: called vs was called by), the arguments and ordering are "
-"identical to the :meth:`~pstats.Stats.print_callers` method."
+"were called by the indicated function.  Aside from this reversal of "
+"direction of calls (re: called vs was called by), the arguments and ordering "
+"are identical to the :meth:`~pstats.Stats.print_callers` method."
 msgstr ""
 
 #: library/profile.rst:549
 msgid ""
 "This method returns an instance of StatsProfile, which contains a mapping of "
-"function names to instances of FunctionProfile. Each FunctionProfile instance"
-" holds information related to the function's profile such as how long the "
-"function took to run, how many times it was called, etc..."
+"function names to instances of FunctionProfile. Each FunctionProfile "
+"instance holds information related to the function's profile such as how "
+"long the function took to run, how many times it was called, etc..."
 msgstr ""
 
 #: library/profile.rst:554
@@ -898,8 +903,8 @@ msgstr ""
 #: library/profile.rst:563
 msgid ""
 ":dfn:`Deterministic profiling` is meant to reflect the fact that all "
-"*function call*, *function return*, and *exception* events are monitored, and"
-" precise timings are made for the intervals between these events (during "
+"*function call*, *function return*, and *exception* events are monitored, "
+"and precise timings are made for the intervals between these events (during "
 "which time the user's code is executing).  In contrast, :dfn:`statistical "
 "profiling` (which is not done by this module) randomly samples the effective "
 "instruction pointer, and deduces where time is being spent.  The latter "
@@ -913,9 +918,9 @@ msgid ""
 "In Python, since there is an interpreter active during execution, the "
 "presence of instrumented code is not required in order to do deterministic "
 "profiling. Python automatically provides a :dfn:`hook` (optional callback) "
-"for each event. In addition, the interpreted nature of Python tends to add so"
-" much overhead to execution, that deterministic profiling tends to only add "
-"small processing overhead in typical applications.  The result is that "
+"for each event. In addition, the interpreted nature of Python tends to add "
+"so much overhead to execution, that deterministic profiling tends to only "
+"add small processing overhead in typical applications.  The result is that "
 "deterministic profiling is not that expensive, yet provides extensive run "
 "time statistics about the execution of a Python program."
 msgstr ""
@@ -923,13 +928,13 @@ msgstr ""
 #: library/profile.rst:581
 msgid ""
 "Call count statistics can be used to identify bugs in code (surprising "
-"counts), and to identify possible inline-expansion points (high call counts)."
-"  Internal time statistics can be used to identify \"hot loops\" that should "
-"be carefully optimized.  Cumulative time statistics should be used to "
-"identify high level errors in the selection of algorithms.  Note that the "
-"unusual handling of cumulative times in this profiler allows statistics for "
-"recursive implementations of algorithms to be directly compared to iterative "
-"implementations."
+"counts), and to identify possible inline-expansion points (high call "
+"counts).  Internal time statistics can be used to identify \"hot loops\" "
+"that should be carefully optimized.  Cumulative time statistics should be "
+"used to identify high level errors in the selection of algorithms.  Note "
+"that the unusual handling of cumulative times in this profiler allows "
+"statistics for recursive implementations of algorithms to be directly "
+"compared to iterative implementations."
 msgstr ""
 
 #: library/profile.rst:594
@@ -941,10 +946,10 @@ msgid ""
 "One limitation has to do with accuracy of timing information. There is a "
 "fundamental problem with deterministic profilers involving accuracy.  The "
 "most obvious restriction is that the underlying \"clock\" is only ticking at "
-"a rate (typically) of about .001 seconds.  Hence no measurements will be more"
-" accurate than the underlying clock.  If enough measurements are taken, then "
-"the \"error\" will tend to average out. Unfortunately, removing this first "
-"error induces a second source of error."
+"a rate (typically) of about .001 seconds.  Hence no measurements will be "
+"more accurate than the underlying clock.  If enough measurements are taken, "
+"then the \"error\" will tend to average out. Unfortunately, removing this "
+"first error induces a second source of error."
 msgstr ""
 
 #: library/profile.rst:604
@@ -952,12 +957,12 @@ msgid ""
 "The second problem is that it \"takes a while\" from when an event is "
 "dispatched until the profiler's call to get the time actually *gets* the "
 "state of the clock.  Similarly, there is a certain lag when exiting the "
-"profiler event handler from the time that the clock's value was obtained (and"
-" then squirreled away), until the user's code is once again executing.  As a "
-"result, functions that are called many times, or call many functions, will "
-"typically accumulate this error. The error that accumulates in this fashion "
-"is typically less than the accuracy of the clock (less than one clock tick), "
-"but it *can* accumulate and become very significant."
+"profiler event handler from the time that the clock's value was obtained "
+"(and then squirreled away), until the user's code is once again executing.  "
+"As a result, functions that are called many times, or call many functions, "
+"will typically accumulate this error. The error that accumulates in this "
+"fashion is typically less than the accuracy of the clock (less than one "
+"clock tick), but it *can* accumulate and become very significant."
 msgstr ""
 
 #: library/profile.rst:614
@@ -965,12 +970,13 @@ msgid ""
 "The problem is more important with :mod:`profile` than with the lower-"
 "overhead :mod:`cProfile`.  For this reason, :mod:`profile` provides a means "
 "of calibrating itself for a given platform so that this error can be "
-"probabilistically (on the average) removed. After the profiler is calibrated,"
-" it will be more accurate (in a least square sense), but it will sometimes "
-"produce negative numbers (when call counts are exceptionally low, and the "
-"gods of probability work against you :-). )  Do *not* be alarmed by negative "
-"numbers in the profile.  They should *only* appear if you have calibrated "
-"your profiler, and the results are actually better than without calibration."
+"probabilistically (on the average) removed. After the profiler is "
+"calibrated, it will be more accurate (in a least square sense), but it will "
+"sometimes produce negative numbers (when call counts are exceptionally low, "
+"and the gods of probability work against you :-). )  Do *not* be alarmed by "
+"negative numbers in the profile.  They should *only* appear if you have "
+"calibrated your profiler, and the results are actually better than without "
+"calibration."
 msgstr ""
 
 #: library/profile.rst:628
@@ -998,9 +1004,10 @@ msgstr ""
 msgid ""
 "The method executes the number of Python calls given by the argument, "
 "directly and again under the profiler, measuring the time for both. It then "
-"computes the hidden overhead per profiler event, and returns that as a float."
-"  For example, on a 1.8Ghz Intel Core i5 running macOS, and using Python's "
-"time.process_time() as the timer, the magical number is about 4.04e-6."
+"computes the hidden overhead per profiler event, and returns that as a "
+"float.  For example, on a 1.8Ghz Intel Core i5 running macOS, and using "
+"Python's time.process_time() as the timer, the magical number is about "
+"4.04e-6."
 msgstr ""
 
 #: library/profile.rst:647
@@ -1044,8 +1051,8 @@ msgstr ""
 #: library/profile.rst:673
 msgid ""
 "If you want to change how current time is determined (for example, to force "
-"use of wall-clock time or elapsed process time), pass the timing function you"
-" want to the :class:`Profile` class constructor::"
+"use of wall-clock time or elapsed process time), pass the timing function "
+"you want to the :class:`Profile` class constructor::"
 msgstr ""
 
 #: library/profile.rst:677
@@ -1074,14 +1081,14 @@ msgstr ""
 
 #: library/profile.rst:690
 msgid ""
-"Be warned that you should calibrate the profiler class for the timer function"
-" that you choose (see :ref:`profile-calibration`).  For most machines, a "
-"timer that returns a lone integer value will provide the best results in "
-"terms of low overhead during profiling.  (:func:`os.times` is *pretty* bad, "
-"as it returns a tuple of floating-point values).  If you want to substitute a"
-" better timer in the cleanest fashion, derive a class and hardwire a "
-"replacement dispatch method that best handles your timer call, along with the"
-" appropriate calibration constant."
+"Be warned that you should calibrate the profiler class for the timer "
+"function that you choose (see :ref:`profile-calibration`).  For most "
+"machines, a timer that returns a lone integer value will provide the best "
+"results in terms of low overhead during profiling.  (:func:`os.times` is "
+"*pretty* bad, as it returns a tuple of floating-point values).  If you want "
+"to substitute a better timer in the cleanest fashion, derive a class and "
+"hardwire a replacement dispatch method that best handles your timer call, "
+"along with the appropriate calibration constant."
 msgstr ""
 
 #: library/profile.rst:699
@@ -1111,9 +1118,9 @@ msgstr ""
 
 #: library/profile.rst:713
 msgid ""
-"Python 3.3 adds several new functions in :mod:`time` that can be used to make"
-" precise measurements of process or wall-clock time. For example, see "
-":func:`time.perf_counter`."
+"Python 3.3 adds several new functions in :mod:`time` that can be used to "
+"make precise measurements of process or wall-clock time. For example, "
+"see :func:`time.perf_counter`."
 msgstr ""
 
 #: library/profile.rst:16

@@ -29,8 +29,8 @@ msgstr ""
 
 #: library/concurrent.interpreters.rst:16
 msgid ""
-"The :mod:`!concurrent.interpreters` module constructs higher-level interfaces"
-" on top of the lower level :mod:`!_interpreters` module."
+"The :mod:`!concurrent.interpreters` module constructs higher-level "
+"interfaces on top of the lower level :mod:`!_interpreters` module."
 msgstr ""
 
 #: library/concurrent.interpreters.rst:19
@@ -43,9 +43,9 @@ msgstr ""
 
 #: library/concurrent.interpreters.rst:24
 msgid ""
-"For concurrency, interpreters themselves (and this module) don't provide much"
-" more than isolation, which on its own isn't useful. Actual concurrency is "
-"available separately through :mod:`threads <threading>` -- see `below "
+"For concurrency, interpreters themselves (and this module) don't provide "
+"much more than isolation, which on its own isn't useful. Actual concurrency "
+"is available separately through :mod:`threads <threading>` -- see `below "
 "<interp-concurrency_>`_."
 msgstr ""
 
@@ -138,9 +138,9 @@ msgstr ""
 #: library/concurrent.interpreters.rst:85
 msgid ""
 "A Python implementation may support using multiple interpreters in the same "
-"process.  CPython has this support.  Each interpreter is effectively isolated"
-" from the others (with a limited number of carefully managed process-global "
-"exceptions to the rule)."
+"process.  CPython has this support.  Each interpreter is effectively "
+"isolated from the others (with a limited number of carefully managed process-"
+"global exceptions to the rule)."
 msgstr ""
 
 #: library/concurrent.interpreters.rst:90
@@ -153,8 +153,8 @@ msgstr ""
 #: library/concurrent.interpreters.rst:96
 msgid ""
 "Interpreters in the same process can technically never be strictly isolated "
-"from one another since there are few restrictions on memory access within the"
-" same process.  The Python runtime makes a best effort at isolation but "
+"from one another since there are few restrictions on memory access within "
+"the same process.  The Python runtime makes a best effort at isolation but "
 "extension modules may easily violate that. Therefore, do not use multiple "
 "interpreters in security-sensitive situations, where they shouldn't have "
 "access to each other's data."
@@ -167,26 +167,26 @@ msgstr ""
 #: library/concurrent.interpreters.rst:106
 msgid ""
 "Running in a different interpreter involves switching to it in the current "
-"thread and then calling some function.  The runtime will execute the function"
-" using the current interpreter's state.  The :mod:`!concurrent.interpreters` "
-"module provides a basic API for creating and managing interpreters, as well "
-"as the switch-and-call operation."
+"thread and then calling some function.  The runtime will execute the "
+"function using the current interpreter's state.  The :mod:`!"
+"concurrent.interpreters` module provides a basic API for creating and "
+"managing interpreters, as well as the switch-and-call operation."
 msgstr ""
 
 #: library/concurrent.interpreters.rst:113
 msgid ""
 "No other threads are automatically started for the operation. There is `a "
-"helper <interp-call-in-thread_>`_ for that though. There is another dedicated"
-" helper for calling the builtin :func:`exec` in an interpreter."
+"helper <interp-call-in-thread_>`_ for that though. There is another "
+"dedicated helper for calling the builtin :func:`exec` in an interpreter."
 msgstr ""
 
 #: library/concurrent.interpreters.rst:118
 msgid ""
 "When :func:`exec` (or :func:`eval`) are called in an interpreter, they run "
-"using the interpreter's :mod:`!__main__` module as the \"globals\" namespace."
-"  The same is true for functions that aren't associated with any module.  "
-"This is the same as how scripts invoked from the command-line run in the "
-":mod:`!__main__` module."
+"using the interpreter's :mod:`!__main__` module as the \"globals\" "
+"namespace.  The same is true for functions that aren't associated with any "
+"module.  This is the same as how scripts invoked from the command-line run "
+"in the :mod:`!__main__` module."
 msgstr ""
 
 #: library/concurrent.interpreters.rst:128
@@ -197,8 +197,8 @@ msgstr ""
 msgid ""
 "As noted earlier, interpreters do not provide any concurrency on their own.  "
 "They strictly represent the isolated execution context the runtime will use "
-"*in the current thread*.  That isolation makes them similar to processes, but"
-" they still enjoy in-process efficiency, like threads."
+"*in the current thread*.  That isolation makes them similar to processes, "
+"but they still enjoy in-process efficiency, like threads."
 msgstr ""
 
 #: library/concurrent.interpreters.rst:136
@@ -213,23 +213,23 @@ msgstr ""
 #: library/concurrent.interpreters.rst:143
 msgid ""
 "You can take advantage of that concurrency model in a single thread, "
-"switching back and forth between interpreters, Stackless-style. However, this"
-" model is more useful when you combine interpreters with multiple threads.  "
-"This mostly involves starting a new thread, where you switch to another "
-"interpreter and run what you want there."
+"switching back and forth between interpreters, Stackless-style. However, "
+"this model is more useful when you combine interpreters with multiple "
+"threads.  This mostly involves starting a new thread, where you switch to "
+"another interpreter and run what you want there."
 msgstr ""
 
 #: library/concurrent.interpreters.rst:149
 msgid ""
-"Each actual thread in Python, even if you're only running in the main thread,"
-" has its own *current* execution context.  Multiple threads can use the same "
-"interpreter or different ones."
+"Each actual thread in Python, even if you're only running in the main "
+"thread, has its own *current* execution context.  Multiple threads can use "
+"the same interpreter or different ones."
 msgstr ""
 
 #: library/concurrent.interpreters.rst:153
 msgid ""
-"At a high level, you can think of the combination of threads and interpreters"
-" as threads with opt-in sharing."
+"At a high level, you can think of the combination of threads and "
+"interpreters as threads with opt-in sharing."
 msgstr ""
 
 #: library/concurrent.interpreters.rst:156
@@ -253,8 +253,9 @@ msgstr ""
 
 #: library/concurrent.interpreters.rst:169
 msgid ""
-"With this in mind, the :mod:`!concurrent.interpreters` module provides a "
-":class:`queue.Queue` implementation, available through :func:`create_queue`."
+"With this in mind, the :mod:`!concurrent.interpreters` module provides "
+"a :class:`queue.Queue` implementation, available "
+"through :func:`create_queue`."
 msgstr ""
 
 #: library/concurrent.interpreters.rst:176
@@ -264,10 +265,11 @@ msgstr ""
 #: library/concurrent.interpreters.rst:178
 msgid ""
 "Any data actually shared between interpreters loses the thread-safety "
-"provided by the :term:`GIL`.  There are various options for dealing with this"
-" in extension modules.  However, from Python code the lack of thread-safety "
-"means objects can't actually be shared, with a few exceptions.  Instead, a "
-"copy must be created, which means mutable objects won't stay in sync."
+"provided by the :term:`GIL`.  There are various options for dealing with "
+"this in extension modules.  However, from Python code the lack of thread-"
+"safety means objects can't actually be shared, with a few exceptions.  "
+"Instead, a copy must be created, which means mutable objects won't stay in "
+"sync."
 msgstr ""
 
 #: library/concurrent.interpreters.rst:185
@@ -329,8 +331,8 @@ msgstr ""
 
 #: library/concurrent.interpreters.rst:211
 msgid ""
-"Return a :class:`list` of :class:`Interpreter` objects, one for each existing"
-" interpreter."
+"Return a :class:`list` of :class:`Interpreter` objects, one for each "
+"existing interpreter."
 msgstr ""
 
 #: library/concurrent.interpreters.rst:216
@@ -359,10 +361,10 @@ msgstr ""
 
 #: library/concurrent.interpreters.rst:235
 msgid ""
-"*maxsize* is an integer that sets the upperbound limit on the number of items"
-" that can be placed in the queue. Insertion will be blocked once this size "
-"has been reached, until queue items are consumed. If *maxsize* is less than "
-"or equal to zero, the queue size is infinite."
+"*maxsize* is an integer that sets the upperbound limit on the number of "
+"items that can be placed in the queue. Insertion will be blocked once this "
+"size has been reached, until queue items are consumed. If *maxsize* is less "
+"than or equal to zero, the queue size is infinite."
 msgstr ""
 
 #: library/concurrent.interpreters.rst:241
@@ -375,8 +377,8 @@ msgstr ""
 
 #: library/concurrent.interpreters.rst:247
 msgid ""
-"Generally, :class:`Interpreter` shouldn't be called directly. Instead, use "
-":func:`create` or one of the other module functions."
+"Generally, :class:`Interpreter` shouldn't be called directly. Instead, "
+"use :func:`create` or one of the other module functions."
 msgstr ""
 
 #: library/concurrent.interpreters.rst:252
@@ -395,8 +397,8 @@ msgstr ""
 
 #: library/concurrent.interpreters.rst:264
 msgid ""
-"Return ``True`` if the interpreter is currently executing code in its "
-":mod:`!__main__` module and ``False`` otherwise."
+"Return ``True`` if the interpreter is currently executing code in its :mod:`!"
+"__main__` module and ``False`` otherwise."
 msgstr ""
 
 #: library/concurrent.interpreters.rst:269
@@ -467,9 +469,9 @@ msgstr ""
 #: library/concurrent.interpreters.rst:328
 msgid ""
 "A wrapper around a low-level, cross-interpreter queue, which implements all "
-"the methods of :class:`queue.Queue` except for "
-":meth:`~queue.Queue.task_done`, :meth:`~queue.Queue.join` and "
-":meth:`~queue.Queue.shutdown`.  The underlying queue can only be created "
+"the methods of :class:`queue.Queue` except "
+"for :meth:`~queue.Queue.task_done`, :meth:`~queue.Queue.join` "
+"and :meth:`~queue.Queue.shutdown`.  The underlying queue can only be created "
 "through :func:`create_queue`."
 msgstr ""
 
@@ -496,8 +498,8 @@ msgid ""
 "If *timeout* is a positive number, it blocks at most *timeout* seconds and "
 "raises the :exc:`QueueFull` exception if no free slot was available within "
 "that time.  Otherwise (*block* is false), put an object on the queue if a "
-"free slot is immediately available, else raise the :exc:`QueueFull` exception"
-" (*timeout* is ignored in that case)."
+"free slot is immediately available, else raise the :exc:`QueueFull` "
+"exception (*timeout* is ignored in that case)."
 msgstr ""
 
 #: library/concurrent.interpreters.rst:368
@@ -506,13 +508,13 @@ msgstr ""
 
 #: library/concurrent.interpreters.rst:372
 msgid ""
-"Remove and return an object from the queue.  If optional args *block* is true"
-" and *timeout* is ``None`` (the default), block if necessary until an object "
-"is available.  If *timeout* is a positive number, it blocks at most *timeout*"
-" seconds and raises the :exc:`QueueEmpty` exception if no object was "
-"available within that time.  Otherwise (*block* is false), return an object "
-"if one is immediately available, else raise the :exc:`QueueEmpty` exception "
-"(*timeout* is ignored in that case)."
+"Remove and return an object from the queue.  If optional args *block* is "
+"true and *timeout* is ``None`` (the default), block if necessary until an "
+"object is available.  If *timeout* is a positive number, it blocks at most "
+"*timeout* seconds and raises the :exc:`QueueEmpty` exception if no object "
+"was available within that time.  Otherwise (*block* is false), return an "
+"object if one is immediately available, else raise the :exc:`QueueEmpty` "
+"exception (*timeout* is ignored in that case)."
 msgstr ""
 
 #: library/concurrent.interpreters.rst:383
@@ -521,14 +523,14 @@ msgstr ""
 
 #: library/concurrent.interpreters.rst:388
 msgid ""
-"This exception, a subclass of :exc:`queue.Empty`, is raised from "
-":meth:`Queue.get` and :meth:`Queue.get_nowait` when the queue is empty."
+"This exception, a subclass of :exc:`queue.Empty`, is raised "
+"from :meth:`Queue.get` and :meth:`Queue.get_nowait` when the queue is empty."
 msgstr ""
 
 #: library/concurrent.interpreters.rst:394
 msgid ""
-"This exception, a subclass of :exc:`queue.Full`, is raised from "
-":meth:`Queue.put` and :meth:`Queue.put_nowait` when the queue is full."
+"This exception, a subclass of :exc:`queue.Full`, is raised "
+"from :meth:`Queue.put` and :meth:`Queue.put_nowait` when the queue is full."
 msgstr ""
 
 #: library/concurrent.interpreters.rst:400

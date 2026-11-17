@@ -41,8 +41,8 @@ msgstr ""
 #: library/itertools.rst:29
 msgid ""
 "For instance, SML provides a tabulation tool: ``tabulate(f)`` which produces "
-"a sequence ``f(0), f(1), ...``.  The same effect can be achieved in Python by"
-" combining :func:`map` and :func:`count` to form ``map(f, count())``."
+"a sequence ``f(0), f(1), ...``.  The same effect can be achieved in Python "
+"by combining :func:`map` and :func:`count` to form ``map(f, count())``."
 msgstr ""
 
 #: library/itertools.rst:33
@@ -464,9 +464,9 @@ msgstr ""
 msgid ""
 "To compute a running minimum, set *function* to :func:`min`. For a running "
 "maximum, set *function* to :func:`max`. Or for a running product, set "
-"*function* to :func:`operator.mul`. To build an `amortization table "
-"<https://www.ramseysolutions.com/real-estate/amortization-schedule>`_, "
-"accumulate the interest and apply payments:"
+"*function* to :func:`operator.mul`. To build an `amortization table <https://"
+"www.ramseysolutions.com/real-estate/amortization-schedule>`_, accumulate the "
+"interest and apply payments:"
 msgstr ""
 
 #: library/itertools.rst:128
@@ -513,8 +513,8 @@ msgstr ""
 msgid ""
 "Loops over the input iterable and accumulates data into tuples up to size "
 "*n*.  The input is consumed lazily, just enough to fill a batch. The result "
-"is yielded as soon as the batch is full or when the input iterable is "
-":term:`exhausted`:"
+"is yielded as soon as the batch is full or when the input iterable "
+"is :term:`exhausted`:"
 msgstr ""
 
 #: library/itertools.rst:166
@@ -544,8 +544,8 @@ msgstr ""
 
 #: library/itertools.rst:193
 msgid ""
-"Make an iterator that returns elements from the first iterable until it is "
-":term:`exhausted`, then proceeds to the next iterable, until all of the "
+"Make an iterator that returns elements from the first iterable until it "
+"is :term:`exhausted`, then proceeds to the next iterable, until all of the "
 "iterables are exhausted.  This combines multiple data sources into a single "
 "iterator.  Roughly equivalent to::"
 msgstr ""
@@ -579,9 +579,9 @@ msgstr ""
 #: library/itertools.rst:219
 msgid ""
 "The output is a subsequence of :func:`product` keeping only entries that are "
-"subsequences of the *iterable*.  The length of the output is given by "
-":func:`math.comb` which computes ``n! / r! / (n - r)!`` when ``0 ≤ r ≤ n`` or"
-" zero when ``r > n``."
+"subsequences of the *iterable*.  The length of the output is given "
+"by :func:`math.comb` which computes ``n! / r! / (n - r)!`` when ``0 ≤ r ≤ "
+"n`` or zero when ``r > n``."
 msgstr ""
 
 #: library/itertools.rst:224
@@ -625,16 +625,16 @@ msgstr ""
 
 #: library/itertools.rst:259
 msgid ""
-"Return *r* length subsequences of elements from the input *iterable* allowing"
-" individual elements to be repeated more than once."
+"Return *r* length subsequences of elements from the input *iterable* "
+"allowing individual elements to be repeated more than once."
 msgstr ""
 
 #: library/itertools.rst:262
 msgid ""
 "The output is a subsequence of :func:`product` that keeps only entries that "
 "are subsequences (with possible repeated elements) of the *iterable*.  The "
-"number of subsequence returned is ``(n + r - 1)! / r! / (n - 1)!`` when ``n >"
-" 0``."
+"number of subsequence returned is ``(n + r - 1)! / r! / (n - 1)!`` when ``n "
+"> 0``."
 msgstr ""
 
 #: library/itertools.rst:267
@@ -690,8 +690,8 @@ msgstr ""
 #: library/itertools.rst:315
 msgid ""
 "Make an iterator that returns evenly spaced values beginning with *start*. "
-"Can be used with :func:`map` to generate consecutive data points or with "
-":func:`zip` to add sequence numbers.  Roughly equivalent to::"
+"Can be used with :func:`map` to generate consecutive data points or "
+"with :func:`zip` to add sequence numbers.  Roughly equivalent to::"
 msgstr ""
 
 #: library/itertools.rst:320
@@ -708,8 +708,8 @@ msgstr ""
 #: library/itertools.rst:328
 msgid ""
 "When counting with floating-point numbers, better accuracy can sometimes be "
-"achieved by substituting multiplicative code such as: ``(start + step * i for"
-" i in count())``."
+"achieved by substituting multiplicative code such as: ``(start + step * i "
+"for i in count())``."
 msgstr ""
 
 #: library/itertools.rst:332
@@ -719,8 +719,8 @@ msgstr ""
 #: library/itertools.rst:338
 msgid ""
 "Make an iterator returning elements from the *iterable* and saving a copy of "
-"each.  When the iterable is :term:`exhausted`, return elements from the saved"
-" copy.  Repeats indefinitely.  Roughly equivalent to::"
+"each.  When the iterable is :term:`exhausted`, return elements from the "
+"saved copy.  Repeats indefinitely.  Roughly equivalent to::"
 msgstr ""
 
 #: library/itertools.rst:342
@@ -747,8 +747,8 @@ msgstr ""
 #: library/itertools.rst:360
 msgid ""
 "Make an iterator that drops elements from the *iterable* while the "
-"*predicate* is true and afterwards returns every element.  Roughly equivalent"
-" to::"
+"*predicate* is true and afterwards returns every element.  Roughly "
+"equivalent to::"
 msgstr ""
 
 #: library/itertools.rst:364
@@ -813,9 +813,9 @@ msgstr ""
 #: library/itertools.rst:412
 msgid ""
 "The returned group is itself an iterator that shares the underlying iterable "
-"with :func:`groupby`.  Because the source is shared, when the :func:`groupby`"
-" object is advanced, the previous group is no longer visible.  So, if that "
-"data is needed later, it should be stored as a list::"
+"with :func:`groupby`.  Because the source is shared, when "
+"the :func:`groupby` object is advanced, the previous group is no longer "
+"visible.  So, if that data is needed later, it should be stored as a list::"
 msgstr ""
 
 #: library/itertools.rst:417
@@ -869,9 +869,9 @@ msgstr ""
 
 #: library/itertools.rst:462
 msgid ""
-"Make an iterator that returns selected elements from the iterable. Works like"
-" sequence slicing but does not support negative values for *start*, *stop*, "
-"or *step*."
+"Make an iterator that returns selected elements from the iterable. Works "
+"like sequence slicing but does not support negative values for *start*, "
+"*stop*, or *step*."
 msgstr ""
 
 #: library/itertools.rst:466
@@ -882,8 +882,9 @@ msgstr ""
 
 #: library/itertools.rst:469
 msgid ""
-"If *stop* is ``None``, iteration continues until the input is "
-":term:`exhausted`, if at all.  Otherwise, it stops at the specified position."
+"If *stop* is ``None``, iteration continues until the input "
+"is :term:`exhausted`, if at all.  Otherwise, it stops at the specified "
+"position."
 msgstr ""
 
 #: library/itertools.rst:472
@@ -948,8 +949,8 @@ msgstr ""
 
 #: library/itertools.rst:528
 msgid ""
-"Return successive *r* length `permutations of elements "
-"<https://www.britannica.com/science/permutation>`_ from the *iterable*."
+"Return successive *r* length `permutations of elements <https://"
+"www.britannica.com/science/permutation>`_ from the *iterable*."
 msgstr ""
 
 #: library/itertools.rst:531
@@ -961,16 +962,16 @@ msgstr ""
 #: library/itertools.rst:535
 msgid ""
 "The output is a subsequence of :func:`product` where entries with repeated "
-"elements have been filtered out.  The length of the output is given by "
-":func:`math.perm` which computes ``n! / (n - r)!`` when ``0 ≤ r ≤ n`` or zero"
-" when ``r > n``."
+"elements have been filtered out.  The length of the output is given "
+"by :func:`math.perm` which computes ``n! / (n - r)!`` when ``0 ≤ r ≤ n`` or "
+"zero when ``r > n``."
 msgstr ""
 
 #: library/itertools.rst:540
 msgid ""
 "The permutation tuples are emitted in lexicographic order according to the "
-"order of the input *iterable*.  If the input *iterable* is sorted, the output"
-" tuples will be produced in sorted order."
+"order of the input *iterable*.  If the input *iterable* is sorted, the "
+"output tuples will be produced in sorted order."
 msgstr ""
 
 #: library/itertools.rst:544
@@ -1013,8 +1014,8 @@ msgstr ""
 
 #: library/itertools.rst:581
 msgid ""
-"`Cartesian product <https://en.wikipedia.org/wiki/Cartesian_product>`_ of the"
-" input iterables."
+"`Cartesian product <https://en.wikipedia.org/wiki/Cartesian_product>`_ of "
+"the input iterables."
 msgstr ""
 
 #: library/itertools.rst:584
@@ -1027,9 +1028,9 @@ msgstr ""
 #: library/itertools.rst:587
 msgid ""
 "The nested loops cycle like an odometer with the rightmost element advancing "
-"on every iteration.  This pattern creates a lexicographic ordering so that if"
-" the input's iterables are sorted, the product tuples are emitted in sorted "
-"order."
+"on every iteration.  This pattern creates a lexicographic ordering so that "
+"if the input's iterables are sorted, the product tuples are emitted in "
+"sorted order."
 msgstr ""
 
 #: library/itertools.rst:592
@@ -1072,8 +1073,8 @@ msgstr ""
 
 #: library/itertools.rst:621
 msgid ""
-"Make an iterator that returns *object* over and over again. Runs indefinitely"
-" unless the *times* argument is specified."
+"Make an iterator that returns *object* over and over again. Runs "
+"indefinitely unless the *times* argument is specified."
 msgstr ""
 
 #: library/itertools.rst:626
@@ -1144,10 +1145,9 @@ msgid ""
 "the input iterator and there is no way to access it. This could be an issue "
 "if an application wants to further consume the input iterator after "
 "*takewhile* has been run to :term:`exhaustion <exhausted>`. To work around "
-"this problem, consider using `more-itertools before_and_after() "
-"<https://more-"
-"itertools.readthedocs.io/en/stable/api.html#more_itertools.before_and_after>`__"
-" instead."
+"this problem, consider using `more-itertools before_and_after() <https://"
+"more-itertools.readthedocs.io/en/stable/"
+"api.html#more_itertools.before_and_after>`__ instead."
 msgstr ""
 
 #: library/itertools.rst:683
@@ -1193,10 +1193,10 @@ msgstr ""
 #: library/itertools.rst:720
 msgid ""
 "When the input *iterable* is already a tee iterator object, all members of "
-"the return tuple are constructed as if they had been produced by the upstream"
-" :func:`tee` call.  This \"flattening step\" allows nested :func:`tee` calls "
-"to share the same underlying data chain and to have a single update step "
-"rather than a chain of calls."
+"the return tuple are constructed as if they had been produced by the "
+"upstream :func:`tee` call.  This \"flattening step\" allows "
+"nested :func:`tee` calls to share the same underlying data chain and to have "
+"a single update step rather than a chain of calls."
 msgstr ""
 
 #: library/itertools.rst:726
@@ -1234,8 +1234,8 @@ msgstr ""
 msgid ""
 "This itertool may require significant auxiliary storage (depending on how "
 "much temporary data needs to be stored). In general, if one iterator uses "
-"most or all of the data before another iterator starts, it is faster to use "
-":func:`list` instead of :func:`tee`."
+"most or all of the data before another iterator starts, it is faster to "
+"use :func:`list` instead of :func:`tee`."
 msgstr ""
 
 #: library/itertools.rst:758
@@ -1279,9 +1279,9 @@ msgstr ""
 
 #: library/itertools.rst:790
 msgid ""
-"If one of the iterables is potentially infinite, then the :func:`zip_longest`"
-" function should be wrapped with something that limits the number of calls "
-"(for example :func:`islice` or :func:`takewhile`)."
+"If one of the iterables is potentially infinite, then "
+"the :func:`zip_longest` function should be wrapped with something that "
+"limits the number of calls (for example :func:`islice` or :func:`takewhile`)."
 msgstr ""
 
 #: library/itertools.rst:798
@@ -1298,19 +1298,19 @@ msgstr ""
 msgid ""
 "The primary purpose of the itertools recipes is educational.  The recipes "
 "show various ways of thinking about individual tools — for example, that "
-"``chain.from_iterable`` is related to the concept of flattening.  The recipes"
-" also give ideas about ways that the tools can be combined — for example, how"
-" ``starmap()`` and ``repeat()`` can work together.  The recipes also show "
-"patterns for using itertools with the :mod:`operator` and :mod:`collections` "
-"modules as well as with the built-in itertools such as ``map()``, "
-"``filter()``, ``reversed()``, and ``enumerate()``."
+"``chain.from_iterable`` is related to the concept of flattening.  The "
+"recipes also give ideas about ways that the tools can be combined — for "
+"example, how ``starmap()`` and ``repeat()`` can work together.  The recipes "
+"also show patterns for using itertools with the :mod:`operator` "
+"and :mod:`collections` modules as well as with the built-in itertools such "
+"as ``map()``, ``filter()``, ``reversed()``, and ``enumerate()``."
 msgstr ""
 
 #: library/itertools.rst:812
 msgid ""
 "A secondary purpose of the recipes is to serve as an incubator.  The "
-"``accumulate()``, ``compress()``, and ``pairwise()`` itertools started out as"
-" recipes.  Currently, the ``sliding_window()``, ``derangements()``, and "
+"``accumulate()``, ``compress()``, and ``pairwise()`` itertools started out "
+"as recipes.  Currently, the ``sliding_window()``, ``derangements()``, and "
 "``sieve()`` recipes are being tested to see whether they prove their worth."
 msgstr ""
 
@@ -1397,11 +1397,13 @@ msgid ""
 "    return next(islice(iterable, n, None), default)\n"
 "\n"
 "def quantify(iterable, predicate=bool):\n"
-"    \"Given a predicate that returns True or False, count the True results.\"\n"
+"    \"Given a predicate that returns True or False, count the True results."
+"\"\n"
 "    return sum(map(predicate, iterable))\n"
 "\n"
 "def first_true(iterable, default=False, predicate=None):\n"
-"    \"Returns the first true value or the *default* if there is no true value.\"\n"
+"    \"Returns the first true value or the *default* if there is no true "
+"value.\"\n"
 "    # first_true([a, b, c], x) → a or b or c or x\n"
 "    # first_true([a, b], x, f) → a if f(a) else b if f(b) else x\n"
 "    return next(filter(predicate, iterable), default)\n"
@@ -1415,7 +1417,8 @@ msgid ""
 "# ==== Data pipelines ====\n"
 "\n"
 "def unique_justseen(iterable, key=None):\n"
-"    \"Yield unique elements, preserving order. Remember only the element just seen.\"\n"
+"    \"Yield unique elements, preserving order. Remember only the element "
+"just seen.\"\n"
 "    # unique_justseen('AAAABBBCCDAABBB') → A B C D A B\n"
 "    # unique_justseen('ABBcCAD', str.casefold) → A B c A D\n"
 "    if key is None:\n"
@@ -1423,7 +1426,8 @@ msgid ""
 "    return map(next, map(itemgetter(1), groupby(iterable, key)))\n"
 "\n"
 "def unique_everseen(iterable, key=None):\n"
-"    \"Yield unique elements, preserving order. Remember all elements ever seen.\"\n"
+"    \"Yield unique elements, preserving order. Remember all elements ever "
+"seen.\"\n"
 "    # unique_everseen('AAAABBBCCDAABBB') → A B C D\n"
 "    # unique_everseen('ABBcCAD', str.casefold) → A B c D\n"
 "    seen = set()\n"
@@ -1490,7 +1494,8 @@ msgid ""
 "    # Algorithm credited to Stefan Pochmann\n"
 "    seq = tuple(iterable)\n"
 "    pos = tuple(range(len(seq)))\n"
-"    have_moved = map(map, repeat(is_not), repeat(pos), permutations(pos, r=r))\n"
+"    have_moved = map(map, repeat(is_not), repeat(pos), permutations(pos, "
+"r=r))\n"
 "    valid_derangements = map(all, have_moved)\n"
 "    return compress(permutations(seq, r=r), valid_derangements)\n"
 "\n"

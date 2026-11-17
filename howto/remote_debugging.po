@@ -76,8 +76,8 @@ msgid ""
 "In general, you can debug your own processes, but there are several common "
 "configurations that may disable this. Some Linux distributions enable "
 "**ptrace restrictions**, aka \"Yama,\" as a form of system hardening. Recent "
-"versions of the ``setpriv`` command (util-linux 2.41, released June 2025) let"
-" you loosen ptrace restrictions on a per-process basis:"
+"versions of the ``setpriv`` command (util-linux 2.41, released June 2025) "
+"let you loosen ptrace restrictions on a per-process basis:"
 msgstr ""
 
 #: howto/remote_debugging.rst:39
@@ -110,8 +110,8 @@ msgid ""
 "security filter. In particular, this was common with older versions of some "
 "container software. Docker 19.03 or newer (released 2019) and containerd "
 "1.6.7 or newer (released 2022) will automatically allow usage of the "
-"``ptrace`` system call inside containers, when running on Linux kernel 4.8 or"
-" higher. If you cannot upgrade to these versions, you can create your "
+"``ptrace`` system call inside containers, when running on Linux kernel 4.8 "
+"or higher. If you cannot upgrade to these versions, you can create your "
 "container with an option like ``--security-opt seccomp=unconfined`` to "
 "disable the system call security filter for that container. This weakens the "
 "container's isolation and should only be done in low-security environments."
@@ -119,21 +119,21 @@ msgstr ""
 
 #: howto/remote_debugging.rst:63
 msgid ""
-"If you need to trace a process that you *do not* own, you will need superuser"
-" access or equivalent. This also applies to processes that have changed their"
-" security credentials, e.g., set-user-ID or set-group-ID processes (though "
-"this is unusual for Python). Try running the debugging command with ``sudo "
-"-E``."
+"If you need to trace a process that you *do not* own, you will need "
+"superuser access or equivalent. This also applies to processes that have "
+"changed their security credentials, e.g., set-user-ID or set-group-ID "
+"processes (though this is unusual for Python). Try running the debugging "
+"command with ``sudo -E``."
 msgstr ""
 
 #: howto/remote_debugging.rst:70
 msgid ""
 "The ``CAP_SYS_PTRACE`` capability is equivalent to superuser access, in that "
 "it allows debugging *any* process, not just your own. You may see advice on "
-"the internet suggesting using it to work around ptrace restrictions or system"
-" call filters. This may work in practice, as would ``sudo``, but this gives "
-"the debugging process much more access than it needs and should only be done "
-"in low-security environments."
+"the internet suggesting using it to work around ptrace restrictions or "
+"system call filters. This may work in practice, as would ``sudo``, but this "
+"gives the debugging process much more access than it needs and should only "
+"be done in low-security environments."
 msgstr ""
 
 #: howto/remote_debugging.rst:77
@@ -154,11 +154,11 @@ msgstr ""
 
 #: howto/remote_debugging.rst:86
 msgid ""
-"You can modify your Python binary to opt in to being debugged by giving it an"
-" **ad-hoc code signature** with an **entitlement** enabling it to be "
-"debugged. (An ad-hoc \"signature\" is just a configuration without any actual"
-" cryptographic signature or a need for a certificate or anything else such as"
-" an Apple developer program membership.)"
+"You can modify your Python binary to opt in to being debugged by giving it "
+"an **ad-hoc code signature** with an **entitlement** enabling it to be "
+"debugged. (An ad-hoc \"signature\" is just a configuration without any "
+"actual cryptographic signature or a need for a certificate or anything else "
+"such as an Apple developer program membership.)"
 msgstr ""
 
 #: howto/remote_debugging.rst:92
@@ -169,7 +169,8 @@ msgstr ""
 
 #: howto/remote_debugging.rst:95
 msgid ""
-"echo '{\"com.apple.security.get-task-allow\": true}' | plutil -convert xml1 -o get-task-allow.plist -\n"
+"echo '{\"com.apple.security.get-task-allow\": true}' | plutil -convert xml1 "
+"-o get-task-allow.plist -\n"
 "codesign --sign - --entitlements get-task-allow.plist path/to/bin/python3"
 msgstr ""
 
@@ -255,20 +256,20 @@ msgstr ""
 
 #: howto/remote_debugging.rst:139
 msgid ""
-"This mechanism forms the basis of the :func:`sys.remote_exec` function, which"
-" instructs a remote Python process to execute a ``.py`` file. However, this "
-"section does not document the usage of that function. Instead, it provides a "
-"detailed explanation of the underlying protocol, which takes as input the "
-"``pid`` of a target Python process and the path to a Python source file to be"
-" executed. This information supports independent reimplementation of the "
-"protocol, regardless of programming language."
+"This mechanism forms the basis of the :func:`sys.remote_exec` function, "
+"which instructs a remote Python process to execute a ``.py`` file. However, "
+"this section does not document the usage of that function. Instead, it "
+"provides a detailed explanation of the underlying protocol, which takes as "
+"input the ``pid`` of a target Python process and the path to a Python source "
+"file to be executed. This information supports independent reimplementation "
+"of the protocol, regardless of programming language."
 msgstr ""
 
 #: howto/remote_debugging.rst:149
 msgid ""
 "The execution of the injected script depends on the interpreter reaching a "
-"safe evaluation point. As a result, execution may be delayed depending on the"
-" runtime state of the target process."
+"safe evaluation point. As a result, execution may be delayed depending on "
+"the runtime state of the target process."
 msgstr ""
 
 #: howto/remote_debugging.rst:153
@@ -324,8 +325,8 @@ msgstr ""
 
 #: howto/remote_debugging.rst:185
 msgid ""
-"Find the base address where the Python binary or shared library was loaded in"
-" the target process."
+"Find the base address where the Python binary or shared library was loaded "
+"in the target process."
 msgstr ""
 
 #: howto/remote_debugging.rst:187
@@ -354,8 +355,8 @@ msgstr ""
 
 #: howto/remote_debugging.rst:197
 msgid ""
-"Read the process’s memory map (for example, ``/proc/<pid>/maps``) to find the"
-" address where the Python executable or ``libpython`` was loaded."
+"Read the process’s memory map (for example, ``/proc/<pid>/maps``) to find "
+"the address where the Python executable or ``libpython`` was loaded."
 msgstr ""
 
 #: howto/remote_debugging.rst:199
@@ -404,12 +405,12 @@ msgid ""
 "process. The first is through the ``/proc`` filesystem, specifically by "
 "reading from ``/proc/[pid]/mem`` which provides direct access to the "
 "process's memory. This requires appropriate permissions - either being the "
-"same user as the target process or having root access. The second approach is"
-" using the ``process_vm_readv()`` system call which provides a more efficient"
-" way to copy memory between processes. While ptrace's ``PTRACE_PEEKTEXT`` "
-"operation can also be used to read memory, it is significantly slower as it "
-"only reads one word at a time and requires multiple context switches between "
-"the tracer and tracee processes."
+"same user as the target process or having root access. The second approach "
+"is using the ``process_vm_readv()`` system call which provides a more "
+"efficient way to copy memory between processes. While ptrace's "
+"``PTRACE_PEEKTEXT`` operation can also be used to read memory, it is "
+"significantly slower as it only reads one word at a time and requires "
+"multiple context switches between the tracer and tracee processes."
 msgstr ""
 
 #: howto/remote_debugging.rst:238
@@ -457,8 +458,8 @@ msgid ""
 "Load the binary file from disk and parse the Mach-O headers to find the "
 "section named ``PyRuntime`` in the ``__DATA`` segment.  On macOS, symbol "
 "names are automatically prefixed with an underscore, so the ``PyRuntime`` "
-"symbol appears as ``_PyRuntime`` in the symbol table, but the section name is"
-" not affected."
+"symbol appears as ``_PyRuntime`` in the symbol table, but the section name "
+"is not affected."
 msgstr ""
 
 #: howto/remote_debugging.rst:268
@@ -490,19 +491,19 @@ msgstr ""
 #: howto/remote_debugging.rst:291
 msgid ""
 "On macOS, accessing another process's memory requires using Mach-O specific "
-"APIs and file formats. The first step is obtaining a ``task_port`` handle via"
-" ``task_for_pid()``, which provides access to the target process's memory "
+"APIs and file formats. The first step is obtaining a ``task_port`` handle "
+"via ``task_for_pid()``, which provides access to the target process's memory "
 "space. This handle enables memory operations through APIs like "
 "``mach_vm_read_overwrite()``."
 msgstr ""
 
 #: howto/remote_debugging.rst:297
 msgid ""
-"The process memory can be examined using ``mach_vm_region()`` to scan through"
-" the virtual memory space, while ``proc_regionfilename()`` helps identify "
-"which binary files are loaded at each memory region. When the Python binary "
-"or library is found, its Mach-O headers need to be parsed to locate the "
-"``PyRuntime`` structure."
+"The process memory can be examined using ``mach_vm_region()`` to scan "
+"through the virtual memory space, while ``proc_regionfilename()`` helps "
+"identify which binary files are loaded at each memory region. When the "
+"Python binary or library is found, its Mach-O headers need to be parsed to "
+"locate the ``PyRuntime`` structure."
 msgstr ""
 
 #: howto/remote_debugging.rst:302
@@ -534,19 +535,19 @@ msgstr ""
 #: howto/remote_debugging.rst:319
 msgid ""
 "Use the ToolHelp API to enumerate all modules loaded in the target process. "
-"This is done using functions such as `CreateToolhelp32Snapshot "
-"<https://learn.microsoft.com/en-us/windows/win32/api/tlhelp32/nf-"
-"tlhelp32-createtoolhelp32snapshot>`_, `Module32First "
-"<https://learn.microsoft.com/en-us/windows/win32/api/tlhelp32/nf-"
-"tlhelp32-module32first>`_, and `Module32Next <https://learn.microsoft.com/en-"
-"us/windows/win32/api/tlhelp32/nf-tlhelp32-module32next>`_."
+"This is done using functions such as `CreateToolhelp32Snapshot <https://"
+"learn.microsoft.com/en-us/windows/win32/api/tlhelp32/nf-tlhelp32-"
+"createtoolhelp32snapshot>`_, `Module32First <https://learn.microsoft.com/en-"
+"us/windows/win32/api/tlhelp32/nf-tlhelp32-module32first>`_, and "
+"`Module32Next <https://learn.microsoft.com/en-us/windows/win32/api/tlhelp32/"
+"nf-tlhelp32-module32next>`_."
 msgstr ""
 
 #: howto/remote_debugging.rst:326
 msgid ""
-"Identify the module corresponding to :file:`python.exe` or "
-":file:`python{XY}.dll`, where ``X`` and ``Y`` are the major and minor version"
-" numbers of the Python version, and record its base address."
+"Identify the module corresponding to :file:`python.exe` "
+"or :file:`python{XY}.dll`, where ``X`` and ``Y`` are the major and minor "
+"version numbers of the Python version, and record its base address."
 msgstr ""
 
 #: howto/remote_debugging.rst:329
@@ -589,11 +590,11 @@ msgstr ""
 
 #: howto/remote_debugging.rst:360
 msgid ""
-"On Windows, accessing another process's memory requires using the Windows API"
-" functions like ``CreateToolhelp32Snapshot()`` and "
-"``Module32First()/Module32Next()`` to enumerate loaded modules. The "
-"``OpenProcess()`` function provides a handle to access the target process's "
-"memory space, enabling memory operations through ``ReadProcessMemory()``."
+"On Windows, accessing another process's memory requires using the Windows "
+"API functions like ``CreateToolhelp32Snapshot()`` and ``Module32First()/"
+"Module32Next()`` to enumerate loaded modules. The ``OpenProcess()`` function "
+"provides a handle to access the target process's memory space, enabling "
+"memory operations through ``ReadProcessMemory()``."
 msgstr ""
 
 #: howto/remote_debugging.rst:366
@@ -606,12 +607,12 @@ msgstr ""
 #: howto/remote_debugging.rst:370
 msgid ""
 "The PE format organizes code and data into sections. The ``PyRuntime`` "
-"structure lives in a section named \"PyRuntim\" (truncated from \"PyRuntime\""
-" due to PE's 8-character name limit). The actual runtime address calculation "
-"involves finding the module's base address from the module entry, then "
-"locating our target section in the PE headers. The final address is computed "
-"by combining the base address with the section's virtual address from the PE "
-"section headers."
+"structure lives in a section named \"PyRuntim\" (truncated from "
+"\"PyRuntime\" due to PE's 8-character name limit). The actual runtime "
+"address calculation involves finding the module's base address from the "
+"module entry, then locating our target section in the PE headers. The final "
+"address is computed by combining the base address with the section's virtual "
+"address from the PE section headers."
 msgstr ""
 
 #: howto/remote_debugging.rst:377
@@ -627,9 +628,9 @@ msgstr ""
 
 #: howto/remote_debugging.rst:385
 msgid ""
-"Once the address of the ``PyRuntime`` structure has been determined, the next"
-" step is to read the ``_Py_DebugOffsets`` structure located at the beginning "
-"of the ``PyRuntime`` block."
+"Once the address of the ``PyRuntime`` structure has been determined, the "
+"next step is to read the ``_Py_DebugOffsets`` structure located at the "
+"beginning of the ``PyRuntime`` block."
 msgstr ""
 
 #: howto/remote_debugging.rst:389
@@ -647,10 +648,10 @@ msgstr ""
 #: howto/remote_debugging.rst:395
 msgid ""
 "Read memory from the target process starting at the ``PyRuntime`` address, "
-"covering the same number of bytes as the ``_Py_DebugOffsets`` structure. This"
-" structure is located at the very start of the ``PyRuntime`` memory block. "
-"Its layout is defined in CPython’s internal headers and stays the same within"
-" a given minor version, but may change in major versions."
+"covering the same number of bytes as the ``_Py_DebugOffsets`` structure. "
+"This structure is located at the very start of the ``PyRuntime`` memory "
+"block. Its layout is defined in CPython’s internal headers and stays the "
+"same within a given minor version, but may change in major versions."
 msgstr ""
 
 #: howto/remote_debugging.rst:401
@@ -676,8 +677,8 @@ msgstr ""
 
 #: howto/remote_debugging.rst:409
 msgid ""
-"The ``free_threaded`` field must have the same value in both the debugger and"
-" the target process."
+"The ``free_threaded`` field must have the same value in both the debugger "
+"and the target process."
 msgstr ""
 
 #: howto/remote_debugging.rst:412
@@ -727,8 +728,8 @@ msgid ""
 "recommended that the target process be suspended before performing any "
 "operations that read or write internal interpreter state. The Python runtime "
 "may concurrently mutate interpreter data structures—such as creating or "
-"destroying threads—during normal execution. This can result in invalid memory"
-" reads or writes."
+"destroying threads—during normal execution. This can result in invalid "
+"memory reads or writes."
 msgstr ""
 
 #: howto/remote_debugging.rst:453
@@ -803,8 +804,8 @@ msgstr ""
 #: howto/remote_debugging.rst:498
 msgid ""
 "Use the offset ``runtime_state.interpreters_head`` to obtain the address of "
-"the first interpreter in the ``PyRuntime`` structure. This is the entry point"
-" to the linked list of active interpreters."
+"the first interpreter in the ``PyRuntime`` structure. This is the entry "
+"point to the linked list of active interpreters."
 msgstr ""
 
 #: howto/remote_debugging.rst:502
@@ -916,10 +917,10 @@ msgstr ""
 
 #: howto/remote_debugging.rst:581
 msgid ""
-"Each ``PyThreadState`` contains a ``_PyRemoteDebuggerSupport`` structure used"
-" for communication between the debugger and the interpreter. The locations of"
-" its fields are defined by the ``_Py_DebugOffsets`` structure and include the"
-" following:"
+"Each ``PyThreadState`` contains a ``_PyRemoteDebuggerSupport`` structure "
+"used for communication between the debugger and the interpreter. The "
+"locations of its fields are defined by the ``_Py_DebugOffsets`` structure "
+"and include the following:"
 msgstr ""
 
 #: howto/remote_debugging.rst:586
@@ -938,8 +939,8 @@ msgstr ""
 #: howto/remote_debugging.rst:593
 msgid ""
 "``eval_breaker``: A field checked by the interpreter during execution. "
-"Setting bit 5 (``_PY_EVAL_PLEASE_STOP_BIT``, value ``1U << 5``) in this field"
-" causes the interpreter to pause and check for debugger activity."
+"Setting bit 5 (``_PY_EVAL_PLEASE_STOP_BIT``, value ``1U << 5``) in this "
+"field causes the interpreter to pause and check for debugger activity."
 msgstr ""
 
 #: howto/remote_debugging.rst:597
@@ -1020,9 +1021,9 @@ msgid ""
 "immediately after injection. The debugger should wait until the injected "
 "script has produced an observable effect before removing the file. This "
 "effect depends on what the script is designed to do. For example, a debugger "
-"might wait until the remote process connects back to a socket before removing"
-" the script. Once such an effect is observed, it is safe to assume the file "
-"is no longer needed."
+"might wait until the remote process connects back to a socket before "
+"removing the script. Once such an effect is observed, it is safe to assume "
+"the file is no longer needed."
 msgstr ""
 
 #: howto/remote_debugging.rst:662
@@ -1075,10 +1076,10 @@ msgid ""
 "used by native debuggers such as GDB and LLDB.  Attaching to a process "
 "requires the **same privileges** that those debuggers require, for example "
 "``ptrace`` / Yama LSM on Linux, ``task_for_pid`` on macOS, and "
-"``SeDebugPrivilege`` on Windows.  Python does not introduce any new privilege"
-" escalation path; if an attacker already possesses the permissions needed to "
-"attach to a process, they could equally use GDB to read memory or inject "
-"code."
+"``SeDebugPrivilege`` on Windows.  Python does not introduce any new "
+"privilege escalation path; if an attacker already possesses the permissions "
+"needed to attach to a process, they could equally use GDB to read memory or "
+"inject code."
 msgstr ""
 
 #: howto/remote_debugging.rst:690
@@ -1108,14 +1109,14 @@ msgstr ""
 
 #: howto/remote_debugging.rst:701
 msgid ""
-"A tool that reads internal interpreter state from a target process must trust"
-" that memory to be well-formed.  If the target process has been corrupted or "
-"is controlled by an attacker, the debugger or profiler may crash, produce "
-"garbage output, or behave unpredictably.  This is the same risk accepted by "
-"every ``ptrace``-based debugger.  Bugs in this category (buffer overflows, "
-"segmentation faults, or undefined behaviour triggered by reading corrupted "
-"state) are **not** treated as security issues, though fixes that improve "
-"robustness are welcome."
+"A tool that reads internal interpreter state from a target process must "
+"trust that memory to be well-formed.  If the target process has been "
+"corrupted or is controlled by an attacker, the debugger or profiler may "
+"crash, produce garbage output, or behave unpredictably.  This is the same "
+"risk accepted by every ``ptrace``-based debugger.  Bugs in this category "
+"(buffer overflows, segmentation faults, or undefined behaviour triggered by "
+"reading corrupted state) are **not** treated as security issues, though "
+"fixes that improve robustness are welcome."
 msgstr ""
 
 #: howto/remote_debugging.rst:710
@@ -1139,15 +1140,15 @@ msgid ""
 "The environment variable :envvar:`PYTHON_DISABLE_REMOTE_DEBUG` (and the "
 "equivalent :option:`-X disable-remote-debug` flag) allows operators to "
 "disable the in-process side of the protocol as a **defence-in-depth** "
-"measure.  This may be useful in hardened or sandboxed deployment environments"
-" where no debugging or profiling of the process is expected and reducing "
-"attack surface is a priority, even though the OS-level privilege checks "
-"already prevent unprivileged access."
+"measure.  This may be useful in hardened or sandboxed deployment "
+"environments where no debugging or profiling of the process is expected and "
+"reducing attack surface is a priority, even though the OS-level privilege "
+"checks already prevent unprivileged access."
 msgstr ""
 
 #: howto/remote_debugging.rst:727
 msgid ""
-"Setting this variable does **not** affect other OS-level debugging interfaces"
-" (``ptrace``, ``/proc``, ``task_for_pid``, etc.), which remain available "
-"according to their own permission models."
+"Setting this variable does **not** affect other OS-level debugging "
+"interfaces (``ptrace``, ``/proc``, ``task_for_pid``, etc.), which remain "
+"available according to their own permission models."
 msgstr ""

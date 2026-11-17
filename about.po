@@ -66,8 +66,8 @@ msgstr ""
 #: about.rst:34
 msgid ""
 "Many people have contributed to the Python language, the Python standard "
-"library, and the Python documentation.  See :source:`Misc/ACKS` in the Python"
-" source distribution for a partial list of contributors."
+"library, and the Python documentation.  See :source:`Misc/ACKS` in the "
+"Python source distribution for a partial list of contributors."
 msgstr ""
 
 #: about.rst:38

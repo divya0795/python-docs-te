@@ -37,8 +37,8 @@ msgstr ""
 
 #: howto/cporting.rst:15
 msgid ""
-"The `Porting guide`_ from the *py3c* project provides opinionated suggestions"
-" with supporting code."
+"The `Porting guide`_ from the *py3c* project provides opinionated "
+"suggestions with supporting code."
 msgstr ""
 
 #: howto/cporting.rst:17

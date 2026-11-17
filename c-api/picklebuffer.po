@@ -53,8 +53,8 @@ msgstr ""
 
 #: c-api/picklebuffer.rst:35
 msgid ""
-"On success, return a new pickle buffer instance. On failure, set an exception"
-" and return ``NULL``."
+"On success, return a new pickle buffer instance. On failure, set an "
+"exception and return ``NULL``."
 msgstr ""
 
 #: c-api/picklebuffer.rst:38
@@ -70,15 +70,15 @@ msgstr ""
 #: c-api/picklebuffer.rst:45
 msgid ""
 "The returned pointer is valid as long as *picklebuf* is alive and has not "
-"been released. The caller must not modify or free the returned "
-":c:type:`Py_buffer`. If the pickle buffer has been released, raise "
-":exc:`ValueError`."
+"been released. The caller must not modify or free the "
+"returned :c:type:`Py_buffer`. If the pickle buffer has been released, "
+"raise :exc:`ValueError`."
 msgstr ""
 
 #: c-api/picklebuffer.rst:49
 msgid ""
-"On success, return a pointer to the buffer view. On failure, set an exception"
-" and return ``NULL``."
+"On success, return a pointer to the buffer view. On failure, set an "
+"exception and return ``NULL``."
 msgstr ""
 
 #: c-api/picklebuffer.rst:55

@@ -81,7 +81,8 @@ msgid "HTML"
 msgstr ""
 
 #: tools/templates/download.html:44
-msgid "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-html.zip\">Download</a>"
+msgid ""
+"<a href=\"%(dl_base)s/python-%(dl_version)s-docs-html.zip\">Download</a>"
 msgstr ""
 
 #: tools/templates/download.html:45
@@ -94,7 +95,8 @@ msgid "Plain text"
 msgstr ""
 
 #: tools/templates/download.html:49
-msgid "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-text.zip\">Download</a>"
+msgid ""
+"<a href=\"%(dl_base)s/python-%(dl_version)s-docs-text.zip\">Download</a>"
 msgstr ""
 
 #: tools/templates/download.html:50
@@ -107,13 +109,14 @@ msgid "Texinfo"
 msgstr ""
 
 #: tools/templates/download.html:54
-msgid "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-texinfo.zip\">Download</a>"
+msgid ""
+"<a href=\"%(dl_base)s/python-%(dl_version)s-docs-texinfo.zip\">Download</a>"
 msgstr ""
 
 #: tools/templates/download.html:55
 msgid ""
-"<a href=\"%(dl_base)s/python-%(dl_version)s-docs-"
-"texinfo.tar.bz2\">Download</a>"
+"<a href=\"%(dl_base)s/python-%(dl_version)s-docs-texinfo.tar.bz2\">Download</"
+"a>"
 msgstr ""
 
 #: tools/templates/download.html:58
@@ -129,14 +132,17 @@ msgid ""
 "\n"
 "We no longer provide pre-built PDFs of the documentation.\n"
 "To build a PDF archive, follow the instructions in the\n"
-"<a href=\"https://devguide.python.org/documentation/start-documenting/#building-the-documentation\">Developer's Guide</a>\n"
-"and run <code>make dist-pdf</code> in the <code>Doc/</code> directory of a copy of the CPython repository.\n"
+"<a href=\"https://devguide.python.org/documentation/start-documenting/"
+"#building-the-documentation\">Developer's Guide</a>\n"
+"and run <code>make dist-pdf</code> in the <code>Doc/</code> directory of a "
+"copy of the CPython repository.\n"
 msgstr ""
 
 #: tools/templates/download.html:71
 msgid ""
 "\n"
-"See the <a href=\"https://docs.python.org/%(version)s/archives/\">directory listing</a>\n"
+"See the <a href=\"https://docs.python.org/%(version)s/archives/\">directory "
+"listing</a>\n"
 "for file sizes."
 msgstr ""
 
@@ -484,7 +490,8 @@ msgstr ""
 
 #: tools/templates/layout.html:14
 msgid ""
-"This is a deploy preview created from a <a href=\"%(repository_url)s/pull/%(pr_id)s\">pull request</a>.\n"
+"This is a deploy preview created from a <a href=\"%(repository_url)s/pull/%"
+"(pr_id)s\">pull request</a>.\n"
 "  For authoritative documentation, see"
 msgstr ""
 

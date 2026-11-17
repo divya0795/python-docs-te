@@ -25,15 +25,15 @@ msgstr ""
 #: c-api/weakref.rst:8
 msgid ""
 "Python supports *weak references* as first-class objects.  There are two "
-"specific object types which directly implement weak references.  The first is"
-" a simple reference object, and the second acts as a proxy for the original "
-"object as much as it can."
+"specific object types which directly implement weak references.  The first "
+"is a simple reference object, and the second acts as a proxy for the "
+"original object as much as it can."
 msgstr ""
 
 #: c-api/weakref.rst:16
 msgid ""
-"Return non-zero if *ob* is either a reference or proxy object.  This function"
-" always succeeds."
+"Return non-zero if *ob* is either a reference or proxy object.  This "
+"function always succeeds."
 msgstr ""
 
 #: c-api/weakref.rst:22
@@ -57,11 +57,12 @@ msgstr ""
 msgid ""
 "Return a weak reference object for the object *ob*.  This will always return "
 "a new reference, but is not guaranteed to create a new object; an existing "
-"reference object may be returned.  The second parameter, *callback*, can be a"
-" callable object that receives notification when *ob* is garbage collected; "
+"reference object may be returned.  The second parameter, *callback*, can be "
+"a callable object that receives notification when *ob* is garbage collected; "
 "it should accept a single parameter, which will be the weak reference object "
-"itself. *callback* may also be ``None`` or ``NULL``.  If *ob* is not a weakly"
-" referenceable object, this will raise :exc:`TypeError` and return ``NULL``."
+"itself. *callback* may also be ``None`` or ``NULL``.  If *ob* is not a "
+"weakly referenceable object, this will raise :exc:`TypeError` and return "
+"``NULL``."
 msgstr ""
 
 #: c-api/weakref.rst:49 c-api/weakref.rst:65
@@ -74,12 +75,12 @@ msgstr ""
 msgid ""
 "Return a weak reference proxy object for the object *ob*.  This will always "
 "return a new reference, but is not guaranteed to create a new object; an "
-"existing proxy object may be returned.  The second parameter, *callback*, can"
-" be a callable object that receives notification when *ob* is garbage "
+"existing proxy object may be returned.  The second parameter, *callback*, "
+"can be a callable object that receives notification when *ob* is garbage "
 "collected; it should accept a single parameter, which will be the weak "
 "reference object itself. *callback* may also be ``None`` or ``NULL``.  If "
-"*ob* weakly referenceable object, this will raise :exc:`TypeError` and return"
-" ``NULL``."
+"*ob* weakly referenceable object, this will raise :exc:`TypeError` and "
+"return ``NULL``."
 msgstr ""
 
 #: c-api/weakref.rst:71
@@ -90,8 +91,8 @@ msgstr ""
 
 #: c-api/weakref.rst:74
 msgid ""
-"On success, set *\\*pobj* to a new :term:`strong reference` to the referenced"
-" object and return 1."
+"On success, set *\\*pobj* to a new :term:`strong reference` to the "
+"referenced object and return 1."
 msgstr ""
 
 #: c-api/weakref.rst:76
@@ -126,9 +127,9 @@ msgstr ""
 
 #: c-api/weakref.rst:108
 msgid ""
-"Test if the weak reference *ref* is dead. Returns 1 if the reference is dead,"
-" 0 if it is alive, and -1 with an error set if *ref* is not a weak reference "
-"object."
+"Test if the weak reference *ref* is dead. Returns 1 if the reference is "
+"dead, 0 if it is alive, and -1 with an error set if *ref* is not a weak "
+"reference object."
 msgstr ""
 
 #: c-api/weakref.rst:117
@@ -171,6 +172,7 @@ msgstr ""
 
 #: c-api/weakref.rst:146
 msgid ""
-"In most circumstances, it's more appropriate to use "
-":c:func:`PyObject_ClearWeakRefs` to clear weakrefs instead of this function."
+"In most circumstances, it's more appropriate to "
+"use :c:func:`PyObject_ClearWeakRefs` to clear weakrefs instead of this "
+"function."
 msgstr ""

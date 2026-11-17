@@ -24,9 +24,9 @@ msgstr ""
 
 #: c-api/gen.rst:8
 msgid ""
-"Generator objects are what Python uses to implement generator iterators. They"
-" are normally created by calling a generator function, rather than explicitly"
-" calling :c:func:`PyGen_New` or :c:func:`PyGen_NewWithQualName`."
+"Generator objects are what Python uses to implement generator iterators. "
+"They are normally created by calling a generator function, rather than "
+"explicitly calling :c:func:`PyGen_New` or :c:func:`PyGen_NewWithQualName`."
 msgstr ""
 
 #: c-api/gen.rst:15

@@ -26,16 +26,15 @@ msgstr ""
 msgid ""
 "This module provides access to the Unicode Character Database (UCD) which "
 "defines character properties for all Unicode characters. The data contained "
-"in this database is compiled from the `UCD version 16.0.0 "
-"<https://www.unicode.org/Public/16.0.0/ucd>`_."
+"in this database is compiled from the `UCD version 16.0.0 <https://"
+"www.unicode.org/Public/16.0.0/ucd>`_."
 msgstr ""
 
 #: library/unicodedata.rst:23
 msgid ""
 "The module uses the same names and symbols as defined by Unicode Standard "
-"Annex #44, `\"Unicode Character Database\" "
-"<https://www.unicode.org/reports/tr44/>`_.  It defines the following "
-"functions:"
+"Annex #44, `\"Unicode Character Database\" <https://www.unicode.org/reports/"
+"tr44/>`_.  It defines the following functions:"
 msgstr ""
 
 #: library/unicodedata.rst:30
@@ -47,8 +46,8 @@ msgstr ""
 #: library/unicodedata.rst:36
 msgid ""
 "Look up character by name.  If a character with the given name is found, "
-"return the corresponding character.  If not found, :exc:`KeyError` is raised."
-" For example::"
+"return the corresponding character.  If not found, :exc:`KeyError` is "
+"raised. For example::"
 msgstr ""
 
 #: library/unicodedata.rst:40
@@ -91,8 +90,8 @@ msgstr ""
 #: library/unicodedata.rst:67
 msgid ""
 "Returns the decimal value assigned to the character *chr* as integer. If no "
-"such value is defined, *default* is returned, or, if not given, "
-":exc:`ValueError` is raised. For example::"
+"such value is defined, *default* is returned, or, if not "
+"given, :exc:`ValueError` is raised. For example::"
 msgstr ""
 
 #: library/unicodedata.rst:71
@@ -106,8 +105,8 @@ msgstr ""
 #: library/unicodedata.rst:79
 msgid ""
 "Returns the digit value assigned to the character *chr* as integer. If no "
-"such value is defined, *default* is returned, or, if not given, "
-":exc:`ValueError` is raised::"
+"such value is defined, *default* is returned, or, if not "
+"given, :exc:`ValueError` is raised::"
 msgstr ""
 
 #: library/unicodedata.rst:83
@@ -119,8 +118,8 @@ msgstr ""
 #: library/unicodedata.rst:89
 msgid ""
 "Returns the numeric value assigned to the character *chr* as float. If no "
-"such value is defined, *default* is returned, or, if not given, "
-":exc:`ValueError` is raised::"
+"such value is defined, *default* is returned, or, if not "
+"given, :exc:`ValueError` is raised::"
 msgstr ""
 
 #: library/unicodedata.rst:93
@@ -133,9 +132,9 @@ msgstr ""
 msgid ""
 "Returns the general category assigned to the character *chr* as string. "
 "General category names consist of two letters. See the `General Category "
-"Values section of the Unicode Character Database documentation "
-"<https://www.unicode.org/reports/tr44/tr44-34.html#General_Category_Values>`_"
-" for a list of category codes. For example::"
+"Values section of the Unicode Character Database documentation <https://"
+"www.unicode.org/reports/tr44/tr44-34.html#General_Category_Values>`_ for a "
+"list of category codes. For example::"
 msgstr ""
 
 #: library/unicodedata.rst:105
@@ -146,8 +145,8 @@ msgstr ""
 
 #: library/unicodedata.rst:111
 msgid ""
-"Returns the bidirectional class assigned to the character *chr* as string. If"
-" no such value is defined, an empty string is returned. See the "
+"Returns the bidirectional class assigned to the character *chr* as string. "
+"If no such value is defined, an empty string is returned. See the "
 "`Bidirectional Class Values section of the Unicode Character Database "
 "<https://www.unicode.org/reports/tr44/tr44-34.html#Bidi_Class_Values>`_ "
 "documentation for a list of bidirectional codes. For example::"
@@ -155,7 +154,8 @@ msgstr ""
 
 #: library/unicodedata.rst:117
 msgid ""
-">>> unicodedata.bidirectional('\\N{ARABIC-INDIC DIGIT SEVEN}') # 'A'rabic, 'N'umber\n"
+">>> unicodedata.bidirectional('\\N{ARABIC-INDIC DIGIT SEVEN}') # 'A'rabic, "
+"'N'umber\n"
 "'AN'"
 msgstr ""
 
@@ -163,16 +163,16 @@ msgstr ""
 msgid ""
 "Returns the canonical combining class assigned to the character *chr* as "
 "integer. Returns ``0`` if no combining class is defined. See the `Canonical "
-"Combining Class Values section of the Unicode Character Database "
-"<https://www.unicode.org/reports/tr44/tr44-34.html#Canonical_Combining_Class_Values>`_"
-" for more information."
+"Combining Class Values section of the Unicode Character Database <https://"
+"www.unicode.org/reports/tr44/"
+"tr44-34.html#Canonical_Combining_Class_Values>`_ for more information."
 msgstr ""
 
 #: library/unicodedata.rst:132
 msgid ""
-"Returns the east asian width assigned to the character *chr* as string. For a"
-" list of widths and or more information, see the `Unicode Standard Annex #11 "
-"<https://www.unicode.org/reports/tr11/tr11-43.html>`_."
+"Returns the east asian width assigned to the character *chr* as string. For "
+"a list of widths and or more information, see the `Unicode Standard Annex "
+"#11 <https://www.unicode.org/reports/tr11/tr11-43.html>`_."
 msgstr ""
 
 #: library/unicodedata.rst:139
@@ -209,8 +209,8 @@ msgstr ""
 
 #: library/unicodedata.rst:162
 msgid ""
-"The Unicode standard defines various normalization forms of a Unicode string,"
-" based on the definition of canonical equivalence and compatibility "
+"The Unicode standard defines various normalization forms of a Unicode "
+"string, based on the definition of canonical equivalence and compatibility "
 "equivalence. In Unicode, several characters can be expressed in various way. "
 "For example, the character U+00C7 (LATIN CAPITAL LETTER C WITH CEDILLA) can "
 "also be expressed as the sequence U+0043 (LATIN CAPITAL LETTER C) U+0327 "
@@ -219,11 +219,11 @@ msgstr ""
 
 #: library/unicodedata.rst:168
 msgid ""
-"For each character, there are two normal forms: normal form C and normal form"
-" D. Normal form D (NFD) is also known as canonical decomposition, and "
-"translates each character into its decomposed form. Normal form C (NFC) first"
-" applies a canonical decomposition, then composes pre-combined characters "
-"again."
+"For each character, there are two normal forms: normal form C and normal "
+"form D. Normal form D (NFD) is also known as canonical decomposition, and "
+"translates each character into its decomposed form. Normal form C (NFC) "
+"first applies a canonical decomposition, then composes pre-combined "
+"characters again."
 msgstr ""
 
 #: library/unicodedata.rst:173
@@ -240,8 +240,8 @@ msgstr ""
 msgid ""
 "The normal form KD (NFKD) will apply the compatibility decomposition, that "
 "is, replace all compatibility characters with their equivalents. The normal "
-"form KC (NFKC) first applies the compatibility decomposition, followed by the"
-" canonical composition."
+"form KC (NFKC) first applies the compatibility decomposition, followed by "
+"the canonical composition."
 msgstr ""
 
 #: library/unicodedata.rst:185

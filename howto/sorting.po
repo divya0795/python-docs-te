@@ -33,8 +33,8 @@ msgstr ""
 #: howto/sorting.rst:9
 msgid ""
 "Python lists have a built-in :meth:`list.sort` method that modifies the list "
-"in-place.  There is also a :func:`sorted` built-in function that builds a new"
-" sorted list from an iterable."
+"in-place.  There is also a :func:`sorted` built-in function that builds a "
+"new sorted list from an iterable."
 msgstr ""
 
 #: howto/sorting.rst:13
@@ -62,9 +62,9 @@ msgstr ""
 #: howto/sorting.rst:27
 msgid ""
 "You can also use the :meth:`list.sort` method. It modifies the list in-place "
-"(and returns ``None`` to avoid confusion). Usually it's less convenient than "
-":func:`sorted` - but if you don't need the original list, it's slightly more "
-"efficient."
+"(and returns ``None`` to avoid confusion). Usually it's less convenient "
+"than :func:`sorted` - but if you don't need the original list, it's slightly "
+"more efficient."
 msgstr ""
 
 #: howto/sorting.rst:32
@@ -93,16 +93,17 @@ msgstr ""
 
 #: howto/sorting.rst:50
 msgid ""
-"The :meth:`list.sort` method and the functions :func:`sorted`, :func:`min`, "
-":func:`max`, :func:`heapq.nsmallest`, and :func:`heapq.nlargest` have a *key*"
-" parameter to specify a function (or other callable) to be called on each "
-"list element prior to making comparisons."
+"The :meth:`list.sort` method and the "
+"functions :func:`sorted`, :func:`min`, :func:`max`, :func:`heapq.nsmallest`, "
+"and :func:`heapq.nlargest` have a *key* parameter to specify a function (or "
+"other callable) to be called on each list element prior to making "
+"comparisons."
 msgstr ""
 
 #: howto/sorting.rst:56
 msgid ""
-"For example, here's a case-insensitive string comparison using "
-":meth:`str.casefold`:"
+"For example, here's a case-insensitive string comparison "
+"using :meth:`str.casefold`:"
 msgstr ""
 
 #: howto/sorting.rst:59
@@ -156,15 +157,16 @@ msgid ""
 "...     Student('jane', 'B', 12),\n"
 "...     Student('dave', 'B', 10),\n"
 "... ]\n"
-">>> sorted(student_objects, key=lambda student: student.age)   # sort by age\n"
+">>> sorted(student_objects, key=lambda student: student.age)   # sort by "
+"age\n"
 "[('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]"
 msgstr ""
 
 #: howto/sorting.rst:102
 msgid ""
 "Objects with named attributes can be made by a regular class as shown above, "
-"or they can be instances of :class:`~dataclasses.dataclass` or a :term:`named"
-" tuple`."
+"or they can be instances of :class:`~dataclasses.dataclass` or "
+"a :term:`named tuple`."
 msgstr ""
 
 #: howto/sorting.rst:107
@@ -175,8 +177,9 @@ msgstr ""
 msgid ""
 "The :term:`key function` patterns shown above are very common, so Python "
 "provides convenience functions to make accessor functions easier and faster. "
-"The :mod:`operator` module has :func:`~operator.itemgetter`, "
-":func:`~operator.attrgetter`, and a :func:`~operator.methodcaller` function."
+"The :mod:`operator` module "
+"has :func:`~operator.itemgetter`, :func:`~operator.attrgetter`, and "
+"a :func:`~operator.methodcaller` function."
 msgstr ""
 
 #: howto/sorting.rst:114
@@ -237,8 +240,8 @@ msgstr ""
 
 #: howto/sorting.rst:158
 msgid ""
-"Both :meth:`list.sort` and :func:`sorted` accept a *reverse* parameter with a"
-" boolean value. This is used to flag descending sorts. For example, to get "
+"Both :meth:`list.sort` and :func:`sorted` accept a *reverse* parameter with "
+"a boolean value. This is used to flag descending sorts. For example, to get "
 "the student data in reverse *age* order:"
 msgstr ""
 
@@ -257,10 +260,9 @@ msgstr ""
 
 #: howto/sorting.rst:173
 msgid ""
-"Sorts are guaranteed to be `stable "
-"<https://en.wikipedia.org/wiki/Sorting_algorithm#Stability>`_\\. That means "
-"that when multiple records have the same key, their original order is "
-"preserved."
+"Sorts are guaranteed to be `stable <https://en.wikipedia.org/wiki/"
+"Sorting_algorithm#Stability>`_\\. That means that when multiple records have "
+"the same key, their original order is preserved."
 msgstr ""
 
 #: howto/sorting.rst:177
@@ -285,8 +287,10 @@ msgstr ""
 
 #: howto/sorting.rst:190
 msgid ""
-">>> s = sorted(student_objects, key=attrgetter('age'))     # sort on secondary key\n"
-">>> sorted(s, key=attrgetter('grade'), reverse=True)       # now sort on primary key, descending\n"
+">>> s = sorted(student_objects, key=attrgetter('age'))     # sort on "
+"secondary key\n"
+">>> sorted(s, key=attrgetter('grade'), reverse=True)       # now sort on "
+"primary key, descending\n"
 "[('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]"
 msgstr ""
 
@@ -345,7 +349,8 @@ msgstr ""
 
 #: howto/sorting.rst:227
 msgid ""
-">>> decorated = [(student.grade, i, student) for i, student in enumerate(student_objects)]\n"
+">>> decorated = [(student.grade, i, student) for i, student in "
+"enumerate(student_objects)]\n"
 ">>> decorated.sort()\n"
 ">>> [student for grade, i, student in decorated]               # undecorate\n"
 "[('john', 'A', 15), ('jane', 'B', 12), ('dave', 'B', 10)]"
@@ -380,9 +385,9 @@ msgstr ""
 
 #: howto/sorting.rst:249
 msgid ""
-"Another name for this idiom is `Schwartzian transform "
-"<https://en.wikipedia.org/wiki/Schwartzian_transform>`_\\, after Randal L. "
-"Schwartz, who popularized it among Perl programmers."
+"Another name for this idiom is `Schwartzian transform <https://"
+"en.wikipedia.org/wiki/Schwartzian_transform>`_\\, after Randal L. Schwartz, "
+"who popularized it among Perl programmers."
 msgstr ""
 
 #: howto/sorting.rst:253
@@ -403,12 +408,11 @@ msgstr ""
 
 #: howto/sorting.rst:261
 msgid ""
-"For example, a `balance scale "
-"<https://upload.wikimedia.org/wikipedia/commons/1/17/Balance_à_tabac_1850.JPG>`_"
-" compares two samples giving a relative ordering: lighter, equal, or heavier."
-" Likewise, a comparison function such as ``cmp(a, b)`` will return a negative"
-" value for less-than, zero if the inputs are equal, or a positive value for "
-"greater-than."
+"For example, a `balance scale <https://upload.wikimedia.org/wikipedia/"
+"commons/1/17/Balance_à_tabac_1850.JPG>`_ compares two samples giving a "
+"relative ordering: lighter, equal, or heavier. Likewise, a comparison "
+"function such as ``cmp(a, b)`` will return a negative value for less-than, "
+"zero if the inputs are equal, or a positive value for greater-than."
 msgstr ""
 
 #: howto/sorting.rst:268
@@ -421,9 +425,9 @@ msgstr ""
 
 #: howto/sorting.rst:272
 msgid ""
-"To accommodate those situations, Python provides "
-":class:`functools.cmp_to_key` to wrap the comparison function to make it "
-"usable as a key function::"
+"To accommodate those situations, Python "
+"provides :class:`functools.cmp_to_key` to wrap the comparison function to "
+"make it usable as a key function::"
 msgstr ""
 
 #: howto/sorting.rst:276
@@ -471,9 +475,9 @@ msgstr ""
 
 #: howto/sorting.rst:305
 msgid ""
-"This is needed because the `IEEE-754 standard "
-"<https://en.wikipedia.org/wiki/IEEE_754>`_ specifies that, \"Every NaN shall "
-"compare unordered with everything, including itself.\""
+"This is needed because the `IEEE-754 standard <https://en.wikipedia.org/wiki/"
+"IEEE_754>`_ specifies that, \"Every NaN shall compare unordered with "
+"everything, including itself.\""
 msgstr ""
 
 #: howto/sorting.rst:309
@@ -531,9 +535,9 @@ msgstr ""
 
 #: howto/sorting.rst:345
 msgid ""
-"For locale aware sorting, use :func:`locale.strxfrm` for a key function or "
-":func:`locale.strcoll` for a comparison function.  This is necessary because "
-"\"alphabetical\" sort orderings can vary across cultures even if the "
+"For locale aware sorting, use :func:`locale.strxfrm` for a key function "
+"or :func:`locale.strcoll` for a comparison function.  This is necessary "
+"because \"alphabetical\" sort orderings can vary across cultures even if the "
 "underlying alphabet is the same."
 msgstr ""
 
@@ -549,7 +553,8 @@ msgstr ""
 msgid ""
 ">>> data = [('red', 1), ('blue', 1), ('red', 2), ('blue', 2)]\n"
 ">>> standard_way = sorted(data, key=itemgetter(0), reverse=True)\n"
-">>> double_reversed = list(reversed(sorted(reversed(data), key=itemgetter(0))))\n"
+">>> double_reversed = list(reversed(sorted(reversed(data), "
+"key=itemgetter(0))))\n"
 ">>> assert standard_way == double_reversed\n"
 ">>> standard_way\n"
 "[('red', 1), ('red', 2), ('blue', 1), ('blue', 2)]"
@@ -558,8 +563,8 @@ msgstr ""
 #: howto/sorting.rst:364
 msgid ""
 "The sort routines use ``<`` when making comparisons between two objects. So, "
-"it is easy to add a standard sort order to a class by defining an "
-":meth:`~object.__lt__` method:"
+"it is easy to add a standard sort order to a class by defining "
+"an :meth:`~object.__lt__` method:"
 msgstr ""
 
 #: howto/sorting.rst:368
@@ -571,8 +576,8 @@ msgstr ""
 
 #: howto/sorting.rst:374
 msgid ""
-"However, note that ``<`` can fall back to using :meth:`~object.__gt__` if "
-":meth:`~object.__lt__` is not implemented (see :func:`object.__lt__` for "
+"However, note that ``<`` can fall back to using :meth:`~object.__gt__` "
+"if :meth:`~object.__lt__` is not implemented (see :func:`object.__lt__` for "
 "details on the mechanics).  To avoid surprises, :pep:`8` recommends that all "
 "six comparison methods be implemented. The :deco:`~functools.total_ordering` "
 "decorator is provided to make that task easier."

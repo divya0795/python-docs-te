@@ -46,8 +46,8 @@ msgstr ""
 #: c-api/synchronization.rst:23
 msgid ""
 "A :c:type:`!PyMutex` currently occupies one byte, but the size should be "
-"considered unstable.  The size may change in future Python releases without a"
-" deprecation period."
+"considered unstable.  The size may change in future Python releases without "
+"a deprecation period."
 msgstr ""
 
 #: c-api/synchronization.rst:31
@@ -70,9 +70,9 @@ msgstr ""
 
 #: c-api/synchronization.rst:50
 msgid ""
-"This function is intended for use in assertions and debugging only and should"
-" not be used to make concurrency control decisions, as the lock state may "
-"change immediately after the check."
+"This function is intended for use in assertions and debugging only and "
+"should not be used to make concurrency control decisions, as the lock state "
+"may change immediately after the check."
 msgstr ""
 
 #: c-api/synchronization.rst:59
@@ -89,11 +89,11 @@ msgstr ""
 
 #: c-api/synchronization.rst:66
 msgid ""
-"Critical sections are intended to be used for custom types implemented in "
-"C-API extensions. They should generally not be used with built-in types like "
-":class:`list` and :class:`dict` because their public C-APIs already use "
-"critical sections internally, with the notable exception of "
-":c:func:`PyDict_Next`, which requires critical section to be acquired "
+"Critical sections are intended to be used for custom types implemented in C-"
+"API extensions. They should generally not be used with built-in types "
+"like :class:`list` and :class:`dict` because their public C-APIs already use "
+"critical sections internally, with the notable exception "
+"of :c:func:`PyDict_Next`, which requires critical section to be acquired "
 "externally."
 msgstr ""
 
@@ -102,10 +102,10 @@ msgid ""
 "Critical sections avoid deadlocks by implicitly suspending active critical "
 "sections, hence, they do not provide exclusive access such as provided by "
 "traditional locks like :c:type:`PyMutex`.  When a critical section is "
-"started, the per-object lock for the object is acquired. If the code executed"
-" inside the critical section calls C-API functions then it can suspend the "
-"critical section thereby releasing the per-object lock, so other threads can "
-"acquire the per-object lock for the same object."
+"started, the per-object lock for the object is acquired. If the code "
+"executed inside the critical section calls C-API functions then it can "
+"suspend the critical section thereby releasing the per-object lock, so other "
+"threads can acquire the per-object lock for the same object."
 msgstr ""
 
 #: c-api/synchronization.rst:81
@@ -113,8 +113,8 @@ msgid ""
 "Variants that accept :c:type:`PyMutex` pointers rather than Python objects "
 "are also available. Use these variants to start a critical section in a "
 "situation where there is no :c:type:`PyObject` -- for example, when working "
-"with a C type that does not extend or wrap :c:type:`PyObject` but still needs"
-" to call into the C API in a manner that might lead to deadlocks."
+"with a C type that does not extend or wrap :c:type:`PyObject` but still "
+"needs to call into the C API in a manner that might lead to deadlocks."
 msgstr ""
 
 #: c-api/synchronization.rst:87
@@ -127,11 +127,11 @@ msgstr ""
 
 #: c-api/synchronization.rst:94
 msgid ""
-"Operations that need to lock two objects at once must use "
-":c:macro:`Py_BEGIN_CRITICAL_SECTION2`.  You *cannot* use nested critical "
+"Operations that need to lock two objects at once must "
+"use :c:macro:`Py_BEGIN_CRITICAL_SECTION2`.  You *cannot* use nested critical "
 "sections to lock more than one object at once, because the inner critical "
-"section may suspend the outer critical sections.  This API does not provide a"
-" way to lock more than two objects at once."
+"section may suspend the outer critical sections.  This API does not provide "
+"a way to lock more than two objects at once."
 msgstr ""
 
 #: c-api/synchronization.rst:100
@@ -156,8 +156,8 @@ msgid ""
 "can call arbitrary code through an object's deallocation function.  The "
 "critical section API avoids potential deadlocks due to reentrancy and lock "
 "ordering by allowing the runtime to temporarily suspend the critical section "
-"if the code triggered by the finalizer blocks and calls "
-":c:func:`PyEval_SaveThread`."
+"if the code triggered by the finalizer blocks and "
+"calls :c:func:`PyEval_SaveThread`."
 msgstr ""
 
 #: c-api/synchronization.rst:119
@@ -265,8 +265,8 @@ msgstr ""
 
 #: c-api/synchronization.rst:212
 msgid ""
-"These APIs are obsolete since Python 3.13 with the introduction of "
-":c:type:`PyMutex`."
+"These APIs are obsolete since Python 3.13 with the introduction "
+"of :c:type:`PyMutex`."
 msgstr ""
 
 #: c-api/synchronization.rst:218
@@ -275,14 +275,14 @@ msgstr ""
 
 #: c-api/synchronization.rst:223
 msgid ""
-"A :term:`soft deprecated` alias to :c:expr:`long long`, the integer type used"
-" for the timeout argument of :c:func:`PyThread_acquire_lock_timed`."
+"A :term:`soft deprecated` alias to :c:expr:`long long`, the integer type "
+"used for the timeout argument of :c:func:`PyThread_acquire_lock_timed`."
 msgstr ""
 
 #: c-api/synchronization.rst:230
 msgid ""
-"The maximum timeout, in microseconds, supported by "
-":c:func:`PyThread_acquire_lock_timed`."
+"The maximum timeout, in microseconds, supported "
+"by :c:func:`PyThread_acquire_lock_timed`."
 msgstr ""
 
 #: c-api/synchronization.rst:234
@@ -335,22 +335,22 @@ msgstr ""
 msgid ""
 "This will wait for *microseconds* microseconds to acquire the lock. If the "
 "timeout expires, this function returns :c:enumerator:`PY_LOCK_FAILURE`. If "
-"*microseconds* is ``-1``, this will wait indefinitely until the lock has been"
-" released."
+"*microseconds* is ``-1``, this will wait indefinitely until the lock has "
+"been released."
 msgstr ""
 
 #: c-api/synchronization.rst:283
 msgid ""
 "If *intr_flag* is ``1``, acquiring the lock may be interrupted by a signal, "
 "in which case this function returns :c:enumerator:`PY_LOCK_INTR`. Upon "
-"interruption, it's generally expected that the caller makes a call to "
-":c:func:`Py_MakePendingCalls` to propagate an exception to Python code."
+"interruption, it's generally expected that the caller makes a call "
+"to :c:func:`Py_MakePendingCalls` to propagate an exception to Python code."
 msgstr ""
 
 #: c-api/synchronization.rst:288
 msgid ""
-"If the lock is successfully acquired, this function returns "
-":c:enumerator:`PY_LOCK_ACQUIRED`."
+"If the lock is successfully acquired, this function "
+"returns :c:enumerator:`PY_LOCK_ACQUIRED`."
 msgstr ""
 
 #: c-api/synchronization.rst:296

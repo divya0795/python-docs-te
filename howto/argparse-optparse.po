@@ -58,8 +58,8 @@ msgid ""
 "with :mod:`optparse`.  However, the fundamental design differences between "
 "supporting declarative command line option processing (while leaving "
 "positional argument processing to application code), and supporting both "
-"named options and positional arguments in the declarative interface mean that"
-" the API has diverged from that of ``optparse`` over time."
+"named options and positional arguments in the declarative interface mean "
+"that the API has diverged from that of ``optparse`` over time."
 msgstr ""
 
 #: howto/argparse-optparse.rst:27
@@ -78,14 +78,14 @@ msgstr ""
 
 #: howto/argparse-optparse.rst:35
 msgid ""
-"For applications that do choose to migrate from :mod:`optparse` to "
-":mod:`argparse`, the following suggestions should be helpful:"
+"For applications that do choose to migrate from :mod:`optparse` "
+"to :mod:`argparse`, the following suggestions should be helpful:"
 msgstr ""
 
 #: howto/argparse-optparse.rst:38
 msgid ""
-"Replace all :meth:`optparse.OptionParser.add_option` calls with "
-":meth:`ArgumentParser.add_argument` calls."
+"Replace all :meth:`optparse.OptionParser.add_option` calls "
+"with :meth:`ArgumentParser.add_argument` calls."
 msgstr ""
 
 #: howto/argparse-optparse.rst:41
@@ -98,9 +98,9 @@ msgstr ""
 
 #: howto/argparse-optparse.rst:46
 msgid ""
-"Replace :meth:`optparse.OptionParser.disable_interspersed_args` by using "
-":meth:`~ArgumentParser.parse_intermixed_args` instead of "
-":meth:`~ArgumentParser.parse_args`."
+"Replace :meth:`optparse.OptionParser.disable_interspersed_args` by "
+"using :meth:`~ArgumentParser.parse_intermixed_args` instead "
+"of :meth:`~ArgumentParser.parse_args`."
 msgstr ""
 
 #: howto/argparse-optparse.rst:50
@@ -117,9 +117,9 @@ msgstr ""
 
 #: howto/argparse-optparse.rst:56
 msgid ""
-"Replace :class:`optparse.Values` with :class:`Namespace` and "
-":exc:`optparse.OptionError` and :exc:`optparse.OptionValueError` with "
-":exc:`ArgumentError`."
+"Replace :class:`optparse.Values` with :class:`Namespace` "
+"and :exc:`optparse.OptionError` and :exc:`optparse.OptionValueError` "
+"with :exc:`ArgumentError`."
 msgstr ""
 
 #: howto/argparse-optparse.rst:60

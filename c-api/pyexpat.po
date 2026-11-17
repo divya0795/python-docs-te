@@ -33,8 +33,8 @@ msgstr ""
 #: c-api/pyexpat.rst:13
 msgid ""
 "The name of the capsule containing the Expat C API: "
-"``\"pyexpat.expat_CAPI\"``. Pass this to :c:func:`PyCapsule_Import` to obtain"
-" a pointer to a :c:struct:`PyExpat_CAPI`."
+"``\"pyexpat.expat_CAPI\"``. Pass this to :c:func:`PyCapsule_Import` to "
+"obtain a pointer to a :c:struct:`PyExpat_CAPI`."
 msgstr ""
 
 #: c-api/pyexpat.rst:20
@@ -54,8 +54,8 @@ msgstr ""
 
 #: c-api/pyexpat.rst:32
 msgid ""
-"Check the compatibility fields as described under "
-":c:macro:`PyExpat_CAPI_MAGIC` before using the function pointers."
+"Check the compatibility fields as described "
+"under :c:macro:`PyExpat_CAPI_MAGIC` before using the function pointers."
 msgstr ""
 
 #: c-api/pyexpat.rst:37
@@ -64,22 +64,22 @@ msgstr ""
 
 #: c-api/pyexpat.rst:41
 msgid ""
-"Size of the structure in bytes, set to ``sizeof(struct PyExpat_CAPI)`` by the"
-" :mod:`xml.parsers.expat` module that created the capsule."
+"Size of the structure in bytes, set to ``sizeof(struct PyExpat_CAPI)`` by "
+"the :mod:`xml.parsers.expat` module that created the capsule."
 msgstr ""
 
 #: c-api/pyexpat.rst:48
 msgid ""
-"Major, minor, and micro version numbers of the Expat library used by "
-":mod:`xml.parsers.expat`."
+"Major, minor, and micro version numbers of the Expat library used "
+"by :mod:`xml.parsers.expat`."
 msgstr ""
 
 #: c-api/pyexpat.rst:53
 msgid ""
-"Pointer to `XML_SetUnknownEncodingHandler "
-"<https://libexpat.github.io/doc/api/latest/#XML_SetUnknownEncodingHandler>`_."
-" The handler may set a Python exception on failure. The caller must check for"
-" a Python exception after parsing."
+"Pointer to `XML_SetUnknownEncodingHandler <https://libexpat.github.io/doc/"
+"api/latest/#XML_SetUnknownEncodingHandler>`_. The handler may set a Python "
+"exception on failure. The caller must check for a Python exception after "
+"parsing."
 msgstr ""
 
 #: c-api/pyexpat.rst:60
@@ -99,9 +99,9 @@ msgstr ""
 #: c-api/pyexpat.rst:70
 msgid ""
 "Member names omit the ``XML_`` prefix; for example, ``SetHashSalt`` exposes "
-"Expat's ``XML_SetHashSalt`` function. See the `Expat API reference "
-"<https://libexpat.github.io/doc/api/latest/>`_ for their behavior and the "
-"minimum Expat version they appear in."
+"Expat's ``XML_SetHashSalt`` function. See the `Expat API reference <https://"
+"libexpat.github.io/doc/api/latest/>`_ for their behavior and the minimum "
+"Expat version they appear in."
 msgstr ""
 
 #: c-api/pyexpat.rst:99

@@ -29,9 +29,9 @@ msgstr ""
 #: library/xml.sax.reader.rst:14
 msgid ""
 "SAX parsers implement the :class:`XMLReader` interface. They are implemented "
-"in a Python module, which must provide a function :func:`create_parser`. This"
-" function is invoked by  :func:`xml.sax.make_parser` with no arguments to "
-"create a new  parser object."
+"in a Python module, which must provide a function :func:`create_parser`. "
+"This function is invoked by  :func:`xml.sax.make_parser` with no arguments "
+"to create a new  parser object."
 msgstr ""
 
 #: library/xml.sax.reader.rst:22
@@ -42,18 +42,18 @@ msgstr ""
 msgid ""
 "In some cases, it is desirable not to parse an input source at once, but to "
 "feed chunks of the document as they get available. Note that the reader will "
-"normally not read the entire file, but read it in chunks as well; still "
-":meth:`parse` won't return until the entire document is processed. So these "
-"interfaces should be used if the blocking behaviour of :meth:`parse` is not "
-"desirable."
+"normally not read the entire file, but read it in chunks as well; "
+"still :meth:`parse` won't return until the entire document is processed. So "
+"these interfaces should be used if the blocking behaviour of :meth:`parse` "
+"is not desirable."
 msgstr ""
 
 #: library/xml.sax.reader.rst:33
 msgid ""
 "When the parser is instantiated it is ready to begin accepting data from the "
-"feed method immediately. After parsing has been finished with a call to close"
-" the reset method must be called to make the parser ready to accept new data,"
-" either from feed or using the parse method."
+"feed method immediately. After parsing has been finished with a call to "
+"close the reset method must be called to make the parser ready to accept new "
+"data, either from feed or using the parse method."
 msgstr ""
 
 #: library/xml.sax.reader.rst:38
@@ -86,43 +86,44 @@ msgstr ""
 #: library/xml.sax.reader.rst:59
 msgid ""
 "This class may include information about the public identifier, system "
-"identifier, byte stream (possibly with character encoding information) and/or"
-" the character stream of an entity."
+"identifier, byte stream (possibly with character encoding information) and/"
+"or the character stream of an entity."
 msgstr ""
 
 #: library/xml.sax.reader.rst:63
 msgid ""
-"Applications will create objects of this class for use in the "
-":meth:`XMLReader.parse` method and for returning from "
+"Applications will create objects of this class for use in "
+"the :meth:`XMLReader.parse` method and for returning from "
 "EntityResolver.resolveEntity."
 msgstr ""
 
 #: library/xml.sax.reader.rst:67
 msgid ""
-"An :class:`InputSource` belongs to the application, the :class:`XMLReader` is"
-" not allowed to modify :class:`InputSource` objects passed to it from the "
+"An :class:`InputSource` belongs to the application, the :class:`XMLReader` "
+"is not allowed to modify :class:`InputSource` objects passed to it from the "
 "application, although it may make copies and modify those."
 msgstr ""
 
 #: library/xml.sax.reader.rst:74
 msgid ""
-"This is an implementation of the :class:`Attributes` interface (see section "
-":ref:`attributes-objects`).  This is a dictionary-like object which "
-"represents the element attributes in a :meth:`startElement` call. In addition"
-" to the most useful dictionary operations, it supports a number of other "
-"methods as described by the interface. Objects of this class should be "
+"This is an implementation of the :class:`Attributes` interface (see "
+"section :ref:`attributes-objects`).  This is a dictionary-like object which "
+"represents the element attributes in a :meth:`startElement` call. In "
+"addition to the most useful dictionary operations, it supports a number of "
+"other methods as described by the interface. Objects of this class should be "
 "instantiated by readers; *attrs* must be a dictionary-like object containing "
 "a mapping from attribute names to attribute values."
 msgstr ""
 
 #: library/xml.sax.reader.rst:85
 msgid ""
-"Namespace-aware variant of :class:`AttributesImpl`, which will be passed to "
-":meth:`startElementNS`. It is derived from :class:`AttributesImpl`, but "
+"Namespace-aware variant of :class:`AttributesImpl`, which will be passed "
+"to :meth:`startElementNS`. It is derived from :class:`AttributesImpl`, but "
 "understands attribute names as two-tuples of *namespaceURI* and *localname*. "
 "In addition, it provides a number of methods expecting qualified names as "
-"they appear in the original document.  This class implements the "
-":class:`AttributesNS` interface (see section :ref:`attributes-ns-objects`)."
+"they appear in the original document.  This class implements "
+"the :class:`AttributesNS` interface (see section :ref:`attributes-ns-"
+"objects`)."
 msgstr ""
 
 #: library/xml.sax.reader.rst:96
@@ -157,8 +158,8 @@ msgstr ""
 
 #: library/xml.sax.reader.rst:124
 msgid ""
-"Set the current :class:`~xml.sax.handler.ContentHandler`.  If no "
-":class:`~xml.sax.handler.ContentHandler` is set, content events will be "
+"Set the current :class:`~xml.sax.handler.ContentHandler`.  If "
+"no :class:`~xml.sax.handler.ContentHandler` is set, content events will be "
 "discarded."
 msgstr ""
 
@@ -168,8 +169,8 @@ msgstr ""
 
 #: library/xml.sax.reader.rst:136
 msgid ""
-"Set the current :class:`~xml.sax.handler.DTDHandler`.  If no "
-":class:`~xml.sax.handler.DTDHandler` is set, DTD events will be discarded."
+"Set the current :class:`~xml.sax.handler.DTDHandler`.  If "
+"no :class:`~xml.sax.handler.DTDHandler` is set, DTD events will be discarded."
 msgstr ""
 
 #: library/xml.sax.reader.rst:143
@@ -178,8 +179,8 @@ msgstr ""
 
 #: library/xml.sax.reader.rst:148
 msgid ""
-"Set the current :class:`~xml.sax.handler.EntityResolver`.  If no "
-":class:`~xml.sax.handler.EntityResolver` is set, attempts to resolve an "
+"Set the current :class:`~xml.sax.handler.EntityResolver`.  If "
+"no :class:`~xml.sax.handler.EntityResolver` is set, attempts to resolve an "
 "external entity will result in opening the system identifier for the entity, "
 "and fail if it is not available."
 msgstr ""
@@ -200,10 +201,10 @@ msgstr ""
 
 #: library/xml.sax.reader.rst:169
 msgid ""
-"SAX parsers are not required to provide localization for errors and warnings;"
-" if they cannot support the requested locale, however, they must raise a SAX "
-"exception.  Applications may request a locale change in the middle of a "
-"parse."
+"SAX parsers are not required to provide localization for errors and "
+"warnings; if they cannot support the requested locale, however, they must "
+"raise a SAX exception.  Applications may request a locale change in the "
+"middle of a parse."
 msgstr ""
 
 #: library/xml.sax.reader.rst:176
@@ -215,9 +216,10 @@ msgstr ""
 
 #: library/xml.sax.reader.rst:183
 msgid ""
-"Set the *featurename* to *value*. If the feature is not recognized, "
-":exc:`SAXNotRecognizedException` is raised. If the feature or its setting is "
-"not supported by the parser, *SAXNotSupportedException* is raised."
+"Set the *featurename* to *value*. If the feature is not "
+"recognized, :exc:`SAXNotRecognizedException` is raised. If the feature or "
+"its setting is not supported by the parser, *SAXNotSupportedException* is "
+"raised."
 msgstr ""
 
 #: library/xml.sax.reader.rst:190
@@ -229,9 +231,10 @@ msgstr ""
 
 #: library/xml.sax.reader.rst:197
 msgid ""
-"Set the *propertyname* to *value*. If the property is not recognized, "
-":exc:`SAXNotRecognizedException` is raised. If the property or its setting is"
-" not supported by the parser, *SAXNotSupportedException* is raised."
+"Set the *propertyname* to *value*. If the property is not "
+"recognized, :exc:`SAXNotRecognizedException` is raised. If the property or "
+"its setting is not supported by the parser, *SAXNotSupportedException* is "
+"raised."
 msgstr ""
 
 #: library/xml.sax.reader.rst:205
@@ -257,17 +260,17 @@ msgstr ""
 
 #: library/xml.sax.reader.rst:224
 msgid ""
-"Prepare the parser for parsing *source*, an :class:`InputSource` instance. It"
-" is called by :meth:`~XMLReader.parse` before feeding the data. The parser "
-"implementation must override this method; the default implementation raises "
-":exc:`NotImplementedError`."
+"Prepare the parser for parsing *source*, an :class:`InputSource` instance. "
+"It is called by :meth:`~XMLReader.parse` before feeding the data. The parser "
+"implementation must override this method; the default implementation "
+"raises :exc:`NotImplementedError`."
 msgstr ""
 
 #: library/xml.sax.reader.rst:233
 msgid ""
-"This method is called after close has been called to reset the parser so that"
-" it is ready to parse new documents. The results of calling parse or feed "
-"after close without calling reset are undefined."
+"This method is called after close has been called to reset the parser so "
+"that it is ready to parse new documents. The results of calling parse or "
+"feed after close without calling reset are undefined."
 msgstr ""
 
 #: library/xml.sax.reader.rst:241
@@ -320,14 +323,14 @@ msgstr ""
 
 #: library/xml.sax.reader.rst:296
 msgid ""
-"The encoding must be a string acceptable for an XML encoding declaration (see"
-" section 4.3.3 of the XML recommendation)."
+"The encoding must be a string acceptable for an XML encoding declaration "
+"(see section 4.3.3 of the XML recommendation)."
 msgstr ""
 
 #: library/xml.sax.reader.rst:299
 msgid ""
-"The encoding attribute of the :class:`InputSource` is ignored if the "
-":class:`InputSource` also contains a character stream."
+"The encoding attribute of the :class:`InputSource` is ignored if "
+"the :class:`InputSource` also contains a character stream."
 msgstr ""
 
 #: library/xml.sax.reader.rst:305
@@ -347,8 +350,8 @@ msgstr ""
 
 #: library/xml.sax.reader.rst:315
 msgid ""
-"If the application knows the character encoding of the byte stream, it should"
-" set it with the setEncoding method."
+"If the application knows the character encoding of the byte stream, it "
+"should set it with the setEncoding method."
 msgstr ""
 
 #: library/xml.sax.reader.rst:321
@@ -367,8 +370,8 @@ msgstr ""
 
 #: library/xml.sax.reader.rst:331
 msgid ""
-"If there is a character stream specified, the SAX parser will ignore any byte"
-" stream and will not attempt to open a URI connection to the system "
+"If there is a character stream specified, the SAX parser will ignore any "
+"byte stream and will not attempt to open a URI connection to the system "
 "identifier."
 msgstr ""
 
@@ -383,11 +386,9 @@ msgstr ""
 #: library/xml.sax.reader.rst:345
 msgid ""
 ":class:`Attributes` objects implement a portion of the :term:`mapping "
-"protocol <mapping>`, including the methods "
-":meth:`~collections.abc.Mapping.copy`, :meth:`~collections.abc.Mapping.get`, "
-":meth:`~object.__contains__`, :meth:`~collections.abc.Mapping.items`, "
-":meth:`~collections.abc.Mapping.keys`, and "
-":meth:`~collections.abc.Mapping.values`.  The following methods are also "
+"protocol <mapping>`, including the "
+"methods :meth:`~collections.abc.Mapping.copy`, :meth:`~collections.abc.Mapping.get`, :meth:`~object.__contains__`, :meth:`~collections.abc.Mapping.items`, :meth:`~collections.abc.Mapping.keys`, "
+"and :meth:`~collections.abc.Mapping.values`.  The following methods are also "
 "provided:"
 msgstr ""
 
@@ -414,9 +415,9 @@ msgstr ""
 
 #: library/xml.sax.reader.rst:381
 msgid ""
-"This interface is a subtype of the :class:`Attributes` interface (see section"
-" :ref:`attributes-objects`).  All methods supported by that interface are "
-"also available on :class:`AttributesNS` objects."
+"This interface is a subtype of the :class:`Attributes` interface (see "
+"section :ref:`attributes-objects`).  All methods supported by that interface "
+"are also available on :class:`AttributesNS` objects."
 msgstr ""
 
 #: library/xml.sax.reader.rst:385

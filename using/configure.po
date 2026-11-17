@@ -33,9 +33,8 @@ msgstr ""
 #: using/configure.rst:15
 msgid ""
 "A `C11 <https://en.cppreference.com/w/c/11>`_ compiler. `Optional C11 "
-"features "
-"<https://en.wikipedia.org/wiki/C11_(C_standard_revision)#Optional_features>`_"
-" are not required."
+"features <https://en.wikipedia.org/wiki/"
+"C11_(C_standard_revision)#Optional_features>`_ are not required."
 msgstr ""
 
 #: using/configure.rst:20
@@ -45,8 +44,8 @@ msgstr ""
 #: using/configure.rst:22
 msgid ""
 "Support for `IEEE 754 <https://en.wikipedia.org/wiki/IEEE_754>`_ floating-"
-"point numbers and `floating-point Not-a-Number (NaN) "
-"<https://en.wikipedia.org/wiki/NaN#Floating_point>`_."
+"point numbers and `floating-point Not-a-Number (NaN) <https://"
+"en.wikipedia.org/wiki/NaN#Floating_point>`_."
 msgstr ""
 
 #: using/configure.rst:26
@@ -75,8 +74,8 @@ msgstr ""
 
 #: using/configure.rst:42
 msgid ""
-"See also :pep:`7` \"Style Guide for C Code\" and :pep:`11` \"CPython platform"
-" support\"."
+"See also :pep:`7` \"Style Guide for C Code\" and :pep:`11` \"CPython "
+"platform support\"."
 msgstr ""
 
 #: using/configure.rst:49
@@ -255,8 +254,8 @@ msgstr ""
 
 #: using/configure.rst:115
 msgid ""
-"See :option:`--with-readline` for choosing the backend for the "
-":mod:`readline` module."
+"See :option:`--with-readline` for choosing the backend for "
+"the :mod:`readline` module."
 msgstr ""
 
 #: using/configure.rst:117
@@ -284,8 +283,8 @@ msgid ""
 "OpenSSL 1.1.1 is the minimum possible version to build against, but the "
 "series is end-of-life and no longer receives public security fixes.  Use the "
 "latest patch release of a currently supported LTS release series (see the "
-"`OpenSSL Roadmap <https://openssl-library.org/roadmap/index.html>`__), or the"
-" package provided by your operating system if available.  Other libraries "
+"`OpenSSL Roadmap <https://openssl-library.org/roadmap/index.html>`__), or "
+"the package provided by your operating system if available.  Other libraries "
 "that offer an API compatible with OpenSSL 1.1.1 or later may work, but are "
 "not officially supported."
 msgstr ""
@@ -298,10 +297,10 @@ msgstr ""
 
 #: using/configure.rst:140
 msgid ""
-"The `devguide <https://devguide.python.org/getting-started/setup-"
-"building/#install-dependencies>`_ includes a full list of dependencies "
-"required to build all modules and instructions on how to install them on "
-"common platforms."
+"The `devguide <https://devguide.python.org/getting-started/setup-building/"
+"#install-dependencies>`_ includes a full list of dependencies required to "
+"build all modules and instructions on how to install them on common "
+"platforms."
 msgstr ""
 
 #: using/configure.rst:143
@@ -374,8 +373,8 @@ msgstr ""
 msgid ""
 "The ``make regen-configure`` command regenerates the ``aclocal.m4`` file and "
 "the ``configure`` script using the ``Tools/build/regen-configure.sh`` shell "
-"script which uses an Ubuntu container to get the same tools versions and have"
-" a reproducible output."
+"script which uses an Ubuntu container to get the same tools versions and "
+"have a reproducible output."
 msgstr ""
 
 #: using/configure.rst:193
@@ -389,16 +388,16 @@ msgstr ""
 #: using/configure.rst:197
 msgid ""
 "The generated files can change depending on the exact versions of the tools "
-"used. The container that CPython uses has `Autoconf "
-"<https://gnu.org/software/autoconf>`_ 2.72, ``aclocal`` from `Automake "
-"<https://www.gnu.org/software/automake>`_ 1.16.5, and `pkg-config "
-"<https://www.freedesktop.org/wiki/Software/pkg-config/>`_ 1.8.1."
+"used. The container that CPython uses has `Autoconf <https://gnu.org/"
+"software/autoconf>`_ 2.72, ``aclocal`` from `Automake <https://www.gnu.org/"
+"software/automake>`_ 1.16.5, and `pkg-config <https://www.freedesktop.org/"
+"wiki/Software/pkg-config/>`_ 1.8.1."
 msgstr ""
 
 #: using/configure.rst:204
 msgid ""
-"Autoconf 2.71 and aclocal 1.16.5 and are now used to regenerate "
-":file:`configure`."
+"Autoconf 2.71 and aclocal 1.16.5 and are now used to "
+"regenerate :file:`configure`."
 msgstr ""
 
 #: using/configure.rst:208
@@ -435,14 +434,14 @@ msgstr ""
 
 #: using/configure.rst:231
 msgid ""
-"See the :meth:`sqlite3.Connection.enable_load_extension` method of the "
-":mod:`sqlite3` module."
+"See the :meth:`sqlite3.Connection.enable_load_extension` method of "
+"the :mod:`sqlite3` module."
 msgstr ""
 
 #: using/configure.rst:238
 msgid ""
-"Disable IPv6 support (enabled by default if supported), see the :mod:`socket`"
-" module."
+"Disable IPv6 support (enabled by default if supported), see "
+"the :mod:`socket` module."
 msgstr ""
 
 #: using/configure.rst:243
@@ -488,8 +487,8 @@ msgstr ""
 
 #: using/configure.rst:270
 msgid ""
-"Default: "
-"``/usr/share/zoneinfo:/usr/lib/zoneinfo:/usr/share/lib/zoneinfo:/etc/zoneinfo``."
+"Default: ``/usr/share/zoneinfo:/usr/lib/zoneinfo:/usr/share/lib/zoneinfo:/"
+"etc/zoneinfo``."
 msgstr ""
 
 #: using/configure.rst:272
@@ -560,9 +559,9 @@ msgstr ""
 #: using/configure.rst:318
 msgid ""
 "Some Linux distribution packaging policies recommend against bundling "
-"dependencies. For example, Fedora installs wheel packages in the "
-"``/usr/share/python-wheels/`` directory and don't install the "
-":mod:`!ensurepip._bundled` package."
+"dependencies. For example, Fedora installs wheel packages in the ``/usr/"
+"share/python-wheels/`` directory and don't install the :mod:`!"
+"ensurepip._bundled` package."
 msgstr ""
 
 #: using/configure.rst:327
@@ -590,8 +589,8 @@ msgstr ""
 #: using/configure.rst:340
 msgid ""
 "By default, statistics gathering is off. Use ``python3 -X pystats`` command "
-"or set ``PYTHONSTATS=1`` environment variable to turn on statistics gathering"
-" at Python startup."
+"or set ``PYTHONSTATS=1`` environment variable to turn on statistics "
+"gathering at Python startup."
 msgstr ""
 
 #: using/configure.rst:344
@@ -639,8 +638,8 @@ msgstr ""
 
 #: using/configure.rst:359
 msgid ""
-"The statistics will be dumped to a arbitrary (probably unique) file in "
-"``/tmp/py_stats/`` (Unix) or ``C:\\temp\\py_stats\\`` (Windows). If that "
+"The statistics will be dumped to a arbitrary (probably unique) file in ``/"
+"tmp/py_stats/`` (Unix) or ``C:\\temp\\py_stats\\`` (Windows). If that "
 "directory does not exist, results will be printed on stderr."
 msgstr ""
 
@@ -762,8 +761,8 @@ msgstr ""
 
 #: using/configure.rst:410
 msgid ""
-"Defines the ``Py_GIL_DISABLED`` macro and adds ``\"t\"`` to "
-":data:`sys.abiflags`."
+"Defines the ``Py_GIL_DISABLED`` macro and adds ``\"t\"`` "
+"to :data:`sys.abiflags`."
 msgstr ""
 
 #: using/configure.rst:413
@@ -801,8 +800,8 @@ msgstr ""
 
 #: using/configure.rst:430
 msgid ""
-"``--enable-experimental-jit=no`` is the default behavior if the option is not"
-" provided, and ``--enable-experimental-jit`` is shorthand for ``--enable-"
+"``--enable-experimental-jit=no`` is the default behavior if the option is "
+"not provided, and ``--enable-experimental-jit`` is shorthand for ``--enable-"
 "experimental-jit=yes``.  See :file:`Tools/jit/README.md` for more "
 "information, including how to install the necessary build-time dependencies."
 msgstr ""
@@ -869,8 +868,8 @@ msgstr ""
 
 #: using/configure.rst:503
 msgid ""
-"C compiler and linker flags for ``libncurses`` or ``libncursesw``, used by "
-":mod:`curses` module, overriding ``pkg-config``."
+"C compiler and linker flags for ``libncurses`` or ``libncursesw``, used "
+"by :mod:`curses` module, overriding ``pkg-config``."
 msgstr ""
 
 #: using/configure.rst:509
@@ -937,8 +936,8 @@ msgstr ""
 
 #: using/configure.rst:571
 msgid ""
-"C compiler and linker flags for ``libpanel`` or ``libpanelw``, used by "
-":mod:`curses.panel` module, overriding ``pkg-config``."
+"C compiler and linker flags for ``libpanel`` or ``libpanelw``, used "
+"by :mod:`curses.panel` module, overriding ``pkg-config``."
 msgstr ""
 
 #: using/configure.rst:577
@@ -961,8 +960,8 @@ msgstr ""
 
 #: using/configure.rst:593
 msgid ""
-"Dynamic linking enables ``dlopen``. File size of the executable increases due"
-" to limited dead code elimination and additional features."
+"Dynamic linking enables ``dlopen``. File size of the executable increases "
+"due to limited dead code elimination and additional features."
 msgstr ""
 
 #: using/configure.rst:600
@@ -975,8 +974,8 @@ msgstr ""
 
 #: using/configure.rst:610
 msgid ""
-"Install architecture-independent files in PREFIX. On Unix, it defaults to "
-":file:`/usr/local`."
+"Install architecture-independent files in PREFIX. On Unix, it defaults "
+"to :file:`/usr/local`."
 msgstr ""
 
 #: using/configure.rst:613
@@ -985,14 +984,14 @@ msgstr ""
 
 #: using/configure.rst:615
 msgid ""
-"As an example, one can use ``--prefix=\"$HOME/.local/\"`` to install a Python"
-" in its home directory."
+"As an example, one can use ``--prefix=\"$HOME/.local/\"`` to install a "
+"Python in its home directory."
 msgstr ""
 
 #: using/configure.rst:620
 msgid ""
-"Install architecture-dependent files in EPREFIX, defaults to "
-":option:`--prefix`."
+"Install architecture-dependent files in EPREFIX, defaults to :option:`--"
+"prefix`."
 msgstr ""
 
 #: using/configure.rst:622
@@ -1001,8 +1000,8 @@ msgstr ""
 
 #: using/configure.rst:626
 msgid ""
-"Don't build nor install test modules, like the :mod:`test` package or the "
-":mod:`!_testcapi` extension module (built and installed by default)."
+"Don't build nor install test modules, like the :mod:`test` package or "
+"the :mod:`!_testcapi` extension module (built and installed by default)."
 msgstr ""
 
 #: using/configure.rst:633
@@ -1029,8 +1028,8 @@ msgstr ""
 
 #: using/configure.rst:646
 msgid ""
-"Configuring Python using ``--enable-optimizations --with-lto`` (PGO + LTO) is"
-" recommended for best performance. The experimental ``--enable-bolt`` flag "
+"Configuring Python using ``--enable-optimizations --with-lto`` (PGO + LTO) "
+"is recommended for best performance. The experimental ``--enable-bolt`` flag "
 "can also be used to improve performance."
 msgstr ""
 
@@ -1056,10 +1055,10 @@ msgstr ""
 #: using/configure.rst:664
 msgid ""
 "During the build, you may encounter compiler warnings about profile data not "
-"being available for some source files. These warnings are harmless, as only a"
-" subset of the code is exercised during profile data acquisition. To disable "
-"these warnings on Clang, manually suppress them by adding ``-Wno-profile-"
-"instr-unprofiled`` to :envvar:`CFLAGS`."
+"being available for some source files. These warnings are harmless, as only "
+"a subset of the code is exercised during profile data acquisition. To "
+"disable these warnings on Clang, manually suppress them by adding ``-Wno-"
+"profile-instr-unprofiled`` to :envvar:`CFLAGS`."
 msgstr ""
 
 #: using/configure.rst:673
@@ -1102,9 +1101,8 @@ msgstr ""
 
 #: using/configure.rst:705
 msgid ""
-"Enable usage of the `BOLT post-link binary optimizer "
-"<https://github.com/llvm/llvm-project/tree/main/bolt>`_ (disabled by "
-"default)."
+"Enable usage of the `BOLT post-link binary optimizer <https://github.com/"
+"llvm/llvm-project/tree/main/bolt>`_ (disabled by default)."
 msgstr ""
 
 #: using/configure.rst:709
@@ -1127,16 +1125,16 @@ msgstr ""
 
 #: using/configure.rst:721
 msgid ""
-"The :envvar:`!BOLT_INSTRUMENT_FLAGS` and :envvar:`!BOLT_APPLY_FLAGS` "
-":program:`configure` variables can be defined to override the default set of "
-"arguments for :program:`llvm-bolt` to instrument and apply BOLT data to "
-"binaries, respectively."
+"The :envvar:`!BOLT_INSTRUMENT_FLAGS` and :envvar:`!"
+"BOLT_APPLY_FLAGS` :program:`configure` variables can be defined to override "
+"the default set of arguments for :program:`llvm-bolt` to instrument and "
+"apply BOLT data to binaries, respectively."
 msgstr ""
 
 #: using/configure.rst:730
 msgid ""
-"Arguments to ``llvm-bolt`` when creating a `BOLT optimized binary "
-"<https://github.com/facebookarchive/BOLT>`_."
+"Arguments to ``llvm-bolt`` when creating a `BOLT optimized binary <https://"
+"github.com/facebookarchive/BOLT>`_."
 msgstr ""
 
 #: using/configure.rst:737
@@ -1166,8 +1164,8 @@ msgstr ""
 
 #: using/configure.rst:761
 msgid ""
-"This option cannot be used together with :option:`--disable-gil` because the "
-":term:`free-threaded <free threading>` build requires mimalloc."
+"This option cannot be used together with :option:`--disable-gil` because "
+"the :term:`free-threaded <free threading>` build requires mimalloc."
 msgstr ""
 
 #: using/configure.rst:764 using/configure.rst:771
@@ -1192,8 +1190,8 @@ msgstr ""
 
 #: using/configure.rst:782
 msgid ""
-"Define this macro to include static documentation strings in the build. It is"
-" defined by default, unless :option:`--without-doc-strings` is used."
+"Define this macro to include static documentation strings in the build. It "
+"is defined by default, unless :option:`--without-doc-strings` is used."
 msgstr ""
 
 #: using/configure.rst:785
@@ -1214,21 +1212,22 @@ msgstr ""
 msgid ""
 "Deactivate remote debugging support described in :pep:`768` (enabled by "
 "default). When this flag is provided the code that allows the interpreter to "
-"schedule the execution of a Python file in a separate process as described in"
-" :pep:`768` is not compiled. This includes both the functionality to schedule"
-" code to be executed and the functionality to receive code to be executed."
+"schedule the execution of a Python file in a separate process as described "
+"in :pep:`768` is not compiled. This includes both the functionality to "
+"schedule code to be executed and the functionality to receive code to be "
+"executed."
 msgstr ""
 
 #: using/configure.rst:806
 msgid ""
-"This macro is defined by default, unless Python is configured with "
-":option:`--without-remote-debug`."
+"This macro is defined by default, unless Python is configured "
+"with :option:`--without-remote-debug`."
 msgstr ""
 
 #: using/configure.rst:809
 msgid ""
-"Note that even if the macro is defined, remote debugging may not be available"
-" (for example, on an incompatible platform)."
+"Note that even if the macro is defined, remote debugging may not be "
+"available (for example, on an incompatible platform)."
 msgstr ""
 
 #: using/configure.rst:818
@@ -1247,8 +1246,8 @@ msgstr ""
 
 #: using/configure.rst:825
 msgid ""
-"Display all warnings by default: the list of default warning filters is empty"
-" in the :mod:`warnings` module."
+"Display all warnings by default: the list of default warning filters is "
+"empty in the :mod:`warnings` module."
 msgstr ""
 
 #: using/configure.rst:827
@@ -1271,8 +1270,8 @@ msgstr ""
 
 #: using/configure.rst:832
 msgid ""
-"Add support for the ``__lltrace__`` variable: enable low-level tracing in the"
-" bytecode evaluation loop if the variable is defined."
+"Add support for the ``__lltrace__`` variable: enable low-level tracing in "
+"the bytecode evaluation loop if the variable is defined."
 msgstr ""
 
 #: using/configure.rst:834
@@ -1315,8 +1314,8 @@ msgstr ""
 
 #: using/configure.rst:848
 msgid ""
-"The garbage collector (:func:`gc.collect` function) runs some basic checks on"
-" objects consistency."
+"The garbage collector (:func:`gc.collect` function) runs some basic checks "
+"on objects consistency."
 msgstr ""
 
 #: using/configure.rst:850
@@ -1327,16 +1326,16 @@ msgstr ""
 
 #: using/configure.rst:853
 msgid ""
-"See also the :ref:`Python Development Mode <devmode>` and the "
-":option:`--with-trace-refs` configure option."
+"See also the :ref:`Python Development Mode <devmode>` and the :option:`--"
+"with-trace-refs` configure option."
 msgstr ""
 
 #: using/configure.rst:856
 msgid ""
 "Release builds are now ABI compatible with debug builds: defining the "
-"``Py_DEBUG`` macro no longer implies the ``Py_TRACE_REFS`` macro (see the "
-":option:`--with-trace-refs` option). However, debug builds still expose more "
-"symbols than release builds and code built against a debug build is not "
+"``Py_DEBUG`` macro no longer implies the ``Py_TRACE_REFS`` macro (see "
+"the :option:`--with-trace-refs` option). However, debug builds still expose "
+"more symbols than release builds and code built against a debug build is not "
 "necessarily compatible with a release build."
 msgstr ""
 
@@ -1368,8 +1367,8 @@ msgstr ""
 
 #: using/configure.rst:882
 msgid ""
-"The :envvar:`PYTHONDUMPREFS` environment variable can be used to dump objects"
-" and reference counts still alive at Python exit."
+"The :envvar:`PYTHONDUMPREFS` environment variable can be used to dump "
+"objects and reference counts still alive at Python exit."
 msgstr ""
 
 #: using/configure.rst:885
@@ -1416,8 +1415,8 @@ msgstr ""
 #: using/configure.rst:921
 msgid ""
 "Enable AddressSanitizer memory error detector, ``asan`` (default is no). To "
-"improve ASan detection capabilities you may also want to combine this with "
-":option:`--without-pymalloc` to disable the specialized small-object "
+"improve ASan detection capabilities you may also want to combine this "
+"with :option:`--without-pymalloc` to disable the specialized small-object "
 "allocator whose allocations are not tracked by ASan."
 msgstr ""
 
@@ -1428,9 +1427,9 @@ msgstr ""
 
 #: using/configure.rst:932
 msgid ""
-"MSan reports false positives for memory initialized by libraries that are not"
-" built with MSan, so either build all dependencies with MSan or disable the "
-"extension modules that use them in :file:`Modules/Setup.local`."
+"MSan reports false positives for memory initialized by libraries that are "
+"not built with MSan, so either build all dependencies with MSan or disable "
+"the extension modules that use them in :file:`Modules/Setup.local`."
 msgstr ""
 
 #: using/configure.rst:940
@@ -1481,8 +1480,8 @@ msgstr ""
 msgid ""
 "A bundled copy of the library will no longer be selected implicitly if an "
 "installed ``mpdecimal`` library is not found. In Python 3.15 only, it can "
-"still be selected explicitly using ``--with-system-libmpdec=no`` or "
-"``--without-system-libmpdec``."
+"still be selected explicitly using ``--with-system-libmpdec=no`` or ``--"
+"without-system-libmpdec``."
 msgstr ""
 
 #: using/configure.rst:997
@@ -1628,8 +1627,8 @@ msgid ""
 "Disable compiler options that are `recommended by OpenSSF`_ for security "
 "reasons with no performance overhead. If this option is not enabled, CPython "
 "will be built based on safety compiler options with no slow down. When this "
-"option is enabled, CPython will not be built with the compiler options listed"
-" below."
+"option is enabled, CPython will not be built with the compiler options "
+"listed below."
 msgstr ""
 
 #: using/configure.rst:1098
@@ -1666,8 +1665,8 @@ msgstr ""
 
 #: using/configure.rst:1117
 msgid ""
-"`-D_FORTIFY_SOURCE=3`_: Fortify sources with compile- and run-time checks for"
-" unsafe libc usage and buffer overflows."
+"`-D_FORTIFY_SOURCE=3`_: Fortify sources with compile- and run-time checks "
+"for unsafe libc usage and buffer overflows."
 msgstr ""
 
 #: using/configure.rst:1125
@@ -1680,8 +1679,8 @@ msgstr ""
 
 #: using/configure.rst:1132
 msgid ""
-"Create a universal binary build. *SDKDIR* specifies which macOS SDK should be"
-" used to perform the build (default is no)."
+"Create a universal binary build. *SDKDIR* specifies which macOS SDK should "
+"be used to perform the build (default is no)."
 msgstr ""
 
 #: using/configure.rst:1138
@@ -1737,24 +1736,23 @@ msgid ""
 "Note that values for this configuration item are *not* the same as the "
 "identifiers used for universal binary wheels on macOS. See the Python "
 "Packaging User Guide for details on the `packaging platform compatibility "
-"tags used on macOS "
-"<https://packaging.python.org/en/latest/specifications/platform-"
-"compatibility-tags/#macos>`_"
+"tags used on macOS <https://packaging.python.org/en/latest/specifications/"
+"platform-compatibility-tags/#macos>`_"
 msgstr ""
 
 #: using/configure.rst:1165
 msgid ""
-"Specify the name for the python framework on macOS only valid when "
-":option:`--enable-framework` is set (default: ``Python``)."
+"Specify the name for the python framework on macOS only valid "
+"when :option:`--enable-framework` is set (default: ``Python``)."
 msgstr ""
 
 #: using/configure.rst:1171
 msgid ""
 "The Python standard library contains strings that are known to trigger "
-"automated inspection tool errors when submitted for distribution by the macOS"
-" and iOS App Stores. If enabled, this option will apply the list of patches "
-"that are known to correct app store compliance. A custom patch file can also "
-"be specified. This option is disabled by default."
+"automated inspection tool errors when submitted for distribution by the "
+"macOS and iOS App Stores. If enabled, this option will apply the list of "
+"patches that are known to correct app store compliance. A custom patch file "
+"can also be specified. This option is disabled by default."
 msgstr ""
 
 #: using/configure.rst:1180
@@ -1767,8 +1765,8 @@ msgstr ""
 
 #: using/configure.rst:1186
 msgid ""
-"Create a Python.framework. Unlike macOS, the *INSTALLDIR* argument specifying"
-" the installation path is mandatory."
+"Create a Python.framework. Unlike macOS, the *INSTALLDIR* argument "
+"specifying the installation path is mandatory."
 msgstr ""
 
 #: using/configure.rst:1191
@@ -1855,8 +1853,8 @@ msgstr ""
 
 #: using/configure.rst:1253
 msgid ""
-":file:`Modules/Setup`: C extensions built by the Makefile using "
-":file:`Module/makesetup` shell script;"
+":file:`Modules/Setup`: C extensions built by the Makefile "
+"using :file:`Module/makesetup` shell script;"
 msgstr ""
 
 #: using/configure.rst:1257
@@ -1887,11 +1885,11 @@ msgstr ""
 
 #: using/configure.rst:1270
 msgid ""
-"For the most part, when rebuilding after editing some code or refreshing your"
-" checkout from upstream, all you need to do is execute ``make``, which (per "
-"Make's semantics) builds the default target, the first one defined in the "
-"Makefile.  By tradition (including in the CPython project) this is usually "
-"the ``all`` target. The ``configure`` script expands an ``autoconf`` "
+"For the most part, when rebuilding after editing some code or refreshing "
+"your checkout from upstream, all you need to do is execute ``make``, which "
+"(per Make's semantics) builds the default target, the first one defined in "
+"the Makefile.  By tradition (including in the CPython project) this is "
+"usually the ``all`` target. The ``configure`` script expands an ``autoconf`` "
 "variable, ``@DEF_MAKE_ALL_RULE@`` to describe precisely which targets ``make "
 "all`` will build. The choices are:"
 msgstr ""
@@ -1906,8 +1904,8 @@ msgstr ""
 
 #: using/configure.rst:1281
 msgid ""
-"``build_emscripten`` (chosen if the host platform matches "
-"``wasm32-emscripten``)"
+"``build_emscripten`` (chosen if the host platform matches ``wasm32-"
+"emscripten``)"
 msgstr ""
 
 #: using/configure.rst:1283
@@ -1963,8 +1961,8 @@ msgstr ""
 
 #: using/configure.rst:1327
 msgid ""
-"Build the ``all`` target and run the Python test suite with the ``--fast-ci``"
-" option without GUI tests. Variables:"
+"Build the ``all`` target and run the Python test suite with the ``--fast-"
+"ci`` option without GUI tests. Variables:"
 msgstr ""
 
 #: using/configure.rst:1330
@@ -2031,7 +2029,8 @@ msgstr ""
 msgid ""
 ">>> import _zoneinfo\n"
 ">>> _zoneinfo\n"
-"<module '_zoneinfo' from '/.../lib.linux-x86_64-3.16/_zoneinfo.cpython-316d-x86_64-linux-gnu.so'>\n"
+"<module '_zoneinfo' from '/.../lib.linux-x86_64-3.16/_zoneinfo.cpython-316d-"
+"x86_64-linux-gnu.so'>\n"
 ">>> _zoneinfo.__file__\n"
 "'/.../lib.linux-x86_64-3.16/_zoneinfo.cpython-316d-x86_64-linux-gnu.so'"
 msgstr ""
@@ -2039,16 +2038,17 @@ msgstr ""
 #: using/configure.rst:1381
 msgid ""
 ":file:`Modules/Setup` is used to generate Makefile targets to build C "
-"extensions. At the beginning of the files, C extensions are built as built-in"
-" modules. Extensions defined after the ``*shared*`` marker are built as "
+"extensions. At the beginning of the files, C extensions are built as built-"
+"in modules. Extensions defined after the ``*shared*`` marker are built as "
 "dynamic libraries."
 msgstr ""
 
 #: using/configure.rst:1385
 msgid ""
-"The :c:macro:`PyAPI_FUNC()`, :c:macro:`PyAPI_DATA()` and "
-":c:macro:`PyMODINIT_FUNC` macros of :file:`Include/exports.h` are defined "
-"differently depending if the ``Py_BUILD_CORE_MODULE`` macro is defined:"
+"The :c:macro:`PyAPI_FUNC()`, :c:macro:`PyAPI_DATA()` "
+"and :c:macro:`PyMODINIT_FUNC` macros of :file:`Include/exports.h` are "
+"defined differently depending if the ``Py_BUILD_CORE_MODULE`` macro is "
+"defined:"
 msgstr ""
 
 #: using/configure.rst:1389
@@ -2105,8 +2105,8 @@ msgstr ""
 
 #: using/configure.rst:1429
 msgid ""
-"Default: ``$(BASECPPFLAGS) -I. -I$(srcdir)/Include $(CONFIGURE_CPPFLAGS) "
-"$(CPPFLAGS)``."
+"Default: ``$(BASECPPFLAGS) -I. -I$(srcdir)/Include $(CONFIGURE_CPPFLAGS) $"
+"(CPPFLAGS)``."
 msgstr ""
 
 #: using/configure.rst:1434
@@ -2128,8 +2128,8 @@ msgstr ""
 #: using/configure.rst:1454
 msgid ""
 ":envvar:`CFLAGS_NODIST` is used for building the interpreter and stdlib C "
-"extensions.  Use it when a compiler flag should *not* be part of "
-":envvar:`CFLAGS` once Python is installed (:gh:`65320`)."
+"extensions.  Use it when a compiler flag should *not* be part "
+"of :envvar:`CFLAGS` once Python is installed (:gh:`65320`)."
 msgstr ""
 
 #: using/configure.rst:1458
@@ -2138,10 +2138,10 @@ msgstr ""
 
 #: using/configure.rst:1460
 msgid ""
-"the compiler flag ``-I`` (for setting the search path for include files). The"
-" ``-I`` flags are processed from left to right, and any flags in "
-":envvar:`CFLAGS` would take precedence over user- and package-supplied ``-I``"
-" flags."
+"the compiler flag ``-I`` (for setting the search path for include files). "
+"The ``-I`` flags are processed from left to right, and any flags "
+"in :envvar:`CFLAGS` would take precedence over user- and package-supplied ``-"
+"I`` flags."
 msgstr ""
 
 #: using/configure.rst:1465
@@ -2207,14 +2207,14 @@ msgstr ""
 
 #: using/configure.rst:1531
 msgid ""
-"Default: ``$(BASECFLAGS) $(OPT) $(CONFIGURE_CFLAGS) $(CFLAGS) "
-"$(EXTRA_CFLAGS)``."
+"Default: ``$(BASECFLAGS) $(OPT) $(CONFIGURE_CFLAGS) $(CFLAGS) $"
+"(EXTRA_CFLAGS)``."
 msgstr ""
 
 #: using/configure.rst:1535
 msgid ""
-"Default: ``$(CONFIGURE_CFLAGS_NODIST) $(CFLAGS_NODIST) "
-"-I$(srcdir)/Include/internal``."
+"Default: ``$(CONFIGURE_CFLAGS_NODIST) $(CFLAGS_NODIST) -I$(srcdir)/Include/"
+"internal``."
 msgstr ""
 
 #: using/configure.rst:1541
@@ -2223,8 +2223,8 @@ msgstr ""
 
 #: using/configure.rst:1543
 msgid ""
-"Default: ``$(PY_CFLAGS) $(PY_CFLAGS_NODIST) $(PY_CPPFLAGS) "
-"$(CFLAGSFORSHARED)``."
+"Default: ``$(PY_CFLAGS) $(PY_CFLAGS_NODIST) $(PY_CPPFLAGS) $"
+"(CFLAGSFORSHARED)``."
 msgstr ""
 
 #: using/configure.rst:1549
@@ -2276,9 +2276,9 @@ msgstr ""
 
 #: using/configure.rst:1590
 msgid ""
-":envvar:`LDFLAGS_NODIST` is used in the same manner as "
-":envvar:`CFLAGS_NODIST`.  Use it when a linker flag should *not* be part of "
-":envvar:`LDFLAGS` once Python is installed (:gh:`65320`)."
+":envvar:`LDFLAGS_NODIST` is used in the same manner "
+"as :envvar:`CFLAGS_NODIST`.  Use it when a linker flag should *not* be part "
+"of :envvar:`LDFLAGS` once Python is installed (:gh:`65320`)."
 msgstr ""
 
 #: using/configure.rst:1594
@@ -2287,9 +2287,9 @@ msgstr ""
 
 #: using/configure.rst:1596
 msgid ""
-"the compiler flag ``-L`` (for setting the search path for libraries). The "
-"``-L`` flags are processed from left to right, and any flags in "
-":envvar:`LDFLAGS` would take precedence over user- and package-supplied "
+"the compiler flag ``-L`` (for setting the search path for libraries). The ``-"
+"L`` flags are processed from left to right, and any flags "
+"in :envvar:`LDFLAGS` would take precedence over user- and package-supplied "
 "``-L`` flags."
 msgstr ""
 
@@ -2301,8 +2301,8 @@ msgstr ""
 
 #: using/configure.rst:1610
 msgid ""
-"Linker flags, e.g. :samp:`-L{lib_dir}` if you have libraries in a nonstandard"
-" directory *lib_dir*."
+"Linker flags, e.g. :samp:`-L{lib_dir}` if you have libraries in a "
+"nonstandard directory *lib_dir*."
 msgstr ""
 
 #: using/configure.rst:1619
@@ -2349,10 +2349,10 @@ msgstr ""
 
 #: using/configure.rst:1655
 msgid ""
-"``git clean -fdx`` is an even more extreme way to \"clean\" your checkout. It"
-" removes all files not known to Git. When bug hunting using ``git bisect``, "
-"this is `recommended between probes "
-"<https://github.com/python/cpython/issues/114505#issuecomment-1907021718>`_ "
-"to guarantee a completely clean build. **Use with care**, as it will delete "
-"all files not checked into Git, including your new, uncommitted work."
+"``git clean -fdx`` is an even more extreme way to \"clean\" your checkout. "
+"It removes all files not known to Git. When bug hunting using ``git "
+"bisect``, this is `recommended between probes <https://github.com/python/"
+"cpython/issues/114505#issuecomment-1907021718>`_ to guarantee a completely "
+"clean build. **Use with care**, as it will delete all files not checked into "
+"Git, including your new, uncommitted work."
 msgstr ""

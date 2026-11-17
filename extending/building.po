@@ -24,8 +24,8 @@ msgstr ""
 
 #: extending/building.rst:9
 msgid ""
-"A C extension for CPython is a shared library (for example, a ``.so`` file on"
-" Linux, ``.pyd`` on Windows), which exports an *initialization function*."
+"A C extension for CPython is a shared library (for example, a ``.so`` file "
+"on Linux, ``.pyd`` on Windows), which exports an *initialization function*."
 msgstr ""
 
 #: extending/building.rst:12
@@ -39,13 +39,13 @@ msgstr ""
 #: extending/building.rst:24
 msgid ""
 "Building, packaging and distributing extension modules is best done with "
-"third-party tools, and is out of scope of this document. One suitable tool is"
-" Setuptools, whose documentation can be found at "
-"https://setuptools.pypa.io/en/latest/setuptools.html."
+"third-party tools, and is out of scope of this document. One suitable tool "
+"is Setuptools, whose documentation can be found at https://"
+"setuptools.pypa.io/en/latest/setuptools.html."
 msgstr ""
 
 #: extending/building.rst:29
 msgid ""
-"The :mod:`distutils` module, which was included in the standard library until"
-" Python 3.12, is now maintained as part of Setuptools."
+"The :mod:`distutils` module, which was included in the standard library "
+"until Python 3.12, is now maintained as part of Setuptools."
 msgstr ""

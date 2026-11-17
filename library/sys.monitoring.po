@@ -25,8 +25,8 @@ msgstr ""
 #: library/sys.monitoring.rst:13
 msgid ""
 ":mod:`!sys.monitoring` is a namespace within the :mod:`sys` module, not an "
-"independent module, and ``import sys.monitoring`` would fail with a "
-":exc:`ModuleNotFoundError`. Instead, simply ``import sys`` and then use "
+"independent module, and ``import sys.monitoring`` would fail with "
+"a :exc:`ModuleNotFoundError`. Instead, simply ``import sys`` and then use "
 "``sys.monitoring``."
 msgstr ""
 
@@ -65,11 +65,11 @@ msgstr ""
 
 #: library/sys.monitoring.rst:35
 msgid ""
-"A tool identifier is an integer and the associated name. Tool identifiers are"
-" used to discourage tools from interfering with each other and to allow "
+"A tool identifier is an integer and the associated name. Tool identifiers "
+"are used to discourage tools from interfering with each other and to allow "
 "multiple tools to operate at the same time. Currently tools are completely "
-"independent and cannot be used to monitor each other. This restriction may be"
-" lifted in the future."
+"independent and cannot be used to monitor each other. This restriction may "
+"be lifted in the future."
 msgstr ""
 
 #: library/sys.monitoring.rst:41
@@ -84,8 +84,8 @@ msgstr ""
 
 #: library/sys.monitoring.rst:49
 msgid ""
-"Must be called before *tool_id* can be used. *tool_id* must be in the range 0"
-" to 5 inclusive. Raises a :exc:`ValueError` if *tool_id* is in use."
+"Must be called before *tool_id* can be used. *tool_id* must be in the range "
+"0 to 5 inclusive. Raises a :exc:`ValueError` if *tool_id* is in use."
 msgstr ""
 
 #: library/sys.monitoring.rst:55
@@ -94,8 +94,8 @@ msgstr ""
 
 #: library/sys.monitoring.rst:61
 msgid ""
-"Should be called once a tool no longer requires *tool_id*. Will call "
-":func:`clear_tool_id` before releasing *tool_id*."
+"Should be called once a tool no longer requires *tool_id*. Will "
+"call :func:`clear_tool_id` before releasing *tool_id*."
 msgstr ""
 
 #: library/sys.monitoring.rst:64
@@ -160,8 +160,8 @@ msgstr ""
 
 #: library/sys.monitoring.rst:111
 msgid ""
-"Return from any callable, except for Python functions (event occurs after the"
-" return)."
+"Return from any callable, except for Python functions (event occurs after "
+"the return)."
 msgstr ""
 
 #: library/sys.monitoring.rst:115
@@ -394,19 +394,19 @@ msgstr ""
 
 #: library/sys.monitoring.rst:249
 msgid ""
-":pep:`PEP 380 <380#use-of-stopiteration-to-return-values>` specifies that a "
-":exc:`StopIteration` exception is raised when returning a value from a "
+":pep:`PEP 380 <380#use-of-stopiteration-to-return-values>` specifies that "
+"a :exc:`StopIteration` exception is raised when returning a value from a "
 "generator or coroutine. However, this is a very inefficient way to return a "
-"value, so some Python implementations, notably CPython 3.12+, do not raise an"
-" exception unless it would be visible to other code."
+"value, so some Python implementations, notably CPython 3.12+, do not raise "
+"an exception unless it would be visible to other code."
 msgstr ""
 
 #: library/sys.monitoring.rst:255
 msgid ""
-"To allow tools to monitor for real exceptions without slowing down generators"
-" and coroutines, the :monitoring-event:`STOP_ITERATION` event is provided. "
-":monitoring-event:`STOP_ITERATION` can be locally disabled, unlike "
-":monitoring-event:`RAISE`."
+"To allow tools to monitor for real exceptions without slowing down "
+"generators and coroutines, the :monitoring-event:`STOP_ITERATION` event is "
+"provided. :monitoring-event:`STOP_ITERATION` can be locally disabled, "
+"unlike :monitoring-event:`RAISE`."
 msgstr ""
 
 #: library/sys.monitoring.rst:260
@@ -446,8 +446,8 @@ msgstr ""
 
 #: library/sys.monitoring.rst:287
 msgid ""
-"Activates all events which are set in *event_set*. Raises a :exc:`ValueError`"
-" if *tool_id* is not in use."
+"Activates all events which are set in *event_set*. Raises "
+"a :exc:`ValueError` if *tool_id* is not in use."
 msgstr ""
 
 #: library/sys.monitoring.rst:290
@@ -527,8 +527,8 @@ msgstr ""
 
 #: library/sys.monitoring.rst:349
 msgid ""
-"If another callback was registered for the given *tool_id* and *event*, it is"
-" unregistered and returned. Otherwise :func:`register_callback` returns "
+"If another callback was registered for the given *tool_id* and *event*, it "
+"is unregistered and returned. Otherwise :func:`register_callback` returns "
 "``None``."
 msgstr ""
 
@@ -551,9 +551,9 @@ msgstr ""
 #: library/sys.monitoring.rst:360
 msgid ""
 "Callbacks are called only once regardless if the event is turned on both "
-"globally and locally. As such, if an event could be turned on for both global"
-" and local events by your code then the callback needs to be written to "
-"handle either trigger."
+"globally and locally. As such, if an event could be turned on for both "
+"global and local events by your code then the callback needs to be written "
+"to handle either trigger."
 msgstr ""
 
 #: library/sys.monitoring.rst:367
@@ -570,8 +570,8 @@ msgstr ""
 msgid ""
 "When an active event occurs, the registered callback function is called. "
 "Callback functions returning an object other than :data:`DISABLE` will have "
-"no effect. Different events will provide the callback function with different"
-" arguments, as follows:"
+"no effect. Different events will provide the callback function with "
+"different arguments, as follows:"
 msgstr ""
 
 #: library/sys.monitoring.rst:378
@@ -598,16 +598,16 @@ msgstr ""
 
 #: library/sys.monitoring.rst:389
 msgid ""
-"func(code: CodeType, instruction_offset: int, callable: object, arg0: object)"
-" -> object"
+"func(code: CodeType, instruction_offset: int, callable: object, arg0: "
+"object) -> object"
 msgstr ""
 
 #: library/sys.monitoring.rst:391
 msgid ""
 "*code* represents the code object where the call is being made, while "
 "*callable* is the object that is about to be called (and thus triggered the "
-"event). If there are no arguments, *arg0* is set to "
-":data:`sys.monitoring.MISSING`."
+"event). If there are no arguments, *arg0* is set "
+"to :data:`sys.monitoring.MISSING`."
 msgstr ""
 
 #: library/sys.monitoring.rst:396
@@ -640,8 +640,8 @@ msgstr ""
 
 #: library/sys.monitoring.rst:409
 msgid ""
-":monitoring-event:`BRANCH_LEFT`, :monitoring-event:`BRANCH_RIGHT` and "
-":monitoring-event:`JUMP`::"
+":monitoring-event:`BRANCH_LEFT`, :monitoring-event:`BRANCH_RIGHT` "
+"and :monitoring-event:`JUMP`::"
 msgstr ""
 
 #: library/sys.monitoring.rst:411

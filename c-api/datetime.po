@@ -26,11 +26,11 @@ msgstr ""
 msgid ""
 "Various date and time objects are supplied by the :mod:`datetime` module. "
 "Before using any of these functions, the header file :file:`datetime.h` must "
-"be included in your source (note that this is not included by "
-":file:`Python.h`), and the macro :c:macro:`PyDateTime_IMPORT` must be "
+"be included in your source (note that this is not included "
+"by :file:`Python.h`), and the macro :c:macro:`PyDateTime_IMPORT` must be "
 "invoked, usually as part of the module initialisation function.  The macro "
-"puts a pointer to a C structure into a static variable, "
-":c:data:`PyDateTimeAPI`, that is used by the following macros."
+"puts a pointer to a C structure into a static "
+"variable, :c:data:`PyDateTimeAPI`, that is used by the following macros."
 msgstr ""
 
 #: c-api/datetime.rst:18
@@ -39,8 +39,8 @@ msgstr ""
 
 #: c-api/datetime.rst:20
 msgid ""
-"On success, populate the :c:var:`PyDateTimeAPI` pointer. On failure, set "
-":c:var:`PyDateTimeAPI` to ``NULL`` and set an exception. The caller must "
+"On success, populate the :c:var:`PyDateTimeAPI` pointer. On failure, "
+"set :c:var:`PyDateTimeAPI` to ``NULL`` and set an exception. The caller must "
 "check if an error occurred via :c:func:`PyErr_Occurred`:"
 msgstr ""
 
@@ -114,8 +114,8 @@ msgstr ""
 #: c-api/datetime.rst:80
 msgid ""
 "This instance of :c:type:`PyTypeObject` represents the Python type for the "
-"difference between two datetime values; it is the same object as "
-":class:`datetime.timedelta` in the Python layer."
+"difference between two datetime values; it is the same object "
+"as :class:`datetime.timedelta` in the Python layer."
 msgstr ""
 
 #: c-api/datetime.rst:86
@@ -130,8 +130,8 @@ msgstr ""
 
 #: c-api/datetime.rst:94
 msgid ""
-"Returns the time zone singleton representing UTC, the same object as "
-":attr:`datetime.timezone.utc`."
+"Returns the time zone singleton representing UTC, the same object "
+"as :attr:`datetime.timezone.utc`."
 msgstr ""
 
 #: c-api/datetime.rst:100
@@ -140,9 +140,9 @@ msgstr ""
 
 #: c-api/datetime.rst:104
 msgid ""
-"Return true if *ob* is of type :c:data:`PyDateTime_DateType` or a subtype of "
-":c:data:`!PyDateTime_DateType`.  *ob* must not be ``NULL``.  This function "
-"always succeeds."
+"Return true if *ob* is of type :c:data:`PyDateTime_DateType` or a subtype "
+"of :c:data:`!PyDateTime_DateType`.  *ob* must not be ``NULL``.  This "
+"function always succeeds."
 msgstr ""
 
 #: c-api/datetime.rst:111
@@ -153,9 +153,9 @@ msgstr ""
 
 #: c-api/datetime.rst:117
 msgid ""
-"Return true if *ob* is of type :c:data:`PyDateTime_DateTimeType` or a subtype"
-" of :c:data:`!PyDateTime_DateTimeType`.  *ob* must not be ``NULL``.  This "
-"function always succeeds."
+"Return true if *ob* is of type :c:data:`PyDateTime_DateTimeType` or a "
+"subtype of :c:data:`!PyDateTime_DateTimeType`.  *ob* must not be ``NULL``.  "
+"This function always succeeds."
 msgstr ""
 
 #: c-api/datetime.rst:124
@@ -166,9 +166,9 @@ msgstr ""
 
 #: c-api/datetime.rst:130
 msgid ""
-"Return true if *ob* is of type :c:data:`PyDateTime_TimeType` or a subtype of "
-":c:data:`!PyDateTime_TimeType`.  *ob* must not be ``NULL``.  This function "
-"always succeeds."
+"Return true if *ob* is of type :c:data:`PyDateTime_TimeType` or a subtype "
+"of :c:data:`!PyDateTime_TimeType`.  *ob* must not be ``NULL``.  This "
+"function always succeeds."
 msgstr ""
 
 #: c-api/datetime.rst:137
@@ -179,9 +179,9 @@ msgstr ""
 
 #: c-api/datetime.rst:143
 msgid ""
-"Return true if *ob* is of type :c:data:`PyDateTime_DeltaType` or a subtype of"
-" :c:data:`!PyDateTime_DeltaType`.  *ob* must not be ``NULL``.  This function "
-"always succeeds."
+"Return true if *ob* is of type :c:data:`PyDateTime_DeltaType` or a subtype "
+"of :c:data:`!PyDateTime_DeltaType`.  *ob* must not be ``NULL``.  This "
+"function always succeeds."
 msgstr ""
 
 #: c-api/datetime.rst:150
@@ -199,8 +199,8 @@ msgstr ""
 
 #: c-api/datetime.rst:163
 msgid ""
-"Return true if *ob* is of type :c:data:`PyDateTime_TZInfoType`. *ob* must not"
-" be ``NULL``.  This function always succeeds."
+"Return true if *ob* is of type :c:data:`PyDateTime_TZInfoType`. *ob* must "
+"not be ``NULL``.  This function always succeeds."
 msgstr ""
 
 #: c-api/datetime.rst:167
@@ -241,8 +241,8 @@ msgstr ""
 msgid ""
 "Return a :class:`datetime.timedelta` object representing the given number of "
 "days, seconds and microseconds.  Normalization is performed so that the "
-"resulting number of microseconds and seconds lie in the ranges documented for"
-" :class:`datetime.timedelta` objects."
+"resulting number of microseconds and seconds lie in the ranges documented "
+"for :class:`datetime.timedelta` objects."
 msgstr ""
 
 #: c-api/datetime.rst:212
@@ -253,16 +253,16 @@ msgstr ""
 
 #: c-api/datetime.rst:220
 msgid ""
-"Return a :class:`datetime.timezone` object with a fixed offset represented by"
-" the *offset* argument and with tzname *name*."
+"Return a :class:`datetime.timezone` object with a fixed offset represented "
+"by the *offset* argument and with tzname *name*."
 msgstr ""
 
 #: c-api/datetime.rst:226
 msgid ""
-"Macros to extract fields from date objects.  The argument must be an instance"
-" of :c:type:`PyDateTime_Date`, including subclasses (such as "
-":c:type:`PyDateTime_DateTime`).  The argument must not be ``NULL``, and the "
-"type is not checked:"
+"Macros to extract fields from date objects.  The argument must be an "
+"instance of :c:type:`PyDateTime_Date`, including subclasses (such "
+"as :c:type:`PyDateTime_DateTime`).  The argument must not be ``NULL``, and "
+"the type is not checked:"
 msgstr ""
 
 #: c-api/datetime.rst:233
@@ -280,8 +280,8 @@ msgstr ""
 #: c-api/datetime.rst:246
 msgid ""
 "Macros to extract fields from datetime objects.  The argument must be an "
-"instance of :c:type:`PyDateTime_DateTime`, including subclasses. The argument"
-" must not be ``NULL``, and the type is not checked:"
+"instance of :c:type:`PyDateTime_DateTime`, including subclasses. The "
+"argument must not be ``NULL``, and the type is not checked:"
 msgstr ""
 
 #: c-api/datetime.rst:252 c-api/datetime.rst:290
@@ -310,9 +310,9 @@ msgstr ""
 
 #: c-api/datetime.rst:284
 msgid ""
-"Macros to extract fields from time objects.  The argument must be an instance"
-" of :c:type:`PyDateTime_Time`, including subclasses. The argument must not be"
-" ``NULL``, and the type is not checked:"
+"Macros to extract fields from time objects.  The argument must be an "
+"instance of :c:type:`PyDateTime_Time`, including subclasses. The argument "
+"must not be ``NULL``, and the type is not checked:"
 msgstr ""
 
 #: c-api/datetime.rst:322
@@ -346,8 +346,8 @@ msgstr ""
 
 #: c-api/datetime.rst:357
 msgid ""
-"Create and return a new :class:`datetime.date` object given an argument tuple"
-" suitable for passing to :meth:`datetime.date.fromtimestamp`."
+"Create and return a new :class:`datetime.date` object given an argument "
+"tuple suitable for passing to :meth:`datetime.date.fromtimestamp`."
 msgstr ""
 
 #: c-api/datetime.rst:362

@@ -24,41 +24,41 @@ msgstr ""
 
 #: c-api/extension-modules.rst:8
 msgid ""
-"A C extension for CPython is a shared library (for example, a ``.so`` file on"
-" Linux, ``.pyd`` DLL on Windows), which is loadable into the Python process "
-"(for example, it is compiled with compatible compiler settings), and which "
-"exports an :ref:`initialization function <extension-export-hook>`."
+"A C extension for CPython is a shared library (for example, a ``.so`` file "
+"on Linux, ``.pyd`` DLL on Windows), which is loadable into the Python "
+"process (for example, it is compiled with compatible compiler settings), and "
+"which exports an :ref:`initialization function <extension-export-hook>`."
 msgstr ""
 
 #: c-api/extension-modules.rst:13
 msgid ""
-"To be importable by default (that is, by "
-":py:class:`importlib.machinery.ExtensionFileLoader`), the shared library must"
-" be available on :py:attr:`sys.path`, and must be named after the module name"
-" plus an extension listed in "
-":py:attr:`importlib.machinery.EXTENSION_SUFFIXES`."
+"To be importable by default (that is, "
+"by :py:class:`importlib.machinery.ExtensionFileLoader`), the shared library "
+"must be available on :py:attr:`sys.path`, and must be named after the module "
+"name plus an extension listed "
+"in :py:attr:`importlib.machinery.EXTENSION_SUFFIXES`."
 msgstr ""
 
 #: c-api/extension-modules.rst:21
 msgid ""
 "Building, packaging and distributing extension modules is best done with "
-"third-party tools, and is out of scope of this document. One suitable tool is"
-" Setuptools, whose documentation can be found at "
-"https://setuptools.pypa.io/en/latest/setuptools.html."
+"third-party tools, and is out of scope of this document. One suitable tool "
+"is Setuptools, whose documentation can be found at https://"
+"setuptools.pypa.io/en/latest/setuptools.html."
 msgstr ""
 
 #: c-api/extension-modules.rst:26
 msgid ""
-"Normally, the initialization function returns a module definition initialized"
-" using :c:func:`PyModuleDef_Init`. This allows splitting the creation process"
-" into several phases:"
+"Normally, the initialization function returns a module definition "
+"initialized using :c:func:`PyModuleDef_Init`. This allows splitting the "
+"creation process into several phases:"
 msgstr ""
 
 #: c-api/extension-modules.rst:30
 msgid ""
 "Before any substantial code is executed, Python can determine which "
-"capabilities the module supports, and it can adjust the environment or refuse"
-" loading an incompatible extension."
+"capabilities the module supports, and it can adjust the environment or "
+"refuse loading an incompatible extension."
 msgstr ""
 
 #: c-api/extension-modules.rst:33
@@ -70,16 +70,16 @@ msgstr ""
 
 #: c-api/extension-modules.rst:37
 msgid ""
-"Afterwards, the module object is initialized using extension-specific code --"
-" the equivalent of :py:meth:`~object.__init__` on classes."
+"Afterwards, the module object is initialized using extension-specific code "
+"-- the equivalent of :py:meth:`~object.__init__` on classes."
 msgstr ""
 
 #: c-api/extension-modules.rst:40
 msgid ""
-"This is called *multi-phase initialization* to distinguish it from the legacy"
-" (but still supported) *single-phase initialization* scheme, where the "
-"initialization function returns a fully constructed module. See the "
-":ref:`single-phase-initialization section below <single-phase-"
+"This is called *multi-phase initialization* to distinguish it from the "
+"legacy (but still supported) *single-phase initialization* scheme, where the "
+"initialization function returns a fully constructed module. See "
+"the :ref:`single-phase-initialization section below <single-phase-"
 "initialization>` for details."
 msgstr ""
 
@@ -93,11 +93,11 @@ msgstr ""
 
 #: c-api/extension-modules.rst:54
 msgid ""
-"By default, extension modules are not singletons. For example, if the "
-":py:attr:`sys.modules` entry is removed and the module is re-imported, a new "
-"module object is created, and typically populated with fresh method and type "
-"objects. The old module is subject to normal garbage collection. This mirrors"
-" the behavior of pure-Python modules."
+"By default, extension modules are not singletons. For example, if "
+"the :py:attr:`sys.modules` entry is removed and the module is re-imported, a "
+"new module object is created, and typically populated with fresh method and "
+"type objects. The old module is subject to normal garbage collection. This "
+"mirrors the behavior of pure-Python modules."
 msgstr ""
 
 #: c-api/extension-modules.rst:61
@@ -128,9 +128,9 @@ msgstr ""
 msgid ""
 "All modules are expected to support :ref:`sub-interpreters <sub-interpreter-"
 "support>`, or otherwise explicitly signal a lack of support. This is usually "
-"achieved by isolation or blocking repeated initialization, as above. A module"
-" may also be limited to the main interpreter using the "
-":c:data:`Py_mod_multiple_interpreters` slot."
+"achieved by isolation or blocking repeated initialization, as above. A "
+"module may also be limited to the main interpreter using "
+"the :c:data:`Py_mod_multiple_interpreters` slot."
 msgstr ""
 
 #: c-api/extension-modules.rst:89
@@ -151,12 +151,12 @@ msgstr ""
 
 #: c-api/extension-modules.rst:99
 msgid ""
-"For modules with ASCII-only names, the function must instead be named "
-":samp:`PyInit_{<name>}`, with ``<name>`` replaced by the name of the module. "
-"When using :ref:`multi-phase-initialization`, non-ASCII module names are "
-"allowed. In this case, the initialization function name is "
-":samp:`PyInitU_{<name>}`, with ``<name>`` encoded using Python's *punycode* "
-"encoding with hyphens replaced by underscores. In Python:"
+"For modules with ASCII-only names, the function must instead be "
+"named :samp:`PyInit_{<name>}`, with ``<name>`` replaced by the name of the "
+"module. When using :ref:`multi-phase-initialization`, non-ASCII module names "
+"are allowed. In this case, the initialization function name "
+"is :samp:`PyInitU_{<name>}`, with ``<name>`` encoded using Python's "
+"*punycode* encoding with hyphens replaced by underscores. In Python:"
 msgstr ""
 
 #: c-api/extension-modules.rst:106
@@ -214,8 +214,8 @@ msgid ""
 "It is possible to export multiple modules from a single shared library by "
 "defining multiple initialization functions. However, importing them requires "
 "using symbolic links or a custom importer, because by default only the "
-"function corresponding to the filename is found. See the `Multiple modules in"
-" one library <https://peps.python.org/pep-0489/#multiple-modules-in-one-"
+"function corresponding to the filename is found. See the `Multiple modules "
+"in one library <https://peps.python.org/pep-0489/#multiple-modules-in-one-"
 "library>`__ section in :pep:`489` for details."
 msgstr ""
 
@@ -232,8 +232,8 @@ msgstr ""
 #: c-api/extension-modules.rst:156
 msgid ""
 "Normally, the :ref:`initialization function <extension-export-hook>` "
-"(``PyInit_modulename``) returns a :c:type:`PyModuleDef` instance with "
-"non-``NULL`` :c:member:`~PyModuleDef.m_slots`. Before it is returned, the "
+"(``PyInit_modulename``) returns a :c:type:`PyModuleDef` instance with non-"
+"``NULL`` :c:member:`~PyModuleDef.m_slots`. Before it is returned, the "
 "``PyModuleDef`` instance must be initialized using the following function:"
 msgstr ""
 
@@ -256,8 +256,8 @@ msgstr ""
 #: c-api/extension-modules.rst:173
 msgid ""
 "Note that Python assumes that ``PyModuleDef`` structures are statically "
-"allocated. This function may return either a new reference or a borrowed one;"
-" this reference must not be released."
+"allocated. This function may return either a new reference or a borrowed "
+"one; this reference must not be released."
 msgstr ""
 
 #: c-api/extension-modules.rst:184
@@ -346,12 +346,12 @@ msgstr ""
 
 #: c-api/extension-modules.rst:242
 msgid ""
-"Single-phase modules support module lookup functions like "
-":c:func:`PyState_FindModule`."
+"Single-phase modules support module lookup functions "
+"like :c:func:`PyState_FindModule`."
 msgstr ""
 
 #: c-api/extension-modules.rst:245
 msgid ""
-"``_testsinglephase`` is an internal module used in CPython's self-test suite;"
-" your installation may or may not include it."
+"``_testsinglephase`` is an internal module used in CPython's self-test "
+"suite; your installation may or may not include it."
 msgstr ""
