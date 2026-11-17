@@ -15,7 +15,8 @@ after a page was renamed upstream.
 Usage:
     python scripts/reuse_translations.py BRANCH [--any-file]
 
-Run it after ``make merge`` when starting or updating a branch.
+Run it after ``make merge`` when starting or updating a branch, then
+``make wrap`` to restore msgcat's wrapping in the files it changed.
 """
 
 import subprocess
@@ -98,6 +99,8 @@ def main() -> int:
             print(f"{rel}: {filled} translations reused")
             total += filled
     print(f"Done: {total} translations reused from {branch}.")
+    if total:
+        print("Run make wrap to rewrap the changed files.")
     return 0
 
 

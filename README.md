@@ -22,7 +22,8 @@ To get added to the language switcher on docs.python.org, these files have to be
    version you are translating (`3.15` or `3.14`).
 2. Pick a `.po` file (run `make todo` to see what's left) and translate the `msgstr` entries.
 3. Keep terms consistent with [`GLOSSARY.md`](GLOSSARY.md).
-4. Run `make verifs` (wrapping and spelling checks) before you commit.
+4. Run `make wrap` to rewrap the files you changed, then `make verifs`
+   (wrapping, spelling and markup checks) before you commit.
 5. Open a pull request.
 
 Read the [translating guide](https://devguide.python.org/documentation/translations/translating/) before you start.
@@ -43,13 +44,13 @@ upstream strings lower the core completion (`bugs.po`, `tutorial/` and
 2. Run `make core` to list the core strings that need work, and translate them.
 3. Commit the result.
 
-The tools need `polib` and `potodo` (`python -m pip install polib potodo`);
-`make spell` needs `pospell` and the `hunspell-te` dictionary; `make wrap`
-needs `powrap` and GNU gettext's `msgcat` (`apt install gettext` or
-`brew install gettext`). On macOS, `make` (the HTML build) also needs GNU
-coreutils (`brew install coreutils`). The Test
-workflow runs the same core check every week and fails when upstream has
-moved ahead.
+The tools need `polib`, `potodo` and `powrap`
+(`python -m pip install polib potodo powrap`); `powrap`, used by `make wrap`,
+`make merge` and `make verifs`, needs GNU gettext's `msgcat`
+(`apt install gettext` or `brew install gettext`). `make spell` needs
+`pospell` and the `hunspell-te` dictionary. On macOS, `make` (the HTML build)
+also needs GNU coreutils (`brew install coreutils`). The Test workflow runs
+the same core check every week and fails when upstream has moved ahead.
 
 This repository is the source of truth and translations are made through
 pull requests. If the translation is ever connected to Transifex, upload
