@@ -24,6 +24,12 @@ import polib
 
 FUZZY_CUTOFF = 0.8  # similar to msgmerge's fuzzy matching threshold
 KEEP_METADATA = ("Last-Translator", "Language-Team", "Language", "PO-Revision-Date", "Plural-Forms")
+# Header values for a page that is new upstream, the same as every other file.
+NEW_FILE_METADATA = {
+    "Language-Team": "Telugu",
+    "Language": "te",
+    "Plural-Forms": "nplurals=2; plural=(n != 1);",
+}
 
 
 def clean_occurrences(entry: polib.POEntry) -> list[tuple[str, str]]:
@@ -40,6 +46,7 @@ def merge_file(pot_path: Path, po_path: Path) -> tuple[int, int]:
         new.metadata.update({k: v for k, v in old.metadata.items() if k in KEEP_METADATA})
         new.metadata_is_fuzzy = old.metadata_is_fuzzy
     else:
+        new.metadata.update(NEW_FILE_METADATA)
         new.metadata_is_fuzzy = pot.metadata_is_fuzzy
 
     previous = {(e.msgctxt, e.msgid): e for e in old if not e.obsolete} if old else {}
