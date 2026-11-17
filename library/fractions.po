@@ -41,28 +41,28 @@ msgstr ""
 msgid ""
 "The first version requires that *numerator* and *denominator* are instances "
 "of :class:`numbers.Rational` and returns a new :class:`Fraction` instance "
-"with a value equal to ``numerator/denominator``. If *denominator* is zero, it"
-" raises a :exc:`ZeroDivisionError`."
+"with a value equal to ``numerator/denominator``. If *denominator* is zero, "
+"it raises a :exc:`ZeroDivisionError`."
 msgstr ""
 
 #: library/fractions.rst:28
 msgid ""
-"The second version requires that *number* is an instance of "
-":class:`numbers.Rational` or has the :meth:`!as_integer_ratio` method (this "
-"includes :class:`float` and :class:`decimal.Decimal`). It returns a "
-":class:`Fraction` instance with exactly the same value. Assumed, that the "
-":meth:`!as_integer_ratio` method returns a pair of coprime integers and last "
-"one is positive. Note that due to the usual issues with binary point (see "
-":ref:`tut-fp-issues`), the argument to ``Fraction(1.1)`` is not exactly equal"
-" to 11/10, and so ``Fraction(1.1)`` does *not* return ``Fraction(11, 10)`` as"
-" one might expect. (But see the documentation for the "
-":meth:`limit_denominator` method below.)"
+"The second version requires that *number* is an instance "
+"of :class:`numbers.Rational` or has the :meth:`!as_integer_ratio` method "
+"(this includes :class:`float` and :class:`decimal.Decimal`). It returns "
+"a :class:`Fraction` instance with exactly the same value. Assumed, that "
+"the :meth:`!as_integer_ratio` method returns a pair of coprime integers and "
+"last one is positive. Note that due to the usual issues with binary point "
+"(see :ref:`tut-fp-issues`), the argument to ``Fraction(1.1)`` is not exactly "
+"equal to 11/10, and so ``Fraction(1.1)`` does *not* return ``Fraction(11, "
+"10)`` as one might expect. (But see the documentation for "
+"the :meth:`limit_denominator` method below.)"
 msgstr ""
 
 #: library/fractions.rst:40
 msgid ""
-"The last version of the constructor expects a string. The usual form for this"
-" instance is::"
+"The last version of the constructor expects a string. The usual form for "
+"this instance is::"
 msgstr ""
 
 #: library/fractions.rst:43
@@ -74,8 +74,8 @@ msgid ""
 "where the optional ``sign`` may be either '+' or '-' and ``numerator`` and "
 "``denominator`` (if present) are strings of decimal digits (underscores may "
 "be used to delimit digits as with integral literals in code).  In addition, "
-"any string that represents a finite value and is accepted by the "
-":class:`float` constructor is also accepted by the :class:`Fraction` "
+"any string that represents a finite value and is accepted by "
+"the :class:`float` constructor is also accepted by the :class:`Fraction` "
 "constructor.  In either form the input string may also have leading and/or "
 "trailing whitespace. Here are some examples::"
 msgstr ""
@@ -110,17 +110,17 @@ msgstr ""
 
 #: library/fractions.rst:80
 msgid ""
-"The :class:`Fraction` class inherits from the abstract base class "
-":class:`numbers.Rational`, and implements all of the methods and operations "
-"from that class.  :class:`Fraction` instances are :term:`hashable`, and "
-"should be treated as immutable.  In addition, :class:`Fraction` has the "
-"following properties and methods:"
+"The :class:`Fraction` class inherits from the abstract base "
+"class :class:`numbers.Rational`, and implements all of the methods and "
+"operations from that class.  :class:`Fraction` instances "
+"are :term:`hashable`, and should be treated as immutable.  In "
+"addition, :class:`Fraction` has the following properties and methods:"
 msgstr ""
 
 #: library/fractions.rst:86
 msgid ""
-"The :class:`Fraction` constructor now accepts :class:`float` and "
-":class:`decimal.Decimal` instances."
+"The :class:`Fraction` constructor now accepts :class:`float` "
+"and :class:`decimal.Decimal` instances."
 msgstr ""
 
 #: library/fractions.rst:90
@@ -132,8 +132,8 @@ msgstr ""
 
 #: library/fractions.rst:95
 msgid ""
-"Underscores are now permitted when creating a :class:`Fraction` instance from"
-" a string, following :PEP:`515` rules."
+"Underscores are now permitted when creating a :class:`Fraction` instance "
+"from a string, following :PEP:`515` rules."
 msgstr ""
 
 #: library/fractions.rst:99
@@ -162,8 +162,8 @@ msgstr ""
 
 #: library/fractions.rst:115
 msgid ""
-"The :class:`Fraction` constructor now accepts any objects with the "
-":meth:`!as_integer_ratio` method."
+"The :class:`Fraction` constructor now accepts any objects with the :meth:`!"
+"as_integer_ratio` method."
 msgstr ""
 
 #: library/fractions.rst:121
@@ -186,9 +186,9 @@ msgstr ""
 
 #: library/fractions.rst:145
 msgid ""
-"Alternative constructor which only accepts instances of :class:`float` or "
-":class:`numbers.Integral`. Beware that ``Fraction.from_float(0.3)`` is not "
-"the same value as ``Fraction(3, 10)``."
+"Alternative constructor which only accepts instances of :class:`float` "
+"or :class:`numbers.Integral`. Beware that ``Fraction.from_float(0.3)`` is "
+"not the same value as ``Fraction(3, 10)``."
 msgstr ""
 
 #: library/fractions.rst:151
@@ -199,8 +199,8 @@ msgstr ""
 
 #: library/fractions.rst:157
 msgid ""
-"Alternative constructor which only accepts instances of "
-":class:`decimal.Decimal` or :class:`numbers.Integral`."
+"Alternative constructor which only accepts instances "
+"of :class:`decimal.Decimal` or :class:`numbers.Integral`."
 msgstr ""
 
 #: library/fractions.rst:162
@@ -211,9 +211,9 @@ msgstr ""
 
 #: library/fractions.rst:169
 msgid ""
-"Alternative constructor which only accepts instances of "
-":class:`numbers.Integral`, :class:`numbers.Rational`, :class:`float` or "
-":class:`decimal.Decimal`, and objects with the :meth:`!as_integer_ratio` "
+"Alternative constructor which only accepts instances "
+"of :class:`numbers.Integral`, :class:`numbers.Rational`, :class:`float` "
+"or :class:`decimal.Decimal`, and objects with the :meth:`!as_integer_ratio` "
 "method, but not strings."
 msgstr ""
 
@@ -236,24 +236,24 @@ msgstr ""
 
 #: library/fractions.rst:210
 msgid ""
-"Returns the least :class:`int` ``>= self``.  This method can also be accessed"
-" through the :func:`math.ceil` function."
+"Returns the least :class:`int` ``>= self``.  This method can also be "
+"accessed through the :func:`math.ceil` function."
 msgstr ""
 
 #: library/fractions.rst:217
 msgid ""
-"The first version returns the nearest :class:`int` to ``self``, rounding half"
-" to even. The second version rounds ``self`` to the nearest multiple of "
+"The first version returns the nearest :class:`int` to ``self``, rounding "
+"half to even. The second version rounds ``self`` to the nearest multiple of "
 "``Fraction(1, 10**ndigits)`` (logically, if ``ndigits`` is negative), again "
-"rounding half toward even.  This method can also be accessed through the "
-":func:`round` function."
+"rounding half toward even.  This method can also be accessed through "
+"the :func:`round` function."
 msgstr ""
 
 #: library/fractions.rst:225
 msgid ""
-"Provides support for formatting of :class:`Fraction` instances via the "
-":meth:`str.format` method, the :func:`format` built-in function, or "
-":ref:`Formatted string literals <f-strings>`."
+"Provides support for formatting of :class:`Fraction` instances via "
+"the :meth:`str.format` method, the :func:`format` built-in function, "
+"or :ref:`Formatted string literals <f-strings>`."
 msgstr ""
 
 #: library/fractions.rst:229

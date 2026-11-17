@@ -31,10 +31,10 @@ msgid ""
 "The :mod:`!tkinter.messagebox` module provides a template base class as well "
 "as a variety of convenience methods for commonly used configurations. The "
 "message boxes are modal: each blocks until the user responds, then returns a "
-"value that depends on the function. The ``show*`` functions and "
-":meth:`Message.show` return the symbolic name of the button the user pressed,"
-" as a string (such as :data:`OK` or :data:`YES`). Common message box styles "
-"and layouts include but are not limited to:"
+"value that depends on the function. The ``show*`` functions "
+"and :meth:`Message.show` return the symbolic name of the button the user "
+"pressed, as a string (such as :data:`OK` or :data:`YES`). Common message box "
+"styles and layouts include but are not limited to:"
 msgstr ""
 
 #: library/tkinter.messagebox.rst:23
@@ -54,8 +54,8 @@ msgstr ""
 
 #: library/tkinter.messagebox.rst:30
 msgid ""
-"Specifies the function to invoke when the user closes the dialog. The name of"
-" the button clicked by the user to close the dialog is passed as argument. "
+"Specifies the function to invoke when the user closes the dialog. The name "
+"of the button clicked by the user to close the dialog is passed as argument. "
 "This is only available on macOS."
 msgstr ""
 
@@ -65,9 +65,10 @@ msgstr ""
 
 #: library/tkinter.messagebox.rst:36
 msgid ""
-"Gives the :ref:`symbolic name <messagebox-buttons>` of the default button for"
-" this message window (:data:`OK`, :data:`CANCEL`, and so on). If this option "
-"is not specified, the first button in the dialog will be made the default."
+"Gives the :ref:`symbolic name <messagebox-buttons>` of the default button "
+"for this message window (:data:`OK`, :data:`CANCEL`, and so on). If this "
+"option is not specified, the first button in the dialog will be made the "
+"default."
 msgstr ""
 
 #: library/tkinter.messagebox.rst:41
@@ -87,8 +88,8 @@ msgstr ""
 
 #: library/tkinter.messagebox.rst:49
 msgid ""
-"Specifies an :ref:`icon <messagebox-icons>` to display. If this option is not"
-" specified, then the :data:`INFO` icon will be displayed."
+"Specifies an :ref:`icon <messagebox-icons>` to display. If this option is "
+"not specified, then the :data:`INFO` icon will be displayed."
 msgstr ""
 
 #: library/tkinter.messagebox.rst:53
@@ -97,8 +98,8 @@ msgstr ""
 
 #: library/tkinter.messagebox.rst:54
 msgid ""
-"Specifies the message to display in this message box. The default value is an"
-" empty string."
+"Specifies the message to display in this message box. The default value is "
+"an empty string."
 msgstr ""
 
 #: library/tkinter.messagebox.rst:57
@@ -107,8 +108,8 @@ msgstr ""
 
 #: library/tkinter.messagebox.rst:58
 msgid ""
-"Makes the specified window the logical parent of the message box. The message"
-" box is displayed on top of its parent window."
+"Makes the specified window the logical parent of the message box. The "
+"message box is displayed on top of its parent window."
 msgstr ""
 
 #: library/tkinter.messagebox.rst:61
@@ -117,8 +118,8 @@ msgstr ""
 
 #: library/tkinter.messagebox.rst:62
 msgid ""
-"Specifies a string to display as the title of the message box. This option is"
-" ignored on macOS, where platform guidelines forbid the use of a title on "
+"Specifies a string to display as the title of the message box. This option "
+"is ignored on macOS, where platform guidelines forbid the use of a title on "
 "this kind of dialog."
 msgstr ""
 
@@ -181,21 +182,22 @@ msgstr ""
 
 #: library/tkinter.messagebox.rst:108
 msgid ""
-"Ask if operation should proceed. Shows buttons :data:`OK` and :data:`CANCEL`."
-" Returns ``True`` if the answer is ok and ``False`` otherwise."
+"Ask if operation should proceed. Shows buttons :data:`OK` "
+"and :data:`CANCEL`. Returns ``True`` if the answer is ok and ``False`` "
+"otherwise."
 msgstr ""
 
 #: library/tkinter.messagebox.rst:113
 msgid ""
-"Ask if operation should be retried. Shows buttons :data:`RETRY` and "
-":data:`CANCEL`. Return ``True`` if the answer is retry and ``False`` "
+"Ask if operation should be retried. Shows buttons :data:`RETRY` "
+"and :data:`CANCEL`. Return ``True`` if the answer is retry and ``False`` "
 "otherwise."
 msgstr ""
 
 #: library/tkinter.messagebox.rst:118
 msgid ""
-"Ask a question. Shows buttons :data:`YES` and :data:`NO`. Returns ``True`` if"
-" the answer is yes and ``False`` otherwise."
+"Ask a question. Shows buttons :data:`YES` and :data:`NO`. Returns ``True`` "
+"if the answer is yes and ``False`` otherwise."
 msgstr ""
 
 #: library/tkinter.messagebox.rst:123
@@ -230,8 +232,8 @@ msgstr ""
 
 #: library/tkinter.messagebox.rst:172
 msgid ""
-"Displays two buttons whose symbolic names are :data:`RETRY` and "
-":data:`CANCEL`."
+"Displays two buttons whose symbolic names are :data:`RETRY` "
+"and :data:`CANCEL`."
 msgstr ""
 
 #: library/tkinter.messagebox.rst:178
@@ -241,8 +243,8 @@ msgstr ""
 
 #: library/tkinter.messagebox.rst:184
 msgid ""
-"Displays three buttons whose symbolic names are :data:`YES`, :data:`NO` and "
-":data:`CANCEL`."
+"Displays three buttons whose symbolic names are :data:`YES`, :data:`NO` "
+"and :data:`CANCEL`."
 msgstr ""
 
 #: library/tkinter.messagebox.rst:189

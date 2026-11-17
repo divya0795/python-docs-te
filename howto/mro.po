@@ -25,8 +25,8 @@ msgstr ""
 #: howto/mro.rst:8
 msgid ""
 "This is a historical document, provided as an appendix to the official "
-"documentation. The Method Resolution Order discussed here was *introduced* in"
-" Python 2.3, but it is still used in later versions -- including Python 3."
+"documentation. The Method Resolution Order discussed here was *introduced* "
+"in Python 2.3, but it is still used in later versions -- including Python 3."
 msgstr ""
 
 #: howto/mro.rst:13
@@ -41,9 +41,9 @@ msgstr ""
 msgid ""
 "*This document is intended for Python programmers who want to understand the "
 "C3 Method Resolution Order used in Python 2.3. Although it is not intended "
-"for newbies, it is quite pedagogical with many worked out examples.  I am not"
-" aware of other publicly available documents with the same scope, therefore "
-"it should be useful.*"
+"for newbies, it is quite pedagogical with many worked out examples.  I am "
+"not aware of other publicly available documents with the same scope, "
+"therefore it should be useful.*"
 msgstr ""
 
 #: howto/mro.rst:23
@@ -96,13 +96,13 @@ msgstr ""
 #: howto/mro.rst:55
 msgid ""
 "First of all, let me point out that what I am going to say only applies to "
-"the *new style classes* introduced in Python 2.2:  *classic classes* maintain"
-" their old method resolution order, depth first and then left to right.  "
-"Therefore, there is no breaking of old code for classic classes; and even if "
-"in principle there could be breaking of code for Python 2.2 new style "
-"classes, in practice the cases in which the C3 resolution order differs from "
-"the Python 2.2 method resolution order are so rare that no real breaking of "
-"code is expected.  Therefore:"
+"the *new style classes* introduced in Python 2.2:  *classic classes* "
+"maintain their old method resolution order, depth first and then left to "
+"right.  Therefore, there is no breaking of old code for classic classes; and "
+"even if in principle there could be breaking of code for Python 2.2 new "
+"style classes, in practice the cases in which the C3 resolution order "
+"differs from the Python 2.2 method resolution order are so rare that no real "
+"breaking of code is expected.  Therefore:"
 msgstr ""
 
 #: howto/mro.rst:64
@@ -145,12 +145,12 @@ msgstr ""
 
 #: howto/mro.rst:88
 msgid ""
-"For instance, in the case of single inheritance hierarchy, if C is a subclass"
-" of C1, and C1 is a subclass of C2, then the linearization of C is simply the"
-" list [C, C1 , C2].  However, with multiple inheritance hierarchies, the "
-"construction of the linearization is more cumbersome, since it is more "
-"difficult to construct a linearization that respects *local precedence "
-"ordering* and *monotonicity*."
+"For instance, in the case of single inheritance hierarchy, if C is a "
+"subclass of C1, and C1 is a subclass of C2, then the linearization of C is "
+"simply the list [C, C1 , C2].  However, with multiple inheritance "
+"hierarchies, the construction of the linearization is more cumbersome, since "
+"it is more difficult to construct a linearization that respects *local "
+"precedence ordering* and *monotonicity*."
 msgstr ""
 
 #: howto/mro.rst:96
@@ -302,11 +302,11 @@ msgstr ""
 msgid ""
 "*take the head of the first list, i.e L[B1][0]; if this head is not in the "
 "tail of any of the other lists, then add it to the linearization of C and "
-"remove it from the lists in the merge, otherwise look at the head of the next"
-" list and take it, if it is a good head.  Then repeat the operation until all"
-" the classes are removed or it is impossible to find good heads.  In this "
-"case, it is impossible to construct the merge, Python 2.3 will refuse to "
-"create the class C and will raise an exception.*"
+"remove it from the lists in the merge, otherwise look at the head of the "
+"next list and take it, if it is a good head.  Then repeat the operation "
+"until all the classes are removed or it is impossible to find good heads.  "
+"In this case, it is impossible to construct the merge, Python 2.3 will "
+"refuse to create the class C and will raise an exception.*"
 msgstr ""
 
 #: howto/mro.rst:197
@@ -329,8 +329,8 @@ msgstr ""
 
 #: howto/mro.rst:207
 msgid ""
-"However, in the case of multiple inheritance things are more cumbersome and I"
-" don't expect you can understand the rule without a couple of examples ;-)"
+"However, in the case of multiple inheritance things are more cumbersome and "
+"I don't expect you can understand the rule without a couple of examples ;-)"
 msgstr ""
 
 #: howto/mro.rst:212
@@ -393,9 +393,9 @@ msgstr ""
 #: howto/mro.rst:262
 msgid ""
 "We see that D is a good head, therefore we take it and we are reduced to "
-"compute ``merge(O,EO,E)``.  Now O is not a good head, since it is in the tail"
-" of the sequence EO.  In this case the rule says that we have to skip to the "
-"next sequence.  Then we see that E is a good head; we take it and we are "
+"compute ``merge(O,EO,E)``.  Now O is not a good head, since it is in the "
+"tail of the sequence EO.  In this case the rule says that we have to skip to "
+"the next sequence.  Then we see that E is a good head; we take it and we are "
 "reduced to compute ``merge(O,O)`` which gives O. Therefore::"
 msgstr ""
 
@@ -479,8 +479,8 @@ msgstr ""
 #: howto/mro.rst:332
 msgid ""
 "Notice that the class E, which is in the second level of the hierarchy, "
-"precedes the class C, which is in the first level of the hierarchy, i.e. E is"
-" more specialized than C, even if it is in a higher level."
+"precedes the class C, which is in the first level of the hierarchy, i.e. E "
+"is more specialized than C, even if it is in a higher level."
 msgstr ""
 
 #: howto/mro.rst:336
@@ -523,8 +523,8 @@ msgstr ""
 msgid ""
 "At this point we cannot merge the lists XYO and YXO, since X is in the tail "
 "of YXO whereas Y is in the tail of XYO:  therefore there are no good heads "
-"and the C3 algorithm stops.  Python 2.3 raises an error and refuses to create"
-" the class C."
+"and the C3 algorithm stops.  Python 2.3 raises an error and refuses to "
+"create the class C."
 msgstr ""
 
 #: howto/mro.rst:370
@@ -533,9 +533,10 @@ msgstr ""
 
 #: howto/mro.rst:372
 msgid ""
-"A MRO is *bad* when it breaks such fundamental properties as local precedence"
-" ordering and monotonicity.  In this section, I will show that both the MRO "
-"for classic classes and the MRO for new style classes in Python 2.2 are bad."
+"A MRO is *bad* when it breaks such fundamental properties as local "
+"precedence ordering and monotonicity.  In this section, I will show that "
+"both the MRO for classic classes and the MRO for new style classes in Python "
+"2.2 are bad."
 msgstr ""
 
 #: howto/mro.rst:377
@@ -582,10 +583,10 @@ msgstr ""
 #: howto/mro.rst:413
 msgid ""
 "One could argue that the reason why F follows E in the Python 2.2 "
-"linearization is that F is less specialized than E, since F is the superclass"
-" of E; nevertheless the breaking of local precedence ordering is quite non-"
-"intuitive and error prone.  This is particularly true since it is a different"
-" from old style classes:"
+"linearization is that F is less specialized than E, since F is the "
+"superclass of E; nevertheless the breaking of local precedence ordering is "
+"quite non-intuitive and error prone.  This is particularly true since it is "
+"a different from old style classes:"
 msgstr ""
 
 #: howto/mro.rst:425
@@ -597,9 +598,9 @@ msgstr ""
 msgid ""
 "As a general rule, hierarchies such as the previous one should be avoided, "
 "since it is unclear if F should override E or vice-versa. Python 2.3 solves "
-"the ambiguity by raising an exception in the creation of class G, effectively"
-" stopping the programmer from generating ambiguous hierarchies.  The reason "
-"for that is that the C3 algorithm fails when the merge::"
+"the ambiguity by raising an exception in the creation of class G, "
+"effectively stopping the programmer from generating ambiguous hierarchies.  "
+"The reason for that is that the C3 algorithm fails when the merge::"
 msgstr ""
 
 #: howto/mro.rst:435
@@ -615,8 +616,8 @@ msgstr ""
 #: howto/mro.rst:440
 msgid ""
 "The real solution is to design a non-ambiguous hierarchy, i.e. to derive G "
-"from E and F (the more specific first) and not from F and E; in this case the"
-" MRO is GEF without any doubt."
+"from E and F (the more specific first) and not from F and E; in this case "
+"the MRO is GEF without any doubt."
 msgstr ""
 
 #: howto/mro.rst:444
@@ -676,8 +677,8 @@ msgstr ""
 
 #: howto/mro.rst:486
 msgid ""
-"To prove that the MRO for classic classes is non-monotonic is rather trivial,"
-" it is enough to look at the diamond diagram:"
+"To prove that the MRO for classic classes is non-monotonic is rather "
+"trivial, it is enough to look at the diamond diagram:"
 msgstr ""
 
 #: howto/mro.rst:489
@@ -728,8 +729,9 @@ msgstr ""
 
 #: howto/mro.rst:530
 msgid ""
-"Here are the linearizations according to the C3 MRO (the reader should verify"
-" these linearizations as an exercise and draw the inheritance diagram ;-) ::"
+"Here are the linearizations according to the C3 MRO (the reader should "
+"verify these linearizations as an exercise and draw the inheritance "
+"diagram ;-) ::"
 msgstr ""
 
 #: howto/mro.rst:534
@@ -776,20 +778,22 @@ msgstr ""
 msgid ""
 "This section is for the impatient reader, who skipped all the previous "
 "sections and jumped immediately to the end.  This section is for the lazy "
-"programmer too, who didn't want to exercise her/his brain. Finally, it is for"
-" the programmer with some hubris, otherwise s/he would not be reading a paper"
-" on the C3 method resolution order in multiple inheritance hierarchies ;-) "
-"These three virtues taken all together (and *not* separately) deserve a "
-"prize:  the prize is a short Python 2.2 script that allows you to compute the"
-" 2.3 MRO without risk to your brain.  Simply change the last line to play "
-"with the various examples I have discussed in this paper.::"
+"programmer too, who didn't want to exercise her/his brain. Finally, it is "
+"for the programmer with some hubris, otherwise s/he would not be reading a "
+"paper on the C3 method resolution order in multiple inheritance "
+"hierarchies ;-) These three virtues taken all together (and *not* "
+"separately) deserve a prize:  the prize is a short Python 2.2 script that "
+"allows you to compute the 2.3 MRO without risk to your brain.  Simply change "
+"the last line to play with the various examples I have discussed in this "
+"paper.::"
 msgstr ""
 
 #: howto/mro.rst:574
 msgid ""
 "#<mro.py>\n"
 "\n"
-"\"\"\"C3 algorithm by Samuele Pedroni (with readability enhanced by me).\"\"\"\n"
+"\"\"\"C3 algorithm by Samuele Pedroni (with readability enhanced by me)."
+"\"\"\"\n"
 "\n"
 "class __metaclass__(type):\n"
 "    \"All classes are metamagically modified to be nicely printed\"\n"
@@ -884,18 +888,19 @@ msgstr ""
 
 #: howto/mro.rst:664
 msgid ""
-"The thread on python-dev started by Samuele Pedroni: "
-"https://mail.python.org/pipermail/python-dev/2002-October/029035.html"
+"The thread on python-dev started by Samuele Pedroni: https://mail.python.org/"
+"pipermail/python-dev/2002-October/029035.html"
 msgstr ""
 
 #: howto/mro.rst:667
 msgid ""
-"The paper *A Monotonic Superclass Linearization for Dylan*: "
-"https://doi.org/10.1145/236337.236343"
+"The paper *A Monotonic Superclass Linearization for Dylan*: https://doi.org/"
+"10.1145/236337.236343"
 msgstr ""
 
 #: howto/mro.rst:670
 msgid ""
 "Guido van Rossum's essay, *Unifying types and classes in Python 2.2*: "
-"https://web.archive.org/web/20140210194412/http://www.python.org/download/releases/2.2.2/descrintro"
+"https://web.archive.org/web/20140210194412/http://www.python.org/download/"
+"releases/2.2.2/descrintro"
 msgstr ""

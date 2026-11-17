@@ -24,10 +24,10 @@ msgstr ""
 
 #: library/math.integer.rst:11
 msgid ""
-"This module provides access to the mathematical functions defined for integer"
-" arguments. These functions accept integers and objects that implement the "
-":meth:`~object.__index__` method which is used to convert the object to an "
-"integer number."
+"This module provides access to the mathematical functions defined for "
+"integer arguments. These functions accept integers and objects that "
+"implement the :meth:`~object.__index__` method which is used to convert the "
+"object to an integer number."
 msgstr ""
 
 #: library/math.integer.rst:16
@@ -64,10 +64,11 @@ msgstr ""
 
 #: library/math.integer.rst:42
 msgid ""
-"Return the greatest common divisor of the specified integer arguments. If any"
-" of the arguments is nonzero, then the returned value is the largest positive"
-" integer that is a divisor of all arguments.  If all arguments are zero, then"
-" the returned value is ``0``.  ``gcd()`` without arguments returns ``0``."
+"Return the greatest common divisor of the specified integer arguments. If "
+"any of the arguments is nonzero, then the returned value is the largest "
+"positive integer that is a divisor of all arguments.  If all arguments are "
+"zero, then the returned value is ``0``.  ``gcd()`` without arguments returns "
+"``0``."
 msgstr ""
 
 #: library/math.integer.rst:51
@@ -102,8 +103,8 @@ msgstr ""
 
 #: library/math.integer.rst:79
 msgid ""
-"Evaluates to ``n! / (n - k)!`` when ``k <= n`` and evaluates to zero when ``k"
-" > n``."
+"Evaluates to ``n! / (n - k)!`` when ``k <= n`` and evaluates to zero when "
+"``k > n``."
 msgstr ""
 
 #: library/math.integer.rst:82

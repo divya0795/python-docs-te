@@ -25,11 +25,11 @@ msgstr ""
 #: c-api/slots.rst:8
 msgid ""
 "To define :ref:`module objects <moduleobjects>` and :ref:`classes <creating-"
-"heap-types>` using the C API, you may use an array of *slots* -- essentially,"
-" key-value pairs that describe features of the object to create. This "
-"decouples the data from the structures used at runtime, allowing CPython -- "
-"and other Python C API implementations -- to update the structures without "
-"breaking backwards compatibility."
+"heap-types>` using the C API, you may use an array of *slots* -- "
+"essentially, key-value pairs that describe features of the object to create. "
+"This decouples the data from the structures used at runtime, allowing "
+"CPython -- and other Python C API implementations -- to update the "
+"structures without breaking backwards compatibility."
 msgstr ""
 
 #: c-api/slots.rst:16
@@ -52,9 +52,9 @@ msgstr ""
 msgid ""
 "When slots are passed to a function that applies them, the function will not "
 "modify the slot array, nor any data it points to (recursively). After the "
-"function is done, the caller is allowed to modify or deallocate the array and"
-" any data it points to (recursively), except data explicitly marked with "
-":c:macro:`PySlot_STATIC`."
+"function is done, the caller is allowed to modify or deallocate the array "
+"and any data it points to (recursively), except data explicitly marked "
+"with :c:macro:`PySlot_STATIC`."
 msgstr ""
 
 #: c-api/slots.rst:30
@@ -65,9 +65,9 @@ msgstr ""
 
 #: c-api/slots.rst:35
 msgid ""
-"Slot arrays generalize an earlier way of defining objects: using "
-":c:type:`PyType_Spec` with :c:type:`PyType_Slot` for types, and "
-":c:type:`PyModuleDef` with :c:type:`PyModuleDef_Slot` for modules. The "
+"Slot arrays generalize an earlier way of defining objects: "
+"using :c:type:`PyType_Spec` with :c:type:`PyType_Slot` for types, "
+"and :c:type:`PyModuleDef` with :c:type:`PyModuleDef_Slot` for modules. The "
 "earlier API is :term:`soft deprecated`; there are no plans to remove it."
 msgstr ""
 
@@ -129,8 +129,8 @@ msgstr ""
 
 #: c-api/slots.rst:86
 msgid ""
-"Except when documented otherwise for a specific slot ID, pointers (that is "
-":c:member:`!sl_ptr` and :c:member:`!sl_func`) may not be NULL."
+"Except when documented otherwise for a specific slot ID, pointers (that "
+"is :c:member:`!sl_ptr` and :c:member:`!sl_func`) may not be NULL."
 msgstr ""
 
 #: c-api/slots.rst:91
@@ -150,11 +150,11 @@ msgstr ""
 #: c-api/slots.rst:102
 msgid ""
 "The flag applies even to data the slot points to “indirectly”, except for "
-"slots nested via :c:macro:`Py_slot_subslots` which may have their own "
-":c:macro:`!PySlot_STATIC` flags. For example, if applied to a "
-":c:macro:`Py_tp_members` slot that points to an array of "
-":c:type:`PyMemberDef` structures, then the entire array, as well as the name "
-"and doc strings in its elements, must be static and constant."
+"slots nested via :c:macro:`Py_slot_subslots` which may have their "
+"own :c:macro:`!PySlot_STATIC` flags. For example, if applied to "
+"a :c:macro:`Py_tp_members` slot that points to an array "
+"of :c:type:`PyMemberDef` structures, then the entire array, as well as the "
+"name and doc strings in its elements, must be static and constant."
 msgstr ""
 
 #: c-api/slots.rst:112
@@ -165,8 +165,8 @@ msgstr ""
 
 #: c-api/slots.rst:115
 msgid ""
-"This flag can simplify porting from the older :c:type:`PyType_Slot` and "
-":c:type:`PyModuleDef_Slot` structures."
+"This flag can simplify porting from the older :c:type:`PyType_Slot` "
+"and :c:type:`PyModuleDef_Slot` structures."
 msgstr ""
 
 #: c-api/slots.rst:120
@@ -194,14 +194,14 @@ msgstr ""
 
 #: c-api/slots.rst:143
 msgid ""
-"Convenience macros to define :c:type:`!PySlot` structures with "
-":c:member:`~PySlot.sl_id` and a particular union member set."
+"Convenience macros to define :c:type:`!PySlot` structures "
+"with :c:member:`~PySlot.sl_id` and a particular union member set."
 msgstr ""
 
 #: c-api/slots.rst:146
 msgid ""
-":c:macro:`!PySlot_STATIC_DATA` sets the :c:macro:`PySlot_STATIC` flag; others"
-" set no flags."
+":c:macro:`!PySlot_STATIC_DATA` sets the :c:macro:`PySlot_STATIC` flag; "
+"others set no flags."
 msgstr ""
 
 #: c-api/slots.rst:149
@@ -246,9 +246,10 @@ msgstr ""
 
 #: c-api/slots.rst:189
 msgid ""
-"Convenience macros for use in C++11-compatible code. This version of C++ does"
-" not allow setting arbitrary union members in literals; instead, these macros"
-" set the :c:macro:`PySlot_INTPTR` flag and cast the value to ``(void*)``."
+"Convenience macros for use in C++11-compatible code. This version of C++ "
+"does not allow setting arbitrary union members in literals; instead, these "
+"macros set the :c:macro:`PySlot_INTPTR` flag and cast the value to "
+"``(void*)``."
 msgstr ""
 
 #: c-api/slots.rst:196
@@ -278,10 +279,10 @@ msgstr ""
 
 #: c-api/slots.rst:222
 msgid ""
-"The value (:c:member:`~PySlot.sl_ptr`) should point to an array of "
-":c:type:`PySlot` structures. The slots in the array (up to but not including "
-"the zero-ID terminator) will be treated as if they were inserted if the "
-"current slot array, at the point :c:macro:`!Py_slot_subslots` appears."
+"The value (:c:member:`~PySlot.sl_ptr`) should point to an array "
+"of :c:type:`PySlot` structures. The slots in the array (up to but not "
+"including the zero-ID terminator) will be treated as if they were inserted "
+"if the current slot array, at the point :c:macro:`!Py_slot_subslots` appears."
 msgstr ""
 
 #: c-api/slots.rst:228

@@ -47,8 +47,8 @@ msgstr ""
 msgid ""
 "Note that this document is specifically about working with "
 "``__annotations__``, not uses *for* annotations. If you're looking for "
-"information on how to use \"type hints\" in your code, please see the "
-":mod:`typing` module."
+"information on how to use \"type hints\" in your code, please see "
+"the :mod:`typing` module."
 msgstr ""
 
 #: howto/annotations.rst:31
@@ -57,19 +57,19 @@ msgstr ""
 
 #: howto/annotations.rst:33
 msgid ""
-"Python 3.10 adds a new function to the standard library: "
-":func:`inspect.get_annotations`.  In Python versions 3.10 through 3.13, "
-"calling this function is the best practice for accessing the annotations dict"
-" of any object that supports annotations.  This function can also \"un-"
-"stringize\" stringized annotations for you."
+"Python 3.10 adds a new function to the standard "
+"library: :func:`inspect.get_annotations`.  In Python versions 3.10 through "
+"3.13, calling this function is the best practice for accessing the "
+"annotations dict of any object that supports annotations.  This function can "
+"also \"un-stringize\" stringized annotations for you."
 msgstr ""
 
 #: howto/annotations.rst:40
 msgid ""
-"In Python 3.14, there is a new :mod:`annotationlib` module with functionality"
-" for working with annotations. This includes a "
-":func:`annotationlib.get_annotations` function, which supersedes "
-":func:`inspect.get_annotations`."
+"In Python 3.14, there is a new :mod:`annotationlib` module with "
+"functionality for working with annotations. This includes "
+"a :func:`annotationlib.get_annotations` function, which "
+"supersedes :func:`inspect.get_annotations`."
 msgstr ""
 
 #: howto/annotations.rst:45
@@ -85,11 +85,11 @@ msgstr ""
 
 #: howto/annotations.rst:55
 msgid ""
-"However, other types of callables--for example, callables created by "
-":func:`functools.partial`--may not have an ``__annotations__`` attribute "
+"However, other types of callables--for example, callables created "
+"by :func:`functools.partial`--may not have an ``__annotations__`` attribute "
 "defined.  When accessing the ``__annotations__`` of a possibly unknown "
-"object,  best practice in Python versions 3.10 and newer is to call "
-":func:`getattr` with three arguments, for example ``getattr(o, "
+"object,  best practice in Python versions 3.10 and newer is to "
+"call :func:`getattr` with three arguments, for example ``getattr(o, "
 "'__annotations__', None)``."
 msgstr ""
 
@@ -114,20 +114,20 @@ msgstr ""
 
 #: howto/annotations.rst:78
 msgid ""
-"Best practice for accessing the annotations dict of other objects--functions,"
-" other callables, and modules--is the same as best practice for 3.10, "
-"assuming you aren't calling :func:`inspect.get_annotations`: you should use "
-"three-argument :func:`getattr` to access the object's ``__annotations__`` "
-"attribute."
+"Best practice for accessing the annotations dict of other objects--"
+"functions, other callables, and modules--is the same as best practice for "
+"3.10, assuming you aren't calling :func:`inspect.get_annotations`: you "
+"should use three-argument :func:`getattr` to access the object's "
+"``__annotations__`` attribute."
 msgstr ""
 
 #: howto/annotations.rst:85
 msgid ""
 "Unfortunately, this isn't best practice for classes.  The problem is that, "
 "since ``__annotations__`` is optional on classes, and because classes can "
-"inherit attributes from their base classes, accessing the ``__annotations__``"
-" attribute of a class may inadvertently return the annotations dict of a "
-"*base class.* As an example::"
+"inherit attributes from their base classes, accessing the "
+"``__annotations__`` attribute of a class may inadvertently return the "
+"annotations dict of a *base class.* As an example::"
 msgstr ""
 
 #: howto/annotations.rst:92
@@ -174,14 +174,14 @@ msgstr ""
 #: howto/annotations.rst:121
 msgid ""
 "After running this code, ``ann`` should be either a dictionary or ``None``.  "
-"You're encouraged to double-check the type of ``ann`` using "
-":func:`isinstance` before further examination."
+"You're encouraged to double-check the type of ``ann`` "
+"using :func:`isinstance` before further examination."
 msgstr ""
 
 #: howto/annotations.rst:126
 msgid ""
-"Note that some exotic or malformed type objects may not have a "
-":attr:`~type.__dict__` attribute, so for extra safety you may also wish to "
+"Note that some exotic or malformed type objects may not have "
+"a :attr:`~type.__dict__` attribute, so for extra safety you may also wish to "
 "use :func:`getattr` to access :attr:`!__dict__`."
 msgstr ""
 
@@ -192,16 +192,18 @@ msgstr ""
 #: howto/annotations.rst:134
 msgid ""
 "In situations where some annotations may be \"stringized\", and you wish to "
-"evaluate those strings to produce the Python values they represent, it really"
-" is best to call :func:`inspect.get_annotations` to do this work for you."
+"evaluate those strings to produce the Python values they represent, it "
+"really is best to call :func:`inspect.get_annotations` to do this work for "
+"you."
 msgstr ""
 
 #: howto/annotations.rst:140
 msgid ""
-"If you're using Python 3.9 or older, or if for some reason you can't use "
-":func:`inspect.get_annotations`, you'll need to duplicate its logic.  You're "
-"encouraged to examine the implementation of :func:`inspect.get_annotations` "
-"in the current Python version and follow a similar approach."
+"If you're using Python 3.9 or older, or if for some reason you can't "
+"use :func:`inspect.get_annotations`, you'll need to duplicate its logic.  "
+"You're encouraged to examine the implementation "
+"of :func:`inspect.get_annotations` in the current Python version and follow "
+"a similar approach."
 msgstr ""
 
 #: howto/annotations.rst:146
@@ -212,23 +214,24 @@ msgstr ""
 
 #: howto/annotations.rst:149
 msgid ""
-"If ``o`` is a module, use ``o.__dict__`` as the ``globals`` when calling "
-":func:`eval`."
+"If ``o`` is a module, use ``o.__dict__`` as the ``globals`` when "
+"calling :func:`eval`."
 msgstr ""
 
 #: howto/annotations.rst:151
 msgid ""
 "If ``o`` is a class, use ``sys.modules[o.__module__].__dict__`` as the "
-"``globals``, and ``dict(vars(o))`` as the ``locals``, when calling "
-":func:`eval`."
+"``globals``, and ``dict(vars(o))`` as the ``locals``, when "
+"calling :func:`eval`."
 msgstr ""
 
 #: howto/annotations.rst:154
 msgid ""
-"If ``o`` is a wrapped callable using :func:`functools.update_wrapper`, "
-":deco:`functools.wraps`, or :func:`functools.partial`, iteratively unwrap it "
-"by accessing either ``o.__wrapped__`` or ``o.func`` as appropriate, until you"
-" have found the root unwrapped function."
+"If ``o`` is a wrapped callable "
+"using :func:`functools.update_wrapper`, :deco:`functools.wraps`, "
+"or :func:`functools.partial`, iteratively unwrap it by accessing either "
+"``o.__wrapped__`` or ``o.func`` as appropriate, until you have found the "
+"root unwrapped function."
 msgstr ""
 
 #: howto/annotations.rst:158
@@ -239,11 +242,11 @@ msgstr ""
 
 #: howto/annotations.rst:162
 msgid ""
-"However, not all string values used as annotations can be successfully turned"
-" into Python values by :func:`eval`. String values could theoretically "
+"However, not all string values used as annotations can be successfully "
+"turned into Python values by :func:`eval`. String values could theoretically "
 "contain any valid string, and in practice there are valid use cases for type "
-"hints that require annotating with string values that specifically *can't* be"
-" evaluated.  For example:"
+"hints that require annotating with string values that specifically *can't* "
+"be evaluated.  For example:"
 msgstr ""
 
 #: howto/annotations.rst:169
@@ -254,8 +257,8 @@ msgstr ""
 
 #: howto/annotations.rst:171
 msgid ""
-"Definitions that aren't needed at runtime, only imported when "
-":const:`typing.TYPE_CHECKING` is true."
+"Definitions that aren't needed at runtime, only imported "
+"when :const:`typing.TYPE_CHECKING` is true."
 msgstr ""
 
 #: howto/annotations.rst:174
@@ -278,15 +281,15 @@ msgstr ""
 
 #: howto/annotations.rst:187
 msgid ""
-"If you do assign directly to the ``__annotations__`` member of an object, you"
-" should always set it to a ``dict`` object."
+"If you do assign directly to the ``__annotations__`` member of an object, "
+"you should always set it to a ``dict`` object."
 msgstr ""
 
 #: howto/annotations.rst:190
 msgid ""
 "You should avoid accessing ``__annotations__`` directly on any object. "
-"Instead, use :func:`annotationlib.get_annotations` (Python 3.14+) or "
-":func:`inspect.get_annotations` (Python 3.10+)."
+"Instead, use :func:`annotationlib.get_annotations` (Python 3.14+) "
+"or :func:`inspect.get_annotations` (Python 3.10+)."
 msgstr ""
 
 #: howto/annotations.rst:194
@@ -311,20 +314,20 @@ msgstr ""
 
 #: howto/annotations.rst:207
 msgid ""
-"In all versions of Python 3, function objects lazy-create an annotations dict"
-" if no annotations are defined on that object.  You can delete the "
+"In all versions of Python 3, function objects lazy-create an annotations "
+"dict if no annotations are defined on that object.  You can delete the "
 "``__annotations__`` attribute using ``del fn.__annotations__``, but if you "
 "then access ``fn.__annotations__`` the object will create a new empty dict "
 "that it will store and return as its annotations.  Deleting the annotations "
-"on a function before it has lazily created its annotations dict will throw an"
-" ``AttributeError``; using ``del fn.__annotations__`` twice in a row is "
+"on a function before it has lazily created its annotations dict will throw "
+"an ``AttributeError``; using ``del fn.__annotations__`` twice in a row is "
 "guaranteed to always throw an ``AttributeError``."
 msgstr ""
 
 #: howto/annotations.rst:217
 msgid ""
-"Everything in the above paragraph also applies to class and module objects in"
-" Python 3.10 and newer."
+"Everything in the above paragraph also applies to class and module objects "
+"in Python 3.10 and newer."
 msgstr ""
 
 #: howto/annotations.rst:220
@@ -340,9 +343,10 @@ msgstr ""
 
 #: howto/annotations.rst:228
 msgid ""
-"If Python stringizes your annotations for you (using ``from __future__ import"
-" annotations``), and you specify a string as an annotation, the string will "
-"itself be quoted.  In effect the annotation is quoted *twice.*  For example::"
+"If Python stringizes your annotations for you (using ``from __future__ "
+"import annotations``), and you specify a string as an annotation, the string "
+"will itself be quoted.  In effect the annotation is quoted *twice.*  For "
+"example::"
 msgstr ""
 
 #: howto/annotations.rst:234
@@ -362,29 +366,30 @@ msgstr ""
 #: howto/annotations.rst:242
 msgid ""
 "If you use a class with a custom metaclass and access ``__annotations__`` on "
-"the class, you may observe unexpected behavior; see :pep:`749 "
-"<749#pep749-metaclasses>` for some examples. You can avoid these quirks by "
-"using :func:`annotationlib.get_annotations` on Python 3.14+ or "
-":func:`inspect.get_annotations` on Python 3.10+."
+"the class, you may observe unexpected behavior; see :pep:`749 <749#pep749-"
+"metaclasses>` for some examples. You can avoid these quirks by "
+"using :func:`annotationlib.get_annotations` on Python 3.14+ "
+"or :func:`inspect.get_annotations` on Python 3.10+."
 msgstr ""
 
 #: howto/annotations.rst:250
 msgid ""
 "On Python 3.14 and later, annotations are evaluated lazily (see :pep:`649` "
-"and :pep:`749`), and how the annotations dict is stored in the class's "
-":attr:`~type.__dict__` is a private implementation detail. Reading "
+"and :pep:`749`), and how the annotations dict is stored in the "
+"class's :attr:`~type.__dict__` is a private implementation detail. Reading "
 "``cls.__dict__.get('__annotations__', None)`` may therefore return ``None`` "
-"even when the class has annotations. On these versions, always use "
-":func:`annotationlib.get_annotations` (or :func:`inspect.get_annotations`) "
-"rather than accessing :attr:`~type.__dict__` directly."
+"even when the class has annotations. On these versions, always "
+"use :func:`annotationlib.get_annotations` "
+"(or :func:`inspect.get_annotations`) rather than "
+"accessing :attr:`~type.__dict__` directly."
 msgstr ""
 
 #: howto/annotations.rst:259
 msgid ""
 "Only on Python 3.9 and earlier, where neither function is available, can you "
-"avoid these bugs by reading the annotations from the class's "
-":attr:`~type.__dict__` (for example, ``cls.__dict__.get('__annotations__', "
-"None)``)."
+"avoid these bugs by reading the annotations from the "
+"class's :attr:`~type.__dict__` (for example, "
+"``cls.__dict__.get('__annotations__', None)``)."
 msgstr ""
 
 #: howto/annotations.rst:263

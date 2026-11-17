@@ -29,8 +29,8 @@ msgstr ""
 #: c-api/apiabiversion.rst:13
 msgid ""
 "CPython exposes its version number in the following macros. Note that these "
-"correspond to the version code is **built** with. See :c:var:`Py_Version` for"
-" the version used at **run time**."
+"correspond to the version code is **built** with. See :c:var:`Py_Version` "
+"for the version used at **run time**."
 msgstr ""
 
 #: c-api/apiabiversion.rst:17
@@ -58,11 +58,10 @@ msgstr ""
 
 #: c-api/apiabiversion.rst:48
 msgid ""
-"For completeness, the values are available as macros: "
-":c:macro:`!PY_RELEASE_LEVEL_ALPHA` (``0xA``), "
-":c:macro:`!PY_RELEASE_LEVEL_BETA` (``0xB``), "
-":c:macro:`!PY_RELEASE_LEVEL_GAMMA` (``0xC``), and "
-":c:macro:`!PY_RELEASE_LEVEL_FINAL` (``0xF``)."
+"For completeness, the values are available as macros: :c:macro:`!"
+"PY_RELEASE_LEVEL_ALPHA` (``0xA``), :c:macro:`!PY_RELEASE_LEVEL_BETA` "
+"(``0xB``), :c:macro:`!PY_RELEASE_LEVEL_GAMMA` (``0xC``), and :c:macro:`!"
+"PY_RELEASE_LEVEL_FINAL` (``0xF``)."
 msgstr ""
 
 #: c-api/apiabiversion.rst:56
@@ -71,8 +70,8 @@ msgstr ""
 
 #: c-api/apiabiversion.rst:60
 msgid ""
-"The Python version number encoded in a single integer. See "
-":c:func:`Py_PACK_FULL_VERSION` for the encoding details."
+"The Python version number encoded in a single integer. "
+"See :c:func:`Py_PACK_FULL_VERSION` for the encoding details."
 msgstr ""
 
 #: c-api/apiabiversion.rst:63
@@ -94,9 +93,9 @@ msgstr ""
 
 #: c-api/apiabiversion.rst:78
 msgid ""
-"The Python runtime version number encoded in a single constant integer. See "
-":c:func:`Py_PACK_FULL_VERSION` for the encoding details. This contains the "
-"Python version used at run time."
+"The Python runtime version number encoded in a single constant integer. "
+"See :c:func:`Py_PACK_FULL_VERSION` for the encoding details. This contains "
+"the Python version used at run time."
 msgstr ""
 
 #: c-api/apiabiversion.rst:82

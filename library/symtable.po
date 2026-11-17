@@ -88,8 +88,8 @@ msgstr ""
 
 #: library/symtable.rst:71
 msgid ""
-"Used for the symbol table of :ref:`generic functions <generic-functions>` or "
-":ref:`generic classes <generic-classes>`."
+"Used for the symbol table of :ref:`generic functions <generic-functions>` "
+"or :ref:`generic classes <generic-classes>`."
 msgstr ""
 
 #: library/symtable.rst:77
@@ -106,8 +106,8 @@ msgstr ""
 
 #: library/symtable.rst:90
 msgid ""
-"Return the type of the symbol table.  Possible values are members of the "
-":class:`SymbolTableType` enumeration."
+"Return the type of the symbol table.  Possible values are members of "
+"the :class:`SymbolTableType` enumeration."
 msgstr ""
 
 #: library/symtable.rst:93
@@ -133,13 +133,13 @@ msgstr ""
 
 #: library/symtable.rst:110
 msgid ""
-"Return the table's name.  This is the name of the class if the table is for a"
-" class, the name of the function if the table is for a function, or ``'top'``"
-" if the table is global (:meth:`get_type` returns ``'module'``). For type "
-"parameter scopes (which are used for generic classes, functions, and type "
-"aliases), it is the name of the underlying class, function, or type alias. "
-"For type alias scopes, it is the name of the type alias. For "
-":class:`~typing.TypeVar` bound scopes, it is the name of the ``TypeVar``."
+"Return the table's name.  This is the name of the class if the table is for "
+"a class, the name of the function if the table is for a function, or "
+"``'top'`` if the table is global (:meth:`get_type` returns ``'module'``). "
+"For type parameter scopes (which are used for generic classes, functions, "
+"and type aliases), it is the name of the underlying class, function, or type "
+"alias. For type alias scopes, it is the name of the type alias. "
+"For :class:`~typing.TypeVar` bound scopes, it is the name of the ``TypeVar``."
 msgstr ""
 
 #: library/symtable.rst:120
@@ -162,8 +162,8 @@ msgstr ""
 
 #: library/symtable.rst:137
 msgid ""
-"Return a view object containing the names of symbols in the table. See the "
-":ref:`documentation of view objects <dict-views>`."
+"Return a view object containing the names of symbols in the table. See "
+"the :ref:`documentation of view objects <dict-views>`."
 msgstr ""
 
 #: library/symtable.rst:142
@@ -180,8 +180,8 @@ msgstr ""
 
 #: library/symtable.rst:155
 msgid ""
-"A namespace for a function or method.  This class inherits from "
-":class:`SymbolTable`."
+"A namespace for a function or method.  This class inherits "
+"from :class:`SymbolTable`."
 msgstr ""
 
 #: library/symtable.rst:160
@@ -351,8 +351,8 @@ msgstr ""
 #: library/symtable.rst:316
 msgid ""
 "In this example, the class-scoped symbol ``x`` is considered to be free from "
-"the perspective of ``C.method``, thereby allowing the latter to return *1* at"
-" runtime and not *2*."
+"the perspective of ``C.method``, thereby allowing the latter to return *1* "
+"at runtime and not *2*."
 msgstr ""
 
 #: library/symtable.rst:324
@@ -373,8 +373,8 @@ msgstr ""
 
 #: library/symtable.rst:342
 msgid ""
-"If the name is used as the target of a function or class statement, this will"
-" be true."
+"If the name is used as the target of a function or class statement, this "
+"will be true."
 msgstr ""
 
 #: library/symtable.rst:345
@@ -383,7 +383,8 @@ msgstr ""
 
 #: library/symtable.rst:347
 msgid ""
-">>> table = symtable.symtable(\"def some_func(): pass\", \"string\", \"exec\")\n"
+">>> table = symtable.symtable(\"def some_func(): pass\", \"string\", "
+"\"exec\")\n"
 ">>> table.lookup(\"some_func\").is_namespace()\n"
 "True"
 msgstr ""

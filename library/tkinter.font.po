@@ -28,8 +28,8 @@ msgstr ""
 
 #: library/tkinter.font.rst:11
 msgid ""
-"The :mod:`!tkinter.font` module provides the :class:`Font` class for creating"
-" and using named fonts."
+"The :mod:`!tkinter.font` module provides the :class:`Font` class for "
+"creating and using named fonts."
 msgstr ""
 
 #: library/tkinter.font.rst:14
@@ -41,8 +41,8 @@ msgid ""
 "The :class:`Font` class represents a named font. *Font* instances are given "
 "unique names and can be specified by their family, size, and style "
 "configuration. Named fonts are Tk's method of creating and identifying fonts "
-"as a single object, rather than specifying a font by its attributes with each"
-" occurrence."
+"as a single object, rather than specifying a font by its attributes with "
+"each occurrence."
 msgstr ""
 
 #: library/tkinter.font.rst:29
@@ -109,11 +109,11 @@ msgstr ""
 
 #: library/tkinter.font.rst:53
 msgid ""
-"Return the actual attributes of the font, which may differ from the requested"
-" ones because of platform limitations. With no *option*, return a dictionary "
-"of all the attributes; if *option* is given, return the value of that single "
-"attribute. The attributes are resolved on the display of the *displayof* "
-"widget, or the main application window if it is not specified."
+"Return the actual attributes of the font, which may differ from the "
+"requested ones because of platform limitations. With no *option*, return a "
+"dictionary of all the attributes; if *option* is given, return the value of "
+"that single attribute. The attributes are resolved on the display of the "
+"*displayof* widget, or the main application window if it is not specified."
 msgstr ""
 
 #: library/tkinter.font.rst:62

@@ -24,8 +24,8 @@ msgstr ""
 
 #: howto/argparse.rst:9
 msgid ""
-"This tutorial is intended to be a gentle introduction to :mod:`argparse`, the"
-" recommended command-line parsing module in the Python standard library."
+"This tutorial is intended to be a gentle introduction to :mod:`argparse`, "
+"the recommended command-line parsing module in the Python standard library."
 msgstr ""
 
 #: howto/argparse.rst:14
@@ -84,14 +84,14 @@ msgstr ""
 
 #: howto/argparse.rst:56
 msgid ""
-"If we want beyond what it provides by default, we tell it a bit more. In this"
-" case, we want it to display a different directory, ``pypy``. What we did is "
-"specify what is known as a positional argument. It's named so because the "
-"program should know what to do with the value, solely based on where it "
-"appears on the command line. This concept is more relevant to a command like "
-":command:`cp`, whose most basic usage is ``cp SRC DEST``. The first position "
-"is *what you want copied,* and the second position is *where you want it "
-"copied to*."
+"If we want beyond what it provides by default, we tell it a bit more. In "
+"this case, we want it to display a different directory, ``pypy``. What we "
+"did is specify what is known as a positional argument. It's named so because "
+"the program should know what to do with the value, solely based on where it "
+"appears on the command line. This concept is more relevant to a command "
+"like :command:`cp`, whose most basic usage is ``cp SRC DEST``. The first "
+"position is *what you want copied,* and the second position is *where you "
+"want it copied to*."
 msgstr ""
 
 #: howto/argparse.rst:65
@@ -162,9 +162,9 @@ msgstr ""
 #: howto/argparse.rst:108
 msgid ""
 "The ``--help`` option, which can also be shortened to ``-h``, is the only "
-"option we get for free (i.e. no need to specify it). Specifying anything else"
-" results in an error. But even then, we do get a useful usage message, also "
-"for free."
+"option we get for free (i.e. no need to specify it). Specifying anything "
+"else results in an error. But even then, we do get a useful usage message, "
+"also for free."
 msgstr ""
 
 #: howto/argparse.rst:115
@@ -211,9 +211,10 @@ msgstr ""
 
 #: howto/argparse.rst:145
 msgid ""
-"We've added the :meth:`~ArgumentParser.add_argument` method, which is what we"
-" use to specify which command-line options the program is willing to accept. "
-"In this case, I've named it ``echo`` so that it's in line with its function."
+"We've added the :meth:`~ArgumentParser.add_argument` method, which is what "
+"we use to specify which command-line options the program is willing to "
+"accept. In this case, I've named it ``echo`` so that it's in line with its "
+"function."
 msgstr ""
 
 #: howto/argparse.rst:149
@@ -222,8 +223,8 @@ msgstr ""
 
 #: howto/argparse.rst:151
 msgid ""
-"The :meth:`~ArgumentParser.parse_args` method actually returns some data from"
-" the options specified, in this case, ``echo``."
+"The :meth:`~ArgumentParser.parse_args` method actually returns some data "
+"from the options specified, in this case, ``echo``."
 msgstr ""
 
 #: howto/argparse.rst:154
@@ -236,10 +237,11 @@ msgstr ""
 
 #: howto/argparse.rst:159
 msgid ""
-"Note however that, although the help display looks nice and all, it currently"
-" is not as helpful as it can be. For example we see that we got ``echo`` as a"
-" positional argument, but we don't know what it does, other than by guessing "
-"or by reading the source code. So, let's make it a bit more useful::"
+"Note however that, although the help display looks nice and all, it "
+"currently is not as helpful as it can be. For example we see that we got "
+"``echo`` as a positional argument, but we don't know what it does, other "
+"than by guessing or by reading the source code. So, let's make it a bit more "
+"useful::"
 msgstr ""
 
 #: howto/argparse.rst:164
@@ -275,7 +277,8 @@ msgstr ""
 msgid ""
 "import argparse\n"
 "parser = argparse.ArgumentParser()\n"
-"parser.add_argument(\"square\", help=\"display a square of a given number\")\n"
+"parser.add_argument(\"square\", help=\"display a square of a given "
+"number\")\n"
 "args = parser.parse_args()\n"
 "print(args.square**2)"
 msgstr ""
@@ -292,15 +295,16 @@ msgstr ""
 #: howto/argparse.rst:201
 msgid ""
 "That didn't go so well. That's because :mod:`argparse` treats the options we "
-"give it as strings, unless we tell it otherwise. So, let's tell "
-":mod:`argparse` to treat that input as an integer::"
+"give it as strings, unless we tell it otherwise. So, let's "
+"tell :mod:`argparse` to treat that input as an integer::"
 msgstr ""
 
 #: howto/argparse.rst:205
 msgid ""
 "import argparse\n"
 "parser = argparse.ArgumentParser()\n"
-"parser.add_argument(\"square\", help=\"display a square of a given number\",\n"
+"parser.add_argument(\"square\", help=\"display a square of a given "
+"number\",\n"
 "                    type=int)\n"
 "args = parser.parse_args()\n"
 "print(args.square**2)"
@@ -374,8 +378,8 @@ msgid ""
 "To show that the option is actually optional, there is no error when running "
 "the program without it. Note that by default, if an optional argument isn't "
 "used, the relevant variable, in this case ``args.verbosity``, is given "
-"``None`` as a value, which is the reason it fails the truth test of the "
-":keyword:`if` statement."
+"``None`` as a value, which is the reason it fails the truth test of "
+"the :keyword:`if` statement."
 msgstr ""
 
 #: howto/argparse.rst:268
@@ -455,7 +459,8 @@ msgstr ""
 msgid ""
 "import argparse\n"
 "parser = argparse.ArgumentParser()\n"
-"parser.add_argument(\"-v\", \"--verbose\", help=\"increase output verbosity\",\n"
+"parser.add_argument(\"-v\", \"--verbose\", help=\"increase output "
+"verbosity\",\n"
 "                    action=\"store_true\")\n"
 "args = parser.parse_args()\n"
 "if args.verbose:\n"
@@ -599,7 +604,8 @@ msgstr ""
 msgid ""
 "$ python prog.py 4 -v 3\n"
 "usage: prog.py [-h] [-v {0,1,2}] square\n"
-"prog.py: error: argument -v/--verbosity: invalid choice: 3 (choose from 0, 1, 2)\n"
+"prog.py: error: argument -v/--verbosity: invalid choice: 3 (choose from 0, "
+"1, 2)\n"
 "$ python prog.py 4 -h\n"
 "usage: prog.py [-h] [-v {0,1,2}] square\n"
 "\n"
@@ -621,8 +627,8 @@ msgstr ""
 #: howto/argparse.rst:456
 msgid ""
 "Now, let's use a different approach of playing with verbosity, which is "
-"pretty common. It also matches the way the CPython executable handles its own"
-" verbosity argument (check the output of ``python --help``)::"
+"pretty common. It also matches the way the CPython executable handles its "
+"own verbosity argument (check the output of ``python --help``)::"
 msgstr ""
 
 #: howto/argparse.rst:460
@@ -706,8 +712,8 @@ msgstr ""
 #: howto/argparse.rst:518
 msgid ""
 "Sadly, our help output isn't very informative on the new ability our script "
-"has acquired, but that can always be fixed by improving the documentation for"
-" our script (e.g. via the ``help`` keyword argument)."
+"has acquired, but that can always be fixed by improving the documentation "
+"for our script (e.g. via the ``help`` keyword argument)."
 msgstr ""
 
 #: howto/argparse.rst:522
@@ -757,8 +763,8 @@ msgstr ""
 
 #: howto/argparse.rst:559
 msgid ""
-"First output went well, and fixes the bug we had before. That is, we want any"
-" value >= 2 to be as verbose as possible."
+"First output went well, and fixes the bug we had before. That is, we want "
+"any value >= 2 to be as verbose as possible."
 msgstr ""
 
 #: howto/argparse.rst:562
@@ -789,11 +795,11 @@ msgstr ""
 
 #: howto/argparse.rst:581
 msgid ""
-"We've just introduced yet another keyword, ``default``. We've set it to ``0``"
-" in order to make it comparable to the other int values. Remember that by "
-"default, if an optional argument isn't specified, it gets the ``None`` value,"
-" and that cannot be compared to an int value (hence the :exc:`TypeError` "
-"exception)."
+"We've just introduced yet another keyword, ``default``. We've set it to "
+"``0`` in order to make it comparable to the other int values. Remember that "
+"by default, if an optional argument isn't specified, it gets the ``None`` "
+"value, and that cannot be compared to an int value (hence "
+"the :exc:`TypeError` exception)."
 msgstr ""
 
 #: howto/argparse.rst:588
@@ -809,8 +815,8 @@ msgstr ""
 #: howto/argparse.rst:595
 msgid ""
 "You can go quite far just with what we've learned so far, and we have only "
-"scratched the surface. The :mod:`argparse` module is very powerful, and we'll"
-" explore a bit more of it before we end this tutorial."
+"scratched the surface. The :mod:`argparse` module is very powerful, and "
+"we'll explore a bit more of it before we end this tutorial."
 msgstr ""
 
 #: howto/argparse.rst:602
@@ -865,8 +871,8 @@ msgstr ""
 
 #: howto/argparse.rst:642
 msgid ""
-"Notice that so far we've been using verbosity level to *change* the text that"
-" gets displayed. The following example instead uses verbosity level to "
+"Notice that so far we've been using verbosity level to *change* the text "
+"that gets displayed. The following example instead uses verbosity level to "
 "display *more* text instead::"
 msgstr ""
 
@@ -936,12 +942,13 @@ msgstr ""
 
 #: howto/argparse.rst:704
 msgid ""
-"So far, we have been working with two methods of an "
-":class:`argparse.ArgumentParser` instance. Let's introduce a third one, "
-":meth:`~ArgumentParser.add_mutually_exclusive_group`. It allows for us to "
-"specify options that conflict with each other. Let's also change the rest of "
-"the program so that the new functionality makes more sense: we'll introduce "
-"the ``--quiet`` option, which will be the opposite of the ``--verbose`` one::"
+"So far, we have been working with two methods of "
+"an :class:`argparse.ArgumentParser` instance. Let's introduce a third "
+"one, :meth:`~ArgumentParser.add_mutually_exclusive_group`. It allows for us "
+"to specify options that conflict with each other. Let's also change the rest "
+"of the program so that the new functionality makes more sense: we'll "
+"introduce the ``--quiet`` option, which will be the opposite of the ``--"
+"verbose`` one::"
 msgstr ""
 
 #: howto/argparse.rst:712
@@ -967,8 +974,8 @@ msgstr ""
 
 #: howto/argparse.rst:730
 msgid ""
-"Our program is now simpler, and we've lost some functionality for the sake of"
-" demonstration. Anyways, here's the output:"
+"Our program is now simpler, and we've lost some functionality for the sake "
+"of demonstration. Anyways, here's the output:"
 msgstr ""
 
 #: howto/argparse.rst:733
@@ -989,9 +996,9 @@ msgstr ""
 
 #: howto/argparse.rst:748
 msgid ""
-"That should be easy to follow. I've added that last output so you can see the"
-" sort of flexibility you get, i.e. mixing long form options with short form "
-"ones."
+"That should be easy to follow. I've added that last output so you can see "
+"the sort of flexibility you get, i.e. mixing long form options with short "
+"form ones."
 msgstr ""
 
 #: howto/argparse.rst:752
@@ -1004,7 +1011,8 @@ msgstr ""
 msgid ""
 "import argparse\n"
 "\n"
-"parser = argparse.ArgumentParser(description=\"calculate X to the power of Y\")\n"
+"parser = argparse.ArgumentParser(description=\"calculate X to the power of "
+"Y\")\n"
 "group = parser.add_mutually_exclusive_group()\n"
 "group.add_argument(\"-v\", \"--verbose\", action=\"store_true\")\n"
 "group.add_argument(\"-q\", \"--quiet\", action=\"store_true\")\n"
@@ -1099,15 +1107,15 @@ msgstr ""
 
 #: howto/argparse.rst:841
 msgid ""
-"Once the messages in the ``.po`` file are translated and the translations are"
-" installed using :mod:`gettext`, :mod:`argparse` will be able to display the "
-"translated messages."
+"Once the messages in the ``.po`` file are translated and the translations "
+"are installed using :mod:`gettext`, :mod:`argparse` will be able to display "
+"the translated messages."
 msgstr ""
 
 #: howto/argparse.rst:845
 msgid ""
-"To translate your own strings in the :mod:`argparse` output, use "
-":mod:`gettext`."
+"To translate your own strings in the :mod:`argparse` output, "
+"use :mod:`gettext`."
 msgstr ""
 
 #: howto/argparse.rst:848
@@ -1117,9 +1125,9 @@ msgstr ""
 #: howto/argparse.rst:850
 msgid ""
 "The :mod:`argparse` module allows you to specify custom type converters for "
-"your command-line arguments. This allows you to modify user input before it's"
-" stored in the :class:`argparse.Namespace`. This can be useful when you need "
-"to pre-process the input before it is used in your program."
+"your command-line arguments. This allows you to modify user input before "
+"it's stored in the :class:`argparse.Namespace`. This can be useful when you "
+"need to pre-process the input before it is used in your program."
 msgstr ""
 
 #: howto/argparse.rst:855
@@ -1176,9 +1184,9 @@ msgstr ""
 
 #: howto/argparse.rst:890
 msgid ""
-"Without the custom type converters, the arguments would have treated the "
-"``-a`` and ``+a`` as the same argument, which would have been undesirable. By"
-" using custom type converters, we were able to differentiate between the two "
+"Without the custom type converters, the arguments would have treated the ``-"
+"a`` and ``+a`` as the same argument, which would have been undesirable. By "
+"using custom type converters, we were able to differentiate between the two "
 "arguments."
 msgstr ""
 

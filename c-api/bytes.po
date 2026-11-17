@@ -61,8 +61,8 @@ msgstr ""
 #: c-api/bytes.rst:46
 msgid ""
 "Return a new bytes object with a copy of the string *v* as value on success, "
-"and ``NULL`` on failure.  The parameter *v* must not be ``NULL``; it will not"
-" be checked."
+"and ``NULL`` on failure.  The parameter *v* must not be ``NULL``; it will "
+"not be checked."
 msgstr ""
 
 #: c-api/bytes.rst:53
@@ -81,10 +81,11 @@ msgstr ""
 #: c-api/bytes.rst:64
 msgid ""
 "Take a C :c:func:`printf`\\ -style *format* string and a variable number of "
-"arguments, calculate the size of the resulting Python bytes object and return"
-" a bytes object with the values formatted into it.  The variable arguments "
-"must be C types and must correspond exactly to the format characters in the "
-"*format* string.  The following format characters are allowed:"
+"arguments, calculate the size of the resulting Python bytes object and "
+"return a bytes object with the values formatted into it.  The variable "
+"arguments must be C types and must correspond exactly to the format "
+"characters in the *format* string.  The following format characters are "
+"allowed:"
 msgstr ""
 
 #: c-api/bytes.rst:76
@@ -277,11 +278,11 @@ msgstr ""
 msgid ""
 "Return a pointer to the contents of *o*.  The pointer refers to the internal "
 "buffer of *o*, which consists of ``len(o) + 1`` bytes.  The last byte in the "
-"buffer is always null, regardless of whether there are any other null bytes."
-"  The data must not be modified in any way, unless the object was just "
+"buffer is always null, regardless of whether there are any other null "
+"bytes.  The data must not be modified in any way, unless the object was just "
 "created using ``PyBytes_FromStringAndSize(NULL, size)``. It must not be "
-"deallocated.  If *o* is not a bytes object at all, :c:func:`PyBytes_AsString`"
-" returns ``NULL`` and raises :exc:`TypeError`."
+"deallocated.  If *o* is not a bytes object at "
+"all, :c:func:`PyBytes_AsString` returns ``NULL`` and raises :exc:`TypeError`."
 msgstr ""
 
 #: c-api/bytes.rst:166
@@ -304,11 +305,11 @@ msgstr ""
 #: c-api/bytes.rst:179
 msgid ""
 "The buffer refers to an internal buffer of *obj*, which includes an "
-"additional null byte at the end (not counted in *length*).  The data must not"
-" be modified in any way, unless the object was just created using "
+"additional null byte at the end (not counted in *length*).  The data must "
+"not be modified in any way, unless the object was just created using "
 "``PyBytes_FromStringAndSize(NULL, size)``.  It must not be deallocated.  If "
-"*obj* is not a bytes object at all, :c:func:`PyBytes_AsStringAndSize` returns"
-" ``-1`` and raises :exc:`TypeError`."
+"*obj* is not a bytes object at all, :c:func:`PyBytes_AsStringAndSize` "
+"returns ``-1`` and raises :exc:`TypeError`."
 msgstr ""
 
 #: c-api/bytes.rst:186
@@ -346,15 +347,15 @@ msgstr ""
 
 #: c-api/bytes.rst:219
 msgid ""
-"*sep* must be Python :class:`bytes` object. (Note that "
-":c:func:`PyUnicode_Join` accepts ``NULL`` separator and treats it as a space,"
-" whereas :c:func:`PyBytes_Join` doesn't accept ``NULL`` separator.)"
+"*sep* must be Python :class:`bytes` object. (Note "
+"that :c:func:`PyUnicode_Join` accepts ``NULL`` separator and treats it as a "
+"space, whereas :c:func:`PyBytes_Join` doesn't accept ``NULL`` separator.)"
 msgstr ""
 
 #: c-api/bytes.rst:224
 msgid ""
-"*iterable* must be an iterable object yielding objects that implement the "
-":ref:`buffer protocol <bufferobjects>`."
+"*iterable* must be an iterable object yielding objects that implement "
+"the :ref:`buffer protocol <bufferobjects>`."
 msgstr ""
 
 #: c-api/bytes.rst:227
@@ -408,15 +409,15 @@ msgstr ""
 
 #: c-api/bytes.rst:267
 msgid ""
-"On success, this function returns a :term:`strong reference` to a "
-":class:`str` object containing the representation. On failure, this returns "
-"``NULL`` with an exception set."
+"On success, this function returns a :term:`strong reference` to "
+"a :class:`str` object containing the representation. On failure, this "
+"returns ``NULL`` with an exception set."
 msgstr ""
 
 #: c-api/bytes.rst:274
 msgid ""
-"Unescape a backslash-escaped string *s*. *s* must not be ``NULL``. *len* must"
-" be the size of *s*."
+"Unescape a backslash-escaped string *s*. *s* must not be ``NULL``. *len* "
+"must be the size of *s*."
 msgstr ""
 
 #: c-api/bytes.rst:277
@@ -427,9 +428,9 @@ msgstr ""
 
 #: c-api/bytes.rst:280
 msgid ""
-"On success, this function returns a :term:`strong reference` to a Python "
-":class:`bytes` object containing the unescaped string. On failure, this "
-"function returns ``NULL`` with an exception set."
+"On success, this function returns a :term:`strong reference` to a "
+"Python :class:`bytes` object containing the unescaped string. On failure, "
+"this function returns ``NULL`` with an exception set."
 msgstr ""
 
 #: c-api/bytes.rst:284
@@ -442,8 +443,8 @@ msgstr ""
 
 #: c-api/bytes.rst:293
 msgid ""
-"The :c:type:`PyBytesWriter` API can be used to create a Python :class:`bytes`"
-" object."
+"The :c:type:`PyBytesWriter` API can be used to create a "
+"Python :class:`bytes` object."
 msgstr ""
 
 #: c-api/bytes.rst:300
@@ -473,8 +474,8 @@ msgstr ""
 #: c-api/bytes.rst:316
 msgid ""
 "If *size* is greater than zero, allocate *size* bytes, and set the writer "
-"size to *size*. The caller is responsible to write *size* bytes using "
-":c:func:`PyBytesWriter_GetData`. This function does not overallocate."
+"size to *size*. The caller is responsible to write *size* bytes "
+"using :c:func:`PyBytesWriter_GetData`. This function does not overallocate."
 msgstr ""
 
 #: c-api/bytes.rst:321 c-api/bytes.rst:450
@@ -492,8 +493,8 @@ msgstr ""
 
 #: c-api/bytes.rst:330
 msgid ""
-"On success, return a Python :class:`bytes` object. On error, set an exception"
-" and return ``NULL``."
+"On success, return a Python :class:`bytes` object. On error, set an "
+"exception and return ``NULL``."
 msgstr ""
 
 #: c-api/bytes.rst:333
@@ -516,8 +517,8 @@ msgstr ""
 
 #: c-api/bytes.rst:346
 msgid ""
-"Set an exception and return ``NULL`` if *buf* pointer is outside the internal"
-" buffer bounds."
+"Set an exception and return ``NULL`` if *buf* pointer is outside the "
+"internal buffer bounds."
 msgstr ""
 
 #: c-api/bytes.rst:349 c-api/bytes.rst:454
@@ -568,9 +569,9 @@ msgstr ""
 
 #: c-api/bytes.rst:380
 msgid ""
-"Similar to :c:func:`PyBytes_FromFormat`, but write the output directly at the"
-" writer end. Grow the writer internal buffer on demand. Then add the written "
-"size to the writer size."
+"Similar to :c:func:`PyBytes_FromFormat`, but write the output directly at "
+"the writer end. Grow the writer internal buffer on demand. Then add the "
+"written size to the writer size."
 msgstr ""
 
 #: c-api/bytes.rst:389
@@ -583,8 +584,8 @@ msgstr ""
 
 #: c-api/bytes.rst:395
 msgid ""
-"The function does not invalidate pointers returned by "
-":c:func:`PyBytesWriter_GetData`."
+"The function does not invalidate pointers returned "
+"by :c:func:`PyBytesWriter_GetData`."
 msgstr ""
 
 #: c-api/bytes.rst:398 c-api/bytes.rst:408
@@ -597,9 +598,9 @@ msgstr ""
 
 #: c-api/bytes.rst:404
 msgid ""
-"The pointer remains valid until a :c:type:`PyBytesWriter` function other than"
-" :c:func:`PyBytesWriter_GetData` or :c:func:`PyBytesWriter_GetSize` is called"
-" on *writer*."
+"The pointer remains valid until a :c:type:`PyBytesWriter` function other "
+"than :c:func:`PyBytesWriter_GetData` or :c:func:`PyBytesWriter_GetSize` is "
+"called on *writer*."
 msgstr ""
 
 #: c-api/bytes.rst:412
@@ -608,8 +609,8 @@ msgstr ""
 
 #: c-api/bytes.rst:416
 msgid ""
-"Resize the writer to *size* bytes. It can be used to enlarge or to shrink the"
-" writer. This function typically overallocates to achieve amortized "
+"Resize the writer to *size* bytes. It can be used to enlarge or to shrink "
+"the writer. This function typically overallocates to achieve amortized "
 "performance when resizing multiple times."
 msgstr ""
 

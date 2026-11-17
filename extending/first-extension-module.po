@@ -24,8 +24,8 @@ msgstr ""
 
 #: extending/first-extension-module.rst:11
 msgid ""
-"This tutorial will take you through creating a simple Python extension module"
-" written in C or C++."
+"This tutorial will take you through creating a simple Python extension "
+"module written in C or C++."
 msgstr ""
 
 #: extending/first-extension-module.rst:14
@@ -38,8 +38,8 @@ msgstr ""
 #: extending/first-extension-module.rst:18
 msgid ""
 "The tutorial assumes basic knowledge about Python: you should be able to "
-"define functions in Python code before starting to write them in C. See "
-":ref:`tutorial-index` for an introduction to Python itself."
+"define functions in Python code before starting to write them in C. "
+"See :ref:`tutorial-index` for an introduction to Python itself."
 msgstr ""
 
 #: extending/first-extension-module.rst:22
@@ -76,8 +76,8 @@ msgid ""
 "You need to be able to install Python packages. This tutorial uses `pip "
 "<https://pip.pypa.io/>`__ (``pip install``), but you can substitute any tool "
 "that can build and install ``pyproject.toml``-based projects, like `uv "
-"<https://docs.astral.sh/uv/>`_ (``uv pip install``). Preferably, have a "
-":ref:`virtual environment <venv-def>` activated."
+"<https://docs.astral.sh/uv/>`_ (``uv pip install``). Preferably, have "
+"a :ref:`virtual environment <venv-def>` activated."
 msgstr ""
 
 #: extending/first-extension-module.rst:49
@@ -101,11 +101,11 @@ msgstr ""
 #: extending/first-extension-module.rst:61
 msgid ""
 "Let's create an extension module called ``spam`` [#why-spam]_, which will "
-"include a Python interface to the C standard library function "
-":c:func:`system`. This function is defined in ``stdlib.h``. It takes a C "
-"string as argument, runs the argument as a system command, and returns a "
-"result value as an integer. A manual page for :c:func:`system` might "
-"summarize it this way::"
+"include a Python interface to the C standard library "
+"function :c:func:`system`. This function is defined in ``stdlib.h``. It "
+"takes a C string as argument, runs the argument as a system command, and "
+"returns a result value as an integer. A manual page for :c:func:`system` "
+"might summarize it this way::"
 msgstr ""
 
 #: extending/first-extension-module.rst:69
@@ -117,8 +117,8 @@ msgstr ""
 #: extending/first-extension-module.rst:72
 msgid ""
 "Note that like many functions in the C standard library, this function is "
-"already exposed in Python. In production, use :py:func:`os.system` or "
-":py:func:`subprocess.run` rather than the module you'll write here."
+"already exposed in Python. In production, use :py:func:`os.system` "
+"or :py:func:`subprocess.run` rather than the module you'll write here."
 msgstr ""
 
 #: extending/first-extension-module.rst:77
@@ -155,8 +155,8 @@ msgstr ""
 #: extending/first-extension-module.rst:102
 msgid ""
 "In this file, we'll include two headers: :file:`Python.h` to pull in all "
-"declarations of the Python C API, and :file:`stdlib.h` for the "
-":c:func:`system` function. [#stdlib-h]_"
+"declarations of the Python C API, and :file:`stdlib.h` for "
+"the :c:func:`system` function. [#stdlib-h]_"
 msgstr ""
 
 #: extending/first-extension-module.rst:106
@@ -271,8 +271,8 @@ msgstr ""
 
 #: extending/first-extension-module.rst:193
 msgid ""
-"When your extension is compiled and installed, start Python and try to import"
-" it. This should fail with the following exception:"
+"When your extension is compiled and installed, start Python and try to "
+"import it. This should fail with the following exception:"
 msgstr ""
 
 #: extending/first-extension-module.rst:197
@@ -280,7 +280,8 @@ msgid ""
 ">>> import spam\n"
 "Traceback (most recent call last):\n"
 "   ...\n"
-"ImportError: dynamic module does not define module export function (PyModExport_spam or PyInit_spam)"
+"ImportError: dynamic module does not define module export function "
+"(PyModExport_spam or PyInit_spam)"
 msgstr ""
 
 #: extending/first-extension-module.rst:206
@@ -290,8 +291,8 @@ msgstr ""
 #: extending/first-extension-module.rst:208
 msgid ""
 "The exception you got when you tried to import the module told you that "
-"Python is looking for a \"module export function\", also known as a "
-":ref:`module export hook <extension-export-hook>`. Let's define one."
+"Python is looking for a \"module export function\", also known as "
+"a :ref:`module export hook <extension-export-hook>`. Let's define one."
 msgstr ""
 
 #: extending/first-extension-module.rst:213
@@ -315,8 +316,8 @@ msgstr ""
 #: extending/first-extension-module.rst:224
 msgid ""
 "The :c:macro:`PyMODEXPORT_FUNC` macro declares the function's return type, "
-"and adds any special linkage declarations needed to make the function visible"
-" and usable when CPython loads it."
+"and adds any special linkage declarations needed to make the function "
+"visible and usable when CPython loads it."
 msgstr ""
 
 #: extending/first-extension-module.rst:228
@@ -345,7 +346,8 @@ msgid ""
 ">>> import spam\n"
 "Traceback (most recent call last):\n"
 "   ...\n"
-"SystemError: module export hook for module 'spam' failed without setting an exception"
+"SystemError: module export hook for module 'spam' failed without setting an "
+"exception"
 msgstr ""
 
 #: extending/first-extension-module.rst:249
@@ -361,8 +363,8 @@ msgstr ""
 
 #: extending/first-extension-module.rst:258
 msgid ""
-"Rather than ``NULL``, the export hook should return the information needed to"
-" create a module. Let's start with the basics: the name and docstring."
+"Rather than ``NULL``, the export hook should return the information needed "
+"to create a module. Let's start with the basics: the name and docstring."
 msgstr ""
 
 #: extending/first-extension-module.rst:262
@@ -379,7 +381,8 @@ msgid ""
 "static PySlot spam_slots[] = {\n"
 "   PySlot_STATIC_DATA(Py_mod_abi, &abi_info),\n"
 "   PySlot_STATIC_DATA(Py_mod_name, \"spam\"),\n"
-"   PySlot_STATIC_DATA(Py_mod_doc, \"A wonderful module with an example function\"),\n"
+"   PySlot_STATIC_DATA(Py_mod_doc, \"A wonderful module with an example "
+"function\"),\n"
 "   PySlot_END\n"
 "};"
 msgstr ""
@@ -414,8 +417,8 @@ msgstr ""
 msgid ""
 "The array is defined as ``static`` -- that is, not visible outside this "
 "``.c`` file. This will be a common theme. CPython only needs to access the "
-"export hook; all global variables and all other functions should generally be"
-" ``static``, so that they don't clash with other extensions."
+"export hook; all global variables and all other functions should generally "
+"be ``static``, so that they don't clash with other extensions."
 msgstr ""
 
 #: extending/first-extension-module.rst:298
@@ -465,8 +468,8 @@ msgstr ""
 msgid ""
 "One of the simplest ways to write glue code is a \":c:data:`METH_O`\" "
 "function, which takes two Python objects and returns one. All Python objects "
-"-- regardless of the Python type -- are represented in C as pointers to the "
-":c:type:`PyObject` structure."
+"-- regardless of the Python type -- are represented in C as pointers to "
+"the :c:type:`PyObject` structure."
 msgstr ""
 
 #: extending/first-extension-module.rst:337
@@ -485,8 +488,8 @@ msgstr ""
 #: extending/first-extension-module.rst:345
 msgid ""
 "For now, we ignore the arguments, and use the :c:macro:`Py_RETURN_NONE` "
-"macro, which expands to a ``return`` statement that properly returns a Python"
-" :py:data:`None` object."
+"macro, which expands to a ``return`` statement that properly returns a "
+"Python :py:data:`None` object."
 msgstr ""
 
 #: extending/first-extension-module.rst:349
@@ -521,16 +524,16 @@ msgstr ""
 
 #: extending/first-extension-module.rst:365
 msgid ""
-"``ml_flags``: a set of flags describing details like how Python arguments are"
-" passed to the C function. We'll use :c:data:`METH_O` here -- the flag that "
-"matches our ``spam_system`` function's signature."
+"``ml_flags``: a set of flags describing details like how Python arguments "
+"are passed to the C function. We'll use :c:data:`METH_O` here -- the flag "
+"that matches our ``spam_system`` function's signature."
 msgstr ""
 
 #: extending/first-extension-module.rst:370
 msgid ""
-"Because modules typically create several functions, these definitions need to"
-" be collected in an array, with a zero-filled sentinel at the end. Add this "
-"array just below the ``spam_system`` function:"
+"Because modules typically create several functions, these definitions need "
+"to be collected in an array, with a zero-filled sentinel at the end. Add "
+"this array just below the ``spam_system`` function:"
 msgstr ""
 
 #: extending/first-extension-module.rst:374
@@ -555,8 +558,8 @@ msgstr ""
 
 #: extending/first-extension-module.rst:380
 msgid ""
-"Next, we'll add the method to the module. Add a :c:data:`Py_mod_methods` slot"
-" to your :c:type:`PySlot` array:"
+"Next, we'll add the method to the module. Add a :c:data:`Py_mod_methods` "
+"slot to your :c:type:`PySlot` array:"
 msgstr ""
 
 #: extending/first-extension-module.rst:383
@@ -567,7 +570,8 @@ msgid ""
 "static PySlot spam_slots[] = {\n"
 "    PySlot_STATIC_DATA(Py_mod_abi, &abi_info),\n"
 "    PySlot_STATIC_DATA(Py_mod_name, \"spam\"),\n"
-"    PySlot_STATIC_DATA(Py_mod_doc, \"A wonderful module with an example function\"),\n"
+"    PySlot_STATIC_DATA(Py_mod_doc, \"A wonderful module with an example "
+"function\"),\n"
 "    PySlot_STATIC_DATA(Py_mod_methods, spam_methods),\n"
 "    PySlot_END\n"
 "};\n"
@@ -601,8 +605,8 @@ msgstr ""
 
 #: extending/first-extension-module.rst:405
 msgid ""
-"Check that the function accepts exactly one argument, as specified by the "
-":c:data:`METH_O` flag:"
+"Check that the function accepts exactly one argument, as specified by "
+"the :c:data:`METH_O` flag:"
 msgstr ""
 
 #: extending/first-extension-module.rst:408
@@ -627,8 +631,9 @@ msgstr ""
 
 #: extending/first-extension-module.rst:425
 msgid ""
-"The Python C API provides a function to create a Python :py:type:`int` object"
-" from a C ``int`` value: :c:func:`PyLong_FromLong`. [#why-pylongfromlong]_"
+"The Python C API provides a function to create a Python :py:type:`int` "
+"object from a C ``int`` value: :c:func:`PyLong_FromLong`. [#why-"
+"pylongfromlong]_"
 msgstr ""
 
 #: extending/first-extension-module.rst:428
@@ -678,23 +683,24 @@ msgstr ""
 msgid ""
 "The other one, ``PyObject *arg``, will be set to the object that the user "
 "passed from Python. We expect that it should be a Python string. In order to "
-"use the information in it, we will need to convert it to a C value -- in this"
-" case, a C string (``const char *``)."
+"use the information in it, we will need to convert it to a C value -- in "
+"this case, a C string (``const char *``)."
 msgstr ""
 
 #: extending/first-extension-module.rst:470
 msgid ""
 "There's a slight type mismatch here: Python's :py:class:`str` objects store "
 "Unicode text, but C strings are arrays of bytes. So, we'll need to *encode* "
-"the data, and we'll use the UTF-8 encoding for it. (UTF-8 might not always be"
-" correct for system commands, but it's what :py:meth:`str.encode` uses by "
+"the data, and we'll use the UTF-8 encoding for it. (UTF-8 might not always "
+"be correct for system commands, but it's what :py:meth:`str.encode` uses by "
 "default, and the C API has special support for it.)"
 msgstr ""
 
 #: extending/first-extension-module.rst:477
 msgid ""
-"The function to encode a Python string into a UTF-8 buffer is named "
-":c:func:`PyUnicode_AsUTF8AndSize` [#why-pyunicodeasutf8]_. Call it like this:"
+"The function to encode a Python string into a UTF-8 buffer is "
+"named :c:func:`PyUnicode_AsUTF8AndSize` [#why-pyunicodeasutf8]_. Call it "
+"like this:"
 msgstr ""
 
 #: extending/first-extension-module.rst:481
@@ -713,8 +719,8 @@ msgstr ""
 msgid ""
 "If :c:func:`PyUnicode_AsUTF8AndSize` is successful, *command* will point to "
 "the resulting C string -- a zero-terminated array of bytes [#embedded-nul]_. "
-"This buffer is managed by the *arg* object, which means we don't need to free"
-" it, but we must follow some rules:"
+"This buffer is managed by the *arg* object, which means we don't need to "
+"free it, but we must follow some rules:"
 msgstr ""
 
 #: extending/first-extension-module.rst:498
@@ -732,9 +738,9 @@ msgstr ""
 msgid ""
 "If :c:func:`PyUnicode_AsUTF8AndSize` was *not* successful, it returns a "
 "``NULL`` pointer. When calling *any* Python C API, we always need to handle "
-"such error cases. The way to do this in general is left for later chapters of"
-" this documentation. For now, be assured that we are already handling errors "
-"from :c:func:`PyLong_FromLong` correctly."
+"such error cases. The way to do this in general is left for later chapters "
+"of this documentation. For now, be assured that we are already handling "
+"errors from :c:func:`PyLong_FromLong` correctly."
 msgstr ""
 
 #: extending/first-extension-module.rst:510
@@ -777,8 +783,8 @@ msgstr ""
 
 #: extending/first-extension-module.rst:542
 msgid ""
-"Now, all that is left is calling the C library function :c:func:`system` with"
-" the ``char *`` buffer, and using its result instead of the ``3``:"
+"Now, all that is left is calling the C library function :c:func:`system` "
+"with the ``char *`` buffer, and using its result instead of the ``3``:"
 msgstr ""
 
 #: extending/first-extension-module.rst:545
@@ -798,8 +804,8 @@ msgstr ""
 
 #: extending/first-extension-module.rst:560
 msgid ""
-"Compile your module, restart Python, and test. This time, you should see your"
-" username -- the output of the ``whoami`` system command:"
+"Compile your module, restart Python, and test. This time, you should see "
+"your username -- the output of the ``whoami`` system command:"
 msgstr ""
 
 #: extending/first-extension-module.rst:564
@@ -880,7 +886,8 @@ msgid ""
 "static PySlot spam_slots[] = {\n"
 "    PySlot_STATIC_DATA(Py_mod_abi, &abi_info),\n"
 "    PySlot_STATIC_DATA(Py_mod_name, \"spam\"),\n"
-"    PySlot_STATIC_DATA(Py_mod_doc, \"A wonderful module with an example function\"),\n"
+"    PySlot_STATIC_DATA(Py_mod_doc, \"A wonderful module with an example "
+"function\"),\n"
 "    PySlot_STATIC_DATA(Py_mod_methods, spam_methods),\n"
 "    PySlot_END\n"
 "};\n"
@@ -910,9 +917,9 @@ msgstr ""
 
 #: extending/first-extension-module.rst:609
 msgid ""
-"The Python Packaging User Guide has a `list of recommended tools "
-"<https://packaging.python.org/en/latest/guides/tool-recommendations/#build-"
-"backends-for-extension-modules>`_; be sure to choose one for the C language."
+"The Python Packaging User Guide has a `list of recommended tools <https://"
+"packaging.python.org/en/latest/guides/tool-recommendations/#build-backends-"
+"for-extension-modules>`_; be sure to choose one for the C language."
 msgstr ""
 
 #: extending/first-extension-module.rst:614
@@ -973,8 +980,8 @@ msgstr ""
 msgid ""
 "On Linux, the Python development package may include a ``python3-config`` "
 "command that prints out the required compiler flags. If you use it, check "
-"that it corresponds to the CPython interpreter you'll use to load the module."
-" Then, start with the following command:"
+"that it corresponds to the CPython interpreter you'll use to load the "
+"module. Then, start with the following command:"
 msgstr ""
 
 #: extending/first-extension-module.rst:657
@@ -1000,17 +1007,17 @@ msgstr ""
 msgid ""
 "The source file name is entirely up to you, though some tools can be picky "
 "about the ``.c`` extension. This tutorial uses the traditional ``*module.c`` "
-"suffix. Some people would just use :file:`spam.c` to implement a module named"
-" ``spam``, projects where Python isn't the primary language might use "
+"suffix. Some people would just use :file:`spam.c` to implement a module "
+"named ``spam``, projects where Python isn't the primary language might use "
 "``py_spam.c``, and so on."
 msgstr ""
 
 #: extending/first-extension-module.rst:675
 msgid ""
-"Including :file:`stdlib.h` is technically not necessary, since "
-":file:`Python.h` includes it and :ref:`several other standard headers <capi-"
-"system-includes>` for its own use or for backwards compatibility. However, it"
-" is good practice to explicitly include what you need."
+"Including :file:`stdlib.h` is technically not necessary, "
+"since :file:`Python.h` includes it and :ref:`several other standard headers "
+"<capi-system-includes>` for its own use or for backwards compatibility. "
+"However, it is good practice to explicitly include what you need."
 msgstr ""
 
 #: extending/first-extension-module.rst:680
@@ -1028,21 +1035,21 @@ msgstr ""
 
 #: extending/first-extension-module.rst:688
 msgid ""
-"Here, ``PyUnicode`` refers to the original name of the Python :py:class:`str`"
-" class: ``unicode``."
+"Here, ``PyUnicode`` refers to the original name of the "
+"Python :py:class:`str` class: ``unicode``."
 msgstr ""
 
 #: extending/first-extension-module.rst:691
 msgid ""
 "The ``AndSize`` part of the name refers to the fact that this function can "
-"also retrieve the size of the buffer, using an output argument. We don't need"
-" this, so we set the second argument to NULL."
+"also retrieve the size of the buffer, using an output argument. We don't "
+"need this, so we set the second argument to NULL."
 msgstr ""
 
 #: extending/first-extension-module.rst:694
 msgid ""
-"We're ignoring the fact that Python strings can also contain NUL bytes, which"
-" terminate a C string. In other words, our function will treat "
+"We're ignoring the fact that Python strings can also contain NUL bytes, "
+"which terminate a C string. In other words, our function will treat "
 "``spam.system(\"foo\\0bar\")`` as ``spam.system(\"foo\")``. This possibility "
 "can lead to security issues, so the real ``os.system`` function size checks "
 "for this case and raises an error."

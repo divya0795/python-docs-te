@@ -34,8 +34,8 @@ msgstr ""
 
 #: c-api/tls.rst:15
 msgid ""
-"A :term:`thread state` does *not* need to be :term:`attached <attached thread"
-" state>` when calling these functions; they supply their own locking."
+"A :term:`thread state` does *not* need to be :term:`attached <attached "
+"thread state>` when calling these functions; they supply their own locking."
 msgstr ""
 
 #: c-api/tls.rst:18
@@ -46,10 +46,10 @@ msgstr ""
 
 #: c-api/tls.rst:22
 msgid ""
-"None of these API functions handle memory management on behalf of the "
-":c:expr:`void*` values.  You need to allocate and deallocate them yourself. "
-"If the :c:expr:`void*` values happen to be :c:expr:`PyObject*`, these "
-"functions don't do refcount operations on them either."
+"None of these API functions handle memory management on behalf of "
+"the :c:expr:`void*` values.  You need to allocate and deallocate them "
+"yourself. If the :c:expr:`void*` values happen to be :c:expr:`PyObject*`, "
+"these functions don't do refcount operations on them either."
 msgstr ""
 
 #: c-api/tls.rst:30
@@ -70,15 +70,15 @@ msgstr ""
 #: c-api/tls.rst:43
 msgid ""
 "This data structure represents the state of a thread key, the definition of "
-"which may depend on the underlying TLS implementation, and it has an internal"
-" field representing the key's initialization state.  There are no public "
-"members in this structure."
+"which may depend on the underlying TLS implementation, and it has an "
+"internal field representing the key's initialization state.  There are no "
+"public members in this structure."
 msgstr ""
 
 #: c-api/tls.rst:48
 msgid ""
-"When :ref:`Py_LIMITED_API <stable>` is not defined, static allocation of this"
-" type by :c:macro:`Py_tss_NEEDS_INIT` is allowed."
+"When :ref:`Py_LIMITED_API <stable>` is not defined, static allocation of "
+"this type by :c:macro:`Py_tss_NEEDS_INIT` is allowed."
 msgstr ""
 
 #: c-api/tls.rst:54
@@ -100,9 +100,9 @@ msgstr ""
 
 #: c-api/tls.rst:68
 msgid ""
-"Return a value which is the same state as a value initialized with "
-":c:macro:`Py_tss_NEEDS_INIT`, or ``NULL`` in the case of dynamic allocation "
-"failure."
+"Return a value which is the same state as a value initialized "
+"with :c:macro:`Py_tss_NEEDS_INIT`, or ``NULL`` in the case of dynamic "
+"allocation failure."
 msgstr ""
 
 #: c-api/tls.rst:75
@@ -125,8 +125,8 @@ msgstr ""
 msgid ""
 "The parameter *key* of these functions must not be ``NULL``.  Moreover, the "
 "behaviors of :c:func:`PyThread_tss_set` and :c:func:`PyThread_tss_get` are "
-"undefined if the given :c:type:`Py_tss_t` has not been initialized by "
-":c:func:`PyThread_tss_create`."
+"undefined if the given :c:type:`Py_tss_t` has not been initialized "
+"by :c:func:`PyThread_tss_create`."
 msgstr ""
 
 #: c-api/tls.rst:96
@@ -138,19 +138,19 @@ msgstr ""
 #: c-api/tls.rst:102
 msgid ""
 "Return a zero value on successful initialization of a TSS key.  The behavior "
-"is undefined if the value pointed to by the *key* argument is not initialized"
-" by :c:macro:`Py_tss_NEEDS_INIT`.  This function can be called repeatedly on "
-"the same key -- calling it on an already initialized key is a no-op and "
-"immediately returns success."
+"is undefined if the value pointed to by the *key* argument is not "
+"initialized by :c:macro:`Py_tss_NEEDS_INIT`.  This function can be called "
+"repeatedly on the same key -- calling it on an already initialized key is a "
+"no-op and immediately returns success."
 msgstr ""
 
 #: c-api/tls.rst:111
 msgid ""
 "Destroy a TSS key to forget the values associated with the key across all "
 "threads, and change the key's initialization state to uninitialized.  A "
-"destroyed key is able to be initialized again by "
-":c:func:`PyThread_tss_create`. This function can be called repeatedly on the "
-"same key -- calling it on an already destroyed key is a no-op."
+"destroyed key is able to be initialized again "
+"by :c:func:`PyThread_tss_create`. This function can be called repeatedly on "
+"the same key -- calling it on an already destroyed key is a no-op."
 msgstr ""
 
 #: c-api/tls.rst:120

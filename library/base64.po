@@ -29,30 +29,31 @@ msgstr ""
 #: library/base64.rst:16
 msgid ""
 "This module provides functions for encoding binary data to printable ASCII "
-"characters and decoding such encodings back to binary data. This includes the"
-" :ref:`encodings specified in <base64-rfc-4648>` :rfc:`4648` (Base64, Base32 "
-"and Base16), the :ref:`Base85 encoding <base64-base-85>` specified in `PDF "
-"2.0 <https://pdfa.org/resource/iso-32000-2/>`_, and non-standard variants of "
-"Base85 used elsewhere."
+"characters and decoding such encodings back to binary data. This includes "
+"the :ref:`encodings specified in <base64-rfc-4648>` :rfc:`4648` (Base64, "
+"Base32 and Base16), the :ref:`Base85 encoding <base64-base-85>` specified in "
+"`PDF 2.0 <https://pdfa.org/resource/iso-32000-2/>`_, and non-standard "
+"variants of Base85 used elsewhere."
 msgstr ""
 
 #: library/base64.rst:24
 msgid ""
 "There are two interfaces provided by this module.  The modern interface "
-"supports encoding :term:`bytes-like objects <bytes-like object>` to ASCII "
-":class:`bytes`, and decoding :term:`bytes-like objects <bytes-like object>` "
-"or strings containing ASCII to :class:`bytes`.  Both base-64 alphabets "
-"defined in :rfc:`4648` (normal, and URL- and filesystem-safe) are supported."
+"supports encoding :term:`bytes-like objects <bytes-like object>` to "
+"ASCII :class:`bytes`, and decoding :term:`bytes-like objects <bytes-like "
+"object>` or strings containing ASCII to :class:`bytes`.  Both base-64 "
+"alphabets defined in :rfc:`4648` (normal, and URL- and filesystem-safe) are "
+"supported."
 msgstr ""
 
 #: library/base64.rst:30
 msgid ""
 "The :ref:`legacy interface <base64-legacy>` does not support decoding from "
-"strings, but it does provide functions for encoding and decoding to and from "
-":term:`file objects <file object>`.  It only supports the Base64 standard "
-"alphabet, and it adds newlines every 76 characters as per :rfc:`2045`.  Note "
-"that if you are looking for :rfc:`2045` support you probably want to be "
-"looking at the :mod:`email` package instead."
+"strings, but it does provide functions for encoding and decoding to and "
+"from :term:`file objects <file object>`.  It only supports the Base64 "
+"standard alphabet, and it adds newlines every 76 characters as "
+"per :rfc:`2045`.  Note that if you are looking for :rfc:`2045` support you "
+"probably want to be looking at the :mod:`email` package instead."
 msgstr ""
 
 #: library/base64.rst:38
@@ -75,28 +76,29 @@ msgstr ""
 #: library/base64.rst:52
 msgid ""
 "The :rfc:`4648` encodings are suitable for encoding binary data so that it "
-"can be safely sent by email, used as parts of URLs, or included as part of an"
-" HTTP POST request."
+"can be safely sent by email, used as parts of URLs, or included as part of "
+"an HTTP POST request."
 msgstr ""
 
 #: library/base64.rst:58
 msgid ""
-"Encode the :term:`bytes-like object` *s* using Base64 and return the encoded "
-":class:`bytes`."
+"Encode the :term:`bytes-like object` *s* using Base64 and return the "
+"encoded :class:`bytes`."
 msgstr ""
 
 #: library/base64.rst:61
 msgid ""
 "Optional *altchars* must be a :term:`bytes-like object` of length 2 which "
 "specifies an alternative alphabet for the ``+`` and ``/`` characters. This "
-"allows an application to e.g. generate URL or filesystem safe Base64 strings."
-"  The default is ``None``, for which the standard Base64 alphabet is used."
+"allows an application to e.g. generate URL or filesystem safe Base64 "
+"strings.  The default is ``None``, for which the standard Base64 alphabet is "
+"used."
 msgstr ""
 
 #: library/base64.rst:66
 msgid ""
-"If *padded* is true (default), pad the encoded data with the '=' character to"
-" a size multiple of 4. If *padded* is false, do not add the pad characters."
+"If *padded* is true (default), pad the encoded data with the '=' character "
+"to a size multiple of 4. If *padded* is false, do not add the pad characters."
 msgstr ""
 
 #: library/base64.rst:70 library/base64.rst:323
@@ -127,10 +129,10 @@ msgstr ""
 msgid ""
 "If *padded* is true, the last group of 4 base 64 alphabet characters must be "
 "padded with the '=' character. If *padded* is false, padding is neither "
-"required nor recognized: the '=' character is not treated as padding but as a"
-" non-alphabet character, which means it is silently discarded when *validate*"
-" is false, or causes an :exc:`~binascii.Error` when *validate* is true unless"
-" b'=' is included in *ignorechars*."
+"required nor recognized: the '=' character is not treated as padding but as "
+"a non-alphabet character, which means it is silently discarded when "
+"*validate* is false, or causes an :exc:`~binascii.Error` when *validate* is "
+"true unless b'=' is included in *ignorechars*."
 msgstr ""
 
 #: library/base64.rst:96
@@ -144,35 +146,35 @@ msgid ""
 "containing characters to ignore from the input when *validate* is true. If "
 "*ignorechars* contains the pad character ``'='``,  the pad characters "
 "presented before the end of the encoded data and the excess pad characters "
-"will be ignored. The default value of *validate* is ``True`` if *ignorechars*"
-" is specified, ``False`` otherwise."
+"will be ignored. The default value of *validate* is ``True`` if "
+"*ignorechars* is specified, ``False`` otherwise."
 msgstr ""
 
 #: library/base64.rst:107
 msgid ""
 "If *validate* is false, characters that are neither in the normal base-64 "
-"alphabet nor (if *ignorechars* is not specified) the alternative alphabet are"
-" discarded prior to the padding check, but the ``+`` and ``/`` characters "
+"alphabet nor (if *ignorechars* is not specified) the alternative alphabet "
+"are discarded prior to the padding check, but the ``+`` and ``/`` characters "
 "keep their meaning if they are not in *altchars* (they will be discarded in "
 "future Python versions)."
 msgstr ""
 
 #: library/base64.rst:114
 msgid ""
-"If *validate* is true, these non-alphabet characters in the input result in a"
-" :exc:`binascii.Error`."
+"If *validate* is true, these non-alphabet characters in the input result in "
+"a :exc:`binascii.Error`."
 msgstr ""
 
 #: library/base64.rst:117
 msgid ""
-"If *canonical* is true, non-zero padding bits are rejected. See "
-":func:`binascii.a2b_base64` for details."
+"If *canonical* is true, non-zero padding bits are rejected. "
+"See :func:`binascii.a2b_base64` for details."
 msgstr ""
 
 #: library/base64.rst:120
 msgid ""
-"For more information about the strict base64 check, see "
-":func:`binascii.a2b_base64`"
+"For more information about the strict base64 check, "
+"see :func:`binascii.a2b_base64`"
 msgstr ""
 
 #: library/base64.rst:122 library/base64.rst:220 library/base64.rst:247
@@ -200,9 +202,9 @@ msgstr ""
 #: library/base64.rst:144
 msgid ""
 "Encode :term:`bytes-like object` *s* using the URL- and filesystem-safe "
-"alphabet, which substitutes ``-`` instead of ``+`` and ``_`` instead of ``/``"
-" in the standard Base64 alphabet, and return the encoded :class:`bytes`.  The"
-" result can still contain ``=`` if *padded* is true (default)."
+"alphabet, which substitutes ``-`` instead of ``+`` and ``_`` instead of ``/"
+"`` in the standard Base64 alphabet, and return the encoded :class:`bytes`.  "
+"The result can still contain ``=`` if *padded* is true (default)."
 msgstr ""
 
 #: library/base64.rst:150
@@ -213,8 +215,8 @@ msgstr ""
 msgid ""
 "Decode :term:`bytes-like object` or ASCII string *s* using the URL- and "
 "filesystem-safe alphabet, which substitutes ``-`` instead of ``+`` and ``_`` "
-"instead of ``/`` in the standard Base64 alphabet, and return the decoded "
-":class:`bytes`."
+"instead of ``/`` in the standard Base64 alphabet, and return the "
+"decoded :class:`bytes`."
 msgstr ""
 
 #: library/base64.rst:162
@@ -229,14 +231,14 @@ msgstr ""
 
 #: library/base64.rst:172
 msgid ""
-"Encode the :term:`bytes-like object` *s* using Base32 and return the encoded "
-":class:`bytes`."
+"Encode the :term:`bytes-like object` *s* using Base32 and return the "
+"encoded :class:`bytes`."
 msgstr ""
 
 #: library/base64.rst:175
 msgid ""
-"If *padded* is true (default), pad the encoded data with the '=' character to"
-" a size multiple of 8. If *padded* is false, do not add the pad characters."
+"If *padded* is true (default), pad the encoded data with the '=' character "
+"to a size multiple of 8. If *padded* is false, do not add the pad characters."
 msgstr ""
 
 #: library/base64.rst:179 library/base64.rst:256 library/base64.rst:382
@@ -261,8 +263,8 @@ msgstr ""
 
 #: library/base64.rst:196
 msgid ""
-":rfc:`4648` allows for optional mapping of the digit 0 (zero) to the letter O"
-" (oh), and for optional mapping of the digit 1 (one) to either the letter I "
+":rfc:`4648` allows for optional mapping of the digit 0 (zero) to the letter "
+"O (oh), and for optional mapping of the digit 1 (one) to either the letter I "
 "(eye) or letter L (el).  The optional argument *map01* when not ``None``, "
 "specifies which letter the digit 1 should be mapped to (when *map01* is not "
 "``None``, the digit 0 is always mapped to the letter O).  For security "
@@ -274,8 +276,8 @@ msgstr ""
 msgid ""
 "If *padded* is true, the last group of 8 base 32 alphabet characters must be "
 "padded with the '=' character. If *padded* is false, padding is neither "
-"required nor recognized: the '=' character is not treated as padding but as a"
-" non-alphabet character, which means it raises an :exc:`~binascii.Error` "
+"required nor recognized: the '=' character is not treated as padding but as "
+"a non-alphabet character, which means it raises an :exc:`~binascii.Error` "
 "unless b'=' is included in *ignorechars*."
 msgstr ""
 
@@ -288,8 +290,8 @@ msgstr ""
 
 #: library/base64.rst:213
 msgid ""
-"If *canonical* is true, non-zero padding bits are rejected. See "
-":func:`binascii.a2b_base32` for details."
+"If *canonical* is true, non-zero padding bits are rejected. "
+"See :func:`binascii.a2b_base32` for details."
 msgstr ""
 
 #: library/base64.rst:216 library/base64.rst:276
@@ -312,16 +314,16 @@ msgstr ""
 
 #: library/base64.rst:240
 msgid ""
-"This version does not allow the digit 0 (zero) to the letter O (oh) and digit"
-" 1 (one) to either the letter I (eye) or letter L (el) mappings, all these "
-"characters are included in the Extended Hex Alphabet and are not "
+"This version does not allow the digit 0 (zero) to the letter O (oh) and "
+"digit 1 (one) to either the letter I (eye) or letter L (el) mappings, all "
+"these characters are included in the Extended Hex Alphabet and are not "
 "interchangeable."
 msgstr ""
 
 #: library/base64.rst:253
 msgid ""
-"Encode the :term:`bytes-like object` *s* using Base16 and return the encoded "
-":class:`bytes`."
+"Encode the :term:`bytes-like object` *s* using Base16 and return the "
+"encoded :class:`bytes`."
 msgstr ""
 
 #: library/base64.rst:260 library/base64.rst:388 library/base64.rst:430
@@ -353,15 +355,15 @@ msgstr ""
 
 #: library/base64.rst:296
 msgid ""
-"A separate version, using a different output character set, was defined as an"
-" April Fool's joke in :rfc:`1924` but is now used by Git and other software."
-"  This version is implemented by :func:`b85encode`."
+"A separate version, using a different output character set, was defined as "
+"an April Fool's joke in :rfc:`1924` but is now used by Git and other "
+"software.  This version is implemented by :func:`b85encode`."
 msgstr ""
 
 #: library/base64.rst:300
 msgid ""
-"Finally, a third version, using yet another output character set designed for"
-" safe inclusion in programming language strings, is defined by ZeroMQ and "
+"Finally, a third version, using yet another output character set designed "
+"for safe inclusion in programming language strings, is defined by ZeroMQ and "
 "implemented here by :func:`z85encode`."
 msgstr ""
 
@@ -397,8 +399,8 @@ msgstr ""
 
 #: library/base64.rst:316
 msgid ""
-"Encode the :term:`bytes-like object` *b* using Ascii85 and return the encoded"
-" :class:`bytes`."
+"Encode the :term:`bytes-like object` *b* using Ascii85 and return the "
+"encoded :class:`bytes`."
 msgstr ""
 
 #: library/base64.rst:319
@@ -412,16 +414,16 @@ msgstr ""
 msgid ""
 "*pad* controls whether zero-padding applied to the end of the input is fully "
 "retained in the output encoding, as done by ``btoa``, producing an exact "
-"multiple of 5 bytes of output. This is not part of the standard encoding used"
-" in PDF, as it does not preserve the length of the data."
+"multiple of 5 bytes of output. This is not part of the standard encoding "
+"used in PDF, as it does not preserve the length of the data."
 msgstr ""
 
 #: library/base64.rst:333
 msgid ""
 "*adobe* controls whether the encoded byte sequence is framed with ``<~`` and "
 "``~>``, as in a PostScript base-85 string literal.  Note that while "
-"ASCII85Decode streams in PDF documents *must* be terminated with ``~>``, they"
-" *must not* use a leading ``<~``."
+"ASCII85Decode streams in PDF documents *must* be terminated with ``~>``, "
+"they *must not* use a leading ``<~``."
 msgstr ""
 
 #: library/base64.rst:343
@@ -439,28 +441,28 @@ msgstr ""
 
 #: library/base64.rst:351
 msgid ""
-"*adobe* controls whether the ``<~`` and ``~>`` markers are present. While the"
-" leading ``<~`` is not required, the input must end with ``~>``, or a "
-":exc:`ValueError` is raised."
+"*adobe* controls whether the ``<~`` and ``~>`` markers are present. While "
+"the leading ``<~`` is not required, the input must end with ``~>``, or "
+"a :exc:`ValueError` is raised."
 msgstr ""
 
 #: library/base64.rst:355
 msgid ""
 "*ignorechars* should be a :term:`bytes-like object` containing characters to "
-"ignore from the input. This should only contain whitespace characters, and by"
-" default contains all whitespace characters in ASCII."
+"ignore from the input. This should only contain whitespace characters, and "
+"by default contains all whitespace characters in ASCII."
 msgstr ""
 
 #: library/base64.rst:360
 msgid ""
-"If *canonical* is true, non-canonical encodings are rejected. See "
-":func:`binascii.a2b_ascii85` for details."
+"If *canonical* is true, non-canonical encodings are rejected. "
+"See :func:`binascii.a2b_ascii85` for details."
 msgstr ""
 
 #: library/base64.rst:365
 msgid ""
-"Added the *canonical* parameter. Single-character final groups are now always"
-" rejected as encoding violations."
+"Added the *canonical* parameter. Single-character final groups are now "
+"always rejected as encoding violations."
 msgstr ""
 
 #: library/base64.rst:373
@@ -472,9 +474,9 @@ msgstr ""
 #: library/base64.rst:376
 msgid ""
 "The input is padded with ``b'\\0'`` so its length is a multiple of 4 bytes "
-"before encoding.  If *pad* is true, all the resulting characters are retained"
-" in the output, which will always be a multiple of 5 bytes, and thus the "
-"length of the data may not be preserved on decoding."
+"before encoding.  If *pad* is true, all the resulting characters are "
+"retained in the output, which will always be a multiple of 5 bytes, and thus "
+"the length of the data may not be preserved on decoding."
 msgstr ""
 
 #: library/base64.rst:394
@@ -485,8 +487,8 @@ msgstr ""
 
 #: library/base64.rst:400 library/base64.rst:442
 msgid ""
-"If *canonical* is true, non-canonical encodings are rejected. See "
-":func:`binascii.a2b_base85` for details."
+"If *canonical* is true, non-canonical encodings are rejected. "
+"See :func:`binascii.a2b_base85` for details."
 msgstr ""
 
 #: library/base64.rst:405 library/base64.rst:447
@@ -504,9 +506,9 @@ msgstr ""
 #: library/base64.rst:416
 msgid ""
 "The input is padded with ``b'\\0'`` so its length is a multiple of 4 bytes "
-"before encoding.  If *pad* is true, all the resulting characters are retained"
-" in the output, which will always be a multiple of 5 bytes, as required by "
-"the ZeroMQ standard."
+"before encoding.  If *pad* is true, all the resulting characters are "
+"retained in the output, which will always be a multiple of 5 bytes, as "
+"required by the ZeroMQ standard."
 msgstr ""
 
 #: library/base64.rst:427
@@ -525,10 +527,10 @@ msgstr ""
 
 #: library/base64.rst:460
 msgid ""
-"Decode the contents of the binary *input* file and write the resulting binary"
-" data to the *output* file. *input* and *output* must be :term:`file objects "
-"<file object>`. *input* will be read until ``input.readline()`` returns an "
-"empty bytes object."
+"Decode the contents of the binary *input* file and write the resulting "
+"binary data to the *output* file. *input* and *output* must be :term:`file "
+"objects <file object>`. *input* will be read until ``input.readline()`` "
+"returns an empty bytes object."
 msgstr ""
 
 #: library/base64.rst:468
@@ -539,12 +541,13 @@ msgstr ""
 
 #: library/base64.rst:476
 msgid ""
-"Encode the contents of the binary *input* file and write the resulting base64"
-" encoded data to the *output* file. *input* and *output* must be :term:`file "
-"objects <file object>`. *input* will be read until ``input.read()`` returns "
-"an empty bytes object. :func:`encode` inserts a newline character "
-"(``b'\\n'``) after every 76 bytes of the output, as well as ensuring that the"
-" output always ends with a newline, as per :rfc:`2045` (MIME)."
+"Encode the contents of the binary *input* file and write the resulting "
+"base64 encoded data to the *output* file. *input* and *output* must "
+"be :term:`file objects <file object>`. *input* will be read until "
+"``input.read()`` returns an empty bytes object. :func:`encode` inserts a "
+"newline character (``b'\\n'``) after every 76 bytes of the output, as well "
+"as ensuring that the output always ends with a newline, as per :rfc:`2045` "
+"(MIME)."
 msgstr ""
 
 #: library/base64.rst:486
@@ -588,14 +591,14 @@ msgstr ""
 
 #: library/base64.rst:518
 msgid ""
-"Section 5.2, \"Base64 Content-Transfer-Encoding,\" provides the definition of"
-" the base64 encoding."
+"Section 5.2, \"Base64 Content-Transfer-Encoding,\" provides the definition "
+"of the base64 encoding."
 msgstr ""
 
 #: library/base64.rst:521
 msgid ""
-"`ISO 32000-2 Portable document format - Part 2: PDF 2.0 "
-"<https://pdfa.org/resource/iso-32000-2/>`_"
+"`ISO 32000-2 Portable document format - Part 2: PDF 2.0 <https://pdfa.org/"
+"resource/iso-32000-2/>`_"
 msgstr ""
 
 #: library/base64.rst:522

@@ -43,10 +43,10 @@ msgstr ""
 #: library/profiling.sampling.rst:32
 msgid ""
 "Tachyon follows earlier work on external sampling profilers such as `Austin "
-"<https://github.com/P403n1x87/austin>`__, `py-spy "
-"<https://github.com/benfred/py-spy>`__, `Pyflame <https://github.com/uber-"
-"archive/pyflame>`__, and `rbspy <https://github.com/rbspy/rbspy>`__. We thank"
-" their authors and the wider profiling community for their work and ideas."
+"<https://github.com/P403n1x87/austin>`__, `py-spy <https://github.com/"
+"benfred/py-spy>`__, `Pyflame <https://github.com/uber-archive/pyflame>`__, "
+"and `rbspy <https://github.com/rbspy/rbspy>`__. We thank their authors and "
+"the wider profiling community for their work and ideas."
 msgstr ""
 
 #: library/profiling.sampling.rst:41
@@ -63,11 +63,11 @@ msgstr ""
 
 #: library/profiling.sampling.rst:48
 msgid ""
-"This approach rests on a simple principle: functions that consume significant"
-" CPU time will appear frequently in the collected samples. By gathering "
-"thousands of samples over a profiling session, Tachyon constructs an accurate"
-" statistical estimate of where time is spent. The more samples collected, the"
-" more precise this estimate becomes."
+"This approach rests on a simple principle: functions that consume "
+"significant CPU time will appear frequently in the collected samples. By "
+"gathering thousands of samples over a profiling session, Tachyon constructs "
+"an accurate statistical estimate of where time is spent. The more samples "
+"collected, the more precise this estimate becomes."
 msgstr ""
 
 #: library/profiling.sampling.rst:56
@@ -90,8 +90,8 @@ msgstr ""
 
 #: library/profiling.sampling.rst:75
 msgid ""
-"The time values shown in Tachyon's output are **estimates derived from sample"
-" counts**, not direct measurements. Tachyon counts how many times each "
+"The time values shown in Tachyon's output are **estimates derived from "
+"sample counts**, not direct measurements. Tachyon counts how many times each "
 "function appears in the collected samples, then multiplies by the sampling "
 "interval to estimate time."
 msgstr ""
@@ -109,16 +109,16 @@ msgstr ""
 msgid ""
 "The accuracy of these estimates depends on sample count. With 100,000 "
 "samples, a function showing 5% has a margin of error of roughly ±0.5%. With "
-"only 1,000 samples, the same 5% measurement could actually represent anywhere"
-" from 3% to 7% of real time."
+"only 1,000 samples, the same 5% measurement could actually represent "
+"anywhere from 3% to 7% of real time."
 msgstr ""
 
 #: library/profiling.sampling.rst:91
 msgid ""
-"This is why longer profiling durations and shorter sampling intervals produce"
-" more reliable results---they collect more samples. For most performance "
-"analysis, the default settings provide sufficient accuracy to identify "
-"bottlenecks and guide optimization efforts."
+"This is why longer profiling durations and shorter sampling intervals "
+"produce more reliable results---they collect more samples. For most "
+"performance analysis, the default settings provide sufficient accuracy to "
+"identify bottlenecks and guide optimization efforts."
 msgstr ""
 
 #: library/profiling.sampling.rst:96
@@ -140,15 +140,16 @@ msgstr ""
 #: library/profiling.sampling.rst:107
 msgid ""
 "For very short scripts that complete in under one second, the profiler may "
-"not collect enough samples for reliable results. Use :mod:`profiling.tracing`"
-" instead, or run the script in a loop to extend profiling time."
+"not collect enough samples for reliable results. "
+"Use :mod:`profiling.tracing` instead, or run the script in a loop to extend "
+"profiling time."
 msgstr ""
 
 #: library/profiling.sampling.rst:111
 msgid ""
 "When you need exact call counts, sampling cannot provide them. Sampling "
-"estimates frequency from snapshots, so if you need to know precisely how many"
-" times a function was called, use :mod:`profiling.tracing`."
+"estimates frequency from snapshots, so if you need to know precisely how "
+"many times a function was called, use :mod:`profiling.tracing`."
 msgstr ""
 
 #: library/profiling.sampling.rst:115
@@ -166,8 +167,8 @@ msgid ""
 "to every function call. A sampling profiler, by contrast, observes the "
 "program from outside at fixed intervals without modifying its execution. "
 "Think of the difference like this: tracing is like having someone follow you "
-"and write down every step you take, while sampling is like taking photographs"
-" every second and inferring your path from those snapshots."
+"and write down every step you take, while sampling is like taking "
+"photographs every second and inferring your path from those snapshots."
 msgstr ""
 
 #: library/profiling.sampling.rst:129
@@ -176,18 +177,18 @@ msgid ""
 "for production use. The profiled program runs at full speed because there is "
 "no instrumentation code running inside it, and the target process is never "
 "stopped or paused during sampling---Tachyon reads the call stack directly "
-"from the process's memory while it continues to run. You can attach to a live"
-" server, collect data, and detach without the application ever knowing it was"
-" observed. The trade-off is that very short-lived functions may be missed if "
-"they happen to complete between samples."
+"from the process's memory while it continues to run. You can attach to a "
+"live server, collect data, and detach without the application ever knowing "
+"it was observed. The trade-off is that very short-lived functions may be "
+"missed if they happen to complete between samples."
 msgstr ""
 
 #: library/profiling.sampling.rst:138
 msgid ""
-"Statistical profiling excels at answering the question, \"Where is my program"
-" spending time?\" It reveals hotspots and bottlenecks in production code "
-"where deterministic profiling overhead would be unacceptable. For exact call "
-"counts and complete call graphs, use :mod:`profiling.tracing` instead."
+"Statistical profiling excels at answering the question, \"Where is my "
+"program spending time?\" It reveals hotspots and bottlenecks in production "
+"code where deterministic profiling overhead would be unacceptable. For exact "
+"call counts and complete call graphs, use :mod:`profiling.tracing` instead."
 msgstr ""
 
 #: library/profiling.sampling.rst:145
@@ -320,9 +321,9 @@ msgstr ""
 
 #: library/profiling.sampling.rst:218
 msgid ""
-"This command is particularly valuable for investigating performance issues in"
-" production systems. The target process requires no modification and need not"
-" be restarted. The profiler attaches, collects samples for the specified "
+"This command is particularly valuable for investigating performance issues "
+"in production systems. The target process requires no modification and need "
+"not be restarted. The profiler attaches, collects samples for the specified "
 "duration, then detaches and produces output."
 msgstr ""
 
@@ -352,20 +353,21 @@ msgstr ""
 #: library/profiling.sampling.rst:242
 msgid ""
 "Unlike ``attach``, ``dump`` does not run a sampling loop: it reads the stack "
-"once. This is useful for investigating hung or unresponsive processes, or for"
-" answering \"what is this process doing right now?\"."
+"once. This is useful for investigating hung or unresponsive processes, or "
+"for answering \"what is this process doing right now?\"."
 msgstr ""
 
 #: library/profiling.sampling.rst:246
 msgid ""
 "The output mirrors a traceback (most recent call last) and annotates each "
-"thread with its current state (main thread, has GIL, on CPU, waiting for GIL,"
-" has exception, or idle):"
+"thread with its current state (main thread, has GIL, on CPU, waiting for "
+"GIL, has exception, or idle):"
 msgstr ""
 
 #: library/profiling.sampling.rst:250
 msgid ""
-"Stack dump for PID 12345, thread 140735 (main thread, has GIL, on CPU; most recent call last):\n"
+"Stack dump for PID 12345, thread 140735 (main thread, has GIL, on CPU; most "
+"recent call last):\n"
 "  File \"server.py\", line 28, in serve\n"
 "    await handle_request(req)\n"
 "  File \"handler.py\", line 91, in handle_request\n"
@@ -434,8 +436,8 @@ msgstr ""
 
 #: library/profiling.sampling.rst:284
 msgid ""
-"Reconstruct stacks across ``await`` boundaries. ``dump`` walks the task graph"
-" and emits one section per task, with ``<task>`` markers separating "
+"Reconstruct stacks across ``await`` boundaries. ``dump`` walks the task "
+"graph and emits one section per task, with ``<task>`` markers separating "
 "coroutines awaiting each other."
 msgstr ""
 
@@ -460,9 +462,9 @@ msgstr ""
 #: library/profiling.sampling.rst:297
 msgid ""
 "Pause every thread in the target while reading its stack and resume them "
-"after. Guarantees a fully consistent snapshot at the cost of briefly stopping"
-" the target. Without it, ``dump`` reads memory while the target keeps "
-"running, which is faster but can occasionally produce a torn stack."
+"after. Guarantees a fully consistent snapshot at the cost of briefly "
+"stopping the target. Without it, ``dump`` reads memory while the target "
+"keeps running, which is faster but can occasionally produce a torn stack."
 msgstr ""
 
 #: library/profiling.sampling.rst:307
@@ -483,10 +485,10 @@ msgstr ""
 
 #: library/profiling.sampling.rst:314
 msgid ""
-"This command is useful when you have captured profiling data in binary format"
-" and want to analyze it later or convert it to a visualization format. Binary"
-" profiles can be replayed multiple times to different formats without re-"
-"profiling."
+"This command is useful when you have captured profiling data in binary "
+"format and want to analyze it later or convert it to a visualization format. "
+"Binary profiles can be replayed multiple times to different formats without "
+"re-profiling."
 msgstr ""
 
 #: library/profiling.sampling.rst:321
@@ -531,8 +533,8 @@ msgstr ""
 #: library/profiling.sampling.rst:348
 msgid ""
 "If possible, profile during representative load rather than peak traffic. "
-"Profiles collected during normal operation are easier to interpret than those"
-" collected during unusual spikes."
+"Profiles collected during normal operation are easier to interpret than "
+"those collected during unusual spikes."
 msgstr ""
 
 #: library/profiling.sampling.rst:352
@@ -769,8 +771,8 @@ msgstr ""
 #: library/profiling.sampling.rst:467
 msgid ""
 "The :option:`--duration` option (:option:`-d`) sets how long to profile in "
-"seconds. By default, profiling continues until the target process exits or is"
-" interrupted::"
+"seconds. By default, profiling continues until the target process exits or "
+"is interrupted::"
 msgstr ""
 
 #: library/profiling.sampling.rst:470
@@ -791,9 +793,9 @@ msgstr ""
 
 #: library/profiling.sampling.rst:480
 msgid ""
-"Python programs often use multiple threads, whether explicitly through the "
-":mod:`threading` module or implicitly through libraries that manage thread "
-"pools."
+"Python programs often use multiple threads, whether explicitly through "
+"the :mod:`threading` module or implicitly through libraries that manage "
+"thread pools."
 msgstr ""
 
 #: library/profiling.sampling.rst:484
@@ -809,11 +811,11 @@ msgstr ""
 
 #: library/profiling.sampling.rst:489
 msgid ""
-"Multi-thread profiling reveals how work is distributed across threads and can"
-" identify threads that are blocked or starved. Each thread's samples are "
-"combined in the output, with the ability to filter by thread in some formats."
-" This option is particularly useful when investigating concurrency issues or "
-"when work is distributed across a thread pool."
+"Multi-thread profiling reveals how work is distributed across threads and "
+"can identify threads that are blocked or starved. Each thread's samples are "
+"combined in the output, with the ability to filter by thread in some "
+"formats. This option is particularly useful when investigating concurrency "
+"issues or when work is distributed across a thread pool."
 msgstr ""
 
 #: library/profiling.sampling.rst:499
@@ -833,9 +835,9 @@ msgid ""
 "However, non-blocking sampling can occasionally produce incomplete or "
 "inconsistent stack traces in applications with many generators or coroutines "
 "that rapidly switch between yield points, or in programs with very fast-"
-"changing call stacks where functions enter and exit between the start and end"
-" of a single stack read, resulting in reconstructed stacks that mix frames "
-"from different execution states or that never actually existed."
+"changing call stacks where functions enter and exit between the start and "
+"end of a single stack read, resulting in reconstructed stacks that mix "
+"frames from different execution states or that never actually existed."
 msgstr ""
 
 #: library/profiling.sampling.rst:513
@@ -871,10 +873,10 @@ msgstr ""
 
 #: library/profiling.sampling.rst:534
 msgid ""
-"Use blocking mode only when you observe inconsistent stacks in your profiles,"
-" particularly with generator-heavy or coroutine-heavy code. For most "
-"applications, the default non-blocking mode provides accurate results with "
-"zero impact on the target process."
+"Use blocking mode only when you observe inconsistent stacks in your "
+"profiles, particularly with generator-heavy or coroutine-heavy code. For "
+"most applications, the default non-blocking mode provides accurate results "
+"with zero impact on the target process."
 msgstr ""
 
 #: library/profiling.sampling.rst:541
@@ -883,10 +885,10 @@ msgstr ""
 
 #: library/profiling.sampling.rst:543
 msgid ""
-"The profiler can inject artificial frames into the captured stacks to provide"
-" additional context about what the interpreter is doing at the moment each "
-"sample is taken. These synthetic frames help distinguish different types of "
-"execution that would otherwise be invisible."
+"The profiler can inject artificial frames into the captured stacks to "
+"provide additional context about what the interpreter is doing at the moment "
+"each sample is taken. These synthetic frames help distinguish different "
+"types of execution that would otherwise be invisible."
 msgstr ""
 
 #: library/profiling.sampling.rst:548
@@ -999,11 +1001,11 @@ msgstr ""
 
 #: library/profiling.sampling.rst:602
 msgid ""
-"The :option:`--opcodes` option is compatible with :option:`--live`, "
-":option:`--flamegraph`, :option:`--heatmap`, and :option:`--gecko` formats. "
-"It requires additional memory to store opcode information and may slightly "
-"reduce sampling performance, but provides unprecedented visibility into "
-"Python's execution model."
+"The :option:`--opcodes` option is compatible with :option:`--"
+"live`, :option:`--flamegraph`, :option:`--heatmap`, and :option:`--gecko` "
+"formats. It requires additional memory to store opcode information and may "
+"slightly reduce sampling performance, but provides unprecedented visibility "
+"into Python's execution model."
 msgstr ""
 
 #: library/profiling.sampling.rst:609
@@ -1050,10 +1052,10 @@ msgid ""
 "When enabled, the profiler monitors the target process for child process "
 "creation. When a new Python child process is detected, a separate profiler "
 "instance is automatically spawned to profile it. This is useful for "
-"applications that use :mod:`multiprocessing`, :mod:`subprocess`, "
-":mod:`concurrent.futures` with "
-":class:`~concurrent.futures.ProcessPoolExecutor`, or other process spawning "
-"mechanisms."
+"applications that "
+"use :mod:`multiprocessing`, :mod:`subprocess`, :mod:`concurrent.futures` "
+"with :class:`~concurrent.futures.ProcessPoolExecutor`, or other process "
+"spawning mechanisms."
 msgstr ""
 
 #: library/profiling.sampling.rst:638
@@ -1111,8 +1113,8 @@ msgstr ""
 
 #: library/profiling.sampling.rst:672
 msgid ""
-"For pstats format (which defaults to stdout), subprocesses produce files like"
-" ``profile_12345.pstats``"
+"For pstats format (which defaults to stdout), subprocesses produce files "
+"like ``profile_12345.pstats``"
 msgstr ""
 
 #: library/profiling.sampling.rst:675
@@ -1152,8 +1154,8 @@ msgstr ""
 #: library/profiling.sampling.rst:699
 msgid ""
 "Sampling efficiency metrics help assess the quality of the collected data. "
-"These metrics appear in the profiler's terminal output and in the flame graph"
-" sidebar."
+"These metrics appear in the profiler's terminal output and in the flame "
+"graph sidebar."
 msgstr ""
 
 #: library/profiling.sampling.rst:703
@@ -1161,18 +1163,18 @@ msgid ""
 "**Sampling efficiency** is the percentage of sample attempts that succeeded. "
 "Each sample attempt reads the target process's call stack from memory. An "
 "attempt can fail if the process is in an inconsistent state at the moment of "
-"reading, such as during a context switch or while the interpreter is updating"
-" its internal structures. A low efficiency may indicate that the profiler "
-"could not keep up with the requested sampling rate, often due to system load "
-"or an overly aggressive interval setting."
+"reading, such as during a context switch or while the interpreter is "
+"updating its internal structures. A low efficiency may indicate that the "
+"profiler could not keep up with the requested sampling rate, often due to "
+"system load or an overly aggressive interval setting."
 msgstr ""
 
 #: library/profiling.sampling.rst:711
 msgid ""
 "**Missed samples** is the percentage of expected samples that were not "
 "collected. Based on the configured interval and duration, the profiler "
-"expects to collect a certain number of samples. Some samples may be missed if"
-" the profiler falls behind schedule, for example when the system is under "
+"expects to collect a certain number of samples. Some samples may be missed "
+"if the profiler falls behind schedule, for example when the system is under "
 "heavy load. A small percentage of missed samples is normal and does not "
 "significantly affect the statistical accuracy of the profile."
 msgstr ""
@@ -1204,8 +1206,8 @@ msgstr ""
 #: library/profiling.sampling.rst:736
 msgid ""
 "Wall-clock mode (:option:`--mode`\\ ``=wall``) captures all samples "
-"regardless of what the thread is doing. This is the default mode and provides"
-" a complete picture of where time passes during program execution::"
+"regardless of what the thread is doing. This is the default mode and "
+"provides a complete picture of where time passes during program execution::"
 msgstr ""
 
 #: library/profiling.sampling.rst:740
@@ -1252,9 +1254,9 @@ msgstr ""
 #: library/profiling.sampling.rst:765
 msgid ""
 "CPU mode is useful when you want to focus on computational hotspots without "
-"being distracted by I/O waits. If your program alternates between computation"
-" and network calls, CPU mode reveals which computational sections are most "
-"expensive."
+"being distracted by I/O waits. If your program alternates between "
+"computation and network calls, CPU mode reveals which computational sections "
+"are most expensive."
 msgstr ""
 
 #: library/profiling.sampling.rst:772
@@ -1263,8 +1265,8 @@ msgstr ""
 
 #: library/profiling.sampling.rst:774
 msgid ""
-"Running both wall-clock and CPU mode profiles can reveal whether a function's"
-" time is spent computing or waiting."
+"Running both wall-clock and CPU mode profiles can reveal whether a "
+"function's time is spent computing or waiting."
 msgstr ""
 
 #: library/profiling.sampling.rst:777
@@ -1276,8 +1278,8 @@ msgstr ""
 
 #: library/profiling.sampling.rst:781
 msgid ""
-"If a function is high in wall-clock mode but low or absent in CPU mode, it is"
-" I/O-bound or waiting. The function spends most of its time waiting for "
+"If a function is high in wall-clock mode but low or absent in CPU mode, it "
+"is I/O-bound or waiting. The function spends most of its time waiting for "
 "network, disk, locks, or sleep. CPU optimization won't help here; consider "
 "async I/O, connection pooling, or reducing wait time instead."
 msgstr ""
@@ -1299,8 +1301,10 @@ msgstr ""
 
 #: library/profiling.sampling.rst:802
 msgid ""
-"python -m profiling.sampling run --mode=wall script.py  # do_sleep ~98%, do_compute ~1%\n"
-"python -m profiling.sampling run --mode=cpu script.py   # do_sleep absent, do_compute dominates"
+"python -m profiling.sampling run --mode=wall script.py  # do_sleep ~98%, "
+"do_compute ~1%\n"
+"python -m profiling.sampling run --mode=cpu script.py   # do_sleep absent, "
+"do_compute dominates"
 msgstr ""
 
 #: library/profiling.sampling.rst:807
@@ -1337,8 +1341,8 @@ msgstr ""
 msgid ""
 "GIL mode helps answer questions like \"which functions are monopolizing the "
 "GIL?\" and \"why are my other threads starving?\" It can also be useful in "
-"single-threaded programs to distinguish Python execution time from time spent"
-" in C extensions or I/O."
+"single-threaded programs to distinguish Python execution time from time "
+"spent in C extensions or I/O."
 msgstr ""
 
 #: library/profiling.sampling.rst:829
@@ -1362,8 +1366,10 @@ msgstr ""
 
 #: library/profiling.sampling.rst:849
 msgid ""
-"python -m profiling.sampling run --mode=cpu script.py  # hash_work ~42%, python_work ~38%\n"
-"python -m profiling.sampling run --mode=gil script.py  # hash_work ~5%, python_work ~60%"
+"python -m profiling.sampling run --mode=cpu script.py  # hash_work ~42%, "
+"python_work ~38%\n"
+"python -m profiling.sampling run --mode=gil script.py  # hash_work ~5%, "
+"python_work ~60%"
 msgstr ""
 
 #: library/profiling.sampling.rst:854
@@ -1382,10 +1388,10 @@ msgstr ""
 
 #: library/profiling.sampling.rst:861
 msgid ""
-"Samples are recorded in two situations: when an exception is being propagated"
-" up the call stack (after ``raise`` but before being caught), or when code is"
-" executing inside an ``except`` block where exception information is still "
-"present in the thread state."
+"Samples are recorded in two situations: when an exception is being "
+"propagated up the call stack (after ``raise`` but before being caught), or "
+"when code is executing inside an ``except`` block where exception "
+"information is still present in the thread state."
 msgstr ""
 
 #: library/profiling.sampling.rst:866
@@ -1400,14 +1406,16 @@ msgid ""
 "    except ValueError:\n"
 "        process_error()              # Captured: inside except block\n"
 "    finally:\n"
-"        cleanup()                    # NOT captured: exception already handled\n"
+"        cleanup()                    # NOT captured: exception already "
+"handled\n"
 "\n"
 "def example_propagating():\n"
 "    try:\n"
 "        try:\n"
 "            raise ValueError(\"error\")\n"
 "        finally:\n"
-"            cleanup()                # Captured: exception propagating through\n"
+"            cleanup()                # Captured: exception propagating "
+"through\n"
 "    except ValueError:\n"
 "        pass\n"
 "\n"
@@ -1421,18 +1429,18 @@ msgstr ""
 #: library/profiling.sampling.rst:893
 msgid ""
 "Note that ``finally`` blocks are only captured when an exception is actively "
-"propagating through them. Once an ``except`` block finishes executing, Python"
-" clears the exception information before running any subsequent ``finally`` "
-"block. Similarly, ``finally`` blocks that run during normal execution (when "
-"no exception was raised) are not captured because no exception state is "
-"present."
+"propagating through them. Once an ``except`` block finishes executing, "
+"Python clears the exception information before running any subsequent "
+"``finally`` block. Similarly, ``finally`` blocks that run during normal "
+"execution (when no exception was raised) are not captured because no "
+"exception state is present."
 msgstr ""
 
 #: library/profiling.sampling.rst:899
 msgid ""
-"This mode is useful for understanding where your program spends time handling"
-" errors. Exception handling can be a significant source of overhead in code "
-"that uses exceptions for flow control (such as ``StopIteration`` in "
+"This mode is useful for understanding where your program spends time "
+"handling errors. Exception handling can be a significant source of overhead "
+"in code that uses exceptions for flow control (such as ``StopIteration`` in "
 "iterators) or in applications that process many error conditions (such as "
 "network servers handling connection failures)."
 msgstr ""
@@ -1440,11 +1448,11 @@ msgstr ""
 #: library/profiling.sampling.rst:905
 msgid ""
 "Exception mode helps answer questions like \"how much time is spent handling "
-"exceptions?\" and \"which exception handlers are the most expensive?\" It can"
-" reveal hidden performance costs in code that catches and processes many "
+"exceptions?\" and \"which exception handlers are the most expensive?\" It "
+"can reveal hidden performance costs in code that catches and processes many "
 "exceptions, even when those exceptions are handled gracefully. For example, "
-"if a parsing library uses exceptions internally to signal format errors, this"
-" mode will capture time spent in those handlers even if the calling code "
+"if a parsing library uses exceptions internally to signal format errors, "
+"this mode will capture time spent in those handlers even if the calling code "
 "never sees the exceptions."
 msgstr ""
 
@@ -1492,10 +1500,14 @@ msgstr ""
 #: library/profiling.sampling.rst:941
 msgid ""
 "Profile Stats (Mode: wall):\n"
-"     nsamples  sample%    tottime (ms)  cumul%   cumtime (ms)  filename:lineno(function)\n"
-"       234/892    11.7%       234.00     44.6%       892.00    server.py:145(handle_request)\n"
-"       156/156     7.8%       156.00      7.8%       156.00    <built-in>:0(socket.recv)\n"
-"        98/421     4.9%        98.00     21.1%       421.00    parser.py:67(parse_message)"
+"     nsamples  sample%    tottime (ms)  cumul%   cumtime (ms)  "
+"filename:lineno(function)\n"
+"       234/892    11.7%       234.00     44.6%       892.00    "
+"server.py:145(handle_request)\n"
+"       156/156     7.8%       156.00      7.8%       156.00    <built-"
+"in>:0(socket.recv)\n"
+"        98/421     4.9%        98.00     21.1%       421.00    "
+"parser.py:67(parse_message)"
 msgstr ""
 
 #: library/profiling.sampling.rst:947
@@ -1520,10 +1532,10 @@ msgstr ""
 
 #: library/profiling.sampling.rst:959
 msgid ""
-"**tottime** and **cumtime**: Estimated wall-clock time based on sample counts"
-" and the profiling duration. Time units are selected automatically based on "
-"the magnitude: seconds for large values, milliseconds for moderate values, or"
-" microseconds for small values."
+"**tottime** and **cumtime**: Estimated wall-clock time based on sample "
+"counts and the profiling duration. Time units are selected automatically "
+"based on the magnitude: seconds for large values, milliseconds for moderate "
+"values, or microseconds for small values."
 msgstr ""
 
 #: library/profiling.sampling.rst:964
@@ -1543,8 +1555,8 @@ msgstr ""
 #: library/profiling.sampling.rst:972
 msgid ""
 "**Indirect calls**: Functions with large differences between cumulative and "
-"direct samples. These are orchestration functions that delegate work to other"
-" functions. They appear frequently on the stack but rarely at the top."
+"direct samples. These are orchestration functions that delegate work to "
+"other functions. They appear frequently on the stack but rarely at the top."
 msgstr ""
 
 #: library/profiling.sampling.rst:976
@@ -1569,8 +1581,8 @@ msgstr ""
 
 #: library/profiling.sampling.rst:986
 msgid ""
-"The pstats format supports several options for controlling the display. The "
-":option:`--sort` option determines the column used for ordering results::"
+"The pstats format supports several options for controlling the display. "
+"The :option:`--sort` option determines the column used for ordering results::"
 msgstr ""
 
 #: library/profiling.sampling.rst:989
@@ -1590,8 +1602,8 @@ msgstr ""
 
 #: library/profiling.sampling.rst:997
 msgid ""
-"The :option:`--no-summary` option suppresses the header summary that precedes"
-" the statistics table."
+"The :option:`--no-summary` option suppresses the header summary that "
+"precedes the statistics table."
 msgstr ""
 
 #: library/profiling.sampling.rst:1002
@@ -1687,8 +1699,8 @@ msgid ""
 "The generated HTML file requires no external dependencies and can be opened "
 "directly in a web browser. The visualization displays call stacks as nested "
 "rectangles, with width proportional to time spent. Hovering over a rectangle "
-"shows details about that function including source code context, and clicking"
-" zooms into that portion of the call tree."
+"shows details about that function including source code context, and "
+"clicking zooms into that portion of the call tree."
 msgstr ""
 
 #: library/profiling.sampling.rst:1062
@@ -1752,9 +1764,9 @@ msgstr ""
 #: library/profiling.sampling.rst:1084
 msgid ""
 "Flame graphs are particularly effective for identifying deep call stacks and "
-"understanding the hierarchical structure of time consumption. Wide rectangles"
-" at the top indicate functions that consume significant time either directly "
-"or through their callees."
+"understanding the hierarchical structure of time consumption. Wide "
+"rectangles at the top indicate functions that consume significant time "
+"either directly or through their callees."
 msgstr ""
 
 #: library/profiling.sampling.rst:1091
@@ -1774,14 +1786,15 @@ msgid ""
 "python -m profiling.sampling run --binary -o baseline.bin script.py\n"
 "\n"
 "# After modifying code, generate differential flamegraph\n"
-"python -m profiling.sampling run --diff-flamegraph baseline.bin -o diff.html script.py"
+"python -m profiling.sampling run --diff-flamegraph baseline.bin -o diff.html "
+"script.py"
 msgstr ""
 
 #: library/profiling.sampling.rst:1103
 msgid ""
-"The visualization draws the current profile with frame widths showing current"
-" time consumption, then applies color to indicate how each function changed "
-"relative to the baseline."
+"The visualization draws the current profile with frame widths showing "
+"current time consumption, then applies color to indicate how each function "
+"changed relative to the baseline."
 msgstr ""
 
 #: library/profiling.sampling.rst:1107
@@ -1790,8 +1803,8 @@ msgstr ""
 
 #: library/profiling.sampling.rst:1109
 msgid ""
-"**Red**: Functions consuming more time (regressions). Lighter shades indicate"
-" modest increases, while darker shades show severe regressions."
+"**Red**: Functions consuming more time (regressions). Lighter shades "
+"indicate modest increases, while darker shades show severe regressions."
 msgstr ""
 
 #: library/profiling.sampling.rst:1112
@@ -1947,8 +1960,8 @@ msgstr ""
 #: library/profiling.sampling.rst:1206
 msgid ""
 "The heatmap overlays sample counts directly on your source code. Lines are "
-"color-coded from cool (few samples) to hot (many samples). Navigation buttons"
-" (▲▼) let you jump between callers and callees."
+"color-coded from cool (few samples) to hot (many samples). Navigation "
+"buttons (▲▼) let you jump between callers and callees."
 msgstr ""
 
 #: library/profiling.sampling.rst:1210
@@ -1983,10 +1996,10 @@ msgstr ""
 
 #: library/profiling.sampling.rst:1225
 msgid ""
-"**Call graph navigation**: each line shows navigation buttons (▲ for callers,"
-" ▼ for callees) that let you trace execution paths through your code. When "
-"multiple functions called or were called from a line, a menu appears showing "
-"all options with their sample counts."
+"**Call graph navigation**: each line shows navigation buttons (▲ for "
+"callers, ▼ for callees) that let you trace execution paths through your "
+"code. When multiple functions called or were called from a line, a menu "
+"appears showing all options with their sample counts."
 msgstr ""
 
 #: library/profiling.sampling.rst:1229
@@ -2036,9 +2049,9 @@ msgid ""
 "Heatmaps are especially useful when you know which file contains a "
 "performance issue but need to identify the specific lines. Many developers "
 "prefer this format because it maps directly to their source code, making it "
-"easy to read and navigate. For smaller scripts and focused analysis, heatmaps"
-" provide an intuitive view that shows exactly where time is spent without "
-"requiring interpretation of hierarchical visualizations."
+"easy to read and navigate. For smaller scripts and focused analysis, "
+"heatmaps provide an intuitive view that shows exactly where time is spent "
+"without requiring interpretation of hierarchical visualizations."
 msgstr ""
 
 #: library/profiling.sampling.rst:1261
@@ -2084,8 +2097,8 @@ msgstr ""
 
 #: library/profiling.sampling.rst:1280
 msgid ""
-"To analyze binary profiles, use the :ref:`replay command <replay-command>` to"
-" convert them to other formats like flame graphs or pstats output."
+"To analyze binary profiles, use the :ref:`replay command <replay-command>` "
+"to convert them to other formats like flame graphs or pstats output."
 msgstr ""
 
 #: library/profiling.sampling.rst:1285
@@ -2096,8 +2109,8 @@ msgstr ""
 msgid ""
 "The binary format combined with the replay command enables a record-and-"
 "replay workflow that separates data capture from analysis. Rather than "
-"generating visualizations during profiling, you capture raw data to a compact"
-" binary file and convert it to different formats later."
+"generating visualizations during profiling, you capture raw data to a "
+"compact binary file and convert it to different formats later."
 msgstr ""
 
 #: library/profiling.sampling.rst:1292
@@ -2134,7 +2147,8 @@ msgid ""
 "\n"
 "# Later, analyze with different formats\n"
 "python -m profiling.sampling replay profile.bin\n"
-"python -m profiling.sampling replay --flamegraph -o profile.html profile.bin\n"
+"python -m profiling.sampling replay --flamegraph -o profile.html "
+"profile.bin\n"
 "python -m profiling.sampling replay --heatmap -o heatmap profile.bin"
 msgstr ""
 
@@ -2160,8 +2174,8 @@ msgstr ""
 
 #: library/profiling.sampling.rst:1329
 msgid ""
-"Live mode displays real-time profiling statistics, showing combined data from"
-" multiple threads in a multi-threaded application."
+"Live mode displays real-time profiling statistics, showing combined data "
+"from multiple threads in a multi-threaded application."
 msgstr ""
 
 #: library/profiling.sampling.rst:1332
@@ -2175,16 +2189,16 @@ msgstr ""
 
 #: library/profiling.sampling.rst:1337
 msgid ""
-"The header displays the top 3 hottest functions, sampling efficiency metrics,"
-" and thread status statistics (GIL held percentage, CPU usage, GC time). The "
-"main table shows function statistics with the currently sorted column "
-"indicated by an arrow (▼)."
+"The header displays the top 3 hottest functions, sampling efficiency "
+"metrics, and thread status statistics (GIL held percentage, CPU usage, GC "
+"time). The main table shows function statistics with the currently sorted "
+"column indicated by an arrow (▼)."
 msgstr ""
 
 #: library/profiling.sampling.rst:1342
 msgid ""
-"When :option:`--opcodes` is enabled, an additional opcode panel appears below"
-" the main table, showing instruction-level statistics for the currently "
+"When :option:`--opcodes` is enabled, an additional opcode panel appears "
+"below the main table, showing instruction-level statistics for the currently "
 "selected function. This panel displays which bytecode instructions are "
 "executing most frequently, including specialized variants and their base "
 "opcodes."
@@ -2254,8 +2268,8 @@ msgstr ""
 #: library/profiling.sampling.rst:1380
 msgid ""
 "Enter filter mode to search for functions by name. The filter uses case-"
-"insensitive substring matching against the filename and function name. Type a"
-" pattern and press Enter to apply, or Escape to cancel. Glob patterns and "
+"insensitive substring matching against the filename and function name. Type "
+"a pattern and press Enter to apply, or Escape to cancel. Glob patterns and "
 "regular expressions are not supported."
 msgstr ""
 
@@ -2333,15 +2347,15 @@ msgstr ""
 msgid ""
 "When profiling finishes (duration expires or target process exits), the "
 "display shows a \"PROFILING COMPLETE\" banner and freezes the final results. "
-"You can still navigate, sort, and filter the results before pressing :kbd:`q`"
-" to exit."
+"You can still navigate, sort, and filter the results before "
+"pressing :kbd:`q` to exit."
 msgstr ""
 
 #: library/profiling.sampling.rst:1419
 msgid ""
-"Live mode is incompatible with output format options (:option:`--collapsed`, "
-":option:`--flamegraph`, and so on) because it uses an interactive terminal "
-"interface rather than producing file output."
+"Live mode is incompatible with output format options (:option:`--"
+"collapsed`, :option:`--flamegraph`, and so on) because it uses an "
+"interactive terminal interface rather than producing file output."
 msgstr ""
 
 #: library/profiling.sampling.rst:1425
@@ -2363,8 +2377,8 @@ msgstr ""
 msgid ""
 "Standard profiling of async code can be confusing because the physical call "
 "stack often shows event loop internals rather than the logical flow of your "
-"coroutines. Async-aware mode addresses this by tracking which task is running"
-" and presenting stacks that reflect the ``await`` chain."
+"coroutines. Async-aware mode addresses this by tracking which task is "
+"running and presenting stacks that reflect the ``await`` chain."
 msgstr ""
 
 #: library/profiling.sampling.rst:1438
@@ -2392,8 +2406,8 @@ msgstr ""
 #: library/profiling.sampling.rst:1459
 msgid ""
 "Async-aware profiling requires the target process to have the :mod:`asyncio` "
-"module loaded. If you profile a script before it imports asyncio, async-aware"
-" mode will not be able to capture task information."
+"module loaded. If you profile a script before it imports asyncio, async-"
+"aware mode will not be able to capture task information."
 msgstr ""
 
 #: library/profiling.sampling.rst:1465
@@ -2408,8 +2422,10 @@ msgstr ""
 
 #: library/profiling.sampling.rst:1469
 msgid ""
-"python -m profiling.sampling run --async-aware --async-mode=running async_script.py\n"
-"python -m profiling.sampling run --async-aware --async-mode=all async_script.py"
+"python -m profiling.sampling run --async-aware --async-mode=running "
+"async_script.py\n"
+"python -m profiling.sampling run --async-aware --async-mode=all "
+"async_script.py"
 msgstr ""
 
 #: library/profiling.sampling.rst:1472
@@ -2421,8 +2437,8 @@ msgstr ""
 
 #: library/profiling.sampling.rst:1476
 msgid ""
-"With :option:`--async-mode`\\ ``=all``, tasks that are suspended (awaiting "
-"I/O, locks, or other tasks) are also included. This mode is useful for "
+"With :option:`--async-mode`\\ ``=all``, tasks that are suspended (awaiting I/"
+"O, locks, or other tasks) are also included. This mode is useful for "
 "understanding what your program is waiting on, but produces larger profiles "
 "since every suspended task appears in each sample."
 msgstr ""
@@ -2434,9 +2450,9 @@ msgstr ""
 #: library/profiling.sampling.rst:1485
 msgid ""
 "In async-aware profiles, you will see ``<task>`` frames that mark boundaries "
-"between asyncio tasks. These are synthetic frames inserted by the profiler to"
-" show the task structure. The task name appears as the function name in these"
-" frames."
+"between asyncio tasks. These are synthetic frames inserted by the profiler "
+"to show the task structure. The task name appears as the function name in "
+"these frames."
 msgstr ""
 
 #: library/profiling.sampling.rst:1490
@@ -2528,8 +2544,8 @@ msgstr ""
 #: library/profiling.sampling.rst:1565
 msgid ""
 "Async stack mode: ``running`` (only the running task) or ``all`` (all tasks "
-"including waiting). Defaults to ``all`` for ``dump``. Requires "
-":option:`--async-aware`."
+"including waiting). Defaults to ``all`` for ``dump``. Requires :option:`--"
+"async-aware`."
 msgstr ""
 
 #: library/profiling.sampling.rst:1571
@@ -2576,8 +2592,8 @@ msgstr ""
 
 #: library/profiling.sampling.rst:1614
 msgid ""
-"Also profile subprocesses. Each subprocess gets its own profiler instance and"
-" output file. Incompatible with ``--live``."
+"Also profile subprocesses. Each subprocess gets its own profiler instance "
+"and output file. Incompatible with ``--live``."
 msgstr ""
 
 #: library/profiling.sampling.rst:1619
@@ -2649,19 +2665,19 @@ msgstr ""
 
 #: library/profiling.sampling.rst:1681
 msgid ""
-"Output file or directory path. Default behavior varies by format: "
-":option:`--pstats` prints a text table to stdout, while ``-o`` writes a "
-"binary pstats file. Other formats generate a file named "
-"``<format>_<PID>.<ext>`` (for example, ``flamegraph_12345.html``). "
-":option:`--heatmap` creates a directory named ``heatmap_<PID>``."
+"Output file or directory path. Default behavior varies by format: :option:`--"
+"pstats` prints a text table to stdout, while ``-o`` writes a binary pstats "
+"file. Other formats generate a file named ``<format>_<PID>.<ext>`` (for "
+"example, ``flamegraph_12345.html``). :option:`--heatmap` creates a directory "
+"named ``heatmap_<PID>``."
 msgstr ""
 
 #: library/profiling.sampling.rst:1689
 msgid ""
-"Automatically open HTML output (:option:`--flamegraph` and "
-":option:`--heatmap`) in your default web browser after generation. When "
-"profiling with :option:`--subprocesses`, only the main process opens the "
-"browser; subprocess outputs are never auto-opened."
+"Automatically open HTML output (:option:`--flamegraph` and :option:`--"
+"heatmap`) in your default web browser after generation. When profiling "
+"with :option:`--subprocesses`, only the main process opens the browser; "
+"subprocess outputs are never auto-opened."
 msgstr ""
 
 #: library/profiling.sampling.rst:1696

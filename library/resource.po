@@ -61,13 +61,13 @@ msgstr ""
 
 #: library/resource.rst:31
 msgid ""
-"Resources usage can be limited using the :func:`setrlimit` function described"
-" below. Each resource is controlled by a pair of limits: a soft limit and a "
-"hard limit. The soft limit is the current limit, and may be lowered or raised"
-" by a process over time. The soft limit can never exceed the hard limit. The "
-"hard limit can be lowered to any value greater than the soft limit, but not "
-"raised. (Only processes with the effective UID of the super-user can raise a "
-"hard limit.)"
+"Resources usage can be limited using the :func:`setrlimit` function "
+"described below. Each resource is controlled by a pair of limits: a soft "
+"limit and a hard limit. The soft limit is the current limit, and may be "
+"lowered or raised by a process over time. The soft limit can never exceed "
+"the hard limit. The hard limit can be lowered to any value greater than the "
+"soft limit, but not raised. (Only processes with the effective UID of the "
+"super-user can raise a hard limit.)"
 msgstr ""
 
 #: library/resource.rst:39
@@ -92,32 +92,32 @@ msgstr ""
 #: library/resource.rst:58
 msgid ""
 "Constants used to represent the soft and hard limit values if they cannot be "
-"represented in the ``rlim_t`` value in C. Can be equal to "
-":data:`RLIM_INFINITY`."
+"represented in the ``rlim_t`` value in C. Can be equal "
+"to :data:`RLIM_INFINITY`."
 msgstr ""
 
 #: library/resource.rst:67
 msgid ""
 "Returns a tuple ``(soft, hard)`` with the current soft and hard limits of "
-"*resource*. Raises :exc:`ValueError` if an invalid resource is specified, or "
-":exc:`error` if the underlying system call fails unexpectedly."
+"*resource*. Raises :exc:`ValueError` if an invalid resource is specified, "
+"or :exc:`error` if the underlying system call fails unexpectedly."
 msgstr ""
 
 #: library/resource.rst:74
 msgid ""
-"Sets new limits of consumption of *resource*. The *limits* argument must be a"
-" tuple ``(soft, hard)`` of two integers describing the new limits. A value of"
-" :const:`~resource.RLIM_INFINITY` can be used to request a limit that is "
+"Sets new limits of consumption of *resource*. The *limits* argument must be "
+"a tuple ``(soft, hard)`` of two integers describing the new limits. A value "
+"of :const:`~resource.RLIM_INFINITY` can be used to request a limit that is "
 "unlimited."
 msgstr ""
 
 #: library/resource.rst:79
 msgid ""
-"Raises :exc:`ValueError` if an invalid resource is specified, if the new soft"
-" limit exceeds the hard limit, or if a process tries to raise its hard limit."
-" Specifying a limit of :const:`~resource.RLIM_INFINITY` when the hard or "
-"system limit for that resource is not unlimited will result in a "
-":exc:`ValueError`.  A process with the effective UID of super-user can "
+"Raises :exc:`ValueError` if an invalid resource is specified, if the new "
+"soft limit exceeds the hard limit, or if a process tries to raise its hard "
+"limit. Specifying a limit of :const:`~resource.RLIM_INFINITY` when the hard "
+"or system limit for that resource is not unlimited will result in "
+"a :exc:`ValueError`.  A process with the effective UID of super-user can "
 "request any valid limit value, including unlimited, but :exc:`ValueError` "
 "will still be raised if the requested limit exceeds the system imposed limit."
 msgstr ""
@@ -140,10 +140,11 @@ msgstr ""
 
 #: library/resource.rst:98
 msgid ""
-"Combines :func:`setrlimit` and :func:`getrlimit` in one function and supports"
-" to get and set the resources limits of an arbitrary process. If *pid* is 0, "
-"then the call applies to the current process. *resource* and *limits* have "
-"the same meaning as in :func:`setrlimit`, except that *limits* is optional."
+"Combines :func:`setrlimit` and :func:`getrlimit` in one function and "
+"supports to get and set the resources limits of an arbitrary process. If "
+"*pid* is 0, then the call applies to the current process. *resource* and "
+"*limits* have the same meaning as in :func:`setrlimit`, except that *limits* "
+"is optional."
 msgstr ""
 
 #: library/resource.rst:104
@@ -155,9 +156,9 @@ msgstr ""
 
 #: library/resource.rst:108
 msgid ""
-"Raises :exc:`ProcessLookupError` when *pid* can't be found and "
-":exc:`PermissionError` when the user doesn't have ``CAP_SYS_RESOURCE`` for "
-"the process."
+"Raises :exc:`ProcessLookupError` when *pid* can't be found "
+"and :exc:`PermissionError` when the user doesn't have ``CAP_SYS_RESOURCE`` "
+"for the process."
 msgstr ""
 
 #: library/resource.rst:112
@@ -168,18 +169,18 @@ msgstr ""
 
 #: library/resource.rst:119
 msgid ""
-"These symbols define resources whose consumption can be controlled using the "
-":func:`setrlimit` and :func:`getrlimit` functions described below. The values"
-" of these symbols are exactly the constants used by C programs."
+"These symbols define resources whose consumption can be controlled using "
+"the :func:`setrlimit` and :func:`getrlimit` functions described below. The "
+"values of these symbols are exactly the constants used by C programs."
 msgstr ""
 
 #: library/resource.rst:123
 msgid ""
 "The Unix man page for :manpage:`getrlimit(2)` lists the available resources. "
 "Note that not all systems use the same symbol or same value to denote the "
-"same resource.  This module does not attempt to mask platform differences ---"
-" symbols not defined for a platform will not be available from this module on"
-" that platform."
+"same resource.  This module does not attempt to mask platform differences "
+"--- symbols not defined for a platform will not be available from this "
+"module on that platform."
 msgstr ""
 
 #: library/resource.rst:132
@@ -269,18 +270,18 @@ msgstr ""
 
 #: library/resource.rst:247
 msgid ""
-"The maximum size (in bytes) of socket buffer usage for this user. This limits"
-" the amount of network memory, and hence the amount of mbufs, that this user "
-"may hold at any time."
+"The maximum size (in bytes) of socket buffer usage for this user. This "
+"limits the amount of network memory, and hence the amount of mbufs, that "
+"this user may hold at any time."
 msgstr ""
 
 #: library/resource.rst:258
 msgid ""
-"The maximum size (in bytes) of the swap space that may be reserved or used by"
-" all of this user id's processes. This limit is enforced only if bit 1 of the"
-" vm.overcommit sysctl is set. Please see `tuning(7) "
-"<https://man.freebsd.org/cgi/man.cgi?query=tuning&sektion=7>`__ for a "
-"complete description of this sysctl."
+"The maximum size (in bytes) of the swap space that may be reserved or used "
+"by all of this user id's processes. This limit is enforced only if bit 1 of "
+"the vm.overcommit sysctl is set. Please see `tuning(7) <https://"
+"man.freebsd.org/cgi/man.cgi?query=tuning&sektion=7>`__ for a complete "
+"description of this sysctl."
 msgstr ""
 
 #: library/resource.rst:272
@@ -325,8 +326,8 @@ msgstr ""
 msgid ""
 "This function returns an object that describes the resources consumed by "
 "either the current process or its children, as specified by the *who* "
-"parameter.  The *who* parameter should be specified using one of the "
-":const:`!RUSAGE_\\*` constants described below."
+"parameter.  The *who* parameter should be specified using one of "
+"the :const:`!RUSAGE_\\*` constants described below."
 msgstr ""
 
 #: library/resource.rst:340
@@ -350,26 +351,27 @@ msgstr ""
 
 #: library/resource.rst:354
 msgid ""
-"The fields of the return value each describe how a particular system resource"
-" has been used, e.g. amount of time spent running in user mode or number of "
-"times the process was swapped out of main memory. Some values are dependent "
-"on the clock tick interval, e.g. the amount of memory the process is using."
+"The fields of the return value each describe how a particular system "
+"resource has been used, e.g. amount of time spent running in user mode or "
+"number of times the process was swapped out of main memory. Some values are "
+"dependent on the clock tick interval, e.g. the amount of memory the process "
+"is using."
 msgstr ""
 
 #: library/resource.rst:359
 msgid ""
-"For backward compatibility, the return value is also accessible as a tuple of"
-" 16 elements."
+"For backward compatibility, the return value is also accessible as a tuple "
+"of 16 elements."
 msgstr ""
 
 #: library/resource.rst:362
 msgid ""
 "The fields :attr:`!ru_utime` and :attr:`!ru_stime` of the return value are "
-"floating-point values representing the amount of time spent executing in user"
-" mode and the amount of time spent executing in system mode, respectively. "
-"The remaining values are integers. Consult the :manpage:`getrusage(2)` man "
-"page for detailed information about these values. A brief summary is "
-"presented here:"
+"floating-point values representing the amount of time spent executing in "
+"user mode and the amount of time spent executing in system mode, "
+"respectively. The remaining values are integers. Consult "
+"the :manpage:`getrusage(2)` man page for detailed information about these "
+"values. A brief summary is presented here:"
 msgstr ""
 
 #: library/resource.rst:369
@@ -578,8 +580,8 @@ msgstr ""
 
 #: library/resource.rst:404
 msgid ""
-"This function will raise a :exc:`ValueError` if an invalid *who* parameter is"
-" specified. It may also raise :exc:`error` exception in unusual "
+"This function will raise a :exc:`ValueError` if an invalid *who* parameter "
+"is specified. It may also raise :exc:`error` exception in unusual "
 "circumstances."
 msgstr ""
 
@@ -591,9 +593,9 @@ msgstr ""
 
 #: library/resource.rst:413
 msgid ""
-"The following :const:`!RUSAGE_\\*` symbols are passed to the "
-":func:`getrusage` function to specify which processes information should be "
-"provided for."
+"The following :const:`!RUSAGE_\\*` symbols are passed to "
+"the :func:`getrusage` function to specify which processes information should "
+"be provided for."
 msgstr ""
 
 #: library/resource.rst:419
@@ -604,8 +606,8 @@ msgstr ""
 
 #: library/resource.rst:425
 msgid ""
-"Pass to :func:`getrusage` to request resources consumed by child processes of"
-" the calling process which have been terminated and waited for."
+"Pass to :func:`getrusage` to request resources consumed by child processes "
+"of the calling process which have been terminated and waited for."
 msgstr ""
 
 #: library/resource.rst:431

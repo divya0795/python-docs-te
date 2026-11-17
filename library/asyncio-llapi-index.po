@@ -633,8 +633,9 @@ msgstr ""
 #: library/asyncio-llapi-index.rst:314
 msgid ""
 "Transports that can receive data (TCP and Unix connections, pipes, etc).  "
-"Returned from methods like :meth:`loop.create_connection`, "
-":meth:`loop.create_unix_connection`, :meth:`loop.connect_read_pipe`, etc:"
+"Returned from methods "
+"like :meth:`loop.create_connection`, :meth:`loop.create_unix_connection`, :meth:`loop.connect_read_pipe`, "
+"etc:"
 msgstr ""
 
 #: library/asyncio-llapi-index.rst:319
@@ -668,8 +669,9 @@ msgstr ""
 #: library/asyncio-llapi-index.rst:334
 msgid ""
 "Transports that can Send data (TCP and Unix connections, pipes, etc).  "
-"Returned from methods like :meth:`loop.create_connection`, "
-":meth:`loop.create_unix_connection`, :meth:`loop.connect_write_pipe`, etc:"
+"Returned from methods "
+"like :meth:`loop.create_connection`, :meth:`loop.create_unix_connection`, :meth:`loop.connect_write_pipe`, "
+"etc:"
 msgstr ""
 
 #: library/asyncio-llapi-index.rst:339
@@ -768,8 +770,8 @@ msgstr ""
 
 #: library/asyncio-llapi-index.rst:386
 msgid ""
-"Low-level transport abstraction over subprocesses. Returned by "
-":meth:`loop.subprocess_exec` and :meth:`loop.subprocess_shell`:"
+"Low-level transport abstraction over subprocesses. Returned "
+"by :meth:`loop.subprocess_exec` and :meth:`loop.subprocess_shell`:"
 msgstr ""
 
 #: library/asyncio-llapi-index.rst:390
@@ -792,8 +794,8 @@ msgstr ""
 
 #: library/asyncio-llapi-index.rst:400
 msgid ""
-"Return the transport for the requested communication pipe (*stdin*, *stdout*,"
-" or *stderr*)."
+"Return the transport for the requested communication pipe (*stdin*, "
+"*stdout*, or *stderr*)."
 msgstr ""
 
 #: library/asyncio-llapi-index.rst:403
@@ -971,9 +973,9 @@ msgstr ""
 
 #: library/asyncio-llapi-index.rst:497
 msgid ""
-"Called when the child process has exited. It can be called before "
-":meth:`~SubprocessProtocol.pipe_data_received` and "
-":meth:`~SubprocessProtocol.pipe_connection_lost` methods."
+"Called when the child process has exited. It can be called "
+"before :meth:`~SubprocessProtocol.pipe_data_received` "
+"and :meth:`~SubprocessProtocol.pipe_connection_lost` methods."
 msgstr ""
 
 #: library/asyncio-llapi-index.rst:503
@@ -982,9 +984,9 @@ msgstr ""
 
 #: library/asyncio-llapi-index.rst:505
 msgid ""
-"Policies is a low-level mechanism to alter the behavior of functions like "
-":func:`asyncio.get_event_loop`.  See also the main :ref:`policies section "
-"<asyncio-policies>` for more details."
+"Policies is a low-level mechanism to alter the behavior of functions "
+"like :func:`asyncio.get_event_loop`.  See also the main :ref:`policies "
+"section <asyncio-policies>` for more details."
 msgstr ""
 
 #: library/asyncio-llapi-index.rst:511

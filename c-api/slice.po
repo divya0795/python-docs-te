@@ -24,8 +24,8 @@ msgstr ""
 
 #: c-api/slice.rst:11
 msgid ""
-"The type object for slice objects.  This is the same as :class:`slice` in the"
-" Python layer."
+"The type object for slice objects.  This is the same as :class:`slice` in "
+"the Python layer."
 msgstr ""
 
 #: c-api/slice.rst:17
@@ -58,8 +58,8 @@ msgstr ""
 #: c-api/slice.rst:38
 msgid ""
 "Returns ``0`` on success and ``-1`` on error with no exception set (unless "
-"one of the indices was not ``None`` and failed to be converted to an integer,"
-" in which case ``-1`` is returned with an exception set)."
+"one of the indices was not ``None`` and failed to be converted to an "
+"integer, in which case ``-1`` is returned with an exception set)."
 msgstr ""
 
 #: c-api/slice.rst:42
@@ -76,8 +76,8 @@ msgid ""
 "Usable replacement for :c:func:`PySlice_GetIndices`.  Retrieve the start, "
 "stop, and step indices from the slice object *slice* assuming a sequence of "
 "length *length*, and store the length of the slice in *slicelength*.  Out of "
-"bounds indices are clipped in a manner consistent with the handling of normal"
-" slices. *length* must not be negative."
+"bounds indices are clipped in a manner consistent with the handling of "
+"normal slices. *length* must not be negative."
 msgstr ""
 
 #: c-api/slice.rst:58
@@ -87,13 +87,14 @@ msgstr ""
 #: c-api/slice.rst:61
 msgid ""
 "This function is considered not safe for resizable sequences. Its invocation "
-"should be replaced by a combination of :c:func:`PySlice_Unpack` and "
-":c:func:`PySlice_AdjustIndices` where ::"
+"should be replaced by a combination of :c:func:`PySlice_Unpack` "
+"and :c:func:`PySlice_AdjustIndices` where ::"
 msgstr ""
 
 #: c-api/slice.rst:65
 msgid ""
-"if (PySlice_GetIndicesEx(slice, length, &start, &stop, &step, &slicelength) < 0) {\n"
+"if (PySlice_GetIndicesEx(slice, length, &start, &stop, &step, &slicelength) "
+"< 0) {\n"
 "    // return error\n"
 "}"
 msgstr ""
@@ -113,17 +114,17 @@ msgstr ""
 #: c-api/slice.rst:80
 msgid ""
 "If ``Py_LIMITED_API`` is not set or set to the value between ``0x03050400`` "
-"and ``0x03060000`` (not including) or ``0x03060100`` or higher "
-":c:func:`!PySlice_GetIndicesEx` is implemented as a macro using "
-":c:func:`!PySlice_Unpack` and :c:func:`!PySlice_AdjustIndices`. Arguments "
-"*start*, *stop* and *step* are evaluated more than once."
+"and ``0x03060000`` (not including) or ``0x03060100`` or higher :c:func:`!"
+"PySlice_GetIndicesEx` is implemented as a macro using :c:func:`!"
+"PySlice_Unpack` and :c:func:`!PySlice_AdjustIndices`. Arguments *start*, "
+"*stop* and *step* are evaluated more than once."
 msgstr ""
 
 #: c-api/slice.rst:87
 msgid ""
-"If ``Py_LIMITED_API`` is set to the value less than ``0x03050400`` or between"
-" ``0x03060000`` and ``0x03060100`` (not including) "
-":c:func:`!PySlice_GetIndicesEx` is a deprecated function."
+"If ``Py_LIMITED_API`` is set to the value less than ``0x03050400`` or "
+"between ``0x03060000`` and ``0x03060100`` (not including) :c:func:`!"
+"PySlice_GetIndicesEx` is a deprecated function."
 msgstr ""
 
 #: c-api/slice.rst:95
@@ -142,8 +143,8 @@ msgstr ""
 #: c-api/slice.rst:108
 msgid ""
 "Adjust start/end slice indices assuming a sequence of the specified length. "
-"Out of bounds indices are clipped in a manner consistent with the handling of"
-" normal slices."
+"Out of bounds indices are clipped in a manner consistent with the handling "
+"of normal slices."
 msgstr ""
 
 #: c-api/slice.rst:112
@@ -170,8 +171,8 @@ msgstr ""
 
 #: c-api/slice.rst:134
 msgid ""
-"The Python ``Ellipsis`` object.  This object has no methods.  Like "
-":c:data:`Py_None`, it is an :term:`immortal` singleton object."
+"The Python ``Ellipsis`` object.  This object has no methods.  "
+"Like :c:data:`Py_None`, it is an :term:`immortal` singleton object."
 msgstr ""
 
 #: c-api/slice.rst:137

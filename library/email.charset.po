@@ -40,11 +40,11 @@ msgstr ""
 
 #: library/email.charset.rst:16
 msgid ""
-"This module provides a class :class:`Charset` for representing character sets"
-" and character set conversions in email messages, as well as a character set "
-"registry and several convenience methods for manipulating this registry. "
-"Instances of :class:`Charset` are used in several other modules within the "
-":mod:`email` package."
+"This module provides a class :class:`Charset` for representing character "
+"sets and character set conversions in email messages, as well as a character "
+"set registry and several convenience methods for manipulating this registry. "
+"Instances of :class:`Charset` are used in several other modules within "
+"the :mod:`email` package."
 msgstr ""
 
 #: library/email.charset.rst:22
@@ -57,11 +57,11 @@ msgstr ""
 
 #: library/email.charset.rst:29
 msgid ""
-"This class provides information about the requirements imposed on email for a"
-" specific character set.  It also provides convenience routines for "
+"This class provides information about the requirements imposed on email for "
+"a specific character set.  It also provides convenience routines for "
 "converting between character sets, given the availability of the applicable "
-"codecs.  Given a character set, it will do its best to provide information on"
-" how to use that character set in an email message in an RFC-compliant way."
+"codecs.  Given a character set, it will do its best to provide information "
+"on how to use that character set in an email message in an RFC-compliant way."
 msgstr ""
 
 #: library/email.charset.rst:35
@@ -73,15 +73,15 @@ msgstr ""
 
 #: library/email.charset.rst:39
 msgid ""
-"Optional *input_charset* is as described below; it is always coerced to lower"
-" case.  After being alias normalized it is also used as a lookup into the "
-"registry of character sets to find out the header encoding, body encoding, "
-"and output conversion codec to be used for the character set.  For example, "
-"if *input_charset* is ``iso-8859-1``, then headers and bodies will be encoded"
-" using quoted-printable and no output conversion codec is necessary.  If "
-"*input_charset* is ``euc-jp``, then headers will be encoded with base64, "
-"bodies will not be encoded, but output text will be converted from the ``euc-"
-"jp`` character set to the ``iso-2022-jp`` character set."
+"Optional *input_charset* is as described below; it is always coerced to "
+"lower case.  After being alias normalized it is also used as a lookup into "
+"the registry of character sets to find out the header encoding, body "
+"encoding, and output conversion codec to be used for the character set.  For "
+"example, if *input_charset* is ``iso-8859-1``, then headers and bodies will "
+"be encoded using quoted-printable and no output conversion codec is "
+"necessary.  If *input_charset* is ``euc-jp``, then headers will be encoded "
+"with base64, bodies will not be encoded, but output text will be converted "
+"from the ``euc-jp`` character set to the ``iso-2022-jp`` character set."
 msgstr ""
 
 #: library/email.charset.rst:49
@@ -120,15 +120,16 @@ msgstr ""
 
 #: library/email.charset.rst:84
 msgid ""
-"The name of the Python codec used to convert the *input_charset* to Unicode."
-"  If no conversion codec is necessary, this attribute will be ``None``."
+"The name of the Python codec used to convert the *input_charset* to "
+"Unicode.  If no conversion codec is necessary, this attribute will be "
+"``None``."
 msgstr ""
 
 #: library/email.charset.rst:91
 msgid ""
-"The name of the Python codec used to convert Unicode to the *output_charset*."
-"  If no conversion codec is necessary, this attribute will have the same "
-"value as the *input_codec*."
+"The name of the Python codec used to convert Unicode to the "
+"*output_charset*.  If no conversion codec is necessary, this attribute will "
+"have the same value as the *input_codec*."
 msgstr ""
 
 #: library/email.charset.rst:96
@@ -141,8 +142,8 @@ msgstr ""
 
 #: library/email.charset.rst:102
 msgid ""
-"This is either the string ``quoted-printable`` or ``base64`` depending on the"
-" encoding used, or it is a function, in which case you should call the "
+"This is either the string ``quoted-printable`` or ``base64`` depending on "
+"the encoding used, or it is a function, in which case you should call the "
 "function with a single argument, the Message object being encoded.  The "
 "function should then set the :mailheader:`Content-Transfer-Encoding` header "
 "itself to whatever is appropriate."
@@ -150,9 +151,9 @@ msgstr ""
 
 #: library/email.charset.rst:108
 msgid ""
-"Returns the string ``quoted-printable`` if *body_encoding* is ``QP``, returns"
-" the string ``base64`` if *body_encoding* is ``BASE64``, and returns the "
-"string ``7bit`` otherwise."
+"Returns the string ``quoted-printable`` if *body_encoding* is ``QP``, "
+"returns the string ``base64`` if *body_encoding* is ``BASE64``, and returns "
+"the string ``7bit`` otherwise."
 msgstr ""
 
 #: library/email.charset.rst:115
@@ -289,6 +290,6 @@ msgstr ""
 #: library/email.charset.rst:211
 msgid ""
 "*charset* is the canonical name of a character set. *codecname* is the name "
-"of a Python codec, as appropriate for the second argument to the "
-":class:`str`'s :meth:`~str.encode` method."
+"of a Python codec, as appropriate for the second argument to "
+"the :class:`str`'s :meth:`~str.encode` method."
 msgstr ""

@@ -45,8 +45,8 @@ msgstr ""
 
 #: library/asyncio-graph.rst:31
 msgid ""
-"Print the async call graph for the current task or the provided :class:`Task`"
-" or :class:`Future`."
+"Print the async call graph for the current task or the "
+"provided :class:`Task` or :class:`Future`."
 msgstr ""
 
 #: library/asyncio-graph.rst:34
@@ -70,18 +70,19 @@ msgstr ""
 
 #: library/asyncio-graph.rst:44
 msgid ""
-"If the optional keyword-only *limit* argument is provided, each call stack in"
-" the resulting graph is truncated to include at most ``abs(limit)`` entries. "
-"If *limit* is positive, the entries left are the closest to the invocation "
-"point. If *limit* is negative, the topmost entries are left. If *limit* is "
-"omitted or ``None``, all entries are present. If *limit* is ``0``, the call "
-"stack is not printed at all, only \"awaited by\" information is printed."
+"If the optional keyword-only *limit* argument is provided, each call stack "
+"in the resulting graph is truncated to include at most ``abs(limit)`` "
+"entries. If *limit* is positive, the entries left are the closest to the "
+"invocation point. If *limit* is negative, the topmost entries are left. If "
+"*limit* is omitted or ``None``, all entries are present. If *limit* is "
+"``0``, the call stack is not printed at all, only \"awaited by\" information "
+"is printed."
 msgstr ""
 
 #: library/asyncio-graph.rst:52
 msgid ""
-"If *file* is omitted or ``None``, the function will print to "
-":data:`sys.stdout`."
+"If *file* is omitted or ``None``, the function will print "
+"to :data:`sys.stdout`."
 msgstr ""
 
 #: library/asyncio-graph.rst:55
@@ -130,8 +131,8 @@ msgstr ""
 
 #: library/asyncio-graph.rst:92
 msgid ""
-"Capture the async call graph for the current task or the provided "
-":class:`Task` or :class:`Future`."
+"Capture the async call graph for the current task or the "
+"provided :class:`Task` or :class:`Future`."
 msgstr ""
 
 #: library/asyncio-graph.rst:95
@@ -181,11 +182,11 @@ msgstr ""
 msgid ""
 "To introspect an async call graph asyncio requires cooperation from control "
 "flow structures, such as :func:`shield` or :class:`TaskGroup`. Any time an "
-"intermediate :class:`Future` object with low-level APIs like "
-":meth:`Future.add_done_callback() <asyncio.Future.add_done_callback>` is "
-"involved, the following two functions should be used to inform asyncio about "
-"how exactly such intermediate future objects are connected with the tasks "
-"they wrap or control."
+"intermediate :class:`Future` object with low-level APIs "
+"like :meth:`Future.add_done_callback() <asyncio.Future.add_done_callback>` "
+"is involved, the following two functions should be used to inform asyncio "
+"about how exactly such intermediate future objects are connected with the "
+"tasks they wrap or control."
 msgstr ""
 
 #: library/asyncio-graph.rst:134
@@ -194,14 +195,15 @@ msgstr ""
 
 #: library/asyncio-graph.rst:136 library/asyncio-graph.rst:149
 msgid ""
-"Both *future* and *waiter* must be instances of :class:`Future` or "
-":class:`Task` or their subclasses, otherwise the call would have no effect."
+"Both *future* and *waiter* must be instances of :class:`Future` "
+"or :class:`Task` or their subclasses, otherwise the call would have no "
+"effect."
 msgstr ""
 
 #: library/asyncio-graph.rst:140
 msgid ""
-"A call to ``future_add_to_awaited_by()`` must be followed by an eventual call"
-" to the :func:`future_discard_from_awaited_by` function with the same "
+"A call to ``future_add_to_awaited_by()`` must be followed by an eventual "
+"call to the :func:`future_discard_from_awaited_by` function with the same "
 "arguments."
 msgstr ""
 

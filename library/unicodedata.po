@@ -26,15 +26,15 @@ msgstr ""
 msgid ""
 "This module provides access to the Unicode Character Database (UCD) which "
 "defines character properties for all Unicode characters. The data contained "
-"in this database is compiled from the `UCD version 17.0.0 "
-"<https://www.unicode.org/Public/17.0.0/ucd>`_."
+"in this database is compiled from the `UCD version 17.0.0 <https://"
+"www.unicode.org/Public/17.0.0/ucd>`_."
 msgstr ""
 
 #: library/unicodedata.rst:19
 msgid ""
 "The module uses the same names and symbols as defined by Unicode Standard "
-"Annex #44, `\"Unicode Character Database\" "
-"<https://www.unicode.org/reports/tr44/>`_."
+"Annex #44, `\"Unicode Character Database\" <https://www.unicode.org/reports/"
+"tr44/>`_."
 msgstr ""
 
 #: library/unicodedata.rst:25
@@ -226,8 +226,8 @@ msgstr ""
 #: library/unicodedata.rst:70
 msgid ""
 "Look up character by name.  If a character with the given name is found, "
-"return the corresponding character.  If not found, :exc:`KeyError` is raised."
-" For example::"
+"return the corresponding character.  If not found, :exc:`KeyError` is "
+"raised. For example::"
 msgstr ""
 
 #: library/unicodedata.rst:74
@@ -270,8 +270,8 @@ msgstr ""
 #: library/unicodedata.rst:101
 msgid ""
 "Returns the decimal value assigned to the character *chr* as integer. If no "
-"such value is defined, *default* is returned, or, if not given, "
-":exc:`ValueError` is raised. For example::"
+"such value is defined, *default* is returned, or, if not "
+"given, :exc:`ValueError` is raised. For example::"
 msgstr ""
 
 #: library/unicodedata.rst:105
@@ -285,8 +285,8 @@ msgstr ""
 #: library/unicodedata.rst:113
 msgid ""
 "Returns the digit value assigned to the character *chr* as integer. If no "
-"such value is defined, *default* is returned, or, if not given, "
-":exc:`ValueError` is raised::"
+"such value is defined, *default* is returned, or, if not "
+"given, :exc:`ValueError` is raised::"
 msgstr ""
 
 #: library/unicodedata.rst:117
@@ -298,8 +298,8 @@ msgstr ""
 #: library/unicodedata.rst:123
 msgid ""
 "Returns the numeric value assigned to the character *chr* as float. If no "
-"such value is defined, *default* is returned, or, if not given, "
-":exc:`ValueError` is raised::"
+"such value is defined, *default* is returned, or, if not "
+"given, :exc:`ValueError` is raised::"
 msgstr ""
 
 #: library/unicodedata.rst:127
@@ -312,9 +312,9 @@ msgstr ""
 msgid ""
 "Returns the general category assigned to the character *chr* as string. "
 "General category names consist of two letters. See the `General Category "
-"Values section of the Unicode Character Database documentation "
-"<https://www.unicode.org/reports/tr44/#General_Category_Values>`_ for a list "
-"of category codes. For example::"
+"Values section of the Unicode Character Database documentation <https://"
+"www.unicode.org/reports/tr44/#General_Category_Values>`_ for a list of "
+"category codes. For example::"
 msgstr ""
 
 #: library/unicodedata.rst:139
@@ -325,16 +325,17 @@ msgstr ""
 
 #: library/unicodedata.rst:145
 msgid ""
-"Returns the bidirectional class assigned to the character *chr* as string. If"
-" no such value is defined, an empty string is returned. See the "
+"Returns the bidirectional class assigned to the character *chr* as string. "
+"If no such value is defined, an empty string is returned. See the "
 "`Bidirectional Class Values section of the Unicode Character Database "
-"<https://www.unicode.org/reports/tr44/#Bidi_Class_Values>`_ documentation for"
-" a list of bidirectional codes. For example::"
+"<https://www.unicode.org/reports/tr44/#Bidi_Class_Values>`_ documentation "
+"for a list of bidirectional codes. For example::"
 msgstr ""
 
 #: library/unicodedata.rst:151
 msgid ""
-">>> unicodedata.bidirectional('\\N{ARABIC-INDIC DIGIT SEVEN}') # 'A'rabic, 'N'umber\n"
+">>> unicodedata.bidirectional('\\N{ARABIC-INDIC DIGIT SEVEN}') # 'A'rabic, "
+"'N'umber\n"
 "'AN'"
 msgstr ""
 
@@ -342,22 +343,22 @@ msgstr ""
 msgid ""
 "Returns the canonical combining class assigned to the character *chr* as "
 "integer. Returns ``0`` if no combining class is defined. See the `Canonical "
-"Combining Class Values section of the Unicode Character Database "
-"<https://www.unicode.org/reports/tr44/#Canonical_Combining_Class_Values>`_ "
-"for more information."
+"Combining Class Values section of the Unicode Character Database <https://"
+"www.unicode.org/reports/tr44/#Canonical_Combining_Class_Values>`_ for more "
+"information."
 msgstr ""
 
 #: library/unicodedata.rst:166
 msgid ""
-"Returns the east asian width assigned to the character *chr* as string. For a"
-" list of widths and or more information, see the `Unicode Standard Annex #11 "
-"<https://www.unicode.org/reports/tr11/>`_."
+"Returns the east asian width assigned to the character *chr* as string. For "
+"a list of widths and or more information, see the `Unicode Standard Annex "
+"#11 <https://www.unicode.org/reports/tr11/>`_."
 msgstr ""
 
 #: library/unicodedata.rst:173
 msgid ""
-"Returns the `block <https://www.unicode.org/versions/Unicode17.0.0/core-"
-"spec/chapter-3/#G64189>`_ assigned to the character *chr*. For example::"
+"Returns the `block <https://www.unicode.org/versions/Unicode17.0.0/core-spec/"
+"chapter-3/#G64189>`_ assigned to the character *chr*. For example::"
 msgstr ""
 
 #: library/unicodedata.rst:177
@@ -382,8 +383,8 @@ msgstr ""
 #: library/unicodedata.rst:195
 msgid ""
 "Return ``True`` if *chr* is a valid identifier start per the `Unicode "
-"Standard Annex #31 <https://www.unicode.org/reports/tr31/>`_, that is, it has"
-" the ``XID_Start`` property. Return ``False`` otherwise. For example::"
+"Standard Annex #31 <https://www.unicode.org/reports/tr31/>`_, that is, it "
+"has the ``XID_Start`` property. Return ``False`` otherwise. For example::"
 msgstr ""
 
 #: library/unicodedata.rst:200
@@ -397,8 +398,8 @@ msgstr ""
 #: library/unicodedata.rst:210
 msgid ""
 "Return ``True`` if *chr* is a valid identifier character per the `Unicode "
-"Standard Annex #31 <https://www.unicode.org/reports/tr31/>`_, that is, it has"
-" the ``XID_Continue`` property. Return ``False`` otherwise. For example::"
+"Standard Annex #31 <https://www.unicode.org/reports/tr31/>`_, that is, it "
+"has the ``XID_Continue`` property. Return ``False`` otherwise. For example::"
 msgstr ""
 
 #: library/unicodedata.rst:215
@@ -444,8 +445,8 @@ msgstr ""
 
 #: library/unicodedata.rst:260
 msgid ""
-"The Unicode standard defines various normalization forms of a Unicode string,"
-" based on the definition of canonical equivalence and compatibility "
+"The Unicode standard defines various normalization forms of a Unicode "
+"string, based on the definition of canonical equivalence and compatibility "
 "equivalence. In Unicode, several characters can be expressed in various way. "
 "For example, the character U+00C7 (LATIN CAPITAL LETTER C WITH CEDILLA) can "
 "also be expressed as the sequence U+0043 (LATIN CAPITAL LETTER C) U+0327 "
@@ -454,11 +455,11 @@ msgstr ""
 
 #: library/unicodedata.rst:266
 msgid ""
-"For each character, there are two normal forms: normal form C and normal form"
-" D. Normal form D (NFD) is also known as canonical decomposition, and "
-"translates each character into its decomposed form. Normal form C (NFC) first"
-" applies a canonical decomposition, then composes pre-combined characters "
-"again."
+"For each character, there are two normal forms: normal form C and normal "
+"form D. Normal form D (NFD) is also known as canonical decomposition, and "
+"translates each character into its decomposed form. Normal form C (NFC) "
+"first applies a canonical decomposition, then composes pre-combined "
+"characters again."
 msgstr ""
 
 #: library/unicodedata.rst:271
@@ -475,8 +476,8 @@ msgstr ""
 msgid ""
 "The normal form KD (NFKD) will apply the compatibility decomposition, that "
 "is, replace all compatibility characters with their equivalents. The normal "
-"form KC (NFKC) first applies the compatibility decomposition, followed by the"
-" canonical composition."
+"form KC (NFKC) first applies the compatibility decomposition, followed by "
+"the canonical composition."
 msgstr ""
 
 #: library/unicodedata.rst:283
@@ -494,23 +495,23 @@ msgstr ""
 
 #: library/unicodedata.rst:298
 msgid ""
-"Returns an iterator to iterate over grapheme clusters. With optional *start*,"
-" iteration begins at that position. With optional *end*, iteration stops at "
-"that position."
+"Returns an iterator to iterate over grapheme clusters. With optional "
+"*start*, iteration begins at that position. With optional *end*, iteration "
+"stops at that position."
 msgstr ""
 
 #: library/unicodedata.rst:302
 msgid ""
-"Converting an emitted item to string returns a substring corresponding to the"
-" grapheme cluster. Its ``start`` and ``end`` attributes denote the start and "
-"end of the grapheme cluster."
+"Converting an emitted item to string returns a substring corresponding to "
+"the grapheme cluster. Its ``start`` and ``end`` attributes denote the start "
+"and end of the grapheme cluster."
 msgstr ""
 
 #: library/unicodedata.rst:307
 msgid ""
 "It uses extended grapheme cluster rules defined by Unicode Standard Annex "
-"#29, `\"Unicode Text Segmentation\" "
-"<https://www.unicode.org/reports/tr29/>`_."
+"#29, `\"Unicode Text Segmentation\" <https://www.unicode.org/reports/tr29/"
+">`_."
 msgstr ""
 
 #: library/unicodedata.rst:314
@@ -523,9 +524,9 @@ msgstr ""
 
 #: library/unicodedata.rst:323
 msgid ""
-"This is an object that has most of the methods of the entire module, but uses"
-" the Unicode database version 3.2 instead, for applications that require this"
-" specific version of the Unicode database (such as IDNA)."
+"This is an object that has most of the methods of the entire module, but "
+"uses the Unicode database version 3.2 instead, for applications that require "
+"this specific version of the Unicode database (such as IDNA)."
 msgstr ""
 
 #: library/unicodedata.rst:329

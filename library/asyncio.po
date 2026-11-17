@@ -131,9 +131,9 @@ msgstr ""
 #: library/asyncio.rst:60
 msgid ""
 "create and manage :ref:`event loops <asyncio-event-loop>`, which provide "
-"asynchronous APIs for :ref:`networking <loop_create_server>`, running "
-":ref:`subprocesses <loop_subprocess_exec>`, handling :ref:`OS signals "
-"<loop_add_signal_handler>`, etc;"
+"asynchronous APIs for :ref:`networking <loop_create_server>`, "
+"running :ref:`subprocesses <loop_subprocess_exec>`, handling :ref:`OS "
+"signals <loop_add_signal_handler>`, etc;"
 msgstr ""
 
 #: library/asyncio.rst:65
@@ -144,8 +144,8 @@ msgstr ""
 
 #: library/asyncio.rst:68
 msgid ""
-":ref:`bridge <asyncio-futures>` callback-based libraries and code with "
-"async/await syntax."
+":ref:`bridge <asyncio-futures>` callback-based libraries and code with async/"
+"await syntax."
 msgstr ""
 
 #: includes/wasm-notavail.rst:3
@@ -164,8 +164,8 @@ msgstr ""
 
 #: library/asyncio.rst:77
 msgid ""
-"You can experiment with an ``asyncio`` concurrent context in the "
-":term:`REPL`:"
+"You can experiment with an ``asyncio`` concurrent context in "
+"the :term:`REPL`:"
 msgstr ""
 
 #: library/asyncio.rst:79
@@ -173,7 +173,8 @@ msgid ""
 "$ python -m asyncio\n"
 "asyncio REPL ...\n"
 "Use \"await\" directly instead of \"asyncio.run()\".\n"
-"Type \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n"
+"Type \"help\", \"copyright\", \"credits\" or \"license\" for more "
+"information.\n"
 ">>> import asyncio\n"
 ">>> await asyncio.sleep(10, result='hello')\n"
 "'hello'"
@@ -181,9 +182,9 @@ msgstr ""
 
 #: library/asyncio.rst:89
 msgid ""
-"This REPL provides limited compatibility with :envvar:`PYTHON_BASIC_REPL`. It"
-" is recommended that the default REPL is used for full functionality and the "
-"latest features."
+"This REPL provides limited compatibility with :envvar:`PYTHON_BASIC_REPL`. "
+"It is recommended that the default REPL is used for full functionality and "
+"the latest features."
 msgstr ""
 
 #: library/asyncio.rst:93

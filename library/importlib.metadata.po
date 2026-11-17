@@ -33,25 +33,24 @@ msgstr ""
 #: library/importlib.metadata.rst:16
 msgid ""
 "``importlib.metadata`` is a library that provides access to the metadata of "
-"an installed `Distribution Package "
-"<https://packaging.python.org/en/latest/glossary/#term-Distribution-"
-"Package>`_, such as its entry points or its top-level names (`Import Package "
-"<https://packaging.python.org/en/latest/glossary/#term-Import-Package>`_\\s, "
-"modules, if any). Built in part on Python's import system, this library "
-"provides the entry point and metadata APIs that were previously exposed by "
-"the now-removed ``pkg_resources`` package. Along with "
-":mod:`importlib.resources`, it supersedes ``pkg_resources``."
+"an installed `Distribution Package <https://packaging.python.org/en/latest/"
+"glossary/#term-Distribution-Package>`_, such as its entry points or its top-"
+"level names (`Import Package <https://packaging.python.org/en/latest/"
+"glossary/#term-Import-Package>`_\\s, modules, if any). Built in part on "
+"Python's import system, this library provides the entry point and metadata "
+"APIs that were previously exposed by the now-removed ``pkg_resources`` "
+"package. Along with :mod:`importlib.resources`, it supersedes "
+"``pkg_resources``."
 msgstr ""
 
 #: library/importlib.metadata.rst:25
 msgid ""
 "``importlib.metadata`` operates on third-party *distribution packages* "
-"installed into Python's ``site-packages`` directory via tools such as "
-":pypi:`pip`. Specifically, it works with distributions with discoverable "
+"installed into Python's ``site-packages`` directory via tools such "
+"as :pypi:`pip`. Specifically, it works with distributions with discoverable "
 "``dist-info`` or ``egg-info`` directories, and metadata defined by the `Core "
-"metadata specifications "
-"<https://packaging.python.org/en/latest/specifications/core-metadata/#core-"
-"metadata>`_."
+"metadata specifications <https://packaging.python.org/en/latest/"
+"specifications/core-metadata/#core-metadata>`_."
 msgstr ""
 
 #: library/importlib.metadata.rst:34
@@ -60,8 +59,8 @@ msgid ""
 "level *import package* names that can be imported inside Python code. One "
 "*distribution package* can contain multiple *import packages* (and single "
 "modules), and one top-level *import package* may map to multiple "
-"*distribution packages* if it is a namespace package. You can use "
-":ref:`packages_distributions() <package-distributions>` to get a mapping "
+"*distribution packages* if it is a namespace package. You can "
+"use :ref:`packages_distributions() <package-distributions>` to get a mapping "
 "between them."
 msgstr ""
 
@@ -119,10 +118,10 @@ msgstr ""
 
 #: library/importlib.metadata.rst:87
 msgid ""
-"You can also get a collection of entry points selectable by properties of the"
-" EntryPoint (typically 'group' or 'name'), such as ``console_scripts``, "
-"``distutils.commands`` and others. Each group contains a collection of "
-":ref:`EntryPoint <entry-points>` objects."
+"You can also get a collection of entry points selectable by properties of "
+"the EntryPoint (typically 'group' or 'name'), such as ``console_scripts``, "
+"``distutils.commands`` and others. Each group contains a collection "
+"of :ref:`EntryPoint <entry-points>` objects."
 msgstr ""
 
 #: library/importlib.metadata.rst:91
@@ -133,14 +132,20 @@ msgstr ""
 msgid ""
 ">>> from importlib.metadata import metadata\n"
 ">>> list(metadata('wheel'))\n"
-"['Metadata-Version', 'Name', 'Version', 'Summary', 'Home-page', 'Author', 'Author-email', 'Maintainer', 'Maintainer-email', 'License', 'Project-URL', 'Project-URL', 'Project-URL', 'Keywords', 'Platform', 'Classifier', 'Classifier', 'Classifier', 'Classifier', 'Classifier', 'Classifier', 'Classifier', 'Classifier', 'Classifier', 'Classifier', 'Classifier', 'Classifier', 'Requires-Python', 'Provides-Extra', 'Requires-Dist', 'Requires-Dist']"
+"['Metadata-Version', 'Name', 'Version', 'Summary', 'Home-page', 'Author', "
+"'Author-email', 'Maintainer', 'Maintainer-email', 'License', 'Project-URL', "
+"'Project-URL', 'Project-URL', 'Keywords', 'Platform', 'Classifier', "
+"'Classifier', 'Classifier', 'Classifier', 'Classifier', 'Classifier', "
+"'Classifier', 'Classifier', 'Classifier', 'Classifier', 'Classifier', "
+"'Classifier', 'Requires-Python', 'Provides-Extra', 'Requires-Dist', "
+"'Requires-Dist']"
 msgstr ""
 
 #: library/importlib.metadata.rst:97
 msgid ""
-"You can also get a :ref:`distribution's version number <version>`, list its "
-":ref:`constituent files <files>`, and get a list of the distribution's "
-":ref:`requirements`."
+"You can also get a :ref:`distribution's version number <version>`, list "
+"its :ref:`constituent files <files>`, and get a list of the "
+"distribution's :ref:`requirements`."
 msgstr ""
 
 #: library/importlib.metadata.rst:104
@@ -172,17 +177,17 @@ msgstr ""
 #: library/importlib.metadata.rst:129
 msgid ""
 "Returns a :class:`EntryPoints` instance describing entry points for the "
-"current environment. Any given keyword parameters are passed to the "
-":meth:`!select` method for comparison to the attributes of the individual "
-"entry point definitions."
+"current environment. Any given keyword parameters are passed to the :meth:`!"
+"select` method for comparison to the attributes of the individual entry "
+"point definitions."
 msgstr ""
 
 #: library/importlib.metadata.rst:134
 msgid ""
 "Note: to query for entry points based on :attr:`!EntryPoint.dist` attribute, "
-"use :meth:`Distribution.entry_points` instead (as different "
-":class:`Distribution` instances do not currently compare equal, even if they "
-"have the same attributes)"
+"use :meth:`Distribution.entry_points` instead (as "
+"different :class:`Distribution` instances do not currently compare equal, "
+"even if they have the same attributes)"
 msgstr ""
 
 #: library/importlib.metadata.rst:140
@@ -191,9 +196,9 @@ msgstr ""
 
 #: library/importlib.metadata.rst:142
 msgid ""
-"Also provides a ``.groups`` attribute that reports all identified entry point"
-" groups, and a ``.names`` attribute that reports all identified entry point "
-"names."
+"Also provides a ``.groups`` attribute that reports all identified entry "
+"point groups, and a ``.names`` attribute that reports all identified entry "
+"point names."
 msgstr ""
 
 #: library/importlib.metadata.rst:148
@@ -204,9 +209,9 @@ msgstr ""
 msgid ""
 "Each :class:`!EntryPoint` instance has ``.name``, ``.group``, and ``.value`` "
 "attributes and a ``.load()`` method to resolve the value. There are also "
-"``.module``, ``.attr``, and ``.extras`` attributes for getting the components"
-" of the ``.value`` attribute, and ``.dist`` for obtaining information "
-"regarding the distribution package that provides the entry point."
+"``.module``, ``.attr``, and ``.extras`` attributes for getting the "
+"components of the ``.value`` attribute, and ``.dist`` for obtaining "
+"information regarding the distribution package that provides the entry point."
 msgstr ""
 
 #: library/importlib.metadata.rst:156
@@ -227,7 +232,8 @@ msgstr ""
 #: library/importlib.metadata.rst:164
 msgid ""
 ">>> sorted(eps.groups)\n"
-"['console_scripts', 'distutils.commands', 'distutils.setup_keywords', 'egg_info.writers', 'setuptools.installation']"
+"['console_scripts', 'distutils.commands', 'distutils.setup_keywords', "
+"'egg_info.writers', 'setuptools.installation']"
 msgstr ""
 
 #: library/importlib.metadata.rst:167
@@ -243,8 +249,8 @@ msgstr ""
 
 #: library/importlib.metadata.rst:173
 msgid ""
-"Equivalently, since :func:`!entry_points` passes keyword arguments through to"
-" select::"
+"Equivalently, since :func:`!entry_points` passes keyword arguments through "
+"to select::"
 msgstr ""
 
 #: library/importlib.metadata.rst:176
@@ -252,7 +258,8 @@ msgid ">>> scripts = entry_points(group='console_scripts')"
 msgstr ""
 
 #: library/importlib.metadata.rst:178
-msgid "Pick out a specific script named \"wheel\" (found in the wheel project)::"
+msgid ""
+"Pick out a specific script named \"wheel\" (found in the wheel project)::"
 msgstr ""
 
 #: library/importlib.metadata.rst:180
@@ -293,21 +300,21 @@ msgstr ""
 
 #: library/importlib.metadata.rst:203
 msgid ""
-"The ``group`` and ``name`` are arbitrary values defined by the package author"
-" and usually a client will wish to resolve all entry points for a particular "
-"group. Read `the setuptools docs "
-"<https://setuptools.pypa.io/en/latest/userguide/entry_point.html>`_ for more "
-"information on entry points, their definition, and usage."
+"The ``group`` and ``name`` are arbitrary values defined by the package "
+"author and usually a client will wish to resolve all entry points for a "
+"particular group. Read `the setuptools docs <https://setuptools.pypa.io/en/"
+"latest/userguide/entry_point.html>`_ for more information on entry points, "
+"their definition, and usage."
 msgstr ""
 
 #: library/importlib.metadata.rst:209
 msgid ""
-"The \"selectable\" entry points were introduced in ``importlib_metadata`` 3.6"
-" and Python 3.10. Prior to those changes, ``entry_points`` accepted no "
+"The \"selectable\" entry points were introduced in ``importlib_metadata`` "
+"3.6 and Python 3.10. Prior to those changes, ``entry_points`` accepted no "
 "parameters and always returned a dictionary of entry points, keyed by group. "
 "With ``importlib_metadata`` 5.0 and Python 3.12, ``entry_points`` always "
-"returns an ``EntryPoints`` object. See "
-":pypi:`backports.entry_points_selectable` for compatibility options."
+"returns an ``EntryPoints`` object. "
+"See :pypi:`backports.entry_points_selectable` for compatibility options."
 msgstr ""
 
 #: library/importlib.metadata.rst:218
@@ -342,9 +349,9 @@ msgstr ""
 
 #: library/importlib.metadata.rst:240
 msgid ""
-"A concrete implementation of the `PackageMetadata protocol "
-"<https://importlib-"
-"metadata.readthedocs.io/en/latest/api.html#importlib_metadata.PackageMetadata>`_."
+"A concrete implementation of the `PackageMetadata protocol <https://"
+"importlib-metadata.readthedocs.io/en/latest/"
+"api.html#importlib_metadata.PackageMetadata>`_."
 msgstr ""
 
 #: library/importlib.metadata.rst:243
@@ -355,10 +362,9 @@ msgstr ""
 
 #: library/importlib.metadata.rst:246
 msgid ""
-"Every `Distribution Package "
-"<https://packaging.python.org/en/latest/glossary/#term-Distribution-"
-"Package>`_ includes some metadata, which you can extract using the "
-":func:`!metadata` function::"
+"Every `Distribution Package <https://packaging.python.org/en/latest/glossary/"
+"#term-Distribution-Package>`_ includes some metadata, which you can extract "
+"using the :func:`!metadata` function::"
 msgstr ""
 
 #: library/importlib.metadata.rst:249
@@ -379,8 +385,8 @@ msgstr ""
 
 #: library/importlib.metadata.rst:257
 msgid ""
-":class:`PackageMetadata` also presents a :attr:`!json` attribute that returns"
-" all the metadata in a JSON-compatible form per :PEP:`566`::"
+":class:`PackageMetadata` also presents a :attr:`!json` attribute that "
+"returns all the metadata in a JSON-compatible form per :PEP:`566`::"
 msgstr ""
 
 #: library/importlib.metadata.rst:260
@@ -392,9 +398,8 @@ msgstr ""
 #: library/importlib.metadata.rst:263 library/importlib.metadata.rst:496
 msgid ""
 "The full set of available metadata is not described here. See the PyPA `Core "
-"metadata specification "
-"<https://packaging.python.org/en/latest/specifications/core-metadata/#core-"
-"metadata>`_ for additional details."
+"metadata specification <https://packaging.python.org/en/latest/"
+"specifications/core-metadata/#core-metadata>`_ for additional details."
 msgstr ""
 
 #: library/importlib.metadata.rst:266
@@ -421,9 +426,9 @@ msgstr ""
 
 #: library/importlib.metadata.rst:286
 msgid ""
-"Return the installed distribution package `version "
-"<https://packaging.python.org/en/latest/specifications/core-"
-"metadata/#version>`__ for the named distribution package."
+"Return the installed distribution package `version <https://"
+"packaging.python.org/en/latest/specifications/core-metadata/#version>`__ for "
+"the named distribution package."
 msgstr ""
 
 #: library/importlib.metadata.rst:293
@@ -452,36 +457,35 @@ msgstr ""
 #: library/importlib.metadata.rst:314
 msgid ""
 "Returns :const:`None` if the distribution is found but the installation "
-"database records reporting the files associated with the distribution package"
-" are missing."
+"database records reporting the files associated with the distribution "
+"package are missing."
 msgstr ""
 
 #: library/importlib.metadata.rst:320
 msgid ""
 "A :class:`pathlib.PurePath` derived object with additional ``dist``, "
-"``size``, and ``hash`` properties corresponding to the distribution package's"
-" installation metadata for that file, also:"
+"``size``, and ``hash`` properties corresponding to the distribution "
+"package's installation metadata for that file, also:"
 msgstr ""
 
 #: library/importlib.metadata.rst:326
 msgid ""
-"If possible, return the concrete :class:`SimplePath` allowing to access data,"
-" or raise a :exc:`NotImplementedError` otherwise."
+"If possible, return the concrete :class:`SimplePath` allowing to access "
+"data, or raise a :exc:`NotImplementedError` otherwise."
 msgstr ""
 
 #: library/importlib.metadata.rst:331
 msgid ""
-"A protocol representing a minimal subset of :class:`pathlib.Path` that allows"
-" to check if it ``exists()``, to traverse using ``joinpath()`` and "
+"A protocol representing a minimal subset of :class:`pathlib.Path` that "
+"allows to check if it ``exists()``, to traverse using ``joinpath()`` and "
 "``parent``, and to retrieve data using ``read_text()`` and ``read_bytes()``."
 msgstr ""
 
 #: library/importlib.metadata.rst:335
 msgid ""
-"The :func:`!files` function takes a `Distribution Package "
-"<https://packaging.python.org/en/latest/glossary/#term-Distribution-"
-"Package>`_ name and returns all of the files installed by this distribution. "
-"For example::"
+"The :func:`!files` function takes a `Distribution Package <https://"
+"packaging.python.org/en/latest/glossary/#term-Distribution-Package>`_ name "
+"and returns all of the files installed by this distribution. For example::"
 msgstr ""
 
 #: library/importlib.metadata.rst:339
@@ -529,11 +533,11 @@ msgstr ""
 msgid ""
 "In the case where the metadata file listing files (``RECORD`` or "
 "``SOURCES.txt``) is missing, :func:`!files` will return :const:`None`. The "
-"caller may wish to wrap calls to :func:`!files` in `always_iterable "
-"<https://more-"
-"itertools.readthedocs.io/en/stable/api.html#more_itertools.always_iterable>`_"
-" or otherwise guard against this condition if the target distribution is not "
-"known to have the metadata present."
+"caller may wish to wrap calls to :func:`!files` in `always_iterable <https://"
+"more-itertools.readthedocs.io/en/stable/"
+"api.html#more_itertools.always_iterable>`_ or otherwise guard against this "
+"condition if the target distribution is not known to have the metadata "
+"present."
 msgstr ""
 
 #: library/importlib.metadata.rst:377
@@ -547,9 +551,9 @@ msgstr ""
 
 #: library/importlib.metadata.rst:387
 msgid ""
-"To get the full set of requirements for a `Distribution Package "
-"<https://packaging.python.org/en/latest/glossary/#term-Distribution-"
-"Package>`_, use the :func:`!requires` function::"
+"To get the full set of requirements for a `Distribution Package <https://"
+"packaging.python.org/en/latest/glossary/#term-Distribution-Package>`_, use "
+"the :func:`!requires` function::"
 msgstr ""
 
 #: library/importlib.metadata.rst:391
@@ -564,8 +568,8 @@ msgstr ""
 
 #: library/importlib.metadata.rst:403
 msgid ""
-"Return a mapping from the top level module and import package names found via"
-" :data:`sys.meta_path` to the names of the distribution packages (if any) "
+"Return a mapping from the top level module and import package names found "
+"via :data:`sys.meta_path` to the names of the distribution packages (if any) "
 "that provide the corresponding files."
 msgstr ""
 
@@ -578,24 +582,25 @@ msgstr ""
 
 #: library/importlib.metadata.rst:411
 msgid ""
-"A convenience method to resolve the `Distribution Package "
-"<https://packaging.python.org/en/latest/glossary/#term-Distribution-"
-"Package>`_ name (or names, in the case of a namespace package) that provide "
-"each importable top-level Python module or `Import Package "
-"<https://packaging.python.org/en/latest/glossary/#term-Import-Package>`_::"
+"A convenience method to resolve the `Distribution Package <https://"
+"packaging.python.org/en/latest/glossary/#term-Distribution-Package>`_ name "
+"(or names, in the case of a namespace package) that provide each importable "
+"top-level Python module or `Import Package <https://packaging.python.org/en/"
+"latest/glossary/#term-Import-Package>`_::"
 msgstr ""
 
 #: library/importlib.metadata.rst:416
 msgid ""
 ">>> packages_distributions()\n"
-"{'importlib_metadata': ['importlib-metadata'], 'yaml': ['PyYAML'], 'jaraco': ['jaraco.classes', 'jaraco.functools'], ...}"
+"{'importlib_metadata': ['importlib-metadata'], 'yaml': ['PyYAML'], 'jaraco': "
+"['jaraco.classes', 'jaraco.functools'], ...}"
 msgstr ""
 
 #: library/importlib.metadata.rst:419
 msgid ""
-"Some editable installs, `do not supply top-level names "
-"<https://github.com/pypa/packaging-problems/issues/609>`_, and thus this "
-"function is not reliable with such installs."
+"Some editable installs, `do not supply top-level names <https://github.com/"
+"pypa/packaging-problems/issues/609>`_, and thus this function is not "
+"reliable with such installs."
 msgstr ""
 
 #: library/importlib.metadata.rst:428
@@ -607,10 +612,10 @@ msgid ""
 "While the module level API described above is the most common and convenient "
 "usage, all that information is accessible from the :class:`Distribution` "
 "class. :class:`!Distribution` is an abstract object that represents the "
-"metadata for a Python `Distribution Package "
-"<https://packaging.python.org/en/latest/glossary/#term-Distribution-"
-"Package>`_. Get the concrete :class:`!Distribution` subclass instance for an "
-"installed distribution package by calling the :func:`distribution` function::"
+"metadata for a Python `Distribution Package <https://packaging.python.org/en/"
+"latest/glossary/#term-Distribution-Package>`_. Get the concrete :class:`!"
+"Distribution` subclass instance for an installed distribution package by "
+"calling the :func:`distribution` function::"
 msgstr ""
 
 #: library/importlib.metadata.rst:437
@@ -629,8 +634,8 @@ msgstr ""
 
 #: library/importlib.metadata.rst:450
 msgid ""
-"Thus, an alternative way to get e.g. the version number is through the "
-":attr:`Distribution.version` attribute::"
+"Thus, an alternative way to get e.g. the version number is through "
+"the :attr:`Distribution.version` attribute::"
 msgstr ""
 
 #: library/importlib.metadata.rst:453
@@ -650,8 +655,8 @@ msgstr ""
 #: library/importlib.metadata.rst:462
 msgid ""
 "Note: different :class:`!Distribution` instances do not currently compare "
-"equal, even if they relate to the same installed distribution and accordingly"
-" have the same attributes."
+"equal, even if they relate to the same installed distribution and "
+"accordingly have the same attributes."
 msgstr ""
 
 #: library/importlib.metadata.rst:469
@@ -662,16 +667,16 @@ msgstr ""
 
 #: library/importlib.metadata.rst:474
 msgid ""
-"Returns an iterable of :class:`!Distribution` instances for all packages (see"
-" distribution-discovery_)."
+"Returns an iterable of :class:`!Distribution` instances for all packages "
+"(see distribution-discovery_)."
 msgstr ""
 
 #: library/importlib.metadata.rst:477
 msgid ""
 "The optional argument *context* is a :class:`DistributionFinder.Context` "
 "instance, used to modify the search for distributions. Alternatively, "
-"*kwargs* may contain keyword arguments for constructing a new "
-":class:`!DistributionFinder.Context`."
+"*kwargs* may contain keyword arguments for constructing a new :class:`!"
+"DistributionFinder.Context`."
 msgstr ""
 
 #: library/importlib.metadata.rst:485
@@ -682,8 +687,8 @@ msgstr ""
 
 #: library/importlib.metadata.rst:488
 msgid ""
-"There are all kinds of additional metadata available on "
-":class:`!Distribution` instances as a :class:`PackageMetadata` instance::"
+"There are all kinds of additional metadata available on :class:`!"
+"Distribution` instances as a :class:`PackageMetadata` instance::"
 msgstr ""
 
 #: library/importlib.metadata.rst:491
@@ -704,8 +709,8 @@ msgstr ""
 
 #: library/importlib.metadata.rst:514
 msgid ""
-"For editable packages, an ``origin`` property may present :pep:`610` metadata"
-" (for non-editable packages, ``origin`` is :const:`None`)::"
+"For editable packages, an ``origin`` property may present :pep:`610` "
+"metadata (for non-editable packages, ``origin`` is :const:`None`)::"
 msgstr ""
 
 #: library/importlib.metadata.rst:517
@@ -716,9 +721,8 @@ msgstr ""
 
 #: library/importlib.metadata.rst:520
 msgid ""
-"The ``origin`` object follows the `Direct URL Data Structure "
-"<https://packaging.python.org/en/latest/specifications/direct-url-data-"
-"structure/>`_."
+"The ``origin`` object follows the `Direct URL Data Structure <https://"
+"packaging.python.org/en/latest/specifications/direct-url-data-structure/>`_."
 msgstr ""
 
 #: library/importlib.metadata.rst:528
@@ -754,11 +758,11 @@ msgstr ""
 #: library/importlib.metadata.rst:552
 msgid ""
 "By default, this package provides built-in support for discovery of metadata "
-"for file system and zip file `Distribution Package "
-"<https://packaging.python.org/en/latest/glossary/#term-Distribution-"
-"Package>`_\\s. This metadata finder search defaults to ``sys.path``, but "
-"varies slightly in how it interprets those values from how other import "
-"machinery does. In particular:"
+"for file system and zip file `Distribution Package <https://"
+"packaging.python.org/en/latest/glossary/#term-Distribution-Package>`_\\s. "
+"This metadata finder search defaults to ``sys.path``, but varies slightly in "
+"how it interprets those values from how other import machinery does. In "
+"particular:"
 msgstr ""
 
 #: library/importlib.metadata.rst:556
@@ -786,9 +790,9 @@ msgstr ""
 #: library/importlib.metadata.rst:569
 msgid ""
 "A :class:`!Context` gives a custom provider a means to solicit additional "
-"details from the callers of distribution discovery functions like "
-":func:`distributions` or :meth:`Distribution.discover` beyond :attr:`!.name` "
-"and :attr:`!.path` when searching for distributions."
+"details from the callers of distribution discovery functions "
+"like :func:`distributions` or :meth:`Distribution.discover` "
+"beyond :attr:`!.name` and :attr:`!.path` when searching for distributions."
 msgstr ""
 
 #: library/importlib.metadata.rst:575
@@ -838,11 +842,10 @@ msgstr ""
 
 #: library/importlib.metadata.rst:607
 msgid ""
-"The *kwargs* argument may contain either a keyword argument ``context``, a "
-":class:`DistributionFinder.Context` instance, or pass keyword arguments for "
-"constructing a new :class:`!DistributionFinder.Context`. The "
-":class:`!DistributionFinder.Context` is used to modify the search for "
-"distributions."
+"The *kwargs* argument may contain either a keyword argument ``context``, "
+"a :class:`DistributionFinder.Context` instance, or pass keyword arguments "
+"for constructing a new :class:`!DistributionFinder.Context`. The :class:`!"
+"DistributionFinder.Context` is used to modify the search for distributions."
 msgstr ""
 
 #: library/importlib.metadata.rst:616
@@ -860,13 +863,13 @@ msgstr ""
 
 #: library/importlib.metadata.rst:625
 msgid ""
-"Because `Distribution Package "
-"<https://packaging.python.org/en/latest/glossary/#term-Distribution-"
-"Package>`_ metadata is not available through :data:`sys.path` searches, or "
-"package loaders directly, the metadata for a distribution is found through "
-"import system :ref:`finders <finders-and-loaders>`. To find a distribution "
-"package's metadata, ``importlib.metadata`` queries the list of :term:`meta "
-"path finders <meta path finder>` on :data:`sys.meta_path`."
+"Because `Distribution Package <https://packaging.python.org/en/latest/"
+"glossary/#term-Distribution-Package>`_ metadata is not available "
+"through :data:`sys.path` searches, or package loaders directly, the metadata "
+"for a distribution is found through import system :ref:`finders <finders-and-"
+"loaders>`. To find a distribution package's metadata, ``importlib.metadata`` "
+"queries the list of :term:`meta path finders <meta path finder>` "
+"on :data:`sys.meta_path`."
 msgstr ""
 
 #: library/importlib.metadata.rst:633
@@ -880,15 +883,16 @@ msgid ""
 "The abstract class :py:class:`importlib.abc.MetaPathFinder` defines the "
 "interface expected of finders by Python's import system. "
 "``importlib.metadata`` extends this protocol by looking for an optional "
-"``find_distributions`` callable on the finders from :data:`sys.meta_path` and"
-" presents this extended interface as the :class:`DistributionFinder` abstract"
-" base class, which defines this abstract method::"
+"``find_distributions`` callable on the finders from :data:`sys.meta_path` "
+"and presents this extended interface as the :class:`DistributionFinder` "
+"abstract base class, which defines this abstract method::"
 msgstr ""
 
 #: library/importlib.metadata.rst:644
 msgid ""
 "@abc.abstractmethod\n"
-"def find_distributions(context=DistributionFinder.Context()) -> Iterable[Distribution]:\n"
+"def find_distributions(context=DistributionFinder.Context()) -> "
+"Iterable[Distribution]:\n"
 "    \"\"\"Return an iterable of all Distribution instances capable of\n"
 "    loading the metadata for packages for the indicated ``context``.\n"
 "    \"\"\""
@@ -896,18 +900,18 @@ msgstr ""
 
 #: library/importlib.metadata.rst:650
 msgid ""
-"The :class:`DistributionFinder.Context` object provides "
-":attr:`~DistributionFinder.Context.path` and "
-":attr:`~DistributionFinder.Context.name` properties indicating the path to "
-"search and name to match and may supply other relevant context sought by the "
-"consumer."
+"The :class:`DistributionFinder.Context` object "
+"provides :attr:`~DistributionFinder.Context.path` "
+"and :attr:`~DistributionFinder.Context.name` properties indicating the path "
+"to search and name to match and may supply other relevant context sought by "
+"the consumer."
 msgstr ""
 
 #: library/importlib.metadata.rst:656
 msgid ""
 "In practice, to support finding distribution package metadata in locations "
-"other than the file system, subclass :class:`!Distribution` and implement the"
-" abstract methods. Then from a custom finder, return instances of this "
+"other than the file system, subclass :class:`!Distribution` and implement "
+"the abstract methods. Then from a custom finder, return instances of this "
 "derived :class:`!Distribution` in the ``find_distributions()`` method."
 msgstr ""
 
@@ -933,9 +937,10 @@ msgstr ""
 
 #: library/importlib.metadata.rst:676
 msgid ""
-"That importer now presumably provides importable modules from a database, but"
-" it provides no metadata or entry points. For this custom importer to provide"
-" metadata, it would also need to implement :class:`DistributionFinder`::"
+"That importer now presumably provides importable modules from a database, "
+"but it provides no metadata or entry points. For this custom importer to "
+"provide metadata, it would also need to "
+"implement :class:`DistributionFinder`::"
 msgstr ""
 
 #: library/importlib.metadata.rst:681
@@ -963,15 +968,14 @@ msgstr ""
 #: library/importlib.metadata.rst:697
 msgid ""
 "For the sake of simplicity, this example ignores ``context.path``\\. The "
-"``path`` attribute defaults to ``sys.path`` and is the set of import paths to"
-" be considered in the search. A ``DatabaseImporter`` could potentially "
-"function without any concern for a search path. Assuming the importer does no"
-" partitioning, the \"path\" would be irrelevant. In order to illustrate the "
-"purpose of ``path``, the example would need to illustrate a more complex "
-"``DatabaseImporter`` whose behavior varied depending on "
-"``sys.path``/``PYTHONPATH``. In that case, the ``find_distributions`` should "
-"honor the ``context.path`` and only yield ``Distribution``\\ s pertinent to "
-"that path."
+"``path`` attribute defaults to ``sys.path`` and is the set of import paths "
+"to be considered in the search. A ``DatabaseImporter`` could potentially "
+"function without any concern for a search path. Assuming the importer does "
+"no partitioning, the \"path\" would be irrelevant. In order to illustrate "
+"the purpose of ``path``, the example would need to illustrate a more complex "
+"``DatabaseImporter`` whose behavior varied depending on ``sys.path``/"
+"``PYTHONPATH``. In that case, the ``find_distributions`` should honor the "
+"``context.path`` and only yield ``Distribution``\\ s pertinent to that path."
 msgstr ""
 
 #: library/importlib.metadata.rst:708

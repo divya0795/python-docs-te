@@ -53,18 +53,18 @@ msgstr ""
 #: library/bdb.rst:28
 msgid ""
 "Breakpoints are indexed by number through a list called :attr:`bpbynumber` "
-"and by ``(file, line)`` pairs through :attr:`bplist`.  The former points to a"
-" single instance of class :class:`Breakpoint`.  The latter points to a list "
+"and by ``(file, line)`` pairs through :attr:`bplist`.  The former points to "
+"a single instance of class :class:`Breakpoint`.  The latter points to a list "
 "of such instances since there may be more than one breakpoint per line."
 msgstr ""
 
 #: library/bdb.rst:33
 msgid ""
-"When creating a breakpoint, its associated :attr:`file name <file>` should be"
-" in canonical form.  If a :attr:`funcname` is defined, a breakpoint "
-":attr:`hit <hits>` will be counted when the first line of that function is "
-"executed.  A :attr:`conditional <cond>` breakpoint always counts a :attr:`hit"
-" <hits>`."
+"When creating a breakpoint, its associated :attr:`file name <file>` should "
+"be in canonical form.  If a :attr:`funcname` is defined, a "
+"breakpoint :attr:`hit <hits>` will be counted when the first line of that "
+"function is executed.  A :attr:`conditional <cond>` breakpoint always counts "
+"a :attr:`hit <hits>`."
 msgstr ""
 
 #: library/bdb.rst:39
@@ -74,8 +74,8 @@ msgstr ""
 #: library/bdb.rst:43
 msgid ""
 "Delete the breakpoint from the list associated to a file/line.  If it is the "
-"last breakpoint in that position, it also deletes the entry for the "
-"file/line."
+"last breakpoint in that position, it also deletes the entry for the file/"
+"line."
 msgstr ""
 
 #: library/bdb.rst:50
@@ -118,8 +118,8 @@ msgstr ""
 
 #: library/bdb.rst:74
 msgid ""
-"Print the output of :meth:`bpformat` to the file *out*, or if it is ``None``,"
-" to standard output."
+"Print the output of :meth:`bpformat` to the file *out*, or if it is "
+"``None``, to standard output."
 msgstr ""
 
 #: library/bdb.rst:77
@@ -144,8 +144,8 @@ msgstr ""
 
 #: library/bdb.rst:97
 msgid ""
-"Function name that defines whether a :class:`Breakpoint` is hit upon entering"
-" the function."
+"Function name that defines whether a :class:`Breakpoint` is hit upon "
+"entering the function."
 msgstr ""
 
 #: library/bdb.rst:102
@@ -158,8 +158,8 @@ msgstr ""
 
 #: library/bdb.rst:110
 msgid ""
-"Dictionary of :class:`Breakpoint` instances indexed by (:attr:`file`, "
-":attr:`line`) tuples."
+"Dictionary of :class:`Breakpoint` instances indexed by "
+"(:attr:`file`, :attr:`line`) tuples."
 msgstr ""
 
 #: library/bdb.rst:115
@@ -193,8 +193,8 @@ msgstr ""
 #: library/bdb.rst:135
 msgid ""
 "The *backend* argument specifies the backend to use for :class:`Bdb`. It can "
-"be either ``'settrace'`` or ``'monitoring'``. ``'settrace'`` uses "
-":func:`sys.settrace` which has the best backward compatibility. The "
+"be either ``'settrace'`` or ``'monitoring'``. ``'settrace'`` "
+"uses :func:`sys.settrace` which has the best backward compatibility. The "
 "``'monitoring'`` backend uses the new :mod:`sys.monitoring` that was "
 "introduced in Python 3.12, which can be much more efficient because it can "
 "disable unused events. We are trying to keep the exact interfaces for both "
@@ -221,10 +221,10 @@ msgstr ""
 
 #: library/bdb.rst:157
 msgid ""
-"For real file names, the canonical form is an operating-system-dependent, "
-":func:`case-normalized <os.path.normcase>` :func:`absolute path "
-"<os.path.abspath>`. A *filename* with angle brackets, such as ``\"<stdin>\"``"
-" generated in interactive mode, is returned unchanged."
+"For real file names, the canonical form is an operating-system-"
+"dependent, :func:`case-normalized <os.path.normcase>` :func:`absolute path "
+"<os.path.abspath>`. A *filename* with angle brackets, such as "
+"``\"<stdin>\"`` generated in interactive mode, is returned unchanged."
 msgstr ""
 
 #: library/bdb.rst:164
@@ -241,8 +241,8 @@ msgstr ""
 
 #: library/bdb.rst:178
 msgid ""
-"Set the :attr:`!botframe`, :attr:`!stopframe`, :attr:`!returnframe` and "
-":attr:`quitting <Bdb.set_quit>` attributes with values ready to start "
+"Set the :attr:`!botframe`, :attr:`!stopframe`, :attr:`!returnframe` "
+"and :attr:`quitting <Bdb.set_quit>` attributes with values ready to start "
 "debugging."
 msgstr ""
 
@@ -288,44 +288,45 @@ msgstr ""
 #: library/bdb.rst:200
 msgid ""
 "See the documentation for :func:`sys.settrace` for more information on the "
-"trace function.  For more information on code and frame objects, refer to "
-":ref:`types`."
+"trace function.  For more information on code and frame objects, refer "
+"to :ref:`types`."
 msgstr ""
 
 #: library/bdb.rst:206
 msgid ""
-"If the debugger should stop on the current line, invoke the :meth:`user_line`"
-" method (which should be overridden in subclasses). Raise a :exc:`BdbQuit` "
-"exception if the :attr:`quitting  <Bdb.set_quit>` flag is set (which can be "
-"set from :meth:`user_line`).  Return a reference to the "
-":meth:`trace_dispatch` method for further tracing in that scope."
+"If the debugger should stop on the current line, invoke "
+"the :meth:`user_line` method (which should be overridden in subclasses). "
+"Raise a :exc:`BdbQuit` exception if the :attr:`quitting  <Bdb.set_quit>` "
+"flag is set (which can be set from :meth:`user_line`).  Return a reference "
+"to the :meth:`trace_dispatch` method for further tracing in that scope."
 msgstr ""
 
 #: library/bdb.rst:214
 msgid ""
-"If the debugger should stop on this function call, invoke the "
-":meth:`user_call` method (which should be overridden in subclasses). Raise a "
-":exc:`BdbQuit` exception if the :attr:`quitting  <Bdb.set_quit>` flag is set "
-"(which can be set from :meth:`user_call`).  Return a reference to the "
-":meth:`trace_dispatch` method for further tracing in that scope."
+"If the debugger should stop on this function call, invoke "
+"the :meth:`user_call` method (which should be overridden in subclasses). "
+"Raise a :exc:`BdbQuit` exception if the :attr:`quitting  <Bdb.set_quit>` "
+"flag is set (which can be set from :meth:`user_call`).  Return a reference "
+"to the :meth:`trace_dispatch` method for further tracing in that scope."
 msgstr ""
 
 #: library/bdb.rst:222
 msgid ""
-"If the debugger should stop on this function return, invoke the "
-":meth:`user_return` method (which should be overridden in subclasses). Raise "
-"a :exc:`BdbQuit` exception if the :attr:`quitting  <Bdb.set_quit>` flag is "
-"set (which can be set from :meth:`user_return`).  Return a reference to the "
-":meth:`trace_dispatch` method for further tracing in that scope."
+"If the debugger should stop on this function return, invoke "
+"the :meth:`user_return` method (which should be overridden in subclasses). "
+"Raise a :exc:`BdbQuit` exception if the :attr:`quitting  <Bdb.set_quit>` "
+"flag is set (which can be set from :meth:`user_return`).  Return a reference "
+"to the :meth:`trace_dispatch` method for further tracing in that scope."
 msgstr ""
 
 #: library/bdb.rst:230
 msgid ""
-"If the debugger should stop at this exception, invokes the "
-":meth:`user_exception` method (which should be overridden in subclasses). "
-"Raise a :exc:`BdbQuit` exception if the :attr:`quitting  <Bdb.set_quit>` flag"
-" is set (which can be set from :meth:`user_exception`).  Return a reference "
-"to the :meth:`trace_dispatch` method for further tracing in that scope."
+"If the debugger should stop at this exception, invokes "
+"the :meth:`user_exception` method (which should be overridden in "
+"subclasses). Raise a :exc:`BdbQuit` exception if the :attr:`quitting  "
+"<Bdb.set_quit>` flag is set (which can be set from :meth:`user_exception`).  "
+"Return a reference to the :meth:`trace_dispatch` method for further tracing "
+"in that scope."
 msgstr ""
 
 #: library/bdb.rst:236
@@ -370,14 +371,14 @@ msgstr ""
 
 #: library/bdb.rst:266
 msgid ""
-"*argument_list* is not used anymore and will always be ``None``. The argument"
-" is kept for backwards compatibility."
+"*argument_list* is not used anymore and will always be ``None``. The "
+"argument is kept for backwards compatibility."
 msgstr ""
 
 #: library/bdb.rst:271
 msgid ""
-"Called from :meth:`dispatch_line` when either :meth:`stop_here` or "
-":meth:`break_here` returns ``True``."
+"Called from :meth:`dispatch_line` when either :meth:`stop_here` "
+"or :meth:`break_here` returns ``True``."
 msgstr ""
 
 #: library/bdb.rst:276
@@ -469,8 +470,8 @@ msgstr ""
 
 #: library/bdb.rst:349
 msgid ""
-"Delete the breakpoint which has the index *arg* in the "
-":attr:`Breakpoint.bpbynumber`.  If *arg* is not numeric or out of range, "
+"Delete the breakpoint which has the index *arg* in "
+"the :attr:`Breakpoint.bpbynumber`.  If *arg* is not numeric or out of range, "
 "return an error message."
 msgstr ""
 
@@ -545,8 +546,8 @@ msgstr ""
 
 #: library/bdb.rst:419
 msgid ""
-"The most recently called frame is last in the list. The size is the number of"
-" frames below the frame where the debugger was invoked."
+"The most recently called frame is last in the list. The size is the number "
+"of frames below the frame where the debugger was invoked."
 msgstr ""
 
 #: library/bdb.rst:424
@@ -577,14 +578,14 @@ msgstr ""
 
 #: library/bdb.rst:434
 msgid ""
-"The following two methods can be called by clients to use a debugger to debug"
-" a :term:`statement`, given as a string."
+"The following two methods can be called by clients to use a debugger to "
+"debug a :term:`statement`, given as a string."
 msgstr ""
 
 #: library/bdb.rst:439
 msgid ""
-"Debug a statement executed via the :func:`exec` function.  *globals* defaults"
-" to :attr:`!__main__.__dict__`, *locals* defaults to *globals*."
+"Debug a statement executed via the :func:`exec` function.  *globals* "
+"defaults to :attr:`!__main__.__dict__`, *locals* defaults to *globals*."
 msgstr ""
 
 #: library/bdb.rst:444
@@ -607,17 +608,17 @@ msgstr ""
 
 #: library/bdb.rst:460
 msgid ""
-"Return ``True`` if we should break here, depending on the way the "
-":class:`Breakpoint` *b* was set."
+"Return ``True`` if we should break here, depending on the way "
+"the :class:`Breakpoint` *b* was set."
 msgstr ""
 
 #: library/bdb.rst:463
 msgid ""
 "If it was set via line number, it checks if :attr:`b.line "
 "<bdb.Breakpoint.line>` is the same as the one in *frame*. If the breakpoint "
-"was set via :attr:`function name <bdb.Breakpoint.funcname>`, we have to check"
-" we are in the right *frame* (the right function) and if we are on its first "
-"executable line."
+"was set via :attr:`function name <bdb.Breakpoint.funcname>`, we have to "
+"check we are in the right *frame* (the right function) and if we are on its "
+"first executable line."
 msgstr ""
 
 #: library/bdb.rst:472
@@ -629,14 +630,15 @@ msgstr ""
 #: library/bdb.rst:475
 msgid ""
 "The *active breakpoint* is the first entry in :attr:`bplist "
-"<bdb.Breakpoint.bplist>` for the (:attr:`file <bdb.Breakpoint.file>`, "
-":attr:`line <bdb.Breakpoint.line>`) (which must exist) that is :attr:`enabled"
-" <bdb.Breakpoint.enabled>`, for which :func:`checkfuncname` is true, and that"
-" has neither a false :attr:`condition <bdb.Breakpoint.cond>` nor positive "
-":attr:`ignore <bdb.Breakpoint.ignore>` count.  The *flag*, meaning that a "
-"temporary breakpoint should be deleted, is ``False`` only when the "
-":attr:`cond <bdb.Breakpoint.cond>` cannot be evaluated (in which case, "
-":attr:`ignore <bdb.Breakpoint.ignore>` count is ignored)."
+"<bdb.Breakpoint.bplist>` for the (:attr:`file "
+"<bdb.Breakpoint.file>`, :attr:`line <bdb.Breakpoint.line>`) (which must "
+"exist) that is :attr:`enabled <bdb.Breakpoint.enabled>`, for "
+"which :func:`checkfuncname` is true, and that has neither a "
+"false :attr:`condition <bdb.Breakpoint.cond>` nor positive :attr:`ignore "
+"<bdb.Breakpoint.ignore>` count.  The *flag*, meaning that a temporary "
+"breakpoint should be deleted, is ``False`` only when the :attr:`cond "
+"<bdb.Breakpoint.cond>` cannot be evaluated (in which case, :attr:`ignore "
+"<bdb.Breakpoint.ignore>` count is ignored)."
 msgstr ""
 
 #: library/bdb.rst:486

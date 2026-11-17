@@ -94,8 +94,8 @@ msgstr ""
 #: c-api/unicode.rst:72
 msgid ""
 "The structure of a particular object can be determined using the following "
-"macros. The macros cannot fail; their behavior is undefined if their argument"
-" is not a Python Unicode object."
+"macros. The macros cannot fail; their behavior is undefined if their "
+"argument is not a Python Unicode object."
 msgstr ""
 
 #: c-api/unicode.rst:81
@@ -120,22 +120,22 @@ msgstr ""
 
 #: c-api/unicode.rst:104
 msgid ""
-"Return true if the object *obj* is a Unicode object, but not an instance of a"
-" subtype.  This function always succeeds."
+"Return true if the object *obj* is a Unicode object, but not an instance of "
+"a subtype.  This function always succeeds."
 msgstr ""
 
 #: c-api/unicode.rst:110
 msgid ""
-"Return the length of the Unicode string, in code points.  *unicode* has to be"
-" a Unicode object in the \"canonical\" representation (not checked)."
+"Return the length of the Unicode string, in code points.  *unicode* has to "
+"be a Unicode object in the \"canonical\" representation (not checked)."
 msgstr ""
 
 #: c-api/unicode.rst:120
 msgid ""
 "Return a pointer to the canonical representation cast to UCS1, UCS2 or UCS4 "
 "integer types for direct character access.  No checks are performed if the "
-"canonical representation has the correct character size; use "
-":c:func:`PyUnicode_KIND` to select the right function."
+"canonical representation has the correct character size; "
+"use :c:func:`PyUnicode_KIND` to select the right function."
 msgstr ""
 
 #: c-api/unicode.rst:132
@@ -148,9 +148,10 @@ msgstr ""
 
 #: c-api/unicode.rst:142
 msgid ""
-"Return one of the PyUnicode kind constants (see above) that indicate how many"
-" bytes per character this Unicode object uses to store its data.  *unicode* "
-"has to be a Unicode object in the \"canonical\" representation (not checked)."
+"Return one of the PyUnicode kind constants (see above) that indicate how "
+"many bytes per character this Unicode object uses to store its data.  "
+"*unicode* has to be a Unicode object in the \"canonical\" representation "
+"(not checked)."
 msgstr ""
 
 #: c-api/unicode.rst:151
@@ -167,10 +168,10 @@ msgstr ""
 #: c-api/unicode.rst:162
 msgid ""
 "The *kind* value and *data* pointer must have been obtained from a string "
-"using :c:func:`PyUnicode_KIND` and :c:func:`PyUnicode_DATA` respectively. You"
-" must hold a reference to that string while calling "
-":c:func:`!PyUnicode_WRITE`. All requirements of :c:func:`PyUnicode_WriteChar`"
-" also apply."
+"using :c:func:`PyUnicode_KIND` and :c:func:`PyUnicode_DATA` respectively. "
+"You must hold a reference to that string while calling :c:func:`!"
+"PyUnicode_WRITE`. All requirements of :c:func:`PyUnicode_WriteChar` also "
+"apply."
 msgstr ""
 
 #: c-api/unicode.rst:168
@@ -181,21 +182,21 @@ msgstr ""
 
 #: c-api/unicode.rst:176
 msgid ""
-"Read a code point from a canonical representation *data* (as obtained with "
-":c:func:`PyUnicode_DATA`).  No checks are performed."
+"Read a code point from a canonical representation *data* (as obtained "
+"with :c:func:`PyUnicode_DATA`).  No checks are performed."
 msgstr ""
 
 #: c-api/unicode.rst:181 c-api/unicode.rst:195
 msgid ""
-"Accept reading the trailing null character at index "
-":c:func:`PyUnicode_GetLength`."
+"Accept reading the trailing null character at "
+"index :c:func:`PyUnicode_GetLength`."
 msgstr ""
 
 #: c-api/unicode.rst:189
 msgid ""
 "Read a character from a Unicode object *unicode*, which must be in the "
-"\"canonical\" representation.  This is less efficient than "
-":c:func:`PyUnicode_READ` if you do multiple consecutive reads."
+"\"canonical\" representation.  This is less efficient "
+"than :c:func:`PyUnicode_READ` if you do multiple consecutive reads."
 msgstr ""
 
 #: c-api/unicode.rst:203
@@ -219,21 +220,21 @@ msgstr ""
 
 #: c-api/unicode.rst:222
 msgid ""
-"Return true if the string only contains ASCII characters. Equivalent to "
-":py:meth:`str.isascii`."
+"Return true if the string only contains ASCII characters. Equivalent "
+"to :py:meth:`str.isascii`."
 msgstr ""
 
 #: c-api/unicode.rst:230
 msgid ""
-"If the hash of *str*, as returned by :c:func:`PyObject_Hash`, has been cached"
-" and is immediately available, return it. Otherwise, return ``-1`` *without* "
-"setting an exception."
+"If the hash of *str*, as returned by :c:func:`PyObject_Hash`, has been "
+"cached and is immediately available, return it. Otherwise, return ``-1`` "
+"*without* setting an exception."
 msgstr ""
 
 #: c-api/unicode.rst:234
 msgid ""
-"If *str* is not a string (that is, if ``PyUnicode_Check(obj)`` is false), the"
-" behavior is undefined."
+"If *str* is not a string (that is, if ``PyUnicode_Check(obj)`` is false), "
+"the behavior is undefined."
 msgstr ""
 
 #: c-api/unicode.rst:237
@@ -242,8 +243,8 @@ msgstr ""
 
 #: c-api/unicode.rst:239
 msgid ""
-"Note that there are no guarantees on when an object's hash is cached, and the"
-" (non-)existence of a cached hash does not imply that the string has any "
+"Note that there are no guarantees on when an object's hash is cached, and "
+"the (non-)existence of a cached hash does not imply that the string has any "
 "other properties."
 msgstr ""
 
@@ -369,8 +370,8 @@ msgstr ""
 
 #: c-api/unicode.rst:365
 msgid ""
-"Return the low UTF-16 surrogate (``0xDC00`` to ``0xDFFF``) for a Unicode code"
-" point in the range ``[0x10000; 0x10FFFF]``."
+"Return the low UTF-16 surrogate (``0xDC00`` to ``0xDFFF``) for a Unicode "
+"code point in the range ``[0x10000; 0x10FFFF]``."
 msgstr ""
 
 #: c-api/unicode.rst:370
@@ -393,9 +394,9 @@ msgstr ""
 
 #: c-api/unicode.rst:384
 msgid ""
-"Create a new Unicode object.  *maxchar* should be the true maximum code point"
-" to be placed in the string.  As an approximation, it can be rounded up to "
-"the nearest value in the sequence 127, 255, 65535, 1114111."
+"Create a new Unicode object.  *maxchar* should be the true maximum code "
+"point to be placed in the string.  As an approximation, it can be rounded up "
+"to the nearest value in the sequence 127, 255, 65535, 1114111."
 msgstr ""
 
 #: c-api/unicode.rst:388
@@ -404,11 +405,11 @@ msgstr ""
 
 #: c-api/unicode.rst:390
 msgid ""
-"After creation, the string can be filled by :c:func:`PyUnicode_WriteChar`, "
-":c:func:`PyUnicode_CopyCharacters`, :c:func:`PyUnicode_Fill`, "
-":c:func:`PyUnicode_WRITE` or similar. Since strings are supposed to be "
-"immutable, take care to not “use” the result while it is being modified. In "
-"particular, before it's filled with its final contents, a string:"
+"After creation, the string can be filled "
+"by :c:func:`PyUnicode_WriteChar`, :c:func:`PyUnicode_CopyCharacters`, :c:func:`PyUnicode_Fill`, :c:func:`PyUnicode_WRITE` "
+"or similar. Since strings are supposed to be immutable, take care to not "
+"“use” the result while it is being modified. In particular, before it's "
+"filled with its final contents, a string:"
 msgstr ""
 
 #: c-api/unicode.rst:397
@@ -444,16 +445,16 @@ msgstr ""
 
 #: c-api/unicode.rst:417
 msgid ""
-"Create a new Unicode object with the given *kind* (possible values are "
-":c:macro:`PyUnicode_1BYTE_KIND` etc., as returned by "
-":c:func:`PyUnicode_KIND`).  The *buffer* must point to an array of *size* "
+"Create a new Unicode object with the given *kind* (possible values "
+"are :c:macro:`PyUnicode_1BYTE_KIND` etc., as returned "
+"by :c:func:`PyUnicode_KIND`).  The *buffer* must point to an array of *size* "
 "units of 1, 2 or 4 bytes per character, as given by the kind."
 msgstr ""
 
 #: c-api/unicode.rst:422
 msgid ""
-"If necessary, the input *buffer* is copied and transformed into the canonical"
-" representation.  For example, if the *buffer* is a UCS4 string "
+"If necessary, the input *buffer* is copied and transformed into the "
+"canonical representation.  For example, if the *buffer* is a UCS4 string "
 "(:c:macro:`PyUnicode_4BYTE_KIND`) and it consists only of codepoints in the "
 "UCS1 range, it will be transformed into UCS1 "
 "(:c:macro:`PyUnicode_1BYTE_KIND`)."
@@ -461,9 +462,9 @@ msgstr ""
 
 #: c-api/unicode.rst:428
 msgid ""
-"All characters must be in range [U+0000; U+10ffff]. If *kind* is "
-":c:macro:`PyUnicode_4BYTE_KIND` and the string contains invalid characters, "
-"the behavior is undefined."
+"All characters must be in range [U+0000; U+10ffff]. If *kind* "
+"is :c:macro:`PyUnicode_4BYTE_KIND` and the string contains invalid "
+"characters, the behavior is undefined."
 msgstr ""
 
 #: c-api/unicode.rst:437
@@ -524,16 +525,16 @@ msgstr ""
 #: c-api/unicode.rst:474
 msgid ""
 "Minimum field width (optional). If specified as an ``'*'`` (asterisk), the "
-"actual width is given in the next argument, which must be of type "
-":c:expr:`int`, and the object to convert comes after the minimum field width "
-"and optional precision."
+"actual width is given in the next argument, which must be of "
+"type :c:expr:`int`, and the object to convert comes after the minimum field "
+"width and optional precision."
 msgstr ""
 
 #: c-api/unicode.rst:479
 msgid ""
 "Precision (optional), given as a ``'.'`` (dot) followed by the precision. If "
-"specified as ``'*'`` (an asterisk), the actual precision is given in the next"
-" argument, which must be of type :c:expr:`int`, and the value to convert "
+"specified as ``'*'`` (an asterisk), the actual precision is given in the "
+"next argument, which must be of type :c:expr:`int`, and the value to convert "
 "comes after the precision."
 msgstr ""
 
@@ -806,8 +807,8 @@ msgstr ""
 
 #: c-api/unicode.rst:597
 msgid ""
-"Get the fully qualified name of an object type; call "
-":c:func:`PyType_GetFullyQualifiedName`."
+"Get the fully qualified name of an object type; "
+"call :c:func:`PyType_GetFullyQualifiedName`."
 msgstr ""
 
 #: c-api/unicode.rst:600
@@ -830,8 +831,8 @@ msgstr ""
 
 #: c-api/unicode.rst:607
 msgid ""
-"Get the fully qualified name of a type; call "
-":c:func:`PyType_GetFullyQualifiedName`."
+"Get the fully qualified name of a type; "
+"call :c:func:`PyType_GetFullyQualifiedName`."
 msgstr ""
 
 #: c-api/unicode.rst:610
@@ -871,8 +872,8 @@ msgstr ""
 
 #: c-api/unicode.rst:634
 msgid ""
-"Support width and precision formatter for ``\"%s\"``, ``\"%A\"``, ``\"%U\"``,"
-" ``\"%V\"``, ``\"%S\"``, ``\"%R\"`` added."
+"Support width and precision formatter for ``\"%s\"``, ``\"%A\"``, "
+"``\"%U\"``, ``\"%V\"``, ``\"%S\"``, ``\"%R\"`` added."
 msgstr ""
 
 #: c-api/unicode.rst:638
@@ -949,8 +950,8 @@ msgstr ""
 
 #: c-api/unicode.rst:697
 msgid ""
-"Append the string *right* to the end of *p_left*. *p_left* must point to a "
-":term:`strong reference` to a Unicode object; :c:func:`!PyUnicode_Append` "
+"Append the string *right* to the end of *p_left*. *p_left* must point to "
+"a :term:`strong reference` to a Unicode object; :c:func:`!PyUnicode_Append` "
 "releases (\":term:`steals <steal>`\") this reference."
 msgstr ""
 
@@ -970,8 +971,8 @@ msgstr ""
 
 #: c-api/unicode.rst:715
 msgid ""
-"Return a mapping suitable for decoding a custom single-byte encoding. Given a"
-" Unicode string *string* of up to 256 characters representing an encoding "
+"Return a mapping suitable for decoding a custom single-byte encoding. Given "
+"a Unicode string *string* of up to 256 characters representing an encoding "
 "table, returns either a compact internal mapping object or a dictionary "
 "mapping character ordinals to byte values. Raises a :exc:`TypeError` and "
 "return ``NULL`` on invalid input."
@@ -979,14 +980,14 @@ msgstr ""
 
 #: c-api/unicode.rst:726
 msgid ""
-"Return the name of the default string encoding, ``\"utf-8\"``. See "
-":func:`sys.getdefaultencoding`."
+"Return the name of the default string encoding, ``\"utf-8\"``. "
+"See :func:`sys.getdefaultencoding`."
 msgstr ""
 
 #: c-api/unicode.rst:729
 msgid ""
-"The returned string does not need to be freed, and is valid until interpreter"
-" shutdown."
+"The returned string does not need to be freed, and is valid until "
+"interpreter shutdown."
 msgstr ""
 
 #: c-api/unicode.rst:735
@@ -1003,10 +1004,10 @@ msgstr ""
 
 #: c-api/unicode.rst:752
 msgid ""
-"Copy characters from one Unicode object into another.  This function performs"
-" character conversion when necessary and falls back to :c:func:`!memcpy` if "
-"possible.  Returns ``-1`` and sets an exception on error, otherwise returns "
-"the number of copied characters."
+"Copy characters from one Unicode object into another.  This function "
+"performs character conversion when necessary and falls back to :c:func:`!"
+"memcpy` if possible.  Returns ``-1`` and sets an exception on error, "
+"otherwise returns the number of copied characters."
 msgstr ""
 
 #: c-api/unicode.rst:757 c-api/unicode.rst:787 c-api/unicode.rst:807
@@ -1016,7 +1017,8 @@ msgid ""
 msgstr ""
 
 #: c-api/unicode.rst:765
-msgid "Resize a Unicode object *\\*unicode* to the new *length* in code points."
+msgid ""
+"Resize a Unicode object *\\*unicode* to the new *length* in code points."
 msgstr ""
 
 #: c-api/unicode.rst:767
@@ -1058,23 +1060,23 @@ msgstr ""
 
 #: c-api/unicode.rst:799
 msgid ""
-"Write a *character* to the string *unicode* at the zero-based *index*. Return"
-" ``0`` on success, ``-1`` on error with an exception set."
+"Write a *character* to the string *unicode* at the zero-based *index*. "
+"Return ``0`` on success, ``-1`` on error with an exception set."
 msgstr ""
 
 #: c-api/unicode.rst:802
 msgid ""
 "This function checks that *unicode* is a Unicode object, that the index is "
-"not out of bounds, and that the object's reference count is one. See "
-":c:func:`PyUnicode_WRITE` for a version that skips these checks, making them "
-"your responsibility."
+"not out of bounds, and that the object's reference count is one. "
+"See :c:func:`PyUnicode_WRITE` for a version that skips these checks, making "
+"them your responsibility."
 msgstr ""
 
 #: c-api/unicode.rst:815
 msgid ""
 "Read a character from a string.  This function checks that *unicode* is a "
-"Unicode object and the index is not out of bounds, in contrast to "
-":c:func:`PyUnicode_READ_CHAR`, which performs no error checking."
+"Unicode object and the index is not out of bounds, in contrast "
+"to :c:func:`PyUnicode_READ_CHAR`, which performs no error checking."
 msgstr ""
 
 #: c-api/unicode.rst:819
@@ -1083,8 +1085,8 @@ msgstr ""
 
 #: c-api/unicode.rst:823
 msgid ""
-"Do not accept reading the trailing null character at index "
-":c:func:`PyUnicode_GetLength`."
+"Do not accept reading the trailing null character at "
+"index :c:func:`PyUnicode_GetLength`."
 msgstr ""
 
 #: c-api/unicode.rst:832
@@ -1104,9 +1106,9 @@ msgstr ""
 
 #: c-api/unicode.rst:852
 msgid ""
-"Copy the string *unicode* into a new UCS4 buffer that is allocated using "
-":c:func:`PyMem_Malloc`.  If this fails, ``NULL`` is returned with a "
-":exc:`MemoryError` set.  The returned buffer always has an extra null code "
+"Copy the string *unicode* into a new UCS4 buffer that is allocated "
+"using :c:func:`PyMem_Malloc`.  If this fails, ``NULL`` is returned with "
+"a :exc:`MemoryError` set.  The returned buffer always has an extra null code "
 "point appended."
 msgstr ""
 
@@ -1122,17 +1124,17 @@ msgstr ""
 
 #: c-api/unicode.rst:870
 msgid ""
-"Decode a string from UTF-8 on Android and VxWorks, or from the current locale"
-" encoding on other platforms. The supported error handlers are ``\"strict\"``"
-" and ``\"surrogateescape\"`` (:pep:`383`). The decoder uses ``\"strict\"`` "
-"error handler if *errors* is ``NULL``.  *str* must end with a null character "
-"but cannot contain embedded null characters."
+"Decode a string from UTF-8 on Android and VxWorks, or from the current "
+"locale encoding on other platforms. The supported error handlers are "
+"``\"strict\"`` and ``\"surrogateescape\"`` (:pep:`383`). The decoder uses "
+"``\"strict\"`` error handler if *errors* is ``NULL``.  *str* must end with a "
+"null character but cannot contain embedded null characters."
 msgstr ""
 
 #: c-api/unicode.rst:877
 msgid ""
-"Use :c:func:`PyUnicode_DecodeFSDefaultAndSize` to decode a string from the "
-":term:`filesystem encoding and error handler`."
+"Use :c:func:`PyUnicode_DecodeFSDefaultAndSize` to decode a string from "
+"the :term:`filesystem encoding and error handler`."
 msgstr ""
 
 #: c-api/unicode.rst:880 c-api/unicode.rst:915
@@ -1146,9 +1148,9 @@ msgstr ""
 #: c-api/unicode.rst:888
 msgid ""
 "The function now also uses the current locale encoding for the "
-"``surrogateescape`` error handler, except on Android. Previously, "
-":c:func:`Py_DecodeLocale` was used for the ``surrogateescape``, and the "
-"current locale encoding was used for ``strict``."
+"``surrogateescape`` error handler, except on Android. "
+"Previously, :c:func:`Py_DecodeLocale` was used for the ``surrogateescape``, "
+"and the current locale encoding was used for ``strict``."
 msgstr ""
 
 #: c-api/unicode.rst:897
@@ -1162,14 +1164,14 @@ msgid ""
 "Encode a Unicode object to UTF-8 on Android and VxWorks, or to the current "
 "locale encoding on other platforms. The supported error handlers are "
 "``\"strict\"`` and ``\"surrogateescape\"`` (:pep:`383`). The encoder uses "
-"``\"strict\"`` error handler if *errors* is ``NULL``. Return a :class:`bytes`"
-" object. *unicode* cannot contain embedded null characters."
+"``\"strict\"`` error handler if *errors* is ``NULL``. Return "
+"a :class:`bytes` object. *unicode* cannot contain embedded null characters."
 msgstr ""
 
 #: c-api/unicode.rst:912
 msgid ""
-"Use :c:func:`PyUnicode_EncodeFSDefault` to encode a string to the "
-":term:`filesystem encoding and error handler`."
+"Use :c:func:`PyUnicode_EncodeFSDefault` to encode a string to "
+"the :term:`filesystem encoding and error handler`."
 msgstr ""
 
 #: c-api/unicode.rst:919 c-api/unicode.rst:1033
@@ -1179,9 +1181,9 @@ msgstr ""
 #: c-api/unicode.rst:923
 msgid ""
 "The function now also uses the current locale encoding for the "
-"``surrogateescape`` error handler, except on Android. Previously, "
-":c:func:`Py_EncodeLocale` was used for the ``surrogateescape``, and the "
-"current locale encoding was used for ``strict``."
+"``surrogateescape`` error handler, except on Android. "
+"Previously, :c:func:`Py_EncodeLocale` was used for the ``surrogateescape``, "
+"and the current locale encoding was used for ``strict``."
 msgstr ""
 
 #: c-api/unicode.rst:934
@@ -1197,20 +1199,20 @@ msgstr ""
 #: c-api/unicode.rst:939
 msgid ""
 "To encode file names to :class:`bytes` during argument parsing, the "
-"``\"O&\"`` converter should be used, passing :c:func:`!PyUnicode_FSConverter`"
-" as the conversion function:"
+"``\"O&\"`` converter should be used, passing :c:func:`!"
+"PyUnicode_FSConverter` as the conversion function:"
 msgstr ""
 
 #: c-api/unicode.rst:945
 msgid ""
-":ref:`PyArg_Parse\\* converter <arg-parsing>`: encode :class:`str` objects --"
-" obtained directly or through the :class:`os.PathLike` interface -- to "
-":class:`bytes` using :c:func:`PyUnicode_EncodeFSDefault`; :class:`bytes` "
-"objects are output as-is. *result* must be an address of a C variable of type"
-" :c:expr:`PyObject*` (or :c:expr:`PyBytesObject*`). On success, set the "
+":ref:`PyArg_Parse\\* converter <arg-parsing>`: encode :class:`str` objects "
+"-- obtained directly or through the :class:`os.PathLike` interface -- "
+"to :class:`bytes` using :c:func:`PyUnicode_EncodeFSDefault`; :class:`bytes` "
+"objects are output as-is. *result* must be an address of a C variable of "
+"type :c:expr:`PyObject*` (or :c:expr:`PyBytesObject*`). On success, set the "
 "variable to a new :term:`strong reference` to a :ref:`bytes object "
-"<bytesobjects>` which must be released when it is no longer used and return a"
-" non-zero value (:c:macro:`Py_CLEANUP_SUPPORTED`). Embedded null bytes are "
+"<bytesobjects>` which must be released when it is no longer used and return "
+"a non-zero value (:c:macro:`Py_CLEANUP_SUPPORTED`). Embedded null bytes are "
 "not allowed in the result. On failure, return ``0`` with an exception set."
 msgstr ""
 
@@ -1235,15 +1237,15 @@ msgstr ""
 msgid ""
 ":ref:`PyArg_Parse\\* converter <arg-parsing>`: decode :class:`bytes` objects "
 "-- obtained either directly or indirectly through the :class:`os.PathLike` "
-"interface -- to :class:`str` using "
-":c:func:`PyUnicode_DecodeFSDefaultAndSize`; :class:`str` objects are output "
-"as-is. *result* must be an address of a C variable of type "
-":c:expr:`PyObject*` (or :c:expr:`PyUnicodeObject*`). On success, set the "
-"variable to a new :term:`strong reference` to a :ref:`Unicode object "
-"<unicodeobjects>` which must be released when it is no longer used and return"
-" a non-zero value (:c:macro:`Py_CLEANUP_SUPPORTED`). Embedded null characters"
-" are not allowed in the result. On failure, return ``0`` with an exception "
-"set."
+"interface -- to :class:`str` "
+"using :c:func:`PyUnicode_DecodeFSDefaultAndSize`; :class:`str` objects are "
+"output as-is. *result* must be an address of a C variable of "
+"type :c:expr:`PyObject*` (or :c:expr:`PyUnicodeObject*`). On success, set "
+"the variable to a new :term:`strong reference` to a :ref:`Unicode object "
+"<unicodeobjects>` which must be released when it is no longer used and "
+"return a non-zero value (:c:macro:`Py_CLEANUP_SUPPORTED`). Embedded null "
+"characters are not allowed in the result. On failure, return ``0`` with an "
+"exception set."
 msgstr ""
 
 #: c-api/unicode.rst:984
@@ -1258,8 +1260,8 @@ msgstr ""
 
 #: c-api/unicode.rst:997
 msgid ""
-"If you need to decode a string from the current locale encoding, use "
-":c:func:`PyUnicode_DecodeLocaleAndSize`."
+"If you need to decode a string from the current locale encoding, "
+"use :c:func:`PyUnicode_DecodeLocaleAndSize`."
 msgstr ""
 
 #: c-api/unicode.rst:1004 c-api/unicode.rst:1017 c-api/unicode.rst:1037
@@ -1270,27 +1272,27 @@ msgstr ""
 
 #: c-api/unicode.rst:1011
 msgid ""
-"Decode a null-terminated string from the :term:`filesystem encoding and error"
-" handler`."
+"Decode a null-terminated string from the :term:`filesystem encoding and "
+"error handler`."
 msgstr ""
 
 #: c-api/unicode.rst:1014
 msgid ""
-"If the string length is known, use "
-":c:func:`PyUnicode_DecodeFSDefaultAndSize`."
+"If the string length is known, "
+"use :c:func:`PyUnicode_DecodeFSDefaultAndSize`."
 msgstr ""
 
 #: c-api/unicode.rst:1024
 msgid ""
-"Encode a Unicode object to the :term:`filesystem encoding and error handler`,"
-" and return :class:`bytes`. Note that the resulting :class:`bytes` object can"
-" contain null bytes."
+"Encode a Unicode object to the :term:`filesystem encoding and error "
+"handler`, and return :class:`bytes`. Note that the resulting :class:`bytes` "
+"object can contain null bytes."
 msgstr ""
 
 #: c-api/unicode.rst:1028
 msgid ""
-"If you need to encode a string to the current locale encoding, use "
-":c:func:`PyUnicode_EncodeLocale`."
+"If you need to encode a string to the current locale encoding, "
+"use :c:func:`PyUnicode_EncodeLocale`."
 msgstr ""
 
 #: c-api/unicode.rst:1042
@@ -1303,17 +1305,18 @@ msgstr ""
 
 #: c-api/unicode.rst:1048
 msgid ""
-"Create a Unicode object from the :c:type:`wchar_t` buffer *wstr* of the given"
-" *size*. Passing ``-1`` as the *size* indicates that the function must itself"
-" compute the length, using :c:func:`!wcslen`. Return ``NULL`` on failure."
+"Create a Unicode object from the :c:type:`wchar_t` buffer *wstr* of the "
+"given *size*. Passing ``-1`` as the *size* indicates that the function must "
+"itself compute the length, using :c:func:`!wcslen`. Return ``NULL`` on "
+"failure."
 msgstr ""
 
 #: c-api/unicode.rst:1056
 msgid ""
 "Copy the Unicode object contents into the :c:type:`wchar_t` buffer *wstr*.  "
 "At most *size* :c:type:`wchar_t` characters are copied (excluding a possibly "
-"trailing null termination character).  Return the number of :c:type:`wchar_t`"
-" characters copied or ``-1`` in case of an error."
+"trailing null termination character).  Return the number "
+"of :c:type:`wchar_t` characters copied or ``-1`` in case of an error."
 msgstr ""
 
 #: c-api/unicode.rst:1061
@@ -1325,22 +1328,23 @@ msgstr ""
 #: c-api/unicode.rst:1064
 msgid ""
 "Note that the resulting :c:expr:`wchar_t*` string may or may not be null-"
-"terminated.  It is the responsibility of the caller to make sure that the "
-":c:expr:`wchar_t*` string is null-terminated in case this is required by the "
-"application. Also, note that the :c:expr:`wchar_t*` string might contain null"
-" characters, which would cause the string to be truncated when used with most"
-" C functions."
+"terminated.  It is the responsibility of the caller to make sure that "
+"the :c:expr:`wchar_t*` string is null-terminated in case this is required by "
+"the application. Also, note that the :c:expr:`wchar_t*` string might contain "
+"null characters, which would cause the string to be truncated when used with "
+"most C functions."
 msgstr ""
 
 #: c-api/unicode.rst:1074
 msgid ""
 "Convert the Unicode object to a wide character string. The output string "
 "always ends with a null character. If *size* is not ``NULL``, write the "
-"number of wide characters (excluding the trailing null termination character)"
-" into *\\*size*. Note that the resulting :c:type:`wchar_t` string might "
-"contain null characters, which would cause the string to be truncated when "
-"used with most C functions. If *size* is ``NULL`` and the :c:expr:`wchar_t*` "
-"string contains null characters a :exc:`ValueError` is raised."
+"number of wide characters (excluding the trailing null termination "
+"character) into *\\*size*. Note that the resulting :c:type:`wchar_t` string "
+"might contain null characters, which would cause the string to be truncated "
+"when used with most C functions. If *size* is ``NULL`` and "
+"the :c:expr:`wchar_t*` string contains null characters a :exc:`ValueError` "
+"is raised."
 msgstr ""
 
 #: c-api/unicode.rst:1082
@@ -1369,8 +1373,8 @@ msgstr ""
 #: c-api/unicode.rst:1102
 msgid ""
 "Many of the following APIs take two arguments encoding and errors, and they "
-"have the same semantics as the ones of the built-in :func:`str` string object"
-" constructor."
+"have the same semantics as the ones of the built-in :func:`str` string "
+"object constructor."
 msgstr ""
 
 #: c-api/unicode.rst:1106
@@ -1418,11 +1422,11 @@ msgstr ""
 
 #: c-api/unicode.rst:1139
 msgid ""
-"Create a Unicode object by decoding *size* bytes of the encoded string *str*."
-" *encoding* and *errors* have the same meaning as the parameters of the same "
-"name in the :func:`str` built-in function.  The codec to be used is looked up"
-" using the Python codec registry.  Return ``NULL`` if an exception was raised"
-" by the codec."
+"Create a Unicode object by decoding *size* bytes of the encoded string "
+"*str*. *encoding* and *errors* have the same meaning as the parameters of "
+"the same name in the :func:`str` built-in function.  The codec to be used is "
+"looked up using the Python codec registry.  Return ``NULL`` if an exception "
+"was raised by the codec."
 msgstr ""
 
 #: c-api/unicode.rst:1149
@@ -1451,9 +1455,9 @@ msgstr ""
 #: c-api/unicode.rst:1171
 msgid ""
 "If *consumed* is ``NULL``, behave like :c:func:`PyUnicode_DecodeUTF8`. If "
-"*consumed* is not ``NULL``, trailing incomplete UTF-8 byte sequences will not"
-" be treated as an error. Those bytes will not be decoded and the number of "
-"bytes that have been decoded will be stored in *consumed*."
+"*consumed* is not ``NULL``, trailing incomplete UTF-8 byte sequences will "
+"not be treated as an error. Those bytes will not be decoded and the number "
+"of bytes that have been decoded will be stored in *consumed*."
 msgstr ""
 
 #: c-api/unicode.rst:1179
@@ -1465,17 +1469,17 @@ msgstr ""
 
 #: c-api/unicode.rst:1183 c-api/unicode.rst:1198
 msgid ""
-"The function fails if the string contains surrogate code points (``U+D800`` -"
-" ``U+DFFF``)."
+"The function fails if the string contains surrogate code points (``U+D800`` "
+"- ``U+DFFF``)."
 msgstr ""
 
 #: c-api/unicode.rst:1189
 msgid ""
 "Return a pointer to the UTF-8 encoding of the Unicode object, and store the "
-"size of the encoded representation (in bytes) in *size*.  The *size* argument"
-" can be ``NULL``; in this case no size will be stored.  The returned buffer "
-"always has an extra null byte appended (not included in *size*), regardless "
-"of whether there are any other null code points."
+"size of the encoded representation (in bytes) in *size*.  The *size* "
+"argument can be ``NULL``; in this case no size will be stored.  The returned "
+"buffer always has an extra null byte appended (not included in *size*), "
+"regardless of whether there are any other null code points."
 msgstr ""
 
 #: c-api/unicode.rst:1195
@@ -1486,10 +1490,11 @@ msgstr ""
 
 #: c-api/unicode.rst:1201
 msgid ""
-"This caches the UTF-8 representation of the string in the Unicode object, and"
-" subsequent calls will return a pointer to the same buffer.  The caller is "
-"not responsible for deallocating the buffer. The buffer is deallocated and "
-"pointers to it become invalid when the Unicode object is garbage collected."
+"This caches the UTF-8 representation of the string in the Unicode object, "
+"and subsequent calls will return a pointer to the same buffer.  The caller "
+"is not responsible for deallocating the buffer. The buffer is deallocated "
+"and pointers to it become invalid when the Unicode object is garbage "
+"collected."
 msgstr ""
 
 #: c-api/unicode.rst:1208 c-api/unicode.rst:1230
@@ -1510,8 +1515,8 @@ msgid ""
 "<https://en.wikipedia.org/wiki/Null_character>`_ embedded within *unicode*. "
 "As a result, strings containing null characters will remain in the returned "
 "string, which some C functions might interpret as the end of the string, "
-"leading to truncation. If truncation is an issue, it is recommended to use "
-":c:func:`PyUnicode_AsUTF8AndSize` instead."
+"leading to truncation. If truncation is an issue, it is recommended to "
+"use :c:func:`PyUnicode_AsUTF8AndSize` instead."
 msgstr ""
 
 #: c-api/unicode.rst:1235
@@ -1545,9 +1550,9 @@ msgstr ""
 #: c-api/unicode.rst:1254
 msgid ""
 "If ``*byteorder`` is zero, and the first four bytes of the input data are a "
-"byte order mark (BOM), the decoder switches to this byte order and the BOM is"
-" not copied into the resulting Unicode string.  If ``*byteorder`` is ``-1`` "
-"or ``1``, any byte order mark is copied to the output."
+"byte order mark (BOM), the decoder switches to this byte order and the BOM "
+"is not copied into the resulting Unicode string.  If ``*byteorder`` is "
+"``-1`` or ``1``, any byte order mark is copied to the output."
 msgstr ""
 
 #: c-api/unicode.rst:1259
@@ -1598,10 +1603,10 @@ msgstr ""
 #: c-api/unicode.rst:1304
 msgid ""
 "If ``*byteorder`` is zero, and the first two bytes of the input data are a "
-"byte order mark (BOM), the decoder switches to this byte order and the BOM is"
-" not copied into the resulting Unicode string.  If ``*byteorder`` is ``-1`` "
-"or ``1``, any byte order mark is copied to the output (where it will result "
-"in either a ``\\ufeff`` or a ``\\ufffe`` character)."
+"byte order mark (BOM), the decoder switches to this byte order and the BOM "
+"is not copied into the resulting Unicode string.  If ``*byteorder`` is "
+"``-1`` or ``1``, any byte order mark is copied to the output (where it will "
+"result in either a ``\\ufeff`` or a ``\\ufffe`` character)."
 msgstr ""
 
 #: c-api/unicode.rst:1310
@@ -1615,8 +1620,9 @@ msgid ""
 "If *consumed* is ``NULL``, behave like :c:func:`PyUnicode_DecodeUTF16`. If "
 "*consumed* is not ``NULL``, :c:func:`PyUnicode_DecodeUTF16Stateful` will not "
 "treat trailing incomplete UTF-16 byte sequences (such as an odd number of "
-"bytes or a split surrogate pair) as an error. Those bytes will not be decoded"
-" and the number of bytes that have been decoded will be stored in *consumed*."
+"bytes or a split surrogate pair) as an error. Those bytes will not be "
+"decoded and the number of bytes that have been decoded will be stored in "
+"*consumed*."
 msgstr ""
 
 #: c-api/unicode.rst:1330
@@ -1665,9 +1671,9 @@ msgstr ""
 
 #: c-api/unicode.rst:1371
 msgid ""
-"Encode a Unicode object using Unicode-Escape and return the result as a bytes"
-" object.  Error handling is \"strict\".  Return ``NULL`` if an exception was "
-"raised by the codec."
+"Encode a Unicode object using Unicode-Escape and return the result as a "
+"bytes object.  Error handling is \"strict\".  Return ``NULL`` if an "
+"exception was raised by the codec."
 msgstr ""
 
 #: c-api/unicode.rst:1377
@@ -1688,8 +1694,8 @@ msgstr ""
 #: c-api/unicode.rst:1391
 msgid ""
 "Encode a Unicode object using Raw-Unicode-Escape and return the result as a "
-"bytes object.  Error handling is \"strict\".  Return ``NULL`` if an exception"
-" was raised by the codec."
+"bytes object.  Error handling is \"strict\".  Return ``NULL`` if an "
+"exception was raised by the codec."
 msgstr ""
 
 #: c-api/unicode.rst:1397
@@ -1721,8 +1727,8 @@ msgstr ""
 
 #: c-api/unicode.rst:1419
 msgid ""
-"These are the ASCII codec APIs.  Only 7-bit ASCII data is accepted. All other"
-" codes generate errors."
+"These are the ASCII codec APIs.  Only 7-bit ASCII data is accepted. All "
+"other codes generate errors."
 msgstr ""
 
 #: c-api/unicode.rst:1425
@@ -1746,10 +1752,10 @@ msgstr ""
 msgid ""
 "This codec is special in that it can be used to implement many different "
 "codecs (and this is in fact what was done to obtain most of the standard "
-"codecs included in the :mod:`!encodings` package). The codec uses mappings to"
-" encode and decode characters.  The mapping objects provided must support the"
-" :meth:`~object.__getitem__` mapping interface; dictionaries and sequences "
-"work well."
+"codecs included in the :mod:`!encodings` package). The codec uses mappings "
+"to encode and decode characters.  The mapping objects provided must support "
+"the :meth:`~object.__getitem__` mapping interface; dictionaries and "
+"sequences work well."
 msgstr ""
 
 #: c-api/unicode.rst:1445
@@ -1759,8 +1765,8 @@ msgstr ""
 #: c-api/unicode.rst:1450
 msgid ""
 "Create a Unicode object by decoding *size* bytes of the encoded string *str* "
-"using the given *mapping* object.  Return ``NULL`` if an exception was raised"
-" by the codec."
+"using the given *mapping* object.  Return ``NULL`` if an exception was "
+"raised by the codec."
 msgstr ""
 
 #: c-api/unicode.rst:1454
@@ -1783,9 +1789,9 @@ msgstr ""
 #: c-api/unicode.rst:1469
 msgid ""
 "The *mapping* object must map Unicode ordinal integers to bytes objects, "
-"integers in the range from 0 to 255 or ``None``.  Unmapped character ordinals"
-" (ones which cause a :exc:`LookupError`) as well as mapped to ``None`` are "
-"treated as \"undefined mapping\" and cause an error."
+"integers in the range from 0 to 255 or ``None``.  Unmapped character "
+"ordinals (ones which cause a :exc:`LookupError`) as well as mapped to "
+"``None`` are treated as \"undefined mapping\" and cause an error."
 msgstr ""
 
 #: c-api/unicode.rst:1475
@@ -1794,9 +1800,9 @@ msgstr ""
 
 #: c-api/unicode.rst:1479
 msgid ""
-"Translate a string by applying a character mapping table to it and return the"
-" resulting Unicode object. Return ``NULL`` if an exception was raised by the "
-"codec."
+"Translate a string by applying a character mapping table to it and return "
+"the resulting Unicode object. Return ``NULL`` if an exception was raised by "
+"the codec."
 msgstr ""
 
 #: c-api/unicode.rst:1483
@@ -1814,8 +1820,8 @@ msgstr ""
 
 #: c-api/unicode.rst:1490
 msgid ""
-"*errors* has the usual meaning for codecs. It may be ``NULL`` which indicates"
-" to use the default error handling."
+"*errors* has the usual meaning for codecs. It may be ``NULL`` which "
+"indicates to use the default error handling."
 msgstr ""
 
 #: c-api/unicode.rst:1495
@@ -1826,8 +1832,8 @@ msgstr ""
 msgid ""
 "These are the MBCS codec APIs. They are currently only available on Windows "
 "and use the Win32 MBCS converters to implement the conversions.  Note that "
-"MBCS (or DBCS) is a class of encodings, not just one.  The target encoding is"
-" defined by the user settings on the machine running the codec."
+"MBCS (or DBCS) is a class of encodings, not just one.  The target encoding "
+"is defined by the user settings on the machine running the codec."
 msgstr ""
 
 #: c-api/unicode.rst:1504
@@ -1840,8 +1846,8 @@ msgstr ""
 msgid ""
 "If *consumed* is ``NULL``, behave like :c:func:`PyUnicode_DecodeMBCS`. If "
 "*consumed* is not ``NULL``, :c:func:`PyUnicode_DecodeMBCSStateful` will not "
-"decode trailing lead byte and the number of bytes that have been decoded will"
-" be stored in *consumed*."
+"decode trailing lead byte and the number of bytes that have been decoded "
+"will be stored in *consumed*."
 msgstr ""
 
 #: c-api/unicode.rst:1520
@@ -1860,8 +1866,8 @@ msgstr ""
 #: c-api/unicode.rst:1533
 msgid ""
 "Encode the Unicode object using the specified code page and return a Python "
-"bytes object.  Return ``NULL`` if an exception was raised by the codec. Use "
-":c:macro:`!CP_ACP` code page to get the MBCS encoder."
+"bytes object.  Return ``NULL`` if an exception was raised by the codec. "
+"Use :c:macro:`!CP_ACP` code page to get the MBCS encoder."
 msgstr ""
 
 #: c-api/unicode.rst:1543
@@ -1886,8 +1892,8 @@ msgstr ""
 #: c-api/unicode.rst:1559
 msgid ""
 "Split a string giving a list of Unicode strings.  If *sep* is ``NULL``, "
-"splitting will be done at all whitespace substrings.  Otherwise, splits occur"
-" at the given separator.  At most *maxsplit* splits will be done.  If "
+"splitting will be done at all whitespace substrings.  Otherwise, splits "
+"occur at the given separator.  At most *maxsplit* splits will be done.  If "
 "negative, no limit is set.  Separators are not included in the resulting "
 "list."
 msgstr ""
@@ -1903,8 +1909,8 @@ msgstr ""
 
 #: c-api/unicode.rst:1571
 msgid ""
-"Similar to :c:func:`PyUnicode_Split`, but splitting will be done beginning at"
-" the end of the string."
+"Similar to :c:func:`PyUnicode_Split`, but splitting will be done beginning "
+"at the end of the string."
 msgstr ""
 
 #: c-api/unicode.rst:1576
@@ -1920,10 +1926,10 @@ msgstr ""
 
 #: c-api/unicode.rst:1588
 msgid ""
-"Split a Unicode string at the first occurrence of *sep*, and return a 3-tuple"
-" containing the part before the separator, the separator itself, and the part"
-" after the separator. If the separator is not found, return a 3-tuple "
-"containing the string itself, followed by two empty strings."
+"Split a Unicode string at the first occurrence of *sep*, and return a 3-"
+"tuple containing the part before the separator, the separator itself, and "
+"the part after the separator. If the separator is not found, return a 3-"
+"tuple containing the string itself, followed by two empty strings."
 msgstr ""
 
 #: c-api/unicode.rst:1593 c-api/unicode.rst:1606
@@ -1953,9 +1959,9 @@ msgstr ""
 
 #: c-api/unicode.rst:1622
 msgid ""
-"Return ``1`` if *substr* matches ``unicode[start:end]`` at the given tail end"
-" (*direction* == ``-1`` means to do a prefix match, *direction* == ``1`` a "
-"suffix match), ``0`` otherwise. Return ``-1`` if an error occurred."
+"Return ``1`` if *substr* matches ``unicode[start:end]`` at the given tail "
+"end (*direction* == ``-1`` means to do a prefix match, *direction* == ``1`` "
+"a suffix match), ``0`` otherwise. Return ``-1`` if an error occurred."
 msgstr ""
 
 #: c-api/unicode.rst:1630
@@ -1991,20 +1997,20 @@ msgstr ""
 #: c-api/unicode.rst:1662
 msgid ""
 "Replace at most *maxcount* occurrences of *substr* in *unicode* with "
-"*replstr* and return the resulting Unicode object. *maxcount* == ``-1`` means"
-" replace all occurrences."
+"*replstr* and return the resulting Unicode object. *maxcount* == ``-1`` "
+"means replace all occurrences."
 msgstr ""
 
 #: c-api/unicode.rst:1669
 msgid ""
-"Compare two strings and return ``-1``, ``0``, ``1`` for less than, equal, and"
-" greater than, respectively."
+"Compare two strings and return ``-1``, ``0``, ``1`` for less than, equal, "
+"and greater than, respectively."
 msgstr ""
 
 #: c-api/unicode.rst:1672
 msgid ""
-"This function returns ``-1`` upon failure, so one should call "
-":c:func:`PyErr_Occurred` to check for errors."
+"This function returns ``-1`` upon failure, so one should "
+"call :c:func:`PyErr_Occurred` to check for errors."
 msgstr ""
 
 #: c-api/unicode.rst:1677
@@ -2025,8 +2031,8 @@ msgstr ""
 
 #: c-api/unicode.rst:1686
 msgid ""
-"Set a :exc:`TypeError` exception and return ``-1`` if *a* or *b* is not a "
-":class:`str` object."
+"Set a :exc:`TypeError` exception and return ``-1`` if *a* or *b* is not "
+"a :class:`str` object."
 msgstr ""
 
 #: c-api/unicode.rst:1689
@@ -2067,8 +2073,8 @@ msgstr ""
 msgid ""
 "Compare a Unicode object, *unicode*, with *string* and return ``-1``, ``0``, "
 "``1`` for less than, equal, and greater than, respectively. It is best to "
-"pass only ASCII-encoded strings, but the function interprets the input string"
-" as ISO-8859-1 if it contains non-ASCII characters."
+"pass only ASCII-encoded strings, but the function interprets the input "
+"string as ISO-8859-1 if it contains non-ASCII characters."
 msgstr ""
 
 #: c-api/unicode.rst:1736
@@ -2089,8 +2095,9 @@ msgstr ""
 
 #: c-api/unicode.rst:1742
 msgid ""
-"Possible values for *op* are :c:macro:`Py_GT`, :c:macro:`Py_GE`, "
-":c:macro:`Py_EQ`, :c:macro:`Py_NE`, :c:macro:`Py_LT`, and :c:macro:`Py_LE`."
+"Possible values for *op* "
+"are :c:macro:`Py_GT`, :c:macro:`Py_GE`, :c:macro:`Py_EQ`, :c:macro:`Py_NE`, :c:macro:`Py_LT`, "
+"and :c:macro:`Py_LE`."
 msgstr ""
 
 #: c-api/unicode.rst:1748
@@ -2107,25 +2114,25 @@ msgstr ""
 
 #: c-api/unicode.rst:1757
 msgid ""
-"*substr* has to coerce to a one element Unicode string. ``-1`` is returned if"
-" there was an error."
+"*substr* has to coerce to a one element Unicode string. ``-1`` is returned "
+"if there was an error."
 msgstr ""
 
 #: c-api/unicode.rst:1763
 msgid ""
 "Intern the argument :c:expr:`*p_unicode` in place.  The argument must be the "
-"address of a pointer variable pointing to a Python Unicode string object.  If"
-" there is an existing interned string that is the same as "
-":c:expr:`*p_unicode`, it sets :c:expr:`*p_unicode` to it (releasing the "
+"address of a pointer variable pointing to a Python Unicode string object.  "
+"If there is an existing interned string that is the same "
+"as :c:expr:`*p_unicode`, it sets :c:expr:`*p_unicode` to it (releasing the "
 "reference to the old string object and creating a new :term:`strong "
-"reference` to the interned string object), otherwise it leaves "
-":c:expr:`*p_unicode` alone and interns it."
+"reference` to the interned string object), otherwise it "
+"leaves :c:expr:`*p_unicode` alone and interns it."
 msgstr ""
 
 #: c-api/unicode.rst:1770
 msgid ""
-"(Clarification: even though there is a lot of talk about references, think of"
-" this function as reference-neutral. You must own the object you pass in; "
+"(Clarification: even though there is a lot of talk about references, think "
+"of this function as reference-neutral. You must own the object you pass in; "
 "after the call you no longer own the passed-in reference, but you newly own "
 "the result.)"
 msgstr ""
@@ -2138,9 +2145,9 @@ msgstr ""
 
 #: c-api/unicode.rst:1778
 msgid ""
-"Instances of subclasses of :py:class:`str` may not be interned, that is, "
-":c:expr:`PyUnicode_CheckExact(*p_unicode)` must be true. If it is not, then "
-"-- as with any other error -- the argument is left unchanged."
+"Instances of subclasses of :py:class:`str` may not be interned, that "
+"is, :c:expr:`PyUnicode_CheckExact(*p_unicode)` must be true. If it is not, "
+"then -- as with any other error -- the argument is left unchanged."
 msgstr ""
 
 #: c-api/unicode.rst:1782
@@ -2151,14 +2158,16 @@ msgstr ""
 
 #: c-api/unicode.rst:1788
 msgid ""
-"A combination of :c:func:`PyUnicode_FromString` and "
-":c:func:`PyUnicode_InternInPlace`, meant for statically allocated strings."
+"A combination of :c:func:`PyUnicode_FromString` "
+"and :c:func:`PyUnicode_InternInPlace`, meant for statically allocated "
+"strings."
 msgstr ""
 
 #: c-api/unicode.rst:1791
 msgid ""
-"Return a new (\"owned\") reference to either a new Unicode string object that"
-" has been interned, or an earlier interned string object with the same value."
+"Return a new (\"owned\") reference to either a new Unicode string object "
+"that has been interned, or an earlier interned string object with the same "
+"value."
 msgstr ""
 
 #: c-api/unicode.rst:1795
@@ -2166,14 +2175,15 @@ msgid ""
 "Python may keep a reference to the result, or make it :term:`immortal`, "
 "preventing it from being garbage-collected promptly. For interning an "
 "unbounded number of different strings, such as ones coming from user input, "
-"prefer calling :c:func:`PyUnicode_FromString` and "
-":c:func:`PyUnicode_InternInPlace` directly."
+"prefer calling :c:func:`PyUnicode_FromString` "
+"and :c:func:`PyUnicode_InternInPlace` directly."
 msgstr ""
 
 #: c-api/unicode.rst:1804
 msgid ""
-"Return a non-zero value if *str* is interned, zero if not. The *str* argument"
-" must be a string; this is not checked. This function always succeeds."
+"Return a non-zero value if *str* is interned, zero if not. The *str* "
+"argument must be a string; this is not checked. This function always "
+"succeeds."
 msgstr ""
 
 #: c-api/unicode.rst:1810
@@ -2190,8 +2200,8 @@ msgstr ""
 
 #: c-api/unicode.rst:1819
 msgid ""
-"The :c:type:`PyUnicodeWriter` API can be used to create a Python :class:`str`"
-" object."
+"The :c:type:`PyUnicodeWriter` API can be used to create a "
+"Python :class:`str` object."
 msgstr ""
 
 #: c-api/unicode.rst:1826
@@ -2220,8 +2230,8 @@ msgstr ""
 
 #: c-api/unicode.rst:1840
 msgid ""
-"If *length* is greater than ``0``, preallocate an internal buffer of *length*"
-" characters."
+"If *length* is greater than ``0``, preallocate an internal buffer of "
+"*length* characters."
 msgstr ""
 
 #: c-api/unicode.rst:1843 c-api/unicode.rst:1849
@@ -2340,14 +2350,14 @@ msgstr ""
 #: c-api/unicode.rst:1943
 msgid ""
 "*str* must be Python :class:`str` object. *start* must be greater than or "
-"equal to 0, and less than or equal to *end*. *end* must be less than or equal"
-" to *str* length."
+"equal to 0, and less than or equal to *end*. *end* must be less than or "
+"equal to *str* length."
 msgstr ""
 
 #: c-api/unicode.rst:1952
 msgid ""
-"Similar to :c:func:`PyUnicode_FromFormat`, but write the output directly into"
-" *writer*."
+"Similar to :c:func:`PyUnicode_FromFormat`, but write the output directly "
+"into *writer*."
 msgstr ""
 
 #: c-api/unicode.rst:1959
@@ -2383,8 +2393,9 @@ msgstr ""
 
 #: c-api/unicode.rst:1985
 msgid ""
-"This is a typedef of :c:type:`wchar_t`, which is a 16-bit type or 32-bit type"
-" depending on the platform. Please use :c:type:`wchar_t` directly instead."
+"This is a typedef of :c:type:`wchar_t`, which is a 16-bit type or 32-bit "
+"type depending on the platform. Please use :c:type:`wchar_t` directly "
+"instead."
 msgstr ""
 
 #: c-api/unicode.rst:1989
@@ -2402,9 +2413,9 @@ msgstr ""
 
 #: c-api/unicode.rst:2005
 msgid ""
-"This API does nothing since Python 3.12. Previously, this needed to be called"
-" for each string created using the old API (:c:func:`!PyUnicode_FromUnicode` "
-"or similar)."
+"This API does nothing since Python 3.12. Previously, this needed to be "
+"called for each string created using the old API (:c:func:`!"
+"PyUnicode_FromUnicode` or similar)."
 msgstr ""
 
 #: c-api/unicode.rst:2013

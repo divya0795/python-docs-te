@@ -39,8 +39,8 @@ msgstr ""
 
 #: library/asyncio-dev.rst:21
 msgid ""
-"By default asyncio runs in production mode.  In order to ease the development"
-" asyncio has a *debug mode*."
+"By default asyncio runs in production mode.  In order to ease the "
+"development asyncio has a *debug mode*."
 msgstr ""
 
 #: library/asyncio-dev.rst:24
@@ -69,9 +69,9 @@ msgstr ""
 
 #: library/asyncio-dev.rst:36
 msgid ""
-"setting the log level of the :ref:`asyncio logger <asyncio-logger>` to "
-":py:const:`logging.DEBUG`, for example the following snippet of code can be "
-"run at startup of the application::"
+"setting the log level of the :ref:`asyncio logger <asyncio-logger>` "
+"to :py:const:`logging.DEBUG`, for example the following snippet of code can "
+"be run at startup of the application::"
 msgstr ""
 
 #: library/asyncio-dev.rst:40
@@ -91,9 +91,9 @@ msgstr ""
 
 #: library/asyncio-dev.rst:49
 msgid ""
-"Many non-threadsafe asyncio APIs (such as :meth:`loop.call_soon` and "
-":meth:`loop.call_at` methods) raise an exception if they are called from a "
-"wrong thread."
+"Many non-threadsafe asyncio APIs (such as :meth:`loop.call_soon` "
+"and :meth:`loop.call_at` methods) raise an exception if they are called from "
+"a wrong thread."
 msgstr ""
 
 #: library/asyncio-dev.rst:53
@@ -104,9 +104,9 @@ msgstr ""
 
 #: library/asyncio-dev.rst:56
 msgid ""
-"Callbacks taking longer than 100 milliseconds are logged.  The "
-":attr:`loop.slow_callback_duration` attribute can be used to set the minimum "
-"execution duration in seconds that is considered \"slow\"."
+"Callbacks taking longer than 100 milliseconds are logged.  "
+"The :attr:`loop.slow_callback_duration` attribute can be used to set the "
+"minimum execution duration in seconds that is considered \"slow\"."
 msgstr ""
 
 #: library/asyncio-dev.rst:64
@@ -124,8 +124,8 @@ msgstr ""
 
 #: library/asyncio-dev.rst:72
 msgid ""
-"To schedule a :term:`callback` from another OS thread, the "
-":meth:`loop.call_soon_threadsafe` method should be used. Example::"
+"To schedule a :term:`callback` from another OS thread, "
+"the :meth:`loop.call_soon_threadsafe` method should be used. Example::"
 msgstr ""
 
 #: library/asyncio-dev.rst:75
@@ -135,9 +135,9 @@ msgstr ""
 #: library/asyncio-dev.rst:77
 msgid ""
 "Almost all asyncio objects are not thread safe, which is typically not a "
-"problem unless there is code that works with them from outside of a Task or a"
-" callback.  If there's a need for such code to call a low-level asyncio API, "
-"the :meth:`loop.call_soon_threadsafe` method should be used, e.g.::"
+"problem unless there is code that works with them from outside of a Task or "
+"a callback.  If there's a need for such code to call a low-level asyncio "
+"API, the :meth:`loop.call_soon_threadsafe` method should be used, e.g.::"
 msgstr ""
 
 #: library/asyncio-dev.rst:83
@@ -146,9 +146,9 @@ msgstr ""
 
 #: library/asyncio-dev.rst:85
 msgid ""
-"To schedule a coroutine object from a different OS thread, the "
-":func:`run_coroutine_threadsafe` function should be used. It returns a "
-":class:`concurrent.futures.Future` to access the result::"
+"To schedule a coroutine object from a different OS thread, "
+"the :func:`run_coroutine_threadsafe` function should be used. It returns "
+"a :class:`concurrent.futures.Future` to access the result::"
 msgstr ""
 
 #: library/asyncio-dev.rst:89
@@ -169,23 +169,23 @@ msgstr ""
 
 #: library/asyncio-dev.rst:101
 msgid ""
-"The :meth:`loop.run_in_executor` method can be used with a "
-":class:`concurrent.futures.ThreadPoolExecutor` or "
-":class:`~concurrent.futures.InterpreterPoolExecutor` to execute blocking code"
-" in a different OS thread without blocking the OS thread that the event loop "
-"runs in."
+"The :meth:`loop.run_in_executor` method can be used with "
+"a :class:`concurrent.futures.ThreadPoolExecutor` "
+"or :class:`~concurrent.futures.InterpreterPoolExecutor` to execute blocking "
+"code in a different OS thread without blocking the OS thread that the event "
+"loop runs in."
 msgstr ""
 
 #: library/asyncio-dev.rst:107
 msgid ""
-"There is currently no way to schedule coroutines or callbacks directly from a"
-" different process (such as one started with :mod:`multiprocessing`). The "
-":ref:`asyncio-event-loop-methods` section lists APIs that can read from pipes"
-" and watch file descriptors without blocking the event loop. In addition, "
-"asyncio's :ref:`Subprocess <asyncio-subprocess>` APIs provide a way to start "
-"a process and communicate with it from the event loop. Lastly, the "
-"aforementioned :meth:`loop.run_in_executor` method can also be used with a "
-":class:`concurrent.futures.ProcessPoolExecutor` to execute code in a "
+"There is currently no way to schedule coroutines or callbacks directly from "
+"a different process (such as one started with :mod:`multiprocessing`). "
+"The :ref:`asyncio-event-loop-methods` section lists APIs that can read from "
+"pipes and watch file descriptors without blocking the event loop. In "
+"addition, asyncio's :ref:`Subprocess <asyncio-subprocess>` APIs provide a "
+"way to start a process and communicate with it from the event loop. Lastly, "
+"the aforementioned :meth:`loop.run_in_executor` method can also be used with "
+"a :class:`concurrent.futures.ProcessPoolExecutor` to execute code in a "
 "different process."
 msgstr ""
 
@@ -230,9 +230,9 @@ msgstr ""
 
 #: library/asyncio-dev.rst:149
 msgid ""
-"Network logging can block the event loop. It is recommended to use a separate"
-" thread for handling logs or use non-blocking IO. For example, see "
-":ref:`blocking-handlers`."
+"Network logging can block the event loop. It is recommended to use a "
+"separate thread for handling logs or use non-blocking IO. For example, "
+"see :ref:`blocking-handlers`."
 msgstr ""
 
 #: library/asyncio-dev.rst:157
@@ -241,9 +241,9 @@ msgstr ""
 
 #: library/asyncio-dev.rst:159
 msgid ""
-"When a coroutine function is called, but not awaited (e.g. ``coro()`` instead"
-" of ``await coro()``) or the coroutine is not scheduled with "
-":meth:`asyncio.create_task`, asyncio will emit a :exc:`RuntimeWarning`::"
+"When a coroutine function is called, but not awaited (e.g. ``coro()`` "
+"instead of ``await coro()``) or the coroutine is not scheduled "
+"with :meth:`asyncio.create_task`, asyncio will emit a :exc:`RuntimeWarning`::"
 msgstr ""
 
 #: library/asyncio-dev.rst:164
@@ -290,8 +290,8 @@ msgstr ""
 
 #: library/asyncio-dev.rst:192
 msgid ""
-"The usual fix is to either await the coroutine or call the "
-":meth:`asyncio.create_task` function::"
+"The usual fix is to either await the coroutine or call "
+"the :meth:`asyncio.create_task` function::"
 msgstr ""
 
 #: library/asyncio-dev.rst:195
@@ -308,8 +308,8 @@ msgstr ""
 msgid ""
 "If a :meth:`Future.set_exception` is called but the Future object is never "
 "awaited on, the exception would never be propagated to the user code.  In "
-"this case, asyncio would emit a log message when the Future object is garbage"
-" collected."
+"this case, asyncio would emit a log message when the Future object is "
+"garbage collected."
 msgstr ""
 
 #: library/asyncio-dev.rst:207
@@ -387,18 +387,18 @@ msgstr ""
 #: library/asyncio-dev.rst:263
 msgid ""
 "It is recommended to manually close the :term:`asynchronous generator "
-"<asynchronous generator iterator>`. If a generator exits early - for example,"
-" due to an exception raised in the body of an ``async for`` loop - its "
-"asynchronous cleanup code may run in an unexpected context. This can occur "
-"after the tasks it depends on have completed, or during the event loop "
+"<asynchronous generator iterator>`. If a generator exits early - for "
+"example, due to an exception raised in the body of an ``async for`` loop - "
+"its asynchronous cleanup code may run in an unexpected context. This can "
+"occur after the tasks it depends on have completed, or during the event loop "
 "shutdown when the async-generator's garbage collection hook is called."
 msgstr ""
 
 #: library/asyncio-dev.rst:271
 msgid ""
-"To avoid this, explicitly close the generator by calling its "
-":meth:`~agen.aclose` method, or use the :func:`contextlib.aclosing` context "
-"manager::"
+"To avoid this, explicitly close the generator by calling "
+"its :meth:`~agen.aclose` method, or use the :func:`contextlib.aclosing` "
+"context manager::"
 msgstr ""
 
 #: library/asyncio-dev.rst:275
@@ -461,7 +461,8 @@ msgstr ""
 #: library/asyncio-dev.rst:321
 msgid ""
 "unhandled exception during asyncio.run() shutdown\n"
-"task: <Task finished name='Task-3' coro=<<async_generator_athrow without __name__>()> exception=AssertionError()>\n"
+"task: <Task finished name='Task-3' coro=<<async_generator_athrow without "
+"__name__>()> exception=AssertionError()>\n"
 "Traceback (most recent call last):\n"
 "  File \"example.py\", line 6, in cursor\n"
 "    yield 1\n"
@@ -513,8 +514,8 @@ msgstr ""
 msgid ""
 "To ensure that asynchronous generators close reliably, the event loop uses "
 "the :func:`sys.set_asyncgen_hooks` function to register callback functions. "
-"These callbacks update the list of running asynchronous generators to keep it"
-" in a consistent state."
+"These callbacks update the list of running asynchronous generators to keep "
+"it in a consistent state."
 msgstr ""
 
 #: library/asyncio-dev.rst:363
@@ -564,7 +565,8 @@ msgstr ""
 #: library/asyncio-dev.rst:395
 msgid ""
 "10\n"
-"Exception ignored while closing generator <async_generator object agenfn at 0x000002F71CD10D70>:\n"
+"Exception ignored while closing generator <async_generator object agenfn at "
+"0x000002F71CD10D70>:\n"
 "Traceback (most recent call last):\n"
 "  File \"example.py\", line 13, in <module>\n"
 "    del agen\n"
@@ -600,9 +602,10 @@ msgstr ""
 
 #: library/asyncio-dev.rst:424
 msgid ""
-"Async generators may be reentered while another :meth:`~agen.__anext__` / "
-":meth:`~agen.athrow` / :meth:`~agen.aclose` call is in progress. This may "
-"lead to an inconsistent state of the async generator and can cause errors."
+"Async generators may be reentered while "
+"another :meth:`~agen.__anext__` / :meth:`~agen.athrow` / :meth:`~agen.aclose` "
+"call is in progress. This may lead to an inconsistent state of the async "
+"generator and can cause errors."
 msgstr ""
 
 #: library/asyncio-dev.rst:429

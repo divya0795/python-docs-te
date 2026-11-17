@@ -33,10 +33,10 @@ msgstr ""
 #: c-api/stable.rst:15
 msgid ""
 "CPython's Application Binary Interface (ABI) is forward- and backwards-"
-"compatible across a minor release (if these are compiled the same way; see "
-":ref:`stable-abi-platform` below). So, code compiled for Python 3.10.0 will "
-"work on 3.10.8 and vice versa, but will need to be compiled separately for "
-"3.9.x and 3.11.x."
+"compatible across a minor release (if these are compiled the same way; "
+"see :ref:`stable-abi-platform` below). So, code compiled for Python 3.10.0 "
+"will work on 3.10.8 and vice versa, but will need to be compiled separately "
+"for 3.9.x and 3.11.x."
 msgstr ""
 
 #: c-api/stable.rst:21
@@ -63,10 +63,10 @@ msgstr ""
 #: c-api/stable.rst:31
 msgid ""
 "Names prefixed by an underscore, such as ``_Py_InternalState``, are private "
-"API that can change without notice even in patch releases. If you need to use"
-" this API, consider reaching out to `CPython developers "
-"<https://discuss.python.org/c/core-dev/c-api/30>`_ to discuss adding public "
-"API for your use case."
+"API that can change without notice even in patch releases. If you need to "
+"use this API, consider reaching out to `CPython developers <https://"
+"discuss.python.org/c/core-dev/c-api/30>`_ to discuss adding public API for "
+"your use case."
 msgstr ""
 
 #: c-api/stable.rst:40
@@ -120,9 +120,9 @@ msgstr ""
 
 #: c-api/stable.rst:73
 msgid ""
-"``abi3t``, introduced in Python 3.15, is compatible with :term:`free-threaded"
-" <free-threaded build>` builds of CPython. It has stricter API limitations "
-"than ``abi3``."
+"``abi3t``, introduced in Python 3.15, is compatible with :term:`free-"
+"threaded <free-threaded build>` builds of CPython. It has stricter API "
+"limitations than ``abi3``."
 msgstr ""
 
 #: c-api/stable.rst:79
@@ -148,8 +148,8 @@ msgstr ""
 #: c-api/stable.rst:91
 msgid ""
 "Extensions that target a stable ABI must only use a limited subset of the C "
-"API. This subset is known as the :dfn:`Limited API`; its contents are "
-":ref:`listed below <limited-api-list>`."
+"API. This subset is known as the :dfn:`Limited API`; its contents "
+"are :ref:`listed below <limited-api-list>`."
 msgstr ""
 
 #: c-api/stable.rst:95
@@ -162,28 +162,28 @@ msgstr ""
 #: c-api/stable.rst:100
 msgid ""
 "On some platforms, Python will look for and load shared library files named "
-"with the ``abi3`` or ``abi3t`` tag (for example, ``mymodule.abi3.so``). "
-":term:`Free-threaded <free-threaded build>` interpreters only recognize the "
-"``abi3t`` tag, while non-free-threaded ones will prefer ``abi3`` but fall "
-"back to ``abi3t``. Thus, extensions compatible with both ABIs should use the "
-"``abi3t`` tag."
+"with the ``abi3`` or ``abi3t`` tag (for example, "
+"``mymodule.abi3.so``). :term:`Free-threaded <free-threaded build>` "
+"interpreters only recognize the ``abi3t`` tag, while non-free-threaded ones "
+"will prefer ``abi3`` but fall back to ``abi3t``. Thus, extensions compatible "
+"with both ABIs should use the ``abi3t`` tag."
 msgstr ""
 
 #: c-api/stable.rst:107
 msgid ""
 "Python does not necessarily check that extensions it loads have compatible "
-"ABI. Extension authors are encouraged to add a check using the "
-":c:macro:`Py_mod_abi` slot or the :c:func:`PyABIInfo_Check` function, but the"
-" user (or their packaging tool) is ultimately responsible for ensuring that, "
-"for example, extensions built for Stable ABI 3.10 are not installed for lower"
-" versions of Python."
+"ABI. Extension authors are encouraged to add a check using "
+"the :c:macro:`Py_mod_abi` slot or the :c:func:`PyABIInfo_Check` function, "
+"but the user (or their packaging tool) is ultimately responsible for "
+"ensuring that, for example, extensions built for Stable ABI 3.10 are not "
+"installed for lower versions of Python."
 msgstr ""
 
 #: c-api/stable.rst:115
 msgid ""
 "All functions in Stable ABI are present as functions in Python's shared "
-"library, not solely as macros. This makes them usable in languages that don't"
-" use the C preprocessor, including Python's :py:mod:`ctypes`."
+"library, not solely as macros. This makes them usable in languages that "
+"don't use the C preprocessor, including Python's :py:mod:`ctypes`."
 msgstr ""
 
 #: c-api/stable.rst:124
@@ -211,18 +211,18 @@ msgstr ""
 #: c-api/stable.rst:141
 msgid ""
 "To compile for a Stable ABI, define one or both of the following macros to "
-"the lowest Python version your extension should support, in "
-":c:macro:`Py_PACK_VERSION` format. Typically, you should choose a specific "
-"value rather than the version of the Python headers you are compiling "
-"against."
+"the lowest Python version your extension should support, "
+"in :c:macro:`Py_PACK_VERSION` format. Typically, you should choose a "
+"specific value rather than the version of the Python headers you are "
+"compiling against."
 msgstr ""
 
 #: c-api/stable.rst:147
 msgid ""
-"The macros must be defined before including ``Python.h``. Since "
-":c:macro:`Py_PACK_VERSION` is not available at this point, you will need to "
-"use the numeric value directly. For reference, the values for a few recent "
-"Python versions are:"
+"The macros must be defined before including ``Python.h``. "
+"Since :c:macro:`Py_PACK_VERSION` is not available at this point, you will "
+"need to use the numeric value directly. For reference, the values for a few "
+"recent Python versions are:"
 msgstr ""
 
 #: c-api/stable.rst:1
@@ -240,8 +240,8 @@ msgid ""
 "When one of the macros is defined, ``Python.h`` will only expose API that is "
 "compatible with the given Stable ABI -- that is, the :ref:`Limited API "
 "<limited-api-list>` plus some definitions that need to be visible to the "
-"compiler but should not be used directly. When both are defined, ``Python.h``"
-" will only expose API compatible with both Stable ABIs."
+"compiler but should not be used directly. When both are defined, "
+"``Python.h`` will only expose API compatible with both Stable ABIs."
 msgstr ""
 
 #: c-api/stable.rst:163
@@ -252,8 +252,8 @@ msgstr ""
 
 #: c-api/stable.rst:169
 msgid ""
-"Target ``abi3t``, that is, :term:`free-threaded builds <free-threaded build>`"
-" of CPython. See :ref:`above <abi3-compiling>` for common information."
+"Target ``abi3t``, that is, :term:`free-threaded builds <free-threaded "
+"build>` of CPython. See :ref:`above <abi3-compiling>` for common information."
 msgstr ""
 
 #: c-api/stable.rst:175
@@ -274,16 +274,16 @@ msgstr ""
 
 #: c-api/stable.rst:183
 msgid ""
-"When both are defined, ``Python.h`` may, or may not, redefine "
-":c:macro:`!Py_LIMITED_API` to match :c:macro:`!Py_TARGET_ABI3T`."
+"When both are defined, ``Python.h`` may, or may not, redefine :c:macro:`!"
+"Py_LIMITED_API` to match :c:macro:`!Py_TARGET_ABI3T`."
 msgstr ""
 
 #: c-api/stable.rst:186
 msgid ""
 "On a :term:`free-threaded build` -- that is, when :c:macro:`Py_GIL_DISABLED` "
-"is defined -- :c:macro:`!Py_TARGET_ABI3T` defaults to the value of "
-":c:macro:`!Py_LIMITED_API`. This means that there are two ways to build for "
-"both ``abi3`` and ``abi3t``:"
+"is defined -- :c:macro:`!Py_TARGET_ABI3T` defaults to the value "
+"of :c:macro:`!Py_LIMITED_API`. This means that there are two ways to build "
+"for both ``abi3`` and ``abi3t``:"
 msgstr ""
 
 #: c-api/stable.rst:191
@@ -309,9 +309,10 @@ msgstr ""
 
 #: c-api/stable.rst:203
 msgid ""
-"The goal for Stable ABI is to allow everything that is possible with the full"
-" C API, but possibly with a performance penalty. Generally, compatibility "
-"with Stable ABI will require some changes to an extension's source code."
+"The goal for Stable ABI is to allow everything that is possible with the "
+"full C API, but possibly with a performance penalty. Generally, "
+"compatibility with Stable ABI will require some changes to an extension's "
+"source code."
 msgstr ""
 
 #: c-api/stable.rst:208
@@ -381,9 +382,9 @@ msgstr ""
 msgid ""
 "Also note that while compiling with ``Py_LIMITED_API`` 3.8 means that the "
 "extension should *load* on Python 3.12, and *compile* with Python 3.12, the "
-"same source will not necessarily compile with ``Py_LIMITED_API`` set to 3.12."
-" In general, parts of the Limited API may be deprecated and removed, provided"
-" that Stable ABI stays stable."
+"same source will not necessarily compile with ``Py_LIMITED_API`` set to "
+"3.12. In general, parts of the Limited API may be deprecated and removed, "
+"provided that Stable ABI stays stable."
 msgstr ""
 
 #: c-api/stable.rst:265
@@ -393,8 +394,8 @@ msgstr ""
 #: c-api/stable.rst:267
 msgid ""
 "ABI stability depends not only on Python, but also on the compiler used, "
-"lower-level libraries and compiler options. For the purposes of the "
-":ref:`Stable ABIs <stable-abi>`, these details define a “platform”. They "
+"lower-level libraries and compiler options. For the purposes of "
+"the :ref:`Stable ABIs <stable-abi>`, these details define a “platform”. They "
 "usually depend on the OS type and processor architecture"
 msgstr ""
 
@@ -403,8 +404,8 @@ msgid ""
 "It is the responsibility of each particular distributor of Python to ensure "
 "that all Python versions on a particular platform are built in a way that "
 "does not break the Stable ABIs, or the version-specific ABIs. This is the "
-"case with Windows and macOS releases from ``python.org`` and many third-party"
-" distributors."
+"case with Windows and macOS releases from ``python.org`` and many third-"
+"party distributors."
 msgstr ""
 
 #: c-api/stable.rst:280
@@ -432,8 +433,8 @@ msgstr ""
 
 #: c-api/stable.rst:297
 msgid ""
-"Most modules can use this check via the :c:data:`Py_mod_abi` slot and the "
-":c:macro:`PyABIInfo_VAR` macro, for example like this:"
+"Most modules can use this check via the :c:data:`Py_mod_abi` slot and "
+"the :c:macro:`PyABIInfo_VAR` macro, for example like this:"
 msgstr ""
 
 #: c-api/stable.rst:300
@@ -462,8 +463,8 @@ msgstr ""
 
 #: c-api/stable.rst:319
 msgid ""
-"If the ABI is incompatible, the raised exception will be "
-":py:exc:`ImportError`."
+"If the ABI is incompatible, the raised exception will "
+"be :py:exc:`ImportError`."
 msgstr ""
 
 #: c-api/stable.rst:321
@@ -511,8 +512,8 @@ msgstr ""
 #: c-api/stable.rst:359
 msgid ""
 "The minor version of :c:struct:`PyABIInfo`. Must be set to ``0``; larger "
-"values are reserved for backwards-compatible future versions of "
-":c:struct:`!PyABIInfo`."
+"values are reserved for backwards-compatible future versions of :c:struct:`!"
+"PyABIInfo`."
 msgstr ""
 
 #: c-api/stable.rst:367
@@ -521,14 +522,14 @@ msgstr ""
 
 #: c-api/stable.rst:371
 msgid ""
-"Default flags, based on current values of macros such as "
-":c:macro:`Py_LIMITED_API` and :c:macro:`Py_GIL_DISABLED`."
+"Default flags, based on current values of macros such "
+"as :c:macro:`Py_LIMITED_API` and :c:macro:`Py_GIL_DISABLED`."
 msgstr ""
 
 #: c-api/stable.rst:374
 msgid ""
-"Alternately, the field can be set to the following flags, combined by bitwise"
-" OR. Unused bits must be set to zero."
+"Alternately, the field can be set to the following flags, combined by "
+"bitwise OR. Unused bits must be set to zero."
 msgstr ""
 
 #: c-api/stable.rst:378
@@ -563,8 +564,8 @@ msgstr ""
 
 #: c-api/stable.rst:405
 msgid ""
-"Specifies ABI compatible with both free-threaded and non-free-threaded builds"
-" of CPython, that is, both ``abi3`` and ``abi3t``."
+"Specifies ABI compatible with both free-threaded and non-free-threaded "
+"builds of CPython, that is, both ``abi3`` and ``abi3t``."
 msgstr ""
 
 #: c-api/stable.rst:411
@@ -603,8 +604,8 @@ msgstr ""
 #: c-api/stable.rst:436
 msgid ""
 "The value that should be used for this field, based on current values of "
-"macros such as :c:macro:`Py_LIMITED_API`, :c:macro:`PY_VERSION_HEX` and "
-":c:macro:`Py_GIL_DISABLED`."
+"macros such as :c:macro:`Py_LIMITED_API`, :c:macro:`PY_VERSION_HEX` "
+"and :c:macro:`Py_GIL_DISABLED`."
 msgstr ""
 
 #: c-api/stable.rst:447

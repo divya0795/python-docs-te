@@ -37,9 +37,9 @@ msgstr ""
 
 #: library/profiling.tracing.rst:28
 msgid ""
-"This module is also available as ``cProfile`` for backward compatibility. The"
-" ``cProfile`` name will continue to work in all future Python versions. Use "
-"whichever import style suits your codebase::"
+"This module is also available as ``cProfile`` for backward compatibility. "
+"The ``cProfile`` name will continue to work in all future Python versions. "
+"Use whichever import style suits your codebase::"
 msgstr ""
 
 #: library/profiling.tracing.rst:32
@@ -59,10 +59,10 @@ msgstr ""
 
 #: library/profiling.tracing.rst:44
 msgid ""
-":dfn:`Deterministic profiling` captures every function call, function return,"
-" and exception event during program execution. The profiler measures the "
-"precise time intervals between these events, providing exact statistics about"
-" how the program behaves."
+":dfn:`Deterministic profiling` captures every function call, function "
+"return, and exception event during program execution. The profiler measures "
+"the precise time intervals between these events, providing exact statistics "
+"about how the program behaves."
 msgstr ""
 
 #: library/profiling.tracing.rst:49
@@ -110,8 +110,8 @@ msgid ""
 "Call count statistics can identify bugs (surprising counts) and inline "
 "expansion opportunities (high call counts). Internal time statistics reveal "
 "\"hot loops\" that warrant optimization. Cumulative time statistics help "
-"identify algorithmic inefficiencies. The handling of cumulative times in this"
-" profiler allows direct comparison of recursive and iterative "
+"identify algorithmic inefficiencies. The handling of cumulative times in "
+"this profiler allows direct comparison of recursive and iterative "
 "implementations."
 msgstr ""
 
@@ -261,8 +261,8 @@ msgstr ""
 msgid ""
 "If *filename* is not provided, the function creates a :class:`pstats.Stats` "
 "instance and prints a summary to standard output. If *filename* is provided, "
-"the raw profile data is saved to that file for later analysis with "
-":mod:`pstats`."
+"the raw profile data is saved to that file for later analysis "
+"with :mod:`pstats`."
 msgstr ""
 
 #: library/profiling.tracing.rst:186
@@ -331,9 +331,9 @@ msgstr ""
 
 #: library/profiling.tracing.rst:235
 msgid ""
-"The *sort* argument specifies the sorting order. It accepts a single key or a"
-" tuple of keys for multi-level sorting, using the same values as "
-":meth:`pstats.Stats.sort_stats`."
+"The *sort* argument specifies the sorting order. It accepts a single key or "
+"a tuple of keys for multi-level sorting, using the same values "
+"as :meth:`pstats.Stats.sort_stats`."
 msgstr ""
 
 #: library/profiling.tracing.rst:239
@@ -342,8 +342,8 @@ msgstr ""
 
 #: library/profiling.tracing.rst:244
 msgid ""
-"Write the current profile data to *filename*. The file can be read by "
-":class:`pstats.Stats` for later analysis."
+"Write the current profile data to *filename*. The file can be read "
+"by :class:`pstats.Stats` for later analysis."
 msgstr ""
 
 #: library/profiling.tracing.rst:249
@@ -387,9 +387,9 @@ msgstr ""
 
 #: library/profiling.tracing.rst:278
 msgid ""
-"The timer function must return a single number representing the current time."
-" If it returns integers, also specify *timeunit* to indicate the duration of "
-"one unit::"
+"The timer function must return a single number representing the current "
+"time. If it returns integers, also specify *timeunit* to indicate the "
+"duration of one unit::"
 msgstr ""
 
 #: library/profiling.tracing.rst:282

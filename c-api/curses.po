@@ -27,8 +27,8 @@ msgid ""
 ":mod:`curses` exposes a small C interface for extension modules. Consumers "
 "must include the header file :file:`py_curses.h` (which is not included by "
 "default by :file:`Python.h`) and :c:func:`import_curses` must be invoked, "
-"usually as part of the module initialisation function, to populate "
-":c:var:`PyCurses_API`."
+"usually as part of the module initialisation function, to "
+"populate :c:var:`PyCurses_API`."
 msgstr ""
 
 #: c-api/curses.rst:14
@@ -76,28 +76,29 @@ msgstr ""
 
 #: c-api/curses.rst:42
 msgid ""
-"When called, these predicates return whether :func:`curses.setupterm`, "
-":func:`curses.initscr`, and :func:`curses.start_color` have been called "
-"respectively."
+"When called, these predicates return "
+"whether :func:`curses.setupterm`, :func:`curses.initscr`, "
+"and :func:`curses.start_color` have been called respectively."
 msgstr ""
 
 #: c-api/curses.rst:46
 msgid ""
-"See also the convenience macros :c:macro:`PyCursesSetupTermCalled`, "
-":c:macro:`PyCursesInitialised`, and :c:macro:`PyCursesInitialisedColor`."
+"See also the convenience "
+"macros :c:macro:`PyCursesSetupTermCalled`, :c:macro:`PyCursesInitialised`, "
+"and :c:macro:`PyCursesInitialisedColor`."
 msgstr ""
 
 #: c-api/curses.rst:51
 msgid ""
-"The number of entries in this structure is subject to changes. Consider using"
-" :c:macro:`PyCurses_API_pointers` to check if new fields are available or "
-"not."
+"The number of entries in this structure is subject to changes. Consider "
+"using :c:macro:`PyCurses_API_pointers` to check if new fields are available "
+"or not."
 msgstr ""
 
 #: c-api/curses.rst:58
 msgid ""
-"The number of accessible fields (``4``) in :c:var:`PyCurses_API`. This number"
-" is incremented whenever new fields are added."
+"The number of accessible fields (``4``) in :c:var:`PyCurses_API`. This "
+"number is incremented whenever new fields are added."
 msgstr ""
 
 #: c-api/curses.rst:64

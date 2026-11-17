@@ -35,10 +35,10 @@ msgstr ""
 #: c-api/refcounting.rst:18
 msgid ""
 "Note that the returned value may not actually reflect how many references to "
-"the object are actually held.  For example, some objects are :term:`immortal`"
-" and have a very high refcount that does not reflect the actual number of "
-"references.  Consequently, do not rely on the returned value to be accurate, "
-"other than a value of 0 or 1."
+"the object are actually held.  For example, some objects "
+"are :term:`immortal` and have a very high refcount that does not reflect the "
+"actual number of references.  Consequently, do not rely on the returned "
+"value to be accurate, other than a value of 0 or 1."
 msgstr ""
 
 #: c-api/refcounting.rst:24
@@ -56,8 +56,8 @@ msgstr ""
 
 #: c-api/refcounting.rst:33
 msgid ""
-"See also the function "
-":c:func:`PyUnstable_Object_IsUniqueReferencedTemporary()`."
+"See also the "
+"function :c:func:`PyUnstable_Object_IsUniqueReferencedTemporary()`."
 msgstr ""
 
 #: c-api/refcounting.rst:35
@@ -94,8 +94,8 @@ msgstr ""
 
 #: c-api/refcounting.rst:64
 msgid ""
-"This function is usually used to convert a :term:`borrowed reference` to a "
-":term:`strong reference` in-place. The :c:func:`Py_NewRef` function can be "
+"This function is usually used to convert a :term:`borrowed reference` to "
+"a :term:`strong reference` in-place. The :c:func:`Py_NewRef` function can be "
 "used to create a new :term:`strong reference`."
 msgstr ""
 
@@ -111,8 +111,8 @@ msgstr ""
 
 #: c-api/refcounting.rst:73
 msgid ""
-"Do not expect this function to actually modify *o* in any way. For at least "
-":pep:`some objects <0683>`, this function has no effect."
+"Do not expect this function to actually modify *o* in any way. For at "
+"least :pep:`some objects <0683>`, this function has no effect."
 msgstr ""
 
 #: c-api/refcounting.rst:83
@@ -175,8 +175,8 @@ msgstr ""
 
 #: c-api/refcounting.rst:125
 msgid ""
-"Release a :term:`strong reference` to object *o*, indicating the reference is"
-" no longer used."
+"Release a :term:`strong reference` to object *o*, indicating the reference "
+"is no longer used."
 msgstr ""
 
 #: c-api/refcounting.rst:130
@@ -200,21 +200,21 @@ msgstr ""
 
 #: c-api/refcounting.rst:141
 msgid ""
-"Do not expect this function to actually modify *o* in any way. For at least "
-":pep:`some objects <683>`, this function has no effect."
+"Do not expect this function to actually modify *o* in any way. For at "
+"least :pep:`some objects <683>`, this function has no effect."
 msgstr ""
 
 #: c-api/refcounting.rst:147
 msgid ""
-"The deallocation function can cause arbitrary Python code to be invoked (e.g."
-" when a class instance with a :meth:`~object.__del__` method is deallocated)."
-"  While exceptions in such code are not propagated, the executed code has "
-"free access to all Python global variables.  This means that any object that "
-"is reachable from a global variable should be in a consistent state before "
-":c:func:`Py_DECREF` is invoked.  For example, code to delete an object from a"
-" list should copy a reference to the deleted object in a temporary variable, "
-"update the list data structure, and then call :c:func:`Py_DECREF` for the "
-"temporary variable."
+"The deallocation function can cause arbitrary Python code to be invoked "
+"(e.g. when a class instance with a :meth:`~object.__del__` method is "
+"deallocated).  While exceptions in such code are not propagated, the "
+"executed code has free access to all Python global variables.  This means "
+"that any object that is reachable from a global variable should be in a "
+"consistent state before :c:func:`Py_DECREF` is invoked.  For example, code "
+"to delete an object from a list should copy a reference to the deleted "
+"object in a temporary variable, update the list data structure, and then "
+"call :c:func:`Py_DECREF` for the temporary variable."
 msgstr ""
 
 #: c-api/refcounting.rst:162
@@ -229,9 +229,9 @@ msgid ""
 "Release a :term:`strong reference` for object *o*. The object may be "
 "``NULL``, in which case the macro has no effect; otherwise the effect is the "
 "same as for :c:func:`Py_DECREF`, except that the argument is also set to "
-"``NULL``.  The warning for :c:func:`Py_DECREF` does not apply with respect to"
-" the object passed because the macro carefully uses a temporary variable and "
-"sets the argument to ``NULL`` before releasing the reference."
+"``NULL``.  The warning for :c:func:`Py_DECREF` does not apply with respect "
+"to the object passed because the macro carefully uses a temporary variable "
+"and sets the argument to ``NULL`` before releasing the reference."
 msgstr ""
 
 #: c-api/refcounting.rst:177
@@ -249,20 +249,21 @@ msgstr ""
 #: c-api/refcounting.rst:187
 msgid ""
 "Indicate taking a new :term:`strong reference` to object *o*. A function "
-"version of :c:func:`Py_XINCREF`. It can be used for runtime dynamic embedding"
-" of Python."
+"version of :c:func:`Py_XINCREF`. It can be used for runtime dynamic "
+"embedding of Python."
 msgstr ""
 
 #: c-api/refcounting.rst:194
 msgid ""
-"Release a :term:`strong reference` to object *o*. A function version of "
-":c:func:`Py_XDECREF`. It can be used for runtime dynamic embedding of Python."
+"Release a :term:`strong reference` to object *o*. A function version "
+"of :c:func:`Py_XDECREF`. It can be used for runtime dynamic embedding of "
+"Python."
 msgstr ""
 
 #: c-api/refcounting.rst:201
 msgid ""
-"Macro safely releasing a :term:`strong reference` to object *dst* and setting"
-" *dst* to *src*."
+"Macro safely releasing a :term:`strong reference` to object *dst* and "
+"setting *dst* to *src*."
 msgstr ""
 
 #: c-api/refcounting.rst:204

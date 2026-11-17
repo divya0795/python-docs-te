@@ -28,8 +28,9 @@ msgstr ""
 
 #: c-api/iter.rst:12
 msgid ""
-"Return non-zero if the object *o* can be safely passed to "
-":c:func:`PyIter_NextItem` and ``0`` otherwise. This function always succeeds."
+"Return non-zero if the object *o* can be safely passed "
+"to :c:func:`PyIter_NextItem` and ``0`` otherwise. This function always "
+"succeeds."
 msgstr ""
 
 #: c-api/iter.rst:18
@@ -41,15 +42,15 @@ msgstr ""
 #: c-api/iter.rst:25
 msgid ""
 "Return ``1`` and set *item* to a :term:`strong reference` of the next value "
-"of the iterator *iter* on success. Return ``0`` and set *item* to ``NULL`` if"
-" there are no remaining values. Return ``-1``, set *item* to ``NULL`` and set"
-" an exception on error."
+"of the iterator *iter* on success. Return ``0`` and set *item* to ``NULL`` "
+"if there are no remaining values. Return ``-1``, set *item* to ``NULL`` and "
+"set an exception on error."
 msgstr ""
 
 #: c-api/iter.rst:34
 msgid ""
-"This is an older version of :c:func:`!PyIter_NextItem`, which is retained for"
-" backwards compatibility. Prefer :c:func:`PyIter_NextItem`."
+"This is an older version of :c:func:`!PyIter_NextItem`, which is retained "
+"for backwards compatibility. Prefer :c:func:`PyIter_NextItem`."
 msgstr ""
 
 #: c-api/iter.rst:38

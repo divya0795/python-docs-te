@@ -28,10 +28,11 @@ msgstr ""
 
 #: library/__future__.rst:11
 msgid ""
-"Imports of the form ``from __future__ import feature`` are called "
-":ref:`future statements <future>`. These are special-cased by the Python "
-"compiler to allow the use of new Python features in modules containing the "
-"future statement before the release in which the feature becomes standard."
+"Imports of the form ``from __future__ import feature`` are "
+"called :ref:`future statements <future>`. These are special-cased by the "
+"Python compiler to allow the use of new Python features in modules "
+"containing the future statement before the release in which the feature "
+"becomes standard."
 msgstr ""
 
 #: library/__future__.rst:16
@@ -59,9 +60,9 @@ msgstr ""
 #: library/__future__.rst:29
 msgid ""
 "To ensure that :ref:`future statements <future>` run under releases prior to "
-"Python 2.1 at least yield runtime exceptions (the import of "
-":mod:`!__future__` will fail, because there was no module of that name prior "
-"to 2.1)."
+"Python 2.1 at least yield runtime exceptions (the import of :mod:`!"
+"__future__` will fail, because there was no module of that name prior to "
+"2.1)."
 msgstr ""
 
 #: library/__future__.rst:34
@@ -203,7 +204,8 @@ msgid ""
 "(PY_MAJOR_VERSION, # the 2 in 2.1.0a3; an int\n"
 " PY_MINOR_VERSION, # the 1; an int\n"
 " PY_MICRO_VERSION, # the 0; an int\n"
-" PY_RELEASE_LEVEL, # \"alpha\", \"beta\", \"candidate\" or \"final\"; string\n"
+" PY_RELEASE_LEVEL, # \"alpha\", \"beta\", \"candidate\" or \"final\"; "
+"string\n"
 " PY_RELEASE_SERIAL # the 3; an int\n"
 ")"
 msgstr ""
@@ -217,15 +219,16 @@ msgstr ""
 #: library/__future__.rst:114
 msgid ""
 "In the case of a *MandatoryRelease* that has not yet occurred, "
-"*MandatoryRelease* predicts the release in which the feature will become part"
-" of the language."
+"*MandatoryRelease* predicts the release in which the feature will become "
+"part of the language."
 msgstr ""
 
 #: library/__future__.rst:118
 msgid ""
-"Else *MandatoryRelease* records when the feature became part of the language;"
-" in releases at or after that, modules no longer need a future statement to "
-"use the feature in question, but may continue to use such imports."
+"Else *MandatoryRelease* records when the feature became part of the "
+"language; in releases at or after that, modules no longer need a future "
+"statement to use the feature in question, but may continue to use such "
+"imports."
 msgstr ""
 
 #: library/__future__.rst:122
@@ -238,16 +241,16 @@ msgstr ""
 msgid ""
 "*CompilerFlag* is the (bitfield) flag that should be passed in the fourth "
 "argument to the built-in function :func:`compile` to enable the feature in "
-"dynamically compiled code.  This flag is stored in the "
-":attr:`_Feature.compiler_flag` attribute on :class:`_Feature` instances."
+"dynamically compiled code.  This flag is stored in "
+"the :attr:`_Feature.compiler_flag` attribute on :class:`_Feature` instances."
 msgstr ""
 
 #: library/__future__.rst:133
 msgid ""
 "``from __future__ import annotations`` was previously scheduled to become "
-"mandatory in Python 3.10, but the change was delayed and ultimately canceled."
-" This feature will eventually be deprecated and removed. See :pep:`649` and "
-":pep:`749`."
+"mandatory in Python 3.10, but the change was delayed and ultimately "
+"canceled. This feature will eventually be deprecated and removed. "
+"See :pep:`649` and :pep:`749`."
 msgstr ""
 
 #: library/__future__.rst:141

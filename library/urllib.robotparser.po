@@ -29,15 +29,15 @@ msgstr ""
 #: library/urllib.robotparser.rst:18
 msgid ""
 "This module provides a single class, :class:`RobotFileParser`, which answers "
-"questions about whether or not a particular user agent can fetch a URL on the"
-" website that published the :file:`robots.txt` file.  For more details on the"
-" structure of :file:`robots.txt` files, see :rfc:`9309`."
+"questions about whether or not a particular user agent can fetch a URL on "
+"the website that published the :file:`robots.txt` file.  For more details on "
+"the structure of :file:`robots.txt` files, see :rfc:`9309`."
 msgstr ""
 
 #: library/urllib.robotparser.rst:26
 msgid ""
-"This class provides methods to read, parse and answer questions about the "
-":file:`robots.txt` file at *url*."
+"This class provides methods to read, parse and answer questions about "
+"the :file:`robots.txt` file at *url*."
 msgstr ""
 
 #: library/urllib.robotparser.rst:31
@@ -80,8 +80,8 @@ msgstr ""
 
 #: library/urllib.robotparser.rst:69
 msgid ""
-"Returns the contents of the ``Request-rate`` parameter from ``robots.txt`` as"
-" a :term:`named tuple` ``RequestRate(requests, seconds)``. If there is no "
+"Returns the contents of the ``Request-rate`` parameter from ``robots.txt`` "
+"as a :term:`named tuple` ``RequestRate(requests, seconds)``. If there is no "
 "such parameter or it doesn't apply to the *useragent* specified or the "
 "``robots.txt`` entry for this parameter has invalid syntax, return ``None``."
 msgstr ""

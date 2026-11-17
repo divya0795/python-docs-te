@@ -28,10 +28,11 @@ msgstr ""
 
 #: faq/installed.rst:8
 msgid ""
-"Python is a programming language.  It's used for many different applications."
-" It's used in some high schools and colleges as an introductory programming "
-"language because Python is easy to learn, but it's also used by professional "
-"software developers at places such as Google, NASA, and Lucasfilm Ltd."
+"Python is a programming language.  It's used for many different "
+"applications. It's used in some high schools and colleges as an introductory "
+"programming language because Python is easy to learn, but it's also used by "
+"professional software developers at places such as Google, NASA, and "
+"Lucasfilm Ltd."
 msgstr ""
 
 #: faq/installed.rst:13
@@ -46,8 +47,8 @@ msgstr ""
 
 #: faq/installed.rst:20
 msgid ""
-"If you find Python installed on your system but don't remember installing it,"
-" there are several possible ways it could have gotten there."
+"If you find Python installed on your system but don't remember installing "
+"it, there are several possible ways it could have gotten there."
 msgstr ""
 
 #: faq/installed.rst:23
@@ -59,8 +60,8 @@ msgstr ""
 
 #: faq/installed.rst:26
 msgid ""
-"A third-party application installed on the machine might have been written in"
-" Python and included a Python installation.  There are many such "
+"A third-party application installed on the machine might have been written "
+"in Python and included a Python installation.  There are many such "
 "applications, from GUI programs to network servers and administrative "
 "scripts."
 msgstr ""
@@ -95,9 +96,9 @@ msgstr ""
 
 #: faq/installed.rst:45
 msgid ""
-"If Python was installed by a third-party application, you can also remove it,"
-" but that application will no longer work.  You should use that application's"
-" uninstaller rather than removing Python directly."
+"If Python was installed by a third-party application, you can also remove "
+"it, but that application will no longer work.  You should use that "
+"application's uninstaller rather than removing Python directly."
 msgstr ""
 
 #: faq/installed.rst:49

@@ -72,12 +72,12 @@ msgstr ""
 
 #: library/profiling.rst:51
 msgid ""
-"The profiler modules are designed to provide an execution profile for a given"
-" program, not for benchmarking purposes. For benchmarking, use the "
-":mod:`timeit` module, which provides reasonably accurate timing measurements."
-" This distinction is particularly important when comparing Python code "
-"against C code: deterministic profilers introduce overhead for Python code "
-"but not for C-level functions, which can skew comparisons."
+"The profiler modules are designed to provide an execution profile for a "
+"given program, not for benchmarking purposes. For benchmarking, use "
+"the :mod:`timeit` module, which provides reasonably accurate timing "
+"measurements. This distinction is particularly important when comparing "
+"Python code against C code: deterministic profilers introduce overhead for "
+"Python code but not for C-level functions, which can skew comparisons."
 msgstr ""
 
 #: library/profiling.rst:62
@@ -88,8 +88,8 @@ msgstr ""
 msgid ""
 "For most performance analysis, use the statistical profiler "
 "(:mod:`profiling.sampling`). It has minimal overhead, works for both "
-"development and production, and provides rich visualization options including"
-" flame graphs, heatmaps, GIL analysis, and more."
+"development and production, and provides rich visualization options "
+"including flame graphs, heatmaps, GIL analysis, and more."
 msgstr ""
 
 #: library/profiling.rst:69
@@ -196,8 +196,8 @@ msgstr ""
 #: library/profiling.rst:98
 msgid ""
 "The statistical profiler (:mod:`profiling.sampling`) is recommended for most "
-"performance analysis tasks. Use it the same way you would use "
-":mod:`profiling.tracing`::"
+"performance analysis tasks. Use it the same way you would "
+"use :mod:`profiling.tracing`::"
 msgstr ""
 
 #: library/profiling.rst:102
@@ -248,8 +248,9 @@ msgid ""
 "call counts. Statistical profiling estimates frequency based on sampling, "
 "which may undercount short-lived functions that complete between samples. If "
 "you need to verify that an optimization actually reduced the number of "
-"function calls, or if you want to trace the complete call graph to understand"
-" caller-callee relationships, deterministic tracing is the right choice."
+"function calls, or if you want to trace the complete call graph to "
+"understand caller-callee relationships, deterministic tracing is the right "
+"choice."
 msgstr ""
 
 #: library/profiling.rst:137
@@ -350,8 +351,8 @@ msgstr ""
 
 #: library/profiling.rst:198
 msgid ""
-"Both profilers collect function-level statistics, though they present them in"
-" different formats. The sampling profiler offers multiple visualizations "
+"Both profilers collect function-level statistics, though they present them "
+"in different formats. The sampling profiler offers multiple visualizations "
 "(flame graphs, heatmaps, Firefox Profiler, pstats tables), while the "
 "deterministic profiler produces pstats-compatible output. Regardless of "
 "format, the underlying concepts are the same."
@@ -390,8 +391,8 @@ msgstr ""
 msgid ""
 "How many times the function was called (deterministic) or sampled "
 "(statistical). In deterministic profiling, this is exact. In statistical "
-"profiling, it represents the number of times the function appeared in a stack"
-" sample."
+"profiling, it represents the number of times the function appeared in a "
+"stack sample."
 msgstr ""
 
 #: library/profiling.rst:221
@@ -414,8 +415,8 @@ msgstr ""
 msgid ""
 "Which functions called a given function (callers) and which functions it "
 "called (callees). Flame graphs visualize this as nested rectangles; pstats "
-"can display it via the :meth:`~pstats.Stats.print_callers` and "
-":meth:`~pstats.Stats.print_callees` methods."
+"can display it via the :meth:`~pstats.Stats.print_callers` "
+"and :meth:`~pstats.Stats.print_callees` methods."
 msgstr ""
 
 #: library/profiling.rst:235

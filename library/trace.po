@@ -60,8 +60,9 @@ msgstr ""
 
 #: library/trace.rst:32
 msgid ""
-"The above will execute :file:`somefile.py` and generate annotated listings of"
-" all Python modules imported during the execution into the current directory."
+"The above will execute :file:`somefile.py` and generate annotated listings "
+"of all Python modules imported during the execution into the current "
+"directory."
 msgstr ""
 
 #: library/trace.rst:39
@@ -82,18 +83,18 @@ msgstr ""
 
 #: library/trace.rst:51
 msgid ""
-"At least one of the following options must be specified when invoking "
-":mod:`!trace`.  The :option:`--listfuncs <-l>` option is mutually exclusive "
-"with the :option:`--trace <-t>` and :option:`--count <-c>` options. When "
-":option:`--listfuncs <-l>` is provided, neither :option:`--count <-c>` nor "
-":option:`--trace <-t>` are accepted, and vice versa."
+"At least one of the following options must be specified when invoking :mod:`!"
+"trace`.  The :option:`--listfuncs <-l>` option is mutually exclusive with "
+"the :option:`--trace <-t>` and :option:`--count <-c>` options. "
+"When :option:`--listfuncs <-l>` is provided, neither :option:`--count <-c>` "
+"nor :option:`--trace <-t>` are accepted, and vice versa."
 msgstr ""
 
 #: library/trace.rst:61
 msgid ""
 "Produce a set of annotated listing files upon program completion that shows "
-"how many times each statement was executed.  See also :option:`--coverdir "
-"<-C>`, :option:`--file <-f>` and :option:`--no-report <-R>` below."
+"how many times each statement was executed.  See also :option:`--coverdir <-"
+"C>`, :option:`--file <-f>` and :option:`--no-report <-R>` below."
 msgstr ""
 
 #: library/trace.rst:68
@@ -106,8 +107,8 @@ msgstr ""
 
 #: library/trace.rst:76
 msgid ""
-"Produce an annotated list from an earlier program run that used the "
-":option:`--count <-c>` and :option:`--file <-f>` option.  This does not "
+"Produce an annotated list from an earlier program run that used "
+"the :option:`--count <-c>` and :option:`--file <-f>` option.  This does not "
 "execute any code."
 msgstr ""
 
@@ -182,30 +183,30 @@ msgstr ""
 
 #: library/trace.rst:145
 msgid ""
-"Create an object to trace execution of a single statement or expression.  All"
-" parameters are optional.  *count* enables counting of line numbers.  *trace*"
-" enables line execution tracing.  *countfuncs* enables listing of the "
+"Create an object to trace execution of a single statement or expression.  "
+"All parameters are optional.  *count* enables counting of line numbers.  "
+"*trace* enables line execution tracing.  *countfuncs* enables listing of the "
 "functions called during the run.  *countcallers* enables call relationship "
 "tracking.  *ignoremods* is a list of modules or packages to ignore. "
 "*ignoredirs* is a list of directories whose modules or packages should be "
 "ignored.  *infile* is the name of the file from which to read stored count "
 "information.  *outfile* is the name of the file in which to write updated "
-"count information.  *timing* enables a timestamp relative to when tracing was"
-" started to be displayed."
+"count information.  *timing* enables a timestamp relative to when tracing "
+"was started to be displayed."
 msgstr ""
 
 #: library/trace.rst:158
 msgid ""
-"Execute the command and gather statistics from the execution with the current"
-" tracing parameters.  *cmd* must be a string or code object, suitable for "
-"passing into :func:`exec`."
+"Execute the command and gather statistics from the execution with the "
+"current tracing parameters.  *cmd* must be a string or code object, suitable "
+"for passing into :func:`exec`."
 msgstr ""
 
 #: library/trace.rst:164
 msgid ""
-"Execute the command and gather statistics from the execution with the current"
-" tracing parameters, in the defined global and local environments.  If not "
-"defined, *globals* and *locals* default to empty dictionaries."
+"Execute the command and gather statistics from the execution with the "
+"current tracing parameters, in the defined global and local environments.  "
+"If not defined, *globals* and *locals* default to empty dictionaries."
 msgstr ""
 
 #: library/trace.rst:171
@@ -216,9 +217,9 @@ msgstr ""
 
 #: library/trace.rst:176
 msgid ""
-"Return a :class:`CoverageResults` object that contains the cumulative results"
-" of all previous calls to ``run``, ``runctx`` and ``runfunc`` for the given "
-":class:`Trace` instance.  Does not reset the accumulated trace results."
+"Return a :class:`CoverageResults` object that contains the cumulative "
+"results of all previous calls to ``run``, ``runctx`` and ``runfunc`` for the "
+"given :class:`Trace` instance.  Does not reset the accumulated trace results."
 msgstr ""
 
 #: library/trace.rst:183
@@ -243,8 +244,8 @@ msgstr ""
 #: library/trace.rst:199
 msgid ""
 "If *ignore_missing_files* is ``True``, coverage counts for files that no "
-"longer exist are silently ignored. Otherwise, a missing file will raise a "
-":exc:`FileNotFoundError`."
+"longer exist are silently ignored. Otherwise, a missing file will raise "
+"a :exc:`FileNotFoundError`."
 msgstr ""
 
 #: library/trace.rst:203

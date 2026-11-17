@@ -67,8 +67,8 @@ msgstr ""
 msgid ""
 "Many people have contributed to the Python language, the Python standard "
 "library, and the Python documentation.  See the `CPython GitHub repository "
-"<https://github.com/python/cpython/graphs/contributors>`__ for a partial list"
-" of contributors."
+"<https://github.com/python/cpython/graphs/contributors>`__ for a partial "
+"list of contributors."
 msgstr ""
 
 #: about.rst:39

@@ -28,11 +28,11 @@ msgstr ""
 
 #: library/xml.dom.rst:11
 msgid ""
-"The Document Object Model, or \"DOM,\" is a cross-language API from the World"
-" Wide Web Consortium (W3C) for accessing and modifying XML documents.  A DOM "
-"implementation presents an XML document as a tree structure, or allows client"
-" code to build such a structure from scratch.  It then gives access to the "
-"structure through a set of objects which provided well-known interfaces."
+"The Document Object Model, or \"DOM,\" is a cross-language API from the "
+"World Wide Web Consortium (W3C) for accessing and modifying XML documents.  "
+"A DOM implementation presents an XML document as a tree structure, or allows "
+"client code to build such a structure from scratch.  It then gives access to "
+"the structure through a set of objects which provided well-known interfaces."
 msgstr ""
 
 #: library/xml.dom.rst:17
@@ -63,23 +63,23 @@ msgstr ""
 
 #: library/xml.dom.rst:34
 msgid ""
-"DOM applications typically start by parsing some XML into a DOM.  How this is"
-" accomplished is not covered at all by DOM Level 1, and Level 2 provides only"
-" limited improvements: There is a :class:`DOMImplementation` object class "
-"which provides access to :class:`Document` creation methods, but no way to "
-"access an XML reader/parser/Document builder in an implementation-independent"
-" way. There is also no well-defined way to access these methods without an "
-"existing :class:`Document` object.  In Python, each DOM implementation will "
-"provide a function :func:`getDOMImplementation`. DOM Level 3 adds a "
-"Load/Store specification, which defines an interface to the reader, but this "
-"is not yet available in the Python standard library."
+"DOM applications typically start by parsing some XML into a DOM.  How this "
+"is accomplished is not covered at all by DOM Level 1, and Level 2 provides "
+"only limited improvements: There is a :class:`DOMImplementation` object "
+"class which provides access to :class:`Document` creation methods, but no "
+"way to access an XML reader/parser/Document builder in an implementation-"
+"independent way. There is also no well-defined way to access these methods "
+"without an existing :class:`Document` object.  In Python, each DOM "
+"implementation will provide a function :func:`getDOMImplementation`. DOM "
+"Level 3 adds a Load/Store specification, which defines an interface to the "
+"reader, but this is not yet available in the Python standard library."
 msgstr ""
 
 #: library/xml.dom.rst:45
 msgid ""
 "Once you have a DOM document object, you can access the parts of your XML "
-"document through its properties and methods.  These properties are defined in"
-" the DOM specification; this portion of the reference manual describes the "
+"document through its properties and methods.  These properties are defined "
+"in the DOM specification; this portion of the reference manual describes the "
 "interpretation of the specification in Python."
 msgstr ""
 
@@ -95,8 +95,8 @@ msgstr ""
 
 #: library/xml.dom.rst:59
 msgid ""
-"`Document Object Model (DOM) Level 2 Specification "
-"<https://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/>`_"
+"`Document Object Model (DOM) Level 2 Specification <https://www.w3.org/TR/"
+"2000/REC-DOM-Level-2-Core-20001113/>`_"
 msgstr ""
 
 #: library/xml.dom.rst:60
@@ -105,8 +105,8 @@ msgstr ""
 
 #: library/xml.dom.rst:62
 msgid ""
-"`Document Object Model (DOM) Level 1 Specification "
-"<https://www.w3.org/TR/REC-DOM-Level-1/>`_"
+"`Document Object Model (DOM) Level 1 Specification <https://www.w3.org/TR/"
+"REC-DOM-Level-1/>`_"
 msgstr ""
 
 #: library/xml.dom.rst:63
@@ -115,8 +115,8 @@ msgstr ""
 
 #: library/xml.dom.rst:65
 msgid ""
-"`Python Language Mapping Specification "
-"<https://www.omg.org/spec/PYTH/1.2/PDF>`_"
+"`Python Language Mapping Specification <https://www.omg.org/spec/PYTH/1.2/"
+"PDF>`_"
 msgstr ""
 
 #: library/xml.dom.rst:66
@@ -153,12 +153,12 @@ msgstr ""
 
 #: library/xml.dom.rst:94
 msgid ""
-"If name is not given, this examines the available implementations to find one"
-" with the required feature set.  If no implementation can be found, raise an "
-":exc:`ImportError`.  The features list must be a sequence of ``(feature, "
-"version)`` pairs which are passed to the "
-":meth:`~DOMImplementation.hasFeature` method on available "
-":class:`DOMImplementation` objects."
+"If name is not given, this examines the available implementations to find "
+"one with the required feature set.  If no implementation can be found, raise "
+"an :exc:`ImportError`.  The features list must be a sequence of ``(feature, "
+"version)`` pairs which are passed to "
+"the :meth:`~DOMImplementation.hasFeature` method on "
+"available :class:`DOMImplementation` objects."
 msgstr ""
 
 #: library/xml.dom.rst:100
@@ -167,9 +167,10 @@ msgstr ""
 
 #: library/xml.dom.rst:105
 msgid ""
-"The value used to indicate that no namespace is associated with a node in the"
-" DOM.  This is typically found as the :attr:`~Node.namespaceURI` of a node, "
-"or used as the *namespaceURI* parameter to a namespaces-specific method."
+"The value used to indicate that no namespace is associated with a node in "
+"the DOM.  This is typically found as the :attr:`~Node.namespaceURI` of a "
+"node, or used as the *namespaceURI* parameter to a namespaces-specific "
+"method."
 msgstr ""
 
 #: library/xml.dom.rst:112
@@ -181,8 +182,8 @@ msgstr ""
 #: library/xml.dom.rst:118
 msgid ""
 "The namespace URI for namespace declarations, as defined by `Document Object "
-"Model (DOM) Level 2 Core Specification <https://www.w3.org/TR/DOM-"
-"Level-2-Core/core.html>`_ (section 1.1.8)."
+"Model (DOM) Level 2 Core Specification <https://www.w3.org/TR/DOM-Level-2-"
+"Core/core.html>`_ (section 1.1.8)."
 msgstr ""
 
 #: library/xml.dom.rst:125
@@ -197,10 +198,10 @@ msgid ""
 "exception classes.  The :class:`Node` class provided by this module does not "
 "implement any of the methods or attributes defined by the DOM specification; "
 "concrete DOM implementations must provide those.  The :class:`Node` class "
-"provided as part of this module does provide the constants used for the "
-":attr:`~Node.nodeType` attribute on concrete :class:`Node` objects; they are "
-"located within the class rather than at the module level to conform with the "
-"DOM specifications."
+"provided as part of this module does provide the constants used for "
+"the :attr:`~Node.nodeType` attribute on concrete :class:`Node` objects; they "
+"are located within the class rather than at the module level to conform with "
+"the DOM specifications."
 msgstr ""
 
 #: library/xml.dom.rst:144
@@ -216,9 +217,9 @@ msgstr ""
 #: library/xml.dom.rst:148
 msgid ""
 "The names documented in this section are DOM interfaces. With the exception "
-"of :class:`Node` and the exception classes, they are not provided by the "
-":mod:`!xml.dom` module itself, but by concrete DOM implementations, such as "
-":mod:`xml.dom.minidom`."
+"of :class:`Node` and the exception classes, they are not provided by "
+"the :mod:`!xml.dom` module itself, but by concrete DOM implementations, such "
+"as :mod:`xml.dom.minidom`."
 msgstr ""
 
 #: library/xml.dom.rst:153
@@ -374,8 +375,9 @@ msgstr ""
 msgid ""
 "The :class:`DOMImplementation` interface provides a way for applications to "
 "determine the availability of particular features in the DOM they are using. "
-"DOM Level 2 added the ability to create new :class:`Document` and "
-":class:`DocumentType` objects using the :class:`DOMImplementation` as well."
+"DOM Level 2 added the ability to create new :class:`Document` "
+"and :class:`DocumentType` objects using the :class:`DOMImplementation` as "
+"well."
 msgstr ""
 
 #: library/xml.dom.rst:212
@@ -386,12 +388,12 @@ msgstr ""
 
 #: library/xml.dom.rst:218
 msgid ""
-"Return a new :class:`Document` object (the root of the DOM), with a child "
-":class:`Element` object having the given *namespaceUri* and *qualifiedName*. "
-"The *doctype* must be a :class:`DocumentType` object created by "
-":meth:`createDocumentType`, or ``None``. In the Python DOM API, the first two"
-" arguments can also be ``None`` in order to indicate that no :class:`Element`"
-" child is to be created."
+"Return a new :class:`Document` object (the root of the DOM), with a "
+"child :class:`Element` object having the given *namespaceUri* and "
+"*qualifiedName*. The *doctype* must be a :class:`DocumentType` object "
+"created by :meth:`createDocumentType`, or ``None``. In the Python DOM API, "
+"the first two arguments can also be ``None`` in order to indicate that "
+"no :class:`Element` child is to be created."
 msgstr ""
 
 #: library/xml.dom.rst:228
@@ -412,14 +414,15 @@ msgstr ""
 
 #: library/xml.dom.rst:243
 msgid ""
-"Only nodes of the following types can have children, and only children of the"
-" listed types:"
+"Only nodes of the following types can have children, and only children of "
+"the listed types:"
 msgstr ""
 
 #: library/xml.dom.rst:247
 msgid ""
-"at most one :class:`Element`, at most one :class:`DocumentType`, "
-":class:`ProcessingInstruction` and :class:`Comment`"
+"at most one :class:`Element`, at most "
+"one :class:`DocumentType`, :class:`ProcessingInstruction` "
+"and :class:`Comment`"
 msgstr ""
 
 #: library/xml.dom.rst:250
@@ -428,14 +431,14 @@ msgstr ""
 
 #: library/xml.dom.rst:251
 msgid ""
-":class:`Element`, :class:`Text`, :class:`CDATASection`, "
-":class:`ProcessingInstruction` and :class:`Comment`"
+":class:`Element`, :class:`Text`, :class:`CDATASection`, :class:`ProcessingInstruction` "
+"and :class:`Comment`"
 msgstr ""
 
 #: library/xml.dom.rst:257
 msgid ""
-"Nodes of other types cannot have children. Inserting a child of a not allowed"
-" type raises :exc:`HierarchyRequestErr`."
+"Nodes of other types cannot have children. Inserting a child of a not "
+"allowed type raises :exc:`HierarchyRequestErr`."
 msgstr ""
 
 #: library/xml.dom.rst:263
@@ -471,15 +474,15 @@ msgid ""
 "The node that immediately precedes this one with the same parent.  For "
 "instance the element with an end-tag that comes just before the *self* "
 "element's start-tag.  Of course, XML documents are made up of more than just "
-"elements so the previous sibling could be text, a comment, or something else."
-" If this node is the first child of the parent, this attribute will be "
+"elements so the previous sibling could be text, a comment, or something "
+"else. If this node is the first child of the parent, this attribute will be "
 "``None``. This is a read-only attribute."
 msgstr ""
 
 #: library/xml.dom.rst:313
 msgid ""
-"The node that immediately follows this one with the same parent.  See also "
-":attr:`previousSibling`.  If this is the last child of the parent, this "
+"The node that immediately follows this one with the same parent.  See "
+"also :attr:`previousSibling`.  If this is the last child of the parent, this "
 "attribute will be ``None``. This is a read-only attribute."
 msgstr ""
 
@@ -503,14 +506,14 @@ msgstr ""
 
 #: library/xml.dom.rst:339
 msgid ""
-"The part of the :attr:`~Element.tagName` following the colon if there is one,"
-" else the entire :attr:`~Element.tagName`.  The value is a string."
+"The part of the :attr:`~Element.tagName` following the colon if there is "
+"one, else the entire :attr:`~Element.tagName`.  The value is a string."
 msgstr ""
 
 #: library/xml.dom.rst:345
 msgid ""
-"The part of the :attr:`~Element.tagName` preceding the colon if there is one,"
-" else the empty string.  The value is a string, or ``None``."
+"The part of the :attr:`~Element.tagName` preceding the colon if there is "
+"one, else the empty string.  The value is a string, or ``None``."
 msgstr ""
 
 #: library/xml.dom.rst:351
@@ -527,22 +530,22 @@ msgstr ""
 
 #: library/xml.dom.rst:364
 msgid ""
-"Return whether the DOM implementation supports a particular *feature*, as "
-":meth:`DOMImplementation.hasFeature` does."
+"Return whether the DOM implementation supports a particular *feature*, "
+"as :meth:`DOMImplementation.hasFeature` does."
 msgstr ""
 
 #: library/xml.dom.rst:370
 msgid ""
 "Associate *data* with *key* on this node and return the data previously "
-"associated with *key*, or ``None``. If *data* is ``None``, the association is"
-" removed. *handler* is called when the node is cloned, imported, renamed or "
-"deleted; pass ``None`` if no notification is needed."
+"associated with *key*, or ``None``. If *data* is ``None``, the association "
+"is removed. *handler* is called when the node is cloned, imported, renamed "
+"or deleted; pass ``None`` if no notification is needed."
 msgstr ""
 
 #: library/xml.dom.rst:379
 msgid ""
-"Return the data associated with *key* on this node by "
-":meth:`~Node.setUserData`, or ``None``."
+"Return the data associated with *key* on this node "
+"by :meth:`~Node.setUserData`, or ``None``."
 msgstr ""
 
 #: library/xml.dom.rst:385
@@ -555,8 +558,8 @@ msgstr ""
 
 #: library/xml.dom.rst:394
 msgid ""
-"The value of this node, depending on its type; see the table below. The value"
-" is a string or ``None``."
+"The value of this node, depending on its type; see the table below. The "
+"value is a string or ``None``."
 msgstr ""
 
 #: library/xml.dom.rst:398
@@ -695,10 +698,10 @@ msgstr ""
 
 #: library/xml.dom.rst:468
 msgid ""
-"Remove a child node.  *oldChild* must be a child of this node; if not, "
-":exc:`NotFoundErr` is raised.  *oldChild* is returned on success.  If "
-"*oldChild* will not be used further, its :meth:`~xml.dom.minidom.Node.unlink`"
-" method should be called."
+"Remove a child node.  *oldChild* must be a child of this node; if "
+"not, :exc:`NotFoundErr` is raised.  *oldChild* is returned on success.  If "
+"*oldChild* will not be used further, "
+"its :meth:`~xml.dom.minidom.Node.unlink` method should be called."
 msgstr ""
 
 #: library/xml.dom.rst:476
@@ -709,9 +712,9 @@ msgstr ""
 
 #: library/xml.dom.rst:482
 msgid ""
-"Join adjacent text nodes so that all stretches of text are stored as single "
-":class:`Text` instances.  This simplifies processing text from a DOM tree for"
-" many applications."
+"Join adjacent text nodes so that all stretches of text are stored as "
+"single :class:`Text` instances.  This simplifies processing text from a DOM "
+"tree for many applications."
 msgstr ""
 
 #: library/xml.dom.rst:489
@@ -728,10 +731,10 @@ msgstr ""
 msgid ""
 "A :class:`NodeList` represents a sequence of nodes.  These objects are used "
 "in two ways in the DOM Core recommendation:  an :class:`Element` object "
-"provides one as its list of child nodes, and the "
-":meth:`~Element.getElementsByTagName` and "
-":meth:`~Element.getElementsByTagNameNS` methods of :class:`Element` return "
-"objects with this interface to represent query results."
+"provides one as its list of child nodes, and "
+"the :meth:`~Element.getElementsByTagName` "
+"and :meth:`~Element.getElementsByTagNameNS` methods of :class:`Element` "
+"return objects with this interface to represent query results."
 msgstr ""
 
 #: library/xml.dom.rst:507
@@ -740,14 +743,14 @@ msgstr ""
 
 #: library/xml.dom.rst:509
 msgid ""
-"The DOM Level 2 recommendation defines one method and one attribute for these"
-" objects:"
+"The DOM Level 2 recommendation defines one method and one attribute for "
+"these objects:"
 msgstr ""
 
 #: library/xml.dom.rst:515
 msgid ""
-"Return the *i*'th item from the sequence, or ``None`` if *i* is out of range."
-" Negative indices are not supported."
+"Return the *i*'th item from the sequence, or ``None`` if *i* is out of "
+"range. Negative indices are not supported."
 msgstr ""
 
 #: library/xml.dom.rst:522
@@ -758,17 +761,17 @@ msgstr ""
 msgid ""
 "In addition, the Python DOM interface requires that some additional support "
 "is provided to allow :class:`NodeList` objects to be used as Python "
-"sequences.  All :class:`NodeList` implementations must include support for "
-":meth:`~object.__len__` and :meth:`~object.__getitem__`; this allows "
+"sequences.  All :class:`NodeList` implementations must include support "
+"for :meth:`~object.__len__` and :meth:`~object.__getitem__`; this allows "
 "iteration over the :class:`NodeList` in :keyword:`for` statements and proper "
 "support for the :func:`len` built-in function."
 msgstr ""
 
 #: library/xml.dom.rst:532
 msgid ""
-"If a DOM implementation supports modification of the document, the "
-":class:`NodeList` implementation must also support the "
-":meth:`~object.__setitem__` and :meth:`~object.__delitem__` methods."
+"If a DOM implementation supports modification of the document, "
+"the :class:`NodeList` implementation must also support "
+"the :meth:`~object.__setitem__` and :meth:`~object.__delitem__` methods."
 msgstr ""
 
 #: library/xml.dom.rst:540
@@ -779,11 +782,12 @@ msgstr ""
 msgid ""
 "Information about the notations and entities declared by a document "
 "(including the external subset if the parser uses it and can provide the "
-"information) is available from a :class:`DocumentType` object.  The "
-":class:`DocumentType` for a document is available from the :class:`Document` "
-"object's :attr:`~Document.doctype` attribute; if there is no ``DOCTYPE`` "
-"declaration for the document, the document's :attr:`~Document.doctype` "
-"attribute will be set to ``None`` instead of an instance of this interface."
+"information) is available from a :class:`DocumentType` object.  "
+"The :class:`DocumentType` for a document is available from "
+"the :class:`Document` object's :attr:`~Document.doctype` attribute; if there "
+"is no ``DOCTYPE`` declaration for the document, the "
+"document's :attr:`~Document.doctype` attribute will be set to ``None`` "
+"instead of an instance of this interface."
 msgstr ""
 
 #: library/xml.dom.rst:553
@@ -806,8 +810,8 @@ msgstr ""
 
 #: library/xml.dom.rst:571
 msgid ""
-"A string giving the complete internal subset from the document. This does not"
-" include the brackets which enclose the subset.  If the document has no "
+"A string giving the complete internal subset from the document. This does "
+"not include the brackets which enclose the subset.  If the document has no "
 "internal subset, this should be ``None``."
 msgstr ""
 
@@ -822,15 +826,15 @@ msgid ""
 "This is a :class:`NamedNodeMap` of :class:`Entity` nodes giving the "
 "definitions of external entities. For entity names defined more than once, "
 "only the first definition is provided (others are ignored as required by the "
-"XML recommendation).  This may be ``None`` if the information is not provided"
-" by the parser, or if no entities are defined."
+"XML recommendation).  This may be ``None`` if the information is not "
+"provided by the parser, or if no entities are defined."
 msgstr ""
 
 #: library/xml.dom.rst:594
 msgid ""
 "This is a :class:`NamedNodeMap` of :class:`Notation` nodes giving the "
-"definitions of notations. For notation names defined more than once, only the"
-" first definition is provided (others are ignored as required by the XML "
+"definitions of notations. For notation names defined more than once, only "
+"the first definition is provided (others are ignored as required by the XML "
 "recommendation).  This may be ``None`` if the information is not provided by "
 "the parser, or if no notations are defined."
 msgstr ""
@@ -889,16 +893,16 @@ msgstr ""
 msgid ""
 "Create and return a new element node.  The element is not inserted into the "
 "document when it is created.  You need to explicitly insert it with one of "
-"the other methods such as :meth:`~Node.insertBefore` or "
-":meth:`~Node.appendChild`."
+"the other methods such as :meth:`~Node.insertBefore` "
+"or :meth:`~Node.appendChild`."
 msgstr ""
 
 #: library/xml.dom.rst:668
 msgid ""
 "Create and return a new element with a namespace.  The *tagName* may have a "
 "prefix.  The element is not inserted into the document when it is created.  "
-"You need to explicitly insert it with one of the other methods such as "
-":meth:`~Node.insertBefore` or :meth:`~Node.appendChild`."
+"You need to explicitly insert it with one of the other methods such "
+"as :meth:`~Node.insertBefore` or :meth:`~Node.appendChild`."
 msgstr ""
 
 #: library/xml.dom.rst:676
@@ -925,15 +929,15 @@ msgstr ""
 #: library/xml.dom.rst:697
 msgid ""
 "Create and return an attribute node.  This method does not associate the "
-"attribute node with any particular element.  You must use "
-":meth:`~Element.setAttributeNode` on the appropriate :class:`Element` object "
-"to use the newly created attribute instance."
+"attribute node with any particular element.  You must "
+"use :meth:`~Element.setAttributeNode` on the appropriate :class:`Element` "
+"object to use the newly created attribute instance."
 msgstr ""
 
 #: library/xml.dom.rst:705
 msgid ""
-"Create and return an attribute node with a namespace.  The *tagName* may have"
-" a prefix.  This method does not associate the attribute node with any "
+"Create and return an attribute node with a namespace.  The *tagName* may "
+"have a prefix.  This method does not associate the attribute node with any "
 "particular element.  You must use :meth:`~Element.setAttributeNode` on the "
 "appropriate :class:`Element` object to use the newly created attribute "
 "instance."
@@ -961,15 +965,15 @@ msgstr ""
 
 #: library/xml.dom.rst:733
 msgid ""
-"Rename the element or attribute node *n* and return it. *namespaceURI* is the"
-" new namespace URI, or :data:`~xml.dom.EMPTY_NAMESPACE` if the node does not "
-"belong to a namespace. *name* is the new qualified name."
+"Rename the element or attribute node *n* and return it. *namespaceURI* is "
+"the new namespace URI, or :data:`~xml.dom.EMPTY_NAMESPACE` if the node does "
+"not belong to a namespace. *name* is the new qualified name."
 msgstr ""
 
 #: library/xml.dom.rst:739
 msgid ""
-"Raise :exc:`WrongDocumentErr` if *n* was created by another document, and "
-":exc:`NotSupportedErr` if it is neither an element nor an attribute."
+"Raise :exc:`WrongDocumentErr` if *n* was created by another document, "
+"and :exc:`NotSupportedErr` if it is neither an element nor an attribute."
 msgstr ""
 
 #: library/xml.dom.rst:746
@@ -990,9 +994,9 @@ msgstr ""
 
 #: library/xml.dom.rst:763
 msgid ""
-"Declare that the attribute *name* is of type ID, so that the element is found"
-" by :meth:`Document.getElementById`. Raise :exc:`NotFoundErr` if the element "
-"has no such attribute."
+"Declare that the attribute *name* is of type ID, so that the element is "
+"found by :meth:`Document.getElementById`. Raise :exc:`NotFoundErr` if the "
+"element has no such attribute."
 msgstr ""
 
 #: library/xml.dom.rst:770
@@ -1035,8 +1039,8 @@ msgstr ""
 #: library/xml.dom.rst:814
 msgid ""
 "Return the value of the attribute named by *namespaceURI* and *localName* as "
-"a string. If no such attribute exists, an empty string is returned, as if the"
-" attribute had no value."
+"a string. If no such attribute exists, an empty string is returned, as if "
+"the attribute had no value."
 msgstr ""
 
 #: library/xml.dom.rst:821
@@ -1050,8 +1054,8 @@ msgstr ""
 
 #: library/xml.dom.rst:831
 msgid ""
-"Remove and return *oldAttr* from the attribute list, if present. If *oldAttr*"
-" is not present, :exc:`NotFoundErr` is raised."
+"Remove and return *oldAttr* from the attribute list, if present. If "
+"*oldAttr* is not present, :exc:`NotFoundErr` is raised."
 msgstr ""
 
 #: library/xml.dom.rst:837
@@ -1097,10 +1101,10 @@ msgstr ""
 
 #: library/xml.dom.rst:878
 msgid ""
-"Attribute nodes are not part of the document tree. They are contained in the "
-":attr:`~Node.attributes` map of an element, not in its children, and their "
-":attr:`~Node.parentNode`, :attr:`~Node.previousSibling` and "
-":attr:`~Node.nextSibling` are always ``None``."
+"Attribute nodes are not part of the document tree. They are contained in "
+"the :attr:`~Node.attributes` map of an element, not in its children, and "
+"their :attr:`~Node.parentNode`, :attr:`~Node.previousSibling` "
+"and :attr:`~Node.nextSibling` are always ``None``."
 msgstr ""
 
 #: library/xml.dom.rst:887
@@ -1141,8 +1145,8 @@ msgstr ""
 
 #: library/xml.dom.rst:928
 msgid ""
-"The text value of the attribute.  This is a synonym for the "
-":attr:`~Node.nodeValue` attribute."
+"The text value of the attribute.  This is a synonym for "
+"the :attr:`~Node.nodeValue` attribute."
 msgstr ""
 
 #: library/xml.dom.rst:935
@@ -1167,8 +1171,8 @@ msgstr ""
 
 #: library/xml.dom.rst:957
 msgid ""
-"Return the node with the given :attr:`~Attr.name`, or ``None`` if there is no"
-" such node."
+"Return the node with the given :attr:`~Attr.name`, or ``None`` if there is "
+"no such node."
 msgstr ""
 
 #: library/xml.dom.rst:963
@@ -1191,14 +1195,14 @@ msgstr ""
 
 #: library/xml.dom.rst:982
 msgid ""
-"Remove and return the node with the given :attr:`~Attr.name`. Raise "
-":exc:`NotFoundErr` if there is no such node."
+"Remove and return the node with the given :attr:`~Attr.name`. "
+"Raise :exc:`NotFoundErr` if there is no such node."
 msgstr ""
 
 #: library/xml.dom.rst:988
 msgid ""
-"Remove and return the node with the given namespace URI and local name. Raise"
-" :exc:`NotFoundErr` if there is no such node."
+"Remove and return the node with the given namespace URI and local name. "
+"Raise :exc:`NotFoundErr` if there is no such node."
 msgstr ""
 
 #: library/xml.dom.rst:991
@@ -1224,10 +1228,10 @@ msgstr ""
 
 #: library/xml.dom.rst:1018
 msgid ""
-":class:`CharacterData` represents text-like data in the XML document. It is a"
-" subclass of :class:`Node`, and the base class of :class:`Text`, "
-":class:`CDATASection` and :class:`Comment`. Such nodes cannot have child "
-"nodes."
+":class:`CharacterData` represents text-like data in the XML document. It is "
+"a subclass of :class:`Node`, and the base class "
+"of :class:`Text`, :class:`CDATASection` and :class:`Comment`. Such nodes "
+"cannot have child nodes."
 msgstr ""
 
 #: library/xml.dom.rst:1026
@@ -1291,15 +1295,15 @@ msgstr ""
 msgid ""
 "The :class:`Text` interface represents text in the XML document.  If the "
 "parser and DOM implementation support the DOM's XML extension, portions of "
-"the text enclosed in CDATA marked sections are stored in "
-":class:`CDATASection` objects. These two interfaces are identical, but "
+"the text enclosed in CDATA marked sections are stored "
+"in :class:`CDATASection` objects. These two interfaces are identical, but "
 "provide different values for the :attr:`~Node.nodeType` attribute."
 msgstr ""
 
 #: library/xml.dom.rst:1099
 msgid ""
-":class:`Text` extends the :class:`CharacterData` interface, and "
-":class:`CDATASection` extends :class:`Text`."
+":class:`Text` extends the :class:`CharacterData` interface, "
+"and :class:`CDATASection` extends :class:`Text`."
 msgstr ""
 
 #: library/xml.dom.rst:1105
@@ -1328,9 +1332,9 @@ msgstr ""
 #: library/xml.dom.rst:1130
 msgid ""
 "The use of a :class:`CDATASection` node does not indicate that the node "
-"represents a complete CDATA marked section, only that the content of the node"
-" was part of a CDATA section.  A single CDATA section may be represented by "
-"more than one node in the document tree.  There is no way to determine "
+"represents a complete CDATA marked section, only that the content of the "
+"node was part of a CDATA section.  A single CDATA section may be represented "
+"by more than one node in the document tree.  There is no way to determine "
 "whether two adjacent :class:`CDATASection` nodes represent different CDATA "
 "marked sections."
 msgstr ""
@@ -1364,21 +1368,21 @@ msgstr ""
 #: library/xml.dom.rst:1169
 msgid ""
 ":class:`Entity` represents a parsed or unparsed entity declared in the DTD. "
-"It is a subclass of :class:`Node`. Entity nodes are contained in "
-":attr:`DocumentType.entities` and cannot be inserted into the document tree. "
-"The name of the entity is its :attr:`~Node.nodeName`."
+"It is a subclass of :class:`Node`. Entity nodes are contained "
+"in :attr:`DocumentType.entities` and cannot be inserted into the document "
+"tree. The name of the entity is its :attr:`~Node.nodeName`."
 msgstr ""
 
 #: library/xml.dom.rst:1178
 msgid ""
-"The public identifier of the entity, or ``None`` if it is not specified. This"
-" is a read-only attribute."
+"The public identifier of the entity, or ``None`` if it is not specified. "
+"This is a read-only attribute."
 msgstr ""
 
 #: library/xml.dom.rst:1185
 msgid ""
-"The system identifier of the entity, or ``None`` if it is not specified. This"
-" is a read-only attribute."
+"The system identifier of the entity, or ``None`` if it is not specified. "
+"This is a read-only attribute."
 msgstr ""
 
 #: library/xml.dom.rst:1192
@@ -1393,10 +1397,10 @@ msgstr ""
 
 #: library/xml.dom.rst:1205
 msgid ""
-":class:`Notation` represents a notation declared in the DTD. It is a subclass"
-" of :class:`Node` and cannot have child nodes. Notation nodes are contained "
-"in :attr:`DocumentType.notations` and cannot be inserted into the document "
-"tree. The name of the notation is its :attr:`~Node.nodeName`."
+":class:`Notation` represents a notation declared in the DTD. It is a "
+"subclass of :class:`Node` and cannot have child nodes. Notation nodes are "
+"contained in :attr:`DocumentType.notations` and cannot be inserted into the "
+"document tree. The name of the notation is its :attr:`~Node.nodeName`."
 msgstr ""
 
 #: library/xml.dom.rst:1214
@@ -1417,11 +1421,11 @@ msgstr ""
 
 #: library/xml.dom.rst:1231
 msgid ""
-"The DOM Level 2 recommendation defines a single exception, "
-":exc:`DOMException`, and a number of constants that allow applications to "
-"determine what sort of error occurred. :exc:`DOMException` instances carry a "
-":attr:`code` attribute that provides the appropriate value for the specific "
-"exception."
+"The DOM Level 2 recommendation defines a single "
+"exception, :exc:`DOMException`, and a number of constants that allow "
+"applications to determine what sort of error occurred. :exc:`DOMException` "
+"instances carry a :attr:`code` attribute that provides the appropriate value "
+"for the specific exception."
 msgstr ""
 
 #: library/xml.dom.rst:1236
@@ -1429,8 +1433,8 @@ msgid ""
 "The Python DOM interface provides the constants, but also expands the set of "
 "exceptions so that a specific exception exists for each of the exception "
 "codes defined by the DOM.  The implementations must raise the appropriate "
-"specific exception, each of which carries the appropriate value for the "
-":attr:`code` attribute."
+"specific exception, each of which carries the appropriate value for "
+"the :attr:`code` attribute."
 msgstr ""
 
 #: library/xml.dom.rst:1245
@@ -1441,9 +1445,9 @@ msgstr ""
 
 #: library/xml.dom.rst:1251
 msgid ""
-"Raised when a specified range of text does not fit into a string. This is not"
-" known to be used in the Python DOM implementations, but may be received from"
-" DOM implementations not written in Python."
+"Raised when a specified range of text does not fit into a string. This is "
+"not known to be used in the Python DOM implementations, but may be received "
+"from DOM implementations not written in Python."
 msgstr ""
 
 #: library/xml.dom.rst:1258
@@ -1454,8 +1458,8 @@ msgstr ""
 
 #: library/xml.dom.rst:1264
 msgid ""
-"Raised when an index or size parameter to a method is negative or exceeds the"
-" allowed values."
+"Raised when an index or size parameter to a method is negative or exceeds "
+"the allowed values."
 msgstr ""
 
 #: library/xml.dom.rst:1270
@@ -1472,8 +1476,8 @@ msgstr ""
 
 #: library/xml.dom.rst:1281
 msgid ""
-"This exception is raised when a string parameter contains a character that is"
-" not permitted in the context it's being used in by the XML 1.0 "
+"This exception is raised when a string parameter contains a character that "
+"is not permitted in the context it's being used in by the XML 1.0 "
 "recommendation. For example, attempting to create an :class:`Element` node "
 "with a space in the element type name will cause this error to be raised."
 msgstr ""
@@ -1491,15 +1495,15 @@ msgstr ""
 #: library/xml.dom.rst:1300
 msgid ""
 "If an attempt is made to change any object in a way that is not permitted "
-"with regard to the `Namespaces in XML <https://www.w3.org/TR/REC-xml-"
-"names/>`_ recommendation, this exception is raised."
+"with regard to the `Namespaces in XML <https://www.w3.org/TR/REC-xml-names/"
+">`_ recommendation, this exception is raised."
 msgstr ""
 
 #: library/xml.dom.rst:1307
 msgid ""
-"Exception when a node does not exist in the referenced context.  For example,"
-" :meth:`NamedNodeMap.removeNamedItem` will raise this if the node passed in "
-"does not exist in the map."
+"Exception when a node does not exist in the referenced context.  For "
+"example, :meth:`NamedNodeMap.removeNamedItem` will raise this if the node "
+"passed in does not exist in the map."
 msgstr ""
 
 #: library/xml.dom.rst:1314
@@ -1622,9 +1626,9 @@ msgstr ""
 
 #: library/xml.dom.rst:1398
 msgid ""
-"This section describes the conformance requirements and relationships between"
-" the Python DOM API, the W3C DOM recommendations, and the OMG IDL mapping for"
-" Python."
+"This section describes the conformance requirements and relationships "
+"between the Python DOM API, the W3C DOM recommendations, and the OMG IDL "
+"mapping for Python."
 msgstr ""
 
 #: library/xml.dom.rst:1406
@@ -1684,8 +1688,8 @@ msgstr ""
 #: library/xml.dom.rst:1432
 msgid ""
 "The mapping from OMG IDL to Python defines accessor functions for IDL "
-"``attribute`` declarations in much the way the Java mapping does. Mapping the"
-" IDL declarations ::"
+"``attribute`` declarations in much the way the Java mapping does. Mapping "
+"the IDL declarations ::"
 msgstr ""
 
 #: library/xml.dom.rst:1436
@@ -1697,12 +1701,11 @@ msgstr ""
 #: library/xml.dom.rst:1439
 msgid ""
 "yields three accessor functions:  a \"get\" method for :attr:`!someValue` "
-"(:meth:`!_get_someValue`), and \"get\" and \"set\" methods for "
-":attr:`!anotherValue` (:meth:`!_get_anotherValue` and "
-":meth:`!_set_anotherValue`).  The mapping, in particular, does not require "
-"that the IDL attributes are accessible as normal Python attributes:  "
-"``object.someValue`` is *not* required to work, and may raise an "
-":exc:`AttributeError`."
+"(:meth:`!_get_someValue`), and \"get\" and \"set\" methods for :attr:`!"
+"anotherValue` (:meth:`!_get_anotherValue` and :meth:`!_set_anotherValue`).  "
+"The mapping, in particular, does not require that the IDL attributes are "
+"accessible as normal Python attributes:  ``object.someValue`` is *not* "
+"required to work, and may raise an :exc:`AttributeError`."
 msgstr ""
 
 #: library/xml.dom.rst:1446
@@ -1729,7 +1732,7 @@ msgstr ""
 #: library/xml.dom.rst:1460
 msgid ""
 "The IDL definitions do not fully embody the requirements of the W3C DOM API, "
-"such as the notion of certain objects, such as the return value of "
-":meth:`~Element.getElementsByTagName`, being \"live\".  The Python DOM API "
-"does not require implementations to enforce such requirements."
+"such as the notion of certain objects, such as the return value "
+"of :meth:`~Element.getElementsByTagName`, being \"live\".  The Python DOM "
+"API does not require implementations to enforce such requirements."
 msgstr ""
