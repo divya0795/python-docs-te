@@ -96,6 +96,8 @@ def main() -> int:
         return 2
     repo = Path(__file__).resolve().parent.parent
     pot_dir = Path(sys.argv[1]).resolve()
+    if not any(pot_dir.rglob("*.pot")):
+        sys.exit(f"error: no .pot templates under {pot_dir}; build them first (make pot)")
     total_added = total_fuzzy = 0
     templates = set()
     for pot_path in sorted(pot_dir.rglob("*.pot")):
@@ -113,6 +115,13 @@ def main() -> int:
         if po.relative_to(repo).parts[0] not in ("venv", ".venv", "locales")
         and po.relative_to(repo) not in templates
     ]
+    # A partial or failed template build would otherwise delete most of the
+    # translation. Upstream only ever removes a handful of pages at a time.
+    if len(removed) > max(10, len(templates) // 10):
+        sys.exit(
+            f"error: {len(removed)} .po files have no template in {pot_dir}; refusing to "
+            "delete them (incomplete template build?)"
+        )
     for rel in removed:
         (repo / rel).unlink()
         print(f"{rel}: removed (no longer in the CPython sources)")
