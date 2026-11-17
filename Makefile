@@ -27,7 +27,8 @@ BRANCH := 3.15
 
 EXCLUDED := \
 	whatsnew/2.?.po \
-	whatsnew/3.[0-10].po
+	whatsnew/3.[0-9].po \
+	whatsnew/3.10.po
 
 # Internal variables
 
