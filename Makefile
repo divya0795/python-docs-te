@@ -160,6 +160,6 @@ verifs: spell line-length sphinx-lint
 clean:
 	@echo "Cleaning *.mo and $(POSPELL_TMP_DIR)"
 	rm -rf $(POSPELL_TMP_DIR) locales/$(LANGUAGE)/LC_MESSAGES/
-	find -name '*.mo' -delete
+	find . -name '*.mo' -delete
 	@echo "Cleaning build directory"
 	$(MAKE) -C venv/cpython/Doc/ clean
