@@ -80,7 +80,7 @@ all: ensure_prerequisites
 # We clone cpython/ inside venv/ because venv/ is the only directory
 # excluded by cpython' Sphinx configuration.
 venv/cpython/.git/HEAD:
-	git clone https://github.com/python/cpython venv/cpython
+	git clone --filter=blob:none https://github.com/python/cpython venv/cpython
 
 
 .PHONY: ensure_prerequisites
@@ -120,11 +120,11 @@ core: pot
 	$(PYTHON) scripts/core_completion.py venv/cpython/Doc/build/gettext
 
 .PHONY: todo
-todo: ensure_prerequisites
+todo:
 	potodo --exclude venv .venv $(EXCLUDED)
 
 .PHONY: wrap
-wrap: ensure_prerequisites
+wrap:
 	@echo "Re wrapping modified files"
 	powrap -m
 
@@ -133,7 +133,7 @@ SRCS = $(shell git diff --name-only $(BRANCH) | grep '.po$$')
 DESTS = $(addprefix $(POSPELL_TMP_DIR)/,$(addsuffix .out,$(SRCS)))
 
 .PHONY: spell
-spell: ensure_prerequisites $(DESTS)
+spell: $(DESTS)
 
 .PHONY: line-length
 line-length:
@@ -151,7 +151,7 @@ $(POSPELL_TMP_DIR)/%.po.out: %.po dict
 	pospell -p dict -l te_IN $< && touch $@
 
 .PHONY: fuzzy
-fuzzy: ensure_prerequisites
+fuzzy:
 	potodo -f --exclude venv .venv $(EXCLUDED)
 
 .PHONY: verifs
