@@ -21,19 +21,36 @@ To get added to the language switcher on docs.python.org, these files have to be
 1. Fork this repository and create a branch from the branch of the Python
    version you are translating (`3.15` or `3.14`).
 2. Pick a `.po` file (run `make todo` to see what's left) and translate the `msgstr` entries.
-3. Keep terms consistent with [`GLOSSARY.md`](GLOSSARY.md).
+3. Keep terms consistent with [`GLOSSARY.md`](GLOSSARY.md), and follow the
+   [code samples](#code-samples) rule below.
 4. Run `make wrap` to rewrap the files you changed, then `make verifs`
    (wrapping, spelling and markup checks) before you commit.
 5. Open a pull request.
 
 Read the [translating guide](https://devguide.python.org/documentation/translations/translating/) before you start.
 
-In code samples, interactive sessions and tracebacks, translate only the
-comments (the text after `#`), as the Chinese, Japanese and Korean
-translations do. Copy everything else exactly as it is in English: code,
-string literals, prompts (`>>>`, `...`), indentation, program output and
-error messages, so the examples keep working and match what Python prints.
-Leave `#!` lines, `# -*- coding: ... -*-` lines and commented-out code as they are.
+### Code samples
+
+This is the rule for the whole Telugu translation, so every page reads the
+same way. The devguide recommends translating comments and string literals
+in code examples but never names; this project translates **comments only**,
+as the Chinese, Japanese and Korean translations do.
+
+In code samples, interactive sessions and tracebacks:
+
+- **Translate** comments (the text after `#`), keeping the `#` in the same
+  column.
+- **Never translate** keywords or names: variables, functions, classes,
+  arguments, attributes and modules.
+- **Keep in English** string literals, prompts (`>>>`, `...`), indentation,
+  program output and error messages. A translated string would no longer
+  match the output printed next to it, so readers would see something
+  different from what Python prints when they run the example.
+- **Leave as they are** `#!` lines, `# -*- coding: ... -*-` lines and
+  commented-out code.
+
+Changing this rule means changing it here and in
+[`GLOSSARY.md`](GLOSSARY.md), and applying it to every file at once.
 
 ## Keeping up with CPython
 
