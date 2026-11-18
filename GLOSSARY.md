@@ -25,8 +25,10 @@ Agree on new terms in an issue or PR before using them widely.
 - **Plurals** of transliterated words take the Telugu ‌లు ending
   (వేరియబుల్‌లు, టూల్‌లు, ఫుట్‌నోట్‌లు), not the English -s (వేరియబుల్స్).
 - **Code samples and terminal output** (entries that are only code, a
-  shell session or program output) are copied into `msgstr` unchanged, so
-  the file counts as translated and readers see exactly what Python prints.
+  shell session or program output) are copied into `msgstr` unchanged,
+  except that comments (the text after `#`) are translated, so readers see
+  exactly what Python prints. `#!` lines, encoding declarations and
+  commented-out code stay in English, and the comment keeps its column.
 - **Sentences split around a code block** may be re-split at a natural
   point for Telugu word order (the verb usually ends up after the code).
 - **Suffixes next to markup:** reST ignores a link, role or literal whose

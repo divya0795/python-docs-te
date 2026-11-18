@@ -28,9 +28,12 @@ To get added to the language switcher on docs.python.org, these files have to be
 
 Read the [translating guide](https://devguide.python.org/documentation/translations/translating/) before you start.
 
-Never change code samples, interactive sessions or tracebacks: copy them
-exactly as they are in English, so prompts (`>>>`, `...`), indentation and
-error messages keep working.
+In code samples, interactive sessions and tracebacks, translate only the
+comments (the text after `#`), as the Chinese, Japanese and Korean
+translations do. Copy everything else exactly as it is in English: code,
+string literals, prompts (`>>>`, `...`), indentation, program output and
+error messages, so the examples keep working and match what Python prints.
+Leave `#!` lines, `# -*- coding: ... -*-` lines and commented-out code as they are.
 
 ## Keeping up with CPython
 
