@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-16 02:05-0800\n"
-"PO-Revision-Date: 2026-11-18 02:05-0800\n"
+"PO-Revision-Date: 2026-11-19 07:53-0800\n"
 "Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -670,7 +670,7 @@ msgstr ""
 
 #: builtins/functions.rst:229
 msgid "Bytes objects can also be created with literals, see :ref:`strings`."
-msgstr "బైట్స్ ఆబ్జెక్ట్‌లను లిటరల్‌లతో కూడా సృష్టించవచ్చు, :ref:`strings` చూడండి."
+msgstr "bytes ఆబ్జెక్ట్‌లను లిటరల్‌లతో కూడా సృష్టించవచ్చు, :ref:`strings` చూడండి."
 
 #: builtins/functions.rst:231
 msgid "See also :ref:`binaryseq`, :ref:`typebytes`, and :ref:`bytes-methods`."
