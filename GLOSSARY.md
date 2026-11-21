@@ -321,7 +321,7 @@ Agree on new terms in an issue or PR before using them widely.
 | English | Avoid | Use |
 |---------|-------|-----|
 | informal | అనధికారిక (= unofficial) | సరళమైన |
-| unique | ప్రత్యేక (= special) | పునరావృతం కాని |
+| unique (distinct values) | ప్రత్యేక (= special), పునరావృతం కాని (= not repeated) | విభిన్న |
 | arbitrary (order) | యాదృచ్ఛిక (= random) | ఇష్టానుసార |
 | member / element | సభ్యుడు (a person) | ఐటెమ్ / ఎలిమెంట్ |
 | the caller | వారు (a person) | కాల్ చేసిన కోడ్ |
