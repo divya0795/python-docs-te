@@ -3,14 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-16 02:05-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-11-20 18:32-0800\n"
+"Last-Translator: Divya Chukkapalli <divya.95j@gmail.com>\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
 "MIME-Version: 1.0\n"
@@ -20,112 +19,116 @@ msgstr ""
 
 #: tools/templates/_docs_by_version.html:10
 msgid "Stable"
-msgstr ""
+msgstr "స్థిర వెర్షన్"
 
 #: tools/templates/_docs_by_version.html:11
 msgid "In development"
-msgstr ""
+msgstr "అభివృద్ధిలో ఉన్నది"
 
 #: tools/templates/customsourcelink.html:17
 msgid "This page"
-msgstr ""
+msgstr "ఈ పేజీ"
 
 #: tools/templates/customsourcelink.html:19
 msgid "Report a bug"
-msgstr ""
+msgstr "బగ్‌ను రిపోర్ట్ చేయండి"
 
 #: tools/templates/customsourcelink.html:20
 msgid "Improve this page"
-msgstr ""
+msgstr "ఈ పేజీని మెరుగుపరచండి"
 
 #: tools/templates/customsourcelink.html:23
 msgid "Show source"
-msgstr ""
+msgstr "సోర్స్ చూడండి"
 
 #: tools/templates/customsourcelink.html:29
 msgid "Show translation source"
-msgstr ""
+msgstr "అనువాద సోర్స్ చూడండి"
 
 #: tools/templates/download.html:2 tools/templates/indexsidebar.html:1
 msgid "Download"
-msgstr ""
+msgstr "డౌన్‌లోడ్"
 
 #: tools/templates/download.html:30
 msgid "Download Python %(dl_version)s documentation"
-msgstr ""
+msgstr "Python %(dl_version)s డాక్యుమెంటేషన్‌ను డౌన్‌లోడ్ చేయండి"
 
 #: tools/templates/download.html:32
 msgid "Last updated on: %(last_updated)s."
-msgstr ""
+msgstr "చివరిగా అప్‌డేట్ చేసినది: %(last_updated)s."
 
 #: tools/templates/download.html:34
 msgid ""
 "Download an archive containing all the documentation for this version of "
 "Python:"
-msgstr ""
+msgstr "Python యొక్క ఈ వెర్షన్ డాక్యుమెంటేషన్ మొత్తం ఉన్న ఆర్కైవ్‌ను డౌన్‌లోడ్ చేయండి:"
 
 #: tools/templates/download.html:38
 msgid "Format"
-msgstr ""
+msgstr "ఫార్మాట్"
 
 #: tools/templates/download.html:39
 msgid "Packed as .zip"
-msgstr ""
+msgstr ".zip గా ప్యాక్ చేసినది"
 
 #: tools/templates/download.html:40
 msgid "Packed as .tar.bz2"
-msgstr ""
+msgstr ".tar.bz2 గా ప్యాక్ చేసినది"
 
 #: tools/templates/download.html:43
 msgid "HTML"
-msgstr ""
+msgstr "HTML"
 
 #: tools/templates/download.html:44
 msgid ""
 "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-html.zip\">Download</a>"
-msgstr ""
+msgstr "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-html.zip\">డౌన్‌లోడ్</a>"
 
 #: tools/templates/download.html:45
 msgid ""
 "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-html.tar.bz2\">Download</a>"
 msgstr ""
+"<a href=\"%(dl_base)s/python-%(dl_version)s-docs-html.tar.bz2\">డౌన్‌లోడ్</a>"
 
 #: tools/templates/download.html:48
 msgid "Plain text"
-msgstr ""
+msgstr "సాధారణ టెక్స్ట్"
 
 #: tools/templates/download.html:49
 msgid ""
 "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-text.zip\">Download</a>"
-msgstr ""
+msgstr "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-text.zip\">డౌన్‌లోడ్</a>"
 
 #: tools/templates/download.html:50
 msgid ""
 "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-text.tar.bz2\">Download</a>"
 msgstr ""
+"<a href=\"%(dl_base)s/python-%(dl_version)s-docs-text.tar.bz2\">డౌన్‌లోడ్</a>"
 
 #: tools/templates/download.html:53
 msgid "Texinfo"
-msgstr ""
+msgstr "Texinfo"
 
 #: tools/templates/download.html:54
 msgid ""
 "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-texinfo.zip\">Download</a>"
 msgstr ""
+"<a href=\"%(dl_base)s/python-%(dl_version)s-docs-texinfo.zip\">డౌన్‌లోడ్</a>"
 
 #: tools/templates/download.html:55
 msgid ""
 "<a href=\"%(dl_base)s/python-%(dl_version)s-docs-texinfo.tar.bz2\">Download</"
 "a>"
 msgstr ""
+"<a href=\"%(dl_base)s/python-%(dl_version)s-docs-texinfo.tar.bz2\">డౌన్‌లోడ్</a>"
 
 #: tools/templates/download.html:58
 msgid "EPUB"
-msgstr ""
+msgstr "EPUB"
 
 #: tools/templates/download.html:59
 msgid "<a href=\"%(dl_base)s/python-%(dl_version)s-docs.epub\">Download</a>"
-msgstr ""
+msgstr "<a href=\"%(dl_base)s/python-%(dl_version)s-docs.epub\">డౌన్‌లోడ్</a>"
 
 #: tools/templates/download.html:64
 msgid ""
@@ -137,6 +140,13 @@ msgid ""
 "and run <code>make dist-pdf</code> in the <code>Doc/</code> directory of a "
 "copy of the CPython repository.\n"
 msgstr ""
+"\n"
+"మేము ఇకపై డాక్యుమెంటేషన్ యొక్క ముందుగా తయారుచేసిన PDF లను అందించడం లేదు.\n"
+"PDF ఆర్కైవ్‌ను బిల్డ్ చేయడానికి,\n"
+"<a href=\"https://devguide.python.org/documentation/start-documenting/"
+"#building-the-documentation\">డెవలపర్ గైడ్</a>\n"
+"లోని సూచనలను అనుసరించి, CPython రిపోజిటరీ కాపీలోని <code>Doc/</code> డైరెక్టరీలో <code>make "
+"dist-pdf</code> ను రన్ చేయండి.\n"
 
 #: tools/templates/download.html:71
 msgid ""
@@ -145,348 +155,358 @@ msgid ""
 "listing</a>\n"
 "for file sizes."
 msgstr ""
+"\n"
+"ఫైల్ పరిమాణాల కోసం <a href=\"https://docs.python.org/%(version)s/archives/\">డైరెక్టరీ "
+"జాబితా</a>\n"
+"చూడండి."
 
 #: tools/templates/download.html:75
 msgid "Problems"
-msgstr ""
+msgstr "సమస్యలు"
 
 #: tools/templates/download.html:77
 msgid ""
 "<a href=\"%(bugs)s\">Open an issue</a>\n"
 "if you have comments or suggestions for the Python documentation."
 msgstr ""
+"Python డాక్యుమెంటేషన్ గురించి మీకు వ్యాఖ్యలు లేదా సూచనలు ఉంటే,\n"
+"<a href=\"%(bugs)s\">ఇష్యూను తెరవండి</a>."
 
 #: tools/templates/dummy.html:6
 msgid "Availability"
-msgstr ""
+msgstr "లభ్యత"
 
 #: tools/templates/dummy.html:10
 msgid "Part of the"
-msgstr ""
+msgstr "ఇది దీనిలో భాగం:"
 
 #: tools/templates/dummy.html:11
 msgid "Limited API"
-msgstr ""
+msgstr "Limited API"
 
 #: tools/templates/dummy.html:12
 msgid "Stable ABI"
-msgstr ""
+msgstr "Stable ABI"
 
 #: tools/templates/dummy.html:13
 msgid "(as an opaque struct)"
-msgstr ""
+msgstr "(ఒపేక్ struct గా)"
 
 #: tools/templates/dummy.html:14
 msgid "(including all members)"
-msgstr ""
+msgstr "(అన్ని మెంబర్‌లతో సహా)"
 
 #: tools/templates/dummy.html:15
 msgid "since version %s"
-msgstr ""
+msgstr "(వెర్షన్ %s నుండి)"
 
 #: tools/templates/dummy.html:16
 msgid "(Only some members are part of the stable ABI.)"
-msgstr ""
+msgstr "(కొన్ని మెంబర్‌లు మాత్రమే stable ABI లో భాగం.)"
 
 #: tools/templates/dummy.html:17
 msgid "This is"
-msgstr ""
+msgstr "ఇది ఒక"
 
 #: tools/templates/dummy.html:18
 msgid "Unstable API"
-msgstr ""
+msgstr "Unstable API"
 
 #: tools/templates/dummy.html:19
 msgid ". It may change without warning in minor releases."
-msgstr ""
+msgstr ". మైనర్ విడుదలలలో ఇది ఎలాంటి హెచ్చరిక లేకుండా మారవచ్చు."
 
 #: tools/templates/dummy.html:20
 msgid "Return value: Always NULL."
-msgstr ""
+msgstr "రిటర్న్ విలువ: ఎల్లప్పుడూ NULL."
 
 #: tools/templates/dummy.html:21
 msgid "Return value: New reference."
-msgstr ""
+msgstr "రిటర్న్ విలువ: కొత్త రిఫరెన్స్."
 
 #: tools/templates/dummy.html:22
 msgid "Return value: Borrowed reference."
-msgstr ""
+msgstr "రిటర్న్ విలువ: అరువు తీసుకున్న (borrowed) రిఫరెన్స్."
 
 #: tools/templates/dummy.html:26
 msgid "CPython implementation detail:"
-msgstr ""
+msgstr "CPython ఇంప్లిమెంటేషన్ వివరాలు:"
 
 #: tools/templates/dummy.html:30
 msgid "Deprecated since version %s, will be removed in version %s"
-msgstr ""
+msgstr "వెర్షన్ %s నుండి డెప్రికేట్ చేయబడింది, వెర్షన్ %s లో తొలగించబడుతుంది"
 
 #: tools/templates/dummy.html:31
 msgid "Deprecated since version %s, removed in version %s"
-msgstr ""
+msgstr "వెర్షన్ %s నుండి డెప్రికేట్ చేయబడింది, వెర్షన్ %s లో తొలగించబడింది"
 
 #: tools/templates/dummy.html:32
 msgid ":term:`Soft deprecated` since version %s"
-msgstr ""
+msgstr "వెర్షన్ %s నుండి :term:`సాఫ్ట్‌గా డెప్రికేట్ చేయబడింది`"
 
 #: tools/templates/dummy.html:36
 msgid "in development"
-msgstr ""
+msgstr "అభివృద్ధిలో ఉంది"
 
 #: tools/templates/dummy.html:37
 msgid "pre-release"
-msgstr ""
+msgstr "ప్రీ-రిలీజ్"
 
 #: tools/templates/dummy.html:38
 msgid "stable"
-msgstr ""
+msgstr "స్థిరమైనది"
 
 #: tools/templates/dummy.html:39
 msgid "security-fixes"
-msgstr ""
+msgstr "భద్రతా పరిష్కారాలు మాత్రమే"
 
 #: tools/templates/dummy.html:40
 msgid "EOL"
-msgstr ""
+msgstr "మద్దతు ముగిసింది"
 
 #: tools/templates/indexcontent.html:50
 msgid "Welcome! This is the official documentation for Python %(release)s."
-msgstr ""
+msgstr "స్వాగతం! ఇది Python %(release)s యొక్క అధికారిక డాక్యుమెంటేషన్."
 
 #: tools/templates/indexcontent.html:52
 msgid "Documentation sections:"
-msgstr ""
+msgstr "డాక్యుమెంటేషన్ విభాగాలు:"
 
 #: tools/templates/indexcontent.html:55
 msgid "What's new in Python %(version)s?"
-msgstr ""
+msgstr "Python %(version)s లో కొత్తవి ఏమిటి?"
 
 #: tools/templates/indexcontent.html:56
 msgid ""
 "Or <a href=\"%(whatsnew_index)s\">all \"What's new\" documents since Python "
 "2.0</a>"
 msgstr ""
+"లేదా <a href=\"%(whatsnew_index)s\">Python 2.0 నుండి ఉన్న అన్ని \"కొత్తవి ఏమిటి\" "
+"డాక్యుమెంట్‌లు</a>"
 
 #: tools/templates/indexcontent.html:57
 msgid "Tutorial"
-msgstr ""
+msgstr "ట్యుటోరియల్"
 
 #: tools/templates/indexcontent.html:58
 msgid "Start here: a tour of Python's syntax and features"
-msgstr ""
+msgstr "ఇక్కడ ప్రారంభించండి: Python సింటాక్స్, ఫీచర్‌ల పరిచయం"
 
 #: tools/templates/indexcontent.html:59
 msgid "Built-ins reference"
-msgstr ""
+msgstr "బిల్ట్-ఇన్‌ల రిఫరెన్స్"
 
 #: tools/templates/indexcontent.html:60
 msgid "Built-in functions and classes"
-msgstr ""
+msgstr "బిల్ట్-ఇన్ ఫంక్షన్‌లు, క్లాస్‌లు"
 
 #: tools/templates/indexcontent.html:61
 msgid "Library reference"
-msgstr ""
+msgstr "లైబ్రరీ రిఫరెన్స్"
 
 #: tools/templates/indexcontent.html:62
 msgid "Standard library modules"
-msgstr ""
+msgstr "స్టాండర్డ్ లైబ్రరీ మాడ్యూల్‌లు"
 
 #: tools/templates/indexcontent.html:63
 msgid "Language reference"
-msgstr ""
+msgstr "భాషా రిఫరెన్స్"
 
 #: tools/templates/indexcontent.html:64
 msgid "Syntax and language elements"
-msgstr ""
+msgstr "సింటాక్స్, భాషా అంశాలు"
 
 #: tools/templates/indexcontent.html:65
 msgid "Python setup and usage"
-msgstr ""
+msgstr "Python సెటప్, వినియోగం"
 
 #: tools/templates/indexcontent.html:66
 msgid "How to install, configure, and use Python"
-msgstr ""
+msgstr "Python ను ఇన్‌స్టాల్ చేయడం, కాన్ఫిగర్ చేయడం, ఉపయోగించడం ఎలా"
 
 #: tools/templates/indexcontent.html:69
 msgid "Python HOWTOs"
-msgstr ""
+msgstr "Python HOWTO లు"
 
 #: tools/templates/indexcontent.html:70
 msgid "In-depth topic manuals"
-msgstr ""
+msgstr "లోతైన అంశాల మాన్యువల్‌లు"
 
 #: tools/templates/indexcontent.html:71
 msgid "Installing Python modules"
-msgstr ""
+msgstr "Python మాడ్యూల్‌లను ఇన్‌స్టాల్ చేయడం"
 
 #: tools/templates/indexcontent.html:72
 msgid "Third-party modules and PyPI.org"
-msgstr ""
+msgstr "థర్డ్-పార్టీ మాడ్యూల్‌లు, PyPI.org"
 
 #: tools/templates/indexcontent.html:73
 msgid "Extending and embedding"
-msgstr ""
+msgstr "విస్తరించడం, ఎంబెడ్ చేయడం"
 
 #: tools/templates/indexcontent.html:74
 msgid "For C/C++ programmers"
-msgstr ""
+msgstr "C/C++ ప్రోగ్రామర్‌ల కోసం"
 
 #: tools/templates/indexcontent.html:75
 msgid "Python's C API"
-msgstr ""
+msgstr "Python యొక్క C API"
 
 #: tools/templates/indexcontent.html:76
 msgid "C API reference"
-msgstr ""
+msgstr "C API రిఫరెన్స్"
 
 #: tools/templates/indexcontent.html:77
 msgid "FAQs"
-msgstr ""
+msgstr "FAQ లు"
 
 #: tools/templates/indexcontent.html:78
 msgid "Frequently asked questions (with answers!)"
-msgstr ""
+msgstr "తరచుగా అడిగే ప్రశ్నలు (సమాధానాలతో!)"
 
 #: tools/templates/indexcontent.html:79
 msgid "Deprecations"
-msgstr ""
+msgstr "డెప్రికేషన్‌లు"
 
 #: tools/templates/indexcontent.html:80
 msgid "Deprecated functionality"
-msgstr ""
+msgstr "డెప్రికేట్ చేయబడిన ఫీచర్‌లు"
 
 #: tools/templates/indexcontent.html:84
 msgid "Other resources:"
-msgstr ""
+msgstr "ఇతర వనరులు:"
 
 #: tools/templates/indexcontent.html:87
 msgid "Python developer's guide"
-msgstr ""
+msgstr "Python డెవలపర్ గైడ్"
 
 #: tools/templates/indexcontent.html:88
 msgid "Information on contributing to Python"
-msgstr ""
+msgstr "Python కు సహకరించడం గురించిన సమాచారం"
 
 #: tools/templates/indexcontent.html:89
 msgid "Python Packaging User Guide"
-msgstr ""
+msgstr "Python Packaging User Guide"
 
 #: tools/templates/indexcontent.html:90
 msgid "Resources relating to Python packaging"
-msgstr ""
+msgstr "Python ప్యాకేజింగ్‌కు సంబంధించిన వనరులు"
 
 #: tools/templates/indexcontent.html:91
 msgid "Audio/visual talks"
-msgstr ""
+msgstr "ఆడియో/వీడియో ప్రసంగాలు"
 
 #: tools/templates/indexcontent.html:92
 msgid "Podcasts, talks, and video presentations from the community"
-msgstr ""
+msgstr "కమ్యూనిటీ నుండి పాడ్‌కాస్ట్‌లు, ప్రసంగాలు, వీడియో ప్రదర్శనలు"
 
 #: tools/templates/indexcontent.html:95
 msgid "Python Enhancement Proposals"
-msgstr ""
+msgstr "Python Enhancement Proposals"
 
 #: tools/templates/indexcontent.html:96
 msgid "Index of proposed improvements to Python"
-msgstr ""
+msgstr "Python కు ప్రతిపాదించిన మెరుగుదలల సూచిక"
 
 #: tools/templates/indexcontent.html:97
 msgid "Static Typing with Python"
-msgstr ""
+msgstr "Python తో స్టాటిక్ టైపింగ్"
 
 #: tools/templates/indexcontent.html:98
 msgid "Information and guides about Python type safety"
-msgstr ""
+msgstr "Python టైప్ భద్రత గురించిన సమాచారం, గైడ్‌లు"
 
 #: tools/templates/indexcontent.html:102
 msgid "Indices, glossary, and search:"
-msgstr ""
+msgstr "సూచికలు, పదకోశం, శోధన:"
 
 #: tools/templates/indexcontent.html:105
 msgid "Global module index"
-msgstr ""
+msgstr "గ్లోబల్ మాడ్యూల్ సూచిక"
 
 #: tools/templates/indexcontent.html:106
 msgid "All modules and libraries"
-msgstr ""
+msgstr "అన్ని మాడ్యూల్‌లు, లైబ్రరీలు"
 
 #: tools/templates/indexcontent.html:107
 msgid "General index"
-msgstr ""
+msgstr "సాధారణ సూచిక"
 
 #: tools/templates/indexcontent.html:108
 msgid "All functions, classes, and terms"
-msgstr ""
+msgstr "అన్ని ఫంక్షన్‌లు, క్లాస్‌లు, పదాలు"
 
 #: tools/templates/indexcontent.html:109
 msgid "Glossary"
-msgstr ""
+msgstr "పదకోశం"
 
 #: tools/templates/indexcontent.html:110
 msgid "Terms explained"
-msgstr ""
+msgstr "పదాల వివరణ"
 
 #: tools/templates/indexcontent.html:113
 msgid "Search page"
-msgstr ""
+msgstr "శోధన పేజీ"
 
 #: tools/templates/indexcontent.html:114
 msgid "Search this documentation"
-msgstr ""
+msgstr "ఈ డాక్యుమెంటేషన్‌లో వెతకండి"
 
 #: tools/templates/indexcontent.html:115
 msgid "Complete table of contents"
-msgstr ""
+msgstr "పూర్తి విషయసూచిక"
 
 #: tools/templates/indexcontent.html:116
 msgid "All sections and subsections"
-msgstr ""
+msgstr "అన్ని విభాగాలు, ఉపవిభాగాలు"
 
 #: tools/templates/indexcontent.html:120
 msgid "Project information:"
-msgstr ""
+msgstr "ప్రాజెక్ట్ సమాచారం:"
 
 #: tools/templates/indexcontent.html:123
 msgid "Reporting issues"
-msgstr ""
+msgstr "ఇష్యూలను రిపోర్ట్ చేయడం"
 
 #: tools/templates/indexcontent.html:124
 msgid "Contributing to docs"
-msgstr ""
+msgstr "డాక్యుమెంటేషన్‌కు సహకరించడం"
 
 #: tools/templates/indexcontent.html:125 tools/templates/indexsidebar.html:2
 msgid "Download the documentation"
-msgstr ""
+msgstr "డాక్యుమెంటేషన్‌ను డౌన్‌లోడ్ చేయండి"
 
 #: tools/templates/indexcontent.html:128
 msgid "History and license of Python"
-msgstr ""
+msgstr "Python చరిత్ర, లైసెన్స్"
 
 #: tools/templates/indexcontent.html:129
 msgid "Copyright"
-msgstr ""
+msgstr "కాపీరైట్"
 
 #: tools/templates/indexcontent.html:130
 msgid "About the documentation"
-msgstr ""
+msgstr "డాక్యుమెంటేషన్ గురించి"
 
 #: tools/templates/indexsidebar.html:3
 msgid "Docs by version"
-msgstr ""
+msgstr "వెర్షన్ వారీగా డాక్యుమెంటేషన్"
 
 #: tools/templates/indexsidebar.html:7
 msgid "All versions"
-msgstr ""
+msgstr "అన్ని వెర్షన్‌లు"
 
 #: tools/templates/layout.html:6
 msgid ""
 "This document is for an old version of Python that is no longer supported.\n"
 "    You should upgrade, and read the"
 msgstr ""
+"ఈ డాక్యుమెంట్ ఇకపై మద్దతు లేని పాత Python వెర్షన్ కోసం.\n"
+"    మీరు అప్‌గ్రేడ్ చేయాలి; ఇది చదవండి:"
 
 #: tools/templates/layout.html:8
 msgid "Python documentation for the current stable release"
-msgstr ""
+msgstr "ప్రస్తుత స్థిర విడుదల యొక్క Python డాక్యుమెంటేషన్"
 
 #: tools/templates/layout.html:14
 msgid ""
@@ -494,7 +514,10 @@ msgid ""
 "(pr_id)s\">pull request</a>.\n"
 "  For authoritative documentation, see"
 msgstr ""
+"ఇది ఒక <a href=\"%(repository_url)s/pull/%(pr_id)s\">పుల్ రిక్వెస్ట్</a> నుండి "
+"సృష్టించిన డిప్లాయ్ ప్రివ్యూ.\n"
+"  అధికారిక డాక్యుమెంటేషన్ కోసం, ఇది చూడండి:"
 
 #: tools/templates/layout.html:16
 msgid "the current stable release"
-msgstr ""
+msgstr "ప్రస్తుత స్థిర విడుదల"
