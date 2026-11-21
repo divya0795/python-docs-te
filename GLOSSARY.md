@@ -329,6 +329,7 @@ Agree on new terms in an issue or PR before using them widely.
 | significant (digits, places) | ముఖ్యమైన / ప్రాముఖ్యత (= important) | సార్థక |
 | informal "we" | మా (excludes the reader) | మన / మనం |
 | email | ఈమెయిల్ | ఇమెయిల్ |
+| implicit / implicitly | పరోక్ష (= indirect) | అంతర్లీన / అంతర్లీనంగా |
 
 ## Terms added while translating stage 4
 
